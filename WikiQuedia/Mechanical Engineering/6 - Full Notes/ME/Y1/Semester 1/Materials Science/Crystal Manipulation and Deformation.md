@@ -1,6 +1,6 @@
 2025-01-27 11:25
 
-Status: #child
+Status: #child %%This page is missing some internal links%%
 
 Tags: [[crystallography]], [[lattice structures]], [[metal working]]
 
