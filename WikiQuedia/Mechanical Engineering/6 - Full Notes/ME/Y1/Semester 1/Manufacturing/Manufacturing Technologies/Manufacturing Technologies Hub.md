@@ -1,6 +1,6 @@
 2025-01-27 12:57
 
-Status: #baby
+Status: #child
 
 Tags: [[metal working]], [[plastic working]], [[molding]], [[deforming processes]], [[seperating processes]], [[machining processes]], [[Joining]], [[additive manufacturing]]
 
@@ -47,10 +47,10 @@ WHERE file.name != "Design Rules"
 LIST
 FROM #seperating and #mechanical
 ```
-##### Chemical
+##### Chemical and Heat Dependent
 ```dataview
 LIST
-FROM #seperating and #chemical
+FROM #seperating and #mystical
 ```
 ---
 ### 4 - Machining
@@ -87,6 +87,7 @@ Manufacturing%20Technologies%20Hub#Terms%20and%20Disambiguation
 - ___Mold:___ A block with cavities that are filled during a [molding or casting process](#1%20-%20casting). The mold can be made of anything, but metal molds require a lot of engineering for proper heat distribution in the mold.
 - ___Flash:___ Left over material after a compressing operation. This happens when the volume of the product exceeded the volume of the die. For a mental image: think the residue on the edges of [old timey stamps](https://upload.wikimedia.org/wikipedia/en/7/71/WilliamStoughton-personalseal.jpg).
 - ___Billet:___ Workpiece when it's located in a die and about to be edited.
+- ___Punch:___ A Tool used to indent or penetrate a surface.
 
 
 

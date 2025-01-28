@@ -2,7 +2,7 @@
 
 Status: #adult
 
-Tags: [[deforming processes]], [[metal working]]
+Tags: [[deforming processes]], [[metal working]], [[extrusion processes]]
 
 Type: #shaping_and_forming, #extrusion_and_drawing
 

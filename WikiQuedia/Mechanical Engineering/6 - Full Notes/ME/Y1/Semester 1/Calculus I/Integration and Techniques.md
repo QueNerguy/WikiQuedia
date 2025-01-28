@@ -1,6 +1,6 @@
 2025-01-26 17:18
 
-Status: #adult %%needs more Rules of thumb!%%
+Status: #adult
 
 Tags: [[calculus]], [[differentiation]], [[integration]], [[interval syntax]], [[limits]]
 

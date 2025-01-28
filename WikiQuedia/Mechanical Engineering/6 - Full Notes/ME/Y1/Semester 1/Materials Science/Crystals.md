@@ -1,6 +1,6 @@
 2025-01-27 10:36
 
-Status: #child %%This page is missing some internal links%%
+Status: #child #missingLink%%Linkje naar advanced deformation stuff%%
 
 Tags: [[crystallography]], [[lattice structures]], [[metal working]]
 
@@ -10,7 +10,7 @@ Tags: [[crystallography]], [[lattice structures]], [[metal working]]
 A crystal is identifiable by the regular structure of it's atoms. It is built off of a repeating highly ordered pattern, a _[crystal lattice](#lattices)_ that extends in all directions.
 
 ### Lattices
-A lattice is a framework, made up of [unit cells](#unit%20cells), that forms the entirety of a crystal, if that crystal is perfect. Deformations %%LINKJE NAAR BURGERS OFZO%% and dislocations are not considered here. The unit cells are the repeating _parts_ in a crystal, the lattice is the _repetition itself_. When constructing a lattice out of unit cells, keep in mind that unit cells cannot be rotated to fill a lattice[^lattice1][^lattice2].
+A lattice is a framework, made up of [unit cells](#unit%20cells), that forms the entirety of a crystal, if that crystal is perfect. Deformations %%==LINKJE NAAR BURGERS OFZO==%% and dislocations are not considered here. The unit cells are the repeating _parts_ in a crystal, the lattice is the _repetition itself_. When constructing a lattice out of unit cells, keep in mind that unit cells cannot be rotated to fill a lattice[^lattice1][^lattice2].
 
 ### Unit Cells
 Unit cells are the repeating parts in a crystal, they are made up of atoms filling out a geometric shape in 3D space. When unit cells are arranged in a [lattice](#lattices) they form the complete crystal. Calculations on a unit cell can be extrapolated to explain behaviors of the whole material. Unit cells __cannot__ be rotated to fill a lattice, this would impede the extrapolation of it's properties.

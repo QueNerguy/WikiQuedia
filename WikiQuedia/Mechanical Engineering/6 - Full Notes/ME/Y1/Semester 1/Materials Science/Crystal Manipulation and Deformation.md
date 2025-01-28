@@ -1,6 +1,6 @@
 2025-01-27 11:25
 
-Status: #child %%This page is missing some internal links%%
+Status: #child #missingLink%%Linkje naar hoe temp changing material properties%%
 
 Tags: [[crystallography]], [[lattice structures]], [[metal working]]
 
@@ -16,7 +16,7 @@ This deformation increases the _[yield strength](Yield%20Strength.md)_, but decr
 ### Hot Deformation
 When a metal is hot deformed it's [crystal](Crystals.md) is first stretched, but the heat allows for recrystallization after the deformation. In this process the crystals will shrink in size, increasing the ductility[^duck] and leaving a rough finish. 
 #### Hot: Property Alteration
-Becauses the material recrystallizes during hot processes stress flow[^flow] in the grains is improved. Dislocations can move and annihilate with each other decreasing local stress buildups and irregular stress concentrations. This recrystallization reduces the _[yield strength](Yield%20Strength.md)_, but increases the amount of [Strain](Strain.md) the material can absorb before fracture, making it more ductile[^duck]. This also increases the amount of energy it can absorb, increasing it's toughness. The _[Young's Modulus](Young's%20Modulus.md)_ ($E$) can change depending on the temperature. %%extra info vanuit ijzer vorming processen enzo%%
+Becauses the material recrystallizes during hot processes stress flow[^flow] in the grains is improved. Dislocations can move and annihilate with each other decreasing local stress buildups and irregular stress concentrations. This recrystallization reduces the _[yield strength](Yield%20Strength.md)_, but increases the amount of [Strain](Strain.md) the material can absorb before fracture, making it more ductile[^duck]. This also increases the amount of energy it can absorb, increasing it's toughness. The _[Young's Modulus](Young's%20Modulus.md)_ ($E$) can change depending on the temperature. %%==extra info vanuit ijzer vorming processen enzo==%%
 
 
 
