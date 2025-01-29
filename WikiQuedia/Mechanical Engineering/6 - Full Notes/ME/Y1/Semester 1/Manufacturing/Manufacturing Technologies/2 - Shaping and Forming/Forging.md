@@ -4,7 +4,7 @@ Status: #adult
 
 Tags: [[deforming processes]], [[metal working]]
 
-Type: #shaping_and_forming #3D_deforming
+Type: #shaping_and_forming, #3D_deforming
 
 ---
 # Forging
@@ -12,7 +12,7 @@ Type: #shaping_and_forming #3D_deforming
 In forging a material is formed by applying compressive forces. This can be done either by hitting a material with a hammer, or pressing it with a [die](Manufacturing%20Technologies%20Hub.md#Terms%20and%20Disambiguation).
 #### Methods
 ##### Hot forging
-Hot forging requires less force than [cold forging](#cold%20forging) because the high temperature softens the metal. Because [recrystallization](Crystal%20Manipulation%20and%20Deformation.md) is possible at elevated temperatures, hot forged products have good grain and stress flow[^flow], but in turn do have a rougher surface.
+Hot forging requires less force than [cold forging](#cold%20forging) because the high temperature softens the metal. Because [recrystallization](Crystal%20Manipulation%20and%20Deformation#hot%20deformation) is possible at elevated temperatures, hot forged products have good grain and stress flow[^flow], but in turn do have a rougher surface.
 The [deformation](Crystal%20Manipulation%20and%20Deformation.md) is achieved by a combination of reordening the crystals and [straining](Crystal%20Manipulation%20and%20Deformation.md#Cold%20Property%20Alteration) the metal like in [cold forging](#cold%20forging).
 ##### Cold forging
 Cold forging requires a lot of force to [deform](Crystal%20Manipulation%20and%20Deformation.md) the material. It is usually done through hammering the workpiece exclusively. The deformation is only achieved by [straining](Crystal%20Manipulation%20and%20Deformation.md#Cold%20Property%20Alteration) the metal instead of reordening the crystal structure as in [hot forging](#hot%20forging).
