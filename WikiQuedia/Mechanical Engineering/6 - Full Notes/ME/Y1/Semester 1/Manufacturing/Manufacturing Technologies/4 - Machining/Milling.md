@@ -2,7 +2,7 @@
 
 Status: #baby
 
-Tags: 
+Tags: [[machining processes]], [[metal working]]
 
 Type: #machining, #milling
 

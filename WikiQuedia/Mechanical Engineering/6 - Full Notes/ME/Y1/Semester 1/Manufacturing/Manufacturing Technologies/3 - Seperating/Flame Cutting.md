@@ -4,7 +4,7 @@ Status: #baby
 
 Tags: 
 
-Type: #seperating, #mystical %%:)%%
+Type: #seperating, #mystical
 
 ---
 # Flame Cutting
