@@ -1,6 +1,4 @@
-2025-02-02 01:37
-
-Status: #baby
+Status: #adult
 
 Tags: [[calculus]], [[limits]], [[interval syntax]], [[integration]], [[differentiation]]
 
@@ -27,4 +25,3 @@ Calculus I lays out the base mechanics of differentiation and integration. The f
 
 
 ---
-# References:

@@ -35,3 +35,6 @@ The notation $\left\lbrack x_1,x_2\right\rbrack$ just means $\left\lbrack x_1\to
 [^wikipediaDomain]: [Wikipedia - Domain](https://en.wikipedia.org/wiki/Domain_(mathematical_analysis))
 [^wikipediaRange]: [Wikipedia - Range](https://simple.wikipedia.org/wiki/Range_(mathematics))
 1. Robert A. Adams, Christopher Essex, _Calculus A Complete Course_, 9th ed.
+
+---
+__[Home](1%20-%20Learning%20Overview%20(Calculus%20I))__

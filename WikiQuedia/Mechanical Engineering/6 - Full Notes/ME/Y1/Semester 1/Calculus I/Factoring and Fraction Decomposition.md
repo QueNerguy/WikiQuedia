@@ -54,3 +54,4 @@ In some scenarios there are other ways of simplifying that are better suited.
 # References:
 [^goatedFilmpje]: [blackpenredpen - _Ultimate Partial Fraction Decomposition Study Guide (how setup)_](https://www.youtube.com/watch?v=DfTJOsqxIJ4)
 1. Robert A. Adams, Christopher Essex, _Calculus A Complete Course_, 9th ed.
+

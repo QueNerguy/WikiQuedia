@@ -99,3 +99,6 @@ See also: [RoT Integration](Integration%20and%20Techniques.md#Rules%20of%20Thumb
 2. Openstax, _Calculus Volume 1_, [link](https://openstax.org/details/books/calculus-volume-1)
 3. Openstax, _Calculus Volume 2_, [link](https://openstax.org/details/books/calculus-volume-2)
 4. Openstax, _Calculus Volume 3_, [link](https://openstax.org/details/books/calculus-volume-3)
+
+---
+__[Home](1%20-%20Learning%20Overview%20(Calculus%20I))__

@@ -101,3 +101,6 @@ See also: [RoT differentiation](Differentiation%20and%20Techniques.md#Rules%20of
 1. Openstax, _Calculus Volume 1_, [link](https://openstax.org/details/books/calculus-volume-1)
 2. Openstax, _Calculus Volume 2_, [link](https://openstax.org/details/books/calculus-volume-2)
 3. Openstax, _Calculus Volume 3_, [link](https://openstax.org/details/books/calculus-volume-3)
+
+---
+__[Home](1%20-%20Learning%20Overview%20(Calculus%20I))__

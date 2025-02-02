@@ -7,7 +7,7 @@ This vault is built around [this](https://youtu.be/hSTy_BInQs8?si=fYEnp4fk4BcbyS
 1.  Folder layout:
 	1. ==Rough Notes==: Just notepad stuff. Notes from lectures, things thought of that need remembering, or things to do all go in here.
 	2. ==Sources==: Summaries or links to source material for actual notes. Template would go like this: \[Title of article/book or whatever\], then \# referencing: \[and a link\].
-	3. ==Tags==: Storing of tags. Tags in this case are just empty notes that are hyperlinked at the beginning of a note, like this: [[1 - Example]]. _Formatting:_ After title of note: Tags: [[1 - Example]] (and then enter). This folder needs no subdividing folders, everything just goes into the tags folder.
+	3. ==Tags==: Storing of tags. Tags in this case are just empty notes that are hyperlinked at the beginning of a note, like this: [[Example]]. _Formatting:_ After title of note: Tags: [[Example]] (and then enter). This folder needs no subdividing folders, everything just goes into the tags folder.
 	4. ==Indexes==: When a tag has a lot of links mentioning it, move it to this folder and add an index, meaning: Add a list with all the mentions linked and organize them under categories. This makes it easier to find where to start when wanting to read about a \[category\] related topic. This folder needs no subdividing folders, everything just goes into the indexes folder.
 	5. ==Template==: Just stores template for notes, doesn't need editing all that much.
 	6. ==Full Notes==: Where the actual final notes go. This folder also forms the basis of the "Zettelkasten" shit.
