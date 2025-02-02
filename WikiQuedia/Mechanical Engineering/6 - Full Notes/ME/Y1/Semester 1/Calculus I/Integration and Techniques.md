@@ -47,7 +47,7 @@ $$\int_{}^{}u\mathrm{d}v=uv-\int_{}^{}v\mathrm{d}u$$
 - It also might happen that the solution has a repeating $\int_{}^{}v\mathrm{d}u$, this would happen with for things that have a $f\left(x\right)=e^{x}$ in them. In this case it is sometimes possible to solve by equalling the left and right hand side of the original as described in the following paragraph:
 - ___Solving repeating integrals:___
 	1. $$\int_{}^{}u\mathrm{d}v=uv-\int_{}^{}v\mathrm{d}u=\left(\ldots\right)-\int_{}^{}u\mathrm{d}v$$
-	2. Here we see the repeating of the $\int_{}^{}u\mathrm{d}v$, and therefore we can do simple [[algebra]]: $$\int_{}^{}u\mathrm{d}v=\left(\ldots\right)-\int_{}^{}u\mathrm{d}v\to2\int_{}^{}u\mathrm{d}v=\left(\ldots\right)\to\int_{}^{}u\mathrm{d}v=\frac12\cdot\left(\ldots\right)$$
+	2. Here we see the repeating of the $\int_{}^{}u\mathrm{d}v$, and therefore we can apply simple algebra: $$\int_{}^{}u\mathrm{d}v=\left(\ldots\right)-\int_{}^{}u\mathrm{d}v\to2\int_{}^{}u\mathrm{d}v=\left(\ldots\right)\to\int_{}^{}u\mathrm{d}v=\frac12\cdot\left(\ldots\right)$$
 	3. This then yields a solution for the original question $\int_{}^{}u\mathrm{d}v$.
 > [!Note]
 > In this case it is not necessary to substitute with $u=f(x)$ as with the [substitution method](#substitution), because the $f(x)$ is not replaced in the integral as it is with the substitution method, meaning that when calculating $\int_{}^{}u\mathrm{d}v=uv-\int_{}^{}v\mathrm{d}u$ the $u$ and $v$ etc. values are replaced immediately, instead of after integration.

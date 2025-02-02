@@ -9,7 +9,7 @@ Tags: [[metal working]], [[plastic working]], [[molding]], [[deforming processes
 When making a part choosing the right manufacturing technology is imperative for the quality of the end product. This choice will be based on things like _desired batch size_, _price_, _surface finish_, and how _complicated_ the shape is will also change the technology used.
 
 >[!info] Note
->This page will mostly contain an overview with links to types and categories of manufacturing technologies. No in-depth overview of any one will be given here. consider this page a hub more than an article.
+>This subject is not about understanding concepts, but more about giving an overview of different methods with which one can manufacture something. Consider this page a hub from where to search for applicable manufacturing technologies.
 
 ## Categories
 ### 1 - Casting
