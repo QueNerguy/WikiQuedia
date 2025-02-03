@@ -1,6 +1,6 @@
 2025-01-27 13:25
 
-Status: #child #missingLink%%LINKJE SURF. ROUGH. and MECHOMAT SHEAR STRESS%%
+Status: #child #missingLink%%LINKJE MECHOMAT SHEAR STRESS%%
 
 Tags: [[metal working]], [[seperating processes]], [[machining processes]]
 
@@ -18,8 +18,7 @@ A clamp and _bottom blade_ ensure the _[sheet metal](Sheet%20Metal%20Forming)_ s
 A [punch](Manufacturing%20Technologies%20Hub#Terms%20and%20Disambiguation) is used to create __hole__ through a metal object, typically sheet metal. The edge is typically very clean and smooth.
 #### Sawing
 A saw is used to part a [workpiece](Manufacturing%20Technologies%20Hub#Terms%20and%20Disambiguation). This method of seperating usually leaves very rough edges on products where they are cut.
-#### Grinding
-Grinding is rarely used as a seperating process. Grinding is mostly used to __remove sharp__ and __frayed edges__, __level out surfaces__ and remove inconsistencies, or __lower the surface roughness__ %%==LINKJE SURFACE ROUGhNESS==%% as a machining process.
+
 
 
 

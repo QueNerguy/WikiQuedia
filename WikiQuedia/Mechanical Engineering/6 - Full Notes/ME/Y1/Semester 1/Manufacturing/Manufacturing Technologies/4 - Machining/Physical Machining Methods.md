@@ -1,6 +1,6 @@
 2025-01-29 18:59
 
-Status: #baby
+Status: #adult #missingLink %%surface roughness%%
 
 Tags: [[metal working]], [[machining processes]]
 
@@ -25,7 +25,9 @@ A [tool](Manufacturing%20Technologies%20Hub#Terms%20and%20Disambiguation) rotate
 	- __Upmilling:__ The sliding contact between the tool and surface moves in the opposite direction of the direction of milling. This causes more friction and heat and lifts the workpiece, making it harder to set up. The finish will be slightly more coarse compared to _downmilling_. There's also a risk of chips falling in front of the tool and damaging the surface when the tool moves over a second time.
 	- __Downmilling:__ The sliding contact between the tool and surface moves in the same direction as the direction of milling. This causes less friction and heat and presses the workpiece down making it easier and cheaper to set up. The finish will be smoother compared to _upmilling_. 
 #### Broaching
-In broaching a saw-like [tool](Manufacturing%20Technologies%20Hub#Terms%20and%20Disambiguation) is used to remove material, by scraping the surface. This process is an alternative to drilling allowing for, among other things, square holes.
+In broaching a saw-like [tool](Manufacturing%20Technologies%20Hub#Terms%20and%20Disambiguation) is used to remove material, by scraping the surface. This process is an alternative to drilling allowing for, among other things, square holes[^bro].
+#### Grinding
+In grinding a [tool](Manufacturing%20Technologies%20Hub#Terms%20and%20Disambiguation) without teeth rotates to remove sharp and frayed edges, level out srufaces and remove inconsistencies, or lower the surface roughness%%==LINKJE SURFACE ROUGhNESS==%%.  This method is suitable for very hard materials, but it does need cooling as it produces a lot of heat on the [workpiece](Manufacturing%20Technologies%20Hub#Terms%20and%20Disambiguation).
 
 
 
