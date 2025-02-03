@@ -8,7 +8,7 @@ Type: #casting, #design_rules
 
 ---
 # Design Rules Casting
-When casting a product in a [mold](Manufacturing%20Technologies%20Hub.md#Terms%20and%20Disambiguation) there is a risk of the product not filling all the gaps in the mold, cracking or having huge stress concentrations at certain areas, increasing the risk of failure and lowering the quality of the product.
+When casting a product in a [mold](Manufacturing%20Technologies%20Overview.md#Terms%20and%20Disambiguation) there is a risk of the product not filling all the gaps in the mold, cracking or having huge stress concentrations at certain areas, increasing the risk of failure and lowering the quality of the product.
 To counter these issues consider the following design guidelines:
 1. 
 > [!check] Constant Thickness
@@ -38,4 +38,4 @@ To counter these issues consider the following design guidelines:
 1. H.J.J. Kals, _Industrial Production, The Manufacture of Mechanical Products_, 5th ed.
 2. Vrije Universiteit, M. Mehrpouya, [link to course](https://canvas.utwente.nl/courses/15351)
 ---
-__[Home](Manufacturing%20Technologies%20Hub)__
+__[Home](Manufacturing%20Technologies%20Overview.md)__

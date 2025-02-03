@@ -22,7 +22,7 @@ A metal is bent in between two seperated blocks until it has a specific __curve_
 ##### Die Bending
 A metal is bent on a die to give a metal a specific __bend angle__. This method has very little springback because the bend is concentrated on a very small area.
 ##### Deep Drawing
-A metal is bent along a die with a _[punch](Manufacturing%20Technologies%20Hub#Terms%20and%20Disambiguation)_ until it reaches a specific __depth__. This method usually happens in more than one step because the material has to bend and stretch a substantial amount. An example of a product made with this method are metal cans.
+A metal is bent along a die with a _[punch](Manufacturing%20Technologies%20Overview.md#Terms%20and%20Disambiguation)_ until it reaches a specific __depth__. This method usually happens in more than one step because the material has to bend and stretch a substantial amount. An example of a product made with this method are metal cans.
 
 ### Characteristics
 This process is for __metals__ only. %%duhh%%
@@ -42,4 +42,4 @@ This process is for __metals__ only. %%duhh%%
 1. H.J.J. Kals, _Industrial Production, The Manufacture of Mechanical Products_, 5th ed.
 2. Vrije Universiteit, M. Mehrpouya, [link to course](https://canvas.utwente.nl/courses/15351)
 ---
-__[Home](Manufacturing%20Technologies%20Hub)__
+__[Home](Manufacturing%20Technologies%20Overview.md)__

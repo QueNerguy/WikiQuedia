@@ -8,9 +8,9 @@ Type: #casting, #temporary
 
 ---
 # Shell casting
-__Centrifugal molding__ works the same, but the [dies](Manufacturing%20Technologies%20Hub.md#Terms%20and%20Disambiguation) are hollow.
+__Centrifugal molding__ works the same, but the [dies](Manufacturing%20Technologies%20Overview.md#Terms%20and%20Disambiguation) are hollow.
 ### Process
-Shell casting uses resin covered sand to form the [mold](Manufacturing%20Technologies%20Hub#Terms%20and%20Disambiguation. To create the mold a [pattern](Manufacturing%20Technologies%20Hub.md#Terms%20and%20Disambiguation). The original [pattern](Manufacturing%20Technologies%20Hub.md#Terms%20and%20Disambiguation) is inserted into a chamber where sand and resin are sprayed unto it. When the pattern is removed a _shell_ is left. This shell is then used to create the end-product. The shell is consumed when removing the end-product[^shell].
+Shell casting uses resin covered sand to form the [mold](Manufacturing%20Technologies%20Hub#Terms%20and%20Disambiguation. To create the mold a [pattern](Manufacturing%20Technologies%20Overview.md#Terms%20and%20Disambiguation). The original [pattern](Manufacturing%20Technologies%20Overview.md#Terms%20and%20Disambiguation) is inserted into a chamber where sand and resin are sprayed unto it. When the pattern is removed a _shell_ is left. This shell is then used to create the end-product. The shell is consumed when removing the end-product[^shell].
 To avoid failure of parts in the mold see the [design guidelines page](Design%20Rules%20Casting.md).
 
 ### Characteristics
@@ -39,4 +39,4 @@ This process is for __metals__ only.
 1. H.J.J. Kals, _Industrial Production, The Manufacture of Mechanical Products_, 5th ed.
 2. Vrije Universiteit, M. Mehrpouya, [link to course](https://canvas.utwente.nl/courses/15351)
 ---
-__[Home](Manufacturing%20Technologies%20Hub)__
+__[Home](Manufacturing%20Technologies%20Overview.md)__

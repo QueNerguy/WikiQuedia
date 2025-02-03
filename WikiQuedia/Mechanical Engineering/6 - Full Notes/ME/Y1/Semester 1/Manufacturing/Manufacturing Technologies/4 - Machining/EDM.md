@@ -9,7 +9,7 @@ Type: #machining
 ---
 # EDM
 ### Process
-<u>E</u>lectrical <u>D</u>ischarge <u>M</u>achining is a machining method where electrical charges are used to remove material. In this process an electrode moves along the surface of the [workpiece](Manufacturing%20Technologies%20Hub#Terms%20and%20Disambiguation). An electrical charge runs from the electrode to the workpiece, forming plasma at the contact with the workpiece. The charge moves through an electrically conductive fluid. When the charge enters the workpiece plasma is created and a small bit of metal is removed from the workpiece, which is removed through the fluid, and the cycle repeats.
+<u>E</u>lectrical <u>D</u>ischarge <u>M</u>achining is a machining method where electrical charges are used to remove material. In this process an electrode moves along the surface of the [workpiece](Manufacturing%20Technologies%20Overview.md#Terms%20and%20Disambiguation). An electrical charge runs from the electrode to the workpiece, forming plasma at the contact with the workpiece. The charge moves through an electrically conductive fluid. When the charge enters the workpiece plasma is created and a small bit of metal is removed from the workpiece, which is removed through the fluid, and the cycle repeats.
 For this to work the workpiece has to be _submerged entirely_ in an electrically conductive fluid though.
 [Wire EDM](Wire%20edm) is a _parting process_ that uses the same principle to remove material.
 
@@ -24,7 +24,7 @@ This process is very suitable for mold creation and tool production because of i
 ##### Negative
 - This process is very slow.
 - This process requires conductive metals
-- This process requires a bath and the fluid to entirely submerge the [workpiece](Manufacturing%20Technologies%20Hub#Terms%20and%20Disambiguation), which means that big shapes are possible as long as the machine can reach the size, but production gets exponensially more expensive as size increases.
+- This process requires a bath and the fluid to entirely submerge the [workpiece](Manufacturing%20Technologies%20Overview.md#Terms%20and%20Disambiguation), which means that big shapes are possible as long as the machine can reach the size, but production gets exponensially more expensive as size increases.
 
 
 
@@ -41,4 +41,4 @@ This process is very suitable for mold creation and tool production because of i
 1. H.J.J. Kals, _Industrial Production, The Manufacture of Mechanical Products_, 5th ed.
 2. Vrije Universiteit, M. Mehrpouya, [link to course](https://canvas.utwente.nl/courses/15351)
 ---
-__[Home](Manufacturing%20Technologies%20Hub)__
+__[Home](Manufacturing%20Technologies%20Overview.md)__

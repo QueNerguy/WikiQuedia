@@ -36,4 +36,4 @@ This process comes with [heat induced property alteration](crystal%20manipulatio
 2. Vrije Universiteit, M. Mehrpouya, [link to course](https://canvas.utwente.nl/courses/15351)
 
 ---
-__[Home](Manufacturing%20Technologies%20Hub)__
+__[Home](Manufacturing%20Technologies%20Overview.md)__

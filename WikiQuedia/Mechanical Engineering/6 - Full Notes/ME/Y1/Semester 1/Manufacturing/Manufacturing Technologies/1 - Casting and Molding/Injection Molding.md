@@ -9,7 +9,7 @@ Type: #casting, #permanent
 ---
 # Injection Molding
 ### Process
-The injection molding process involves pouring a liquid, or softened plastic emulsion into a metal [mold](Manufacturing%20Technologies%20Hub.md#Terms%20and%20Disambiguation) where it cools off quick. The products are ejected quickly[^injmold]. [Stork IMM](https://www.storkimm.nl/) for example has a cycle time of around _3 seconds_.
+The injection molding process involves pouring a liquid, or softened plastic emulsion into a metal [mold](Manufacturing%20Technologies%20Overview.md#Terms%20and%20Disambiguation) where it cools off quick. The products are ejected quickly[^injmold]. [Stork IMM](https://www.storkimm.nl/) for example has a cycle time of around _3 seconds_.
 
 ### Characteristics
 This process is for __plastics__ only. It suits _thermoplasts_, _thermosets_ and _elastomers_. The metal suitable version of this process is [die casting](Die%20Casting.md).
@@ -37,4 +37,4 @@ This process is for __plastics__ only. It suits _thermoplasts_, _thermosets_ and
 1. H.J.J. Kals, _Industrial Production, The Manufacture of Mechanical Products_, 5th ed.
 2. Vrije Universiteit, M. Mehrpouya, [link to course](https://canvas.utwente.nl/courses/15351)
 ---
-__[Home](Manufacturing%20Technologies%20Hub)__
+__[Home](Manufacturing%20Technologies%20Overview.md)__

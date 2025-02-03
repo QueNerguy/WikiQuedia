@@ -9,7 +9,7 @@ Type: #casting, #temporary
 ---
 # Thermoforming
 ### Process
-A thin plastic sheet is spread over a workpiece to form a finish. The workpiece, then, functions as the [pattern](Manufacturing%20Technologies%20Hub.md#Terms%20and%20Disambiguation). To form the finish the plastic is sucked to the surface of the pattern and vacuum sealed.
+A thin plastic sheet is spread over a workpiece to form a finish. The workpiece, then, functions as the [pattern](Manufacturing%20Technologies%20Overview.md#Terms%20and%20Disambiguation). To form the finish the plastic is sucked to the surface of the pattern and vacuum sealed.
 
 ### Characteristics
 This process is for __plastic__ only. %%I dont know which plastics are suited for this :(%%
@@ -34,4 +34,4 @@ This process is for __plastic__ only. %%I dont know which plastics are suited fo
 1. H.J.J. Kals, _Industrial Production, The Manufacture of Mechanical Products_, 5th ed.
 2. Vrije Universiteit, M. Mehrpouya, [link to course](https://canvas.utwente.nl/courses/15351)
 ---
-__[Home](Manufacturing%20Technologies%20Hub)__
+__[Home](Manufacturing%20Technologies%20Overview.md)__

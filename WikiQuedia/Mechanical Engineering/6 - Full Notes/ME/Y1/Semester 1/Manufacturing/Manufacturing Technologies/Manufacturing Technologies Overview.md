@@ -2,7 +2,7 @@
 
 Status: #child
 
-Tags: [[metal working]], [[plastic working]], [[molding]], [[deforming processes]], [[seperating processes]], [[machining processes]], [[Joining]], [[additive manufacturing]], [[welding]]
+Tags: [[metal working]], [[plastic working]], [[molding]], [[deforming processes]], [[seperating processes]], [[machining processes]], [[Joining]], [[additive manufacturing]], [[welding]], [[hub]]
 
 ---
 # Manufacturing Technologies
@@ -96,7 +96,7 @@ Manufacturing%20Technologies%20Hub#Terms%20and%20Disambiguation
 - ___Flash:___ Left over material after a compressing operation. This happens when the volume of the product exceeded the volume of the die. For a mental image: think the residue on the edges of [old timey stamps](https://upload.wikimedia.org/wikipedia/en/7/71/WilliamStoughton-personalseal.jpg).
 - ___Billet:___ Workpiece when it's located in a die and about to be edited.
 - ___Punch:___ A Tool used to indent or penetrate a surface.
-- ___Lathe:___ A machine tool that spins a [workpiece](Manufacturing%20Technologies%20Hub#Terms%20and%20Disambiguation) around in order to be able to perform several machining processes on it, like [turning](physical%20machining%20methods#turning).
+- ___Lathe:___ A machine tool that spins a [workpiece](Manufacturing%20Technologies%20Overview.md#Terms%20and%20Disambiguation) around in order to be able to perform several machining processes on it, like [turning](physical%20machining%20methods#turning).
 
 
 

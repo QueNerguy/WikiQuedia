@@ -9,7 +9,7 @@ Type: #seperating, #mystical
 ---
 # Wire EDM
 ### Process
-This process is closely related to [EDM](EDM). It's name stands for 'Wire <u>E</u>lectrical <u>D</u>ischarge <u>M</u>achining'. In this process a wire moves through the metal like a [saw](mechanical%20seperating%20processes#sawing) would, but without the reciprocating motion. Instead an electrical charge runs from the wire to the [workpiece](Manufacturing%20Technologies%20Hub#Terms%20and%20Disambiguation), forming plasma at the contact with the workpiece. The charge moves through an electrically conductive fluid. When the charge enters the workpiece plasma is created and a small bit of metal is removed from the workpiece, which is removed through the fluid, and the cycle repeats.
+This process is closely related to [EDM](EDM). It's name stands for 'Wire <u>E</u>lectrical <u>D</u>ischarge <u>M</u>achining'. In this process a wire moves through the metal like a [saw](mechanical%20seperating%20processes#sawing) would, but without the reciprocating motion. Instead an electrical charge runs from the wire to the [workpiece](Manufacturing%20Technologies%20Overview.md#Terms%20and%20Disambiguation), forming plasma at the contact with the workpiece. The charge moves through an electrically conductive fluid. When the charge enters the workpiece plasma is created and a small bit of metal is removed from the workpiece, which is removed through the fluid, and the cycle repeats.
 For this to work the workpiece has to be _submerged entirely_ in an electrically conductive fluid though.
 
 ### Characteristics
@@ -38,4 +38,4 @@ This process is for __electrically conductive metals__ only.
 1. H.J.J. Kals, _Industrial Production, The Manufacture of Mechanical Products_, 5th ed.
 2. Vrije Universiteit, M. Mehrpouya, [link to course](https://canvas.utwente.nl/courses/15351)
 ---
-__[Home](Manufacturing%20Technologies%20Hub)__
+__[Home](Manufacturing%20Technologies%20Overview.md)__
