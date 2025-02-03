@@ -2,15 +2,14 @@
 
 Status: #adult
 
-Tags: [[metal working]], [[machining processes]]
+Tags: [[metal working]], [[machining processes]], [[hard metals suitable]]
 
 Type: #machining
 
 ---
 # EDM
 ### Process
-<u>E</u>lectrical <u>D</u>ischarge <u>M</u>achining is a machining method where electrical charges are used to remove material. In this process an electrode moves along the surface of the [workpiece](Manufacturing%20Technologies%20Hub#Terms%20and%20Disambiguation). An electrical charge runs from the wire to the workpiece, forming plasma at the contact with the workpiece. The charge moves through an electrically conductive fluid. When the charge enters the workpiece plasma is created and a small bit of metal is removed from the workpiece, which is removed through the fluid, and the cycle repeats.
-This process does not consume the electrode.
+<u>E</u>lectrical <u>D</u>ischarge <u>M</u>achining is a machining method where electrical charges are used to remove material. In this process an electrode moves along the surface of the [workpiece](Manufacturing%20Technologies%20Hub#Terms%20and%20Disambiguation). An electrical charge runs from the electrode to the workpiece, forming plasma at the contact with the workpiece. The charge moves through an electrically conductive fluid. When the charge enters the workpiece plasma is created and a small bit of metal is removed from the workpiece, which is removed through the fluid, and the cycle repeats.
 For this to work the workpiece has to be _submerged entirely_ in an electrically conductive fluid though.
 [Wire EDM](Wire%20edm) is a _parting process_ that uses the same principle to remove material.
 
