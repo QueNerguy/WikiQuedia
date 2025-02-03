@@ -13,7 +13,7 @@ In flame cutting a torch cuts through the metal over a certain path. Flame cutti
 
 ### Characteristics
 This process is for __metals__ only.
-Flame cutting a metal can severly alter it's characteristics close to the cut because the heat [recrystallizes](Crystal%20Manipulation%20and%20Deformation#hot%20deformation) the metal. The edges on the cut are very rough and slightly unprecise.
+This process comes with a lot of [heat induced property alteration](crystal%20manipulation%20and%20deformation). The edges on the cut are very rough the process is slightly unprecise.
 ##### Positive
 - This process can make narrow cuts.
 ##### Negative

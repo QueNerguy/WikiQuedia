@@ -13,11 +13,12 @@ A [plasma arc](plasma%20working) is used to cut through the metal. In order for 
 
 ### Characteristics
 This process is for __electrically conductive metals__ only.
+This process comes with [heat induced property alteration](crystal%20manipulation%20and%20deformation).
 ##### Positive
 - This process creates smooth and clean edges at the cut.
 - This process is relatively fast.
 ##### Negative
-This process causes a big [heat affected zone](Crystal%20Manipulation%20and%20Deformation#hot%20deformation).
+- This process causes a big [heat affected zone](Crystal%20Manipulation%20and%20Deformation#hot%20deformation).
 
 
 

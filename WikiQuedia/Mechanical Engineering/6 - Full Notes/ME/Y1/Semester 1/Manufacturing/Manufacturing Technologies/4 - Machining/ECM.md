@@ -1,13 +1,15 @@
 2025-02-03 22:15
 
-Status: #baby
+Status: #adult
 
 Tags: [[metal working]], [[machining processes]], [[hard metals suitable]]
+
+Type: #machining
 
 ---
 # ECM
 ### Process
-This process is similar to [EDM](edm), but it uses a chemical process to remove material, and it has no [tool](Manufacturing%20Technologies%20Hub#Terms%20and%20Disambiguation) wear. In this process a cathode moves along the [workpiece](Manufacturing%20Technologies%20Hub#Terms%20and%20Disambiguation). An electrical charge runs from the electrode to the workpiece, charging the workpiece. A small bit of the workpiece then dissolves with the ion-filled-fluid, an electrolyte, that it is submerged in. The fluid then carries the waste products[^elec].
+This process is similar to [EDM](edm), but it uses a chemical process to remove material, and it has no [tool](Manufacturing%20Technologies%20Hub#Terms%20and%20Disambiguation) wear. In this process a cathode moves along the [workpiece](Manufacturing%20Technologies%20Hub#Terms%20and%20Disambiguation). An electrical charge runs from the electrode to the workpiece, charging the workpiece. A small bit of the workpiece then dissolves with the ion-filled-fluid, an electrolyte, that it is submerged in. The fluid then carries away the waste products[^elec].
 
 ### Characteristics
 This process is for __electrically conductive metals__ only.

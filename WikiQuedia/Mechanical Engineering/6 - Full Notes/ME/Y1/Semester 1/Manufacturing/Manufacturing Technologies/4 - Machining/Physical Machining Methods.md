@@ -16,7 +16,7 @@ This process is for __metals__ only. Most of the heat from this process is absor
 
 ### Types
 #### Turning
-In turning the [workpiece](Manufacturing%20Technologies%20Hub#Terms%20and%20Disambiguation) rotates around a stationary [tool](Manufacturing%20Technologies%20Hub#Terms%20and%20Disambiguation), forming chips in the process. 
+In turning a [lathe](Manufacturing%20Technologies%20Hub#Terms%20and%20Disambiguation) spins the [workpiece](Manufacturing%20Technologies%20Hub#Terms%20and%20Disambiguation) around a [tool](Manufacturing%20Technologies%20Hub#Terms%20and%20Disambiguation), forming chips in the process. 
 #### Drilling
 A hole is drilled into the [workpiece](Manufacturing%20Technologies%20Hub#Terms%20and%20Disambiguation). The [tool](Manufacturing%20Technologies%20Hub#Terms%20and%20Disambiguation) rotates and bores a hole along a single line.
 #### Milling

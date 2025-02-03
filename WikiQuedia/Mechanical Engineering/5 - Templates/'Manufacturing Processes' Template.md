@@ -4,7 +4,7 @@ Status: #baby
 
 Tags: 
 
-Type:
+Type: 
 
 ---
 # {{Title}}
