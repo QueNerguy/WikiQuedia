@@ -1,6 +1,8 @@
 Status: #adult
 
-Tags: [[calculus]], [[limits]], [[interval syntax]], [[integration]], [[differentiation]], [[hub]]
+Tags: [[calculus]], [[limits]], [[interval syntax]], [[integration]], [[differentiation]]
+
+Type: #hub
 
 ---
 # Learning Overview (Calculus I)

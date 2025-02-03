@@ -2,6 +2,8 @@ Status: #baby
 
 Tags: 
 
+Type: #hub
+
 ---
 # {{Title}}
 

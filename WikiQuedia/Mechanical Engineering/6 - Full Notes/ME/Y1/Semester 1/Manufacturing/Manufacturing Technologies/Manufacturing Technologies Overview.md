@@ -2,7 +2,9 @@
 
 Status: #child
 
-Tags: [[metal working]], [[plastic working]], [[molding]], [[deforming processes]], [[seperating processes]], [[machining processes]], [[Joining]], [[additive manufacturing]], [[welding]], [[hub]]
+Tags: [[metal working]], [[plastic working]], [[molding]], [[deforming processes]], [[seperating processes]], [[machining processes]], [[Joining]], [[additive manufacturing]], [[welding]]
+
+Type: #hub
 
 ---
 # Manufacturing Technologies
