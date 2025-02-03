@@ -12,7 +12,7 @@ Type: #seperating, #mystical
 A [plasma arc](plasma%20working) is used to cut through the metal. In order for this process to work the workpiece and the table have to be able to conduct electrity, and the table has to be grounded[^plasma].
 
 ### Characteristics
-This process is for __conductive metals__ only.
+This process is for __electrically conductive metals__ only.
 ##### Positive
 - This process creates smooth and clean edges at the cut.
 - This process is relatively fast.

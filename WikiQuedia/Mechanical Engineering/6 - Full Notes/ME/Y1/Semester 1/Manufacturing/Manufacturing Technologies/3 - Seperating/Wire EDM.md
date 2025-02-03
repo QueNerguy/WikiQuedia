@@ -14,7 +14,7 @@ This process does not consume the electrode.
 For this to work the workpiece has to be _submerged entirely_ in an electrically conductive fluid though.
 
 ### Characteristics
-This process is for __conductive metals__ only.
+This process is for __electrically conductive metals__ only.
 ##### Positive
 - This process leaves <u>no</u> [heat affected zone](Crystal%20Manipulation%20and%20Deformation#hot%20deformation).
 - This process leaves very smooth edges.
