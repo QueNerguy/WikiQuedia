@@ -12,7 +12,7 @@ Type: #machining
 In physical means of removing material either the [workpiece](Manufacturing%20Technologies%20Overview.md#Terms%20and%20Disambiguation) rotates, or the tool rotates.
 
 ### Characteristics
-This process is for __metals__ only. Most of the heat from this process is absorbed in the chips resulting in little [altering of the properties](crystal%20manipulation%20and%20deformation#Hot%20deformation) of the [workpiece](Manufacturing%20Technologies%20Overview.md#Terms%20and%20Disambiguation).
+This process is for __metals__ only. Most of the heat from this process is absorbed in the chips resulting in _negligible_ [altering of the properties](crystal%20manipulation%20and%20deformation#Hot%20deformation) of the [workpiece](Manufacturing%20Technologies%20Overview.md#Terms%20and%20Disambiguation).
 
 ### Types
 #### Turning

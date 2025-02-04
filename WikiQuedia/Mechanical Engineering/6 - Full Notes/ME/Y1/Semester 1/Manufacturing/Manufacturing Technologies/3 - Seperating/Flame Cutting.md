@@ -18,7 +18,7 @@ This process comes with a lot of [heat induced property alteration](crystal%20ma
 - This process can make narrow cuts.
 ##### Negative
 - This process has rough cut edges.
-- This process has a big [heat affected zone](Crystal%20Manipulation%20and%20Deformation#hot%20deformation) where the properties of the metal are altered.
+- This process has a big [heat affected zone](Crystal%20Manipulation%20and%20Deformation#hot%20deformation).
 
 
 

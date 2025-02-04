@@ -18,8 +18,10 @@ This process is for __electrically conductive metals__ only.
 - This process allows the welder a great deal of control, resulting in stronger, more consistent welds.
 ##### Negative
 - This method requires electrically conductive metals.
-- This method is hard to master.
 - This method is relatively slow.
+- This process requires gas release.
+- This process has a big [heat affected zone](Crystal%20Manipulation%20and%20Deformation#hot%20deformation).
+- This process can create significant [thermal distortion](Manufacturing%20Technologies%20Overview#Terms%20and%20Disambiguation).
 
 
 

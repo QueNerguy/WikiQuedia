@@ -7,7 +7,7 @@ Tags: [[deforming processes]], [[metal working]]
 Type: #shaping_and_forming, #design_rules
 
 ---
-# Design Rules
+# Design Rules Shaping and Forming
 When deforming the [workpiece](Manufacturing%20Technologies%20Overview.md#Terms%20and%20Disambiguation) is at risk for warping and other manufacturing problems. To avoid abide by the following design guidelines:
 1. 
 > [!check] Even Width

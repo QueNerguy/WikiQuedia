@@ -15,6 +15,7 @@ When making a part choosing the right manufacturing technology is imperative for
 
 ## Categories
 ### 1 - Casting
+##### Design Rules Casting
 ```dataview
 LIST
 FROM #casting and #design_rules
@@ -31,15 +32,16 @@ FROM #casting and #permanent
 ```
 ---
 ### 2 - Shaping and Forming
+##### Design Rules Shaping and Forming
 ```dataview
 LIST
-FROM #shaping_and_forming 
-WHERE file.name = "Design Rules"
+FROM #shaping_and_forming and #design_rules
 ```
+##### Shaping and Forming Processes
 ```dataview
 LIST
 FROM #shaping_and_forming 
-WHERE file.name != "Design Rules"
+WHERE file.name != "Design Rules Shaping and Forming"
 ```
 
 ---
@@ -89,7 +91,7 @@ FROM #additive
 ## Terms and Disambiguation
 %%
 ==Link for referencing==:
-Manufacturing%20Technologies%20Hub#Terms%20and%20Disambiguation
+Manufacturing%20Technologies%20Overview#Terms%20and%20Disambiguation
 %%
 - ___Workpiece:___ The product that is being worked on with the manufacturing process
 - ___Pattern:___ A replica of the object to be cast. This can be the whole object, or just a part of it, like in [sand casting procedures](Sand%20Casting.md)[^pattern]. 
@@ -99,6 +101,7 @@ Manufacturing%20Technologies%20Hub#Terms%20and%20Disambiguation
 - ___Billet:___ Workpiece when it's located in a die and about to be edited.
 - ___Punch:___ A Tool used to indent or penetrate a surface.
 - ___Lathe:___ A machine tool that spins a [workpiece](Manufacturing%20Technologies%20Overview.md#Terms%20and%20Disambiguation) around in order to be able to perform several machining processes on it, like [turning](physical%20machining%20methods#turning).
+- ___Thermal distortion:___ Because of the heat produced by a process a product might warp when cooling off slowly. This could lead to: __1.__ shrinkage of the [workpiece](Manufacturing%20Technologies%20Overview.md#Terms%20and%20Disambiguation) or weld, __2.__ waviness along flat surfaces, __3.__ bending of the workpiece or joint.
 
 
 

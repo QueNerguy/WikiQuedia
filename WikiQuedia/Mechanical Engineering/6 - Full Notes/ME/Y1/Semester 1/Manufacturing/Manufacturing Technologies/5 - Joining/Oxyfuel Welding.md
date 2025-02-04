@@ -15,11 +15,13 @@ In oxyfuel welding a flame, fueled by a gas made up of pure oxygen, is used to m
 This process is for __metals__ only.
 This process comes with a lot of [heat induced property alteration](crystal%20manipulation%20and%20deformation).
 ##### Positive
-- This process is easy to use.
-- This process is fast.
+- This process is quick.
 - This process works for non-electrically-conductive metals.
 ##### Negative
 - This process grants the welder little control over the quality of the weld, resulting in more inconsistent and generally weaker welds.
+- This process requires gas release
+- This process has a big [heat affected zone](Crystal%20Manipulation%20and%20Deformation#hot%20deformation).
+- This process can create significant [thermal distortion](Manufacturing%20Technologies%20Overview#Terms%20and%20Disambiguation).
 
 
 
