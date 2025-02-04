@@ -10,7 +10,7 @@ Type: #non-welding
 ---
 # Soldering
 ### Process
-Soldering is a joining method related to [welding processes](Manufacturing%20Technologies%20Overview#welding), but the [workpieces](Manufacturing%20Technologies%20Overview#Terms%20and%20Disambiguation) don't melt, and the filler metal is very soft and has a low melting temperature. The process is very similar to [brazing](brazing). It's a low strength, low cost solution when welding to materials together. The only requirement for soldering a material is that the material has a higher melting point than the filler metal[^sold].
+Soldering is a joining method that is very similar to [brazing](brazing), in that only the _filler metal_ melts to form the joint. It's a low strength, low cost solution when welding two materials together. The only requirement for soldering a material is that the material has a higher melting point than the filler metal[^sold].
 
 ### Characteristics
 This process is suitable for __all materials with a high enough melting point__.

@@ -9,8 +9,9 @@ Type: #welding, #resistance_and_friction_welding
 ---
 # Resistance Welding
 ### Process
-Resistance welding works by applying a high amperage through a metal. The resistance as the current moves from the one plate to the other causes such heat that the metals melt and weld together.
-__Spot welding__ is a very prevalent method of resistance welding where two _equaly thick_ plates are welded together on a single dot by applying the current between two electrodes on the top and bottom of the plates.
+Resistance welding works by applying a high amperage through a metal. The resistance as the current moves from the one plate to the other causes such heat that [plasma](plasma%20working) is created and the metals melt and weld together.
+##### Spot Welding
+Spot welding is a very common method of resistance welding, where two _equaly thick_ plates are welded together at a point, by applying the current between two electrodes on the top and bottom of the plates.
 
 ### Characteristics
 This process is for __electrically conductive metals__ only.
