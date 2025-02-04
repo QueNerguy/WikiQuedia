@@ -10,8 +10,9 @@ Type: #welding, #arc_welding
 # Shielded Metal Arc Welding
 ### Process
 This process uses an electrode to create a plasma arc, this electrode is consumed in the process. A current flows directly from the electrode to the [workpiece](Manufacturing%20Technologies%20Overview.md#Terms%20and%20Disambiguation) creating plasma at the contacts. This plasma melts the metal locally, allowing for great precision. The molten metal is mixed with the molten electrode to create a joint and fill in potential gaps. As the weld is created the coating of the electrode vaporizes and coats the metal to protect the weld from corrosive processes[^arc].
-This process is very similar to [shielded metal arc welding](shielded%20metal%20arc%20welding), but it consumes the electrode in the process, and no gasses are needed to shield the plasma flow.
+This process is very similar to [TIG welding](tig%20welding), but it consumes the electrode in the process, and no gasses are needed to shield the plasma flow, and a variation of [MAG welding](MAG%20Welding.md), where the difference is the coating being formed by a gas.
 This is the most popular welding process worldwide.
+
 ### Characteristics
 This process is for __electrically conductive metals__ only.
 This process comes with a lot of [heat induced property alteration](crystal%20manipulation%20and%20deformation).
