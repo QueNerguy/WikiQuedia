@@ -1,6 +1,6 @@
 2025-02-04 23:25
 
-Status: #baby
+Status: #adult
 
 Tags: [[additive manufacturing]], [[plastic working]]
 
@@ -17,8 +17,12 @@ It's a common process for prototyping stages, and, depending on the quality of t
 ### Characteristics
 This process is for __thermoplastics__ only.
 ##### Positive
+- This process is fast and accessible.
+- This process _can_ be done for very cheap, making it great for prototyping purposes.
 ##### Negative
-
+- The process leaves a very rough surface finish.
+- This process requires supports for the printing of certain parts.
+- This process is weak in the direction it was layered in (the $z$-axis).
 
 
 

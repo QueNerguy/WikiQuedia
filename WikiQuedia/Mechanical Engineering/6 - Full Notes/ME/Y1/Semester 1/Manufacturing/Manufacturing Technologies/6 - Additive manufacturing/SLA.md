@@ -18,7 +18,7 @@ This process is for __polymers__ only.
 - The strength of the product is not direction dependent.
 ##### Negative
 - The properties of the product change with time due to the nature of polymers.
-- This process requires supports for printing certain parts.
+- This process requires supports for the printing of certain parts.
 
 
 
