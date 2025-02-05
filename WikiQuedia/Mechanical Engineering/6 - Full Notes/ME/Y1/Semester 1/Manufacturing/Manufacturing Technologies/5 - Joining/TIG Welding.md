@@ -9,8 +9,9 @@ Type: #welding, #arc_welding
 ---
 # TIG Welding
 ### Process
-<u>T</u>ungsten <u>I</u>nert <u>G</u>as welding, or gas tungten arc welding, uses an electrode of tungsten, which is not consumed, to create a plasma arc. A current flows from the electrode to the [workpiece](Manufacturing%20Technologies%20Overview.md#Terms%20and%20Disambiguation), through an electrically conductive gas, creating plasma where it flows. This plasma melts the metal locally, allowing for great precision.
-This process is very similar to [shielded metal arc welding](shielded%20metal%20arc%20welding), but it does not consume the electrode.
+<u>T</u>ungsten <u>I</u>nert <u>G</u>as welding, or gas tungten arc welding, uses an electrode of tungsten, which is not consumed, to create a [plasma arc](plasma%20working). A current flows from the electrode to the [workpiece](Manufacturing%20Technologies%20Overview.md#Terms%20and%20Disambiguation), through an electrically conductive gas, creating plasma where it flows. This plasma melts the metal locally, allowing for great precision.
+##### Similar Processes
+This process is very similar to [shielded metal arc welding](shielded%20metal%20arc%20welding), but it does not consume the electrode, and the electrode and the [workpiece](Manufacturing%20Technologies%20Overview.md#Terms%20and%20Disambiguation) don't make direct contact. In TIG the electrons - and therefore the plasma arc - are guided through the gas instead.
 
 ### Characteristics
 This process is for __electrically conductive metals__ only.
@@ -18,8 +19,10 @@ This process is for __electrically conductive metals__ only.
 - This process allows the welder a great deal of control, resulting in stronger, more consistent welds.
 ##### Negative
 - This method requires electrically conductive metals.
-- This method is hard to master.
 - This method is relatively slow.
+- This process requires gas release.
+- This process has a big [heat affected zone](Crystal%20Manipulation%20and%20Deformation#hot%20deformation).
+- This process can create significant [thermal distortion](Manufacturing%20Technologies%20Overview#Terms%20and%20Disambiguation).
 
 
 

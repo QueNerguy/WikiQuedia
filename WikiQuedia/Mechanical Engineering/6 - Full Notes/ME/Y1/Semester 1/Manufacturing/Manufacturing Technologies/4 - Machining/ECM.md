@@ -9,7 +9,9 @@ Type: #machining
 ---
 # ECM
 ### Process
-This process is similar to [EDM](edm), but it uses a chemical process to remove material, and it has no [tool](Manufacturing%20Technologies%20Overview.md#Terms%20and%20Disambiguation) wear. In this process a cathode moves along the [workpiece](Manufacturing%20Technologies%20Overview.md#Terms%20and%20Disambiguation). An electrical charge runs from the electrode to the workpiece, charging the workpiece. A small bit of the workpiece then dissolves with the ion-filled-fluid, an electrolyte, that it is submerged in. The fluid then carries away the waste products[^elec].
+In ECM a cathode moves along the [workpiece](Manufacturing%20Technologies%20Overview.md#Terms%20and%20Disambiguation), with an electrical charge shooting from the electrode to the workpiece, charging the workpiece. A small bit of the workpiece then dissolves with the ion-filled-fluid, an electrolyte, that it is submerged in. The fluid then carries away the waste products[^elec].
+##### Similar Processes
+This process is similar to [EDM](edm), but it uses a chemical process to remove material, and it has the advantage of having no [tool](Manufacturing%20Technologies%20Overview.md#Terms%20and%20Disambiguation) wear.
 
 ### Characteristics
 This process is for __electrically conductive metals__ only.
@@ -39,4 +41,4 @@ This process is very suitable for mold creation and tool production because of i
 
 
 ---
-__[Home](Example.md)__
+__[Home](Manufacturing%20Technologies%20Overview.md)__

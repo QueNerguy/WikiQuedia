@@ -10,6 +10,7 @@ Type: #shaping_and_forming, #3D_deforming
 # Forging
 ### Process
 In forging a material is formed by applying compressive forces. This can be done either by hitting a material with a hammer, or pressing it with a [die](Manufacturing%20Technologies%20Overview.md#Terms%20and%20Disambiguation).
+This process can create significant [thermal distortion](Manufacturing%20Technologies%20Overview#Terms%20and%20Disambiguation).
 #### Methods
 ##### Hot forging
 Hot forging requires less force than [cold forging](#cold%20forging) because the high temperature softens the metal. Because [recrystallization](Crystal%20Manipulation%20and%20Deformation#hot%20deformation) is possible at elevated temperatures, hot forged products have good grain and stress flow[^flow], but in turn do have a rougher surface.
