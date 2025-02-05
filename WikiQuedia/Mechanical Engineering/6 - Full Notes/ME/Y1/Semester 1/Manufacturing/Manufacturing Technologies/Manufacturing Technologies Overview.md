@@ -113,7 +113,7 @@ Manufacturing%20Technologies%20Overview#Terms%20and%20Disambiguation
 - ___Punch:___ A Tool used to indent or penetrate a surface.
 - ___Lathe:___ A machine tool that spins a [workpiece](Manufacturing%20Technologies%20Overview.md#Terms%20and%20Disambiguation) around in order to be able to perform several machining processes on it, like [turning](physical%20machining%20methods#turning).
 - ___Thermal distortion:___ Because of the heat produced by a process a product might warp when cooling off slowly. This could lead to: __1.__ shrinkage of the [workpiece](Manufacturing%20Technologies%20Overview.md#Terms%20and%20Disambiguation) or weld, __2.__ waviness along flat surfaces, __3.__ bending of the workpiece or joint.
-- ___3D printing:___ 3D printing, or _additive manufacturing_, is a process where a printer is used to print products in 3 dimensions. Though the terms 3D printing is usually interchanged with the term for the process of [fused deposition modelling](Fused%20Deposition%20Modelling.md), this process is just a category within 3D printing.
+- ___3D printing:___ 3D printing, or _additive manufacturing_, is a process where a printer is used to print products in 3 dimensions, by adding material, never removing or deforming it. Though the term 3D printing is usually interchanged with the term for the process of [fused deposition modelling](Fused%20Deposition%20Modeling.md), this process is just a category within 3D printing.
 
 
 

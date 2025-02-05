@@ -16,7 +16,7 @@ This process is for __electrically conductive metals__ only.
 This process comes with [heat induced property alteration](crystal%20manipulation%20and%20deformation).
 ##### Positive
 - This process creates smooth and clean edges at the cut.
-- This process is relatively fast.
+- This process takes relatively little time.
 ##### Negative
 - This process causes a big [heat affected zone](Crystal%20Manipulation%20and%20Deformation#hot%20deformation).
 

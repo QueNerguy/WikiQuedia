@@ -21,9 +21,9 @@ This process is suitable for __metals, polymers and ceramics__, but metals requi
 - This process has a high accuracy.
 - This method allows for multiple materials and colors to be layered simultaneously.
 - This method allows for metals, polymers, ceramics and more to be used, making it very versatile.
-- This method is fast.
+- This method can operate at a high speed.
 ##### Negative
-- This process requires supports for the printing of certain parts.
+- This process (seldomly) requires supports for the printing of certain parts.
 - Not suitable for structural parts, because of the binder material being the source of strength in a part.
 - This method has a rough surface finish and may require machining afterward.
 

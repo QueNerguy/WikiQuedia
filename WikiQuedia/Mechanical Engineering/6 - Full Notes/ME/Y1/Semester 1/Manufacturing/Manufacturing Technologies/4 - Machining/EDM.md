@@ -23,8 +23,8 @@ This process produces no [heat induced property alteration](crystal%20manipulati
 > [!abstract] Extra
 This process is very suitable for mold creation and tool production because of it's incredible precision.
 ##### Negative
-- This process is very slow.
-- This process requires conductive metals
+- This process operates at a low speed.
+- This process requires electrically conductive metals
 - This process requires a bath and the fluid to entirely submerge the [workpiece](Manufacturing%20Technologies%20Overview.md#Terms%20and%20Disambiguation), which means that big shapes are possible as long as the machine can reach the size, but production gets exponensially more expensive as size increases.
 
 

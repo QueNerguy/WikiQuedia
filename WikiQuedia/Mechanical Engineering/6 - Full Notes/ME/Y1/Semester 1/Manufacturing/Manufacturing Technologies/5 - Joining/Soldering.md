@@ -15,8 +15,8 @@ Soldering is a joining method that is very similar to [brazing](brazing), in tha
 ### Characteristics
 This process is suitable for __all materials with a high enough melting point__.
 ##### Positive
-- This process is fast.
-- This process is cheap.
+- This method can operate at a high speed.
+- This process is inexpensive.
 - This process has a negligible [heat affected zone](Crystal%20Manipulation%20and%20Deformation#hot%20deformation).
 - This process produces negligible [thermal distortion](Manufacturing%20Technologies%20Overview#Terms%20and%20Disambiguation).
 ##### Negative

@@ -23,7 +23,7 @@ This process is for __electrically conductive metals__ only.
 - This process also works for blocks of metal, not just sheets.
 ##### Negative
 - This process only works for conductive metals.
-- This process is very slow.
+- This process operates at a low speed.
 
 
 
