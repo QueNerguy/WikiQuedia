@@ -15,7 +15,7 @@
 		- consider the options for taking actions, often yes or no do or do not, but sometimes coooperative options can yield interesting solutions.
 	5. __
 - ___Types___
-	- __utalitarianism__ <br>The goodness of an action is entirely dependent on the goodness of it's consequences. Therefore no signel action can be wrong, as long as the consequences are positive -> the ends satisfy the means.
+	- __utilitarianism__ <br>The goodness of an action is entirely dependent on the goodness of it's consequences. Therefore no signel action can be wrong, as long as the consequences are positive -> the ends satisfy the means.
 		- Whatever maximises happiness
 		- happiness = presence of pleasure _and_ absence of pain
 		- __To determine value:__
