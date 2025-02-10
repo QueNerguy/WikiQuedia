@@ -1,6 +1,6 @@
 2025-01-27 12:57
 
-Status: #child
+Status: #adult
 
 Tags: [[metal working]], [[plastic working]], [[molding]], [[deforming processes]], [[seperating processes]], [[machining processes]], [[Joining]], [[additive manufacturing]], [[welding]]
 
@@ -121,7 +121,7 @@ Manufacturing%20Technologies%20Overview#Terms%20and%20Disambiguation
 
 # Based on:
 1. H.J.J. Kals, _Industrial Production, The Manufacture of Mechanical Products_, 5th ed.
-2. Vrije Universiteit, M. Mehrpouya, [link to course](https://canvas.utwente.nl/courses/15351)
+2. Vrije Universiteit, M. Mehrpouya, [link to course](https://canvas.utwente.nl/courses/15351).
 
 # References:
 [^pattern]: [Wikipedia - Pattern (casting)](https://en.wikipedia.org/wiki/Pattern_(casting))
