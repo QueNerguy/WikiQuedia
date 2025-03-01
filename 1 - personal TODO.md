@@ -1,0 +1,8 @@
+- Studie gerelateerd:
+	- [ ] Thermo lecture inhalen
+	- [ ] Thermo lecture apparaten en systemen vergelijkingen  overnemen
+	- [ ] math assignment maken
+	- [ ] programming opdracht afmaken (?)
+	- [ ] LaTeX leren en filmpjes kijken
+	- [ ] tata steel sign up, zie announcement
+	- [ ] modpro programmaatje installeren, zie announcement
