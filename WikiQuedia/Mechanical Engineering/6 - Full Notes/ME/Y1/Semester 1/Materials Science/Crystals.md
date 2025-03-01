@@ -1,8 +1,5 @@
-2025-01-27 10:36
-
-Status: #child #missingLink%%Linkje naar advanced deformation stuff%%
-
 Tags: [[crystallography]], [[lattice structures]], [[metal working]]
+27-01-2025
 
 ---
 # Crystals
@@ -31,6 +28,8 @@ These [unit cells](#unit%20cells) are based on a hexagon, but are usually simpli
 
 
 
+---
+_Status:_ #child #missingLink%%Linkje naar advanced deformation stuff%%
 
 ---
 # References:

@@ -1,5 +1,5 @@
 ### Angular Acceleration
-2025-01-28
+28-01-2025
 #### Referencing:
 [Wikipedia - Angular acceleration](https://en.wikipedia.org/wiki/Angular_acceleration)
 

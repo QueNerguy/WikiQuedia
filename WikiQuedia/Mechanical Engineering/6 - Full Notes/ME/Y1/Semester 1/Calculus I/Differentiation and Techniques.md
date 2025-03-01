@@ -1,8 +1,5 @@
-2025-01-25 17:00
-
-Status: #adult
-
 Tags: [[differentiation]], [[calculus]], [[interval syntax]]
+25-01-2025
 
 ---
 # Differentiation and Techniques
@@ -76,8 +73,6 @@ See also: [RoT Integration](Integration%20and%20Techniques.md#Rules%20of%20Thumb
 
 
 
-
-
 ---
 
 
@@ -89,6 +84,13 @@ See also: [RoT Integration](Integration%20and%20Techniques.md#Rules%20of%20Thumb
 1. [Derivative calculator](https://www.derivative-calculator.net/)
 2. Wolfree Alpha %% I cant currently find a working link tho :( %%
 3. [Desmos (for graphing)](https://www.desmos.com/calculator)
+4. 
+---
+__[Home](1%20-%20Learning%20Overview%20(Calculus%20I))__
+
+---
+_Status:_ #adult
+
 ---
 
 # References:
@@ -99,6 +101,3 @@ See also: [RoT Integration](Integration%20and%20Techniques.md#Rules%20of%20Thumb
 2. Openstax, _Calculus Volume 1_, [link](https://openstax.org/details/books/calculus-volume-1)
 3. Openstax, _Calculus Volume 2_, [link](https://openstax.org/details/books/calculus-volume-2)
 4. Openstax, _Calculus Volume 3_, [link](https://openstax.org/details/books/calculus-volume-3)
-
----
-__[Home](1%20-%20Learning%20Overview%20(Calculus%20I))__

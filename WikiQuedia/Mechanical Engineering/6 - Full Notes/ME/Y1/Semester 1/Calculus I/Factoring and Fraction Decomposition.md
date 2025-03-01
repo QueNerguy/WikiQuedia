@@ -1,8 +1,5 @@
-2025-01-26 12:42
-
-Status: #adult
-
 Tags: [[general math rules]], [[algebra]]
+26-01-2025
 
 ---
 # Factoring and Fraction Decomposition
@@ -48,7 +45,11 @@ In some scenarios there are other ways of simplifying that are better suited.
 
 
 
+---
+__[Home](1%20-%20Learning%20Overview%20(Calculus%20I))__
 
+---
+_Status:_ #adult
 
 ---
 # References:

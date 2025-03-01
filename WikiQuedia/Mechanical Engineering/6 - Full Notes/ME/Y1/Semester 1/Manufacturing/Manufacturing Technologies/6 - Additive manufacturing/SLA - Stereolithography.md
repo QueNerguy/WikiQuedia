@@ -1,8 +1,5 @@
-2025-02-04 23:10
-
-Status: #adult
-
 Tags: [[additive manufacturing]], [[polymer working]]
+04-02-2025
 
 Type: #additive, #polymer_based_3D_printing
 
@@ -27,12 +24,14 @@ This process is for __polymers__ only.
 
 
 
+---
+__[Home](Manufacturing%20Technologies%20Overview.md)__
 
+---
+_Status:_ #adult
 
 ---
 # References:
 [^ijsberg]: [Wikipedia - Stereolithography](https://en.wikipedia.org/wiki/Stereolithography)
 1. H.J.J. Kals, _Industrial Production, The Manufacture of Mechanical Products_, 5th ed.
 2. Vrije Universiteit, M. Mehrpouya, [link to course](https://canvas.utwente.nl/courses/15351)
----
-__[Home](Manufacturing%20Technologies%20Overview.md)__

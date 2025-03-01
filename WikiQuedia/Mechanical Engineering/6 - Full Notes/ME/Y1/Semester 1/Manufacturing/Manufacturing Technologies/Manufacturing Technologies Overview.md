@@ -1,8 +1,6 @@
-2025-01-27 12:57
-
 Status: #adult
 
-Tags: [[metal working]], [[plastic working]], [[molding]], [[deforming processes]], [[seperating processes]], [[machining processes]], [[Joining]], [[additive manufacturing]], [[welding]]
+Tags: [[metal working]], [[plastic working]], [[molding]], [[deforming processes]], [[seperating processes]], [[machining processes]], [[Joining]], [[additive manufacturing]], [[welding]], [[design rules]]
 
 Type: #hub
 

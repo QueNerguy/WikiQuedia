@@ -1,8 +1,5 @@
-2025-02-04 22:32
-
-Status: #adult
-
 Tags: [[Joining]], [[metal working]]
+04-02-2025
 
 Type: #non-welding
 
@@ -30,7 +27,11 @@ This process is suitable for __all materials with a high enough melting point__.
 
 
 
+---
+__[Home](Manufacturing%20Technologies%20Overview.md)__
 
+---
+_Status:_ #adult
 
 ---
 # References:
@@ -38,5 +39,3 @@ This process is suitable for __all materials with a high enough melting point__.
 [^cap]: [Wikipedia - Capillary action](https://en.wikipedia.org/wiki/Capillary_action)
 1. H.J.J. Kals, _Industrial Production, The Manufacture of Mechanical Products_, 5th ed.
 2. Vrije Universiteit, M. Mehrpouya, [link to course](https://canvas.utwente.nl/courses/15351)
----
-__[Home](Manufacturing%20Technologies%20Overview.md)__

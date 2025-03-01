@@ -1,8 +1,5 @@
-2025-01-26 10:44
-
-Status: #adult
-
 Tags: [[calculus]], [[limits]], [[interval syntax]]
+26-01-2025
 
 ---
 # Calculating Limits
@@ -48,9 +45,12 @@ $$a^{\infty}\gg\infty^{a}\gg\log_{a}\left(\infty\right)$$Therefore, in the previ
 
 
 
+---
+__[Home](1%20-%20Learning%20Overview%20(Calculus%20I))__
+
+---
+_Status:_ #adult
 
 ---
 # References:
 1. Robert A. Adams, Christopher Essex, _Calculus A Complete Course_, 9th ed.
----
-__[Home](1%20-%20Learning%20Overview%20(Calculus%20I))__

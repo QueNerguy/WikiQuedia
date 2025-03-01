@@ -1,8 +1,5 @@
-2025-02-04 21:58
-
-Status: #baby
-
 Tags: [[Joining]], [[metal working]], [[welding]]
+04-02-2025
 
 Type: #welding, #resistance_and_friction_welding 
 
@@ -32,12 +29,14 @@ This process comes with relatively little [heat induced property alteration](cry
 
 
 
+---
+__[Home](Manufacturing%20Technologies%20Overview.md)__
 
+---
+_Status:_ #baby
 
 ---
 # References:
 
 1. H.J.J. Kals, _Industrial Production, The Manufacture of Mechanical Products_, 5th ed.
 2. Vrije Universiteit, M. Mehrpouya, [link to course](https://canvas.utwente.nl/courses/15351)
----
-__[Home](Manufacturing%20Technologies%20Overview.md)__

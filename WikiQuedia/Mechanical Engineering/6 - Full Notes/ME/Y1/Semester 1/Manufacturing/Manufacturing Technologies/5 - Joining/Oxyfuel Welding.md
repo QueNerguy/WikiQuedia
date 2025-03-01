@@ -1,8 +1,5 @@
-2025-02-03 22:56
-
-Status: #adult
-
 Tags: [[Joining]], [[metal working]], [[welding]]
+03-02-2025
 
 Type: #welding, #arc_welding
 
@@ -30,12 +27,14 @@ This process comes with a lot of [heat induced property alteration](crystal%20ma
 
 
 
+---
+__[Home](Manufacturing%20Technologies%20Overview.md)__
 
+---
+_Status:_ #adult
 
 ---
 # References:
 [^gas]: [Wikipedia - Oxy-fuel welding and cutting](https://en.wikipedia.org/wiki/Oxy-fuel_welding_and_cutting)
 1. H.J.J. Kals, _Industrial Production, The Manufacture of Mechanical Products_, 5th ed.
 2. Vrije Universiteit, M. Mehrpouya, [link to course](https://canvas.utwente.nl/courses/15351)
----
-__[Home](Manufacturing%20Technologies%20Overview.md)__

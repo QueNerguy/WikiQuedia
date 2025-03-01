@@ -1,8 +1,5 @@
-2025-01-27 11:25
-
-Status: #child #missingLink%%Linkje naar hoe temp changing material properties%%
-
 Tags: [[crystallography]], [[lattice structures]], [[metal working]]
+27-01-2025
 
 ---
 # Crystal Manipulation
@@ -21,7 +18,8 @@ Becauses the material recrystallizes during hot processes stress flow[^flow] in 
 
 
 
-
+---
+_Status:_ #child #missingLink%%Linkje naar hoe temp changing material properties%%
 
 ---
 # References:

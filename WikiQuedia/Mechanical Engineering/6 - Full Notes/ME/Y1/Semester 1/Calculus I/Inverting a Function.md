@@ -1,8 +1,5 @@
-2025-01-26 12:11
-
-Status: #adult
-
 Tags: [[calculus]], [[algebra]]
+26-01-2025
 
 ---
 # Inverting a Function
@@ -25,13 +22,14 @@ When calculating the inverse it's important to look at whether the graph that's 
 
 
 
+---
+__[Home](1%20-%20Learning%20Overview%20(Calculus%20I))__
 
-
+---
+_Status:_ #adult
 
 ---
 # References:
 [^inverse_wiki]: [Wikipedia - Inverse function theorem](https://en.wikipedia.org/wiki/Inverse_function_theorem)
 [^root]: A root of a function is the solution of a function where it is equal to $0$. Finding the roots of $f(x)$ means finding wehre $f(x)=0$.
 1. Robert A. Adams, Christopher Essex, _Calculus A Complete Course_, 9th ed.
----
-__[Home](1%20-%20Learning%20Overview%20(Calculus%20I))__

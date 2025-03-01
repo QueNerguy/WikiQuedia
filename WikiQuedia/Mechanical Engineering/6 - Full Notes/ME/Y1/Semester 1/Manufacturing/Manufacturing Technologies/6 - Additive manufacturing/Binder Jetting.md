@@ -1,8 +1,5 @@
-2025-02-05 00:26
-
-Status: #adult
-
 Tags: [[additive manufacturing]], [[polymer working]], [[plastic working]], [[metal working]]
+05-02-2025
 
 Type: #additive, #metal_based_3D_printing, #polymer_based_3D_printing
 
@@ -33,12 +30,14 @@ This process is suitable for __metals, polymers and ceramics__, but metals requi
 
 
 
+---
+__[Home](Manufacturing%20Technologies%20Overview.md)__
 
+---
+_Status:_ #adult
 
 ---
 # References:
 [^bind1]: [Lboro - Binder jetting](https://www.lboro.ac.uk/research/amrg/about/the7categoriesofadditivemanufacturing/binderjetting/)
 1. H.J.J. Kals, _Industrial Production, The Manufacture of Mechanical Products_, 5th ed.
 2. Vrije Universiteit, M. Mehrpouya, [link to course](https://canvas.utwente.nl/courses/15351)
----
-__[Home](Manufacturing%20Technologies%20Overview.md)__

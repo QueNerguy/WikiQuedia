@@ -1,8 +1,5 @@
-2025-01-28 20:03
-
-Status: #adult
-
 Tags: [[metal working]], [[deforming processes]], [[extrusion processes]]
+28-01-2025
 
 Type: #shaping_and_forming, #extrusion_and_drawing
 
@@ -34,12 +31,14 @@ This process is for __metals__ only. %%duhh%%
 
 
 
+---
+__[Home](Manufacturing%20Technologies%20Overview.md)__
 
+---
+_Status:_ #adult
 
 ---
 # References:
 
 1. H.J.J. Kals, _Industrial Production, The Manufacture of Mechanical Products_, 5th ed.
 2. Vrije Universiteit, M. Mehrpouya, [link to course](https://canvas.utwente.nl/courses/15351)
----
-__[Home](Manufacturing%20Technologies%20Overview.md)__

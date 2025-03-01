@@ -1,8 +1,5 @@
-2025-02-05 23:31
-
-Status: #adult
-
 Tags: [[additive manufacturing]], [[plastic working]], [[metal working]]
+05-02-2025
 
 Type: #additive, #metal_based_3D_printing, #plastic_based_3D_printing
 
@@ -31,12 +28,14 @@ This process is for __metals and plastics__ only. Plastics are excluded from hea
 
 
 
+---
+__[Home](Manufacturing%20Technologies%20Overview.md)__
 
+---
+_Status:_ #adult
 
 ---
 # References:
 
 1. H.J.J. Kals, _Industrial Production, The Manufacture of Mechanical Products_, 5th ed.
 2. Vrije Universiteit, M. Mehrpouya, [link to course](https://canvas.utwente.nl/courses/15351)
----
-__[Home](Manufacturing%20Technologies%20Overview.md)__

@@ -1,8 +1,5 @@
-2025-02-04 12:41
-
-Status: #adult
-
 Tags: [[Joining]], [[metal working]], [[welding]]
+04-02-2025
 
 Type: #welding, #arc_welding
 
@@ -34,12 +31,14 @@ This process comes with a lot of [heat induced property alteration](crystal%20ma
 
 
 
+---
+__[Home](Manufacturing%20Technologies%20Overview.md)__
 
+---
+_Status:_ #adult
 
 ---
 # References:
 [^magmig]: [Wikipedia - Gas metal arc welding](https://en.wikipedia.org/wiki/Gas_metal_arc_welding)
 1. H.J.J. Kals, _Industrial Production, The Manufacture of Mechanical Products_, 5th ed.
 2. Vrije Universiteit, M. Mehrpouya, [link to course](https://canvas.utwente.nl/courses/15351)
----
-__[Home](Manufacturing%20Technologies%20Overview.md)__

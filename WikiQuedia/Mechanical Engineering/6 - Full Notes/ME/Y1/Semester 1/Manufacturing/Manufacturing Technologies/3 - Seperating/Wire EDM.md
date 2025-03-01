@@ -1,8 +1,5 @@
-2025-01-29 18:36
-
-Status: #adult
-
 Tags: [[metal working]], [[seperating processes]], [[hard metals suitable]]
+29-01-2025
 
 Type: #seperating, #mystical
 
@@ -32,12 +29,14 @@ This process is for __electrically conductive metals__ only.
 
 
 
+---
+__[Home](Manufacturing%20Technologies%20Overview.md)__
 
+---
+_Status:_ #adult
 
 ---
 # References:
 
 1. H.J.J. Kals, _Industrial Production, The Manufacture of Mechanical Products_, 5th ed.
 2. Vrije Universiteit, M. Mehrpouya, [link to course](https://canvas.utwente.nl/courses/15351)
----
-__[Home](Manufacturing%20Technologies%20Overview.md)__

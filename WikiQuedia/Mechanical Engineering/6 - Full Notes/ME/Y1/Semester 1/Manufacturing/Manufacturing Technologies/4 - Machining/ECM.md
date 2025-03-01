@@ -1,8 +1,5 @@
-2025-02-03 22:15
-
-Status: #adult
-
 Tags: [[metal working]], [[machining processes]], [[hard metals suitable]]
+03-02-2025
 
 Type: #machining
 
@@ -34,11 +31,15 @@ This process is very suitable for mold creation and tool production because of i
 
 
 
+---
+__[Home](Manufacturing%20Technologies%20Overview.md)__
+
+---
+_Status:_ #adult
 
 ---
 # References:
+1. H.J.J. Kals, _Industrial Production, The Manufacture of Mechanical Products_, 5th ed.
+2. Vrije Universiteit, M. Mehrpouya, [link to course](https://canvas.utwente.nl/courses/15351)
 [^elec]: [Wikipedia - Electrochemical machining](https://en.wikipedia.org/wiki/Electrochemical_machining)
 
-
----
-__[Home](Manufacturing%20Technologies%20Overview.md)__

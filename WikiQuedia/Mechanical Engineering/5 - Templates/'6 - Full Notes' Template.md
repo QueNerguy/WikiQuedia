@@ -1,8 +1,5 @@
-{{date}} {{time}}
-
-Status: #baby
-
 Tags: 
+{{date}}
 
 ---
 # {{Title}}
@@ -16,11 +13,12 @@ Tags:
 
 
 
+---
+__[Home](Example.md)__
 
+---
+_Status:_ #baby
 
 ---
 # References:
 
-
----
-__[Home](Example.md)__

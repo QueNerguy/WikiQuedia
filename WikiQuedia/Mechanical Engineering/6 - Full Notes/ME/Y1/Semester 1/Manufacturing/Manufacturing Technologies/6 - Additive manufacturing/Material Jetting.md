@@ -1,8 +1,5 @@
-2025-02-05 22:56
-
-Status: #adult
-
 Tags: [[additive manufacturing]], [[polymer working]]
+05-02-2025
 
 Type: #additive, #polymer_based_3D_printing
 
@@ -33,12 +30,14 @@ This process is for __polymers and waxes__ only.
 
 
 
+---
+__[Home](Manufacturing%20Technologies%20Overview.md)__
 
+---
+_Status:_ #adult
 
 ---
 # References:
 [^jet1]: [Lboro - Material jetting](https://www.lboro.ac.uk/research/amrg/about/the7categoriesofadditivemanufacturing/materialjetting/)
 1. H.J.J. Kals, _Industrial Production, The Manufacture of Mechanical Products_, 5th ed.
 2. Vrije Universiteit, M. Mehrpouya, [link to course](https://canvas.utwente.nl/courses/15351)
----
-__[Home](Manufacturing%20Technologies%20Overview.md)__

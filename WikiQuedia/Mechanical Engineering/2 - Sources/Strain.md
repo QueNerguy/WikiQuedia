@@ -1,5 +1,5 @@
 ### Strain
-2025-01-27
+27-01-2025
 #### Referencing:
 [Wikipedia - Strain](https://en.wikipedia.org/wiki/Strain_(mechanics))
 
