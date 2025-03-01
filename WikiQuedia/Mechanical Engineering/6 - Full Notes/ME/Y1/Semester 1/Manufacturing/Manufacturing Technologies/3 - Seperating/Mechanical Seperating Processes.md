@@ -26,7 +26,7 @@ A saw is used to part a [workpiece](Manufacturing%20Technologies%20Overview.md#T
 __[Home](Manufacturing%20Technologies%20Overview.md)__
 
 ---
-_Status:_ #child #missingLink%%LINKJE MECHOMAT SHEAR STRESS%%
+_Status:_ #adult #missingLink%%LINKJE MECHOMAT SHEAR STRESS%%
 
 ---
 # References:
