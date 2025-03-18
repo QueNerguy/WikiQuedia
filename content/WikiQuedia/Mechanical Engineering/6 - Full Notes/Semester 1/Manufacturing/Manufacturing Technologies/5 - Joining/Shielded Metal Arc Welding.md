@@ -1,5 +1,4 @@
-Tags: [[Joining]], [[metal working]], [[welding]]
-03-02-2025
+Tags: [[Joining]], [[metal working]], [[welding]] <br>03-02-2025
 
 Type: #welding, #arc_welding  
 

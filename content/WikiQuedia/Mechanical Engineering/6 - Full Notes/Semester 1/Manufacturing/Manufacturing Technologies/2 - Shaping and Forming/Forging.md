@@ -1,5 +1,4 @@
-Tags: [[deforming processes]], [[metal working]]
-27-01-2025
+Tags: [[deforming processes]], [[metal working]] <br>27-01-2025
 
 Type: #shaping_and_forming, #3D_deforming
 

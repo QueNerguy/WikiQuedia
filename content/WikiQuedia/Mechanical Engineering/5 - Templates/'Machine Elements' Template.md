@@ -1,5 +1,10 @@
-Tags: 
-{{date}}
+---
+title: "{{Title}}"
+draft: false
+---
+
+
+Tags:    <br>{{date}}
 
 ---
 # {{Title}}

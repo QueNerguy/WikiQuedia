@@ -1,5 +1,4 @@
-Tags: [[calculus]], [[differentiation]], [[integration]], [[interval syntax]], [[limits]]
-26-01-2025
+Tags: [[calculus]], [[differentiation]], [[integration]], [[interval syntax]], [[limits]] <br>26-01-2025
 
 ---
 # Integration and Techniques
@@ -9,7 +8,7 @@ Taking an integral is the reciprocal of [differentiating a function](Differentia
 > Divide by $u^{\prime}$ when taking an integral of just $\tan{(u)}$ for example, out of this list.
 
 ### Notation
-The most standard way to denote the primitive[^primitive] is as ==$F(x)$==
+The most standard way to denote the primitive[^primitive] is as __$F(x)$__
 $$F\left(x\right)=\int_{x=a}^{x=b}f\left(x\right)\mathrm{d}x$$
 The notation under the integral sign ($\int$) denotes the [domain](Intervals;%20Domain%20and%20Range.md#Definitions) over which is integrated. Usually when calculating the integral of a function you calculate the infinite integral ($\int$) to acquire the primitive function and evaluate it over it's domain afterward:
 $$\int_{a}^{b}f\left(x\right)\,\mathrm{d}x=\int_{}^{}f\left(x\right)\,\mathrm{d}x\Bigg|_{x=a}^{x=b}=F\left(x\right)\Bigg|_{x=a}^{x=b}$$
@@ -28,11 +27,11 @@ This method is analogous to [substitution for differentiation](Differentiation%2
 - __Example:__ When given a function like $\int_{}^{}\frac{1}{2x+1}\mathrm{d}x$, it is useful to substitute in such a way that we get $\int_{}^{}\frac{1}{u}du$, that way we can directly integrate. 
 	- Set $u=2x+1$. -> Then: $u^{\prime}=\frac{\mathrm{d}u}{\mathrm{d}x}=2$. Thus: $\mathrm{d}x=\frac12\cdot du$. 
 	- The resulting function is $\int_{}^{}\frac{1}{u}\cdot\frac12du=\frac12\int_{}^{}\frac{1}{u}du$. This function can be evaluated directly from the rules of thumb.
-	- After substitution the resulting function is: $\frac12\cdot\ln\left|2x+1\right|+C_1$.
+	- After substitution the resulting function is: $\frac12\cdot\ln\left|2x+1\right|+C_1$. 
 
->> [!Note]
->> It is imperitive that when substituting $u=f(x)$ the values at which the function is _evaluated_ are also changed in terms of $u$. A function $\int_{x=1}^{x=3}$ when substituted with $u=x^2$ gives upper and lower limits of $u(x=1)=1$ and $u(x=3)=9$ respectively, therefore the integral with substitution becomes: $\int_{u=1}^{u=9}$. This allows for immediate evaluation after calculating the integral in terms of $u$.
->> It _is_ also possible to keep the integral evaluated in terms of $x$ as in the original, but this would require backsubstitution of the $u$ and $v$ values <u>after</u> calculating the integral, resulting in unnecessary steps.
+> [!Note]
+> It is imperitive that when substituting $u=f(x)$ the values at which the function is _evaluated_ are also changed in terms of $u$. A function $\int_{x=1}^{x=3}$ when substituted with $u=x^2$ gives upper and lower limits of $u(x=1)=1$ and $u(x=3)=9$ respectively, therefore the integral with substitution becomes: $\int_{u=1}^{u=9}$. It is now in terms of $u$, which allows for immediate evaluation after calculating the integral in terms by plugging in the values obtained for $u$.
+> It _is_ also possible to keep the integral evaluated in terms of $x$ as in the original. This would require back-substitution of the $u$ and $v$ values, back to terms of $x$ <u>after</u> calculating the integral, resulting in unnecessary steps.
 
 #### Integration by Parts
 This method is based on [the substitution method](#substitution). It is used for even more complicated functions, usually functions that are a combination of two factors of $x$.
@@ -47,12 +46,14 @@ $$\int_{}^{}u\mathrm{d}v=uv-\int_{}^{}v\mathrm{d}u$$
 	2. Here we see the repeating of the $\int_{}^{}u\mathrm{d}v$, and therefore we can apply simple algebra: $$\int_{}^{}u\mathrm{d}v=\left(\ldots\right)-\int_{}^{}u\mathrm{d}v\to2\int_{}^{}u\mathrm{d}v=\left(\ldots\right)\to\int_{}^{}u\mathrm{d}v=\frac12\cdot\left(\ldots\right)$$
 	3. This then yields a solution for the original question $\int_{}^{}u\mathrm{d}v$.
 > [!Note]
-> In this case it is not necessary to substitute with $u=f(x)$ as with the [substitution method](#substitution), because the $f(x)$ is not replaced in the integral as it is with the substitution method, meaning that when calculating $\int_{}^{}u\mathrm{d}v=uv-\int_{}^{}v\mathrm{d}u$ the $u$ and $v$ etc. values are replaced immediately, instead of after integration.
+> In this case it is not necessary to substitute with $u=f(x)$ as with the [substitution method](#substitution), because the function $f(x)$ is not replaced in the integral as it is with the substitution method and the integral stays in terms of $x$, instead of terms of $u$ as we saw previously, meaning that when calculating $\int_{}^{}u\mathrm{d}v=uv-\int_{}^{}v\mathrm{d}u$ the $u$ and $v$ etc. values are replaced by a function $f(x)$ immediately, instead of after integration or not at all, like with the substitution method.
 
 ### Geometrically
 Taking the integral of a function is analagous to summing the area under the curve of the original function. The sign $\int$ is a deformed $\Sigma$. The integral basically sums the area, the _$y$-value_ $\cdot$ _the $x$-value_ as $x$ goes to $0$, -> as $x$ becomes $\mathrm{d}x$. Thus $\Sigma y\cdot \mathrm{d}x$, with as many steps as there are $\mathrm{d}x$ in $\left\lbrack x_1,x_2\right\rbrack$[^intervals] ->  $\int y\cdot \mathrm{d}x$. 
 
 ### Rules of Thumb
+By rules of thumb (RoT) I mean quick equations and their solution, in general terms.
+
 1. (General rule for non-variable powers)$$\int_{}^{}{u^{n}d}x=\frac{1}{n+1}\cdot u^{n+1}\cdot\frac{1}{u^{\prime}}^{}$$
 2. $\frac{1}{u}$ ($1$ over $u$) $$\int_{}^{}\frac{1}{u}\mathrm{d} x=\ln\left|u\right|\cdot\frac{1}{u^{\prime}}$$
 3. (sine, cosine, tangent)
@@ -66,7 +67,7 @@ Taking the integral of a function is analagous to summing the area under the cur
 5. (natural logarithm)$$\int_{}^{}\ln\left(x\right)\,\mathrm{d}x=x\ln\left|x\right|-x$$
 
 > [!warning] Look out!
-> These solutions are the solutions to the general form, but they are missing a possible $C$ value. When differentiating a value, like $5$, it disappears. Therefore we have to assume there could be a value $C$ on top of $F(x)$ after integration.
+> These solutions are the solutions to the general form, but they are missing a possible $C$ value. When _differentiating_ a value, like $5$, it disappears. Therefore we have to assume there could be a value $C$ appearing with $F(x)$ after doing the reverse operation, integration.
 
 See also: [RoT differentiation](Differentiation%20and%20Techniques.md#Rules%20of%20Thumb), [General RoT](quick%20math%20equations.md).
 

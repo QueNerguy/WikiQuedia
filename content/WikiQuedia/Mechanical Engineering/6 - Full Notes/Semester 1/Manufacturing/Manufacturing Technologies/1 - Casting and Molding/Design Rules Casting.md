@@ -1,5 +1,4 @@
-Tags: [[design rules]], [[metal working]], [[plastic working]], [[molding]]
-27-01-2025
+Tags: [[design rules]], [[metal working]], [[plastic working]], [[molding]] <br>27-01-2025
 
 Type: #casting, #design_rules
 

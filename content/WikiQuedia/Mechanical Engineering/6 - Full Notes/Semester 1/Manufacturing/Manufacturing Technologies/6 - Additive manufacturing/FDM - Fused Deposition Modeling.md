@@ -1,5 +1,4 @@
-Tags: [[additive manufacturing]], [[plastic working]]
-04-02-2025
+Tags: [[additive manufacturing]], [[plastic working]] <br>04-02-2025
 
 Type: #additive, #plastic_based_3D_printing
 

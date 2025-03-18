@@ -1,5 +1,4 @@
-Tags: [[general math rules]], [[algebra]]
-26-01-2025
+Tags: [[general math rules]], [[algebra]] <br>26-01-2025
 
 ---
 # Factoring and Fraction Decomposition

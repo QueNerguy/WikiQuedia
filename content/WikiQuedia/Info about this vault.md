@@ -1,3 +1,11 @@
+---
+title: Info about this vault
+draft: true
+---
+```Title```: The title of the page on the website. This _can_ be different than the name of the note.
+```Draft```: Whether to publish the page or not. Draft = true -> No publish
+
+
 [Obsidian Help](https://help.obsidian.md)  
 
 

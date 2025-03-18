@@ -1,5 +1,4 @@
-Tags: [[calculus]], [[algebra]]
-26-01-2025
+Tags: [[calculus]], [[algebra]] <br>26-01-2025
 
 ---
 # Inverting a Function

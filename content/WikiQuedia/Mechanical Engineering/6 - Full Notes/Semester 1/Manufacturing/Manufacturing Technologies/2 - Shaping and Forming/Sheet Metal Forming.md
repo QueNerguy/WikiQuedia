@@ -1,5 +1,4 @@
-Tags: [[metal working]], [[deforming processes]], [[extrusion processes]]
-28-01-2025
+Tags: [[metal working]], [[deforming processes]], [[extrusion processes]] <br>28-01-2025
 
 Type: #shaping_and_forming, #extrusion_and_drawing
 

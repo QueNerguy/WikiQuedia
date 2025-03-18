@@ -1,5 +1,4 @@
-Tags: [[metal working]], [[molding]]
-27-01-2025
+Tags: [[metal working]], [[molding]] <br>27-01-2025
 
 Type: #casting, #temporary
 

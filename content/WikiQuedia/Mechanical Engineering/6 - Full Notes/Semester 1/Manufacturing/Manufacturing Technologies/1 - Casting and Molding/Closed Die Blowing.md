@@ -1,5 +1,4 @@
-Tags: [[plastic working]], [[molding]], [[extrusion processes]]
-27-01-2025
+Tags: [[plastic working]], [[molding]], [[extrusion processes]] <br>27-01-2025
 
 Type: #casting, #permanent
 

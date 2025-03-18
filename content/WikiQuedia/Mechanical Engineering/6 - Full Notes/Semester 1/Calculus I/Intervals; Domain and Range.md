@@ -1,5 +1,4 @@
-Tags: [[algebra]], [[interval syntax]]
-26-01-2025
+Tags: [[algebra]], [[interval syntax]] <br>26-01-2025
 
 ---
 # Intervals; Domain and Range
@@ -12,9 +11,9 @@ Intervals are a way of limiting the _[domain](#Domains)_ and _range_ of a functi
 
 ### Domains
 A domain can be either _open_, _closed_ or _half open_/_closed_.
-1. An ___open___ domain is a domain where the endpoint(s) are _not_ part of the domain itself, or not defined ($\infty$ for example). The syntax is: ==$\left\lbrack x_1,x_2\right\rbrack$==
-2. A ___closed___ domain is a domain where the endpoints _are_ part of the domain itself. The syntax is: ==$\left( x_1,x_2\right)$== 
-3. A ___half open___ domain is a domain that has one open side and one closed side.The syntax is: ==$\left\lbrack x_1,x_2\right)$==
+1. An ___open___ domain is a domain where the endpoint(s) are _not_ part of the domain itself, or not defined ($\infty$ for example). The syntax is: __$\left\lbrack x_1,x_2\right\rbrack$__
+2. A ___closed___ domain is a domain where the endpoints _are_ part of the domain itself. The syntax is: __$\left( x_1,x_2\right)$__
+3. A ___half open___ domain is a domain that has one open side and one closed side.The syntax is: __$\left\lbrack x_1,x_2\right)$__
 The notation $\left\lbrack x_1,x_2\right\rbrack$ just means $\left\lbrack x_1\to x_2\right\rbrack$.
 
 

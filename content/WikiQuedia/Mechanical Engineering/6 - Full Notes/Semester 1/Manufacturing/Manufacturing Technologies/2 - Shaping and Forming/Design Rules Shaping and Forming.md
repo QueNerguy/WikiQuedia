@@ -1,5 +1,4 @@
-Tags: [[deforming processes]], [[metal working]], [[design rules]]
-27-01-2025
+Tags: [[deforming processes]], [[metal working]], [[design rules]] <br>27-01-2025
 
 Type: #shaping_and_forming, #design_rules
 

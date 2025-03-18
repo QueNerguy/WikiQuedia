@@ -1,5 +1,4 @@
-Tags: [[metal working]], [[machining processes]]
-20-01-2025
+Tags: [[metal working]], [[machining processes]] <br>20-01-2025
 
 Type: #machining
 

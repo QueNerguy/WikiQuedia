@@ -1,5 +1,4 @@
-Tags: [[crystallography]], [[lattice structures]], [[metal working]]
-27-01-2025
+Tags: [[crystallography]], [[lattice structures]], [[metal working]] <br>27-01-2025
 
 ---
 # Crystals

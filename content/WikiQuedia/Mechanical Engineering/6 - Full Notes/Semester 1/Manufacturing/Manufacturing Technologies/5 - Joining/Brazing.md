@@ -1,5 +1,4 @@
-Tags: [[Joining]], [[metal working]]
-04-02-2025
+Tags: [[Joining]], [[metal working]] <br>04-02-2025
 
 Type: #non-welding
 

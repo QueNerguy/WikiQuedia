@@ -1,16 +1,16 @@
-Tags: [[differentiation]], [[calculus]], [[interval syntax]]
-25-01-2025
+Tags: [[differentiation]], [[calculus]], [[interval syntax]] <br>25-01-2025
 
 ---
 # Differentiation and Techniques
 
 ### Notation
 There are a few ways to denote differentiating a function $f\left(x\right)$.
-1. ==$f^{\prime}\left(x\right)$== or ==$\left\lbrack f\left(x\right)\right\rbrack^{\prime}$==, or in multivariable calculus: ==$\left\lbrack f\left(x\right)\right\rbrack_{x}^{\prime}$==. The last notation means differentiating $f\left(x\right)$ with respect to $x$. To increase the amount of times differentiated, add extra accents.
-2. ==$\frac{d}{dx}f\left(x\right)$==, the '_Leibniz notation_'. This notation automatically incorporates multivariability because the operator is directly with respect to $x$. To increase the amount of times differentiated, square the operator.
-3. ==$D\left\lbrack f\left(x\right)\right\rbrack$== or ==$D_{}^{1}\left\lbrack f\left(x\right)\right\rbrack$== or in the case of multivariable calculus: ==$D_{x}^{1}\left\lbrack f\left(x\right)\right\rbrack$==. The last notation means differentiating with respect to $x$. To increase the amount of times differentiated, increase the power. It is best to always include the power $1$ in the term to avoid confusion with potential other $D$ terms.
+1. __$f^{\prime}\left(x\right)$__ or __$\left\lbrack f\left(x\right)\right\rbrack^{\prime}$__, or in multivariable calculus: __$\left\lbrack f\left(x\right)\right\rbrack_{x}^{\prime}$__. The last notation means differentiating $f\left(x\right)$ with respect to $x$. To increase the amount of times differentiated, add extra accents.
+2. __$\frac{d}{dx}f\left(x\right)$__, the '_Leibniz notation_'. This notation automatically incorporates multivariability because the operator is directly with respect to $x$. To increase the amount of times differentiated, square the operator.
+3. __$D\left\lbrack f\left(x\right)\right\rbrack$__ or __$D_{}^{1}\left\lbrack f\left(x\right)\right\rbrack$__ or in the case of multivariable calculus: __$D_{x}^{1}\left\lbrack f\left(x\right)\right\rbrack$__. The last notation means differentiating with respect to $x$. To increase the amount of times differentiated, increase the power. It is best to always include the power $1$ in the term to avoid confusion with potential other $D$ terms.
 
 ### Basic rules
+When calculating derivatives there's three rules that always apply. You might not use all of them at the same time because some terms are irrelevent however.
 #### 1 - Product rule
 When two terms in multiplication both need differentiating the product rule is applied:
 $$D_{x}^{1}\left\lbrack f\left(x\right)\cdot g\left(x\right)\right\rbrack=f^{\prime}\left(x\right)\cdot g\left(x\right)+f\left(x\right)\cdot g^{\prime}\left(x\right)$$
@@ -23,10 +23,10 @@ So the highest ranking function (differentiated) _times_ the enclosed function (
 #### 3 - Inverse function rule
 When the variable to be differentiated is below a dividing line the rule to differentiate is as follows:
 $$D_{x}^{1}\left\lbrack\frac{g\left(x\right)}{f\left(x\right)}\right\rbrack=\frac{nat-tan}{n^{2}}$$
-with
-1. $n$:  'noemer' or 'denominator'
-2. $t$: 'teller' or 'numerator'
-_The total meaning_ is: \[noemer $\cdot$ afgeleide(teller) -  teller $\cdot$ afgeleide(noemer)\] / noemer².
+- with:
+	-  $n$:  'noemer' or 'denominator'
+	-  $t$: 'teller' or 'numerator'
+_The total meaning_ is: \[noemer $\cdot$ derivative(teller) -  teller $\cdot$ derivative(noemer)\] / noemer².
 
 ### Methods of Differentiating
 For most functions the [basic rules](#basic%20rules) are sufficient to find a solution. In some cases where there are multiple layers of functions of $x$ or multiple multiplications of functions of $x$ it is useful to use the _substitution method_ in combination with the [basic rules](#basic%20rules).
@@ -55,6 +55,8 @@ Taking the second derivative is then useful for interpreting the original functi
 	- __$y<0$:__ The slope of the function is negative, therefore it's descending after this point. This means that at this point there is a local/global _maximum_.
 
 ### Rules of Thumb
+By rules of thumb (RoT) I mean quick equations and their solution, in general terms.
+
 1. (General rule for non-variable powers)$$D_{x}\left\lbrack u^{n}\right\rbrack=n\cdot u^{n-1}\cdot u^{\prime}$$
 2. (sine, cosine, tangent)
 	a.$$D_{x}\left\lbrack\sin\left(u\right)\right\rbrack=\cos\left(u\right)\cdot u^{\prime}$$

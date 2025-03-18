@@ -1,5 +1,4 @@
-Tags: 
-{{date}}
+Tags:    <br>{{date}}
 
 ---
 # {{Title}}

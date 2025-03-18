@@ -1,0 +1,10 @@
+to update:
+    to sync: run: npx quartz sync
+    to push: run: npx quartz sync --no-pull
+
+Before every push copy the files from ~/Obsidian to ~/quartz/content.
+    /"0 - Images" goes into "0: Images"
+    /"6 - Full Notes" goes into "I: Notes"
+    /"2 - Sources" goes into "II: Source Notes"
+    /"3 - Tags" goes into "III: Tags"
+
