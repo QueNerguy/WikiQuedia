@@ -1,6 +1,10 @@
+---
+title: Site Overview and Navigation
+draft: false
+---
 # WikiQuedia
 
-This is the github repository for Wikiquedia. [This the actual hosted website](https://quenerguy.github.io/WikiQuedia).
+This is the Wikiquedia. [This is where you can find the github repository](https://github.com/QueNerguy/WikiQuedia).
 
 ## Overview
 WikiQuedia is a side project of mine where I store all my notes from my bachelor Mechanical Engineering at the Vrije Universiteit and University of Twente. 
@@ -8,25 +12,10 @@ The goal of this project is for me to have a database I can reference whenever I
 
 Because this is a personal project I take no responsibility for regular upkeep, I work on it when I have time and motivation, and I dont take responsibility for accuracy of the information. I will try to keep it as accurate as possible, but the timestamps and references are included in the pages, so if that information doesnt check out or is outdated then neither does the page.
 
-## Developing
-sync: in ~/quartz run: npx quartz sync <br>push: in ~/quartz run: npx quartz sync --no-pull
-
 ---
-# Quartz v4
+## Structure
+I have divided the information on this site into three main folders:
 
-> “[One] who works with the door open gets all kinds of interruptions, but [they] also occasionally gets clues as to what the world is and what might be important.” — Richard Hamming
-
-Quartz is a set of tools that helps you publish your [digital garden](https://jzhao.xyz/posts/networked-thought) and notes as a website for free.
-Quartz v4 features a from-the-ground rewrite focusing on end-user extensibility and ease-of-use.
-
-🔗 Read the documentation and get started: https://quartz.jzhao.xyz/
-
-[Join the Discord Community](https://discord.gg/cRFFHYye7t)
-
-## Sponsors
-
-<p align="center">
-  <a href="https://github.com/sponsors/jackyzha0">
-    <img src="https://cdn.jsdelivr.net/gh/jackyzha0/jackyzha0/sponsorkit/sponsors.svg" />
-  </a>
-</p>
+1. __Notes__: This is where the actual information is contained. To navigate find the semester the subject was discussed in and find the subjects there, with notes pertaining to subparts of the knowledge.
+2. __Source Notes__: This is where I compile sources with a short paraphrase of the part of the source I found useful for my application, or in general. This folder is mainly background information so you or I dont have to read a whole article which means it's not one to look in often.
+3. __Tags__: These are notes mainly used for navigation using their backlinks. If you forget or don't know what actual subject you are looking for, but do remember what it is related to, look here to find it by looking at the backlinks of the tag note. <br>These notes are also sueful for structuring the mindmap graph for easier searching, and you can search for them as key phrase with the search function, like you would with actual tags.
