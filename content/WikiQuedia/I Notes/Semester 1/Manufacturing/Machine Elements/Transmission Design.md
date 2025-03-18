@@ -31,7 +31,7 @@ The $\textrm{z}_1$ value is the smallest amount of teeth in the velocity ratio. 
 > Generally, to avoid undercut[^undercut] the minimal suitable amount of teeth for a gear is 17.
 
 > [!Attention]
-> The number of teeth of the connecting gears can not have a common divisor. This is because if they dont, they contact every other tooth on the other gear, before contacting the first tooth again, reducing wear.
+> The number of teeth of the connecting gears can not have a common divisor. This is because if they dont, they contact the orignal tooth the least. It then takes as many revolutions as the gears have teeth before two of the same teeth touch again, which reduces (uneven) wear.
 
 
 
