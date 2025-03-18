@@ -9,8 +9,7 @@ The goal of this project is for me to have a database I can reference whenever I
 Because this is a personal project I take no responsibility for regular upkeep, I work on it when I have time and motivation, and I dont take responsibility for accuracy of the information. I will try to keep it as accurate as possible, but the timestamps and references are included in the pages, so if that information doesnt check out or is outdated then neither does the page.
 
 ## Developing
-sync: in ~/quartz run: npx quartz sync
-push: in ~/quartz run: npx quartz sync --no-pull
+sync: in ~/quartz run: npx quartz sync <br>push: in ~/quartz run: npx quartz sync --no-pull
 
 ---
 # Quartz v4
