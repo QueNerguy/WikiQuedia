@@ -1,6 +1,6 @@
 # WikiQuedia
 
-This is the github repository for Wikiquedia, the actual hosted website is here: <br> [link](https://quenerguy.github.io/WikiQuedia)
+This is the github repository for Wikiquedia. [This the actual hosted website]https://quenerguy.github.io/WikiQuedia).
 
 ## Overview
 WikiQuedia is a side project of mine where I store all my notes from my bachelor Mechanical Engineering at the Vrije Universiteit and University of Twente. 
