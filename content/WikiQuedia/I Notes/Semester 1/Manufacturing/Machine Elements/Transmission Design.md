@@ -11,10 +11,11 @@ Tags: [[transmission]], [[gears]], [[design rules]]   <br>18-03-2025
 
 ### Designing the Transmission Ratio
 The design process of a transmission ratio requires the total [train value](#Definitions) to be known. This is split up into it's associated [velocity ratios](#Definitions), which are then used to calculate the amount of teeth per gear. When this is all done the resulting train value is calculated from the teeth of the gears to see how far off the original train value it is, and if it is within the predetermined error margin.
-When designing a transmission train it's bad for the longevity of the gears to take a too big a step in reduction ratio at a time, as this introduces a lot of stress onto the gears. To avoid this there are guidelines, like the one below, which recommends the amount of steps with the associated velocity ratio, based on the total train value of the system.
-![[TransmissionValueChart_80%.png|450]] <br>source: _Roloff/Matek_ TB 21-11
+
 #### Finding the Velocity Ratios
-When a total train value of 15 is selected, the graph recommends a 2-step process, as seen at the etched region. __Only one__ of the the [velocity ratios](#Definitions) needs to be from this area. In this case we can select any value between 4.1 and 4.6 for the first or second velocity ratio. The other velocity ratio then needs to be between 3.26, and 3.66. This value does not need to come from the graph directly, it is a result only of the first value that _does_ come from the graph.
+When designing a transmission train it's bad for the longevity of the gears to take a too big a step in reduction ratio at a time as this introduces a lot of stress to the gear teeth. To avoid this there are guidelines, like the one below, which recommend the amount of reduction steps and the associated [velocity ratio](#Definitions), based on the total desired [train value](#Definitions) of the system.
+![[TransmissionValueChart_80%.png|450]] <br>source: _Roloff/Matek_ TB 21-11<br>
+When a total train value of, for example, 15 is selected, the graph recommends a 2-step process, as seen at the intersection between the pink line and the etched region. __Only one__ of the the [velocity ratios](#Definitions) needs to be from this area. In this case we can select any value between 4.1 and 4.6 for the first or second velocity ratio. The other velocity ratio then needs to be between 3.26, and 3.66. This value does not need to come from the graph directly, it is a result only of the first value that _does_ come from the graph.
 In the case of a 3-step process, 2 velocity ratios need to be selected from the graph, $\textrm{i}_1$ and $\textrm{i}_2$ from the etched areas. 
 #### Calculating the Teeth
 After the [velocity ratio](#Definitions) for a step is found the amount of teeth per gear can be calculated.  For this there are again guidelines, like this one from _Roloff/Matek_:
