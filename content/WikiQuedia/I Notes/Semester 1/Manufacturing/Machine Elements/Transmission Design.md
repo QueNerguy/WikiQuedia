@@ -28,7 +28,7 @@ After the [velocity ratio](#Definitions) for a step is found the amount of teeth
 The $\textrm{z}_1$ value is the smallest amount of teeth in the velocity ratio. When using the ratio of 4.1 for the velocity ratio from the paragraph above for a smooth running system the teeth requirements are: $\textrm{z}_1$ > 35, and $\textrm{z}_2$ > 144.
 
 > [!Caution]
-Generally, to avoid undercut[^undercut] the minimal suitable amount of teeth for a gear is 17.
+> Generally, to avoid undercut[^undercut] the minimal suitable amount of teeth for a gear is 17.
 
 > [!Attention]
 > The number of teeth of the connecting gears can not have a common divisor. This is because if they dont, they contact every other tooth on the other gear, before contacting the first tooth again, reducing wear.
