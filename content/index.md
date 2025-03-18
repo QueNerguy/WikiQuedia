@@ -1,5 +1,6 @@
 ---
 title: Welcome to WikiQuedia
+draft: false
 ---
 # WikiQuedia
 __The important notes are found under "6 - Full notes"__, after which it is broken down to the semesters and subjects before finding real notes. The overview notes are important when (re)learning big parts of a subject, find a course structure and subject overview there.
