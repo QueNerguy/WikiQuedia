@@ -41,8 +41,11 @@ $$
 	- $J_{Gearbox\to M}$ = The reflected inertia of the gearbox onto the motor
 	- $J_M$ = The inertia of the motor, this is supplied by the manufacturer of the motor.
 ##### Reflection
-The reflected inertia is the inertia the motor (or any other point on the transmission) experiences from the load or a gearbox. A [reduction ratio](Gears#gear%20ratios) can lower this if the gearbox is designed for increased [torque](torque). It does, however, increase with losses to friction et cetera in the gearbox. The equation for this, then, is:<br>
-$$J_{L\to M}=\frac{J_{L}}{\eta\cdot i^2{}}$$
+The reflected inertia is the inertia the motor (or any other point on the transmission) experiences from the load or a gearbox. A [reduction ratio](Gears#gear%20ratios) can lower this if the gearbox is designed for increased [torque](torque). It does, however, increase with losses to friction et cetera in the gearbox. The equation for this, then, is:
+$$
+J_{L\to M}=\frac{J_{L}}{\eta\cdot i^2{}}
+$$
+
 This, of course, doesn't only apply to the load, but the gearbox and _everything else[^except]_ too.
 > [!abstract] Efficiency
 > The reason the efficiency ($\eta$) is in the denominator is because it's always a value smaller than one, therefore, if divided by this value the reflected inertia ($J_{L\to M}$) will be bigger.

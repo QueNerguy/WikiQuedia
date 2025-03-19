@@ -61,9 +61,11 @@ $$
 	1. $$
 	\int_{}^{}u\mathrm{d}v=uv-\int_{}^{}v\mathrm{d}u=\left(\ldots\right)-\int_{}^{}u\mathrm{d}v
 	$$
+	
 	2. Here we see the repeating of the $\int_{}^{}u\mathrm{d}v$, and therefore we can apply simple algebra: $$
 	\int_{}^{}u\mathrm{d}v=\left(\ldots\right)-\int_{}^{}u\mathrm{d}v\to2\int_{}^{}u\mathrm{d}v=\left(\ldots\right)\to\int_{}^{}u\mathrm{d}v=\frac12\cdot\left(\ldots\right)
 	$$
+	
 	3. This then yields a solution for the original question $\int_{}^{}u\mathrm{d}v$.
 > [!Note]
 > In this case it is not necessary to substitute with $u=f(x)$ as with the [substitution method](#substitution), because the function $f(x)$ is not replaced in the integral as it is with the substitution method and the integral stays in terms of $x$, instead of terms of $u$ as we saw previously, meaning that when calculating $\int_{}^{}u\mathrm{d}v=uv-\int_{}^{}v\mathrm{d}u$ the $u$ and $v$ etc. values are replaced by a function $f(x)$ immediately, instead of after integration or not at all, like with the substitution method.
@@ -74,13 +76,17 @@ Taking the integral of a function is analagous to summing the area under the cur
 ### Rules of Thumb
 By rules of thumb (RoT) I mean quick equations and their solution, in general terms.
 
-1. (General rule for non-variable powers)$$
+1. (General rule for non-variable powers) 
+$$
 \int_{}^{}{u^{n}d}x=\frac{1}{n+1}\cdot u^{n+1}\cdot\frac{1}{u^{\prime}}
 $$
-2. $\frac{1}{u}$ ($1$ over $u$) $$
+
+2. $\frac{1}{u}$ ($1$ over $u$) 
+$$
 \int_{}^{}\frac{1}{u}\mathrm{d} x=\ln\left|u\right|\cdot\frac{1}{u^{\prime}}
 $$
-3. (sine, cosine, tangent)
+
+3. (sine, cosine, tangent)<br>
 	a. 
 	$$
 	\int_{}^{}\sin\left(u\right)\,\mathrm{d}x=-\cos\left(u\right)\cdot\frac{1}{u^{\prime}}
@@ -106,6 +112,7 @@ $$
 5. (natural logarithm)$$
 \int_{}^{}\ln\left(x\right)\,\mathrm{d}x=x\ln\left|x\right|-x
 $$
+
 
 > [!warning] Look out!
 > These solutions are the solutions to the general form, but they are missing a possible $C$ value. When _differentiating_ a value, like $5$, it disappears. Therefore we have to assume there could be a value $C$ appearing with $F(x)$ after doing the reverse operation, integration.

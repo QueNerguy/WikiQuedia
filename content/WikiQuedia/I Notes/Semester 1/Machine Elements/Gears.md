@@ -31,15 +31,31 @@ The most important dimensions of a gear are given by the manufacturer. They are 
 - __$a$__: The distance from the _pitch circle_ to the _addendum circle_ (the top).
 - __$b$__: The distance from the _pitch circle_ to the _dedendum circle_(the bottom).
 - __$d$__: The diameter of the gear, with:
-	- __$d_a$__: The diameter at the _addendum circle_ (the top). The addendum circle is the circle the upper surface the teeth of the gear trace, or the outside diameter. <br>$$ d_{a}=m\cdot\textrm{z} + 2m $$<br> $$ d_a = d_p + a $$
+	- __$d_a$__: The diameter at the _addendum circle_ (the top). The addendum circle is the circle the upper surface the teeth of the gear trace, or the outside diameter.$$
+	d_{a}=m\cdot\textrm{z} + 2m
+	$$ $$
+	d_a = d_p + a
+	$$
+	- __$d_d$__: The diameter at the _dedendum circle_ (the bottom). The dedendum circle is the circle the upper surface of the body of the gear traces, or the root diameter. $$
+	d_b = d_p + b
+	$$
 	
-	- __$d_d$__: The diameter at the _dedendum circle_ (the bottom). The dedendum circle is the circle the upper surface of the body of the gear traces, or the root diameter.<br>$$ d_b = d_p + b $$
-	- __$d_p$__: The diameter of the _pitch circle_. The pitch circle is an imaginary circle that denotes the contact between the gears, and is chosen to represent the size of the gear. Because of this, $d$ is sometimes used when $d_p$ is meant. <br>In actuality the contact of the gears rolls along the surface of a tooth as the motion progresses. The pitch diameter lies halfway on the contact patch.<br>$$ d_{p}=m\cdot \textrm{z} $$
-- __$h$__: The whole depth of the gear, from the top of the tooth, down to the upper surface of the body of the gear. <br> $$ h = a + b $$
-- __$m$__: The module. This is a measure of how thick a tooth is. It is important for the strength, the thicker the tooth the stronger the gear, and to match two gears.<br> It's most important property is matching the fit of gears. If two gears have a different module, the teeth won't fit together properly. <br>$$ m=\frac{d}{\textrm{z}} $$
+	- __$d_p$__: The diameter of the _pitch circle_. The pitch circle is an imaginary circle that denotes the contact between the gears, and is chosen to represent the size of the gear. Because of this, $d$ is sometimes used when $d_p$ is meant. <br>In actuality the contact of the gears rolls along the surface of a tooth as the motion progresses. The pitch diameter lies halfway on the contact patch. $$
+	d_{p}=m\cdot \textrm{z}
+	$$
+- __$h$__: The whole depth of the gear, from the top of the tooth, down to the upper surface of the body of the gear. $$
+h = a + b
+$$
+- __$m$__: The module. This is a measure of how thick a tooth is. It is important for the strength, the thicker the tooth the stronger the gear, and to match two gears.<br> It's most important property is matching the fit of gears. If two gears have a different module, the teeth won't fit together properly. $$
+m=\frac{d}{\textrm{z}}
+$$
 - __$p$__: The pitch of the gear. This is the distance from one tooth to the next, measured at the _pitch circle_.
-- __$t$__: The thickness of the teeth. The thickness is measured at the _pitch circle_, __not__ at the thickest point.<br>$$ t=\frac{m\cdot\pi}{2} $$
-- __$\textrm{z}$__, or __$\textrm{N}$__: The number of teeth <br>$$ \textrm{z}=\frac{d}{m} $$
+- __$t$__: The thickness of the teeth. The thickness is measured at the _pitch circle_, __not__ at the thickest point. $$
+t=\frac{m\cdot\pi}{2}
+$$
+- __$\textrm{z}$__, or __$\textrm{N}$__: The number of teeth $$
+\textrm{z}=\frac{d}{m} 
+$$
 - __$\alpha$__, or __$\phi$__: The pressure angle, most commonly 20$\degree$. <br>Two gears dont make tangential[^tan] contact at their surfaces. This is to let the teeth roll smoothly of one another. It does, however, cause the [force](force) to not be transmitted tangentially, but at an angle, the _pressure angle_. This is an average angle, measured at the _pitch circle_. It changes as the contact of the gears rolls along the surface of the teeth. This force at an angle also induces a force in radial (towards the center of the gear) direction, which means the axles are loaded not only in torsion, but on bending too. %%==maybe change the location of the last part==%%
 ![[GearCircles_80%.png|700x250]]<br> 
 ### Failure Modes
