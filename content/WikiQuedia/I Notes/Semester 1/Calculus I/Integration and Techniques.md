@@ -60,13 +60,13 @@ $$
 - ___Solving repeating integrals:___
 	1. Double substitution into the original formula gives the original term $\int_{}^{}u\mathrm{d}v$ back:
 		$$
-	\int_{}^{}u\mathrm{d}v=uv-\int_{}^{}v\mathrm{d}u=\left(\ldots\right)-\int_{}^{}u\mathrm{d}v
-	$$
+		\int_{}^{}u\mathrm{d}v=uv-\int_{}^{}v\mathrm{d}u=\left(\ldots\right)-\int_{}^{}u\mathrm{d}v
+		$$
 	
 	2. Here we see the repeating of the $\int_{}^{}u\mathrm{d}v$, and therefore we can apply simple algebra: 
 		$$
-	\int_{}^{}u\mathrm{d}v=\left(\ldots\right)-\int_{}^{}u\mathrm{d}v\to2\int_{}^{}u\mathrm{d}v=\left(\ldots\right)\to\int_{}^{}u\mathrm{d}v=\frac12\cdot\left(\ldots\right)
-	$$
+		\int_{}^{}u\mathrm{d}v=\left(\ldots\right)-\int_{}^{}u\mathrm{d}v\to2\int_{}^{}u\mathrm{d}v=\left(\ldots\right)\to\int_{}^{}u\mathrm{d}v=\frac12\cdot\left(\ldots\right)
+		$$
 	
 	3. This then yields a solution for the original question $\int_{}^{}u\mathrm{d}v$.
 > [!Note]
