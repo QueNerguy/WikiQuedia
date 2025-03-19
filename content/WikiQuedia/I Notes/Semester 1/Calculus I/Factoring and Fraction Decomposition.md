@@ -15,19 +15,19 @@ Factoring is a way of dividing a complicated polynomial into smaller parts that 
 #### Factoring
 A quadratic function $ax^{2}+bx+c$ can always be decomposed as $\left(dx+e\right)\left(fx+g\right)$. 
 When factoring there's two types of results:<br>
-1. 
+1. Short
 $$
 \left(\sqrt{a}x+b\right)\left(\sqrt{a}x-b\right)=ax^{2}-b^{2}
 $$
-2. 
+2. Long
 $$
 \left(x+a\right)\left(x+b\right)=x^{2}+2ab\cdot x+ab
 $$
 
 - This one is based on the following full form, however it is generally easier to just divide the whole original fraction by the coefficient in front of the $x^2$, in this case $ac$, and use the above form. 
 	$$
-\left(ax+b\right)\left(cx+d\right)=ac\cdot x^2+\left(ad+bc\right)\cdot x+bd
-$$
+	\left(ax+b\right)\left(cx+d\right)=ac\cdot x^2+\left(ad+bc\right)\cdot x+bd
+	$$
 
 The way to factor the quadratic forms seen on the right hand side is just by looking at patterns and similarities with these here formulas.
 #### Partial Fraction Decomposition

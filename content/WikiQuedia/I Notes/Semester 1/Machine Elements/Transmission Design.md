@@ -27,6 +27,7 @@ After the [velocity ratio](#Definitions) for a step is found, the amount of teet
 | 24/7 operation <br>(high use, high speeds)          | > 35                             |
 | Smooth running <br>(high speeds)                    | > 35                             |
 source: _Roloff/Matek_
+
 The $\textrm{z}_1$ value is the smallest amount of teeth in the velocity ratio. When using the ratio of 4.1 for the velocity ratio from the paragraph above for a smooth running system the teeth requirements are: $\textrm{z}_1$ > 35, and $\textrm{z}_2$ > 144.
 
 > [!Caution]

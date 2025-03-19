@@ -58,7 +58,7 @@ $$
 - It might happen that the function doesn't solve immediately and that this operation has to be multiple times.
 - It also might happen that the solution has a repeating $\int_{}^{}v\mathrm{d}u$, this would happen with for things that have a $f\left(x\right)=e^{x}$ in them. In this case it is sometimes possible to solve by equalling the left and right hand side of the original as described in the following paragraph:
 - ___Solving repeating integrals:___
-	1. 
+	1. Double substitution into the original formula gives the original term $\int_{}^{}u\mathrm{d}v$ back:
 		$$
 	\int_{}^{}u\mathrm{d}v=uv-\int_{}^{}v\mathrm{d}u=\left(\ldots\right)-\int_{}^{}u\mathrm{d}v
 	$$
