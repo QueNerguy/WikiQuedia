@@ -81,9 +81,10 @@ $$
 	D_{x}\left\lbrack\cos\left(u\right)\right\rbrack=-\sin\left(u\right)\cdot u^{\prime}
 	$$
 	c.
-$$
-D_{x}\left\lbrack\tan\left(u\right)\right\rbrack=\sec^{2}\left(u\right)=\frac{1}{\cos^{2}\left(u\right)}\cdot u^{\prime}
 	$$
+	D_{x}\left\lbrack\tan\left(u\right)\right\rbrack=\sec^{2}\left(u\right)=\frac{1}{\cos^{2}\left(u\right)}\cdot u^{\prime}
+	$$
+
 3. (arcsine, arccosine, arctangent)<br>
 	a.
 	$$
