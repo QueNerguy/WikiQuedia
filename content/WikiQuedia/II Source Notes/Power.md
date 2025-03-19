@@ -5,7 +5,9 @@
 
 #### Synopsis:
 Power is a measure of how much [work energy](Work.md) is exerted by an energy source per unit of time. 
-$$P=\vec{F}\cdot \vec{v}$$
+$$
+P=\vec{F}\cdot \vec{v}
+$$
 - with:
 	- $F$ = [Force](Force.md)
 	- $v$ = velocity
@@ -19,7 +21,9 @@ $$
 	- $\omega$ = [Angular velocity](Angular%20Velocity.md)
 
 It can also be measured by the amount of electrical energy is used:
-$$P=I\cdot V$$
+$$
+P=I\cdot V
+$$
 - with:
 	- $I$ = Electrical current %%SOURCE AANMAKEN OWO%%
 	- $V$ = Voltage %%SOURCE%%
