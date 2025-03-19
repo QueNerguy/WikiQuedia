@@ -16,7 +16,7 @@ To counter these issues consider the following design guidelines:
 
 2. 
 > [!check] Shallow Angles and Fillets
-> When creating parts make sure that the angle between two connecting parts is as small as possible. Do this by adding fillets in between surfaces, changing square ribs to be hexagonal. Avoid angles of $\ge90\textdegree$ and even lower as much as possible.
+> When creating parts make sure that the angle between two connecting parts is as small as possible. Do this by adding fillets in between surfaces, changing square ribs to be hexagonal. Avoid angles of $\ge90\degree$ and even lower as much as possible.
 
 3. 
 > [!check] Add Drafts

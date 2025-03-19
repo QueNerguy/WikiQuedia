@@ -16,7 +16,7 @@ Generally when asked to calculate the inverse of a function the question actuall
 	2. $f^{-1}\left(x\right)=\sqrt[3]{\frac{x}{a}}$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (<- actually calculating the inverse)
 
 ### Existance
-When calculating the inverse it's important to look at whether the graph that's being inverted is actually invertible. When inverting the function geometrically what you're doing is rotating the function by $90\textdegree$ to the right or mirroring through the line $y=x$. Therefore when a function crosses a horizontal line the inverse cannot exist. For example $y=x^2$ can't exist, that's why when taking a root the result is always $\pm\sqrt{}$.  
+When calculating the inverse it's important to look at whether the graph that's being inverted is actually invertible. When inverting the function geometrically what you're doing is rotating the function by $90\degree$ to the right or mirroring through the line $y=x$. Therefore when a function crosses a horizontal line the inverse cannot exist. For example $y=x^2$ can't exist, that's why when taking a root the result is always $\pm\sqrt{}$.  
 - ___Existance:___ To check whether an inverse exists is therefore to check whether a solution $y=a$ has more than one solution[^inverse_wiki]. Yes? then it's not invertible. [Per definition](Differentiation%20and%20Techniques.md#First%20Derivative), when a function has an extreme value a horizontal line _must_ cross the function at least once. Thus check whether a function is invertible by taking its derivative and finding it's roots[^root].
 
 
