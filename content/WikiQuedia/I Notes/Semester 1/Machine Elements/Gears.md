@@ -27,7 +27,7 @@ The most important dimensions of a gear are given by the manufacturer. They are 
 - __$a$__: The distance from the _pitch circle_ to the _addendum circle_ (the top).
 - __$b$__: The distance from the _pitch circle_ to the _dedendum circle_(the bottom).
 - __$d$__: The diameter of the gear, with:
-	- __$d_a$__: The diameter at the _addendum circle_ (the top). The addendum circle is the circle the upper surface the teeth of the gear trace, or the outside diameter. $$d_{a}=m\cdot\textrm{z} + 2m$$$$d_a = d_p + a$$
+	- __$d_a$__: The diameter at the _addendum circle_ (the top). The addendum circle is the circle the upper surface the teeth of the gear trace, or the outside diameter. $$d_{a}=m\cdot\textrm{z} + 2m$$ $$d_a = d_p + a$$
 	
 	- __$d_d$__: The diameter at the _dedendum circle_ (the bottom). The dedendum circle is the circle the upper surface of the body of the gear traces, or the root diameter.$$d_b = d_p + b$$
 	- __$d_p$__: The diameter of the _pitch circle_. The pitch circle is an imaginary circle that denotes the contact between the gears, and is chosen to represent the size of the gear. Because of this, $d$ is sometimes used when $d_p$ is meant. <br>In actuality the contact of the gears rolls along the surface of a tooth as the motion progresses. The pitch diameter lies halfway on the contact patch.$$d_{p}=m\cdot \textrm{z}$$
@@ -51,7 +51,7 @@ coming soon$^{\textrm{TM}}$
 
 
 ---
-Status: #sprout
+Status: #bud
 
 ---
 # References:
