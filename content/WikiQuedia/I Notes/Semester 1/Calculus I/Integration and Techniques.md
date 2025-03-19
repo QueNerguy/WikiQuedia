@@ -58,11 +58,13 @@ $$
 - It might happen that the function doesn't solve immediately and that this operation has to be multiple times.
 - It also might happen that the solution has a repeating $\int_{}^{}v\mathrm{d}u$, this would happen with for things that have a $f\left(x\right)=e^{x}$ in them. In this case it is sometimes possible to solve by equalling the left and right hand side of the original as described in the following paragraph:
 - ___Solving repeating integrals:___
-	1. $$
+	1. 
+		$$
 	\int_{}^{}u\mathrm{d}v=uv-\int_{}^{}v\mathrm{d}u=\left(\ldots\right)-\int_{}^{}u\mathrm{d}v
 	$$
 	
-	2. Here we see the repeating of the $\int_{}^{}u\mathrm{d}v$, and therefore we can apply simple algebra: $$
+	2. Here we see the repeating of the $\int_{}^{}u\mathrm{d}v$, and therefore we can apply simple algebra: 
+		$$
 	\int_{}^{}u\mathrm{d}v=\left(\ldots\right)-\int_{}^{}u\mathrm{d}v\to2\int_{}^{}u\mathrm{d}v=\left(\ldots\right)\to\int_{}^{}u\mathrm{d}v=\frac12\cdot\left(\ldots\right)
 	$$
 	
@@ -96,7 +98,7 @@ $$
 	\int_{}^{}\cos\left(u\right)\mathrm{d} x=\sin\left(u\right)\cdot\frac{1}{u^{\prime}}
 	$$
 	c. _$\int\tan\left(u\right)\mathrm{d} x$_ only exists for $u$ with max $x$ powers of $1$, it's better to calculate these integrals with substitution etc. to avoid mistakes. 
-4. 
+4. (arcsine, arccosine, arctangent)<br>
 	a. 
 	$$
 	\int_{}^{}\frac{1}{a^{2}+x^{2}}\,\mathrm{d}x=\arctan\left(\frac{x}{a}\right)\cdot\frac{1}{a}
@@ -109,7 +111,8 @@ $$
 	$$
 	\int_{}^{}-\frac{1}{\sqrt{a^{2}-x^{2}}}\mathrm{d}x=\arccos\left(\frac{x}{a}\right)\cdot\frac{1}{u^{\prime}}\text{ }\cup\text{ }-\arcsin\left(\frac{x}{a}\right)\cdot\frac{1}{u^{\prime}}
 	$$
-5. (natural logarithm)$$
+5. (natural logarithm)
+$$
 \int_{}^{}\ln\left(x\right)\,\mathrm{d}x=x\ln\left|x\right|-x
 $$
 
