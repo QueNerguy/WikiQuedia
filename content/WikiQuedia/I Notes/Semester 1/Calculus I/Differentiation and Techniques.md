@@ -17,16 +17,22 @@ There are a few ways to denote differentiating a function $f\left(x\right)$.
 When calculating derivatives there's three rules that always apply. You might not use all of them at the same time because some terms are irrelevent however.
 #### 1 - Product rule
 When two terms in multiplication both need differentiating the product rule is applied:
-$$D_{x}^{1}\left\lbrack f\left(x\right)\cdot g\left(x\right)\right\rbrack=f^{\prime}\left(x\right)\cdot g\left(x\right)+f\left(x\right)\cdot g^{\prime}\left(x\right)$$
+$$
+D_{x}^{1}\left\lbrack f\left(x\right)\cdot g\left(x\right)\right\rbrack=f^{\prime}\left(x\right)\cdot g\left(x\right)+f\left(x\right)\cdot g^{\prime}\left(x\right)
+$$
 Intuitively this means: the first term (differentiated) _times_ the second term _+_ the first term _times_ the second term (differentiated)[^differentiation].
 An example would be $D_{x}^{1}\left\lbrack y\right\rbrack=D_{x}^{1}\left\lbrack x^{2}\cdot y^{2}\right\rbrack$
 #### 2 - Chain rule
 When a variable is enclosed in a different function that depends on that variable, for example $\sin\left(x\right)$ the differentiating process follows the chain rule.
-$$D_{x}^{1}\left\lbrack f\left(g\left(x\right)\right)\right\rbrack=f^{\prime}\left(g\left(x\right)\right)\cdot g^{\prime}\left(x\right)$$
+$$
+D_{x}^{1}\left\lbrack f\left(g\left(x\right)\right)\right\rbrack=f^{\prime}\left(g\left(x\right)\right)\cdot g^{\prime}\left(x\right)
+$$
 So the highest ranking function (differentiated) _times_ the enclosed function (differentiated)[^differentiation].
 #### 3 - Inverse function rule
 When the variable to be differentiated is below a dividing line the rule to differentiate is as follows:
-$$D_{x}^{1}\left\lbrack\frac{g\left(x\right)}{f\left(x\right)}\right\rbrack=\frac{nat-tan}{n^{2}}$$
+$$
+D_{x}^{1}\left\lbrack\frac{g\left(x\right)}{f\left(x\right)}\right\rbrack=\frac{nat-tan}{n^{2}}
+$$
 - with:
 	-  $n$:  'noemer' or 'denominator'
 	-  $t$: 'teller' or 'numerator'
@@ -61,19 +67,48 @@ Taking the second derivative is then useful for interpreting the original functi
 ### Rules of Thumb
 By rules of thumb (RoT) I mean quick equations and their solution, in general terms.
 
-1. (General rule for non-variable powers)$$D_{x}\left\lbrack u^{n}\right\rbrack=n\cdot u^{n-1}\cdot u^{\prime}$$
+1. (General rule for non-variable powers)
+$$
+D_{x}\left\lbrack u^{n}\right\rbrack=n\cdot u^{n-1}\cdot u^{\prime}
+$$
 2. (sine, cosine, tangent)
-	a.$$D_{x}\left\lbrack\sin\left(u\right)\right\rbrack=\cos\left(u\right)\cdot u^{\prime}$$
-	b. $$D_{x}\left\lbrack\cos\left(u\right)\right\rbrack=-\sin\left(u\right)\cdot u^{\prime}$$
-	c.$$D_{x}\left\lbrack\tan\left(u\right)\right\rbrack=\sec^{2}\left(u\right)=\frac{1}{\cos^{2}\left(u\right)}\cdot u^{\prime}$$
+a.
+$$
+D_{x}\left\lbrack\sin\left(u\right)\right\rbrack=\cos\left(u\right)\cdot u^{\prime}
+$$
+b. 
+$$
+D_{x}\left\lbrack\cos\left(u\right)\right\rbrack=-\sin\left(u\right)\cdot u^{\prime}
+$$
+c.
+$$
+D_{x}\left\lbrack\tan\left(u\right)\right\rbrack=\sec^{2}\left(u\right)=\frac{1}{\cos^{2}\left(u\right)}\cdot u^{\prime}
+$$
 3. (arcsine, arccosine, arctangent)
-	a. $$D_{x}\left\lbrack\arcsin\left(u\right)\right\rbrack=\frac{1}{\sqrt{1^2-u^{2}}}\cdot u^{\prime}$$
-	b. $$D_{x}\left\lbrack\arccos\left(u\right)\right\rbrack=-\frac{1}{\sqrt{1^2-u^{2}}}\cdot u^{\prime}$$
-	c. $$D_{x}\left\lbrack\arctan\left(u\right)\right\rbrack=\frac{1}{u^{2}+1}\cdot u^{\prime}$$
-	
-4. (Absolute values)$$D_{x}\left\lbrack|u|\right\rbrack=\frac{u}{\left\lbrack u\right\rbrack}\cdot u^{\prime}$$
-5. (Natural logarithms)$$D_{x}\left\lbrack\ln\left(u\right)\right\rbrack=\frac{1}{u}\cdot u^{\prime}$$
-6. (Rule for [variable powers](quick%20math%20equations.md#powers%20of%20$x$))$$D_{x}\left\lbrack a^{u}\right\rbrack=D_{x}\left\lbrack e^{u\ln\left(a\right)}\right\rbrack=a^{u}\cdot\ln\left(a\right)\cdot u^{\prime}$$
+a.
+$$
+D_{x}\left\lbrack\arcsin\left(u\right)\right\rbrack=\frac{1}{\sqrt{1^2-u^{2}}}\cdot u^{\prime}
+$$
+b.
+$$
+D_{x}\left\lbrack\arccos\left(u\right)\right\rbrack=-\frac{1}{\sqrt{1^2-u^{2}}}\cdot u^{\prime}
+$$
+c. 
+$$
+D_{x}\left\lbrack\arctan\left(u\right)\right\rbrack=\frac{1}{u^{2}+1}\cdot u^{\prime}
+$$
+4. (Absolute values)
+$$
+D_{x}\left\lbrack|u|\right\rbrack=\frac{u}{\left\lbrack u\right\rbrack}\cdot u^{\prime}
+$$
+5. (Natural logarithms)
+$$
+D_{x}\left\lbrack\ln\left(u\right)\right\rbrack=\frac{1}{u}\cdot u^{\prime}
+$$
+6. (Rule for [variable powers](quick%20math%20equations.md#powers%20of%20$x$))
+$$
+D_{x}\left\lbrack a^{u}\right\rbrack=D_{x}\left\lbrack e^{u\ln\left(a\right)}\right\rbrack=a^{u}\cdot\ln\left(a\right)\cdot u^{\prime}
+$$
 See also: [RoT Integration](Integration%20and%20Techniques.md#Rules%20of%20Thumb), [General RoT](quick%20math%20equations.md).
 
 

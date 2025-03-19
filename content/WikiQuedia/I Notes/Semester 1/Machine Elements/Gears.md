@@ -19,7 +19,9 @@ i=\frac{\textrm{input}}{\textrm{output}}=\frac{\omega_1}{\omega_2}
 $$
 Because the power throughout a drivetrain stays the same, the angular velocity is tied to the amount of [torque](torque) transmitted. Therefore $i$ can also be expressed in terms of the torque. It can be expressed in the amount of teeth ($\textrm{z}$) and the diameter ($d$) of the gears too, by rewriting[^proof].
 ##### Full Gear Ratio Equation
-$$i=\frac{\omega_1}{\omega_2}=\frac{r_2}{r_1}=\frac{d_2}{d_1}=\frac{\textrm{z}_2}{\textrm{z}_1}=\frac{T_2}{T_1}$$
+$$
+i=\frac{\omega_1}{\omega_2}=\frac{r_2}{r_1}=\frac{d_2}{d_1}=\frac{\textrm{z}_2}{\textrm{z}_1}=\frac{T_2}{T_1}
+$$
 > [!info] Notice
 > Notice that $i$ is only $\frac{\textrm{input}}{\textrm{output}}$ with angular velocities. For all other values it's the opposite; $\frac{\textrm{output}}{\textrm{input}}$. <br>This is because when the [angular velocity](angular%20velocity) decreases, the [torque](torque) increases. If the [total train value](Transmission%20design#definitions) $< 1$ then, the transmission is designed to increase torque, costing speed. This is the case for most cars, for example. <br><br>Intuitively: __smaller gear__ -> __bigger gear__ gives $i < 1$. <br>Because this is most common it's also referred to as reduction ratio sometimes.
 

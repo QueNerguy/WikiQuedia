@@ -35,7 +35,9 @@ When calculating a limit there are a few tricks that are applied.
 ### Edge cases
 #### Priority
 It might sometimes occur that the result of taking a limit has $\infty\cdot e^{-\infty}$, what, in this case would be the result? The rules of importance of magnitude are as follows:
-$$a^{\infty}\gg\infty^{a}\gg\log_{a}\left(\infty\right)$$Therefore, in the previous example, the solution would prioritize the $e^{-\infty}$, whose result is $0$, making the result of this expression also $0$, and not $\infty$.
+$$
+a^{\infty}\gg\infty^{a}\gg\log_{a}\left(\infty\right)
+$$Therefore, in the previous example, the solution would prioritize the $e^{-\infty}$, whose result is $0$, making the result of this expression also $0$, and not $\infty$.
 
 
 

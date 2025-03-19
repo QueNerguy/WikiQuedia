@@ -42,9 +42,11 @@ A motor is selected based on price and/or efficiency. The gears and the amount o
 #### Inertia
 The [inertia ratio](Motor%20and%20Drive%20Characteristics#guideline%20inertia%20ratio) is selected based on the guidelines. The ideal size of the gearbox is selected from it's inertia. This means [calculating the inertia](Motor%20and%20Drive%20Characteristics#Calculating%20the%20Inertia%20Ratio) the gearbox can have, from the motor inertia, the load inertia and the guideline for the total ratio. <br>This might involve calculating it for a few motors and picking the best one.
 #### Acceleration
-On some occasions the acceleration rate of drivetrain is the most important criterium. In that case the [train value](#definitions), and the individual gears need to be [optimized for acceleration](Gears#Maximum%20Acceleration). This means that the motor is chosen based on whether the following formula, based on the system's inertias, and the needed train value match. The train value in this case needs to be: <br>$$
+On some occasions the acceleration rate of drivetrain is the most important criterium. In that case the [train value](#definitions), and the individual gears need to be [optimized for acceleration](Gears#Maximum%20Acceleration). This means that the motor is chosen based on whether the following formula, based on the system's inertias, and the needed train value match. The train value in this case needs to be:
+$$
 \textrm{TV}=\sqrt{\frac{J_2}{J_1}}
 $$
+
 - with:
 	- $J_2$ = The output inertia. This can be a gear or a big part of the system, [reflected](Motor%20and%20Drive%20Characteristics#reflection)  to an output point 2.
 	- $J_1$ = The input inertia. This can be a gear or a big part of the system, [reflected](Motor%20and%20Drive%20Characteristics#reflection) to an input point 1.
