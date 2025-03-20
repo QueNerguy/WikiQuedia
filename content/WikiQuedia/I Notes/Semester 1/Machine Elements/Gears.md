@@ -97,7 +97,7 @@ $$
 $$
 \sigma_{b}=\frac{KF_{t}}{bm}\cdot Y_{\textrm{Fa}}\cdot Y_{\textrm{Sa}}
 $$
-- See [here](unit%20explanation%20bending%20stress%20(gears)) the unit explanation.
+- See [here](Unit%20Explanation%20Bending%20Stress%20(Gears).md) the unit explanation.
 
 ###### Insufficient Lubrication and Maintenance
 Gears need lubrication to function properly for high speed high torque applications. If the gears are under-lubricated they wear faster. The teeth will grind together, removing material, or the friction might weld them together for a bit, causing _scuffing_ or _pitting_ on the tooth surfaces.

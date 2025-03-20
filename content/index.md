@@ -1,8 +1,8 @@
 ---
-title: Site Overview and Navigation
+title: Welcome to WikiQuedia
 draft: false
 ---
-# WikiQuedia
+# Site Overview and Navigation
 
 This is Wikiquedia. [This is where you can find the github repository](https://github.com/QueNerguy/WikiQuedia).
 
