@@ -120,7 +120,7 @@ $$
 > [!warning] Look out!
 > These solutions are the solutions to the general form, but they are missing a possible $C$ value. When _differentiating_ a value, like $5$, it disappears. Therefore we have to assume there could be a value $C$ appearing with $F(x)$ after doing the reverse operation, integration.
 
-See also: [RoT differentiation](Differentiation%20and%20Techniques.md#Rules%20of%20Thumb), [General RoT](quick%20math%20equations.md).
+See also: [RoT differentiation](Differentiation%20and%20Techniques.md#Rules%20of%20Thumb), [General RoT](math%20equations.md).
 
 
 

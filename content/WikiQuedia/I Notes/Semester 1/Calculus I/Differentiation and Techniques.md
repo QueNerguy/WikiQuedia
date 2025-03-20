@@ -107,11 +107,11 @@ $$
 $$
 D_{x}\left\lbrack\ln\left(u\right)\right\rbrack=\frac{1}{u}\cdot u^{\prime}
 $$
-6. (Rule for [variable powers](quick%20math%20equations.md#powers%20of%20$x$))
+6. (Rule for [variable powers](math%20equations.md#powers%20of%20$x$))
 $$
 D_{x}\left\lbrack a^{u}\right\rbrack=D_{x}\left\lbrack e^{u\ln\left(a\right)}\right\rbrack=a^{u}\cdot\ln\left(a\right)\cdot u^{\prime}
 $$
-See also: [RoT Integration](Integration%20and%20Techniques.md#Rules%20of%20Thumb), [General RoT](quick%20math%20equations.md).
+See also: [RoT Integration](Integration%20and%20Techniques.md#Rules%20of%20Thumb), [General RoT](math%20equations.md).
 
 
 
