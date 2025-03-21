@@ -14,11 +14,11 @@ Taking an integral is the reciprocal of [differentiating a function](Differentia
 ### Notation
 The most standard way to denote the primitive[^primitive] is as __$F(x)$__
 $$
-F\left(x\right)=\int_{x=a}^{x=b}f\left(x\right)\mathrm{d}x
+F\left(x\right)=\int_{x=a}^{x=b}f\left(x\right)\,dx
 $$
 The notation under the integral sign ($\int$) denotes the [domain](Intervals;%20Domain%20and%20Range.md#Definitions) over which is integrated. Usually when calculating the integral of a function you calculate the infinite integral ($\int$) to acquire the primitive function and evaluate it over it's domain afterward:
 $$
-\int_{a}^{b}f\left(x\right)\,\mathrm{d}x=\int_{}^{}f\left(x\right)\,\mathrm{d}x\Bigg|_{x=a}^{x=b}=F\left(x\right)\Bigg|_{x=a}^{x=b}
+\int_{a}^{b}f\left(x\right)\,dx=\int_{}^{}f\left(x\right)\,dx\Bigg|_{x=a}^{x=b}=F\left(x\right)\Bigg|_{x=a}^{x=b}
 $$
 When the domain is not defined at its [endpoints](Intervals;%20Domain%20and%20Range.md#Definitions)  you take the limit after integration, which looks like this:
 $$
@@ -38,9 +38,9 @@ When a function is too complicated to integrate, and doesn't follow any [rules o
 #### Substitution
 This method is analogous to [substitution for differentiation](Differentiation%20and%20Techniques.md#Substitution). We substitute functions of $x$ by $u$, $v$, etc., as many times as needed, until a function in the form of the [rules of thumb](#ruules%20of%20thumb) is reached and it is possible to integrate directly.
 
-- __Example:__ When given a function like $\int_{}^{}\frac{1}{2x+1}\mathrm{d}x$, it is useful to substitute in such a way that we get $\int_{}^{}\frac{1}{u}du$, that way we can directly integrate. 
-	- Set $u=2x+1$. -> Then: $u^{\prime}=\frac{\mathrm{d}u}{\mathrm{d}x}=2$. Thus: $\mathrm{d}x=\frac12\cdot du$. 
-	- The resulting function is $\int_{}^{}\frac{1}{u}\cdot\frac12du=\frac12\int_{}^{}\frac{1}{u}du$. This function can be evaluated directly from the rules of thumb.
+- __Example:__ When given a function like $\int_{}^{}\frac{1}{2x+1}\,dx$, it is useful to substitute in such a way that we get $\int_{}^{}\frac{1}{u}du$, that way we can directly integrate. 
+	- Set $u=2x+1$. -> Then: $u^{\prime}=\frac{\,du}{\,dx}=2$. Thus: $\,dx=\frac12\cdot \,du$. 
+	- The resulting function is $\int_{}^{}\frac{1}{u}\cdot\frac12\,du=\frac12\int_{}^{}\frac{1}{u}\,du$. This function can be evaluated directly from the rules of thumb.
 	- After substitution the resulting function is: $\frac12\cdot\ln\left|2x+1\right|+C_1$. 
 
 > [!Note]
@@ -52,7 +52,7 @@ This method is based on [the substitution method](#substitution). It is used for
 To solve these divide the function in the integral in two parts: $u$ and $\mathrm{d}v$. differentiate $u$ to $\mathrm{d}u$ and integrate $\mathrm{d}v$ to $v$.
 Then substitute them into the ___formula___:
 $$
-\int_{}^{}u\mathrm{d}v=uv-\int_{}^{}v\mathrm{d}u
+\int_{}^{}u\,dv=uv-\int_{}^{}v\,du
 $$
 ##### Not Solving Immediately?
 - It might happen that the function doesn't solve immediately and that this operation has to be multiple times.
@@ -60,60 +60,60 @@ $$
 - ___Solving repeating integrals:___
 	1. Double substitution into the original formula gives the original term $\int_{}^{}u\mathrm{d}v$ back:
 		$$
-		\int_{}^{}u\mathrm{d}v=uv-\int_{}^{}v\mathrm{d}u=\left(\ldots\right)-\int_{}^{}u\mathrm{d}v
+		\int_{}^{}u\,dv=uv-\int_{}^{}v\,du=\left(\ldots\right)-\int_{}^{}u\,dv
 		$$
 	
 	2. Here we see the repeating of the $\int_{}^{}u\mathrm{d}v$, and therefore we can apply simple algebra: 
 		$$
-		\int_{}^{}u\mathrm{d}v=\left(\ldots\right)-\int_{}^{}u\mathrm{d}v\to2\int_{}^{}u\mathrm{d}v=\left(\ldots\right)\to\int_{}^{}u\mathrm{d}v=\frac12\cdot\left(\ldots\right)
+		\int_{}^{}u\,dv=\left(\ldots\right)-\int_{}^{}u\,dv\to2\int_{}^{}u\,dv=\left(\ldots\right)\to\int_{}^{}u\,dv=\frac12\cdot\left(\ldots\right)
 		$$
 	
 	3. This then yields a solution for the original question $\int_{}^{}u\mathrm{d}v$.
 > [!Note]
-> In this case it is not necessary to substitute with $u=f(x)$ as with the [substitution method](#substitution), because the function $f(x)$ is not replaced in the integral as it is with the substitution method and the integral stays in terms of $x$, instead of terms of $u$ as we saw previously, meaning that when calculating $\int_{}^{}u\mathrm{d}v=uv-\int_{}^{}v\mathrm{d}u$ the $u$ and $v$ etc. values are replaced by a function $f(x)$ immediately, instead of after integration or not at all, like with the substitution method.
+> In this case it is not necessary to substitute with $u=f(x)$ as with the [substitution method](#substitution), because the function $f(x)$ is not replaced in the integral as it is with the substitution method and the integral stays in terms of $x$, instead of terms of $u$ as we saw previously, meaning that when calculating $\int_{}^{}u\,dv=uv-\int_{}^{}v\,du$ the $u$ and $v$ etc. values are replaced by a function $f(x)$ immediately, instead of after integration or not at all, like with the substitution method.
 
 ### Geometrically
-Taking the integral of a function is analagous to summing the area under the curve of the original function. The sign $\int$ is a deformed $\Sigma$. The integral basically sums the area, the _$y$-value_ $\cdot$ _the $x$-value_ as $x$ goes to $0$, -> as $x$ becomes $\mathrm{d}x$. Thus $\Sigma y\cdot \mathrm{d}x$, with as many steps as there are $\mathrm{d}x$ in $\left\lbrack x_1,x_2\right\rbrack$[^intervals] ->  $\int y\cdot \mathrm{d}x$. 
+Taking the integral of a function is analagous to summing the area under the curve of the original function. The sign $\int$ is a deformed $\Sigma$. The integral basically sums the area, the _$y$-value_ $\cdot$ _the $x$-value_ as $x$ goes to $0$, -> as $x$ becomes $\,dx$. Thus $\Sigma y\cdot \,dx$, with as many steps as there are $\,dx$ in $\left\lbrack x_1,x_2\right\rbrack$[^intervals] ->  $\int y\cdot \,dx$. 
 
 ### Rules of Thumb
 By rules of thumb (RoT) I mean quick equations and their solution, in general terms.
 
 1. (General rule for non-variable powers) 
 $$
-\int_{}^{}{u^{n}d}x=\frac{1}{n+1}\cdot u^{n+1}\cdot\frac{1}{u^{\prime}}
+\int u^{n}\,dx=\frac{1}{n+1}\cdot u^{n+1}\cdot\frac{1}{u^{\prime}}
 $$
 
 2. $\frac{1}{u}$ ($1$ over $u$) 
 $$
-\int_{}^{}\frac{1}{u}\mathrm{d} x=\ln\left|u\right|\cdot\frac{1}{u^{\prime}}
+\int\frac{1}{u}\,dx=\ln\left|u\right|\cdot\frac{1}{u^{\prime}}
 $$
 
 3. (sine, cosine, tangent)<br>
 	a. 
 	$$
-	\int_{}^{}\sin\left(u\right)\,\mathrm{d}x=-\cos\left(u\right)\cdot\frac{1}{u^{\prime}}
+	\int\sin\left(u\right)\,dx = -\cos\left(u\right)\cdot\frac{1}{u^{\prime}}
 	$$
 	b. 
 	$$
-	\int_{}^{}\cos\left(u\right)\mathrm{d} x=\sin\left(u\right)\cdot\frac{1}{u^{\prime}}
+	\int\cos\left(u\right)\,dx=\sin\left(u\right)\cdot\frac{1}{u^{\prime}}
 	$$
 	c. _$\int\tan\left(u\right)\mathrm{d} x$_ only exists for $u$ with max $x$ powers of $1$, it's better to calculate these integrals with substitution etc. to avoid mistakes. 
 4. (arcsine, arccosine, arctangent)<br>
 	a. 
 	$$
-	\int_{}^{}\frac{1}{a^{2}+x^{2}}\,\mathrm{d}x=\arctan\left(\frac{x}{a}\right)\cdot\frac{1}{a}
+	\int\frac{1}{a^{2}+x^{2}}\,dx=\arctan\left(\frac{x}{a}\right)\cdot\frac{1}{a}
 	$$
 	b. 
 	$$
-	\int_{}^{}\frac{1}{\sqrt{a^{2}-x^{2}}}\mathrm{d}x=\arcsin\left(\frac{x}{a}\right)\cdot\frac{1}{u^{\prime}}
+	\int\frac{1}{\sqrt{a^{2}-x^{2}}}\,dx=\arcsin\left(\frac{x}{a}\right)\cdot\frac{1}{u^{\prime}}
 	$$
 	c. 
 	$$
-	\int_{}^{}-\frac{1}{\sqrt{a^{2}-x^{2}}}\mathrm{d}x=\arccos\left(\frac{x}{a}\right)\cdot\frac{1}{u^{\prime}}\text{ }\cup\text{ }-\arcsin\left(\frac{x}{a}\right)\cdot\frac{1}{u^{\prime}}
+	\int \frac{-1}{\sqrt{a^{2}-x^{2}}}\,dx=\arccos\left(\frac{x}{a}\right)\cdot\frac{1}{u^{\prime}}\text{ }\cup\text{ }-\arcsin\left(\frac{x}{a}\right)\cdot\frac{1}{u^{\prime}}
 	$$
 5. (natural logarithm)
 $$
-\int_{}^{}\ln\left(x\right)\,\mathrm{d}x=x\ln\left|x\right|-x
+\int\ln\left(x\right)\,dx = x\ln\left|x\right| - x
 $$
 
 

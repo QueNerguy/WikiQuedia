@@ -12,10 +12,14 @@ Type: #hub
 
 ## Subjects
 ### Transmission
+- [Gears](gears)
+- [Motor and Drive Characteristics](Motor%20and%20Drive%20Characteristics)
+- [Transmission Design](Transmission%20Design)
 
 
 
-
+### Miscellaneous
+- [Springs](spring%20basics)
 
 
 

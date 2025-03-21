@@ -1,0 +1,4 @@
+- $J_R$ = Inertia ratio
+- $J_{L\to M}$ = The reflected inertia of the load onto the motor
+- $J_{Gearbox\to M}$ = The reflected inertia of the gearbox onto the motor
+- $J_M$ = The inertia of the motor, this is supplied by the manufacturer of the motor.

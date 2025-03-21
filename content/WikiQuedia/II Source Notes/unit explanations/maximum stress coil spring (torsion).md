@@ -1,0 +1,4 @@
+- $\sigma_{max}$ = The maximum stress reached on the area of a slice of the coil wire.
+- $K_\textrm{wT}$ = The Wahl factor for torsion springs. This is a corrective factor used to calculate the maximum stress. The reason this factor is needed is because the stress on a slice of the spring is not constant. The Wahl factor corrects for this.
+- $T$ = The applied [torque](torque) or [moment](moment).
+- $d$ = The diameter of the wire of the spring.

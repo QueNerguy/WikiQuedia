@@ -7,7 +7,7 @@ Tags: [[additive manufacturing]], [[plastic working]], [[metal working]] <br>08-
 Type: #additive, #metal_based_3D_printing #plastic_based_3D_printing
 
 ---
-# DED - Directed Energy Deposition
+# Directed Energy Deposition
 ### Process
 In directed energy deposition (DED) a metal wire is deposited through a nozzle and molten with either a laser or an electron beam upon contact with the [workpiece](!%20Manufacturing%20Technologies%20Overview.md#Terms%20and%20Disambiguation). The height of the table determines the height of the workheight of the laser or beamer, and the _nozzle_ moves in the horizontal plane. The nozzle can also be tilted change the angle from which the wire is fed[^dede].
 ##### Similar Processes

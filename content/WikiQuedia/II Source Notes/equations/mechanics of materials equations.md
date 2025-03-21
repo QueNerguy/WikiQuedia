@@ -4,15 +4,15 @@ $$
 $$
 ##### Lengthwise Deformation
 $$
-u\left(x\right)=\int_{x_1}^{x_2}\frac{F_{N}}{E\cdot A}\mathrm{d} x
+u\left(x\right)=\int_{x_1}^{x_2}\frac{F_{N}}{E\cdot A}\,dx
 $$
 ##### Rotational Deformation
 $$
-\varphi\left(x\right)=\int_{x_1}^{x_2}\frac{T}{G\cdot J}\mathrm{d} x
+\varphi\left(x\right)=\int_{x_1}^{x_2}\frac{T}{G\cdot J}\,dx
 $$
 ##### Shear Deformation
 $$
-v\left(x\right)=\int_{x_1}^{x_2}\int_{x_1}^{x_2}\frac{M}{E\cdot I}\mathrm{d} x\mathrm{d}x
+v\left(x\right)=\int_{x_1}^{x_2}\int_{x_1}^{x_2}\frac{M}{E\cdot I}\,d x\,dx
 $$
 ##### Bending Induced Normal Stress
 $$
@@ -30,7 +30,7 @@ $$
 [Explainer](https://en.wikipedia.org/wiki/Shear_stress)
 ##### Statical Moment of Area
 $$
-Q=\int_{}^{}y\mathrm{d}A=\int_{x_1}^{x_2}\int_{y_1}^{y_2}y\mathrm{d}y\mathrm{d}x
+Q=\int_{}^{}y\mathrm{d}A=\int_{x_1}^{x_2}\int_{y_1}^{y_2}y\,dy\,dx
 $$
 
 [Explainer](https://en.wikipedia.org/wiki/Shear_stress)

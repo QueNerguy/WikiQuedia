@@ -7,7 +7,7 @@ Tags: [[metal working]], [[molding]] <br>27-01-2025
 Type: #casting, #temporary
 
 ---
-# Shell casting
+# Shell Casting
 __Centrifugal molding__ works the same, but the [dies](!%20Manufacturing%20Technologies%20Overview.md#Terms%20and%20Disambiguation) are hollow.
 ### Process
 Shell casting uses resin covered sand to form the [mold](Manufacturing%20Technologies%20Hub#Terms%20and%20Disambiguation. To create the mold a [pattern](!%20Manufacturing%20Technologies%20Overview.md#Terms%20and%20Disambiguation). The original [pattern](!%20Manufacturing%20Technologies%20Overview.md#Terms%20and%20Disambiguation) is inserted into a chamber where sand and resin are sprayed unto it. When the pattern is removed a _shell_ is left. This shell is then used to create the end-product. The shell is consumed when removing the end-product[^shell].

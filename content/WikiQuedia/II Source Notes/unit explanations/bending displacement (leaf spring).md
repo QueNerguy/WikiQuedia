@@ -1,0 +1,6 @@
+- $\lambda$ = The beam or spring deflection from it's original position. It measures the maximum displacement along the beam.
+- $F$ = The [force](force) that causes the beam or spring to bend. This force has to be the one at approximately a right angle with the beam, acting at it's ends, or the formula doesn't hold.
+- $L$ = The length of the beam or spring.
+- $E$ = The [elastic modulus](Modulus%20of%20Elasticity.md).
+- $b$ = the width\depth of the beam or spring.
+- $h$ = the height of the beam or spring.

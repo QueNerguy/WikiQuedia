@@ -18,7 +18,7 @@ The [deformation](Crystal%20Manipulation%20and%20Deformation.md) is achieved by 
 Cold forging requires a lot of torque to [deform](Crystal%20Manipulation%20and%20Deformation.md) the material. It is usually done through hammering the workpiece exclusively. The deformation is only achieved by [straining](Crystal%20Manipulation%20and%20Deformation.md#Cold%20Property%20Alteration) the metal instead of reordening the crystal structure as in [hot rolling](#hot%20rolling).
 #### Bending
 ##### Free Bending
-A metal is bent in between two seperated blocks until it has a specific __curve__. This method has a lot of [springback](Young's%20Modulus.md) because the bend is spread in a smooth curve over the distance between blocks.
+A metal is bent in between two seperated blocks until it has a specific __curve__. This method has a lot of [springback](Modulus%20of%20Elasticity.md) because the bend is spread in a smooth curve over the distance between blocks.
 ##### Die Bending
 A metal is bent on a die to give a metal a specific __bend angle__. This method has very little springback because the bend is concentrated on a very small area.
 ##### Deep Drawing

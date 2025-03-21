@@ -1,0 +1,3 @@
+- $J_2$ = The output inertia. This can be a gear or a big part of the system, [reflected](Motor%20and%20Drive%20Characteristics#reflection)  to an output point 2.
+- $J_1$ = The input inertia. This can be a gear or a big part of the system, [reflected](Motor%20and%20Drive%20Characteristics#reflection) to an input point 1.
+- $\textrm{TV}$ = The [train value](#definitions) of the system. This can be interchanged with the [velocity ratio](#Definitions) ($\textrm{VR}$), for a part of the system.

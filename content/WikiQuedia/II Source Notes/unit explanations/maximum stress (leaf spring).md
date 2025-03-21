@@ -1,0 +1,5 @@
+- $\sigma_{max}$ = The maximum [stress](stress) the leaf can take before breaking a design guideline. <br> This is not the yield strength or breaking stress, it's based on what the acceptable stress is in this situation.
+- $F$ = The [force](force) that causes the beam or spring to bend. This force has to be the one at approximately a right angle with the beam, acting at it's ends, or the formula doesn't hold.
+- $L$ = The length of the beam or spring.
+- $b$ = the width\depth of the beam or spring.
+- $h$ = the height of the beam or spring.

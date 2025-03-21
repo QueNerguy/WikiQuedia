@@ -16,89 +16,84 @@ When making a part choosing the right manufacturing technology is imperative for
 ## Categories
 ### 1 - Casting
 ##### Design Rules Casting
-```dataview
-LIST
-FROM #casting and #design_rules
-```
+- [Design Rules Casting](design%20rules%20casting)
+
 ##### Temporary Casting
-```dataview
-LIST
-FROM #casting and #temporary
-```
+- [Thermoforming](thermoforming)
+- [Shell Casting](Shell%20Casting.md)
+- [Sand Casting](sand%20casting)
+- [Investment Casting](investment%20casting)
+
 ##### Permanent Casting
-```dataview
-LIST
-FROM #casting and #permanent
-```
+- [Rotational Molding](rotational%20molding)
+- [Injection Molding](injection%20molding)
+- [Die Casting](die%20casting)
+- [Closed Die Blowing](closed%20die%20blowing)
+
 ---
 ### 2 - Shaping and Forming
 ##### Design Rules Shaping and Forming
-```dataview
-LIST
-FROM #shaping_and_forming and #design_rules
-```
+- [Design Rules Shaping and Forming](Design%20Rules%20Shaping%20and%20Forming)
+
 ##### Shaping and Forming Processes
-```dataview
-LIST
-FROM #shaping_and_forming 
-WHERE file.name != "Design Rules Shaping and Forming"
-```
+- [Forging](forging)
+- [Extrusion](extrusion)
+- [Drawing](drawing)
+- [Sheet Metal Forming](sheet%20metal%20forming)
+
 
 ---
 ### 3 - Seperating
 ##### Mechanical
-```dataview
-LIST
-FROM #seperating and #mechanical
-```
+- [Mechanical Seperating Processes](Mechanical%20Seperating%20Processes.md)
+
 ##### Chemical and Heat Dependent
-```dataview
-LIST
-FROM #seperating and #mystical
-```
+- [Wire EDM](Wire%20EDM.md)
+- [Plasma Cutting](Plasma%20Cutting.md)
+- [Laser Cutting](Laser%20Cutting.md)
+- [Flame Cutting](Flame%20Cutting.md)
+
 ---
 ### 4 - Machining
-```dataview
-LIST
-FROM #machining
-```
+- [Physical Machining Methods](Physical%20Machining%20Methods.md)
+- [EDM](EDM.md)
+- [ECM](ECM.md)
+
 ---
 ### 5 - Joining
 ##### Welding
 ###### Arc Welding
-```dataview
-LIST
-FROM #welding and #arc_welding
-```
+- [TIG Welding](TIG%20Welding.md)
+- [Shielded Metal Arc Welding](Shielded%20Metal%20Arc%20Welding.md)
+- [Oxyfuel Welding](Oxyfuel%20Welding.md)
+- [MAG and MIG Welding](MAG%20and%20MIG%20Welding.md)
+
 ###### Resistance and Friction Based Welding
-```dataview
-LIST
-FROM #welding and #resistance_and_friction_welding
-```
+- [Resistance Welding](Resistance%20Welding.md)
+- [Friction Welding](Friction%20Welding.md)
+
 ##### Non-Welding
-```dataview
-LIST
-FROM #non-welding
-```
+- [Soldering](Soldering.md)
+- [Brazing](Brazing.md)
+
 ---
 ### 6 - Additive manufacturing
 ##### Metal Based Additive Manufacturing
-```dataview
-LIST
-FROM #additive and #metal_based_3D_printing
-```
+- [Power Bed Fusion](Power%20Bed%20Fusion.md)
+- [DED - Directed Energy Deposition](DED%20-%20Directed%20Energy%20Deposition.md)
+- [Binder Jetting](Binder%20Jetting.md)
+
 
 ##### Plastic Based Additive Manufacturing
-```dataview
-LIST
-FROM #additive and #plastic_based_3D_printing
-```
+- [Power Bed Fusion](Power%20Bed%20Fusion.md)
+- [DED - Directed Energy Deposition](DED%20-%20Directed%20Energy%20Deposition.md)
+- [FDM - Fused Deposition Modeling](FDM%20-%20Fused%20Deposition%20Modeling.md)
 
 ##### Polymer Based Additive Manufacturing
-```dataview
-LIST
-FROM #additive and #polymer_based_3D_printing
-```
+- [SLA - Stereolithography](SLA%20-%20Stereolithography.md)
+- [Material Jetting](Material%20Jetting.md)
+- [Binder Jetting](Binder%20Jetting.md)
+
 ## Terms and Disambiguation
 %%
 ==Link for referencing==:

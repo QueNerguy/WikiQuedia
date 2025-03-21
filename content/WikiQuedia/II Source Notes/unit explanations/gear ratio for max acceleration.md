@@ -1,0 +1,3 @@
+- $J_2$ = The output inertia. This can be a gear or a big part of the system, [reflected](Motor%20and%20Drive%20Characteristics#reflection)  to an output point 2.
+- $J_1$ = The input inertia. This can be a gear or a big part of the system, [reflected](Motor%20and%20Drive%20Characteristics#reflection) to an input point 1.
+- $i$ = The [gear ratio](gears#gear%20ratios).

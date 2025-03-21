@@ -27,19 +27,16 @@ The general guideline for inertia ratios is:
 | Dynamics irrelevant <br>Performance irrelevant | $J_{R}\approx10$<br>or otherwise close |
 credit: _Nicolas Martin_
 #### Calculating the Inertia Ratio
-The inertia ratio can be calculated with:
+- The inertia ratio can be calculated with:
 $$
 J_{R}=\frac{J_{\textrm{Reflected to motor}}}{J_{M}}
 $$
-Or more concretely:
+- Or more concretely:
 $$
 J_{R}=\frac{J_{L\to M}+J_{Gearbox\to M}}{J_{M}}
 $$
-- with:
-	- $J_R$ = Inertia ratio
-	- $J_{L\to M}$ = The reflected inertia of the load onto the motor
-	- $J_{Gearbox\to M}$ = The reflected inertia of the gearbox onto the motor
-	- $J_M$ = The inertia of the motor, this is supplied by the manufacturer of the motor.
+See [here](inertia%20ratio%20with%20reflections) the unit explanation.
+
 ##### Reflection
 The reflected inertia is the inertia the motor (or any other point on the transmission) experiences from the load or a gearbox. A [reduction ratio](Gears#gear%20ratios) can lower this if the gearbox is designed for increased [torque](torque). It does, however, increase with losses to friction et cetera in the gearbox. The equation for this, then, is:
 $$
