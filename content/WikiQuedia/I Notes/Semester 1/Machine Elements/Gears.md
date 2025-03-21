@@ -92,12 +92,12 @@ There's two maximum stresses the gear experiencyes:
 $$
 \sigma_{H}=Z_{H}Z_{E}\sqrt{\frac{KF_{t}}{bd}\cdot\frac{u+1}{u}}
 $$
-See [here](contact%20stress%20(gears).md) the unit explanation.
+See [here](contact%20stress%20(gears).md) the unit explanation.<br>
 2.  __Bending stress__: This typically fails with _deformation_, or in the case of fatigue, _tooth fracture_. Bending stress occurs at the base of tooth and can cause it to break off.
 $$
 \sigma_{b}=\frac{KF_{t}}{bm}\cdot Y_{\textrm{Fa}}\cdot Y_{\textrm{Sa}}
 $$
-See [here](bending%20stress%20(gears).md) the unit explanation.
+See [here](bending%20stress%20(gears).md) the unit explanation.<br>
 
 ###### Insufficient Lubrication and Maintenance
 Gears need lubrication to function properly for high speed high torque applications. If the gears are under-lubricated they wear faster. The teeth will grind together, removing material, or the friction might weld them together for a bit, causing _scuffing_ or _pitting_ on the tooth surfaces.

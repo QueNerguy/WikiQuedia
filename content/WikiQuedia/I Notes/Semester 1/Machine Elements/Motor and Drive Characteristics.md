@@ -35,7 +35,7 @@ $$
 $$
 J_{R}=\frac{J_{L\to M}+J_{Gearbox\to M}}{J_{M}}
 $$
-See [here](inertia%20ratio%20with%20reflections) the unit explanation.
+See [here](inertia%20ratio%20with%20reflections) the unit explanation.<br>
 
 ##### Reflection
 The reflected inertia is the inertia the motor (or any other point on the transmission) experiences from the load or a gearbox. A [reduction ratio](Gears#gear%20ratios) can lower this if the gearbox is designed for increased [torque](torque). It does, however, increase with losses to friction et cetera in the gearbox. The equation for this, then, is:

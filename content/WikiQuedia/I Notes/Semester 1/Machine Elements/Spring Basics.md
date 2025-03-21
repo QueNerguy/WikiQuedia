@@ -24,34 +24,34 @@ Compression coil springs are coil springs manufactured to be used to shorten or 
 $$
 K_\textrm{w}\approx\frac{4C-1}{4C-4}+\frac{0.615}{C}
 $$
-See [here](wahl%20factor%20for%20coil%20springs%20(compression%20or%20extension).md) the unit explanation.
+See [here](wahl%20factor%20for%20coil%20springs%20(compression%20or%20extension).md) the unit explanation.<br>
 2. The maximum stress ($\tau_{max}$). The maximum stress is $\tau$ because the stress in the spring is torsional, $\tau_{max}$ is the maximum _[shear stress](stress)_ at the surface:
 $$
 \tau_{max}=K_{\textrm{w}}\cdot\frac{8FC}{\pi d^2}
 $$
-See [here](maximum%20stress%20coil%20spring%20(compression%20or%20extension).md) the unit explanation.
+See [here](maximum%20stress%20coil%20spring%20(compression%20or%20extension).md) the unit explanation.<br>
 3. The spring rate, derived from the $F=k\cdot u$ equation:
 $$
 k=\frac{Gd^{4}}{8nD^{3}}=\frac{Gd}{8nC^{3}}
 $$
-See [here](spring%20rate%20coil%20spring%20(compression%20or%20extension).md) the unit explanation.
+See [here](spring%20rate%20coil%20spring%20(compression%20or%20extension).md) the unit explanation.<br>
 ###### Torsion
 Torsion springs are used for and around rotating axes. A famous example would be a mouse trap.<br>Internally these springs are loaded with [normal stresses](stress).
 1. The Wahl factor $K_{\textrm{wT}}$:
 $$
 K_{\textrm{wT}}\approx\frac{4C^{2}-C-1}{4C\left(C-1\right)}
 $$
-See [here](wahl%20factor%20for%20coil%20springs%20(torsion).md) the unit explanation.
+See [here](wahl%20factor%20for%20coil%20springs%20(torsion).md) the unit explanation.<br>
 2. The maximum stress $\sigma_{\max}$:
 $$
 \sigma_{\max}\approx\frac{K_{\textrm{wT}}\cdot T}{0.1d^3}
 $$
-See [here](maximum%20stress%20coil%20spring%20(torsion).md) the unit explanation.
+See [here](maximum%20stress%20coil%20spring%20(torsion).md) the unit explanation.<br>
 3. The spring rate $k$, derived from the $F=k\cdot u$ equation:
 $$
 k_{\phi}=\frac{dT}{d\phi}=\frac{\Delta T}{\Delta\phi}=\frac{EI}{180Dn}
 $$
-See [here](spring%20rate%20coil%20spring%20(torsion)) the unit explanation.
+See [here](spring%20rate%20coil%20spring%20(torsion)) the unit explanation.<br>
 
 
 
@@ -62,12 +62,12 @@ Leaf springs are the same as a bending beam in statics equations, the same princ
 $$
 \lambda = \frac{4FL³}{Ebh³}
 $$
-See [here](bending%20displacement%20(leaf%20spring).md) the unit explanation.
+See [here](bending%20displacement%20(leaf%20spring).md) the unit explanation.<br>
 2. The maximum stress $\sigma_{max}$:
 $$
 \sigma_{max} = \frac{6FL}{bh²}
 $$
-See [here](maximum%20stress%20(leaf%20spring).md) the unit explanation
+See [here](maximum%20stress%20(leaf%20spring).md) the unit explanation<br>
 3. The spring rate $k$, derived from the $F=k\cdot u$ equation:
 $$
 k=\frac{dF}{d\lambda}=\frac{\Delta F}{\Delta\lambda}

@@ -48,13 +48,13 @@ $$
 \textrm{TV}=\sqrt{\frac{J_2}{J_1}}
 $$
 
-See [here](train%20value%20for%20max%20acceleration.md) the unit explanation.
+See [here](train%20value%20for%20max%20acceleration.md) the unit explanation.<br>
 
 In the case that the individual [gear ratios](gears#gear%20ratios) need to be calculated, the same formula applies, exchanging $\textrm{TV}$ with $i$, as follows:
 $$
 i=\sqrt{\frac{J_2}{J_1}}
 $$
-See [here](gear%20ratio%20for%20max%20acceleration.md) the unit explanation.
+See [here](gear%20ratio%20for%20max%20acceleration.md) the unit explanation.<br>
 
 
 
