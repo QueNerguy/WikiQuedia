@@ -1,0 +1,4 @@
+- $\sigma$ = The stress due to preloading. This can not exceed a predetermined allowable stress. <br>This stress is not a combined stress, as without preload the bolt does not get rotated under load.
+- $Q$ = The load on the bolt.
+- $A_{\textrm{eff}}$ = The effictive area of the bolt. Officially this is supposed to be a function of the inner diameter of the bolt, but it can be decently approximated using the major diameter.
+- $D$ = The major diameter, equal to the M grade.

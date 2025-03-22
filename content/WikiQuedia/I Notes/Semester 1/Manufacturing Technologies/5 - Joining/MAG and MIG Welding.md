@@ -2,7 +2,7 @@
 title: MAG and MIG Welding
 draft: false
 ---
-Tags: [[Joining]], [[metal working]], [[welding]] <br>04-02-2025
+Tags: [[joining]], [[metal working]], [[welding]] <br>04-02-2025
 
 Type: #welding, #arc_welding
 

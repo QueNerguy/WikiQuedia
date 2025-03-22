@@ -2,7 +2,7 @@
 title: Resistance Welding
 draft: false
 ---
-Tags: [[Joining]], [[metal working]], [[welding]] <br>04-02-2025
+Tags: [[joining]], [[metal working]], [[welding]] <br>04-02-2025
 
 Type: #welding, #resistance_and_friction_welding 
 

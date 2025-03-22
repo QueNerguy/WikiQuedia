@@ -27,8 +27,9 @@ $$
 
 ### Kinematics
 A gear is a very complicated part, and a lot is considered when designing a gear. There also a lot of different types available, optimizing for smooth transmission, force transmission or ease of use and low cost. An extensive list can be found on the [Wikipedia page](https://en.wikipedia.org/wiki/Gear).<br>
-The most important dimensions of a gear are given by the manufacturer. They are illustrated on a gear below. These measures denote either __1__: a _[tooth depth](#tooth%20depth)_ value (form one circle to the next), __2__: a _[diameter circle](#diameter%20circle%20values)_,  __3__: the _[module](#module)_, __4__: the _[pitch](#pitch)_, __5__: the _[thickness](#tooth%20thickness)_ of a tooth, __6__: the _[number of teeth](#number%20of%20teeth)_ __7__: the _[pressure angle](#pressure%20angle)_. <br>Most of these are illustrated [below](#kinematics%20illustration)
+The most important dimensions of a gear are given by the manufacturer. They are illustrated on a gear, pictured [below](#kinematics%20illustration). These measures denote either __1__: a _[tooth depth](#tooth%20depth)_ value (form one circle to the next), __2__: a _[diameter circle](#diameter%20circle%20values)_,  __3__: the _[module](#module)_, __4__: the _[pitch](#pitch)_, __5__: the _[thickness](#tooth%20thickness)_ of a tooth, __6__: the _[number of teeth](#number%20of%20teeth)_ __7__: the _[pressure angle](#pressure%20angle)_. <br>Most of these are illustrated [below](#kinematics%20illustration)
 
+#### Common Terms
 ###### Tooth Depth
 - __$a$__: The distance from the _pitch circle_ to the _addendum circle_ (the top).
 - __$b$__: The distance from the _pitch circle_ to the _dedendum circle_(the bottom).

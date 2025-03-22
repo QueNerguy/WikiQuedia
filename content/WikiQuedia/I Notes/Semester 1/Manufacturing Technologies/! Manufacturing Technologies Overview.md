@@ -2,7 +2,7 @@
 title: "! Manufacturing Technologies Overview"
 draft: false
 ---
-Tags: [[metal working]], [[plastic working]], [[molding]], [[deforming processes]], [[seperating processes]], [[machining processes]], [[Joining]], [[additive manufacturing]], [[welding]], [[design rules]]
+Tags: [[metal working]], [[plastic working]], [[molding]], [[deforming processes]], [[seperating processes]], [[machining processes]], [[joining]], [[additive manufacturing]], [[welding]], [[design rules]]
 
 Type: #hub
 

@@ -1,0 +1,6 @@
+- $L_e$ = The required length of engagement.
+- $\sigma_{\textrm{T}_{\textrm{bolt}}}$ = The [tensile strength](tensile%20strength) of the bolt.
+- $\sigma_{\textrm{T}_{\textrm{nut}}}$ = The tensile strength of the nut.
+- $A_{\textrm{eff}}$ = The effictive area of the bolt. Officially this is supposed to be a function of the inner diameter of the bolt, but it can be decently approximated using the major diameter.
+- $D$ = The major diameter, equal to the M grade.
+- $p$ = The pitch of a screw or bolt.

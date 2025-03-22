@@ -8,11 +8,12 @@ Tags: [[spring]], [[design rules]], [[stress calculation]]   <br>21-03-2025
 # Spring Basics
 Springs offer a nice way to store potential energy. They are mainly used to stop an object from moving, like in a suspension system, or to make an object start moving.
 ### Disambiguation
-- $D$ usually refers to a diameter related to the diameter of the coil.
+- $D$: Usually refers to a diameter related to the diameter of the coil.
 	- $D_i$: The inner diameter of the coil. This is the outside diameter - 2 $\cdot$ the wire thickness.
 	- $D$: The mean diameter of the coil. This is the diameter of the coil measured at half the wire thickness. -> outside diameter - the wire thickness. This is the mean of $D_i$ and $D_o$.
 	- $D_o$: The outside diameter of the coil.
-- $d$ usually refers to the diameter of the wire of the spring.
+- $d$: Usually refers to the diameter of the wire of the spring.
+- $p$: Pitch is the distance between revolutions, analogue to [pitch or lead for screws and bolts](Bolts%20and%20Screws%20and%20Strength.md#common%20terms).
 ### Operating principles
 There's multiple spring shape designs, each with their own advantages and drawbacks, but all springs are based on the same principle: the stretching of the [metal crystal](crystals), as long as it is within the elastic range, gives the spring it's elongative and elastic properties. <br>The most common springs are listed below.
 ##### Coiled springs

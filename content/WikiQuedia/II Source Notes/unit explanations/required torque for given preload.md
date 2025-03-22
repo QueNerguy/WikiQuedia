@@ -1,0 +1,3 @@
+- $T$ = The required torque to reach the given preload.
+- $Q_p$ = The preload on the bolt.
+- $D$ = The major diameter, equal to the M grade.

@@ -2,7 +2,7 @@
 title: Brazing
 draft: false
 ---
-Tags: [[Joining]], [[metal working]] <br>04-02-2025
+Tags: [[joining]], [[metal working]] <br>04-02-2025
 
 Type: #non-welding
 

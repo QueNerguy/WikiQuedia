@@ -1,0 +1,4 @@
+- $\sigma_{\textrm{ca}}$ = The stress due to preloading. This can not exceed a predetermined allowable stress. <br>This stress is an equivalent stress, meaning that it is the combined value of the shear and normal stress, as they are both present under preload, because the bolt gets twisted when preloading. <br>-> $\sigma_{\textrm{ca}}=\sqrt{\sigma^2+\tau^2}$. <br>ca stands for <u>c</u>ombined <u>a</u>ctual.
+- $Q$ = The load on the bolt. If there is no external load, $Q$ = $Q_p$.
+- $A_{\textrm{eff}}$ = The effictive area of the bolt. Officially this is supposed to be a function of the inner diameter of the bolt, but it can be decently approximated using the major diameter.
+- $D$ = The major diameter, equal to the M grade.
