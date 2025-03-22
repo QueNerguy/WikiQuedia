@@ -89,7 +89,7 @@ See [here](crushing%20or%20bearing%20stress%20in%20bolts.md) the unit explanatio
 > [!example] More Concretely
 > In the below clevis-blade arrangement the flow of the force $P$ is shown in the parts. The pin is crushed at the whole area from $b$ to $c$. In this scenario $F_{\textrm{shear}}$ = $P$. <br>The length the shear force acts on has two values, either $b$ + $c$, for the force $P$ on the clevice, or the length between $b$ and $c$, let's call it $a$, for the force $P$ on the blade. Since the length of $a$ is smaller than that of $b$ and $c$, we choose length $a$ for $L_{\min}$.
 
-&nbsp&nbsp&nbsp&nbsp&nbsp ![[Clevis-Pin:)_80%.png|450]]
+![[Clevis-Pin:)_80%.png|450]]
 
 
 
@@ -103,7 +103,7 @@ See [here](crushing%20or%20bearing%20stress%20in%20bolts.md) the unit explanatio
 
 
 ---
-Status: #bud
+Status: #sprout
 
 ---
 # References:
