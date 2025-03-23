@@ -1,0 +1,7 @@
+- $Q_p$ = The required preload on the bolt.
+- $K_s$ = Antiskid factor. This is a correction factor to account for reliability. <br>Usually select $K_s$ to be between 1.1 - 1.3
+- $M$ = The moment acting on the part or assembly.
+- $f$ = The coefficient of friction between the bolt and the surface of the part.
+- $c$ = The number of contact surfaces. 
+- $\textrm{z}$ = The amount of bolts on the part or assembly.
+- $\sum_{i=1}^{\textrm{z}}r_{i}$ = The sum of the distances between the bolts and the torque. <br><br>The way this sum operates is as follows:  <br>__1__. It starts at $i$ = 1. bolt 1 has it's radius indexed. $r_{1}$.<br>__2__. Then at $i$ = 2, bolt 2 has it's radius indexed. $r_{2}$. This is then added to the result of __1__.<br>__3__. Then at $i$ = 3, bolt 3 has it's radius indexed. $r_{3}$. This is then added to the value acquired at step __2__. <br>__4__.This process continues until all $\textrm{z}$ bolts have been indexed and added together.

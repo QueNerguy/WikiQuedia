@@ -1,4 +1,4 @@
-- $\sigma_p$ = The crushing or bearing stress.
+- $\sigma_{p,\max}$ = The maximum crushing or bearing stress.
 - $F_{\textrm{shear}}$ = The force transferred through the contact surface of the bolt and connected material. This is equal to the shear force as long as there is only one bolt catching the whole force. If there are more bolts it is the shear force / amount of bolts.
 - $d_0$ = The _inner_- or _core diameter_ of a bolt. This can be decently approximated using the major diameter $D$.
 - $L_{\min}$ = The smallest length the shear force works on.

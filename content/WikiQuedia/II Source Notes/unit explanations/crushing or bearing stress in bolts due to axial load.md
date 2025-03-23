@@ -1,0 +1,3 @@
+- $\sigma_{p,\max}$ = The crushing or bearing stress.
+- $Q$ = The load the bolt takes.
+- $A_{\textrm{eff}}$ = The effictive area of the bolt-head. This area is the surface under the head of the bolt, which can be approximated by measuring the diameter $d_h$ of the head, and using the major diameter $D$ of the bolt to calculate the area. <br> -> $A_{\textrm{eff}} = \frac{1}{4}\pi \cdot (d_h - D)$

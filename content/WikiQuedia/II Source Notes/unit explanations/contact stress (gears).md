@@ -4,7 +4,7 @@
 $$
 Z_{E}=\sqrt{0.175\cdot E}
 $$
-&nbsp&nbsp&nbsp&nbsp -> $E$ = [Elastic modulus](Modulus%20of%20Elasticity.md)
+ -> $E$ = [Elastic modulus](Modulus%20of%20Elasticity.md)
 - $K$ = Load factor. If this is not given, assume $K$ = 1.
 - $F_{t}$ = Tangential force, evaluated at the pitch circle/diameter.
 - $b$ = Gear width.

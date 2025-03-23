@@ -1,0 +1,3 @@
+- $F$ = The part of the force the bolt takes. This is not the same as the load on the bolt $Q$, for stress analysis $Q$ is used and needs to be calculated with this $F$ value.
+- $F_{\sum}$ = The external force on the part or assembly.
+- $\textrm{z}$ = The amount of bolts on the part or assembly.

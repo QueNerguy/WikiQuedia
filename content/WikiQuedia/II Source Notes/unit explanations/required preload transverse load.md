@@ -1,0 +1,6 @@
+- $Q_p$ = The required preload on the bolt.
+- $K_s$ = Antiskid factor. This is a correction factor to account for reliability. <br>Usually select $K_s$ to be between 1.1 - 1.3
+- $F_{\sum}$ = The external force on the part or assembly.
+- $f$ = The coefficient of friction between the bolt and the surface of the part.
+- $\textrm{z}$ = The amount of bolts on the part or assembly.
+- $c$ = The number of contact surfaces. <br>This number affects the amount of friction that can be produced between plates. If the friction is higher the preload can be lower because the bolt will carry less of the force.<br> -> Only contact between the parts affect friction, the contact surface between the bolt and the part is <u>not</u> counted.

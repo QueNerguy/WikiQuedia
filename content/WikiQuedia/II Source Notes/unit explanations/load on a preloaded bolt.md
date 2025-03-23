@@ -6,7 +6,7 @@ $$
 k_m = \frac{F}{\lambda}=\frac{G\cdot A_{\textrm{part}}}{l_{\textrm{total, part}}}=\frac{\left(\frac12\cdot\frac{E}{1+\nu}\right)\cdot A_{\textrm{part}}}{l_{\textrm{total, part}}}
 $$
 - $F$ = The external force.
-
+- $\frac{k_{b}}{k_{b}+k_{m}}$ = The relative stiffness of the bolt. There is tables available of these values.
 
 
 
