@@ -125,7 +125,9 @@ See [here](combined%20stress%20in%20a%20bolt%20without%20preload.md) the unit ex
 Crushing stresses can sometimes cause a part to fail at the connecting surface before bigger structural failure occurs. This is because the load on the head of a bolt is spread over a very small area under it's head, which can cause great stress buildup. The part can fail at the thread when it's loaded in shear or torque for the same reason too. To avoid this failure mode, add _washers_ between the head and the surface of the part to distribute the stress over a greater area.
 ##### Crushing Stress due to Shear Loading or Torqueing
 When a bolt is loaded in shear (due to a shear force, as seen below, or a torque, see [here](#3%20-%20torque)), or otherwise crushed by the material it is inserted into, the threaded area of the bolt (or part in rare cases) can fail due to crushing. The stress equation in this case is applicable to all bolts loaded in shear, precision bolted joints too, and is referred to as _crushing stress_ or _bearing stress_. This stress can not exceed the allowable stress of the bolt, nor that of the part.
-$$\sigma_{p,\max}=\frac{F_{\textrm{shear}, \max}}{d_0 L_{\min}}$$
+$$
+\sigma_{p,\max}=\frac{F_{\textrm{shear}, \max}}{d_0 L_{\min}}
+$$
 See [here](crushing%20or%20bearing%20stress%20in%20bolts%20due%20to%20shearing.md) the unit explanation.
 
 
@@ -162,7 +164,7 @@ Status: #ripe
 [^methods]: See [here](!%20manufacturing%20technologies%20overview) for an overview of (common) manufacturing processes.
 [^bolthead]: <br>![[BoltHead_80%.png|100]]
 [^prelax]: [Engineers edge - Calculator for bolt preload tension force and equation](https://www.engineersedge.com/material_science/bolt-preload-calculation.htm)
-[^mech]: [Mechanicalc - Bolted Joint Analysis, \#bearing](https://mechanicalc.com/reference/bolted-joint-analysis)
+[^mech]: [Mechanicalc - Bolted Joint Analysis: Bearing](https://mechanicalc.com/reference/bolted-joint-analysis)
 
 1. Vrije Universiteit, N. Martin, [link to course](https://canvas.utwente.nl/courses/15351/modules/77332).
 2. W. Jiang, _Analysis and design of machine elements_, 2019, [link](https://ut.on.worldcat.org/oclc/1084505954).
