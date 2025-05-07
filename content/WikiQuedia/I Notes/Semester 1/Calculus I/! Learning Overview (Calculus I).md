@@ -18,6 +18,14 @@ Calculus I lays out the base mechanics of differentiation and integration. The f
 ### Afterwork
 1. ___[Inverting a Function](Inverting%20a%20Function.md):___ This topic depends heavily on differentiation, but is not directly related to understanding the core concepts in the [foreground](#foreground) of calculus. It is, however, usually part of a calculus book.
 
+
+
+
+
+# useful sites:
+1. [Wolfree Alpha](https://archive.ph/gfhPu) (use tor-browser)
+2. [Desmos (for graphing)](https://www.desmos.com/calculator)
+
 ---
 Status: #ripe 
 

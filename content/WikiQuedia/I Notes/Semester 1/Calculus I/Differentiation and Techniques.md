@@ -125,9 +125,9 @@ See also: [RoT Integration](Integration%20and%20Techniques.md#Rules%20of%20Thumb
 
 ##### useful sites:
 1. [Derivative calculator](https://www.derivative-calculator.net/)
-2. Wolfree Alpha %% I cant currently find a working link tho :( %%
+2. [Wolfree Alpha](https://archive.ph/gfhPu) (use tor-browser)
 3. [Desmos (for graphing)](https://www.desmos.com/calculator)
-4. 
+
 ---
 __[Home](!%20Learning%20Overview%20(Calculus%20I).md)__
 
