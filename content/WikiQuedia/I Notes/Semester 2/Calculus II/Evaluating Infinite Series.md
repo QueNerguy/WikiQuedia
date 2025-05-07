@@ -56,10 +56,10 @@ $$
 
 
 ---
-__[Home](Example.md)__ %%NEEDS HOMEPAGE%%
+__[Home](Example.md)__ %%==NEEDS HOMEPAGE==%%
 
 ---
-_Status:_ #bud
+_Status:_ #bud #missingLink
 
 ---
 # References:

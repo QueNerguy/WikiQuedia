@@ -23,8 +23,7 @@ $$
 Sums are a great tool for evaluating repetitive and connected series. They are of great importance for evaluating areas and are used in [integrals](integration%20and%20techniques), for example. <br>In this case the area below the graph is approached by drawing rectangles below it, and adding their area up to approximate the area below the graph. The slimmer the bars get the more accurate the approximation. When the bars reach a thickness that approaches 0, the error with the approximation also approaches 0. 
 ##### Example of a Use Case
 Another use case might be adding the area of the squares shown below.
-![[squareHalvingAssignment_80%.png|450]]
-In this case you would relate the size of the first square to the second, and so on, while making sure the equation scales correctly with every iteration.
+![[squareHalvingAssignment_80%.png|450]]<br>In this case you would relate the size of the first square to the second, and so on, while making sure the equation scales correctly with every iteration.
 ###### Solution:
 Here we wouldassume the first triangle to have area $1$x$1$, the second $\frac{1}{\sqrt2}$x$\frac{1}{\sqrt2}$, the third $\frac{1}{2}$x$\frac{1}{2}$. <br>Seeing that $1$ is the same as $\frac{1}{\sqrt2 ^{0}}=\frac{1}{1}$ and that $\frac{1}{2}$ is the same as $\frac{1}{\sqrt 2 ^2}$ we see a pattern emerge: <br>$\sqrt 2 ^0$, $\sqrt 2 ^1$, $\sqrt 2 ^2$. <br>The area of a square is the square of it's sides, the resulting sum we construct would then be:
 $$
@@ -46,10 +45,10 @@ In some cases, like $\sum^{12}_{n = 1} 3^{n - 1}$, it is annoying to [evaluate](
 
 
 ---
-__[Home]()__ %%NEEDS HOMEPAGE still%%
+__[Home]()__ %%==NEEDS HOMEPAGE still==%%
 
 ---
-_Status:_ #bud
+_Status:_ #bud #missingLink
 
 ---
 # References:

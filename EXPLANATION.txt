@@ -1,6 +1,6 @@
 to update:
     to sync: run: npx quartz sync
-    to push: run: npx quartz sync --no-pull
+    to push only: run: npx quartz sync --no-pull
 
 Before every push copy the files from ~/Obsidian to ~/quartz/content.
     /"0 - Images" goes into "0 Images"

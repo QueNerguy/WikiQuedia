@@ -19,3 +19,12 @@ I have divided the information on this site into three main folders:
 1. __Notes__: This is where the actual information is contained. To navigate find the semester the subject was discussed in and find the subjects there, with notes pertaining to subparts of the knowledge.
 2. __Source Notes__: This is where I compile sources with a short paraphrase of the part of the source I found useful for my application, or in general. This folder is mainly background information so you or I dont have to read a whole article which means it's not one to look in often.
 3. __Tags__: These are notes mainly used for navigation using their backlinks. If you forget or don't know what actual subject you are looking for, but do remember what it is related to, look here to find it by looking at the backlinks of the tag note. <br>These notes are also useful for structuring the mindmap graph for easier searching, and you can search for them as key phrase with the search function, like you would with actual tags.
+
+
+
+
+
+## Crediting in the Wiki
+All uncredited images have either been lifted from the course material as presented by the Vrije Universiteit where they did not get credited either, leading me to assume no credit was necessary, or they have been distributed under a license where no credit was necessary.
+Either way i'm pretty sure this covers my bases legally for not crediting certain images.
+If you feel one of your works has been used without proper credit please create an issue at the github page.
