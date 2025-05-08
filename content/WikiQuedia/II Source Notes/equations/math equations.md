@@ -37,3 +37,7 @@ $$
 \tan\left(x\right)=\frac{\sin\left(x\right)}{\cos\left(x\right)}
 $$
 
+
+
+
+

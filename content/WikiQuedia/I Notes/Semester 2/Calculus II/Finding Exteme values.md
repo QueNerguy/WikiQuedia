@@ -2,7 +2,7 @@
 title: "Finding Exteme values"
 draft: false
 ---
-Tags:    <br>07-05-2025
+Tags: [[differentiation]], [[calculus]], [[eigenvalues]], [[interval syntax]]   <br>07-05-2025
 
 ---
 # Finding Exteme values
@@ -47,7 +47,7 @@ When dealing with [restricted domains](Intervals;%20Domain%20and%20Range) there 
 __[Home](Example.md)__ %%==NEEDS HOMEPAGE==%%
 
 ---
-_Status:_ #sprout #missingLink 
+_Status:_ #ripe #missingLink 
 
 ---
 # References:

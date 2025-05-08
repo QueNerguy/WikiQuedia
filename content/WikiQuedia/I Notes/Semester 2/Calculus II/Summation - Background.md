@@ -2,7 +2,7 @@
 title: Summation Background
 draft: false
 ---
-Tags: [[calculus]], [[sums]] <br>26-01-2025
+Tags: [[calculus]], [[sums]], [[limits]] <br>26-01-2025
 
 ---
 # Summation -  Background
@@ -48,7 +48,7 @@ In some cases, like $\sum^{12}_{n = 1} 3^{n - 1}$, it is annoying to [evaluate](
 __[Home]()__ %%==NEEDS HOMEPAGE still==%%
 
 ---
-_Status:_ #bud #missingLink
+_Status:_ #ripe #missingLink
 
 ---
 # References:

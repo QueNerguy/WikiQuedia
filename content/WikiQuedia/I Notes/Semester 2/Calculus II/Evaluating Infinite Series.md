@@ -2,7 +2,7 @@
 title: Evaluating Infinite Series
 draft: false
 ---
-Tags: [[calculus]], [[sums]]<br>03-05-2025
+Tags: [[calculus]], [[sums]], [[limits]]   <br>03-05-2025
 
 ---
 # Evaluating Infinite Series
@@ -59,7 +59,7 @@ $$
 __[Home](Example.md)__ %%==NEEDS HOMEPAGE==%%
 
 ---
-_Status:_ #bud #missingLink
+_Status:_ #ripe #missingLink
 
 ---
 # References:

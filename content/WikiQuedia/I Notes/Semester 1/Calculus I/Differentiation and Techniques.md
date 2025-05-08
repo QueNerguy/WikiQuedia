@@ -2,7 +2,7 @@
 title: Differentiation and it's Techniques
 draft: false
 ---
-Tags: [[differentiation]], [[calculus]], [[interval syntax]] <br>25-01-2025
+Tags: [[differentiation]], [[calculus]] <br>25-01-2025
 
 ---
 # Differentiation and Techniques
