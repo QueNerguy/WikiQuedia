@@ -31,7 +31,7 @@ Status: #ripe
 
 ---
 # Based on:
-1. Robert A. Adams, Christopher Essex, _Calculus A Complete Course_, 9th ed.
+1. R. A. Adams, Christopher Essex, _Calculus A Complete Course_, 9th ed.
 2. Openstax, _Calculus Volume 1_, [link](https://openstax.org/details/books/calculus-volume-1)
 3. Openstax, _Calculus Volume 2_, [link](https://openstax.org/details/books/calculus-volume-2)
 4. Openstax, _Calculus Volume 3_, [link](https://openstax.org/details/books/calculus-volume-3)

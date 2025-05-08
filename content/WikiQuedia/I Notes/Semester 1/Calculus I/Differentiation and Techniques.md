@@ -11,7 +11,7 @@ Tags: [[differentiation]], [[calculus]], [[interval syntax]] <br>25-01-2025
 There are a few ways to denote differentiating a function $f\left(x\right)$.
 1. __$f^{\prime}\left(x\right)$__ or __$\left\lbrack f\left(x\right)\right\rbrack^{\prime}$__, or in multivariable calculus: __$\left\lbrack f\left(x\right)\right\rbrack_{x}^{\prime}$__. The last notation means differentiating $f\left(x\right)$ with respect to $x$. To increase the amount of times differentiated, add extra accents.
 2. __$\frac{d}{dx}f\left(x\right)$__, the '_Leibniz notation_'. This notation automatically incorporates multivariability because the operator is directly with respect to $x$. To increase the amount of times differentiated, square the operator.
-3. __$D\left\lbrack f\left(x\right)\right\rbrack$__ or __$D_{}^{1}\left\lbrack f\left(x\right)\right\rbrack$__ or in the case of multivariable calculus: __$D_{x}^{1}\left\lbrack f\left(x\right)\right\rbrack$__. The last notation means differentiating with respect to $x$. To increase the amount of times differentiated, increase the power. It is best to always include the power $1$ in the term to avoid confusion with potential other $D$ terms.
+3. __$D\left\lbrack f\left(x\right)\right\rbrack$__ or __$D_{}^{1}\left\lbrack f\left(x\right)\right\rbrack$__ or in the case of multivariable calculus[^partdiff]: __$D_{x}^{1}\left\lbrack f\left(x\right)\right\rbrack$__. The last notation means differentiating with respect to $x$. To increase the amount of times differentiated, increase the power. It is best to always include the power $1$ in the term to avoid confusion with potential other $D$ terms.
 
 ### Basic rules
 When calculating derivatives there's three rules that always apply. You might not use all of them at the same time because some terms are irrelevent however.
@@ -137,10 +137,11 @@ _Status:_ #ripe
 ---
 
 # References:
+[^partdiff]: See the [note on Partial Differentiation](Partial%20Differentiation) for an explanation of multivariable differentiation, and a more accurate notation on $D^1$.
 [^inflection_point]: An inflection point is a point on the graph of a function where it changes directions
 [^extremum]: An extremum is the greatest value a graph reaches compared to the points to the left and right. This could be either __1:__ a local extreme, meaning that there might be other more extreme values on the graph, but this point is still higher than it's surrounding points. There can be infinite local extremes. Or __2:__ a global extreme. This is where the graph of the function reaches its absolute extreme. There can be only two global extremes, a minimum and a maximum value that no other point reaches. [wiki page on this](https://en.wikipedia.org/wiki/Maximum_and_minimum)
 [^differentiation]: [Wikipedia - Differentiation rules](https://en.wikipedia.org/wiki/Differentiation_rules)
-1. Robert A. Adams, Christopher Essex, _Calculus A Complete Course_, 9th ed.
+1. R. A. Adams, Christopher Essex, _Calculus A Complete Course_, 9th ed.
 2. Openstax, _Calculus Volume 1_, [link](https://openstax.org/details/books/calculus-volume-1)
 3. Openstax, _Calculus Volume 2_, [link](https://openstax.org/details/books/calculus-volume-2)
 4. Openstax, _Calculus Volume 3_, [link](https://openstax.org/details/books/calculus-volume-3)

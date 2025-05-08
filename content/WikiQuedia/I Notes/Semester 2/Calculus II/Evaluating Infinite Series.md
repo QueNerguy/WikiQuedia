@@ -64,5 +64,5 @@ _Status:_ #bud #missingLink
 ---
 # References:
 [^cmuedu]:[CMU edu dings](https://www.math.cmu.edu/~amanita/math122/handouts/m122_f08_rhandout17.pdf)
-1. Robert A. Adams, Christopher Essex, _Calculus A Complete Course_, 9th ed.
-2. Charles Martin, _Methods for Evaluating Infinite Series_, [link](https://web.math.ucsb.edu/~cmart07/Evaluating%20Series.pdf).
+1. R. A. Adams, Christopher Essex, _Calculus A Complete Course_, 9th ed.
+2. C. Martin, _Methods for Evaluating Infinite Series_, [link](https://web.math.ucsb.edu/~cmart07/Evaluating%20Series.pdf).

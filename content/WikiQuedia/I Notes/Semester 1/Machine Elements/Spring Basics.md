@@ -13,7 +13,7 @@ Springs offer a nice way to store potential energy. They are mainly used to stop
 	- $D$: The mean diameter of the coil. This is the diameter of the coil measured at half the wire thickness. -> outside diameter - the wire thickness. This is the mean of $D_i$ and $D_o$.
 	- $D_o$: The outside diameter of the coil.
 - $d$: Usually refers to the diameter of the wire of the spring.
-- $p$: Pitch is the distance between revolutions, analogue to [pitch or lead for screws and bolts](Bolts%20and%20Screws%20and%20Strength.md#common%20terms).
+- $p$: Pitch is the distance between revolutions, analogue to [pitch or lead for screws and bolts](Bolts%20and%20Screws%20-%20Strength.md#common%20terms).
 ### Operating principles
 There's multiple spring shape designs, each with their own advantages and drawbacks, but all springs are based on the same principle: the stretching of the [metal crystal](crystals), as long as it is within the elastic range, gives the spring it's elongative and elastic properties. <br>The most common springs are listed below.
 ##### Coiled springs

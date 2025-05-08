@@ -4,7 +4,7 @@
 [Wikipedia - Hessian matrix](https://en.wikipedia.org/wiki/Hessian_matrix)
 
 #### Synopsis:
-A Hessian matrix is a matrix that describes the curvature of a function. <br>To construct a Hessian matrix, calculate all possible partial derivatives%%LINKJE PARTIAL DERIVATIVE PLSS%% and arrange them in the matrix according to the following formula, consisting of partial derivatives:
+A Hessian matrix is a matrix%%==linkje matrix perhaps?==%% that describes the curvature of a function. <br>To construct a Hessian matrix, calculate all possible partial derivatives%%==LINKJE PARTIAL DERIVATIVE PLSS==%% and arrange them in the matrix according to the following formula, consisting of partial derivatives:
 $$
 \begin{pmatrix}\frac{\partial^2f}{\partial x_1\partial x_1} & \frac{\partial^2f}{\partial x_1\partial x_2} & \ldots & \frac{\partial^2f}{\partial x_1\partial x_{n}}\\ \frac{\partial^2f}{\partial x_2\partial x_1} & \frac{\partial^2f}{\partial x_2\partial x_2} & \ldots & \frac{\partial^2f}{\partial x_2\partial x_{n}}\\ \vdots & \vdots & \ddots & \vdots\\ \frac{\partial^2f}{\partial x_{n}\partial x_1} & \frac{\partial^2f}{\partial x_{n}\partial x_2} & \ldots & \frac{\partial^2f}{\partial x_{n}\partial x_{n}}\end{pmatrix}
 $$

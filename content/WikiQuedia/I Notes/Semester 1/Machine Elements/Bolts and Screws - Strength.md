@@ -1,11 +1,11 @@
 ---
-title: Bolts and Screws and Strength
+title: Bolts and Screws - Strength
 draft: false
 ---
 Tags: [[joining]], [[metal working]], [[welding]], [[stress calculation]]   <br>22-03-2025
 
 ---
-# Bolts and Screws and Strength
+# Bolts and Screws - Strength
 Connecting two parts instead of making them from one piece through a metal working process like [machining](physical%20machining%20methods) or [forging](forging)[^methods] almost always sacrifices in strength.
 
 Bolts and screws both work in the same way. The only difference between the two is that screws are made to insert into a part, bolts also leave the part. They therefore need to be secured at the other end by a nut. <br>![[BoltsVSscrews_80%.png|300]]<br>
@@ -168,7 +168,7 @@ Status: #ripe
 
 1. Vrije Universiteit, N. Martin, [link to course](https://canvas.utwente.nl/courses/15351/modules/77332).
 2. W. Jiang, _Analysis and design of machine elements_, 2019, [link](https://ut.on.worldcat.org/oclc/1084505954).
-3. K. Brown/C. Morrow/S. Durbin/A. Baca, _Guideline for Bolted Joint Design and Analysis: Version 1.0_, 2008, [link](https://www.osti.gov/servlets/purl/929124) .
+3. K. Brown, C. Morrow, S. Durbin, A. Baca, _Guideline for Bolted Joint Design and Analysis: Version 1.0_, 2008, [link](https://www.osti.gov/servlets/purl/929124) .
 4. SDC, _Bolt Stress Calculations: A Step-by-Step Guide_, [link](https://sdcverifier.com/structural-engineering-101/bolt-stress-calculations/).
 5. J. Kerns, _What’s the Difference Between Bearing, Shear, and Tear-Out Stress?_, 2016, [link](https://www.machinedesign.com/fastening-joining/article/21834800/whats-the-difference-between-bearing-shear-and-tear-out-stress).
 

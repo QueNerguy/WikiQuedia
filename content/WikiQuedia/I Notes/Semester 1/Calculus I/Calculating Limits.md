@@ -58,4 +58,4 @@ _Status:_ #ripe
 
 ---
 # References:
-1. Robert A. Adams, Christopher Essex, _Calculus A Complete Course_, 9th ed.
+1. R. A. Adams, Christopher Essex, _Calculus A Complete Course_, 9th ed.

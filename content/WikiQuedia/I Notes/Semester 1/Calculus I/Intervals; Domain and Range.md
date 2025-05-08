@@ -38,4 +38,4 @@ _Status:_ #ripe
 # References:
 [^wikipediaDomain]: [Wikipedia - Domain](https://en.wikipedia.org/wiki/Domain_(mathematical_analysis))
 [^wikipediaRange]: [Wikipedia - Range](https://simple.wikipedia.org/wiki/Range_(mathematics))
-1. Robert A. Adams, Christopher Essex, _Calculus A Complete Course_, 9th ed.
+1. R. A. Adams, Christopher Essex, _Calculus A Complete Course_, 9th ed.
