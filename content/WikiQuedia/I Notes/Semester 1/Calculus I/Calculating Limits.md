@@ -7,7 +7,7 @@ Tags: [[calculus]], [[limits]], [[interval syntax]] <br>26-01-2025
 ---
 # Calculating Limits
 ### Definition
-Limits  __$\lim_{x\to a} f(x)$__  are a way of examining what the value of $f(x)$ at point $x=a$ is.
+Limits ($\lim_{x\to a} f(x)$) are a way of examining what the value of $f(x)$ at point $x=a$ is.
 These are used to find the $y$-value of functions at places where there is a perforation or an asymptote. For example the formula $y=\frac{1}{x-1}$ can't exist when $x=1$ because it would be dividing by $0$. Therefore a limit is used to _approximate_ the value of $y$ at point $x=1$.
 ##### Technicalities on Existance
 - The way a limit is defined it can't exist if the $y$-value when approached from the left, $\lim_{x\to a-}$, doesn't equal the  $y$-value when approached from the right, $\lim_{x\to a+}$. Therefore $y=\frac{1}{x}$ has no limit as it's left asymptote approaches $-\infty$ and it's right asymptote approaches $\infty$.

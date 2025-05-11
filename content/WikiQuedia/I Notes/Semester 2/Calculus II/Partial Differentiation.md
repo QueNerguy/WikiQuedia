@@ -7,16 +7,22 @@ Tags: [[calculus]], [[differentiation]]   <br>08-05-2025
 ---
 # Partial Differentiation
 See the note [[Differentiation and Techniques]] for an introduction to differentiation. Partial differentiation applies to a more general and higher dimensional case of differentiation.
-### Definition
-Partial differentiation is in essence the same as [(standard) differentiation](Differentiation%20and%20Techniques), the difference is that partial differentiation also applies to multivariable cases. The notation difference expresses this difference, $\partial$ expresses change in one direction only, $d$ expresses the total differential. <br>There are a few ways to denote a partial differential:
+### Notation
+Partial differentiation is in essence the same as [(standard) differentiation](Differentiation%20and%20Techniques), the difference is that partial differentiation also applies to multivariable cases. The notation difference expresses this difference. $\partial$ expresses change in one direction only, $d$ expresses the total differential. <br>There are a few ways to denote a partial differential:
 1. __$\frac{\partial}{\partial x} [f]$__, or __$\frac{\partial f}{\partial x}$__. The squiggly character $\partial$ is called "del" or "partial". Pronounce this as _the partial derivative of $f$ with respect to $x$_. The denominator denotes the direction in which this partial derivative is taken, in this case the $x$ direction.
 2. __$D^1_x [f(x,y)]$__, or __$D_x [f(x, y)]$__. The $D$ replaces the $\frac{\partial}{\partial}$. The power on the $D$ denotes how many times to differentiate. Pronounce this as _the partial derivative of $f$ with respect to $x$_. The subscript denotes the direction in which the derivative is taken, in this case the $x$ direction.
 
-Remember from [(single variable) differentiating](Differentiation%20and%20Techniques) that the direction or rate of change of a graph is given by the value of it's derivative. The same goes for partial derivatives and directional derivatives%%==linkje directional derivative==%%, but they only consider one direction. The partial differential with respect to $x$ __only__ looks at the rate of change in the $x$ direction.
+Remember from [(single variable) differentiating](Differentiation%20and%20Techniques) that the direction or rate of change of a graph is given by the value of it's derivative. The same goes for partial differentiation, but this only considers one direction at a time. The partial differential with respect to $x$ __only__ looks at the rate of change in the $x$ direction while keeping $y$ constant.
 
-### Computing and Geometrical Intuition
-A partial derivative is closely tied to taking a _directional derivative_%%==linkje directional derivative==%%, in that they both take the derivative in __one direction only__. The partial derivative with respect to $x$ means taking the derivative in the $x$ direction, by [differentiating x as a variable](Differentiation%20and%20Techniques#basic%20rules), and treating the other variables as constants. <br>Because the other variables are constant you basically take the derivative of a slice of the function, at this constant distance from the origin, thus transforming a 3D function, for example, into a 2D one.
-- [An example of this process](example%20partial%20derivative%20basic.md)
+### Definition and Geometrical Intuition
+A partial derivative takes the derivative in __one direction only__. The partial derivative with respect to $x$ means taking the derivative in the $x$ direction, by [differentiating x as a variable](Differentiation%20and%20Techniques#basic%20rules), and keeping the other variables constant. 
+
+$$
+D_x [x^2y] = y \cdot D_x [x^2]=2xy
+$$
+- [A more rigorous example of this process](example%20partial%20derivative%20basic.md)
+
+Because the other variables are constant you basically take the derivative of a slice of the function, at this constant distance from the origin, thus transforming a 3D function, for example, into a 2D one.
 #### Total Derivative
 When calculating the total derivative of a function $f$ of a single variable function, we would always take it with respect to the single variable, $\frac{d}{dx}f\left(x\right)$, so with respect to $x$. When calculating the total derivative we do not want to have the derivative with respect to a single direction, but all at the same time. In the single variable case we would then have $df(x) = dx$, the infinitesimal change of $f$ under a total infinitesimal change of $x$[^wattquote], and in the multivariable case we have:
 $$

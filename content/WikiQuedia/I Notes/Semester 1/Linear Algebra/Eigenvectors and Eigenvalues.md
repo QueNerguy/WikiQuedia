@@ -2,7 +2,7 @@
 title: "Eigenvectors and Eigenvalues"
 draft: false
 ---
-Tags: [[linear algebra]], [[eigenvectors]], [[eigenvalues]]   <br>08-05-2025
+Tags: [[linear algebra]], [[eigenvectors]], [[eigenvalues]], [[vector math]]   <br>08-05-2025
 
 ---
 # Eigenvectors and Eigenvalues
