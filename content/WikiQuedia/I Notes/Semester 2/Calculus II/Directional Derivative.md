@@ -32,10 +32,10 @@ $$
 
 
 ---
-__[Home](Example.md)__ %%==nedds homepage==%%
+__[Home](!%20Calculus%20II%20Learning%20Overview)__
 
 ---
-_Status:_ #ripe #missingLink
+_Status:_ #ripe
 
 ---
 # References:

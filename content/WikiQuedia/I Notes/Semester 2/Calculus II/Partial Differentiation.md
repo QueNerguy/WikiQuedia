@@ -11,6 +11,7 @@ See the note [[Differentiation and Techniques]] for an introduction to different
 Partial differentiation is in essence the same as [(standard) differentiation](Differentiation%20and%20Techniques), the difference is that partial differentiation also applies to multivariable cases. The notation difference expresses this difference. $\partial$ expresses change in one direction only, $d$ expresses the total differential. <br>There are a few ways to denote a partial differential:
 1. __$\frac{\partial}{\partial x} [f]$__, or __$\frac{\partial f}{\partial x}$__. The squiggly character $\partial$ is called "del" or "partial". Pronounce this as _the partial derivative of $f$ with respect to $x$_. The denominator denotes the direction in which this partial derivative is taken, in this case the $x$ direction.
 2. __$D^1_x [f(x,y)]$__, or __$D_x [f(x, y)]$__. The $D$ replaces the $\frac{\partial}{\partial}$. The power on the $D$ denotes how many times to differentiate. Pronounce this as _the partial derivative of $f$ with respect to $x$_. The subscript denotes the direction in which the derivative is taken, in this case the $x$ direction.
+3. $f_{x}$. Pronounce this as _the partial derivative of $f$ with respect to $x$_. The subscript denotes the direction in which the derivative is taken, in this case the $x$ direction. This sometimes also written as $f_2 (x, y, z)$. This would mean the derivative with respect to the second variable, in this case $y$.
 
 Remember from [(single variable) differentiating](Differentiation%20and%20Techniques) that the direction or rate of change of a graph is given by the value of it's derivative. The same goes for partial differentiation, but this only considers one direction at a time. The partial differential with respect to $x$ __only__ looks at the rate of change in the $x$ direction while keeping $y$ constant.
 
@@ -31,7 +32,7 @@ $$
 $$
 df(x,y) = D_x[f] dx + D_y[f] dy
 $$
-This is the most convenient way of writing total derivatives in multivariable cases. 
+$D_x[f] dx$ means taking a step in the $x$ direction. The size is determined by the universal step-size in $x$ direction, $dx$, and a modifier $D_x [f]$. This makes it so that when the function increases steeply in $x$ direction $D_x [f]$ will increase, making the complete step in $x$ direction bigger, and thus the change ($df$) of the size of $f$ bigger. <br>We can interpret $df$ as a way to write how much the value of $f$ changes when a small step $dx$ and $dy$ is taken. <br>This is the most convenient way of writing total derivatives in multivariable cases. 
 - [An example of this process](example%20partial%20derivative%20basic%20+%20total%20derivative.md)
 
 
@@ -45,9 +46,13 @@ D_x [x^2] \ne 2x
 $$
 This is because $x$ itself depends on changing variables. Instead:
 $$
-D_x [x^2] = 2x \cdot D_x[x] = 2x \cdot x'
+D_x [x^2] = 2x \cdot D [x] = 2x \cdot x'
 $$
 And the same goes for other functions of $x$. 
+> [!danger] Note
+> Notice that $D[x]$ and $x'$ aren't specific. They just denote the derivative of $x$. If $x$ were a function of $a$ for example, we would write $D_a [x]$ or $x_a '$, for completeness' sake. <br>If $x$ were a function of multiple variables, say $a$ and $b$, we would write the [total derivative](#total%20derivative) for $D[x]$, which would be $dx = D_a [x] da + $D_b [x] db$. <br>This is detailed mathematically below.
+>> [!Abstract]
+>> In theory this action of $D_x [x^2] = 2x \cdot D [x]$ also happens for variables that aren't functions. The reason this is not written down is because evaluating $D [x]$ when $x$ is a variable gives us 1. Therefore $D_x [x^2]$ just becomes $2x \cdot 1 = 2x$ and the $D [x]$ is omitted from the calculation.
 #### General Equations
 ##### Single Variable Dependent
 In __general__, the derivative of $f$ where $x = x(a)$ and $y = y(a)$ are functions of a single variable:
@@ -59,7 +64,7 @@ $$
 \frac{dz}{da}=\frac{df\left(x,y\right)}{da}=\frac{\partial f}{\partial x}\cdot\frac{dx}{da}+\frac{\partial f}{\partial y}\cdot\frac{dy}{da}
 $$
 ##### Multivariable Dependent
-If $x$ depends on $a$ and $y$ depends on $b$, or if $x$ depends on both $a$ and $b$ it becomes impossible to construct a total differential as done [above](#single%20variable%20dependent), because both these directions have to be taken into account when differentiating. <br>The same thought process is applied as with the chapter [Total Derivative](#total%20derivative) above, when taking the derivative of a multivariable function. We express the differential function of $z$ not with respect to a certain direction like $\frac{dz}{da}$, but as infinitesimal steps of $dz$. <br><br>In __general__, the derivative of $f$ where $x = x(a, b)$ and $y = y(a, b)$ the expressions are:
+If $x$ depends on $a$ and $y$ depends on $b$, or if $x$ depends on both $a$ and $b$ it becomes impossible to construct a total differential as done [above](#single%20variable%20dependent), because both these directions have to be taken into account when differentiating. <br>The same thought process is applied as in the chapter _[Total Derivative](#total%20derivative)_ above, when taking the derivative of a multivariable function. We express the differential function of $z$ not with respect to a certain direction like $\frac{dz}{da}$, but as infinitesimal steps of $dz$. <br><br>In __general__, the derivative of $f$ where $x = x(a, b)$ and $y = y(a, b)$ the expressions are:
 $$
 D_a[z] = D_a[f(x,y)] = D_x[f] \cdot D_a[x] + D_y[f] \cdot D_a[y]
 $$
@@ -91,13 +96,14 @@ $$
 
 
 ---
-__[Home](Example.md)__ %%==needs homepage==%%
+__[Home](!%20Calculus%20II%20Learning%20Overview)__
 
 ---
-_Status:_ #ripe #missingLink
+_Status:_ #ripe
 
 ---
 # References:
 [^wattquote]: Paraphrasing quote from: G. Stoffels, _Mathematical Background Engineering Thermodynamics_, 2020,  [link](https://canvas.utwente.nl/courses/16111/files/4693672?module_item_id=546655) - page 7.
 1. R. A. Adams, Christopher Essex, _Calculus A Complete Course_, 9th ed.
 2. G. Stoffels, _Mathematical Background Engineering Thermodynamics_, 2020,  [link](https://canvas.utwente.nl/courses/16111/files/4693672?module_item_id=546655).
+3. 4. 3Blue1Brown, _Implicit differentiation, what's going on here? | Chapter 6, Essence of calculus_ [link](https://www.youtube.com/watch?v=qb40J4N1fa4).

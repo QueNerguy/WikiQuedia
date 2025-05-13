@@ -13,7 +13,7 @@ A normal function expressed in terms of $x$ or potentially other variables is $f
 Generally when asked to calculate the inverse of a function the question actually means: _calculate the inverse of $f(x)$ in terms of $x$_, which means calculating the inverse but _also_ swapping coordinates.
 - __In this example:__
 	1. $f(x)=y=ax^{3}\to x=ay^{3}$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (<- Swapping coordinates)
-	2. $f^{-1}\left(x\right)=\sqrt[3]{\frac{x}{a}}$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (<- actually calculating the inverse)
+	2. $f^{-1}\left(x\right)=\sqrt[3]{\frac{x}{a}}$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<- actually calculating the inverse)
 
 ### Existance
 When calculating the inverse it's important to look at whether the graph that's being inverted is actually invertible. When inverting the function geometrically what you're doing is rotating the function by $90\degree$ to the right or mirroring through the line $y=x$. Therefore when a function crosses a horizontal line the inverse cannot exist. For example $y=x^2$ can't exist, that's why when taking a root the result is always $\pm\sqrt{}$.  
@@ -26,7 +26,7 @@ When calculating the inverse it's important to look at whether the graph that's 
 
 
 ---
-__[Home](!%20Learning%20Overview%20(Calculus%20I).md)__
+__[Home](!%20Calculus%20I%20Overview.md)__
 
 ---
 _Status:_ #ripe

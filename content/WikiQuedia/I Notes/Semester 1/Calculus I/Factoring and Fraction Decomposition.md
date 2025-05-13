@@ -59,7 +59,7 @@ In some scenarios there are other ways of simplifying that are better suited.
 
 
 ---
-__[Home](!%20Learning%20Overview%20(Calculus%20I).md)__
+__[Home](!%20Calculus%20I%20Overview.md)__
 
 ---
 _Status:_ #ripe

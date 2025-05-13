@@ -43,10 +43,10 @@ When dealing with [restricted domains](Intervals;%20Domain%20and%20Range) there 
 
 
 ---
-__[Home](Example.md)__ %%==NEEDS HOMEPAGE==%%
+__[Home](!%20Calculus%20II%20Learning%20Overview)__
 
 ---
-_Status:_ #ripe #missingLink 
+_Status:_ #ripe
 
 ---
 # References:

@@ -45,10 +45,10 @@ In some cases, like $\sum^{12}_{n = 1} 3^{n - 1}$, it is annoying to [evaluate](
 
 
 ---
-__[Home]()__ %%==NEEDS HOMEPAGE still==%%
+__[Home](!%20Calculus%20II%20Learning%20Overview)__
 
 ---
-_Status:_ #ripe #missingLink
+_Status:_ #ripe
 
 ---
 # References:

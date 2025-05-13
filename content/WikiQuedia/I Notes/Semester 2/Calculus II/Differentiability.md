@@ -19,10 +19,10 @@ Keep in mind that these points may have a [partial](partial%20differentiation) o
 
 
 ---
-__[Home](Example.md)__ %%==needs homepage still==%%
+__[Home](!%20Calculus%20II%20Learning%20Overview)__
 
 ---
-_Status:_ #ripe #missingLink
+_Status:_ #ripe
 
 ---
 # References:

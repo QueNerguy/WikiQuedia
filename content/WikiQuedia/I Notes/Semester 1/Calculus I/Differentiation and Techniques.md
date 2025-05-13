@@ -129,7 +129,7 @@ See also: [RoT Integration](Integration%20and%20Techniques.md#Rules%20of%20Thumb
 3. [Desmos (for graphing)](https://www.desmos.com/calculator)
 
 ---
-__[Home](!%20Learning%20Overview%20(Calculus%20I).md)__
+__[Home](!%20Calculus%20I%20Overview.md)__
 
 ---
 _Status:_ #ripe
