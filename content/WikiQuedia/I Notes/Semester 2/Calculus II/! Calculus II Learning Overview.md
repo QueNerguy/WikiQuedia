@@ -8,7 +8,7 @@ Type: #hub
 
 ---
 # Calculus II Learning Overview
-Calculus II lays out the base mechanics for differentiation and integration in multiple dimensions. The following list is in the order I would recommend consuming these concepts in to learn calculus II. The main goal of calculus II is to understand the topics of [partial differentiation](partial%20differentiation) and %%==otehr topic(s)==%%.
+Calculus II lays out the base mechanics for differentiation and integration in multiple dimensions. The following list is in the order I would recommend consuming these concepts in to learn calculus II. The main goal of calculus II is to understand the topics of [partial differentiation](Partial%20Differentiation) and %%==otehr topic(s)==%%.
 ### Background
 1. ___[Calculus I](!%20Calculus%20I%20Overview):___ Calculus I provides the base concepts that are then generalized in calculus II. Understanding the concepts of calculus I is imperative before looking at calculus II. The main concepts from calculus I that are important here are [differentiation](Differentiation%20and%20Techniques.md) and [integration](Integration%20and%20Techniques.md).
 2. ___[[Summation - Background]]___: Summation is used in the first part of calculus II, so understanding the notation and what sums mean is important. Sums also provide a background on how [integration](Integration%20and%20Techniques.md). and [differentiation](Differentiation%20and%20Techniques.md) came to be, and are used when reading proofs or concepts regarding integration and differentitation.
