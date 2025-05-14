@@ -21,8 +21,8 @@ Calculus II lays out the base mechanics for differentiation and integration in m
 
 ### Part 2: Differentiation
 5. ___[[Directional Derivative]]:___ Directional derivatives form the basis of all of higher dimensional differentiation problems. This is one of the main and most important ideas of calculus II.
-	-  ___[[Finding Exteme values]]:___ Extreme value problems are a central aspect and use of calculus. This note details the ideas behind and the process itself for single and higher dimensional applications.
-	-  ___[[Tangents in Higher Dimensions - 3D]]:___ Along with [[Finding Exteme values]] constructing tangent lines and planes are a crucial application of calculus. The 3D applications of this are detailed here.
+	-  ___[[Finding Extreme Values]]:___ Extreme value problems are a central aspect and use of calculus. This note details the ideas behind and the process itself for single and higher dimensional applications.
+	-  ___[[Tangents in Higher Dimensions - 3D]]:___ Along with [[Finding Extreme Values]] constructing tangent lines and planes are a crucial application of calculus. The 3D applications of this are detailed here.
 6. ___[[Gradient]]:___ The gradient is a widely applied concept that uses [partial derivatives](partial%20differentiation) to construct a vector that gives the direction of steepest ascent.
 7. ___[[Directional Derivative]]:___ The directional derivative is a continuation of the [gradient](gradient) to find the partial derivative in a higher dimensional space in a single direction.
 
