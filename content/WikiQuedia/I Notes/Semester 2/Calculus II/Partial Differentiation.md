@@ -2,21 +2,13 @@
 title: "Partial Differentiation"
 draft: false
 ---
-Tags: [[calculus]], [[differentiation]]   <br>08-05-2025
+Tags: [[calculus]], [[differentials]]   <br>08-05-2025
 
 ---
 # Partial Differentiation
-See the note [[Differentiation and Techniques]] for an introduction to differentiation. Partial differentiation applies to a more general and higher dimensional case of differentiation.
-### Notation
-Partial differentiation is in essence the same as [(standard) differentiation](Differentiation%20and%20Techniques), the difference is that partial differentiation also applies to multivariable cases. The notation difference expresses this difference. $\partial$ expresses change in one direction only, $d$ expresses the total differential. <br>There are a few ways to denote a partial differential:
-1. __$\frac{\partial}{\partial x} [f]$__, or __$\frac{\partial f}{\partial x}$__. The squiggly character $\partial$ is called "del" or "partial". Pronounce this as _the partial derivative of $f$ with respect to $x$_. The denominator denotes the direction in which this partial derivative is taken, in this case the $x$ direction.
-2. __$D^1_x [f(x,y)]$__, or __$D_x [f(x, y)]$__. The $D$ replaces the $\frac{\partial}{\partial}$. The power on the $D$ denotes how many times to differentiate. Pronounce this as _the partial derivative of $f$ with respect to $x$_. The subscript denotes the direction in which the derivative is taken, in this case the $x$ direction.
-3. $f_{x}$. Pronounce this as _the partial derivative of $f$ with respect to $x$_. The subscript denotes the direction in which the derivative is taken, in this case the $x$ direction. This sometimes also written as $f_2 (x, y, z)$. This would mean the derivative with respect to the second variable, in this case $y$.
-
-Remember from [(single variable) differentiating](Differentiation%20and%20Techniques) that the direction or rate of change of a graph is given by the value of it's derivative. The same goes for partial differentiation, but this only considers one direction at a time. The partial differential with respect to $x$ __only__ looks at the rate of change in the $x$ direction while keeping $y$ constant.
-
-### Definition and Geometrical Intuition
-A partial derivative takes the derivative in __one direction only__. The partial derivative with respect to $x$ means taking the derivative in the $x$ direction, by [differentiating x as a variable](Differentiation%20and%20Techniques#basic%20rules), and keeping the other variables constant. 
+See the note [[Differentiation]] for an introduction to differentiation. Partial differentiation applies to a more general and higher dimensional case of differentiation.
+### Geometrical Interpretation
+A partial derivative of a function $f$, $D_x [f]$, takes the [derivative](Differentiation.md) in __one direction only__. This operation is like taking a slice of the function to produce a 2D image, and calculating the derivative there. In fact, when assuming the directions that are not differentiated to be constant, we're fixing the distance of the slice at that constant value. This produces the slice. <br>Taking the partial derivative with respect to $x$ thus means taking the derivative in the $x$ direction only - by [differentiating x as a variable](Differentiation.md#Computational%20Rules) - and treating the other variables as if they were constants. 
 
 $$
 D_x [x^2y] = y \cdot D_x [x^2]=2xy
@@ -25,22 +17,31 @@ $$
 
 Because the other variables are constant you basically take the derivative of a slice of the function, at this constant distance from the origin, thus transforming a 3D function, for example, into a 2D one.
 #### Total Derivative
-When calculating the total derivative of a function $f$ of a single variable function, we would always take it with respect to the single variable, $\frac{d}{dx}f\left(x\right)$, so with respect to $x$. When calculating the total derivative we do not want to have the derivative with respect to a single direction, but all at the same time. In the single variable case we would then have $df(x) = dx$, the infinitesimal change of $f$ under a total infinitesimal change of $x$[^wattquote], and in the multivariable case we have:
+When calculating the derivative of a function $f$ of a single variable function, we would always take it with respect to that single variable, $\frac{d}{dx}f\left(x\right)$, so with respect to $x$. When calculating the total derivative, however, we do not want to have the derivative with respect to a single direction, but all at the same time. In the single variable case we would then have $df(x) = dx$, the infinitesimal (read: very small) change of $f$ under an infinitesimal change of $x$[^wattquote]. In the case of a multivariable function $f$, we have:
 $$
 df(x,y) = \frac{\partial f}{\partial x} dx + \frac{\partial f}{\partial y} dy
 $$
 $$
 df(x,y) = D_x[f] dx + D_y[f] dy
 $$
-$D_x[f] dx$ means taking a step in the $x$ direction. The size is determined by the universal step-size in $x$ direction, $dx$, and a modifier $D_x [f]$. This makes it so that when the function increases steeply in $x$ direction $D_x [f]$ will increase, making the complete step in $x$ direction bigger, and thus the change ($df$) of the size of $f$ bigger. <br>We can interpret $df$ as a way to write how much the value of $f$ changes when a small step $dx$ and $dy$ is taken. <br>This is the most convenient way of writing total derivatives in multivariable cases. 
+The expression $D_x[f] dx$ gives the tiny step in the $x$ direction. The size of the step is determined by the universal step-size in $x$ direction, namely $dx$, and a modifier $D_x [f]$ to account for increases and decreases in the slope. This changes $df$ in such a way, that when the function increases steeply in the $x$ direction, $D_x [f]$ will increase, making the complete step in $x$ direction bigger, and thus the change $df$ bigger. The change of $df$ in turn influences the size of $f$, making it increase more with a bigger $df$. <br>We can interpret the operator $df$ as a way to write how much the value of $f$ changes when a small step in $x$ and $y$ direction is taken. <br>This is the most convenient way of writing the derivatives of $f$, at least in multivariable cases. 
 - [An example of this process](example%20partial%20derivative%20basic%20+%20total%20derivative.md)
 
 
 > [!abstract] Keep in Mind
 > Some people prefer to write the formula with subscripts that indicate the variables that are kept constant, like [this](example%20subscript%20including%20notation.md). I personally choose not to, in order to avoid confusion with the $D_x$ notation, where it means the exact opposite, and because every other term in the differential is already constant, so it would be easy to work under the assumption that the only changing term is the one denoted in the partial equation making writing down that other terms are constant as well redundant.
 
+### Definition
+Partial differentiation uses the standard [differentiation](Differentiation.md) rules, the difference between differentiation with $\frac{d}{dx}$ and differentiation with $\frac{\partial}{\partial x}$, is that the $d$ implies a total differential, meaning that when differentiating all directions are accounted for at the same time. $\partial$, pronounced as "del", or "partial", implies that only one direction is accounted for when differentiating, the variables of all others directions are treated as if they were constant values. <br>There are a few ways to denote partial differentiation:
+1. $f_{x}$, or $f'_x$. Pronounce this as _the partial derivative of $f$ with respect to $x$_. The subscript denotes the direction in which the derivative is taken, in this case the $x$ direction. This sometimes also written as $f_2 (x, y, z)$. This would mean the derivative with respect to the second variable, in this case $y$.
+2. __$\frac{\partial}{\partial x} [f]$__, or __$\frac{\partial f}{\partial x}$__, the '_Leibniz notation_'. The squiggly character $\partial$ is called "del" or "partial". Pronounce this as _the partial derivative of $f$ with respect to $x$_. The denominator denotes the direction in which this partial derivative is taken, in this case the $x$ direction.
+3. __$D^1_x [f(x,y)]$__, or __$D_x [f(x, y)]$__. The $D$ replaces the $\frac{\partial}{\partial}$. The power on the $D$ denotes how many times to differentiate. Pronounce this as _the partial derivative of $f$ with respect to $x$_. The subscript denotes the direction in which the derivative is taken, in this case the $x$ direction.
+
+Remember from [(single variable) differentiating](Differentiation.md) that the direction or rate of change of a graph is given by the value of it's derivative. The same goes for partial differentiation, but this only considers one direction at a time. The partial differential with respect to $x$ __only__ looks at the rate of change in the $x$ direction while keeping $y$ constant.
+
+
 ### Differentiating Variables as Functions
-When differentiating functions instead of variables we use the _chain rule_, equivalent to [this one](Differentiation%20and%20Techniques#2%20-%20chain%20rule). What is meant by a function instead of a variable is this: <br>You may encounter functions $f(x, y, z)$ where $x$ itself is expressed in terms of $a$ and $b$. $\rightarrow x = x(a, b)$. This in turn would make $f$ be $f(x(a, b), y, z)$. <br>When you now take the derivative of $x^2$: 
+When [differentiating](Differentiation.md) functions, instead of variables, we use the _chain rule_, [this one](Differentiation.md#Chain%20Rule). <br>What is meant by a differentiating a function instead of a variable, is this: <br>You may encounter functions $f(x, y, z)$ where $x$ itself is expressed in terms of $a$ and $b$. $\rightarrow x = x(a, b)$. This in turn would make $f(x, y, z)$ be $f(x(a, b), y, z)$. <br>When you now take the derivative of $x^2$: 
 $$
 D_x [x^2] \ne 2x
 $$
@@ -105,5 +106,8 @@ _Status:_ #ripe
 # References:
 [^wattquote]: Paraphrasing quote from: G. Stoffels, _Mathematical Background Engineering Thermodynamics_, 2020,  [link](https://canvas.utwente.nl/courses/16111/files/4693672?module_item_id=546655) - page 7.
 1. R. A. Adams, Christopher Essex, _Calculus A Complete Course_, 9th ed.
-2. G. Stoffels, _Mathematical Background Engineering Thermodynamics_, 2020,  [link](https://canvas.utwente.nl/courses/16111/files/4693672?module_item_id=546655).
-3. 4. 3Blue1Brown, _Implicit differentiation, what's going on here? | Chapter 6, Essence of calculus_ [link](https://www.youtube.com/watch?v=qb40J4N1fa4).
+2. Openstax, _Calculus Volume 1_, [link](https://openstax.org/details/books/calculus-volume-1).
+3. Openstax, _Calculus Volume 2_, [link](https://openstax.org/details/books/calculus-volume-2).
+4. Openstax, _Calculus Volume 3_, [link](https://openstax.org/details/books/calculus-volume-3).
+5. G. Stoffels, _Mathematical Background Engineering Thermodynamics_, 2020,  [link](https://canvas.utwente.nl/courses/16111/files/4693672?module_item_id=546655).
+6. 4. 3Blue1Brown, _Implicit differentiation, what's going on here? | Chapter 6, Essence of calculus_ [link](https://www.youtube.com/watch?v=qb40J4N1fa4).

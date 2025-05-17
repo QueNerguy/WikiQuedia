@@ -8,9 +8,9 @@ Tags: [[calculus]], [[sums]], [[limits]]   <br>03-05-2025
 # Evaluating Infinite Series
 See [this note](summation%20-%20background) for an explanation of sum notation, intuition behind sums and changing index base.
 ### Evaluability
-A [sum](Summation%20-%20Background.md) that has an infinite amount of steps ($\sum ^{\infty} _{n = 1}$) can often still be evaluated, as long as it __converges__ to a certain value. Geometrically, the value of the sum at a certain step is represented on the $y$-axis, and the step number is represented on the $x$-axis. Convergence means that as the _number of steps_ increases, the _amount of increase per step_ goes to zero, creating a horizontal asymptote - at an infinite $x$-coordinate there is no $y$-variance with an increase in $x$ anymore, creating a plateau. 
+A [sum](Summation%20-%20Background.md) that has an infinite amount of steps ($\sum ^{\infty} _{n = 1}$) can often still be evaluated, as long as it __converges__ to a certain value. Geometrically, the value of the sum at a certain step is represented on the $y$-axis, and the step number is represented on the $x$-axis. Convergence means that as the _number of steps_ increase, the _amount of increase per step_ goes to zero, creating a horizontal asymptote - at an infinite $x$-coordinate there is no $y$-variance with an increase in $x$ anymore, creating a plateau. 
 #### Determining Convergence
-For a series to converge, the steps the summation takes at a high indeces have to become extremely small, in order to create an asymptote. 
+For a series to converge, the steps the summation takes at a high indeces have to become extremely small, in order to create an asymptote and plateau. 
 ##### Convergence Test
 Determining whether a series is convergent can be done in two ways:
 1. Taking a ___limit___ as the index goes to infinity ($\lim_{n \rightarrow \infty}$). <br>Taking this limit gives you the step the $n$th sum takes, if this step is zero it means the function has a horizontal asymptote. Thus: <br>$\lim_{n \rightarrow \infty} = 0$ means the series concerges.,
@@ -19,7 +19,7 @@ Determining whether a series is convergent can be done in two ways:
 	2. $n$ has a negative power ($\rightarrow 10^{-999} \approx 0$).
 	- There is more ways in which a series can become convergent which can be seen directly from the formula, but for this general case these two are the only significant ones.
 ### Evaluating a Geometric Series Summation
-While there are multiple different series that all have their own way to solve them (see [this page](https://web.math.ucsb.edu/~cmart07/Evaluating%20Series.pdf) for examples), the geometric series is the only one i'll go into detail about here. <br><br>Before evaluating it is imperative to first determine wether the summation converges at all, if it doesn't, the summation can't be evaluated. 
+While there are multiple different series that all have their own way to solve them (see [this page](https://web.math.ucsb.edu/~cmart07/Evaluating%20Series.pdf) for examples), the geometric series[^geos] is the only one I'll go into detail about here. <br><br>Before evaluating it is imperative to first determine wether the summation converges at all, if it doesn't, the summation can't be evaluated. 
 #### Single Variable Case
 In the case the summation only depends on a single variable, namely the index $n$, the expression of the sum has to be rewritten in the form:
 $$
@@ -30,7 +30,7 @@ $$
 s_{n} = \frac{c}{1-r}
 $$
 #### Multivariable Case
-Some summations depend on multiple variables, for example the index $n$, and $x$. You can imagine such an expression as a 3D plot, with the height being the value of the summation and the floor spanned by $x$ and index $n$. With every iteration the sum moves 1 $n$ over, tracing a line through space. When $x$ is unknown however, a surface is created out of all the possible lines. <br>Because of this, evaluating such a summation doesn't yield a single result, but rather a range of possible solutions that depend on the choice of $x$. <br>The evaluation of the _$x$ range_ for which the series still converges can be expressed by a few variables[^cmuedu], namely:
+Some summations depend on multiple variables, for example the index $n$, and direction-variable $x$. You can imagine such an expression as a 3D function, with the height of the function being the value of the summation, and the floor being spanned by the $x$-axis and an axis representing the index $n$. With every iteration the sum moves 1 $n$ over, tracing a line through space. When the $x$ value is unknown however, a surface is created instead, made up of all the lines created from a certain possible $x$. <br>Because of this, evaluating such a summation doesn't yield a single result, but rather a [range](Range) of possible solutions that depend on the choice of $x$. <br>The evaluation of the _$x$ range_ for which the series still converges can be expressed by a few variables[^cmuedu], namely:
 1. The ___radius of convergence___, ($R$). This is the radius from the center of convergence to the edges of the interval of convergence. If you look at the range of $x$ values for which the series converges on a number line, the radius is half the size of that range, and it is centered at the "_center of convergence_" going to the edges of this range.
 2. The ___center of convergence___, ($a$). The center of convergence is located at the $x$ location where the solution to the sum is 0. <br>($\rightarrow \sum^{n}_{n=0} f(x, n) =0$, and solve for $x$)
 3.  The ___interval of convergence___. The interval is the range of $x$ values that can be used to still give a convergent series. The interval goes around the center of convergence to the edges that the radius gives, -> $[a - R, a + R]$.
@@ -59,10 +59,11 @@ $$
 __[Home](!%20Calculus%20II%20Learning%20Overview)__
 
 ---
-_Status:_ #ripe
+_Status:_ #ripe #missingLink 
 
 ---
 # References:
+[^geos]: [Wikipedia - Geometric series](https://en.wikipedia.org/wiki/Geometric_series)
 [^cmuedu]:[CMU edu dings](https://www.math.cmu.edu/~amanita/math122/handouts/m122_f08_rhandout17.pdf)
 1. R. A. Adams, Christopher Essex, _Calculus A Complete Course_, 9th ed.
 2. C. Martin, _Methods for Evaluating Infinite Series_, [link](https://web.math.ucsb.edu/~cmart07/Evaluating%20Series.pdf).

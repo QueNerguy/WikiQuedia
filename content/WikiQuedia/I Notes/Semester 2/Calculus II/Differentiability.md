@@ -2,7 +2,7 @@
 title: "Differentiability"
 draft: false
 ---
-Tags: [[differentiation]], [[calculus]], [[limits]]   <br>08-05-2025
+Tags: [[differentials]], [[calculus]], [[limits]]   <br>08-05-2025
 
 ---
 # Differentiability

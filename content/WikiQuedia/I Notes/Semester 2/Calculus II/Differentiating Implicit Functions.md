@@ -2,13 +2,13 @@
 title: "Differentiating Implicit Functions"
 draft: false
 ---
-Tags:    <br>13-05-2025
+Tags: [[differentials]]   <br>13-05-2025
 
 ---
 # Differentiating Implicit Functions
 See [implicit functions](implicit%20functions) for an explanation on what an implicit function is.
 ### Definition
-When differentiating an [implicit function](implicit%20functions) the operation involves taking [partial derivatives](partial%20differentiation) and applying the [chain rule](partial%20differentiation#Differentiating%20variables%20as%20functions). After computing the derivative in the wanted direction, isolate the wanted partial derivative to obtain a solution. <br>Alternatively, we can use the _Implicit Function Theorem_, which states for a function $f(x, y, z)$, where we want to differentiate $z$ with respect to $x$:[^wIFT]
+When differentiating an [implicit function](implicit%20functions), the operation involves taking [partial derivatives](partial%20differentiation) and applying the [chain rule](partial%20differentiation#Differentiating%20variables%20as%20functions). <br>When taking the partial derivative $D_x [z]$ of a function $f(x, y, z) = c$, you differentiate all terms with respect to $x$ while realizing that $z$ is a function, this means applying the chain rule. Because $z$ is a part of the function itself however, you always get a $D_x [z]$ term in the differentiated function. To obtain the solution to $D_x [z]$ you simply isolate it from this expression. <br>Alternatively, we can use the _Implicit Function Theorem_, which states for a function $f(x, y, z)$, where we want to differentiate $z$ with respect to $x$:[^wIFT]
 $$
 D_x [z] = \frac{\partial z}{\partial x} = - \frac{D_x [f]}{D_z [f]} = - \frac{f_x}{f_z}
 $$
@@ -23,7 +23,7 @@ $$
 $$
 D_x [f] = 2x + 0 - 3z^2 \cdot D_x [z] + 3y^2 = 0
 $$
-Here 8 and our $y$ became 0, this is because we both treat and thus [differentiate](Differentiation%20and%20Techniques) them as constants. <br>Also notice that $D_x [z]$ already appeared in the expression. This will always happen for all implicit formulas when differentiating the function, it's not specific to this equation. <br>From here we will try to isolate $D_x [z]$ from the equation, as that is the character we want to know.
+Here 8 and our $y$ became 0, this is because we both treat and thus [differentiate](Differentiation.md) them as constants. <br>Also notice that $D_x [z]$ already appeared in the expression. This will always happen for all implicit formulas when differentiating the function, it's not specific to this equation. <br>From here we will try to isolate $D_x [z]$ from the equation, as that is the character we want to know.
 $$
 -3z^2 \cdot D_x [z] = - 2x - 3y^2
 $$
@@ -57,6 +57,9 @@ _Status:_ #sprout
 [^wIFT]: [Wikipedia - Implicit function](https://en.wikipedia.org/wiki/Implicit_function#General_formula_for_derivative_of_implicit_function)
 [^excred]: Example taken from [The Organic Chemistry Tutor - Implicit Differentiation With Partial Derivatives Using The Implicit Function Theorem | Calculus 3](https://www.youtube.com/watch?v=OBELQIPH5xY).
 1. R. A. Adams, Christopher Essex, _Calculus A Complete Course_, 9th ed.
-2. Wikipedia, _Implicit function_, [link](https://en.wikipedia.org/wiki/Implicit_function).
-3. The Organic Chemistry Tutor, _Implicit Differentiation With Partial Derivatives Using The Implicit Function Theorem | Calculus 3_, [link](https://www.youtube.com/watch?v=OBELQIPH5xY).
-4. 3Blue1Brown, _Implicit differentiation, what's going on here? | Chapter 6, Essence of calculus_ [link](https://www.youtube.com/watch?v=qb40J4N1fa4).
+2. Openstax, _Calculus Volume 1_, [link](https://openstax.org/details/books/calculus-volume-1).
+3. Openstax, _Calculus Volume 2_, [link](https://openstax.org/details/books/calculus-volume-2).
+4. Openstax, _Calculus Volume 3_, [link](https://openstax.org/details/books/calculus-volume-3).
+5. Wikipedia, _Implicit function_, [link](https://en.wikipedia.org/wiki/Implicit_function).
+6. The Organic Chemistry Tutor, _Implicit Differentiation With Partial Derivatives Using The Implicit Function Theorem | Calculus 3_, [link](https://www.youtube.com/watch?v=OBELQIPH5xY).
+7. 3Blue1Brown, _Implicit differentiation, what's going on here? | Chapter 6, Essence of calculus_ [link](https://www.youtube.com/watch?v=qb40J4N1fa4).

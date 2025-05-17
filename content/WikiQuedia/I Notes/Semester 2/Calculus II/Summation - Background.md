@@ -7,7 +7,7 @@ Tags: [[calculus]], [[sums]], [[limits]] <br>26-01-2025
 ---
 # Summation -  Background
 ### Explanation of the Concept
-Sums ($\sum$) are a way of iterating over formulas multiple times. With every iteration the solution of what's inclosed in the sum gets added to the next one. For example $\sum^{n}_{n = 1} 1$ gives $1+1+1+...+1$. The iterating starts at $n$ = 1, until the end, $n$, is reached. $n$ can assume any [natural number](https://en.wikipedia.org/wiki/Natural_number) / "_whole value_", that is 1, 2, 3 etc. In the case of $\sum^{n}_{n = 1} 1$ we add 1, $n$ times. <br>If we choose $n$ to be 4 for example, we get:
+Sums ($\sum$) are a way of iterating over formulas multiple times. With every iteration, the solution of what's inclosed in the sum gets added to the solution of the next iteration. For example $\sum^{n}_{n = 1} 1$ gives $1+1+1+...+1$. The iterating starts at $n$ = 1, until the end, $n$, is reached. $n$ can assume any [natural number](https://en.wikipedia.org/wiki/Natural_number) / "_whole value_", meaning 1, 2, 3 etc. In the case of $\sum^{n}_{n = 1} 1$ we add 1, $n$ times. <br>If we choose $n$ to be 4 for example, we get:
 $$
 \sum^{n = 4}_{n = 1} 1=1+1+1+1=4
 $$
@@ -20,7 +20,7 @@ $$
 $$
 
 ### Uses of Sums
-Sums are a great tool for evaluating repetitive and connected series. They are of great importance for evaluating areas and are used in [integrals](integration%20and%20techniques), for example. <br>In this case the area below the graph is approached by drawing rectangles below it, and adding their area up to approximate the area below the graph. The slimmer the bars get the more accurate the approximation. When the bars reach a thickness that approaches 0, the error with the approximation also approaches 0. 
+Sums are a great tool for evaluating repetitive and connected series. They are of great importance for evaluating areas and are used in [integrals](Integration.md), for example. <br>In this case the area below the graph is approached by drawing rectangles below it, and adding their area up to approximate the area below the graph. The slimmer the bars get the more accurate the approximation. When the bars reach a thickness that approaches 0, the error with the approximation also approaches 0. 
 ##### Example of a Use Case
 Another use case might be adding the area of the squares shown below.
 ![[squareHalvingAssignment_80%.png|350]]<br>In this case you would relate the size of the first square to the second, and so on, while making sure the equation scales correctly with every iteration.
@@ -30,8 +30,11 @@ $$
 \sum ^{n} _{n = 0} \left( \frac{1}{\sqrt2 ^{n}} \right) ^2=\sum ^{n} _{n = 0} \left( \frac{1}{2} \right) ^n
 $$
 
-##### Shifting the Summation Index
-In some cases, like $\sum^{12}_{n = 1} 3^{n - 1}$, it is annoying to [evaluate](evaluating%20infinite%20series) with the - 1 still being in the power. In this case it is helpful to change the beginning and end point of the summation, in order to remove the - 1 from the power. This is done by substitution. We would substitute $n-1$ with $m$, $m = n - 1$. This _shifts_ the index, where it would originally go from 1 to 12 with $n$, with $m$ it goes from 0 to 11. The resulting sum is: $\sum^{11}_{m = 0} 3^{m}$, which is way easier to evaluate.
+### Shifting the Summation Index
+In some cases, like $\sum^{12}_{n = 1} 3^{n - 1}$, it is annoying to [evaluate](evaluating%20infinite%20series) with the - 1 still being in the power. In such cases it can be helpful to change the beginning and end point of the summation, in order to remove the - 1 from the power. This is done by substitution. <br>To change the index for the example above, we would substitute $n-1$ with $m$, $m = n - 1$. This _shifts_ the index. Where it would originally go from 1 to 12 for $n$, for $m$ it goes from 0 to 11. The resulting sum is: $\sum^{11}_{m = 0} 3^{m}$, which is way easier to evaluate.
+$$
+\sum^{12}_{n = 1} 3^{n - 1} \rightarrow \sum^{11}_{m = 0} 3^{m}
+$$
 
 
 

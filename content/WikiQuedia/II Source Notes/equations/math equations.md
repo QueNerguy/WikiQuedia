@@ -29,9 +29,9 @@ a^{x}=e^{aln\left(x\right)}
 $$
 
 ##### Standard Integrals
-[Link to note](Integration%20and%20Techniques.md#Rules%20of%20Thumb)
+[[Rules of Thumb Integration]]
 ##### Standard Differentials
-[Link to note](Differentiation%20and%20Techniques.md#Rules%20of%20Thumb)
+[[Rules of Thumb Differentiation]]
 ##### Tangent
 $$
 \tan\left(x\right)=\frac{\sin\left(x\right)}{\cos\left(x\right)}

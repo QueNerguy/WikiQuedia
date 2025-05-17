@@ -2,7 +2,7 @@
 title: Calculating Limits
 draft: false
 ---
-Tags: [[calculus]], [[limits]], [[interval syntax]] <br>26-01-2025
+Tags: [[calculus]], [[limits]], [[intervals]] <br>26-01-2025
 
 ---
 # Calculating Limits
