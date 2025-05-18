@@ -51,9 +51,9 @@ D_x [x^2] = 2x \cdot D [x] = 2x \cdot x'
 $$
 And the same goes for other functions of $x$. 
 > [!danger] Note
-> Notice that $D[x]$ and $x'$ aren't specific. They just denote the derivative of $x$. If $x$ were a function of $a$ for example, we would write $D_a [x]$ or $x_a '$, for completeness' sake. <br>If $x$ were a function of multiple variables, say $a$ and $b$, we would write the [total derivative](#total%20derivative) for $D[x]$, which would be $dx = D_a [x] da + $D_b [x] db$. <br>This is detailed mathematically below.
+> Notice that $D[x]$ and $x'$ aren't specific. They just denote the derivative of $x$. If $x$ were a function of $a$ for example, we would write $D_a [x]$ or $x_a '$, for completeness' sake. <br>If $x$ were a function of multiple variables, say $a$ and $b$, we would write the [total derivative](#total%20derivative) for $D[x]$, which would be $dx = D_a [x] da + D_b [x] db$. <br>This is detailed mathematically below.
 >> [!Abstract]
-> In theory this action of $D_x [x^2] = 2x \cdot D [x]$ also happens for variables that aren't functions. The reason this is not written down is because evaluating $D [x]$ when $x$ is a variable gives us 1. Therefore $D_x [x^2]$ just becomes $2x \cdot 1 = 2x$ and the $D [x]$ is omitted from the calculation.
+>> In theory this action of $D_x [x^2] = 2x \cdot D [x]$ also happens for variables that aren't functions. The reason this is not written down is because evaluating $D [x]$ when $x$ is a variable gives us 1. Therefore $D_x [x^2]$ just becomes $2x \cdot 1 = 2x$ and the $D [x]$ is omitted from the calculation.
 #### General Equations
 ##### Single Variable Dependent
 In __general__, the derivative of $f$ where $x = x(a)$ and $y = y(a)$ are functions of a single variable:
