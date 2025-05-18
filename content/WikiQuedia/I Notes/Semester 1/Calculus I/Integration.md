@@ -23,7 +23,7 @@ The notation under the integral sign ($\int$) denotes the [domain](Domain) over 
 $$
 \int_{a}^{b}f\left(x\right)\,dx=\int_{}^{}f\left(x\right)\,dx\Bigg|_{x=a}^{x=b}=F\left(x\right)\Bigg|_{x=a}^{x=b}
 $$
-When the domain is not defined at its [endpoints](Domain.md#Definition), you take the limit after having integrated which looks like this:
+When the domain is not defined at its [endpoints](Domain#Definition), you take the limit after having integrated which looks like this:
 $$
 F\left(x\right)\Bigg|_{\lim_{x\to a}}^{x=b}
 $$
@@ -37,9 +37,9 @@ $$
 $$
 
 ### Integrating Methods
-When a function is too complicated to integrate, and doesn't look like any [rules of thumb](#ruules%20of%20thumb), there are two ways to solve it: _[substitution](#substitution)_ and _[integrating by parts](#integration%20by%20parts)_, in combination with using the rules of thumb.
+When a function is too complicated to integrate, and doesn't look like any [rules of thumb](Rules%20of%20Thumb%20Integration), there are two ways to solve it: _[substitution](#Substitution)_ and _[integration by parts](#Integration%20by%20Parts)_, in combination with using the rules of thumb.
 #### Substitution
-This method is analogous to [substitution for differentiation](Differentiation.md#Substitution). We substitute functions of $x$ by $u$, $v$, etc., as many times as needed, until a function in the form of the [rules of thumb](#ruules%20of%20thumb) is reached and it is possible to integrate directly.
+This method is analogous to [substitution for differentiation](Differentiation#Substitution). We substitute functions of $x$ by $u$, $v$, etc., as many times as needed, until a function in the form of the [rules of thumb](Rules%20of%20Thumb%20Integration) is reached and it is possible to integrate directly.
 
 - __Example:__ When given a function like $\int_{}^{}\frac{1}{2x+1}\,dx$, it is useful to substitute in such a way that we get $\int_{}^{}\frac{1}{u}du$, that way we can directly integrate. 
 	- Set $u=2x+1$. -> Then: $u^{\prime}=\frac{\,du}{\,dx}=2$. Thus: $\,dx=\frac12\cdot \,du$. 
@@ -51,7 +51,7 @@ This method is analogous to [substitution for differentiation](Differentiation.m
 > It _is_ also possible to keep the integral evaluated in terms of $x$ as in the original. This would require back-substitution of the $u$ and $v$ values, back to terms of $x$ <u>after</u> calculating the integral, resulting in unnecessary steps.
 
 #### Integration by Parts
-This method is based on [the substitution method](#substitution). It is used for even more complicated functions, usually functions that are a combination of two factors of $x$.
+This method is based on [the substitution method](#Substitution). It is used for even more complicated functions, usually functions that are a combination of two factors of $x$.
 To solve these divide the function in the integral in two parts: $u$ and $\mathrm{d}v$. differentiate $u$ to $\mathrm{d}u$ and integrate $\mathrm{d}v$ to $v$.
 Then substitute them into the ___formula___:
 $$
@@ -73,10 +73,10 @@ $$
 	
 	3. This then yields a solution for the original question $\int_{}^{}u\mathrm{d}v$.
 > [!Note]
-> In this case it is not necessary to substitute with $u=f(x)$ as with the [substitution method](#substitution), because the function $f(x)$ is not replaced in the integral as it is with the substitution method and the integral stays in terms of $x$, instead of terms of $u$ as we saw previously, meaning that when calculating $\int_{}^{}u\,dv=uv-\int_{}^{}v\,du$ the $u$ and $v$ etc. values are replaced by a function $f(x)$ immediately, instead of after integration or not at all, like with the substitution method.
+> In this case it is not necessary to substitute with $u=f(x)$ as with the [substitution method](#Substitution), because the function $f(x)$ is not replaced in the integral as it is with the substitution method and the integral stays in terms of $x$, instead of terms of $u$ as we saw previously, meaning that when calculating $\int_{}^{}u\,dv=uv-\int_{}^{}v\,du$ the $u$ and $v$ etc. values are replaced by a function $f(x)$ immediately, instead of after integration or not at all, like with the substitution method.
 
 
-
+---
 ### General Formulas
 For a list of common functions that already have their operations calculated, see the following notes: <br>[RoT integration](Rules%20of%20Thumb%20Integration), [RoT differentiation](Rules%20of%20Thumb%20Differentiation), [General RoT](math%20equations.md).
 

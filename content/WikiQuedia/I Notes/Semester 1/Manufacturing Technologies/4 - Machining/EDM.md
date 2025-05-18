@@ -21,7 +21,7 @@ This process produces no [heat induced property alteration](Crystal%20Manipulati
 - This process is <u>very</u> precise and allows for the creation of complicated 3D shapes.
 - This process works independent of the material hardness.
 > [!abstract] Extra
-This process is very suitable for mold creation and tool production because of it's incredible precision.
+> This process is very suitable for mold creation and tool production because of it's incredible precision.
 ##### Negative
 - This process operates at a low speed.
 - This process requires electrically conductive metals

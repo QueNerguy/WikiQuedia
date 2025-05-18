@@ -7,7 +7,7 @@ Tags: [[transmission]], [[gear]], [[design rules]]   <br>18-03-2025
 ---
 # Transmission Design
 ### Definitions
-- A _velocity ratio ($\textrm{VR}$)_ is the ratio between the [angular velocities](angular%20velocity) of two connected gears or chains/belts. It is an analogue to the [gear ratio](gears#gear%20ratios), though more general, and can also apply to a part of a drivetrain, not just directly connected parts. 
+- A _velocity ratio ($\textrm{VR}$)_ is the ratio between the [angular velocities](Angular%20Velocity) of two connected gears or chains/belts. It is an analogue to the [gear ratio](Gears#Gear%20Ratios), though more general, and can also apply to a part of a drivetrain, not just directly connected parts. 
 - The _train value_ is the ratio between the angular velocities of the input and output of the whole system. As the train value is the result of all the velocity ratios together, it can be computed with $TV=VR_1\cdot VR_2\cdot VR_3$ and so on until all the velocity ratios are accounted for.
 
 ### Designing the Transmission Ratio
@@ -16,7 +16,7 @@ The design process of a transmission ratio requires the total [train value](#Def
 When designing a transmission train it's bad for the longevity of the gears to take a too big a step in reduction ratio at a time as this introduces a lot of stress to the gear teeth. To avoid this there are guidelines, like the one below, which recommend the amount of reduction steps and the associated [velocity ratio](#Definitions), based on the total desired [train value](#Definitions) of the system.
 ![[TransmissionValueChart_80%.png|450]] <br>source: _Roloff/Matek_ TB 21-11.<br>
 When a total train value of, for example, 15 is selected, the graph recommends a 2-step process, as seen at the intersection between the pink line and the etched region. __Only one__ of the the [velocity ratios](#Definitions) needs to be from this area. In this case we can select any value between 4.1 and 4.6 for the first or second velocity ratio. The other velocity ratio then needs to be between 3.26, and 3.66. This value does not need to come from the graph directly, it is a result only of the first value that _does_ come from the graph.
-In the case of a 3-step process, 2 velocity ratios or [gear ratios](gears#gear%20ratios) need to be selected from the graph, the etched areas with $\textrm{i}_1$ and $\textrm{i}_2$. 
+In the case of a 3-step process, 2 velocity ratios or [gear ratios](Gears#Gear%20Ratios) need to be selected from the graph, the etched areas with $\textrm{i}_1$ and $\textrm{i}_2$. 
 #### Calculating the Number of Teeth
 After the [velocity ratio](#Definitions) for a step is found, the amount of teeth per gear can be calculated.  For this there are again guidelines, like this one from _Roloff/Matek_:
 
@@ -50,7 +50,7 @@ $$
 
 See [here](train%20value%20for%20max%20acceleration.md) the unit explanation.<br>
 
-In the case that the individual [gear ratios](gears#gear%20ratios) need to be calculated, the same formula applies, exchanging $\textrm{TV}$ with $i$, as follows:
+In the case that the individual [gear ratios](Gears#Gear%20Ratios) need to be calculated, the same formula applies, exchanging $\textrm{TV}$ with $i$, as follows:
 $$
 i=\sqrt{\frac{J_2}{J_1}}
 $$

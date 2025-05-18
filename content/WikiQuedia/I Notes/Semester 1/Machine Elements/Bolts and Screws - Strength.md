@@ -6,7 +6,7 @@ Tags: [[joining]], [[metal working]], [[welding]], [[stress calculation]]   <br>
 
 ---
 # Bolts and Screws - Strength
-Connecting two parts instead of making them from one piece through a metal working process like [machining](physical%20machining%20methods) or [forging](forging)[^methods] almost always sacrifices in strength.
+Connecting two parts instead of making them from one piece through a metal working process like [machining](Physical%20Machining%20Methods) or [forging](Forging)[^methods] almost always sacrifices in strength.
 
 Bolts and screws both work in the same way. The only difference between the two is that screws are made to insert into a part, bolts also leave the part. They therefore need to be secured at the other end by a nut. <br>![[BoltsVSscrews_80%.png|300]]<br>
 ### Common Terms
@@ -17,11 +17,11 @@ Bolts and screws both work in the same way. The only difference between the two 
 ### Strength Values
 The strength of these parts is usually written on their heads with two values[^bolthead]. It is also always listed somewhere by the manufacturer. 
 ##### Getting Strength Values From the Head
-1. __Minimum [tensile strength](tensile%20strength)__: The first value gives the minimum tensile strength ($\sigma_{T}$) in 100 \[MPa]. 
+1. __Minimum [tensile strength](Tensile%20Strength)__: The first value gives the minimum tensile strength ($\sigma_{T}$) in 100 \[MPa]. 
 > [!Example] Concretely
 >The general formula is: _First value $\cdot 100$ \[MPa]_.<br>A grade value of __<u>9</u>__.8 gives a tensile strength: <br>-> $9\cdot 100 \textrm{ [MPa]}$ = 900 MPa.
 
-2. __Minimum [yield strength](yield%20strength)__: The second value helps calculate the minimum yield strength ($\sigma_{Y}$).
+2. __Minimum [yield strength](Yield%20Strength)__: The second value helps calculate the minimum yield strength ($\sigma_{Y}$).
 > [!Example] Concretely
 >The general formula is: _Second value $\cdot$ Tensile strength_ ($\sigma_{T}$). <br>A grade value of 9.__<u>8</u>__ gives a yield strength: <br>-> $0.8 \cdot \sigma_{T}=0.8\cdot 900 \textrm{ [MPa]}$ = 720 \[MPa].
 
@@ -119,12 +119,12 @@ See [here](combined%20stress%20in%20a%20bolt%20with%20preload.md) the unit expla
 $$
 \sigma_{\textrm{ca}} = \sigma = \frac{Q}{A_{\textrm{eff}}\approx\frac14\pi D^2}
 $$
-See [here](combined%20stress%20in%20a%20bolt%20without%20preload.md) the unit explanation. <br>Always make sure that $\sigma_{\textrm{ca}}$ does not exceed design guidelines, and above all, does not exceed the [tensile strength](tensile%20strength) limit.
+See [here](combined%20stress%20in%20a%20bolt%20without%20preload.md) the unit explanation. <br>Always make sure that $\sigma_{\textrm{ca}}$ does not exceed design guidelines, and above all, does not exceed the [tensile strength](Tensile%20Strength) limit.
 
 #### Crushing Stress
 Crushing stresses can sometimes cause a part to fail at the connecting surface before bigger structural failure occurs. This is because the load on the head of a bolt is spread over a very small area under it's head, which can cause great stress buildup. The part can fail at the thread when it's loaded in shear or torque for the same reason too. To avoid this failure mode, add _washers_ between the head and the surface of the part to distribute the stress over a greater area.
 ##### Crushing Stress due to Shear Loading or Torqueing
-When a bolt is loaded in shear (due to a shear force, as seen below, or a torque, see [here](#3%20-%20torque)), or otherwise crushed by the material it is inserted into, the threaded area of the bolt (or part in rare cases) can fail due to crushing. The stress equation in this case is applicable to all bolts loaded in shear, precision bolted joints too, and is referred to as _crushing stress_ or _bearing stress_. This stress can not exceed the allowable stress of the bolt, nor that of the part.
+When a bolt is loaded in shear (due to a shear force, as seen below, or a torque, see [here](#3%20-%20Torque)), or otherwise crushed by the material it is inserted into, the threaded area of the bolt (or part in rare cases) can fail due to crushing. The stress equation in this case is applicable to all bolts loaded in shear, precision bolted joints too, and is referred to as _crushing stress_ or _bearing stress_. This stress can not exceed the allowable stress of the bolt, nor that of the part.
 $$
 \sigma_{p,\max}=\frac{F_{\textrm{shear}, \max}}{d_0 L_{\min}}
 $$
@@ -161,7 +161,7 @@ Status: #ripe
 
 ---
 # References:
-[^methods]: See [here](!%20manufacturing%20technologies%20overview) for an overview of (common) manufacturing processes.
+[^methods]: See [here](!%20Manufacturing%20Technologies%20Overview) for an overview of (common) manufacturing processes.
 [^bolthead]: <br>![[BoltHead_80%.png|100]]
 [^prelax]: [Engineers edge - Calculator for bolt preload tension force and equation](https://www.engineersedge.com/material_science/bolt-preload-calculation.htm)
 [^mech]: [Mechanicalc - Bolted Joint Analysis: Bearing](https://mechanicalc.com/reference/bolted-joint-analysis)

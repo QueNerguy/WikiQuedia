@@ -59,8 +59,8 @@ $$
 >[!note]
 >Even though these rules always apply, they may be omitted from notation at times. For example, when differentiating $x^2$, we can apply the chain rule and write the result as $2x \cdot x'$, but seeing as $x' = 1$, we omit the use of the chain rule and just write $2x$ immediately.
 ### Differentiating Complicated Functions
-For most functions the [basic rules](#basic%20rules) are sufficient to find a solution. In some cases where there are multiple layers of functions of $x$, or multiple multiplications of functions of $x$, it is useful to use the _substitution method_ in combination with the [basic rules](#basic%20rules).
-For complicated functions, such as $\ln\left(\cos\left(x^{2}\right)\right)$ it's usually necessary to use the _substitution technique_, in combination with the  [basic rules](#basic%20rules), whereby you isolate a part of the expression, in this case, for example, $x^2$ and $\cos$, and substitute these functions for a variable $u$ and $v$. Then you differentiate using the above rules and, after obtaining a solution, resubstitute the original terms.
+For most functions the [basic rules](#Computational%20Rules) are sufficient to find a solution. In some cases where there are multiple layers of functions of $x$, or multiple multiplications of functions of $x$, it is useful to use the _substitution method_ in combination with the basic rules.
+For complicated functions, such as $\ln\left(\cos\left(x^{2}\right)\right)$ it's usually necessary to use the _substitution technique_, in combination with the  basic rules, whereby you isolate a part of the expression, in this case, for example, $x^2$ and $\cos$, and substitute these functions for a variable $u$ and $v$. Then you differentiate using the above rules and, after obtaining a solution, resubstitute the original terms.
 - __Solution to Example:__ 
 	In this case we would substitute as follows: <br>$\ln\left(\cos\left(u\right)\right) \rightarrow \ln\left(v\right)$. <br>We would then calculate $u^{\prime}$ and $v^{\prime}$  and apply chain rule to get: <br>$u^{\prime}=2x$;  $v^{\prime}=-\sin\left(u\right)\cdot u^{\prime}$.
 	Therefore the total solution is: <br>$D_{x}\left\lbrack\ln\left(v\right)\right\rbrack=\frac{1}{v}\cdot v^{\prime} \rightarrow \frac{1}{v}\cdot\left(-\sin\left(u\right)\cdot u^{\prime}\right)$. <br>Now substitute the expressions for $u$ and $v$ and the solution is: <br>$\frac{1}{\cos\left(x^{2}\right)}\cdot-\sin\left(x^{2}\right)\cdot2x=\frac{-2x\sin\left(x^{2}\right)}{\cos\left(x^{2}\right)}=-2x\tan\left(x^{2}\right)$
@@ -70,7 +70,7 @@ For complicated functions, such as $\ln\left(\cos\left(x^{2}\right)\right)$ it's
 
 
 
-
+---
 ### General Formulas
 For a list of common functions that already have their operations calculated, see the following notes: <br>[RoT differentiation](Rules%20of%20Thumb%20Differentiation), [RoT integration](Rules%20of%20Thumb%20Integration), [General RoT](math%20equations.md).
 

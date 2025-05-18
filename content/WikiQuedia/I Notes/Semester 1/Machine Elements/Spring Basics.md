@@ -15,18 +15,18 @@ Springs offer a nice way to store potential energy. They are mainly used to stop
 - $d$: Usually refers to the diameter of the wire of the spring.
 - $p$: Pitch is the distance between revolutions, analogue to [pitch or lead for screws and bolts](Bolts%20and%20Screws%20-%20Strength.md#common%20terms).
 ### Operating principles
-There's multiple spring shape designs, each with their own advantages and drawbacks, but all springs are based on the same principle: the stretching of the [metal crystal](crystals), as long as it is within the elastic range, gives the spring it's elongative and elastic properties. <br>The most common springs are listed below.
+There's multiple spring shape designs, each with their own advantages and drawbacks, but all springs are based on the same principle: the stretching of the [metal crystal](Crystals), as long as it is within the elastic range, gives the spring it's elongative and elastic properties. <br>The most common springs are listed below.
 ##### Coiled springs
 Coiled springs are the most common spring there is. There's ones that are made for compression or extension, and ones made for Torsion.
-The reason these springs are used that much is because they are very good at distributing stress across their volume.<br> Because the spring is curled up, the [stress](stress) is divided over a long area, allowing for bigger supported loads. It also allows the metal to spread the stretch over a bigger area, giving a bigger elastic region. More flex without [yielding](yield%20strength).
+The reason these springs are used that much is because they are very good at distributing stress across their volume.<br> Because the spring is curled up, the [stress](Stress) is divided over a long area, allowing for bigger supported loads. It also allows the metal to spread the stretch over a bigger area, giving a bigger elastic region. More flex without [yielding](Yield%20Strength).
 ###### Compression/extension
-Compression coil springs are coil springs manufactured to be used to shorten or extend only. These springs are usually used for stopping impacts. <br>Internally these springs are loaded with [torsion stress](stress), which is maximum at the exterior side of the spring.
+Compression coil springs are coil springs manufactured to be used to shorten or extend only. These springs are usually used for stopping impacts. <br>Internally these springs are loaded with [torsion stress](Stress), which is maximum at the exterior side of the spring.
 1. The Wahl factor:
 $$
 K_\textrm{w}\approx\frac{4C-1}{4C-4}+\frac{0.615}{C}
 $$
 See [here](wahl%20factor%20for%20coil%20springs%20(compression%20or%20extension).md) the unit explanation.<br>
-2. The maximum stress ($\tau_{max}$). The maximum stress is $\tau$ because the stress in the spring is torsional, $\tau_{max}$ is the maximum _[shear stress](stress)_ at the surface:
+2. The maximum stress ($\tau_{max}$). The maximum stress is $\tau$ because the stress in the spring is torsional, $\tau_{max}$ is the maximum _[shear stress](Stress)_ at the surface:
 $$
 \tau_{max}=K_{\textrm{w}}\cdot\frac{8FC}{\pi d^2}
 $$
@@ -37,7 +37,7 @@ k=\frac{Gd^{4}}{8nD^{3}}=\frac{Gd}{8nC^{3}}
 $$
 See [here](spring%20rate%20coil%20spring%20(compression%20or%20extension).md) the unit explanation.<br>
 ###### Torsion
-Torsion springs are used for and around rotating axes. A famous example would be a mouse trap.<br>Internally these springs are loaded with [normal stresses](stress).
+Torsion springs are used for and around rotating axes. A famous example would be a mouse trap.<br>Internally these springs are loaded with [normal stresses](Stress).
 1. The Wahl factor $K_{\textrm{wT}}$:
 $$
 K_{\textrm{wT}}\approx\frac{4C^{2}-C-1}{4C\left(C-1\right)}

@@ -16,83 +16,83 @@ When making a part choosing the right manufacturing technology is imperative for
 ## Categories
 ### 1 - Casting
 ##### Design Rules Casting
-- [Design Rules Casting](design%20rules%20casting)
+- [[Design Rules Casting]]
 
 ##### Temporary Casting
-- [Thermoforming](thermoforming)
-- [Shell Casting](Shell%20Casting.md)
-- [Sand Casting](sand%20casting)
-- [Investment Casting](investment%20casting)
+- [[Thermoforming]]
+- [[Shell Casting]]
+- [[Sand Casting]]
+- [[Investment Casting]]
 
 ##### Permanent Casting
-- [Rotational Molding](rotational%20molding)
-- [Injection Molding](injection%20molding)
-- [Die Casting](die%20casting)
-- [Closed Die Blowing](closed%20die%20blowing)
+- [[Rotational Molding]]
+- [[Injection Molding]]
+- [[Die Casting]]
+- [[Closed Die Blowing]]
 
 ---
 ### 2 - Shaping and Forming
 ##### Design Rules Shaping and Forming
-- [Design Rules Shaping and Forming](Design%20Rules%20Shaping%20and%20Forming)
+- [[Design Rules Shaping and Forming]]
 
 ##### Shaping and Forming Processes
-- [Forging](forging)
-- [Extrusion](extrusion)
-- [Drawing](drawing)
-- [Sheet Metal Forming](sheet%20metal%20forming)
+- [[Forging]]
+- [[Extrusion]]
+- [[Drawing]]
+- [[Sheet Metal Forming]]
 
 
 ---
 ### 3 - Seperating
 ##### Mechanical
-- [Mechanical Seperating Processes](Mechanical%20Seperating%20Processes.md)
+- [[Mechanical Seperating Processes]]
 
 ##### Chemical and Heat Dependent
-- [Wire EDM](Wire%20EDM.md)
-- [Plasma Cutting](Plasma%20Cutting.md)
-- [Laser Cutting](Laser%20Cutting.md)
-- [Flame Cutting](Flame%20Cutting.md)
+- [[Wire EDM]]
+- [[Plasma Cutting]]
+- [[Laser Cutting]]
+- [[Flame Cutting]]
 
 ---
 ### 4 - Machining
-- [Physical Machining Methods](Physical%20Machining%20Methods.md)
-- [EDM](EDM.md)
-- [ECM](ECM.md)
+- [[Physical Machining Methods]]
+- [[EDM]]
+- [[ECM]]
 
 ---
 ### 5 - Joining
 ##### Welding
 ###### Arc Welding
-- [TIG Welding](TIG%20Welding.md)
-- [Shielded Metal Arc Welding](Shielded%20Metal%20Arc%20Welding.md)
-- [Oxyfuel Welding](Oxyfuel%20Welding.md)
-- [MAG and MIG Welding](MAG%20and%20MIG%20Welding.md)
+- [[TIG Welding]]
+- [[Shielded Metal Arc Welding]]
+- [[Oxyfuel Welding]]
+- [[MAG and MIG Welding]]
 
 ###### Resistance and Friction Based Welding
-- [Resistance Welding](Resistance%20Welding.md)
-- [Friction Welding](Friction%20Welding.md)
+- [[Resistance Welding]]
+- [[Friction Welding]]
 
 ##### Non-Welding
-- [Soldering](Soldering.md)
-- [Brazing](Brazing.md)
+- [[Soldering]]
+- [[Brazing]]
 
 ---
 ### 6 - Additive manufacturing
 ##### Metal Based Additive Manufacturing
-- [Power Bed Fusion](Power%20Bed%20Fusion.md)
-- [DED - Directed Energy Deposition](DED%20-%20Directed%20Energy%20Deposition.md)
-- [Binder Jetting](Binder%20Jetting.md)
+- [[Power Bed Fusion]]
+- [[DED - Directed Energy Deposition]]
+- [[Binder Jetting]]
 
 
 ##### Plastic Based Additive Manufacturing
-- [Power Bed Fusion](Power%20Bed%20Fusion.md)
-- [DED - Directed Energy Deposition](DED%20-%20Directed%20Energy%20Deposition.md)
-- [FDM - Fused Deposition Modeling](FDM%20-%20Fused%20Deposition%20Modeling.md)
+- [[Power Bed Fusion]]
+- [[DED - Directed Energy Deposition]]
+- [[FDM - Fused Deposition Modeling]]
 
 ##### Polymer Based Additive Manufacturing
-- [SLA - Stereolithography](SLA%20-%20Stereolithography.md)
-- [Material Jetting](Material%20Jetting.md)
-- [Binder Jetting](Binder%20Jetting.md)
+- [[SLA - Stereolithography]]
+- [[Material Jetting]]
+- [[Binder Jetting]]
 
 ## Terms and Disambiguation
 %%

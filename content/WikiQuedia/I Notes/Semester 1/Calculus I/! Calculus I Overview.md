@@ -20,9 +20,11 @@ Calculus I lays out the base mechanics of differentiation and integration. The f
 
 
 
+---
+### General Formulas
+For a list of common functions that already have their operations calculated, see the following notes: <br>[RoT differentiation](Rules%20of%20Thumb%20Differentiation), [RoT integration](Rules%20of%20Thumb%20Integration), [General RoT](math%20equations.md).
 
-See also: [RoT Integration](Integration.md#Rules%20of%20Thumb), [General math equations](math%20equations.md). %%==add rules of thumb differentiation, fix integration linkje==%%
-
+---
 # Useful Sites:
 1. [Derivative calculator](https://www.derivative-calculator.net/)
 2. [Integral calculator](https://www.integral-calculator.com/)

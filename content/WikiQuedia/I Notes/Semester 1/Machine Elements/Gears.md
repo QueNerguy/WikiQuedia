@@ -13,21 +13,21 @@ Tags: [[transmission]], [[gear]], [[stress calculation]]   <br>19-03-2025
 ### Basics
 The thing you need to remember most when picking matchin gears, is that the modulus of the gears match. If it doesn't, the gears will undercut and eat material away from the bottom of the tooth, causing fractures.
 #### Gear Ratios
-At the connecting point between two gears their speeds are equal ($v_1 = v_2 = v_t$). Their [angular velocities](angular%20velocity), however, are not. This is where the gear ratio comes from. One gear spins faster, because of it's shorter diameter, than the other gear. The gear ratio (__$i$__) is:
+At the connecting point between two gears their speeds are equal ($v_1 = v_2 = v_t$). Their [angular velocities](Angular%20Velocity), however, are not. This is where the gear ratio comes from. One gear spins faster, because of it's shorter diameter, than the other gear. The gear ratio (__$i$__) is:
 $$
 i=\frac{\textrm{input}}{\textrm{output}}=\frac{\omega_1}{\omega_2}
 $$
-Because the power throughout a drivetrain stays the same, the angular velocity is tied to the amount of [torque](torque) transmitted. Therefore $i$ can also be expressed in terms of the torque. It can be expressed in the amount of teeth ($\textrm{z}$) and the diameter ($d$) of the gears too, by rewriting[^proof].
+Because the power throughout a drivetrain stays the same, the angular velocity is tied to the amount of [torque](Torque) transmitted. Therefore $i$ can also be expressed in terms of the torque. It can be expressed in the amount of teeth ($\textrm{z}$) and the diameter ($d$) of the gears too, by rewriting[^proof].
 ##### Full Gear Ratio Equation
 $$
 i=\frac{\omega_1}{\omega_2}=\frac{r_2}{r_1}=\frac{d_2}{d_1}=\frac{\textrm{z}_2}{\textrm{z}_1}=\frac{T_2}{T_1}
 $$
 > [!info] Notice
-> Notice that $i$ is only $\frac{\textrm{input}}{\textrm{output}}$ with angular velocities. For all other values it's the opposite; $\frac{\textrm{output}}{\textrm{input}}$. <br>This is because when the [angular velocity](angular%20velocity) decreases, the [torque](torque) increases. If the [total train value](Transmission%20design#definitions) $< 1$ then, the transmission is designed to increase torque, costing speed. This is the case for most cars, for example. <br><br>Intuitively: __smaller gear__ -> __bigger gear__ gives $i < 1$. <br>Because this is most common it's also referred to as reduction ratio sometimes.
+> Notice that $i$ is only $\frac{\textrm{input}}{\textrm{output}}$ with angular velocities. For all other values it's the opposite; $\frac{\textrm{output}}{\textrm{input}}$. <br>This is because when the [angular velocity](Angular%20Velocity) decreases, the [torque](Torque) increases. If the [total train value](Transmission%20Design#Definitions) $< 1$ then, the transmission is designed to increase torque, costing speed. This is the case for most cars, for example. <br><br>Intuitively: __smaller gear__ -> __bigger gear__ gives $i < 1$. <br>Because this is most common it's also referred to as reduction ratio sometimes.
 
 ### Kinematics
 A gear is a very complicated part, and a lot is considered when designing a gear. There also a lot of different types available, optimizing for smooth transmission, force transmission or ease of use and low cost. An extensive list can be found on the [Wikipedia page](https://en.wikipedia.org/wiki/Gear).<br>
-The most important dimensions of a gear are given by the manufacturer. They are illustrated on a gear, pictured [below](#kinematics%20illustration). These measures denote either __1__: a _[tooth depth](#tooth%20depth)_ value (form one circle to the next), __2__: a _[diameter circle](#diameter%20circle%20values)_,  __3__: the _[module](#module)_, __4__: the _[pitch](#pitch)_, __5__: the _[thickness](#tooth%20thickness)_ of a tooth, __6__: the _[number of teeth](#number%20of%20teeth)_ __7__: the _[pressure angle](#pressure%20angle)_. <br>Most of these are illustrated [below](#kinematics%20illustration)
+The most important dimensions of a gear are given by the manufacturer. They are illustrated on a gear, pictured [below](#Kinematics%20Illustration). These measures denote either __1__: a _[tooth depth](#Tooth%20Depth)_ value (form one circle to the next), __2__: a _[diameter circle](#Diameter%20Circle%20Values)_,  __3__: the _[module](#Module)_, __4__: the _[pitch](#Pitch)_, __5__: the _[thickness](#Tooth%20Thickness)_ of a tooth, __6__: the _[number of teeth](#Number%20of%20Teeth)_ __7__: the _[pressure angle](#Pressure%20Angle)_. <br>Most of these are illustrated [below](#Kinematics%20Illustration).
 
 #### Common Terms
 ###### Tooth Depth
@@ -78,7 +78,7 @@ $$
 \textrm{z}=\frac{d_p}{m} 
 $$
 ###### Pressure angle
-- __$\alpha$__, or __$\phi$__: The pressure angle, most commonly 20$\degree$. <br>Two gears dont make tangential[^tan] contact at their surfaces. This is to let the teeth roll smoothly of one another. It does, however, cause the [force](force) to not be transmitted tangentially, but at an angle, the _pressure angle_. This is an average angle, measured at the _pitch circle_. It changes as the contact of the gears rolls along the surface of the teeth. This force at an angle also induces a force in radial (towards the center of the gear) direction, which means the axles are loaded not only in torsion, but on bending too. %%==maybe change the location of the last part==%%
+- __$\alpha$__, or __$\phi$__: The pressure angle, most commonly 20$\degree$. <br>Two gears dont make tangential[^tan] contact at their surfaces. This is to let the teeth roll smoothly of one another. It does, however, cause the [force](Force) to not be transmitted tangentially, but at an angle, the _pressure angle_. This is an average angle, measured at the _pitch circle_. It changes as the contact of the gears rolls along the surface of the teeth. This force at an angle also induces a force in radial (towards the center of the gear) direction, which means the axles are loaded not only in torsion, but on bending too. %%==maybe change the location of the last part==%%
 #### Kinematics Illustration
 
 ![[GearCircles_80%.png|700x250]]<br> credit: _Nicolas Martin_.
@@ -118,7 +118,7 @@ If gears are not in an isolated enough environment, debris can get caught betwee
 
 
 ---
-Status: #bud
+Status: #sprout
 
 ---
 # References:
