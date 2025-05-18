@@ -10,7 +10,7 @@ Tags: [[calculus]], [[integrals]], [[intervals]]   <br>03-05-2025
 Double integration can be used to find a _volume_ under a function $f(x, y)$, or to find an _area_ when dealing with complicated boundaries.
 ### Geometric Interpretation
 When [integrating](Integration.md) a single time, only one direction is accounted for. We evaluate single integrals as the _area_ under the graph, which means under the graph, along the _$x$-axis_. This is why the integral always ends with $dx$, the steps of $dx$ the integral takes run along the $x$-axis. 
-To find a _volume_ under a graph instead of an area, we can use double integrals. You can think of taking a double integral as first finding an area, the first layer of the integral, and then finding the height at every point by integrating a second time with respect to the height. Area times height creates a volume. <br>In order integrate, we first find a function to integrate below, $z = f(x, y)$. This gives the upper $z$-limit to be this function, and the lower limit to be the plane $z = 0$. <br>The first integral we take looks at this function for $z$ in one direction only. When integrating with respect to $x$ first, _line segments_ on the $x, z$ plane with height $z$ get added together in $x$ direction to create an _area_. We thus find an expression of the area below the function $f$, on the $z, x$-plane. <br>We know $f$ to be a function of both $x$ and $y$, so this expression of the area will still contain a variable $y$ in it. This means that if we were to take a slice of our 3D function at a certain $y$ location, we may get a different value for the area we just obtained. <br>To obtain the _volume_ from this area, the second integral will integrate our expression of the area with respect to $y$. This means placing all these slices next to eachother, in $y$ direction, to create a volume out of all these areas.
+To find a _volume_ under a graph instead of an area, we can use double integrals. You can think of taking a double integral as first finding an area, the first layer of the integral, and then finding the height at every point by integrating a second time with respect to the height. Area times height creates a volume. <br>In order integrate, we first find a function to integrate below, $z = f(x, y)$. This gives the upper $z$-limit to be this function, and the lower limit to be the plane $z = 0$. <br>Similar to [partial derivatives](Partial%20Differentiation), the integrals we take look at this function in one direction at a time. <br>When integrating with respect to $x$ first, for example, we have to keep all other variables - in this case only $y$ - constant. You can think of this operation as taking a slice of the graph at a constant $y$ distance of the origin, as pictured below, and integrating under the line on that slice. <br>Integrating under $z$ involves finding a _line segment_ representing the height under $z$ at a certain point on the $x$-axis. For every point in $x$ direction we add these line segments up, to create an _area_ out of all these lines. We ahve now found an expression of the area below the function $f$, on the $z, x$-plane at a certain $y$ distance of the origin. <br>![[Multiple_Integration_1_90%.png]]<br>We know $f$ to be a function of both $x$ and $y$, so this expression of the area will still contain a variable $y$ in it. This means that if we were to take a slice of our 3D function at a certain $y$ location, we may get a different value for the area we just obtained. <br>To obtain the _volume_ from this area, the second integral will integrate our expression of the area with respect to $y$. This means placing all these slices next to eachother, in $y$ direction, to create a volume out of all these areas.
 
 >[!note] Keep in Mind
 > Keep in mind that this is just a repetition of the process for single [integration](Integration.md). 
@@ -32,7 +32,7 @@ If we look at a single integral in the same vein, we would realize that computin
 1. Integrating under a function $y = f$ also gives a boundary to a [domain](Domain.md) to the integral. <br>This domain would start at $y = 0$, and goes up to $f$.
 2. The dimension of the result of the integration is determined by the dimension of the [domain](Domain.md). 
 
-Using the second fact we can realize that using single __and__ using double integrals we can find an expression of an area, and using double __and__ using triple integrals we can find an expression of a volume. Wether we find a volume or an area is _only_ dependent on the dimension of the domain, no the amount of integrals.
+Using the second fact we can realize that using single __and__ using double integrals we can find an expression of an area, and using double __and__ using triple integrals we can find an expression of a volume. Whether we find a volume or an area is _only_ dependent on the dimension of the domain, no the amount of integrals.
 
 > [!abstract]
 > 1. Integrating under a function $y = f$ also gives a boundary to a [domain](Domain.md) to the integral. <br>This domain would start at $y = 0$, and goes up to $f$.
@@ -61,7 +61,7 @@ For more complicated domains, the main challenge of integrating becomes finding 
 
 
 ## Triple Integration
-Triple integration can be used to find the volume between to function, and among other things, to calculate the mass of an object.
+Triple integration can be used to find the volume between two functions, and among other things, to calculate the mass of an object.
 
 > [!warning] Be Aware
 >It is imperative that the chapter _[Double Integration](#Double%20Integration)_ is understood before reading this chapter, as a big part of understanding higher order integrals has been explained there, leading this chapter to skip over some of the intuitions. 
@@ -100,12 +100,12 @@ This process works for all integrals that integrate with respect to more than on
 2. A projection of the domain on $y, z$, or the _back_ of the graph.
 3. A projection of the domain on $x, z$, or the _left side_ of the graph.
 
-This visualization is only used to determine wether a function or point is an upper or a lower bound. It carries no further significance in the solving process. <br>When changing order from $dzdydx$, to say $dydxdz$, we realize that in the new form:
+This visualization is only used to determine whether a function or point is an upper or a lower bound. It carries no further significance in the solving process. <br>When changing order from $dzdydx$, to say $dydxdz$, we realize that in the new form:
 1. The $y$ bounds can be a function of both $x, z$.
 2. The $x$ bounds can be a function of only $z$.
 3. The $z$ bounds cannot be a function at all, and their only purpose is to indicate for which $z$ [range](Range) the expression runs or is valid.
 
-To find the bounds, rewrite the functions in terms of the correct variables. This means writing $y$ in terms of $x$ and $z$ by isolating it from functions that may bound the domain.<br>Now, aided by the drawing to determine wether the functions are upper or lower bounds, we  place the found expressions for the bounds of the domain into the integrals and solve as normal.
+To find the bounds, rewrite the functions in terms of the correct variables. This means writing $y$ in terms of $x$ and $z$ by isolating it from functions that may bound the domain.<br>Now, aided by the drawing to determine whether the functions are upper or lower bounds, we  place the found expressions for the bounds of the domain into the integrals and solve as normal.
 
 
 
@@ -121,7 +121,7 @@ _Status:_ #sprout #missingLink
 ---
 # References:
 [^asterisk1]: Technically speaking, you could use a double integral to evaluate such a domain. Applying the same reasoning used [here](#Dimension%20of%20Integrals), we could subtract the volume of two double integrals to obtain the volume of the more complicated domain. 
-[^asterisk2]: Of course, these functions dont _need_ to have complicated expressions that are a combination of both $x$ and $y$, they may just be flat planes like $z = 4$. <br>When this is the case though, it may be worth looking in to wether it would be easier to evaluate such a domain by [swapping the order of integration](#Changing%20the%20Order%20of%20Integration).
+[^asterisk2]: Of course, these functions dont _need_ to have complicated expressions that are a combination of both $x$ and $y$, they may just be flat planes like $z = 4$. <br>When this is the case though, it may be worth looking in to whether it would be easier to evaluate such a domain by [swapping the order of integration](#Changing%20the%20Order%20of%20Integration).
 1. R. A. Adams, Christopher Essex, _Calculus A Complete Course_, 9th ed.
 2. Openstax, _Calculus Volume 1_, [link](https://openstax.org/details/books/calculus-volume-1).
 3. Openstax, _Calculus Volume 2_, [link](https://openstax.org/details/books/calculus-volume-2).
