@@ -6,17 +6,17 @@ Tags: [[differentials]]   <br>13-05-2025
 
 ---
 # Differentiating Implicit Functions
-See [implicit functions](implicit%20functions) for an explanation on what an implicit function is.
+See [implicit functions](Implicit%20Functions) for an explanation on what an implicit function is.
 ### Definition
-When differentiating an [implicit function](implicit%20functions), the operation involves taking [partial derivatives](partial%20differentiation) and applying the [chain rule](partial%20differentiation#Differentiating%20variables%20as%20functions). <br>When taking the partial derivative $D_x [z]$ of a function $f(x, y, z) = c$, you differentiate all terms with respect to $x$ while realizing that $z$ is a function, this means applying the chain rule. Because $z$ is a part of the function itself however, you always get a $D_x [z]$ term in the differentiated function. To obtain the solution to $D_x [z]$ you simply isolate it from this expression. <br>Alternatively, we can use the _Implicit Function Theorem_, which states for a function $f(x, y, z)$, where we want to differentiate $z$ with respect to $x$:[^wIFT]
+When differentiating an [implicit function](Implicit%20Functions), the operation involves taking [partial derivatives](Partial%20Differentiation) and applying the [chain rule](Partial%20Differentiation#Differentiating%20Variables%20as%20Functions). <br>When taking the partial derivative $D_x [z]$ of a function $f(x, y, z) = c$, you differentiate all terms with respect to $x$ while realizing that $z$ is a function, this means applying the chain rule. Because $z$ is a part of the function itself however, you always get a $D_x [z]$ term in the differentiated function. To obtain the solution to $D_x [z]$ you simply isolate it from this expression. <br>Alternatively, we can use the _Implicit Function Theorem_, which states for a function $f(x, y, z)$, where we want to differentiate $z$ with respect to $x$:[^wIFT]
 $$
 D_x [z] = \frac{\partial z}{\partial x} = - \frac{D_x [f]}{D_z [f]} = - \frac{f_x}{f_z}
 $$
-This equation is derived from computing $D_x [z]$ using the [chain rule](partial%20differentiation#Differentiating%20variables%20as%20functions). Using the chain rule is just as convenient, while at the same time being more intuitive.
+This equation is derived from computing $D_x [z]$ using the [chain rule](Partial%20Differentiation#Differentiating%20Variables%20as%20Functions). Using the chain rule is just as convenient, while at the same time being more intuitive.
 #### Example Using Chain Rule.
 ___Task___: Find $D_x [z]$ of the implicit function $f(x, y, z) = x^2 + y^4 - z^3 + 3xy^2 = 8$[^excred]. <br><br>___Solution:___
 ###### Finding $D_x [f]$
-To find the [partial derivative](partial%20differentiation) with respect to $x$, differentiate the whole function with respect to $x$, while keeping in mind that $z$ is a function. Thus, the derivative of $z \ne 0$, but instead the derivative becomes $D_x [z]$, because we're differentiating $z$ [as a function](partial%20differentiation#Differentiating%20variables%20as%20functions) and not a variable.
+To find the [partial derivative](Partial%20Differentiation) with respect to $x$, differentiate the whole function with respect to $x$, while keeping in mind that $z$ is a function. Thus, the derivative of $z \ne 0$, but instead the derivative becomes $D_x [z]$, because we're differentiating $z$ [as a function](Partial%20Differentiation#Differentiating%20Variables%20as%20Functions) and not a variable.
 $$
 f(x, y, z) = x^2 + y^4 - z^3 + 3xy^2 = 8
 $$
@@ -50,7 +50,7 @@ $$
 __[Home](!%20Calculus%20II%20Learning%20Overview)__
 
 ---
-_Status:_ #sprout
+_Status:_ #ripe
 
 ---
 # References:

@@ -37,7 +37,7 @@ Partial differentiation uses the standard [differentiation](Differentiation.md) 
 2. __$\frac{\partial}{\partial x} [f]$__, or __$\frac{\partial f}{\partial x}$__, the '_Leibniz notation_'. The squiggly character $\partial$ is called "del" or "partial". Pronounce this as _the partial derivative of $f$ with respect to $x$_. The denominator denotes the direction in which this partial derivative is taken, in this case the $x$ direction.
 3. __$D^1_x [f(x,y)]$__, or __$D_x [f(x, y)]$__. The $D$ replaces the $\frac{\partial}{\partial}$. The power on the $D$ denotes how many times to differentiate. Pronounce this as _the partial derivative of $f$ with respect to $x$_. The subscript denotes the direction in which the derivative is taken, in this case the $x$ direction.
 
-Remember from [(single variable) differentiating](Differentiation.md) that the direction or rate of change of a graph is given by the value of it's derivative. The same goes for partial differentiation, but this only considers one direction at a time. The partial differential with respect to $x$ __only__ looks at the rate of change in the $x$ direction while keeping $y$ constant.
+Remember from [(single variable) differentiation](Differentiation.md) that the direction or rate of change of a graph is given by the value of it's derivative. The same goes for partial differentiation, but this only considers one direction at a time. The partial differential with respect to $x$ __only__ looks at the rate of change in the $x$ direction while keeping $y$ constant.
 
 
 ### Differentiating Variables as Functions
@@ -53,7 +53,7 @@ And the same goes for other functions of $x$.
 > [!danger] Note
 > Notice that $D[x]$ and $x'$ aren't specific. They just denote the derivative of $x$. If $x$ were a function of $a$ for example, we would write $D_a [x]$ or $x_a '$, for completeness' sake. <br>If $x$ were a function of multiple variables, say $a$ and $b$, we would write the [total derivative](#total%20derivative) for $D[x]$, which would be $dx = D_a [x] da + $D_b [x] db$. <br>This is detailed mathematically below.
 >> [!Abstract]
->> In theory this action of $D_x [x^2] = 2x \cdot D [x]$ also happens for variables that aren't functions. The reason this is not written down is because evaluating $D [x]$ when $x$ is a variable gives us 1. Therefore $D_x [x^2]$ just becomes $2x \cdot 1 = 2x$ and the $D [x]$ is omitted from the calculation.
+> In theory this action of $D_x [x^2] = 2x \cdot D [x]$ also happens for variables that aren't functions. The reason this is not written down is because evaluating $D [x]$ when $x$ is a variable gives us 1. Therefore $D_x [x^2]$ just becomes $2x \cdot 1 = 2x$ and the $D [x]$ is omitted from the calculation.
 #### General Equations
 ##### Single Variable Dependent
 In __general__, the derivative of $f$ where $x = x(a)$ and $y = y(a)$ are functions of a single variable:
@@ -91,7 +91,7 @@ $$
 
 > [!abstract] Keep in Mind
 > While these formulas may look very intimidating and are perhaps confusing to look at, they are nothing more than mathematical expressions of the chain rule, and they generally don't need to be used formally. 
-> Using the math as done in the beginning of this paragraph ([here](Differentiating%20Variables%20as%20Functions)) is what the actual calculations will look like.
+> Using the math as done in the beginning of this paragraph ([here](#Differentiating%20Variables%20as%20Functions)) is what the actual calculations will look like.
 > The expressions for the total derivative aren't new either as they are just a repurposing of expressing the total derivatives as discussed earlier in this note, only now some terms may be hidden in the intial formula for $z$.
 
 

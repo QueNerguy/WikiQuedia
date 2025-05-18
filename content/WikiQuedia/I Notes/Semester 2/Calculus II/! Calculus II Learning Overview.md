@@ -16,7 +16,7 @@ Calculus II lays out the base mechanics for differentiation and integration in m
 
 
 ### Part 1: Summation
-4. ___[[Evaluating infinite series]]:___ This note mostly goes in-depth on how to evaluate infinite geometric series, a subsection of possible infinite series. It details how to evaluate these series in single- and multivariable cases.
+4. ___[[Evaluating Infinite Series]]:___ This note mostly goes in-depth on how to evaluate infinite geometric series, a subsection of possible infinite series. It details how to evaluate these series in single- and multivariable cases.
 
 
 ### Part 2: Differentiation
@@ -24,8 +24,8 @@ Calculus II lays out the base mechanics for differentiation and integration in m
 	-  ___[[Finding Extreme Values]]:___ Extreme value problems are a central aspect and use of calculus. This note details the ideas behind and the process itself for single and higher dimensional applications.
 	-  ___[[Tangents in Higher Dimensions - 3D]]:___ Along with [[Finding Extreme Values]] constructing tangent lines and planes are a crucial application of calculus. The 3D applications of this are detailed here.
 6. ___[[Differentiating Implicit Functions]]:___ The last step to understanding how to partially differentiate any function, is to understand how to deal with implicit functions. This note doesn't contain any new information per se, but it does go more in depth on how to use the chain rule to deal with these functions.
-7. ___[[Gradient]]:___ The gradient is a widely applied concept that uses [partial derivatives](partial%20differentiation) to construct a vector that gives the direction of steepest ascent.
-8. ___[[Directional Derivative]]:___ The directional derivative is a continuation of the [gradient](gradient) to find the partial derivative in a higher dimensional space in a single direction.
+7. ___[[Gradient]]:___ The gradient is a widely applied concept that uses [partial derivatives](Partial%20Differentiation) to construct a vector that gives the direction of steepest ascent.
+8. ___[[Directional Derivative]]:___ The directional derivative is a continuation of the [gradient](Gradient) to find the partial derivative in a higher dimensional space in a single direction.
 9. ___[[Lagrange Multipliers]]:___ Lagrange multipliers offer extra equations to solve constraint problems, which is useful when dealing with a lot of unknown variables.
 10. ___[[Higher Order Partial Derivatives]]:___ Higher order partial derivatives are used most often to determine the acceleration of a function, or to check wether a critical point is an extremum or not. This is just a continuation on how partial differentiation works.
 

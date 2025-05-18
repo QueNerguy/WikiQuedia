@@ -7,10 +7,10 @@ Tags: [[differentials]], [[calculus]], [[limits]]   <br>08-05-2025
 ---
 # Differentiability
 A function is differentiable at a point if that point exists and has a rate of change in a certain direction. This eliminates points that are:
-1. __Perforations__. A perforation may be a [vertical asymptote](calculating%20limits), or just a point that does not exist on the graph. This can be caused by dividing by 0, for example.
+1. __Perforations__. A perforation may be a [vertical asymptote](Calculating%20Limits), or just a point that does not exist on the graph. This can be caused by dividing by 0, for example.
 2. __Angles or [cusps](https://en.wikipedia.org/wiki/Cusp_(singularity))__. If the graph changes direction in a sharp angle from the one point to the next, the point on the edge does not have a derivative. This can be caused by taking absolute values, for example. $\rightarrow$ The function has to be "_smooth_".
 
-Keep in mind that these points may have a [partial](partial%20differentiation) or [directional derivative](directional%20derivative) because they have a direction they point in, but there is no rate of change on such points as they are not properly "connected" to the fabric around them. <br><br>The meaning of "_smooth_" is that the height of the points directly around the point we're analyzing is decently approximated by a [tangent line or plane](Tangents%20in%20Higher%20Dimensions%20-%203D).
+Keep in mind that these points may have a [partial](Partial%20Differentiation) or [directional derivative](Directional%20Derivative) because they have a direction they point in, but there is no rate of change on such points as they are not properly "connected" to the fabric around them. <br><br>The meaning of "_smooth_" is that the height of the points directly around the point we're analyzing is decently approximated by a [tangent line or plane](Tangents%20in%20Higher%20Dimensions%20-%203D).
 
 
 

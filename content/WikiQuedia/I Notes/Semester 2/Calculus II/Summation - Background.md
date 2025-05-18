@@ -31,7 +31,7 @@ $$
 $$
 
 ### Shifting the Summation Index
-In some cases, like $\sum^{12}_{n = 1} 3^{n - 1}$, it is annoying to [evaluate](evaluating%20infinite%20series) with the - 1 still being in the power. In such cases it can be helpful to change the beginning and end point of the summation, in order to remove the - 1 from the power. This is done by substitution. <br>To change the index for the example above, we would substitute $n-1$ with $m$, $m = n - 1$. This _shifts_ the index. Where it would originally go from 1 to 12 for $n$, for $m$ it goes from 0 to 11. The resulting sum is: $\sum^{11}_{m = 0} 3^{m}$, which is way easier to evaluate.
+In some cases, like $\sum^{12}_{n = 1} 3^{n - 1}$, it is annoying to [evaluate](Evaluating%20Infinite%20Series) with the - 1 still being in the power. In such cases it can be helpful to change the beginning and end point of the summation, in order to remove the - 1 from the power. This is done by substitution. <br>To change the index for the example above, we would substitute $n-1$ with $m$, $m = n - 1$. This _shifts_ the index. Where it would originally go from 1 to 12 for $n$, for $m$ it goes from 0 to 11. The resulting sum is: $\sum^{11}_{m = 0} 3^{m}$, which is way easier to evaluate.
 $$
 \sum^{12}_{n = 1} 3^{n - 1} \rightarrow \sum^{11}_{m = 0} 3^{m}
 $$

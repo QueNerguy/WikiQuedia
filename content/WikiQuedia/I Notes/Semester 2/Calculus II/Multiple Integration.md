@@ -67,7 +67,7 @@ Triple integration can be used to find the volume between two functions, and amo
 >It is imperative that the chapter _[Double Integration](#Double%20Integration)_ is understood before reading this chapter, as a big part of understanding higher order integrals has been explained there, leading this chapter to skip over some of the intuitions. 
 
 ### Geometric Interpretation
-Triple Integration is an expansion on [double integration](#Double%20Integration). Triple integrals are used to evaluate the volume for more complex [domains](Domain.md), where, unlike what is necessary for a double integral to evaluate a _volume_, the domain is enclosed by two functions[^asterisk1]. <br>The main challenge with constructing a triple integral is [finding the correct boundaries of the domain](#Constructing%20the%20Domain) and [swapping the order of integration](Changing%20the%20Order%20of%20Integration), if necessary, in order to evaluate the integral. 
+Triple Integration is an expansion on [double integration](#Double%20Integration). Triple integrals are used to evaluate the volume for more complex [domains](Domain.md), where, unlike what is necessary for a double integral to evaluate a _volume_, the domain is enclosed by two functions[^asterisk1]. <br>The main challenge with constructing a triple integral is [finding the correct boundaries of the domain](#Constructing%20the%20Domain) and [swapping the order of integration](#Changing%20the%20Order%20of%20Integration), if necessary, in order to evaluate the integral. 
 ### Uses of Triple Integrals
 The triple integral is used for many other things however, most notably to find the _mass_ of an object. <br>These other applications use the fact that triple integrals can solve complicated volumes, and use triple integrals in combination with other terms to find the wanted properties. In the case of mass for example, we realize that mass is density times volume, $\rho \cdot V$. If density changes depending on the location in the volume, meaning that it is a function of it's coordinates in the volume, $\rho = f(x, y, z)$, we can integrate the density with respect to the volume to find the mass of the object.
 $$
@@ -116,7 +116,7 @@ To find the bounds, rewrite the functions in terms of the correct variables. Thi
 __[Home](!%20Calculus%20II%20Learning%20Overview)__
 
 ---
-_Status:_ #sprout #missingLink
+_Status:_ #ripe
 
 ---
 # References:

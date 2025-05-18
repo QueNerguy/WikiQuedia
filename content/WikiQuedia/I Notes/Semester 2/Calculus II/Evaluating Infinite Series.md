@@ -6,7 +6,7 @@ Tags: [[calculus]], [[sums]], [[limits]]   <br>03-05-2025
 
 ---
 # Evaluating Infinite Series
-See [this note](summation%20-%20background) for an explanation of sum notation, intuition behind sums and changing index base.
+See [this note](Summation%20-%20Background) for an explanation of sum notation, intuition behind sums and changing index base.
 ### Evaluability
 A [sum](Summation%20-%20Background.md) that has an infinite amount of steps ($\sum ^{\infty} _{n = 1}$) can often still be evaluated, as long as it __converges__ to a certain value. Geometrically, the value of the sum at a certain step is represented on the $y$-axis, and the step number is represented on the $x$-axis. Convergence means that as the _number of steps_ increase, the _amount of increase per step_ goes to zero, creating a horizontal asymptote - at an infinite $x$-coordinate there is no $y$-variance with an increase in $x$ anymore, creating a plateau. 
 #### Determining Convergence

@@ -6,10 +6,10 @@ Tags: [[calculus]], [[differentials]]   <br>08-05-2025
 
 ---
 # Tangents in Higher Dimensions - 3D
-In 2D spaces constructing the tangent to a graph would result in a line tangent to the graph. <br>In 3D spaces this would be one or more lines, whose directions are given by the [partial derivatives](partial%20differentiation), or a plane whose area is spanned by the tangent lines. 
+In 2D spaces constructing the tangent to a graph would result in a line tangent to the graph. <br>In 3D spaces this would be one or more lines, whose directions are given by the [partial derivatives](Partial%20Differentiation), or a plane whose area is spanned by the tangent lines. 
 ### Lines
 Lines in 3D need to be a function of all direction variables. If a direction is not accounted for in the expression of a line, a plane will be created. The reason a plane is created instead of a line, is because when a direction is not accounted for that means the equation holds true for any point in that direction. Plotting this expression into the space would create lines at every location along that unspecified direction. All these lines next to one another create a plane. <br>Finding a line tangent to a graph at a point with coordinates $(a, b, c)$ has 2 steps.
-1. Finding the direction of the line $\rightarrow$ This is done by finding the [partial](Differentiation.md) or [directional derivative](directional%20derivative) of the function at that point.
+1. Finding the direction of the line $\rightarrow$ This is done by finding the [partial](Differentiation.md) or [directional derivative](Directional%20Derivative) of the function at that point.
 2. Finding a base for the line. The line needs to start travelling from the point on the graph it's supposed to lay tangent to, at the height the graph assumes at that point. The base for the line is the $z$-height of the function at that point ($f(a, b) = c$).
 
 The formula for the line, then, is:
@@ -54,7 +54,7 @@ $$
 __[Home](!%20Calculus%20II%20Learning%20Overview)__
 
 ---
-_Status:_ #bud
+_Status:_ #ripe
 
 ---
 # References:
