@@ -27,14 +27,20 @@ When the domain is not defined at an [endpoint](Domain#Definition) $a$, you take
 $$
 F\left(x\right)\Bigg|_{\lim_{x\to a}}^{x=b} = \lim_{x \rightarrow a} F(x) \bigg|_a ^b
 $$
-Evaluating an integral over a domain from $a$ to $b$ is notated as follows:
+To finally evaluate the resulting function that was integrated over a domain from $a$ to $b$, is as follows:
 $$
 F(x)\bigg|^{x = a}_{x = b} = F\left(a\right)-F\left(b\right)
 $$
-In the case of the limit shown previously (the same applies for limits in both directions) the notation is as follows.
+In the case of the limit shown previously (the same applies for limits in both directions) the notation is as follows:
 $$
 \lim_{x\to a}F\left(x\right)-F\left(b\right)
 $$
+> [!note] 
+> As integration is the reciprical of [differentiation](Differentiation), we must account for terms lost.
+> What is meant by this, is that when we differentiate a value, 3 for example, it disappears. Therefore, when integrating $f$ to obtain $F$, there may have been terms like 3 that would be lost if we differentiate $F$ to obtain $f$ again. 
+> Because we don't know which values we might lose when integrating, we always include a constant $c_1$ into the resulting function $F$, to correct for any terms that might have been lost during the integration process.
+
+
 ---
 
 Taking limits in integrals and improper integration is also discussed in the note [[Improper Integrals]].
@@ -42,16 +48,24 @@ Taking limits in integrals and improper integration is also discussed in the not
 ### Integrating Methods
 When a function is too complicated to integrate, and doesn't look like any [rules of thumb](Rules%20of%20Thumb%20Integration), there are two ways to solve it: _[substitution](#Substitution)_ and _[integration by parts](#Integration%20by%20Parts)_, in combination with using the rules of thumb.
 #### Substitution
-This method is analogous to [substitution for differentiation](Differentiation#Substitution). We substitute functions of $x$ by $u$, $v$, etc., as many times as needed, until a function in the form of the [rules of thumb](Rules%20of%20Thumb%20Integration) is reached and it is possible to integrate directly.
+This method is analogous to [substitution for differentiation](Differentiation#Substitution). We substitute functions of $x$ by terms $u$, $v$, etc., as many times as needed, until it is possible to integrate directly, but now with respect to $u$ or $v$ instead of $x$. <br><br>Keep in mind that when substituting in terms of $u$, we need to calculate a [derivative](Differentiation) to get steps of $du$ instead of $dx$. This is because when calculating an integral, we always do it with respect to steps in $x$ direction, $dx$. Thus, when integrating with respect to $u$, we need to do it with respect to the steps in $u$ direction, $du$, as well . <br>To find those steps in $u$ direction, $du$, we realize we can take the derivative of $u$, <u>not</u> with respect to a certain direction - that would yield us $\frac{du}{dx}$ or $D_x [u]$, the derivative of $u$ in $x$ direction - but with no regards to direction at all. _This derivative_ gives us the derivative of $u$ to be $du$, which we need. $du$ represents a tiny change in the size of $u$. The derivative of $x$ becomes $dx$, a tiny change in the size of $x$. <br>This type of derivative is called the _total derivative_ of a function. This concept is reviewed further in [Partial Differentiation](Partial%20Differentiation#Total%20Derivative), as a part of [calculus II](!%20Calculus%20II%20Learning%20Overview).<br>To obtain $du$ for a substitution like $u = x^2$, we calculate the derivative, using the [chain rule](Differentiation#Chain%20Rule), 
 
-- __Example:__ When given a function like $\int_{}^{}\frac{1}{2x+1}\,dx$, it is useful to substitute in such a way that we get $\int_{}^{}\frac{1}{u}du$, that way we can directly integrate. 
-	- Set $u=2x+1$. -> Then: $u^{\prime}=\frac{\,du}{\,dx}=2$. Thus: $\,dx=\frac12\cdot \,du$. 
-	- The resulting function is $\int_{}^{}\frac{1}{u}\cdot\frac12\,du=\frac12\int_{}^{}\frac{1}{u}\,du$. This function can be evaluated directly from the rules of thumb.
-	- After substitution the resulting function is: $\frac12\cdot\ln\left|2x+1\right|+C_1$. 
+$$
+\int f(x) dx = \int f(x) \cdot 2x du
+$$
+
+- [An example of this process](example%20substitution%20method%20integration)
+
 
 > [!Note]
-> It is imperitive that when substituting $u=f(x)$ the values at which the function is _evaluated_ are also changed in terms of $u$. A function $\int_{x=1}^{x=3}$ when substituted with $u=x^2$ gives upper and lower limits of $u(x=1)=1$ and $u(x=3)=9$ respectively, therefore the integral with substitution becomes: $\int_{u=1}^{u=9}$. It is now in terms of $u$, which allows for immediate evaluation after calculating the integral in terms by plugging in the values obtained for $u$.
-> It _is_ also possible to keep the integral evaluated in terms of $x$ as in the original. This would require back-substitution of the $u$ and $v$ values, back to terms of $x$ <u>after</u> calculating the integral, resulting in unnecessary steps.
+> It is imperitive that when substituting $u$ for a certain $f(x)$, the upper and lower bounds where the integral is _evaluated_ are also changed from $x$ to be in terms of $u$. 
+> A function $\int_{x = 1}^{x = 3} f(x) dx$ with a subsitution $u = x^2$ gives upper and lower limits of: 
+> 1. $u(x = 1) = 1^2 = 1$
+> 2. $u(x = 3) = 3^2 = 9$ 
+> 
+> Therefore the integral becomes: $\int_{u = 1}^{u = 9} f(u) du$. The entire integral is now in terms of $u$, which allows for immediate evaluation after obtaining the primitve $F(u)$, by simply plugging in the values of $u$ as normal.
+> Alternatively, it _is_ also possible to keep the upper and lower bounds of the integral in terms of $x$. This would require back-substitution of $u$ to $x$ in the function $F(u)$ to obtain $F(x)$, after integration. We can then plug in the values for $x$ to obtain a solution.
+> This method is more inefficient, however.
 
 #### Integration by Parts
 This method is based on [the substitution method](#Substitution). It is used for even more complicated functions, usually functions that are a combination of two factors of $x$.
@@ -81,7 +95,7 @@ $$
 
 ---
 ### General Formulas
-For a list of common functions that already have their operations calculated, see the following notes: <br>[RoT integration](Rules%20of%20Thumb%20Integration), [RoT differentiation](Rules%20of%20Thumb%20Differentiation), [General RoT](math%20equations.md).
+For a list of common functions that already have their expressions calculated, see the following notes: <br>[RoT integration](Rules%20of%20Thumb%20Integration), [RoT differentiation](Rules%20of%20Thumb%20Differentiation), [General RoT](math%20equations.md).
 
 ---
 
@@ -89,7 +103,7 @@ For a list of common functions that already have their operations calculated, se
 
 
 
-##### useful sites:
+# Useful Sites
 1. [Integral calculator](https://www.integral-calculator.com/)
 2. [Wolfree Alpha](https://archive.ph/gfhPu) (use tor-browser)
 3. [Desmos (for graphing)](https://www.desmos.com/calculator)

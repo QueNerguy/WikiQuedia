@@ -2,14 +2,16 @@
 title: Differentiation
 draft: false
 ---
-Tags: [[differentials]], [[calculus]] <br>25-01-2025
+Tags: [[differentials]], [[calculus]], [[limits]] <br>25-01-2025
 
 ---
 # Differentiation
 Differentiating is the reciprocal of [integration](Integration.md), therefore a lot of  the same [quick rules](Rules%20of%20Thumb%20Integration) apply from integration, just in _reverse_. These rules I call _rules of thumb_.<br>Find the rules of thumb of differentiation [here](Rules%20of%20Thumb%20Differentiation).
 ### Geometrical Interpretation
-Differentiation is a form of taking a [limit](Calculating%20Limits.md). The interpretation of taking a differential is calculating the slope of a function by taking $\frac{\Delta y}{\Delta x}$. <br>If we want to know the slope at a single point, we calculate the slope as the length of $\Delta$ approaches 0 so we don't have to account for neighboring points anymore. To denote the fact that the line segment corresponding to $\Delta$ has a 0-length, we denote it as $d$, making $\frac{\Delta y}{\Delta x}$ become $\frac{dy}{dx}$ in Leibniz notation. In this wiki it is usually preferred to write the more common $\frac{dy}{dx}$ operator as $D_x$ or simply $D$ instead. $D[f]$ means the derivative of $f$.
-#### Meaning of Derivatives
+Differentiation is a form of taking a [limit](Calculating%20Limits.md). The interpretation of a derivative is the slope of a function at a certain point. <br>Computing the slope between two points is done by taking $\frac{\Delta y}{\Delta x}$, where we take the distance between two points in $y$ direction, and divide by the distance between those points in $x$ direction.<br><br>![[Wiki_slope_in_2d_80%.png|350]]<br>By Maschen - Own work, CC BY-SA 3.0, [link](https://commons.wikimedia.org/w/index.php?curid=27658172)<br><br>If we want to know the slope at a single point, however, we calculate the slope as the distance between two points ($\Delta y, \Delta x$) approaches 0, because if the distance between two points is 0, there is no second point and we have found the slope at single point. <br>To annotate the fact that the line segments of size $\Delta x$ now have a _0-length_, we denote these segments as $dx$ instead, making $\frac{\Delta y}{\Delta x}$ become $\frac{dy}{dx}$ in Leibniz notation. You can interpret $dx$ as an infinitesimally small (read: very very small) step in $x$ direction. <br><br>Consider the following curve (black), where the slope is found at a certain point. Here, the line tangent to the curve is drawn, using the derivative to find the slope of the line. <br>You can think of the derivative as an expression, giving the direction of travel of the curve at every point. Fill in the coordinates of a point to find the slope at that point. <br><br>![[Tangent_to_a_curve_80%.png|300]]<br>By Jacj at English Wikipedia / Later versions were uploaded by Oleg Alexandrov at en.wikipedia. - Transferred from en.wikipedia to Commons., Public Domain, [link](https://commons.wikimedia.org/w/index.php?curid=2068616)<br>
+> [!note] Keep in Mind
+> In this wiki it is usually preferred to write the more common $\frac{d}{dx}$ operator as $D_x$ or simply $D$ instead. 
+> $D_x[f]$ means the derivative of $f$ with respect to $x$.
 ##### First Derivative
 The first derivative at a point returns the slope of its original function at that point. <br>The height ($y$-value) of the graph shows the _slope_ of the original function, the location ($x$-value) gives the _location_ of this slope in the original function. The $x$-axis is therefore unchanged when differentiating (with respect to $x$ at least). <br>When the first derivative is 0, that means the original function is horizontal at that point. This could mean two things.
 1. The function has an __extremum__[^extremum] here. This is a point like a maximum or minimum, whose direct neighboring points are either both lower, or both higher. This would imply this point is the lowest/highest in the area, a _local extremum_, or it might be the lowest/highest overall, a _global extremum_.
@@ -58,21 +60,18 @@ $$
 
 >[!note]
 >Even though these rules always apply, they may be omitted from notation at times. For example, when differentiating $x^2$, we can apply the chain rule and write the result as $2x \cdot x'$, but seeing as $x' = 1$, we omit the use of the chain rule and just write $2x$ immediately.
-### Differentiating Complicated Functions
-For most functions the [basic rules](#Computational%20Rules) are sufficient to find a solution. In some cases where there are multiple layers of functions of $x$, or multiple multiplications of functions of $x$, it is useful to use the _substitution method_ in combination with the basic rules.
-For complicated functions, such as $\ln\left(\cos\left(x^{2}\right)\right)$ it's usually necessary to use the _substitution technique_, in combination with the  basic rules, whereby you isolate a part of the expression, in this case, for example, $x^2$ and $\cos$, and substitute these functions for a variable $u$ and $v$. Then you differentiate using the above rules and, after obtaining a solution, resubstitute the original terms.
-- __Solution to Example:__ 
-	In this case we would substitute as follows: <br>$\ln\left(\cos\left(u\right)\right) \rightarrow \ln\left(v\right)$. <br>We would then calculate $u^{\prime}$ and $v^{\prime}$  and apply chain rule to get: <br>$u^{\prime}=2x$;  $v^{\prime}=-\sin\left(u\right)\cdot u^{\prime}$.
-	Therefore the total solution is: <br>$D_{x}\left\lbrack\ln\left(v\right)\right\rbrack=\frac{1}{v}\cdot v^{\prime} \rightarrow \frac{1}{v}\cdot\left(-\sin\left(u\right)\cdot u^{\prime}\right)$. <br>Now substitute the expressions for $u$ and $v$ and the solution is: <br>$\frac{1}{\cos\left(x^{2}\right)}\cdot-\sin\left(x^{2}\right)\cdot2x=\frac{-2x\sin\left(x^{2}\right)}{\cos\left(x^{2}\right)}=-2x\tan\left(x^{2}\right)$
-> [!tip] Tip
-> This result is checkable with [the derivative calculator](https://www.derivative-calculator.net/)
+### Substitution Method
+For most functions the [basic rules](#Computational%20Rules) are sufficient to find a solution. However, for complicated functions, such as $\ln\left(\cos\left(x^{2}\right)\right)$ it's usually necessary to use the substitution method. <br>With the substitution method, you replace a part of the expression which makes it hard to differentiate, and replace it with $u$ or $v$. You then differentiate these terms as functions, which they are, and after obtaining a solution for the differential, you resubstitute them so the solution is in terms of $x$ again. This is the solution to the original derivative.
+- [Solution to mentioned example](example%20substitution%20method%20differentiation)
+
+
 
 
 
 
 ---
 ### General Formulas
-For a list of common functions that already have their operations calculated, see the following notes: <br>[RoT differentiation](Rules%20of%20Thumb%20Differentiation), [RoT integration](Rules%20of%20Thumb%20Integration), [General RoT](math%20equations.md).
+For a list of common functions that already have their expressions calculated, see the following notes: <br>[RoT differentiation](Rules%20of%20Thumb%20Differentiation), [RoT integration](Rules%20of%20Thumb%20Integration), [General RoT](math%20equations.md).
 
 ---
 
@@ -81,7 +80,7 @@ For a list of common functions that already have their operations calculated, se
 
 
 
-##### useful sites:
+# Useful Sites
 1. [Derivative calculator](https://www.derivative-calculator.net/)
 2. [Wolfree Alpha](https://archive.ph/gfhPu) (use tor-browser)
 3. [Desmos (for graphing)](https://www.desmos.com/calculator)

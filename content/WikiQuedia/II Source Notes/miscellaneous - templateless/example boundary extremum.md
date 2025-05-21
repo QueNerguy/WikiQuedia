@@ -1,4 +1,4 @@
-___Task___: Find the extreme values of $z = f(x,y)=2xy$ on the closed disk $x^2 + y^2 \leq 4$. <br><br>___Solution:___ 
+___Task:___ Find the extreme values of $z = f(x,y)=2xy$ on the closed disk $x^2 + y^2 \leq 4$. <br><br>___Solution:___ 
 ###### Function
 To find the extreme values of $f$ we take the partial derivative in both directions, and realize this direction reaches an extreme value when the partial derivative is 0. <br>For the $x$-direction:
  $$

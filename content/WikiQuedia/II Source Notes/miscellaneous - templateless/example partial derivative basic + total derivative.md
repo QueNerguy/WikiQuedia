@@ -1,4 +1,4 @@
-___Task___: Calculate the total derivative of $f(x, y) = x^2 \sin (y)$. <br><br>___Solution___: 
+___Task:___ Calculate the total derivative of $f(x, y) = x^2 \sin (y)$. <br><br>___Solution:___ 
 ###### Partial With Respect to $x$ 
 First compute the partial derivative in $x$ direction.
 $$

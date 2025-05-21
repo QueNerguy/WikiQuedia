@@ -1,4 +1,4 @@
-___Task___: Calculate the partial derivative of $f(x, y) = x^2 \sin (y)$ in $x$ and $y$ direction. <br><br>___Solution___: 
+___Task:___ Calculate the partial derivative of $f(x, y) = x^2 \sin (y)$ in $x$ and $y$ direction. <br><br>___Solution:___ 
 ###### Partial With Respect to $x$ 
 First compute the partial derivative in $x$ direction.
 $$
