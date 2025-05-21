@@ -51,7 +51,7 @@ Therefore, in the previous example, the solution would prioritize the $e^{-\inft
 
 
 ---
-__[Home](!%20Calculus%20I%20Overview.md)__
+__[Home](!%20Calculus%20I%20Learning%20Overview.md)__
 
 ---
 _Status:_ #ripe

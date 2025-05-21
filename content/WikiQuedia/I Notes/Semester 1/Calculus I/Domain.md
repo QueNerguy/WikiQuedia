@@ -29,7 +29,7 @@ The notation $\left\lbrack x_1,x_2\right\rbrack$ just means $\left\lbrack x_1\to
 
 
 ---
-__[Home](!%20Calculus%20I%20Overview.md)__
+__[Home](!%20Calculus%20I%20Learning%20Overview.md)__
 
 ---
 _Status:_ #ripe

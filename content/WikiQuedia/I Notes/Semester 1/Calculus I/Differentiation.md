@@ -87,7 +87,7 @@ For a list of common functions that already have their operations calculated, se
 3. [Desmos (for graphing)](https://www.desmos.com/calculator)
 
 ---
-__[Home](!%20Calculus%20I%20Overview.md)__
+__[Home](!%20Calculus%20I%20Learning%20Overview.md)__
 
 ---
 _Status:_ #ripe

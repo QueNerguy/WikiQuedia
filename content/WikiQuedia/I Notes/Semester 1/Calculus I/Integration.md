@@ -12,20 +12,20 @@ Integrating is the reciprocal of [differentiating](Differentiation.md), therefor
 > Divide by $u^{\prime}$ when taking an integral of, for example, just $\tan{(u)}$ out of the  [quick rules](Rules%20of%20Thumb%20Differentiation) list of differentiation.
 
 ### Geometrical Interpretation
-Taking the integral of a function is analagous to summing the area under the curve of the function. <br>The integral is based on [Riemann sums](https://en.wikipedia.org/wiki/Riemann_sum) - the sign $\int$ can be thought of as a deformed $\Sigma$ - where the area under a curve is approximated by taking the $y$ value, and multiplying it with a step in $x$ direction. The smaller the steps of $x$ become, the smaller the error in this approximation, thus, as the steps approach 0, the error also approaches 0. The 0-sized step is denoted with $dx$.
+Taking the integral of a function means summing the area of very thin rectangles, with width $dx$ and height $y$, under the curve of the function. <br>The integral is based on [Riemann sums](https://en.wikipedia.org/wiki/Riemann_sum) - the sign $\int$ can be thought of as a deformed $\Sigma$ - where the area under a curve is approximated by constructing a series of rectangles under the curve, and adding their respective areas up. These rectangles are found by taking the $y$ value at a certain point on the curve, and multiplying it with a small step in $x$ direction. The smaller the steps of $x$ become, the smaller the error in this approximation, thus, as the size of the steps approaches 0, the error also approaches 0. This 0-sized step is denoted with $dx$. The goal is to find a rectangle for every point $x$, and add them up to find the area under the curve. <br><br>![[Riemann_sum_convergence_80%.png|450]]<br>By Brad219 - Own work created using Inkscape 1.3. Redrawn from original PNG source authored by KSmrq, CC0, [link](https://commons.wikimedia.org/w/index.php?curid=150414772)
 
 ### Definition
-The most standard way to denote the primitive[^primitive] is as __$F(x)$__
+The most standard way to denote the primitive[^primitive] of $f(x)$ is as __$F(x)$__
 $$
-F\left(x\right)=\int_{x=a}^{x=b}f\left(x\right)\,dx
+F\left(x\right)=\int f\left(x\right)\,dx
 $$
-The notation under the integral sign ($\int$) denotes the [domain](Domain) over which is integrated. Usually, when calculating the integral of a function, you calculate the infinite integral ($\int_{-\infty}^{\infty} = \int$) to acquire the primitive function $F$ and evaluate it over it's domain afterward.
+The notation under the integral sign ($\int$) denotes the [domain](Domain) over which is integrated. Usually, when calculating the integral of a function $f$, you calculate the infinite integral ($\int_{-\infty}^{\infty} = \int$) to acquire the primitive function $F$, and evaluate it over it's domain afterward. With a domain $[a, b]$, we get the following expression for the integral:
 $$
 \int_{a}^{b}f\left(x\right)\,dx=\int_{}^{}f\left(x\right)\,dx\Bigg|_{x=a}^{x=b}=F\left(x\right)\Bigg|_{x=a}^{x=b}
 $$
-When the domain is not defined at its [endpoints](Domain#Definition), you take the limit after having integrated which looks like this:
+When the domain is not defined at an [endpoint](Domain#Definition) $a$, you take the limit after having integrated which looks like this:
 $$
-F\left(x\right)\Bigg|_{\lim_{x\to a}}^{x=b}
+F\left(x\right)\Bigg|_{\lim_{x\to a}}^{x=b} = \lim_{x \rightarrow a} F(x) \bigg|_a ^b
 $$
 Evaluating an integral over a domain from $a$ to $b$ is notated as follows:
 $$
@@ -35,6 +35,9 @@ In the case of the limit shown previously (the same applies for limits in both d
 $$
 \lim_{x\to a}F\left(x\right)-F\left(b\right)
 $$
+---
+
+Taking limits in integrals and improper integration is also discussed in the note [[Improper Integrals]].
 
 ### Integrating Methods
 When a function is too complicated to integrate, and doesn't look like any [rules of thumb](Rules%20of%20Thumb%20Integration), there are two ways to solve it: _[substitution](#Substitution)_ and _[integration by parts](#Integration%20by%20Parts)_, in combination with using the rules of thumb.
@@ -96,7 +99,7 @@ For a list of common functions that already have their operations calculated, se
 
 
 ---
-__[Home](!%20Calculus%20I%20Overview.md)__
+__[Home](!%20Calculus%20I%20Learning%20Overview.md)__
 
 ---
 _Status:_ #ripe
