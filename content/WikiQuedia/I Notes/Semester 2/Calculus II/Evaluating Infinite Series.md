@@ -18,7 +18,7 @@ Determining whether a series is convergent can be done in two ways:
 	1. $r$ is smaller than 1 ($\rightarrow 0.001^{999} \approx 0$), or more exactly: between 1 and -1.
 	2. $n$ has a negative power ($\rightarrow 10^{-999} \approx 0$).
 	- There is more ways in which a series can become convergent which can be seen directly from the formula, but for this general case these two are the only significant ones.
-### Evaluating a Geometric Series Summation
+### Evaluating a Geometric Series
 While there are multiple different series that all have their own way to solve them (see [this page](https://web.math.ucsb.edu/~cmart07/Evaluating%20Series.pdf) for examples), the geometric series[^geos] is the only one I'll go into detail about here. <br><br>Before evaluating it is imperative to first determine wether the summation converges at all, if it doesn't, the summation can't be evaluated. 
 #### Single Variable Case
 In the case the summation only depends on a single variable, namely the index $n$, the expression of the sum has to be rewritten in the form:

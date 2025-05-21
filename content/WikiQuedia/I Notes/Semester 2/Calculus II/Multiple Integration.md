@@ -107,8 +107,21 @@ This visualization is only used to determine whether a function or point is an u
 
 To find the bounds, rewrite the functions in terms of the correct variables. This means writing $y$ in terms of $x$ and $z$ by isolating it from functions that may bound the domain.<br>Now, aided by the drawing to determine whether the functions are upper or lower bounds, we  place the found expressions for the bounds of the domain into the integrals and solve as normal.
 
+---
+## Evaluating Impossible Integrals
+Sometimes it is impossible to integrate over a certain domain, take for example the [domain](Domain) given by the following equations:
+1. $y = x^2$
+2. $y = 2x^2$
+3. $x = y^2$
+4. $x = 2^2$
 
+The domain is pictured below, shaded in orange. <br>![[DifficultIntersection4parabolas_80%.png|300]]<br><br>The reason such a domain is impossible to determine using integrals as we did before, is because, after expressing the inner integral as a function of the boundaries of the variables contained in the outer integral, for example $y = f(x)$, we evaluate the outer integral to run from constant value to constant value, for example $x_1$ to $x_2$. We have to, or our integral will contain a variable after integrating.
+$$
+\int_{x_1}^{x_2} \int_{y = x^2}^{y = 2x^2} dydx
+$$
+This, however, means that the integral would run from straight upward $x_1$ line to $x_2$ line, because of the constant values, while in reality those lines aren't straight, but instead they are parabolas. If we were to evaluate the above integral with the correct intersection $\left[ \left( \frac{1}{2}, \frac{1}{2} \right), (1, 1) \right]$, the area would be $\frac{7}{24}$. In reality however, the area is $\frac{1}{9}$. <br>These integrals can be solved however, but we would have to _[change variables](Changing%20Variables%20for%20Integration)_ to do it. 
 
+> [!abstract] Solving these integrals is detailed in the note [[Changing Variables for Integration]].
 
 
 

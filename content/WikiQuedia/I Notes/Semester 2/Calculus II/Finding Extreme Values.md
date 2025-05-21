@@ -1,12 +1,12 @@
 ---
-title: "Finding Exteme values"
+title: Finding Exteme Values
 draft: false
 ---
 Tags: [[calculus]], [[differentials]], [[eigenvalues]], [[intervals]], [[vector math]]   <br>07-05-2025
 
 ---
-# Finding Exteme values
-### Defining Types
+# Finding Exteme Values
+### Types of Extreme Values
 Extreme values are values on a graph (in any dimension) where a maximum or minimum height is reached. There's two types of extreme values:
 1. ___Local extremes___ are points on a graph where a maximum or minimum is reached, but there are other points on the graph with a higher or lower height. These points are identified by the fact that the [derivative](Differentiation.md) is 0 - meaning the function doesn't climb at this point - and eliminating the possibility of this point being a _[saddle point](Saddle%20Points)_, sometimes also referred to as an _inflection point_.
 2. ___Global extremes___ are are points on a graph where a maximum or minimum is reached and there are no other values that reach a higher or lower height. Because of this there are only 2 global extremes.
