@@ -51,8 +51,14 @@ Because single integrals are unintuitive like this, it is always preferred to us
 $$
 f(x) = x^3 \rightarrow f(r, \theta) = \left( r\cos(\theta) \right) ^3 = r^3 \cos^3 (\theta)
 $$
-## Integration in [[Cylindrical Coordinates]]
+### Changing Variables
+An easy way to quickly change the coordinate system is to use the method of _[changing variables](Changing%20Variables%20for%20Integration)_. The expression of using this technique to switch to polar coordinates is as follows:
+$$
+\iint_{D} f_1(x, y) dA = \iint_{R} f_2(r, \theta) \cdot |J(r, \theta)| dA = \iint_{R} f_2(r, \theta) \cdot \begin{vmatrix} D_r[x] & D_{\theta}[x] \\ D_r[y] & D_{\theta} [y] \end{vmatrix} rdrd\theta
+$$
 
+## Integration in [[Cylindrical Coordinates]]
+Cylindrical coordinates are a continuation of polar coordinates to 3 dimensional space. The third dimension is the $z$-axis, similar to cartesian coordinates.
 
 
 
