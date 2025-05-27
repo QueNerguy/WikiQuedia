@@ -35,7 +35,8 @@ Calculus II lays out the base mechanics for differentiation and integration in m
 ### Part 3 - Integration
 11. ___[[Multiple Integration]]:___ This note explains the operations that are involved when taking double and triple integrals. To explain integrals properly, the focus is on building a geometrical understanding of them.
 	- ___[[Improper Integrals]]:___ They are mentioned, though less explicitly, in [calculus I](!%20Calculus%20I%20Learning%20Overview) in the note about [integration](Integration). Evaluating improper integrals is a continuation of [evaluating infinite series](Evaluating%20Infinite%20Series), where integrals with an infinitely large [domain](Domain) are to be calculated.
-12. ___[[Changing Coordinate System for Integration]]:___ Changing coordinate system is very useful for evaluating areas or volumes onder circular or spherical-adjacent curves. The [domain](Domain) of these curves is very difficult to express in cartesian coordinates, and thus changing coordinate system might shorten and declutter computations significantly.
+12. ___[[Changing Variables for Integration]]:___ Changing variables can help to evaluate some integrals that are impossible to evaluate in standard carthesian coordinates. They can change the coordinate system in all sorts of ways, which can make an oscillating series be linear for example. This is also useful for converting coordinate systems to predetermined circular and spherical ones, detailed in [[Changing Coordinate System for Integration]].
+13. ___[[Changing Coordinate System for Integration]]:___ Changing coordinate system is very useful for evaluating areas or volumes onder circular or spherical-adjacent curves. The [domain](Domain) of these curves is very difficult to express in cartesian coordinates, and thus changing coordinate system might shorten and declutter computations significantly.
 
 
 
@@ -55,7 +56,7 @@ For a list of common functions that already have their expressions calculated, s
 4. [Desmos (for graphing)](https://www.desmos.com/calculator)
 
 ---
-Status: #sprout 
+Status: #ripe 
 
 ---
 # Based on:

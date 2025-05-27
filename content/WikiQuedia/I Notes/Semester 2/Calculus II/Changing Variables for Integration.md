@@ -40,7 +40,7 @@ Thus an area in the new $(u, v)$ space becomes __6 times larger__ when going bac
 **[Home](app://obsidian.md/!%20Calculus%20II%20Learning%20Overview)**
 
 ---
-_Status:_ #sprout #missingLink
+_Status:_ #bud #missingLink
 
 ---
 # References:

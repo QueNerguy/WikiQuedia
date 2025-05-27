@@ -25,7 +25,7 @@ Because taking a higher order [partial derivative](Partial%20Differentiation) me
 __[Home](!%20Calculus%20II%20Learning%20Overview)__
 
 ---
-_Status:_ #sprout
+_Status:_ #ripe
 
 ---
 # References:

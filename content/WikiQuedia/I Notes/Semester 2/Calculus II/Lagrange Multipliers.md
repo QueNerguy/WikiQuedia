@@ -31,9 +31,6 @@ $$
 The only reason we would choose to use the lagrange multiplier instead of solving by substituting, is because we have too many variables that we don't know a value of. If we have 2, we could substitute the first, and solve for the second, but if we have 3 or more we need to find extra equation to obtain the values for these _unknowns_ for.
 
 
-%%==TODO: [[WikiQuedia - incl original files/III Tags/maths related/interval syntax]] hernoemen naar intervals==%%
-
-
 ---
 __[Home](!%20Calculus%20II%20Learning%20Overview)__
 
