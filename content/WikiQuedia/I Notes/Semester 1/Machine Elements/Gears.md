@@ -13,7 +13,7 @@ Tags: [[transmission]], [[gear]], [[stress calculation]]   <br>19-03-2025
 ### Basics
 The thing you need to remember most when picking matchin gears, is that the modulus of the gears match. If it doesn't, the gears will undercut and eat material away from the bottom of the tooth, causing fractures.
 #### Gear Ratios
-At the connecting point between two gears their speeds are equal ($v_1 = v_2 = v_t$). Their [angular velocities](Angular%20Velocity), however, are not. This is where the gear ratio comes from. One gear spins faster, because of it's shorter diameter, than the other gear. The gear ratio (__$i$__) is:
+At the connecting point between two gears their speeds are equal ($v_1 = v_2 = v_t$). Their [angular velocities](Angular%20Velocity), however, are not. This is where the gear ratio comes from. One gear spins faster, because of it's shorter diameter, than the other gear. The gear ratio (__$i$__) is
 $$
 i=\frac{\textrm{input}}{\textrm{output}}=\frac{\omega_1}{\omega_2}
 $$

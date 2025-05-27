@@ -11,7 +11,7 @@ $$
 \vec{M}=\vec{r}\times \vec{F}
 $$
 This equation works the same for non-vector math, just remove the arrows, and the $r$ and $F$ can be switched around.
-Keep in mind that the moment is maximal at a $90\degree$ angle and $0$ if the direction of force is the same direction of the length. The formal equation would therefore be:
+Keep in mind that the moment is maximal at a $90\degree$ angle and $0$ if the direction of force is the same direction of the length. The formal equation would therefore be
 $$
 M=r\cdot F\sin\left(\theta\right)
 $$

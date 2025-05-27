@@ -4,7 +4,7 @@
 [Mechanicalc - Bolted joint analysis](https://mechanicalc.com/reference/bolted-joint-analysis)
 
 #### Synopsis:
-The stiffness of a bolt can be deduced from the parallel connection of springs, and is as follows:
+The stiffness of a bolt can be deduced from the parallel connection of springs, and is as follows
 $$
 k_b = \frac{A\cdot E}{L_e}
 $$

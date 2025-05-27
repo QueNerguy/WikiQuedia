@@ -26,29 +26,29 @@ $$
 K_\textrm{w}\approx\frac{4C-1}{4C-4}+\frac{0.615}{C}
 $$
 See [here](wahl%20factor%20for%20coil%20springs%20(compression%20or%20extension).md) the unit explanation.<br>
-2. The maximum stress ($\tau_{max}$). The maximum stress is $\tau$ because the stress in the spring is torsional, $\tau_{max}$ is the maximum _[shear stress](Stress)_ at the surface:
+2. The maximum stress ($\tau_{max}$). The maximum stress is $\tau$ because the stress in the spring is torsional, $\tau_{max}$ is the maximum _[shear stress](Stress)_ at the surface.
 $$
 \tau_{max}=K_{\textrm{w}}\cdot\frac{8FC}{\pi d^2}
 $$
 See [here](maximum%20stress%20coil%20spring%20(compression%20or%20extension).md) the unit explanation.<br>
-3. The spring rate, derived from the $F=k\cdot u$ equation:
+3. The spring rate, derived from the $F=k\cdot u$ equation, is
 $$
 k=\frac{Gd^{4}}{8nD^{3}}=\frac{Gd}{8nC^{3}}
 $$
 See [here](spring%20rate%20coil%20spring%20(compression%20or%20extension).md) the unit explanation.<br>
 ###### Torsion
 Torsion springs are used for and around rotating axes. A famous example would be a mouse trap.<br>Internally these springs are loaded with [normal stresses](Stress).
-1. The Wahl factor $K_{\textrm{wT}}$:
+1. The Wahl factor $K_{\textrm{wT}}$ is
 $$
 K_{\textrm{wT}}\approx\frac{4C^{2}-C-1}{4C\left(C-1\right)}
 $$
 See [here](wahl%20factor%20for%20coil%20springs%20(torsion).md) the unit explanation.<br>
-2. The maximum stress $\sigma_{\max}$:
+2. The maximum stress $\sigma_{\max}$ is
 $$
 \sigma_{\max}\approx\frac{K_{\textrm{wT}}\cdot T}{0.1d^3}
 $$
 See [here](maximum%20stress%20coil%20spring%20(torsion).md) the unit explanation.<br>
-3. The spring rate $k$, derived from the $F=k\cdot u$ equation:
+3. The spring rate $k$, derived from the $F=k\cdot u$ equation, is
 $$
 k_{\phi}=\frac{dT}{d\phi}=\frac{\Delta T}{\Delta\phi}=\frac{EI}{180Dn}
 $$
@@ -59,17 +59,17 @@ See [here](spring%20rate%20coil%20spring%20(torsion)) the unit explanation.<br>
 ##### Leaf springs
 A leaf spring is nothing more than a metal plate that gets bent under operation, which gives the springback. Because it is based solely on bending, this type of spring can be bent very little compared to a standard spring, giving a short travel path. This type of spring is common in heavy wheeled vehicles because of it's simplicity, rigidity under load and damping capabilities[^leaf].
 Leaf springs are the same as a bending beam in statics equations, the same principles apply. 
-1. It's displacement $\lambda$:
+1. It's displacement $\lambda$ is
 $$
 \lambda = \frac{4FL³}{Ebh³}
 $$
 See [here](bending%20displacement%20(leaf%20spring).md) the unit explanation.<br>
-2. The maximum stress $\sigma_{max}$:
+2. The maximum stress $\sigma_{max}$ is
 $$
 \sigma_{max} = \frac{6FL}{bh²}
 $$
 See [here](maximum%20stress%20(leaf%20spring).md) the unit explanation<br>
-3. The spring rate $k$, derived from the $F=k\cdot u$ equation:
+3. The spring rate $k$, derived from the $F=k\cdot u$ equation, is
 $$
 k=\frac{dF}{d\lambda}=\frac{\Delta F}{\Delta\lambda}
 $$

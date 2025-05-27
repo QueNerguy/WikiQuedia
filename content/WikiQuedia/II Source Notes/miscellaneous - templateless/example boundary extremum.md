@@ -1,6 +1,6 @@
 ___Task:___ Find the extreme values of $z = f(x,y)=2xy$ on the closed disk $x^2 + y^2 \leq 4$. <br><br>___Solution:___ 
 ###### Function
-To find the extreme values of $f$ we take the partial derivative in both directions, and realize this direction reaches an extreme value when the partial derivative is 0. <br>For the $x$-direction:
+To find the extreme values of $f$ we take the partial derivative in both directions, and realize this direction reaches an extreme value when the partial derivative is 0. <br>For the $x$-direction we have
  $$
 D_x[2xy] = 2y = 0
 $$
@@ -8,7 +8,7 @@ $$
 y = 0
 $$
 
-Thus in $x$-direction an extremum is found when $y$ = 0. <br>For the $y$-direction:
+Thus in $x$-direction an extremum is found when $y$ = 0. <br>For the $y$-direction we have
 $$
 D_y[2xy] = 2x = 0
 $$
@@ -17,7 +17,7 @@ x = 0
 $$
 
 Thus in $y$-direction an extremum is found when $x$ = 0. 
-Plugging these expressions into on another, we get an extremum at $(0, 0)$ <br>The height attained at this point is:
+Plugging these expressions into on another, we get an extremum at $(0, 0)$ <br>The height attained at this point is
 $$
 f(x, y) = f(0, 0) = 2 \cdot 0 \cdot 0 = 0
 $$
@@ -66,7 +66,7 @@ $$
 y² = 2 \rightarrow y = \pm \sqrt{2}
 $$
 
-Now we know the coordinates of the extremes at the boundaries are: 
+Now we know the coordinates of the extremes at the boundaries are
 $$
 (\sqrt{2}, \sqrt{2}), (- \sqrt{2}, \sqrt{2}), (\sqrt{2}, - \sqrt{2}), (- \sqrt{2}, - \sqrt{2})
 $$

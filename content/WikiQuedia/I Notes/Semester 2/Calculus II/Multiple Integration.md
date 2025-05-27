@@ -20,11 +20,12 @@ To find a _volume_ under a graph instead of an area, we can use double integrals
 > See more on the dimension of the solution to these integrals [below](#Dimension%20of%20Integrals).
 
 #### Dimension of Integrals
-While in math terms it is not stated specifically, the _function_ that gets integrated under creates boundaries of a [domain](Domain.md) too. What happens when integrating in 2D, under a function $f(x)$, is that a limit is given whose lower bound is the line $y = 0$, and whose upper bound is the function $f(x)$. As long as the area is above $y = 0$ we get a positive value for the area. <br>If, instead, we want to find an area that starts at a function $g(x)$ and goes up to the function $f(x)$, we find the volume under $g$ and subtract that from the volume under $f$. Alternatively, it is possible to evaluate this area using double integrals. Realizing that finding the area under $f$ also gives a domain, we can create a double integral, whose lower bound is this function $g$ and whose upper bound is the function $f$. To create this integral, give no function to integrate over, and create the double integral: 
+To understand what kind of object we integrate, we must understand how we interpret the [domain](Domain.md) of an integral. <br>While in math terms it is not stated specifically, the _function_ that gets integrated under creates boundaries of a domain too. <br>![[Integral_as_region_under_curve_80%.png|450]]<br>By 4C - Own work, based on JPG version, CC BY-SA 3.0, [link](https://commons.wikimedia.org/w/index.php?curid=1039841)<br><br>
+Referring to the graph above, what happens when integrating in 2D, under a function $f(x)$, is that a limit is given whose lower bound is the line $y = 0$, and whose upper bound is the function $f(x)$. As long as the area is above $y = 0$ we get a positive value for the area. <br>If, instead, we want to find an area that starts at a function $g(x)$ and goes up to the function $f(x)$, we find the volume under $g$ and subtract that from the volume under $f$. Alternatively, it is possible to evaluate this area using double integrals. Realizing that finding the area under $f$ also gives a domain, we can create a double integral, whose lower bound is this function $g$ and whose upper bound is the function $f$. To create this integral, give no function to integrate over, and create the double integral as
 $$
 \int_{x_1}^{x_2} \int_{g(x)}^{f(x)} dydx
 $$
-If we evaluate this integral, we would get the same result we would get, if we were to subtract the areas under $g$ and $f$, namely $\int_{x_1}^{x_2} f(x)dx - \int_{x_1}^{x_2} g(x)dx$. <br>To show the equivalence of these calculations, see the following: 
+If we evaluate this integral, we would get the same result we would get, if we were to subtract the areas under $g$ and $f$, namely $\int_{x_1}^{x_2} f(x)dx - \int_{x_1}^{x_2} g(x)dx$. <br>To show the equivalence of these calculations, we solve the integrals to obtain
 $$
 \int_{x_1}^{x_2} \int_{g(x)}^{f(x)} dydx = \int_{x_1}^{x_2}y \bigg|_{y = g(x)}^{y = f(x)} dx = \int_{x_1}^{x_2} f(x)dx - \int_{x_1}^{x_2} g(x)dx
 $$
@@ -39,7 +40,7 @@ Using the second fact we can realize that using single __and__ using double inte
 > 2. The dimension of the result of the integration is determined by the dimension of the [domain](Domain.md).
 
 ### Definition
-The way to construct these integrals is just a repetition of [integrating](Integration.md) "normally", but you do it with slices in one direction first, then the other. <br>For the integral of $f(x, y)$ under [domain](Domain.md) $D$ we have:
+The way to construct these integrals is just a repetition of [integrating](Integration.md) "normally", but you do it with slices in one direction first, then the other. <br>For the integral of $f(x, y)$ under [domain](Domain.md) $D$ we have
 $$
 \iint_D f(x, y) dA = \int_{y_1}^{y_2}\int_{x_1}^{x_2} f(x, y) dxdy
 $$

@@ -12,11 +12,11 @@ Lines in 3D need to be a function of all direction variables. If a direction is 
 1. Finding the direction of the line $\rightarrow$ This is done by finding the [partial](Differentiation.md) or [directional derivative](Directional%20Derivative) of the function at that point.
 2. Finding a base for the line. The line needs to start travelling from the point on the graph it's supposed to lay tangent to, at the height the graph assumes at that point. The base for the line is the $z$-height of the function at that point ($f(a, b) = c$).
 
-The formula for the line, then, is:
+The formula for the line, then, is
 $$
 z = D_x [f] \cdot (x - a) + c = D_y [f] \cdot (y-b) + c
 $$
-Or, in case the height $c$ was unknown previously:
+Or, in case the height $c$ was unknown previously, we have
 $$
 z = D_x [f] \cdot (x - a) + f(a, b) = D_y [f] \cdot (y-b) + f(a, b)
 $$
@@ -30,11 +30,11 @@ Tangent planes are formed from the space that the tangent lines span, meaning th
 1. Finding the [partial derivatives](Partial%20Differentiation) to get the principle directions of the tangent lines that span the tangent plane.
 2. Finding a base for the plane. The plane needs to start travelling from the point on the graph it's supposed to lay tangent to. 
 
-The formula for the plane, then, is:
+The formula for the plane, then, is
 $$
 z = D_x [f] \cdot (x - a) + D_y [f] \cdot (y-b) + c
 $$
-Or, in the case the height $c$ was unknown previously:
+Or, in the case the height $c$ was unknown previously, we have
 $$
 z = D_x [f] \cdot (x - a) + D_y [f] \cdot (y-b) + f(a, b)
 $$

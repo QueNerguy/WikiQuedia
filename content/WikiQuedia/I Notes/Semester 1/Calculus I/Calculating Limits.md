@@ -34,7 +34,7 @@ When calculating a limit there are a few tricks that are applied.
 
 ### Edge cases
 #### Priority
-It might sometimes occur that the result of taking a limit has $\infty\cdot e^{-\infty}$, what, in this case would be the result? The rules of importance of magnitude are as follows:
+It might sometimes occur that the result of taking a limit has $\infty\cdot e^{-\infty}$, what, in this case would be the result? The rules of importance of magnitude are as follows
 $$
 a^{\infty}\gg\infty^{a}\gg\log_{a}\left(\infty\right)
 $$

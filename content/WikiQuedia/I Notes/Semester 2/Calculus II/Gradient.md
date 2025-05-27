@@ -17,14 +17,14 @@ Because the gradient vector gives the direction of change, and not the direction
 > [!abstract] Further Insight
 > For further visual insight on a geometrical representation of a gradient, I recommend [this](https://www.youtube.com/watch?v=_-02ze7tf08 ) video by Khan Academy.
 ### Definition
-The gradient is constructed as a vector with the entries in a certain direction being the [partial derivatives](Partial%20Differentiation) in that direction. <br>In a 3D space, with $z = f(x, y)$ we have the expression of the gradient as follows:
+The gradient is constructed as a vector with the entries in a certain direction being the [partial derivatives](Partial%20Differentiation) in that direction. <br>In a 3D space, with $z = f(x, y)$ we have the expression of the gradient as follows
 $$
 \nabla f(x, y) = D_x [f] \hat{\textbf{ i }} + D_y [f] \hat{\textbf{ j }}
 $$
 $$
 \nabla f(x,y) = \frac{\partial f}{\partial x} \hat{\textbf{ i }} + \frac{\partial f}{\partial y} \hat{\textbf{ j }}
 $$
-With $\hat{\textbf{ i }}, \hat{\textbf{ j }}$ the unit vectors in $x, y$ direction respectively[^quote1]. <br>Or alternatively as a vector block:
+With $\hat{\textbf{ i }}, \hat{\textbf{ j }}$ the unit vectors in $x, y$ direction respectively[^quote1]. <br>Or alternatively as a vector block we have
 $$
 \nabla f(x,y)=\begin{bmatrix}D_{x}\left\lbrack f\right\rbrack\\ D_{y}\left\lbrack f\right\rbrack \end{bmatrix}
 $$

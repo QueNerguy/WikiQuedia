@@ -14,7 +14,7 @@ Factoring is a way of dividing a complicated polynomial into smaller parts that 
 
 #### Factoring
 A quadratic function $ax^{2}+bx+c$ can always be decomposed as $\left(dx+e\right)\left(fx+g\right)$. 
-When factoring there's two types of results:<br>
+When factoring there's two types of results:
 1. Short
 $$
 \left(\sqrt{a}x+b\right)\left(\sqrt{a}x-b\right)=ax^{2}-b^{2}

@@ -20,14 +20,14 @@ To find the eigenvalues we realize that transforming the eigenvector $\textbf{v}
 $$
 A \textbf{v}= \lambda \textbf{v}
 $$
-To simplify following calculations, we rewrite to:
+To simplify following calculations, we rewrite to
 $$
 A \textbf{v} - \lambda \textbf{v} = \vec{0}
 $$
 $$
 (A - \lambda I) \textbf{v} = \vec{0} 
 $$
-To solve this equation, notice that there are two solutions, either $\textbf{v} = \vec{0}$, or $(A - \lambda I) = \vec{0}$. To solve for $\lambda$ we realize that the area under the zero vector is also 0, meaning we can use the determinant%%==linkje determinant pls==%% to compute this. We have:
+To solve this equation, notice that there are two solutions, either $\textbf{v} = \vec{0}$, or $(A - \lambda I) = \vec{0}$. To solve for $\lambda$ we realize that the area under the zero vector is also 0, meaning we can use the determinant%%==linkje determinant pls==%% to compute this. We have
 $$
 \det (A - \lambda I) = 0
 $$
@@ -36,7 +36,7 @@ Solving the determinant here produces the __characteristic equation__, a polynom
 <br>Another geometric interpretation behind the equation $(A - \lambda I) \textbf{v} = \vec{0}$ is that $(A - \lambda I) \textbf{v}$ "Squishes the whole space into a lower dimension"[^3b1b1], namely, a line. The area under a line is 0, therefore the determinant is also 0, and we compute from here.
 ###### Quick Method 2D Matrices
 &nbsp&nbsp&nbsp&nbsp | Credit for this method goes to 3Blue1Brown, find his video [here](https://www.youtube.com/watch?v=e50Bj7jn9IQ). |
-In engineering and many other applications, eigenvalues are very common and useful, but computing them is inefficient. <br>In a __2 dimensional__ case there is a much easier way to calculate the eigenvalues:
+In engineering and many other applications, eigenvalues are very common and useful, but computing them is inefficient. <br>In a __2 dimensional__ case there is a much easier way to calculate the eigenvalues, namely
 $$
 \lambda_1, \lambda_2 = \textrm{m} \pm \sqrt{\textrm{m}^2-D}
 $$
@@ -51,7 +51,7 @@ When the eigenvalue $\lambda$ is known, we know that transforming the eigenvecto
 $$
 A \textbf{v}= \lambda \textbf{v}
 $$
-To calculate the eigenvector we rewrite to:
+To calculate the eigenvector we rewrite to
 $$
 A \textbf{v} - \lambda \textbf{v} = 0
 $$

@@ -5,7 +5,7 @@
 [Khan Academy -  The Jacobian Determinant](https://www.youtube.com/watch?v=p46QWyHQE6M)
 
 #### Synopsis:
-The Jacobian matrix is a matrix that consists of partial derivatives of a (set of) function(s). <br>For functions $f_1, f_2, f_3$ that are all functions of $x_1, x_2, x_3$ the Jacobian matrix looks as follows:
+The Jacobian matrix is a matrix that consists of partial derivatives of a (set of) function(s). <br>For functions $f_1, f_2, f_3$ that are all functions of $x_1, x_2, x_3$ the Jacobian matrix looks as follows.
 $$
 \begin{bmatrix}\frac{\partial f_1}{\partial x_1} & \frac{\partial f_1}{\partial x_2} & \frac{\partial f_1}{\partial x_3}\\ \frac{\partial f_2}{\partial x_1} & \frac{\partial f_2}{\partial x_2} & \frac{\partial f_2}{\partial x_3}\\ \frac{\partial f_3}{\partial x_1} & \frac{\partial f_3}{\partial x_2} & \frac{\partial f_3}{\partial x_3}\end{bmatrix} = \left[ \frac{\partial(f_1, f_2, f_3)}{\partial(x_1, x_2, x_3)} \right]
 $$
@@ -13,7 +13,7 @@ This matrix doesn't have to be a square, but if it is, it's determinant%%==LINKJ
 1. $x = 2u$
 2. $y = 3v$
 
-The Jacobian of this system would be:
+The Jacobian of this system would be
 $$
 \begin{vmatrix} D_u[2u] & D_v[2u] \\ D_u [3v] & D_v [3v] \end{vmatrix} = \begin{vmatrix} 2 & 0 \\ 0 & 3 \end{vmatrix} = 2 \cdot 3 - 0 \cdot 0 = 6
 $$

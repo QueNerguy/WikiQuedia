@@ -32,11 +32,11 @@ $$
 $$
 v' = 2x
 $$
-We can plug this result back into the previous derivative of $\cos(v)$, to obtain:
+We can plug this result back into the previous derivative of $\cos(v)$, to obtain
 $$
 D_v [\cos(v)] = - \sin(v) \cdot 2x
 $$
-This was our expression for $u'$, meaning we can substitute all this for $u'$, to obtain:
+This was our expression for $u'$, meaning we can substitute all this for $u'$, to obtain
 $$
 u' = - \sin(v) \cdot 2x
 $$
@@ -52,7 +52,7 @@ $$
 D_x [f(x)] = \frac{1}{\cos(x^2)} \cdot - \sin(x^2) \cdot 2x = - 2x 
 \frac{\sin(x^2)}{\cos(x^2)} = -2x \tan(x^2)
 $$
-Thus our final solution is:
+Thus our final solution is
 $$
 D_x [f(x)] = -2x \tan(x^2)
 $$

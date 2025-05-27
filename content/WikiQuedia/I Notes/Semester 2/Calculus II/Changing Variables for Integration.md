@@ -12,15 +12,15 @@ Changing variables for a function is a form of [changing the coordinate system](
 
 ### Definition
 Changing variables from coordinates $(x, y)$ to a coordinate system with base%%==linkje perhaps naar linalg idk==%% variables $(u, v)$ requires we express $u$ and $v$ in terms of $x$ and $y$ first, to determine how the expressions get mapped%%==linkje mapping linalg perhaps==%% onto eachother. <br>For a function $f(x, y)$ we have equations $x = g(u, v)$ and $y = h(u, v)$ to express the change of variables from one to the other. Think of this as creating a vector $\textbf{g}$ out of $\hat{\textbf{i}}$ and $\hat{\textbf{j}}$ that acts as part of the base for the new space we're defining.
-To construct the change of variables for the integral from this, we have the following expression:
+To construct the change of variables for the integral from this, we have the following expression
 $$
 \iint_{D_1} f_1(x, y) dydx = \iint_{D_2} f_1 \big( g(u, v), h(u, v) \big) \cdot |J(u, v)| dudv = \iint_{D_2} f_2(u, v) \cdot \begin{vmatrix} D_u[x] & D_v[x] \\ D_u[y] & D_v [y] \end{vmatrix} dudv
 $$
-The $J$ is the [Jacobian matrix](Jacobian%20Matrix) of the change of variables from $(x, y)$ to $(u, v)$. As the matrix has to have a deterinant%%==linkje determinant==%%, the dimension of the space needs to be the same size it is before as it is after changing variable. If it's not, the jacobian matrix won't be square, as there will be a mismatch between the amount of equations created from the variables before and the amount of variables these equations are expressed in in the new coordinate system.%%==perhaps a weird explanation, reexamine this pls==%% <br>The reason the Jacobian with respect to the new dimensions is added, is because the Jacobian expresses the change in size of areas when changing between coordinate systems. For example the following system:
+$|J|$ is the determinant of the [Jacobian matrix](Jacobian%20Matrix), commonly referred to as _the Jacobian_, of the change of variables from $(x, y)$ to $(u, v)$. As the matrix has to have a determinant%%==linkje determinant==%%, the new coordinate system needs to have the same dimension, or the Jacobian won't be square, which means it won't have a determinant. <br>The reason the Jacobian with respect to the new dimensions is added, is because the Jacobian expresses the change in size of areas when changing between coordinate systems. For example the following system:
 1. $x = 2u$
 2. $y = 3v$
 
-The Jacobian of this system would be:
+The Jacobian of this system would be
 $$
 \begin{vmatrix} D_u[2u] & D_v[2u] \\ D_u [3v] & D_v [3v] \end{vmatrix} = \begin{vmatrix} 2 & 0 \\ 0 & 3 \end{vmatrix} = 2 \cdot 3 - 0 \cdot 0 = 6
 $$

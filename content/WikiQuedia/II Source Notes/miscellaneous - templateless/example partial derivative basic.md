@@ -8,7 +8,7 @@ We take the $y$ direction to be constant, thus $y = c_1$, and then $\sin (c_1) =
 $$
 D_x[x^2 \cdot c_2] = c_2 \cdot D_x [x^2] = c_2 \cdot 2x
 $$
-After resubstituting $\sin (y)$ for $c_2$ the derivative with respect to $x$ becomes:
+After resubstituting $\sin (y)$ for $c_2$ the derivative with respect to $x$ becomes
 $$
 D_x [f(x, y)]= 2x \sin (y)
 $$
@@ -21,12 +21,11 @@ We take the $x$ direction to be constant, thus $x = c_3$, and then $x^2 = c_4$.
 $$
 D_y [c_4 \cdot \sin (y)] = c_4 \cdot D_y [\sin (y)] = c_4 \cdot \cos(y)
 $$
-After resubstituting $x^2$ for $c_4$ the derivative with respect to $y$ becomes:
+After resubstituting $x^2$ for $c_4$ the derivative with respect to $y$ becomes
 $$
 D_y [f(x, y)]= x^2 \cos (y)
 $$
 
 
-%%==can use same example for partial derivatives of functions, just add $y^{\prime}$ to the end and stuff==%%
 
 

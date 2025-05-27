@@ -10,7 +10,7 @@ $$
 \begin{bmatrix}x\\ y\\ z\end{bmatrix}=\begin{bmatrix}x_0\\ y_0\\ z_0\end{bmatrix}+t\begin{bmatrix}a\\ b\\ c\end{bmatrix}
 $$
 ##### Parametric Form
-Derived from vector form:
+Derived from the vector form we get 
 $$
 x = x_0 + t\cdot a
 $$
@@ -21,13 +21,13 @@ $$
 z = z_0 + t \cdot c
 $$
 ##### Symmetric Form
-Derived from parametric form:
+Derived from parametric form we get
 $$
 \frac{x-x_0}{a}=\frac{y-y_0}{b}=\frac{z-z_0}{c}
 $$
 Assumes that $(a, b, c) \ne 0$.
 ##### Funny Form - Similar to 2D
-Derived from Symmetric form
+Derived from Symmetric form we get
 $$
 z=\frac{x-x_0}{a}\cdot c+z_0=\frac{y-y_0}{b}\cdot c+z_0
 $$

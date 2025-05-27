@@ -19,19 +19,19 @@ The most standard way to denote the primitive[^primitive] of $f(x)$ is as __$F(x
 $$
 F\left(x\right)=\int f\left(x\right)\,dx
 $$
-The notation under the integral sign ($\int$) denotes the [domain](Domain) over which is integrated. Usually, when calculating the integral of a function $f$, you calculate the infinite integral ($\int_{-\infty}^{\infty} = \int$) to acquire the primitive function $F$, and evaluate it over it's domain afterward. With a domain $[a, b]$, we get the following expression for the integral:
+The notation under the integral sign ($\int$) denotes the [domain](Domain) over which is integrated. Usually, when calculating the integral of a function $f$, you calculate the infinite integral ($\int_{-\infty}^{\infty} = \int$) to acquire the primitive function $F$, and evaluate it over it's domain afterward. With a domain $[a, b]$, we get the expression for the integral as follows
 $$
 \int_{a}^{b}f\left(x\right)\,dx=\int_{}^{}f\left(x\right)\,dx\Bigg|_{x=a}^{x=b}=F\left(x\right)\Bigg|_{x=a}^{x=b}
 $$
-When the domain is not defined at an [endpoint](Domain#Definition) $a$, you take the limit after having integrated which looks like this:
+When the domain is not defined at an [endpoint](Domain#Definition) $a$, you take the limit after having integrated which looks like
 $$
 F\left(x\right)\Bigg|_{\lim_{x\to a}}^{x=b} = \lim_{x \rightarrow a} F(x) \bigg|_a ^b
 $$
-To finally evaluate the resulting function that was integrated over a domain from $a$ to $b$, is as follows:
+To finally evaluate the resulting function that was integrated over a domain from $a$ to $b$, is
 $$
 F(x)\bigg|^{x = a}_{x = b} = F\left(a\right)-F\left(b\right)
 $$
-In the case of the limit shown previously (the same applies for limits in both directions) the notation is as follows:
+In the case of the limit shown previously (the same applies for limits in both directions) the notation is
 $$
 \lim_{x\to a}F\left(x\right)-F\left(b\right)
 $$
@@ -48,7 +48,10 @@ Taking limits in integrals and improper integration is also discussed in the not
 ### Integrating Methods
 When a function is too complicated to integrate, and doesn't look like any [rules of thumb](Rules%20of%20Thumb%20Integration), there are two ways to solve it: _[substitution](#Substitution)_ and _[integration by parts](#Integration%20by%20Parts)_, in combination with using the rules of thumb.
 #### Substitution
-This method is analogous to [substitution for differentiation](Differentiation#Substitution). We substitute functions of $x$ by terms $u$, $v$, etc., as many times as needed, until it is possible to integrate directly, but now with respect to $u$ or $v$ instead of $x$. <br><br>Keep in mind that when substituting in terms of $u$, we need to calculate a [derivative](Differentiation) to get steps of $du$ instead of $dx$. This is because when calculating an integral, we always do it with respect to steps in $x$ direction, $dx$. Thus, when integrating with respect to $u$, we need to do it with respect to the steps in $u$ direction, $du$, as well . <br>To find those steps in $u$ direction, $du$, we realize we can take the derivative of $u$, <u>not</u> with respect to a certain direction - that would yield us $\frac{du}{dx}$ or $D_x [u]$, the derivative of $u$ in $x$ direction - but with no regards to direction at all. _This derivative_ gives us the derivative of $u$ to be $du$, which we need. $du$ represents a tiny change in the size of $u$. The derivative of $x$ becomes $dx$, a tiny change in the size of $x$. <br>This type of derivative is called the _total derivative_ of a function. This concept is reviewed further in [Partial Differentiation](Partial%20Differentiation#Total%20Derivative), as a part of [calculus II](!%20Calculus%20II%20Learning%20Overview).<br>To obtain $du$ for a substitution like $u = x^2$, we calculate the derivative, using the [chain rule](Differentiation#Chain%20Rule), 
+This method is analogous to [substitution for differentiation](Differentiation#Substitution). We substitute functions of $x$ by terms $u$, $v$, etc., as many times as needed, until it is possible to integrate directly, but now with respect to $u$ or $v$ instead of $x$. <br><br>Keep in mind that when substituting in terms of $u$, we need to calculate a [derivative](Differentiation) to get steps of $du$ instead of $dx$. This is because when calculating an integral, we always do it with respect to steps in $x$ direction, $dx$, in order to evaluate every single point on the $x$-axis. Thus, when integrating with respect to $u$, we need to do it with respect to the steps in the $u$ direction, $du$, as well. <br>Finding this $du$ means zooming very deep in on the function, in order to evaluate how the function changes from a point to it's neighboring point. The amount $u$ changes from point 1 to point 2 is $du$, the [differential](https://en.wikipedia.org/wiki/Differential_(mathematics)) of $u$, whose value/size is influenced by how steep the slope of the function of $x$ is. $du$ gives something like a density of the function, the size of the step from point to point for $du$ says something about how much $x$ increases. A function $u = x^2$ sees $u$ increase a lot for every step of 1 in $x$ after a while. Therefore when evaluating an integral with respect to $u$, instead of $x$, we need to correct for the fact that a small step $dx$ sees a much bigger step $du$. We do this by computing the derivative of $u = x^2$, as the slope of the functio relates the increase in steps of $u$ to the steps of $x$. <br>Because we want to find and relate these small steps, we consider $x$ to be _a function_ of these steps $dx$, which means we must apply the [chain rule](Differentiation#Chain%20Rule) when differentiating $x$, and we obtain $D_x [x] = dx$, and $D_x [x^2] = 2xdx$. To obtain $du$ for a substitution like $u = x^2$, we calculate the derivative and isolate $dx$ so we can substitute it into the integral. for $u = x^2$ we therefore find $dx = 2xdu$.
+%%
+OLD TEXT, perhaps useful:
+To find those steps in $u$ direction, $du$, we realize we can take the derivative of $u$, <u>not</u> with respect to a certain direction - that would yield us $\frac{du}{dx}$ or $D_x [u]$, the derivative of $u$ in $x$ direction - but with no regards to direction at all. This _differential_ gives us the derivative of $u$ to be $du$, which we need. $du$ represents a tiny change in the size of $u$. The derivative of $x$ becomes $dx$, a tiny change in the size of $x$. <br>This type of derivative is called the _total derivative_ of a function. This concept is reviewed further in [Partial Differentiation](Partial%20Differentiation#Total%20Derivative), as a part of [calculus II](!%20Calculus%20II%20Learning%20Overview).<br>To obtain $du$ for a substitution like $u = x^2$, we calculate the derivative, using the [chain rule](Differentiation#Chain%20Rule).%% 
 
 $$
 \int f(x) dx = \int f(x) \cdot 2x du
@@ -64,13 +67,13 @@ $$
 > 2. $u(x = 3) = 3^2 = 9$ 
 > 
 > Therefore the integral becomes: $\int_{u = 1}^{u = 9} f(u) du$. The entire integral is now in terms of $u$, which allows for immediate evaluation after obtaining the primitve $F(u)$, by simply plugging in the values of $u$ as normal.
-> Alternatively, it _is_ also possible to keep the upper and lower bounds of the integral in terms of $x$. This would require back-substitution of $u$ to $x$ in the function $F(u)$ to obtain $F(x)$, after integration. We can then plug in the values for $x$ to obtain a solution.
+> Alternatively, it _is_ also possible to keep the upper and lower bounds of the integral in terms of $x$, because this substitution changes nothing about the integration itself, the only change is that we cannot substitute directly. Evaluating would require back-substitution of $u$ to $x$ in the function $F(u)$ to obtain $F(x)$, allowing us to plug in the values for $x$ in the bounds of the integral.
 > This method is more inefficient, however.
 
 #### Integration by Parts
 This method is based on [the substitution method](#Substitution). It is used for even more complicated functions, usually functions that are a combination of two factors of $x$.
 To solve these divide the function in the integral in two parts: $u$ and $\mathrm{d}v$. differentiate $u$ to $\mathrm{d}u$ and integrate $\mathrm{d}v$ to $v$.
-Then substitute them into the ___formula___:
+Then substitute them into the ___formula___ below.
 $$
 \int_{}^{}u\,dv=uv-\int_{}^{}v\,du
 $$
@@ -78,12 +81,12 @@ $$
 - It might happen that the function doesn't solve immediately and that this operation has to be multiple times.
 - It also might happen that the solution has a repeating $\int_{}^{}v\mathrm{d}u$, this would happen with for things that have a $f\left(x\right)=e^{x}$ in them. In this case it is sometimes possible to solve by equalling the left and right hand side of the original as described in the following paragraph:
 - ___Solving repeating integrals:___
-	1. Double substitution into the original formula gives the original term $\int_{}^{}u\mathrm{d}v$ back:
+	1. Double substitution into the original formula gives the original term $\int_{}^{}u\mathrm{d}v$ back.
 		$$
 		\int_{}^{}u\,dv=uv-\int_{}^{}v\,du=\left(\ldots\right)-\int_{}^{}u\,dv
 		$$
 	
-	2. Here we see the repeating of the $\int_{}^{}u\mathrm{d}v$, and therefore we can apply simple algebra: 
+	2. Here we see the repeating of the $\int_{}^{}u\mathrm{d}v$, and therefore we can apply simple algebra. 
 		$$
 		\int_{}^{}u\,dv=\left(\ldots\right)-\int_{}^{}u\,dv\to2\int_{}^{}u\,dv=\left(\ldots\right)\to\int_{}^{}u\,dv=\frac12\cdot\left(\ldots\right)
 		$$

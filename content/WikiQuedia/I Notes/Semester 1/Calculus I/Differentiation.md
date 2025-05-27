@@ -8,7 +8,7 @@ Tags: [[differentials]], [[calculus]], [[limits]] <br>25-01-2025
 # Differentiation
 Differentiating is the reciprocal of [integration](Integration.md), therefore a lot of  the same [quick rules](Rules%20of%20Thumb%20Integration) apply from integration, just in _reverse_. These rules I call _rules of thumb_.<br>Find the rules of thumb of differentiation [here](Rules%20of%20Thumb%20Differentiation).
 ### Geometrical Interpretation
-Differentiation is a form of taking a [limit](Calculating%20Limits.md). The interpretation of a derivative is the slope of a function at a certain point. <br>Computing the slope between two points is done by taking $\frac{\Delta y}{\Delta x}$, where we take the distance between two points in $y$ direction, and divide by the distance between those points in $x$ direction.<br><br>![[Wiki_slope_in_2d_80%.png|350]]<br>By Maschen - Own work, CC BY-SA 3.0, [link](https://commons.wikimedia.org/w/index.php?curid=27658172)<br><br>If we want to know the slope at a single point, however, we calculate the slope as the distance between two points ($\Delta y, \Delta x$) approaches 0, because if the distance between two points is 0, there is no second point and we have found the slope at single point. <br>To annotate the fact that the line segments of size $\Delta x$ now have a _0-length_, we denote these segments as $dx$ instead, making $\frac{\Delta y}{\Delta x}$ become $\frac{dy}{dx}$ in Leibniz notation. You can interpret $dx$ as an infinitesimally small (read: very very small) step in $x$ direction. <br><br>Consider the following curve (black), where the slope is found at a certain point. Here, the line tangent to the curve is drawn, using the derivative to find the slope of the line. <br>You can think of the derivative as an expression, giving the direction of travel of the curve at every point. Fill in the coordinates of a point to find the slope at that point. <br><br>![[Tangent_to_a_curve_80%.png|300]]<br>By Jacj at English Wikipedia / Later versions were uploaded by Oleg Alexandrov at en.wikipedia. - Transferred from en.wikipedia to Commons., Public Domain, [link](https://commons.wikimedia.org/w/index.php?curid=2068616)<br>
+Differentiation is a form of taking a [limit](Calculating%20Limits.md). The interpretation of a derivative is the slope of a function at a certain point. <br>Computing the slope between two points is done by taking $\frac{\Delta y}{\Delta x}$, where we take the distance between two points in $y$ direction, and divide by the distance between those points in $x$ direction.<br><br>![[Wiki_slope_in_2d_80%.png|350]]<br>By Maschen - Own work, CC BY-SA 3.0, [link](https://commons.wikimedia.org/w/index.php?curid=27658172)<br><br>If we want to know the slope at a single point, however, we calculate the slope as the distance between two points ($\Delta y, \Delta x$) approaches 0, because if the distance between two points is 0, there is no second point and we have found the slope at single point. <br>To annotate the fact that the line segments of size $\Delta x$ now have a _0-length_, we denote these segments as $dx$ instead, making $\frac{\Delta y}{\Delta x}$ become $\frac{dy}{dx}$ in Leibniz notation. Think of $dx$ as an infinitesimally small (read: very very small) step in $x$ direction. A step $dx$ is called a [differential](https://en.wikipedia.org/wiki/Differential_(mathematics)). <br><br>Consider the following curve (black), where the slope is found at a certain point. Here, the line tangent to the curve is drawn, using the derivative to find the slope of the line. <br>You can think of the derivative as an expression, giving the direction of travel of the curve at every point. Fill in the coordinates of a point to find the slope at that point. <br><br>![[Tangent_to_a_curve_80%.png|300]]<br>By Jacj at English Wikipedia / Later versions were uploaded by Oleg Alexandrov at en.wikipedia. - Transferred from en.wikipedia to Commons., Public Domain, [link](https://commons.wikimedia.org/w/index.php?curid=2068616)<br>
 > [!note] Keep in Mind
 > In this wiki it is usually preferred to write the more common $\frac{d}{dx}$ operator as $D_x$ or simply $D$ instead. 
 > $D_x[f]$ means the derivative of $f$ with respect to $x$.
@@ -45,15 +45,15 @@ D_{x}\left\lbrack f\left(g\left(x\right)\right)\right\rbrack=f^{\prime}\left(g\l
 $$
 An example of such a case woud be $D_x [\sin(x^2)]$, which evaluates to $\cos(x^2) \cdot 2x$.
 ##### Inverse function rule
-When a fraction is to be differentiated, the rule to differentiate is as follows:
+When a fraction is to be differentiated, the rule to differentiate is
 $$
 D_{x}\left\lbrack\frac{g\left(x\right)}{f\left(x\right)}\right\rbrack=\frac{nat-tan}{n^{2}}
 $$
-The _Dutch_ meaning is: 
+The _Dutch_ meaning is:
 $$
 \frac{\textrm{noemer} \cdot \textrm{afgeleide van teller} - \textrm{teller} \cdot \textrm{afgeleide van noemer}}{\textrm{noemer}^2}
 $$
-Or, most importantly, in math-speak:
+Or, most importantly, in math-speak we get
 $$
 \frac{f \cdot g' - g \cdot f'}{f^2}
 $$

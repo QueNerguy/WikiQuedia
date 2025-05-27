@@ -17,14 +17,14 @@ $$
 
 Because the other variables are constant you basically take the derivative of a slice of the function, at this constant distance from the origin, thus transforming a 3D function, for example, into a 2D one.
 #### Total Derivative
-When calculating the [derivative](Differentiation) of a function $f$ of a single variable function, we would always take it _with respect to that single variable_, $\frac{d}{dx}f\left(x\right)$, so with respect to $x$. When calculating the total derivative of a multivariable function, however, we do not want to have the derivative with respect to a single direction, but all at the same time, in order to represent the change in all directions at the same time. <br>In the single variable case we would then have $df(x) = dx$, the infinitesimal (read: very small) change in the size of $f$, under an infinitesimal change in the size of $x$[^wattquote]. In the case of a multivariable function $f(x, y)$, we have:
+When calculating the [derivative](Differentiation) of a function $f$ of a single variable function, we would always take it _with respect to that single variable_, $\frac{d}{dx}f\left(x\right)$, so with respect to $x$. When calculating the total derivative of a multivariable function, however, we do not want to have the derivative with respect to a single direction, but all at the same time, in order to represent the change in all directions at the same time. <br>In the single variable case we would then have $df(x) = dx$, the infinitesimal (read: very small) change in the size of $f$, under an infinitesimal change in the size of $x$[^wattquote]. In the case of a multivariable function $f(x, y)$, we have
 $$
 df(x,y) = \frac{\partial f}{\partial x} dx + \frac{\partial f}{\partial y} dy
 $$
 $$
 df(x,y) = D_x[f] dx + D_y[f] dy
 $$
-The expression $D_x[f] dx$ gives the size of the tiny step in the $x$ direction. The size of the step is determined by the universal step-size in $x$ direction, $dx$, and a kind of modifier $D_x [f]$, to account for increases and decreases in the slope, which would influence the rate of change $df$. This changes $df$ in such a way, that when the function increases steeply in the $x$ direction, $D_x [f]$ will increase, making the complete step in $x$ direction bigger, and thus the change $df$ bigger. The change of $df$ in turn influences the size of $f$, making it increase more with a bigger $df$. <br>We can interpret the operator $df$ as a way to write how much the value of $f$ changes when a small step in $x$ and $y$ direction is taken. <br>This is the most convenient way of writing the derivatives of $f$, at least in multivariable cases. 
+In essence what is happening here, is that we're zooming in very deep on the function, and observing in what directions $f$ changes, and by how much. We are finding where the next neighbouring point on the graph of $f$ is. <br>The expression __$D_x[f] dx$__ gives the size of the tiny step in the $x$ direction. You can think of $dx$ as a kind of _unit base vector_%%==linkje linalg==%%, pointing in $x$ direction, and multiplying by $D_x [f]$ as finding how far along the $x$-axis the $x$ coordinate for the neighboring point is. With this reasoning, the size of the step is determined by the universal step-size in $x$ direction, $dx$, and a kind of modifier $D_x [f]$, to account for increases and decreases in the slope, which would influence the small change of $f$, $df$. This changes $df$ in such a way, that when the function increases steeply in the $x$ direction, $D_x [f]$ will increase, making the complete step in $x$ direction bigger, and thus the change, $df$, bigger. The change of $df$ in turn influences the size of $f$, making it increase more with a bigger $df$.  <br>We can interpret the operator $df$ as a way to write how much the value of $f$ changes when a small step in $x$ and $y$ direction is taken. <br>This is the most convenient way of writing the derivatives of $f$, at least in multivariable cases. 
 - [An example of this process](example%20partial%20derivative%20basic%20+%20total%20derivative.md)
 
 
@@ -41,11 +41,11 @@ Remember from [(single variable) differentiation](Differentiation.md) that the d
 
 
 ### Differentiating Variables as Functions
-When [differentiating](Differentiation.md) functions, instead of variables, we use the _chain rule_, [this one](Differentiation.md#Chain%20Rule). <br>What is meant by a differentiating a function instead of a variable, is this: <br>You may encounter functions $f(x, y, z)$ where $x$ itself is expressed in terms of $a$ and $b$. $\rightarrow x = x(a, b)$. This in turn would make $f(x, y, z)$ be $f(x(a, b), y, z)$. <br>When you now take the derivative of $x^2$: 
+When [differentiating](Differentiation.md) functions, instead of variables, we use the _chain rule_, [this one](Differentiation.md#Chain%20Rule). <br>What is meant by a differentiating a function instead of a variable, is this: <br>You may encounter functions $f(x, y, z)$ where $x$ itself is expressed in terms of $a$ and $b$. $\rightarrow x = x(a, b)$. This in turn would make $f(x, y, z)$ be $f(x(a, b), y, z)$. <br>When you now take the derivative of $x^2$, we get
 $$
 D_x [x^2] \ne 2x
 $$
-This is because $x$ itself depends on changing variables. Instead:
+This is because $x$ itself depends on changing variables. Instead we have
 $$
 D_x [x^2] = 2x \cdot D [x] = 2x \cdot x'
 $$
@@ -58,35 +58,35 @@ And the same goes for other functions of $x$.
 > In theory this action of $D_x [x^2] = 2x \cdot D [x]$ also happens for variables that aren't functions. The reason this is not written down is because evaluating $D [x]$ when $x$ is a variable gives us 1. Therefore $D_x [x^2]$ just becomes $2x \cdot 1 = 2x$ and the $D [x]$ is omitted from the calculation.
 #### General Equations
 ##### Single Variable Dependent
-In __general__, the derivative of $f$ where $x = x(a)$ and $y = y(a)$ are functions of a single variable:
+In __general__, the derivative of $f$, where $x = x(a)$ and $y = y(a)$ are functions of a single variable, we get
 $$
 D_a[z] = D_a[f(x,y)] = D_x[f] \cdot D_a[x] + D_y[f] \cdot D_a[y]
 $$
-Or, in terms of __Leibniz notation__:
+Or, in terms of __Leibniz notation__, we get
 $$
 \frac{dz}{da}=\frac{df\left(x,y\right)}{da}=\frac{\partial f}{\partial x}\cdot\frac{dx}{da}+\frac{\partial f}{\partial y}\cdot\frac{dy}{da}
 $$
 ##### Multivariable Dependent
-If $x$ depends on $a$ and $y$ depends on $b$, or if $x$ depends on both $a$ and $b$ it becomes impossible to construct a total differential as done [above](#single%20variable%20dependent), because both these directions have to be taken into account when differentiating. <br>The same thought process is applied as in the chapter _[Total Derivative](#total%20derivative)_ above, when taking the derivative of a multivariable function. We express the differential function of $z$ not with respect to a certain direction like $\frac{dz}{da}$, but as infinitesimal steps of $dz$. <br><br>In __general__, the derivative of $f$ where $x = x(a, b)$ and $y = y(a, b)$ the expressions are:
+If $x$ depends on $a$ and $y$ depends on $b$, or if $x$ depends on both $a$ and $b$ it becomes impossible to construct a total differential as done [above](#single%20variable%20dependent), because both these directions have to be taken into account when differentiating. <br>The same thought process is applied as in the chapter _[Total Derivative](#total%20derivative)_ above, when taking the derivative of a multivariable function. We express the differential function of $z$ not with respect to a certain direction like $\frac{dz}{da}$, but as infinitesimal steps of $dz$. <br><br>In __general__, the derivative of $f$ where $x = x(a, b)$ and $y = y(a, b)$ the expressions are
 $$
 D_a[z] = D_a[f(x,y)] = D_x[f] \cdot D_a[x] + D_y[f] \cdot D_a[y]
 $$
 $$
 D_b[z] = D_b[f(x,y)] = D_x[f] \cdot D_b[x] + D_y[f] \cdot D_b[y]
 $$
-With the total derivative:
+With the total derivative being
 $$
 dz = df(x, y) = D_a[z]da + D_b[z]db
 $$
 
-Or, in terms of __Leibniz notation__:
+Or, in terms of __Leibniz notation__, we get
 $$
 \frac{\partial z}{\partial a}=\frac{\partial f\left(x,y\right)}{\partial a}=\frac{\partial f}{\partial x}\cdot\frac{dx}{da}+\frac{\partial f}{\partial y}\cdot\frac{dy}{da}
 $$
 $$
 \frac{\partial z}{\partial b}=\frac{\partial f\left(x,y\right)}{\partial b}=\frac{\partial f}{\partial x}\cdot\frac{dx}{db}+\frac{\partial f}{\partial y}\cdot\frac{dy}{db}
 $$
-With the total derivative:
+With the total derivative being
 $$
 dz = df(x, y) = \frac{\partial z}{\partial a} da + \frac{\partial z}{\partial b} db
 $$

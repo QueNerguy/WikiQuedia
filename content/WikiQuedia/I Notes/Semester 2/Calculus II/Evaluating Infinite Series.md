@@ -21,11 +21,11 @@ Determining whether a series is convergent can be done in two ways:
 ### Evaluating a Geometric Series
 While there are multiple different series that all have their own way to solve them (see [this page](https://web.math.ucsb.edu/~cmart07/Evaluating%20Series.pdf) for examples), the geometric series[^geos] is the only one I'll go into detail about here. <br><br>Before evaluating it is imperative to first determine wether the summation converges at all, if it doesn't, the summation can't be evaluated. 
 #### Single Variable Case
-In the case the summation only depends on a single variable, namely the index $n$, the expression of the sum has to be rewritten in the form:
+In the case the summation only depends on a single variable, namely the index $n$, the expression of the sum has to be rewritten in the form
 $$
 \sum^{n}_{n=0} c \cdot r^{n}= c \cdot \sum^{n}_{n=0} r^{n}=s_{n}
 $$
-The solution ($s_n$) of this sum then is:
+The solution ($s_n$) of this sum, then, is
 $$
 s_{n} = \frac{c}{1-r}
 $$
@@ -35,11 +35,11 @@ Some summations depend on multiple variables, for example the index $n$, and dir
 2. The ___center of convergence___, ($a$). The center of convergence is located at the $x$ location where the solution to the sum is 0. <br>($\rightarrow \sum^{n}_{n=0} f(x, n) =0$, and solve for $x$)
 3.  The ___interval of convergence___. The interval is the range of $x$ values that can be used to still give a convergent series. The interval goes around the center of convergence to the edges that the radius gives, -> $[a - R, a + R]$.
 ##### Finding the Interval of Convergence
-As seen above, the _interval of convergence_ requires both the _center of convergence_, $a$, and the _radius of convergence_, $R$, but then gives you all the $x$ values for which the series converges and can be evaluated. <br>To find the interval of convergence requires rewriting the sum to the form:
+As seen above, the _interval of convergence_ requires both the _center of convergence_, $a$, and the _radius of convergence_, $R$, but then gives you all the $x$ values for which the series converges and can be evaluated. <br>To find the interval of convergence requires rewriting the sum to the form
 $$
 \sum^{\infty}_{n=0} c_{n} \cdot (x-a)^n
 $$
-From here we can easily see the _center of convergence_, as the center of convergence is located at the $x$ location where the solution to the sum is 0, which in this case happens when $x=a$, which means the center of convergence is $a$. It might sometimes be useful to solve for the center of convergence _before_ rewriting the sum to aid in the rewriting process, as you would then already know what the $(x-a)^n$ term looks like. See point __2__ above for how to do that. <br>Finding the _radius of convergence_ uses the above form of the sum with the _ratio test_[^cmuedu]:
+From here we can easily see the _center of convergence_, as the center of convergence is located at the $x$ location where the solution to the sum is 0, which in this case happens when $x=a$, which means the center of convergence is $a$. It might sometimes be useful to solve for the center of convergence _before_ rewriting the sum to aid in the rewriting process, as you would then already know what the $(x-a)^n$ term looks like. See point __2__ above for how to do that. <br>Finding the _radius of convergence_ uses the above form of the sum with the _ratio test_.[^cmuedu]
 $$
 \frac{1}{R}=\lim_{n \rightarrow \infty} | \frac{c_{n+1}}{c_{n}} |
 $$

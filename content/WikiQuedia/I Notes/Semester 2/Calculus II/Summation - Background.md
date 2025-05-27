@@ -7,14 +7,14 @@ Tags: [[calculus]], [[sums]], [[limits]] <br>26-01-2025
 ---
 # Summation -  Background
 ### Explanation of the Concept
-Sums ($\sum$) are a way of iterating over formulas multiple times. With every iteration, the solution of what's inclosed in the sum gets added to the solution of the next iteration. For example $\sum^{n}_{n = 1} 1$ gives $1+1+1+...+1$. The iterating starts at $n$ = 1, until the end, $n$, is reached. $n$ can assume any [natural number](https://en.wikipedia.org/wiki/Natural_number) / "_whole value_", meaning 1, 2, 3 etc. In the case of $\sum^{n}_{n = 1} 1$ we add 1, $n$ times. <br>If we choose $n$ to be 4 for example, we get:
+Sums ($\sum$) are a way of iterating over formulas multiple times. With every iteration, the solution of what's inclosed in the sum gets added to the solution of the next iteration. For example $\sum^{n}_{n = 1} 1$ gives $1+1+1+...+1$. The iterating starts at $n$ = 1, until the end, $n$, is reached. $n$ can assume any [natural number](https://en.wikipedia.org/wiki/Natural_number) / "_whole value_", meaning 1, 2, 3 etc. In the case of $\sum^{n}_{n = 1} 1$ we add 1, $n$ times. <br>If we choose $n$ to be 4 for example, we get
 $$
 \sum^{n = 4}_{n = 1} 1=1+1+1+1=4
 $$
 If we started iterating at $n$ = 0, instead of 1, we would add 5 times.
 - Concretely: $n$ = 0, $n$ = 1, $n$ = 2, $n$ = 3, $n$ = 4 $\rightarrow$ 5 times in total.
 
-Sums really become useful when using the iterating values in the sum, like this: $\sum^{n}_{n = 1} n$. In this case if we chose $n$ to be 4 we would get:
+Sums really become useful when using the iterating values in the sum, like this: $\sum^{n}_{n = 1} n$. In this case if we chose $n$ to be 4 we would get
 $$
 \sum^{n = 4}_{n = 1} n = 1 + 2 + 3 + 4 = 10
 $$
@@ -25,7 +25,7 @@ Sums are a great tool for evaluating repetitive and connected series. They are o
 Another use case might be adding the area of the squares shown below.
 ![[squareHalvingAssignment_80%.png|350]]<br>In this case you would relate the size of the first square to the second, and so on, while making sure the equation scales correctly with every iteration.
 ###### Solution:
-Here we wouldassume the first triangle to have area $1$x$1$, the second $\frac{1}{\sqrt2}$x$\frac{1}{\sqrt2}$, the third $\frac{1}{2}$x$\frac{1}{2}$. <br>Seeing that $1$ is the same as $\frac{1}{\sqrt2 ^{0}}=\frac{1}{1}$ and that $\frac{1}{2}$ is the same as $\frac{1}{\sqrt 2 ^2}$ we see a pattern emerge: <br>$\sqrt 2 ^0$, $\sqrt 2 ^1$, $\sqrt 2 ^2$. <br>The area of a square is the square of it's sides, the resulting sum we construct would then be:
+Here we wouldassume the first triangle to have area $1$x$1$, the second $\frac{1}{\sqrt2}$x$\frac{1}{\sqrt2}$, the third $\frac{1}{2}$x$\frac{1}{2}$. <br>Seeing that $1$ is the same as $\frac{1}{\sqrt2 ^{0}}=\frac{1}{1}$ and that $\frac{1}{2}$ is the same as $\frac{1}{\sqrt 2 ^2}$ we see a pattern emerge: <br>$\sqrt 2 ^0$, $\sqrt 2 ^1$, $\sqrt 2 ^2$. <br>The area of a square is the square of it's sides, the resulting sum we construct would then be
 $$
 \sum ^{n} _{n = 0} \left( \frac{1}{\sqrt2 ^{n}} \right) ^2=\sum ^{n} _{n = 0} \left( \frac{1}{2} \right) ^n
 $$

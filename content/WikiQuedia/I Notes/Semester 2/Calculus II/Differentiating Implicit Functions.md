@@ -8,7 +8,7 @@ Tags: [[differentials]]   <br>13-05-2025
 # Differentiating Implicit Functions
 See [implicit functions](Implicit%20Functions) for an explanation on what an implicit function is.
 ### Definition
-When differentiating an [implicit function](Implicit%20Functions), the operation involves taking [partial derivatives](Partial%20Differentiation) and applying the [chain rule](Partial%20Differentiation#Differentiating%20Variables%20as%20Functions). <br>When taking the partial derivative $D_x [z]$ of a function $f(x, y, z) = c$, you differentiate all terms with respect to $x$ while realizing that $z$ is a function, this means applying the chain rule. Because $z$ is a part of the function itself however, you always get a $D_x [z]$ term in the differentiated function. To obtain the solution to $D_x [z]$ you simply isolate it from this expression. <br>Alternatively, we can use the _Implicit Function Theorem_, which states for a function $f(x, y, z)$, where we want to differentiate $z$ with respect to $x$:[^wIFT]
+When differentiating an [implicit function](Implicit%20Functions), the operation involves taking [partial derivatives](Partial%20Differentiation) and applying the [chain rule](Partial%20Differentiation#Differentiating%20Variables%20as%20Functions). <br>When taking the partial derivative $D_x [z]$ of a function $f(x, y, z) = c$, you differentiate all terms with respect to $x$ while realizing that $z$ is a function, this means applying the chain rule. Because $z$ is a part of the function itself however, you always get a $D_x [z]$ term in the differentiated function. To obtain the solution to $D_x [z]$ you simply isolate it from this expression. <br>Alternatively, we can use the _Implicit Function Theorem_, which states for a function $f(x, y, z)$, where we want to differentiate $z$ with respect to $x$ we get[^wIFT]
 $$
 D_x [z] = \frac{\partial z}{\partial x} = - \frac{D_x [f]}{D_z [f]} = - \frac{f_x}{f_z}
 $$
@@ -32,7 +32,7 @@ D_x [z] = \frac{- 2x - 3y^2}{- 3z^2} = \frac{2x + 3y^2}{3z^2}
 $$
 
 (Could also be obtained immediately if we had shifted $-3z^2 D_x [z]$ to the right instead of $2x + 3y$.)<br><br>
-Thus the partial derivative of $z$ with respect to $x$ is:
+Thus the partial derivative of $z$ with respect to $x$ is
 $$
 D_x [z] = \frac{2x + 3y^2}{3z^2}
 $$

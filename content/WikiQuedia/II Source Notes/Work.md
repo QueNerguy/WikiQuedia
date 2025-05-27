@@ -9,7 +9,7 @@ If a force is not perpendicular to the direction of movement only the component 
 $$
 W=\vec{F}\cdot s
 $$
-or in the case of a non-straight path, where $\textbf{F}$ may be a function of the path $s$:
+or in the case of a non-straight path, where $\textbf{F}$ may be a function of the path $s$, we have
 $$
 W=\int\vec{F}\cdot\mathrm{d}s
 $$

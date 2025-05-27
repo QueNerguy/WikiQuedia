@@ -35,11 +35,11 @@ To substitute $u'$, we want to find the [derivative](Differentiation) of $u$ wit
 $$
 u' = D_x [u] = D_x [2x + 1] = 2
 $$
-Substituting this into our previous expression, we get:
+Substituting this into our previous expression, we get
 $$
 \frac{\ln|2x + 1|}{2 \cdot 2} + c_1 = \frac{\ln|2x + 1|}{4} + c_1 = \frac{1}{4} \ln|2x + 1| + c_1
 $$
-Thus our final solution is:
+Thus our final solution is
 $$
 \frac{1}{4} \ln|2x + 1| + c_1
 $$
