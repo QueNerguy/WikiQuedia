@@ -23,21 +23,21 @@ const config: QuartzConfig = {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "Schibsted Grotesk",
-        body: "Source Sans Pro",
-        code: "IBM Plex Mono",
+        header: "Roboto Mono",
+        body: "Roboto Mono",
+        code: "JetBrains Mono",
       },
       colors: {
         lightMode: {
-          light: "#faf8f8",
-          lightgray: "#e5e5e5",
-          gray: "#b8b8b8",
-          darkgray: "#4e4e4e",
-          dark: "#2b2b2b",
-          secondary: "#284b63",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#fff23688",
+          light: "#fcf5e4",                           /* page background */
+          lightgray: "#e4dac2",                       /* borders */
+          gray: "#e4dac2",                            /* graph links, heavier borders */
+          darkgray: "#000000",                        /* body text */
+          dark: "#566269",                            /* header text and icons */
+          secondary: "rgb(42, 178, 74)",              /* link colour, current graph node */
+          tertiary: "#f0a0a8",                        /* hover states and visited graph nodes */
+          highlight: "#f0a0a8",                       /* internal link background, highlighted text, highlighted lines of code */
+          textHighlight: "#242424",                 /* markdown highlighted text background */
         },
         darkMode: {
           light: "#161618",
