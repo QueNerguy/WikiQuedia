@@ -76,10 +76,10 @@ __[Home](Example.md)__ %%==needs homepage==%%
 _Status:_ #ripe  #missingLink
 
 ---
-# References:
-[^setosa]: [setosa - Eigenvectors and Eigenvalues](https://setosa.io/ev/eigenvectors-and-eigenvalues/) $\leftarrow$ interactive visuals to better understand eigenvectors and spaces.
-[^3b1b1]: [3Blue1Brown - Eigenvectors and eigenvalues | Chapter 14, Essence of linear algebra - 6:58](https://youtu.be/PFDu9oVAE-g?feature=shared&t=418)
+# Based On:
+[^setosa]: See: [setosa - Eigenvectors and Eigenvalues](https://setosa.io/ev/eigenvectors-and-eigenvalues/) $\leftarrow$ interactive visuals to better understand eigenvectors and spaces.
+[^3b1b1]: 3Blue1Brown, _Eigenvectors and eigenvalues | Chapter 14, Essence of linear algebra_, 6:58, 9-2016, US, [link](https://www.youtube.com/watch?v=PFDu9oVAE-g).
 1. D. C. Lay, S. R. Lay, J. J. McDonald, _Linear Algebra and Its Applications_, 6th ed.
 2. Wikipedia, _Eigenvalues and eigenvectors_, [link](https://en.wikipedia.org/wiki/Eigenvalues_and_eigenvectors).
-3. 3Blue1Brown, _A quick trick for computing eigenvalues | Chapter 15, Essence of linear algebra_, [link](https://www.youtube.com/watch?v=e50Bj7jn9IQ).
-4. 3Blue1Brown, _Eigenvectors and eigenvalues | Chapter 14, Essence of linear algebra_, [link](https://www.youtube.com/watch?v=PFDu9oVAE-g).
+3. 3Blue1Brown, _A quick trick for computing eigenvalues | Chapter 15, Essence of linear algebra_, 5-2021, US, [link](https://www.youtube.com/watch?v=e50Bj7jn9IQ).
+4. 3Blue1Brown, _Eigenvectors and eigenvalues | Chapter 14, Essence of linear algebra_, 9-2016, US, [link](https://www.youtube.com/watch?v=PFDu9oVAE-g).

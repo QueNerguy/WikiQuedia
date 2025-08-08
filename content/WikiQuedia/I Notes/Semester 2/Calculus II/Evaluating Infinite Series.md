@@ -62,8 +62,9 @@ __[Home](!%20Calculus%20II%20Learning%20Overview)__
 _Status:_ #ripe
 
 ---
-# References:
-[^geos]: [Wikipedia - Geometric series](https://en.wikipedia.org/wiki/Geometric_series)
-[^cmuedu]:[CMU edu dings](https://www.math.cmu.edu/~amanita/math122/handouts/m122_f08_rhandout17.pdf)
-1. R. A. Adams, Christopher Essex, _Calculus A Complete Course_, 9th ed.
-2. C. Martin, _Methods for Evaluating Infinite Series_, [link](https://web.math.ucsb.edu/~cmart07/Evaluating%20Series.pdf).
+# Based On:
+[^geos]: Wikipedia, _Geometric series_, [link](https://en.wikipedia.org/wiki/Geometric_series)
+[^cmuedu]: Carnegie Mellon University, _Recitation Handout 17: Radius and Interval of Convergence_, US, [link](https://www.math.cmu.edu/~amanita/math122/handouts/m122_f08_rhandout17.pdf).
+1. R. A. Adams, C. Essex, _Calculus A Complete Course_, 9th ed, CA.
+2. C. Martin, _Methods for Evaluating Infinite Series_, 3-2010, US, [link](https://web.math.ucsb.edu/~cmart07/Evaluating%20Series.pdf).
+3. Carnegie Mellon University, _Recitation Handout 17: Radius and Interval of Convergence_, US, [link](https://www.math.cmu.edu/~amanita/math122/handouts/m122_f08_rhandout17.pdf).

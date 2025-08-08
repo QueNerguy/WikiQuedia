@@ -25,7 +25,7 @@ __[Home](!%20Calculus%20II%20Learning%20Overview)__
 _Status:_ #ripe
 
 ---
-# References:
+# Based On:
 
-1. R. A. Adams, Christopher Essex, _Calculus A Complete Course_, 9th ed.
+1. R. A. Adams, C. Essex, _Calculus A Complete Course_, 9th ed, CA.
 2. Wikipedia, _Differentiable function_, [link](https://en.wikipedia.org/wiki/Differentiable_function).

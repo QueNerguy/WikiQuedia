@@ -38,10 +38,11 @@ __[Home](!%20Calculus%20II%20Learning%20Overview)__
 _Status:_ #ripe
 
 ---
-# References:
-[^quote1]: [Wikipedia - Gradient](https://en.wikipedia.org/wiki/Gradient#Cartesian_coordinates)
+# Based On:
+[^quote1]: Wikipedia, _Gradient_, _Cartesian coordinates_, [link](https://en.wikipedia.org/wiki/Gradient#Cartesian_coordinates).
 1. D. C. Lay, S. R. Lay, J. J. McDonald, _Linear Algebra and Its Applications_, 6th ed.
 2. Openstax, _Calculus Volume 1_, [link](https://openstax.org/details/books/calculus-volume-1).
 3. Openstax, _Calculus Volume 2_, [link](https://openstax.org/details/books/calculus-volume-2).
 4. Openstax, _Calculus Volume 3_, [link](https://openstax.org/details/books/calculus-volume-3).
-5. Khan Academy, _Directional derivatives and slope_, [link](https://www.khanacademy.org/math/multivariable-calculus/multivariable-derivatives/gradient-and-directional-derivatives/v/directional-derivatives-and-slope)
+5. Khan Academy, _Directional derivatives and slope_, 5-2016, US, [link](https://www.khanacademy.org/math/multivariable-calculus/multivariable-derivatives/gradient-and-directional-derivatives/v/directional-derivatives-and-slope)
+6. Wikipedia, _Gradient_, [link](https://en.wikipedia.org/wiki/Gradient).

@@ -46,5 +46,5 @@ $$
 
 
 ---
-# References:
+# Based On:
 1. Wikipedia, _Shear stress_, [link](https://en.wikipedia.org/wiki/Shear_stress).

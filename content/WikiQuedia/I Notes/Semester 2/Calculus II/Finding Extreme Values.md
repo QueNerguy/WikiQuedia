@@ -29,7 +29,7 @@ These tests look at the [second derivative](Differentiation.md#Second%20Derivati
 > While option __2__ is easiest, it is not detailed in _Calculus A Complete Course_, so it probably will not get points when used on the VU test, even though it works the same in essence as the Hessian matrix. <br>I included it here mostly for completeness' sake and because of the fact that the TU Delft uses it and it is a quicker method of checking.
 
 ### Finding Extreme Values
-To find the extreme values in a single-variable case we would realize that the derivative at that point is 0, so we take the derivative of the function, equal it to 0, and solve for $x$ to find the coordinate. <br>A similar process is the case for multivariable functions, where extremes can be reached in both directions, as seen in the graph for a saddle below. <br>![[Saddle_point_80%.png|450]]<br>By Nicoguaro - Own work, CC BY 3.0, [link](https://commons.wikimedia.org/w/index.php?curid=20570051)<br><br>The red dot depicted above is an example of a saddle point. At this point it is seen that the $x$ direction reaches a local maximum, while the $y$ direction reaches a local minimum. <br>To find these extremes, we take the [partial derivative](Partial%20Differentiation) to get the slope in both directions, and equal it to 0. 
+To find the extreme values in a single-variable case we would realize that the derivative at that point is 0, so we take the derivative of the function, equal it to 0, and solve for $x$ to find the coordinate. <br>A similar process is the case for multivariable functions, where extremes can be reached in both directions, as seen in the graph for a saddle below. <br><br>![[Saddle_point_80%.png|450]]<br>By Nicoguaro - Own work, CC BY 3.0, [link](https://commons.wikimedia.org/w/index.php?curid=20570051)<br><br>The red dot depicted above is an example of a saddle point. At this point it is seen that the $x$ direction reaches a local maximum, while the $y$ direction reaches a local minimum. <br>To find these extremes, we take the [partial derivative](Partial%20Differentiation) to get the slope in both directions, and equal it to 0. 
 To find the _critical point_ of the function above, we find a point where the slope in both directions is 0. This only happens at the red dot. <br>We can visualize this fact by noticing that, if we take any slice in the direction of a major axis, we get a parabola in a 2D space. Observe that the intersection of the extrema of the two parabola types (parabola with a minimum in the one direction, parabola with a maximum in the other direction) is at this red dot. This implies that the only point where both partial derivatives are 0 is also at the red dot. <br>Because this point is an intersection of __both__ parabolas with a _minimum_ and parabolas with a _maximum_, there are neighboring points that are higher, as well as neighboring points that are lower. As such this critical point is __not an extremum__, but instead a saddle point. This illustrates the importance of performing the [second derivative tests](#eliminating%20saddle%20points) outlined above.
 
 
@@ -52,11 +52,12 @@ __[Home](!%20Calculus%20II%20Learning%20Overview)__
 _Status:_ #ripe
 
 ---
-# References:
-[^wikiSDT]: [Wikipedia - Hessian matrix, Second derivative test](https://en.wikipedia.org/wiki/Hessian_matrix#Second-derivative_test)
-[^cueSDT]: [Cuemath - Second derivative test](https://www.cuemath.com/calculus/second-derivative-test/)
-1. R. A. Adams, Christopher Essex, _Calculus A Complete Course_, 9th ed.
+# Based On:
+[^wikiSDT]: Wikipedia, _Hessian matrix_, _Second derivative test_, [link](https://en.wikipedia.org/wiki/Hessian_matrix#Second-derivative_test).
+[^cueSDT]: Cuemath, _Second derivative test_, [link](https://www.cuemath.com/calculus/second-derivative-test/).
+1. R. A. Adams, C. Essex, _Calculus A Complete Course_, 9th ed, CA.
 2. Openstax, _Calculus Volume 1_, [link](https://openstax.org/details/books/calculus-volume-1).
 3. Openstax, _Calculus Volume 2_, [link](https://openstax.org/details/books/calculus-volume-2).
 4. Openstax, _Calculus Volume 3_, [link](https://openstax.org/details/books/calculus-volume-3).
-5. Wikipedia, _Hessian matrix_, [link](https://en.wikipedia.org/wiki/Hessian_matrix)
+5. Wikipedia, _Hessian matrix_, [link](https://en.wikipedia.org/wiki/Hessian_matrix).
+6. Cuemath, _Second derivative test_, [link](https://www.cuemath.com/calculus/second-derivative-test/).

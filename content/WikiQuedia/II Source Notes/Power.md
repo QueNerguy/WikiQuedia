@@ -4,32 +4,32 @@
 [Wikipedia - Power (physics)](https://en.wikipedia.org/wiki/Power_(physics))
 
 #### Synopsis:
-Power is a measure of how much [work energy](Work.md) is exerted by an energy source per unit of time. 
+Power, $P$ is a measure of how much [work energy](Work.md) is exerted per unit of time. <br>In the case of any path we have
 $$
-P=\vec{F}\cdot \vec{v}
+P = \dot{W} = F d\dot{s} = F \frac{d s}{dt} = F\frac{s}{t} 
 $$
-- with:
-	- $F$ = [Force](Force.md)
-	- $v$ = velocity
+$$
+P = F \cdot v
+$$
+$$
+P = \vec{F} \cdot \vec{v}
+$$
+where $F$ is the [force](Force.md) and $v$ is the velocity.
 
-In the case of a rotation, like in a motor:
+In the case of a rotation, like in a motor we have
 $$
 P=\vec{T}\cdot \vec{\omega}
 $$
-- with:
-	- $T$ = [Torque](Torque.md)
-	- $\omega$ = [Angular velocity](Angular%20Velocity.md)
+where $T$ is the [torque](Torque.md) and $\omega$ is the [angular velocity](Angular%20Velocity.md).
 
-It can also be measured by the amount of electrical energy is used:
+It can also be measured by the amount of electrical energy is used, in this case the equation becomes
 $$
 P=I\cdot V
 $$
-- with:
-	- $I$ = Electrical current %%SOURCE AANMAKEN OWO%%
-	- $V$ = Voltage %%SOURCE%%
+where  $I$ is the electrical current %%SOURCE AANMAKEN OWO%%, and $V$ is the voltage%%SOURCE%%
 
 
-- __Unit:__ \[J/s]
+- __Unit:__ $\text{[J/s]}$, $\text{[W]}$
 
 
 ---

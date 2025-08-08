@@ -22,7 +22,7 @@ This process is suitable for __all materials with a high enough melting point__.
 - This process produces very little [thermal distortion](!%20Manufacturing%20Technologies%20Overview.md#Terms%20and%20Disambiguation).
 ##### Negative
 - Brazed joints are not as strong as welded joints, because of the soft filler material.
-- This process requires the mating surfaces to be exceptionally clean and close together, as the molten filler metal moves through _capillary action_[^cap].
+- This process requires the mating surfaces to be exceptionally clean and close together, as the molten filler metal moves through _[capillary action](https://en.wikipedia.org/wiki/Capillary_action)_.
 
 
 
@@ -37,8 +37,7 @@ __[Home](!%20Manufacturing%20Technologies%20Overview.md)__
 _Status:_ #ripe
 
 ---
-# References:
-[^braz]: [Wikipedia - Brazing](https://en.wikipedia.org/wiki/Brazing)
-[^cap]: [Wikipedia - Capillary action](https://en.wikipedia.org/wiki/Capillary_action)
-1. H.J.J. Kals, _Industrial Production, The Manufacture of Mechanical Products_, 5th ed.
-2. Vrije Universiteit, M. Mehrpouya, [link to course](https://canvas.utwente.nl/courses/15351)
+# Based On:
+[^braz]: Wikipedia, _Brazing_, [link](https://en.wikipedia.org/wiki/Brazing).
+1. H.J.J. Kals, _Industrial Production, The Manufacture of Mechanical Products_, 5th ed, NL.
+2. Vrije Universiteit, M. Mehrpouya, NL, [link to course](https://canvas.utwente.nl/courses/15351).

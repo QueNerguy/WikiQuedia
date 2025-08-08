@@ -38,8 +38,8 @@ __[Home](!%20Calculus%20II%20Learning%20Overview)__
 _Status:_ #ripe
 
 ---
-# References:
-[^note]: For an explanation on constraints see the note [[Domain]].<br>For a review of a different way to solve constraint problems, see the note [[Finding Extreme Values]], specifically the chapter [Finding the Extreme Values on Restricted Domains](Finding%20Extreme%20Values#Finding%20the%20Extreme%20Values%20on%20Restricted%20Domains).
-1. R. A. Adams, Christopher Essex, _Calculus A Complete Course_, 9th ed.
+# Based On:
+[^note]: For an explanation on constraints see the note '[[Domain]]'.<br>For a review of a different way to solve constraint problems, see the note '[[Finding Extreme Values]]', specifically the chapter '[Finding the Extreme Values on Restricted Domains](Finding%20Extreme%20Values#Finding%20the%20Extreme%20Values%20on%20Restricted%20Domains)'.
+1. R. A. Adams, C. Essex, _Calculus A Complete Course_, 9th ed, CA.
 2. Wikipedia, _Lagrange multiplier_, [link](https://en.wikipedia.org/wiki/Lagrange_multiplier).
-3. Dr. Trefor Bazett, _Lagrange Multipliers | Geometric Meaning & Full Example_, [link](https://www.youtube.com/watch?v=8mjcnxGMwFo).
+3. Dr. Trefor Bazett, _Lagrange Multipliers | Geometric Meaning & Full Example_, 11-2019, US, [link](https://www.youtube.com/watch?v=8mjcnxGMwFo).

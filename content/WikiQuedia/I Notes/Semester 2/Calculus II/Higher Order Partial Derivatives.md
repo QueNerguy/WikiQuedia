@@ -28,9 +28,9 @@ __[Home](!%20Calculus%20II%20Learning%20Overview)__
 _Status:_ #ripe
 
 ---
-# References:
+# Based On:
 
-1. R. A. Adams, Christopher Essex, _Calculus A Complete Course_, 9th ed.
+1. R. A. Adams, C. Essex, _Calculus A Complete Course_, 9th ed, CA.
 2. Openstax, _Calculus Volume 1_, [link](https://openstax.org/details/books/calculus-volume-1).
 3. Openstax, _Calculus Volume 2_, [link](https://openstax.org/details/books/calculus-volume-2).
 4. Openstax, _Calculus Volume 3_, [link](https://openstax.org/details/books/calculus-volume-3).

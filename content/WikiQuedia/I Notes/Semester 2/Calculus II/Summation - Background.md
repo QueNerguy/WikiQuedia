@@ -22,10 +22,9 @@ $$
 ### Uses of Sums
 Sums are a great tool for evaluating repetitive and connected series. They are of great importance for evaluating areas and are used in [integrals](Integration.md), for example. <br>In this case the area below the graph is approached by drawing rectangles below it, and adding their area up to approximate the area below the graph. The slimmer the bars get the more accurate the approximation. When the bars reach a thickness that approaches 0, the error with the approximation also approaches 0. 
 ##### Example of a Use Case
-Another use case might be adding the area of the squares shown below.
-![[squareHalvingAssignment_80%.png|350]]<br>In this case you would relate the size of the first square to the second, and so on, while making sure the equation scales correctly with every iteration.
+Another use case might be adding the area of the squares shown below.<br><br>![[squareHalvingAssignment_80%.png|350]]<br><br>In this case you would relate the size of the first square to the second, and so on, while making sure the equation scales correctly with every iteration.
 ###### Solution:
-Here we wouldassume the first triangle to have area $1$x$1$, the second $\frac{1}{\sqrt2}$x$\frac{1}{\sqrt2}$, the third $\frac{1}{2}$x$\frac{1}{2}$. <br>Seeing that $1$ is the same as $\frac{1}{\sqrt2 ^{0}}=\frac{1}{1}$ and that $\frac{1}{2}$ is the same as $\frac{1}{\sqrt 2 ^2}$ we see a pattern emerge: <br>$\sqrt 2 ^0$, $\sqrt 2 ^1$, $\sqrt 2 ^2$. <br>The area of a square is the square of it's sides, the resulting sum we construct would then be
+Here we would assume the first triangle to have area $1$x$1$, the second $\frac{1}{\sqrt2}$x$\frac{1}{\sqrt2}$, the third $\frac{1}{2}$x$\frac{1}{2}$. <br>Seeing that $1$ is the same as $\frac{1}{\sqrt2 ^{0}}=\frac{1}{1}$ and that $\frac{1}{2}$ is the same as $\frac{1}{\sqrt 2 ^2}$ we see a pattern emerge: <br>$\sqrt 2 ^0$, $\sqrt 2 ^1$, $\sqrt 2 ^2$. <br>The area of a square is the square of it's sides, the resulting sum we construct would then be
 $$
 \sum ^{n} _{n = 0} \left( \frac{1}{\sqrt2 ^{n}} \right) ^2=\sum ^{n} _{n = 0} \left( \frac{1}{2} \right) ^n
 $$
@@ -54,5 +53,5 @@ __[Home](!%20Calculus%20II%20Learning%20Overview)__
 _Status:_ #ripe
 
 ---
-# References:
-1. R. A. Adams, Christopher Essex, _Calculus A Complete Course_, 9th ed.
+# Based On:
+1. R. A. Adams, C. Essex, _Calculus A Complete Course_, 9th ed, CA.

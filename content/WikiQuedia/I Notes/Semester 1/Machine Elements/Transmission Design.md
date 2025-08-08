@@ -61,15 +61,14 @@ See [here](gear%20ratio%20for%20max%20acceleration.md) the unit explanation.<br>
 
 
 
-
+---
+__[Home](!%20Machine%20Elements%20Overview.md)__
 
 ---
 Status: #ripe
 
 ---
-# References:
-[^undercut]: [Tec Science - Undercut of gears](https://www.tec-science.com/mechanical-power-transmission/involute-gear/undercut/)
-1. Vrije Universiteit, N. Martin, [link to course](https://canvas.utwente.nl/courses/15351/modules/77332).
-2. W. Jiang, _Analysis and design of machine elements_, 2019, [link](https://ut.on.worldcat.org/oclc/1084505954).
----
-__[Home](!%20Machine%20Elements%20Overview.md)__
+# Based On:
+[^undercut]: Tec Science, _Undercut of gears_, 02-2018, DE, [link](https://www.tec-science.com/mechanical-power-transmission/involute-gear/undercut/).
+1. Vrije Universiteit, N. Martin, NL, [link to course](https://canvas.utwente.nl/courses/15351/modules/77332).
+2. W. Jiang, _Analysis and design of machine elements_, 2019, SG, [link](https://ut.on.worldcat.org/oclc/1084505954).

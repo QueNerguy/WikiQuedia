@@ -27,23 +27,23 @@ Taking the second derivative is then useful for interpreting the original functi
 
 ### Definition
 The derivative of a function $f$ gives the slope of the function at a point. Taking a derivative changes nothing about the directions of the function (usually the direction is just $x$), but it does change the value of the function (usually the value is just $y$). The value of the derivative at a point, is the slope of the original function at that point. <br>Because the direction remains unchanged, you can use the location where the derivative had a certain value, and plug it directly in to the original function, to find the height at this location on the original graph. <br>There are a few ways to denote differentiating a function $f\left(x\right)$.
-1. __$f^{\prime}\left(x\right)$__ or __$\left\lbrack f\left(x\right)\right\rbrack^{\prime}$__. This notation just means differentiating $f\left(x\right)$. To increase the amount of times differentiated, add extra accents or write it like this: $f^{3} (x)$. This means the third derivative of $f$.
-2. __$\frac{d}{dx}f\left(x\right)$__, the '_Leibniz notation_'. This notation automatically incorporates multivariability because the operator is directly with respect to $x$. To increase the amount of times differentiated, square the operator.
-3. __$D\left\lbrack f\left(x\right)\right\rbrack$__ or __$D_{}^{1}\left\lbrack f\left(x\right)\right\rbrack$__ or in the case of multivariable calculus[^partdiff]: __$D_{x}^{1}\left\lbrack f\left(x\right)\right\rbrack$__. The last notation means differentiating with respect to $x$. To increase the amount of times differentiated, increase the power. It is best to always include the power $1$ in the term to avoid confusion with potential other $D$ terms.
+1. ___$f^{\prime}\left(x\right)$___ or ___$\left\lbrack f\left(x\right)\right\rbrack^{\prime}$___. This notation just means differentiating $f\left(x\right)$. To increase the amount of times differentiated, add extra accents or write it like this: $f^{3} (x)$. This means the third derivative of $f$.
+2. ___$\frac{d}{dx}f\left(x\right)$___, the '_Leibniz notation_'. This notation automatically incorporates multivariability because the operator is directly with respect to $x$. To increase the amount of times differentiated, square the operator.
+3. ___$D\left\lbrack f\left(x\right)\right\rbrack$___ or ___$D_{}^{1}\left\lbrack f\left(x\right)\right\rbrack$___ or in the case of multivariable calculus[^partdiff]: __$D_{x}^{1}\left\lbrack f\left(x\right)\right\rbrack$__. The last notation means differentiating with respect to $x$. To increase the amount of times differentiated, increase the power. It is best to always include the power $1$ in the term to avoid confusion with potential other $D$ terms.
 #### Computational Rules
 When computing derivatives, there's three rules that always apply. 
 ##### Product rule
-When two functions of $x$ in multiplication both need differentiating with respect to $x$, the product rule is applied[^differentiation].
+When two functions of $x$ in multiplication both need differentiating with respect to $x$, the product rule is applied[^differentiationproduct].
 $$
 D_{x}\left\lbrack f\left(x\right)\cdot g\left(x\right)\right\rbrack=f^{\prime}\left(x\right)\cdot g\left(x\right)+f\left(x\right)\cdot g^{\prime}\left(x\right)
 $$
 An example of such a case would be $D_{x}^{1} [x^{2} \cdot \sin(x)]$, which evaluates to $2x \sin(x) + x^2 \cos(x)$.
 ##### Chain rule
-When a variable is enclosed in a different function which depends on that variable, for example $\sin\left(x\right)$ the differentiating process follows the _chain rule_[^differentiation].
+When a variable is enclosed in a different function which depends on that variable, for example $\sin\left(x\right)$ the differentiating process follows the _chain rule_[^differentiationchain].
 $$
 D_{x}\left\lbrack f\left(g\left(x\right)\right)\right\rbrack=f^{\prime}\left(g\left(x\right)\right)\cdot g^{\prime}\left(x\right)
 $$
-An example of such a case woud be $D_x [\sin(x^2)]$, which evaluates to $\cos(x^2) \cdot 2x$.
+An example of such a case would be $D_x [\sin(x^2)]$, which evaluates to $\cos(x^2) \cdot 2x$.
 ##### Inverse function rule
 When a fraction is to be differentiated, the rule to differentiate is
 $$
@@ -93,12 +93,14 @@ _Status:_ #ripe
 
 ---
 
-# References:
+# Based On:
 [^partdiff]: See the [note on Partial Differentiation](Partial%20Differentiation) for an explanation of multivariable differentiation, and a more accurate notation on $D^1$.
 [^inflection_point]: An inflection point is a point on the graph of a function where it changes directions
-[^extremum]: An extremum is the greatest value a graph reaches compared to the points to the left and right. This could be either __1:__ a local extreme, meaning that there might be other more extreme values on the graph, but this point is still higher than it's surrounding points. There can be infinite local extremes. Or __2:__ a global extreme. This is where the graph of the function reaches its absolute extreme. There can be only two global extremes, a minimum and a maximum value that no other point reaches. [wiki page on this](https://en.wikipedia.org/wiki/Maximum_and_minimum)
-[^differentiation]: [Wikipedia - Differentiation rules](https://en.wikipedia.org/wiki/Differentiation_rules)
-1. R. A. Adams, Christopher Essex, _Calculus A Complete Course_, 9th ed.
+[^extremum]: An extremum is the greatest value a graph reaches compared to the points to the left and right. This could be either __1:__ a local extreme, meaning that there might be other more extreme values on the graph, but this point is still higher than it's surrounding points. There can be infinite local extremes. Or __2:__ a global extreme. This is where the graph of the function reaches its absolute extreme. There can be only two global extremes, a minimum and a maximum value that no other point reaches. <br>See: [Wikipedia - Maximum and minimum](https://en.wikipedia.org/wiki/Maximum_and_minimum).
+[^differentiationchain]: Wikipedia, *Differentiation rules*, _Chain rule_, [link](https://en.wikipedia.org/wiki/Differentiation_rules#Chain_rule).
+[^differentiationproduct]: Wikipedia, *Differentiation rules*, _Product rule_, [link](https://en.wikipedia.org/wiki/Differentiation_rules#Product_rule).
+1. R. A. Adams, C. Essex, _Calculus A Complete Course_, 9th ed, CA.
 2. Openstax, _Calculus Volume 1_, [link](https://openstax.org/details/books/calculus-volume-1).
 3. Openstax, _Calculus Volume 2_, [link](https://openstax.org/details/books/calculus-volume-2).
 4. Openstax, _Calculus Volume 3_, [link](https://openstax.org/details/books/calculus-volume-3).
+5. Wikipedia, *Differentiation rules*, [link](https://en.wikipedia.org/wiki/Differentiation_rules).

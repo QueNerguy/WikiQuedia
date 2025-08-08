@@ -10,7 +10,7 @@ Tags: [[calculus]], [[integrals]], [[intervals]]   <br>03-05-2025
 Double integration can be used to find a _volume_ under a function $f(x, y)$, or to find an _area_ when dealing with complicated boundaries.
 ### Geometric Interpretation
 When [integrating](Integration.md) a single time, only one direction is accounted for. We evaluate single integrals as the _area_ under the graph, which means under the graph, along the _$x$-axis_. This is why the integral always ends with $dx$, the steps of $dx$ the integral takes run along the $x$-axis. 
-To find a _volume_ under a graph instead of an area, we can use double integrals. You can think of taking a double integral as first finding an area, the first layer of the integral, and then finding the height at every point by integrating a second time with respect to the height. Area times height creates a volume. <br>In order integrate, we first find a function to integrate below, $z = f(x, y)$. This gives the upper $z$-limit to be this function, and the lower limit to be the plane $z = 0$. <br>Similar to [partial derivatives](Partial%20Differentiation), the integrals we take look at this function in one direction at a time. <br>When integrating with respect to $x$ first, for example, we have to keep all other variables - in this case only $y$ - constant. You can think of this operation as taking a slice of the graph at a constant $y$ distance of the origin, as pictured below, and integrating under the line on that slice. <br>Integrating under $z$ involves finding a _line segment_ representing the height under $z$ at a certain point on the $x$-axis. For every point in $x$ direction we add these line segments up, to create an _area_ out of all these lines. We have now found an expression of the area below the function $f$, on the $z, x$-plane at a certain $y$ distance of the origin. <br>![[Multiple_Integration_1_90%.png]]<br>We know $f$ to be a function of both $x$ and $y$, however, so this expression of the area will still contain the variable $y$ in it. This means that if we were to take a slice of our 3D function at a different $y$ location, we may get a different value for the area than the one we just obtained. <br>To obtain the _volume_ from this area, the second integral will integrate our expression of the area with respect to $y$. This means placing all these slices next to eachother, in $y$ direction, to create a volume out of all these areas.
+To find a _volume_ under a graph instead of an area, we can use double integrals. You can think of taking a double integral as first finding an area, the first layer of the integral, and then finding the height at every point by integrating a second time with respect to the height. Area times height creates a volume. <br>In order integrate, we first find a function to integrate below, $z = f(x, y)$. This gives the upper $z$-limit to be this function, and the lower limit to be the plane $z = 0$. <br>Similar to [partial derivatives](Partial%20Differentiation), the integrals we take look at this function in one direction at a time. <br>When integrating with respect to $x$ first, for example, we have to keep all other variables - in this case only $y$ - constant. You can think of this operation as taking a slice of the graph at a constant $y$ distance of the origin, as pictured below, and integrating under the line on that slice. <br>Integrating under $z$ involves finding a _line segment_ representing the height under $z$ at a certain point on the $x$-axis. For every point in $x$ direction we add these line segments up, to create an _area_ out of all these lines. We have now found an expression of the area below the function $f$, on the $z, x$-plane at a certain $y$ distance of the origin. <br><br>![[Multiple_Integration_1_90%.png]]<br><br>We know $f$ to be a function of both $x$ and $y$, however, so this expression of the area will still contain the variable $y$ in it. This means that if we were to take a slice of our 3D function at a different $y$ location, we may get a different value for the area than the one we just obtained. <br>To obtain the _volume_ from this area, the second integral will integrate our expression of the area with respect to $y$. This means placing all these slices next to eachother, in $y$ direction, to create a volume out of all these areas.
 
 >[!note] Keep in Mind
 > Keep in mind that this is just a repetition of the process for single [integration](Integration.md). 
@@ -20,7 +20,7 @@ To find a _volume_ under a graph instead of an area, we can use double integrals
 > See more on the dimension of the solution to these integrals [below](#Dimension%20of%20Integrals).
 
 #### Dimension of Integrals
-To understand what kind of object we integrate, we must understand how we interpret the [domain](Domain.md) of an integral. <br>While in math terms it is not stated specifically, the _function_ that gets integrated under creates boundaries of a domain too. <br>![[Integral_as_region_under_curve_80%.png|450]]<br>By 4C - Own work, based on JPG version, CC BY-SA 3.0, [link](https://commons.wikimedia.org/w/index.php?curid=1039841)<br><br>
+To understand what kind of object we integrate, we must understand how we interpret the [domain](Domain.md) of an integral. <br>While in math terms it is not stated specifically, the _function_ that gets integrated under creates boundaries of a domain too. <br><br>![[Integral_as_region_under_curve_80%.png|450]]<br>By 4C - Own work, based on JPG version, CC BY-SA 3.0, [link](https://commons.wikimedia.org/w/index.php?curid=1039841)<br><br>
 Referring to the graph above, what happens when integrating in 2D, under a function $f(x)$, is that a limit is given whose lower bound is the line $y = 0$, and whose upper bound is the function $f(x)$. As long as the area is above $y = 0$ we get a positive value for the area. <br>If, instead, we want to find an area that starts at a function $g(x)$ and goes up to the function $f(x)$, we find the volume under $g$ and subtract that from the volume under $f$. Alternatively, it is possible to evaluate this area using double integrals. Realizing that finding the area under $f$ also gives a domain, we can create a double integral, whose lower bound is this function $g$ and whose upper bound is the function $f$. To create this integral, give no function to integrate over, and create the double integral as
 $$
 \int_{x_1}^{x_2} \int_{g(x)}^{f(x)} dydx
@@ -116,7 +116,7 @@ Sometimes it is impossible to integrate over a certain domain, take for example 
 3. $x = y^2$
 4. $x = 2^2$
 
-The domain is pictured below, shaded in orange. <br>![[DifficultIntersection4parabolas_80%.png|300]]<br><br>The reason such a domain is impossible to determine using integrals as we did before, is because, after expressing the inner integral as a function of the boundaries of the variables contained in the outer integral, for example $y = f(x)$, we evaluate the outer integral to run from constant value to constant value, for example $x_1$ to $x_2$. We have to, or our integral will contain a variable after integrating.
+The domain is pictured below, shaded in orange. <br><br>![[DifficultIntersection4parabolas_80%.png|300]]<br><br>The reason such a domain is impossible to determine using integrals as we did before, is because, after expressing the inner integral as a function of the boundaries of the variables contained in the outer integral, for example $y = f(x)$, we evaluate the outer integral to run from constant value to constant value, for example $x_1$ to $x_2$. We have to, or our integral will contain a variable after integrating.
 $$
 \int_{x_1}^{x_2} \int_{y = x^2}^{y = 2x^2} dydx
 $$
@@ -133,19 +133,19 @@ __[Home](!%20Calculus%20II%20Learning%20Overview)__
 _Status:_ #ripe
 
 ---
-# References:
+# Based On:
 [^asterisk1]: Technically speaking, you could use a double integral to evaluate such a domain. Applying the same reasoning used [here](#Dimension%20of%20Integrals), we could subtract the volume of two double integrals to obtain the volume of the more complicated domain. 
 [^asterisk2]: Of course, these functions dont _need_ to have complicated expressions that are a combination of both $x$ and $y$, they may just be flat planes like $z = 4$. <br>When this is the case though, it may be worth looking in to whether it would be easier to evaluate such a domain by [swapping the order of integration](#Changing%20the%20Order%20of%20Integration).
-1. R. A. Adams, Christopher Essex, _Calculus A Complete Course_, 9th ed.
+1. R. A. Adams, C. Essex, _Calculus A Complete Course_, 9th ed, CA.
 2. Openstax, _Calculus Volume 1_, [link](https://openstax.org/details/books/calculus-volume-1).
 3. Openstax, _Calculus Volume 2_, [link](https://openstax.org/details/books/calculus-volume-2).
 4. Openstax, _Calculus Volume 3_, [link](https://openstax.org/details/books/calculus-volume-3).
-5. Dr. Trefor Bazett, _Double Integration Example over General Regions --- two ways!_, [link](https://www.youtube.com/watch?v=vcYBKIo9bAI).
-6. Dr. Trefor Bazett, _Triple Integrals in Cartesian Coordinates | Volume between Surfaces_, [link](https://www.youtube.com/watch?v=ZIn1rgZVPFw).
-7. Dr. Trefor Bazett, _Change the order of integration to solve tricky integrals_, [link](https://www.youtube.com/watch?v=LUvynduoUX0).
-8. MIT OpenCourseWare, _Changing the order of integration | MIT 18.02SC Multivariable Calculus, Fall 2010_, [link](https://www.youtube.com/watch?v=p06QDsAPY4g).
-9. blackpenredpen, _How to change the order of a triple integral_, [link](https://www.youtube.com/watch?v=-pOV7n8qlbY).
-10. Mathispower4u, _Changing the Order of Triple Integrals_, [link](https://www.youtube.com/watch?v=5WGW82fSXnU).
-11. Oregonstate, _Triple Integrals_, [link](https://sites.science.oregonstate.edu/math/home/programs/undergrad/CalculusQuestStudyGuides/vcalc/255trip/255trip.html).
-12. Khan Academy, _Triple integrals 2_, [link](https://www.khanacademy.org/math/multivariable-calculus/integrating-multivariable-functions/triple-integrals-topic/v/triple-integrals-2).
+5. Dr. Trefor Bazett, _Double Integration Example over General Regions --- two ways!_, 12-2019, US, [link](https://www.youtube.com/watch?v=vcYBKIo9bAI).
+6. Dr. Trefor Bazett, _Triple Integrals in Cartesian Coordinates | Volume between Surfaces_, 12-2019, US, [link](https://www.youtube.com/watch?v=ZIn1rgZVPFw).
+7. Dr. Trefor Bazett, _Change the order of integration to solve tricky integrals_, 7-2020, US, [link](https://www.youtube.com/watch?v=LUvynduoUX0).
+8. MIT OpenCourseWare, _Changing the order of integration | MIT 18.02SC Multivariable Calculus, Fall 2010_, 2010, US, [link](https://www.youtube.com/watch?v=p06QDsAPY4g).
+9. blackpenredpen, _How to change the order of a triple integral_, 4-2018, US, [link](https://www.youtube.com/watch?v=-pOV7n8qlbY).
+10. Mathispower4u, _Changing the Order of Triple Integrals_, 2-2011, US, [link](https://www.youtube.com/watch?v=5WGW82fSXnU).
+11. Oregonstate, _Triple Integrals_, US, [link](https://sites.science.oregonstate.edu/math/home/programs/undergrad/CalculusQuestStudyGuides/vcalc/255trip/255trip.html).
+12. Khan Academy, _Triple integrals 2_, 10-2008, US, [link](https://www.khanacademy.org/math/multivariable-calculus/integrating-multivariable-functions/triple-integrals-topic/v/triple-integrals-2).
 

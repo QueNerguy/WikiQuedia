@@ -20,7 +20,7 @@ An engine, like all objects, has inertia. So do the load and every part of the t
 #### Guideline Inertia Ratio
 The general guideline for inertia ratios is:
 
-| Purpose                                        | Inertia ratio ($J_R$)                  |
+| Purpose                                        | Inertia Ratio ($J_R$)                  |
 | ---------------------------------------------- | -------------------------------------- |
 | Practical purpose                              | $J_{R}\le5$                            |
 | Fast movers                                    | $J_{R}\le10$                           |
@@ -58,16 +58,15 @@ This, of course, doesn't only apply to the load, but the gearbox and _everything
 
 
 
-
+---
+__[Home](!%20Machine%20Elements%20Overview.md)__
 
 ---
 Status: #ripe
 
 ---
-# References:
-[^overshoot]: [Motion control tips - How to address overshoot in servo control](https://www.motioncontroltips.com/how-to-address-overshoot-in-servo-control/)
+# Based On:
+[^overshoot]: D. Collins, _How to address overshoot in servo control_, 10-2018, [link](https://www.motioncontroltips.com/how-to-address-overshoot-in-servo-control/).
 [^except]: The only exception would be the motor itself.
-1. Vrije Universiteit, N. Martin, [link to course](https://canvas.utwente.nl/courses/15351/modules/77332).
-2. W. Jiang, _Analysis and design of machine elements_, 2019, [link](https://ut.on.worldcat.org/oclc/1084505954).
----
-__[Home](!%20Machine%20Elements%20Overview.md)__
+1. Vrije Universiteit, N. Martin, NL, [link to course](https://canvas.utwente.nl/courses/15351/modules/77332).
+2. W. Jiang, _Analysis and design of machine elements_, 2019, SG, [link](https://ut.on.worldcat.org/oclc/1084505954).

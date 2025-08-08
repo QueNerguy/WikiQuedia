@@ -11,9 +11,9 @@ A normal function expressed in terms of $x$ or potentially other variables is $f
 - ___$f^{-1}$ is called the inverse of $f$___.
 
 Generally when asked to calculate the inverse of a function the question actually means: _calculate the inverse of $f(x)$ in terms of $x$_, which means calculating the inverse but _also_ swapping coordinates.
-- __In this example:__
-	1. $f(x)=y=ax^{3}\to x=ay^{3}$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (<- Swapping coordinates)
-	2. $f^{-1}\left(x\right)=\sqrt[3]{\frac{x}{a}}$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<- actually calculating the inverse)
+- ___In the above example:___
+	1. $f(x)=y=ax^{3}\to x=ay^{3}$ <br>&nbsp;&nbsp; (Swapping coordinates)
+	2. $f^{-1}\left(x\right)=\sqrt[3]{\frac{x}{a}}$ <br>&nbsp;&nbsp; (Actually calculating the inverse)
 
 ### Existance
 When calculating the inverse it's important to look at whether the graph that's being inverted is actually invertible. When inverting the function geometrically what you're doing is rotating the function by $90\degree$ to the right or mirroring through the line $y=x$. Therefore when a function crosses a horizontal line the inverse cannot exist. For example $y=x^2$ can't exist, that's why when taking a root the result is always $\pm\sqrt{}$.  
@@ -32,7 +32,8 @@ __[Home](!%20Calculus%20I%20Learning%20Overview.md)__
 _Status:_ #ripe
 
 ---
-# References:
-[^inverse_wiki]: [Wikipedia - Inverse function theorem](https://en.wikipedia.org/wiki/Inverse_function_theorem)
+# Based On:
+[^inverse_wiki]: Wikipedia, _inverse function theorem_, [link](https://en.wikipedia.org/wiki/Inverse_function_theorem).
 [^root]: A root of a function is the solution of a function where it is equal to $0$. Finding the roots of $f(x)$ means finding wehre $f(x)=0$.
-1. R. A. Adams, Christopher Essex, _Calculus A Complete Course_, 9th ed.
+1. R. A. Adams, C. Essex, _Calculus A Complete Course_, 9th ed, CA.
+2. Wikipedia, _inverse function theorem_, [link](https://en.wikipedia.org/wiki/Inverse_function_theorem).

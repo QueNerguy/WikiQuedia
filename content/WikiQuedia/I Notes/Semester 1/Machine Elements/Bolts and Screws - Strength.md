@@ -153,24 +153,23 @@ See [here](crushing%20or%20bearing%20stress%20in%20bolts%20due%20to%20axial%20lo
 
 
 
-
-
+---
+__[Home](!%20Machine%20Elements%20Overview.md)__
 
 ---
 Status: #ripe
 
 ---
-# References:
+# Based On:
 [^methods]: See [here](!%20Manufacturing%20Technologies%20Overview) for an overview of (common) manufacturing processes.
 [^bolthead]: <br>![[BoltHead_80%.png|100]]
-[^prelax]: [Engineers edge - Calculator for bolt preload tension force and equation](https://www.engineersedge.com/material_science/bolt-preload-calculation.htm)
-[^mech]: [Mechanicalc - Bolted Joint Analysis: Bearing](https://mechanicalc.com/reference/bolted-joint-analysis)
+[^prelax]: Engineers edge, _Calculator for bolt preload tension force and equation_, US, [link](https://www.engineersedge.com/material_science/bolt-preload-calculation.htm).
+[^mech]: Mechanicalc, _Bolted Joint Analysis: Bearing_, [link](https://mechanicalc.com/reference/bolted-joint-analysis).
 
-1. Vrije Universiteit, N. Martin, [link to course](https://canvas.utwente.nl/courses/15351/modules/77332).
-2. W. Jiang, _Analysis and design of machine elements_, 2019, [link](https://ut.on.worldcat.org/oclc/1084505954).
-3. K. Brown, C. Morrow, S. Durbin, A. Baca, _Guideline for Bolted Joint Design and Analysis: Version 1.0_, 2008, [link](https://www.osti.gov/servlets/purl/929124) .
-4. SDC, _Bolt Stress Calculations: A Step-by-Step Guide_, [link](https://sdcverifier.com/structural-engineering-101/bolt-stress-calculations/).
-5. J. Kerns, _What’s the Difference Between Bearing, Shear, and Tear-Out Stress?_, 2016, [link](https://www.machinedesign.com/fastening-joining/article/21834800/whats-the-difference-between-bearing-shear-and-tear-out-stress).
+1. Vrije Universiteit, N. Martin, NL, [link to course](https://canvas.utwente.nl/courses/15351/modules/77332).
+2. W. Jiang, _Analysis and design of machine elements_, 2019, SG, [link](https://ut.on.worldcat.org/oclc/1084505954).
+3. K. Brown, C. Morrow, S. Durbin, A. Baca, _Guideline for Bolted Joint Design and Analysis: Version 1.0_, 1-2008, US, [link](https://www.osti.gov/servlets/purl/929124) .
+4. SDC, _Bolt Stress Calculations: A Step-by-Step Guide_, NL, [link](https://sdcverifier.com/structural-engineering-101/bolt-stress-calculations/).
+5. J. Kerns, _What’s the Difference Between Bearing, Shear, and Tear-Out Stress?_, 7-2016, US, [link](https://www.machinedesign.com/fastening-joining/article/21834800/whats-the-difference-between-bearing-shear-and-tear-out-stress).
 
----
-__[Home](!%20Machine%20Elements%20Overview.md)__
+

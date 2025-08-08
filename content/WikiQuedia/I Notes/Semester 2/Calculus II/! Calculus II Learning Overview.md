@@ -8,10 +8,10 @@ Type: #hub
 
 ---
 # Calculus II Learning Overview
-Calculus II lays out the base mechanics for differentiation and integration in multiple dimensions. The following list is in the order I would recommend consuming these concepts in to learn calculus II. The main goal of calculus II is to understand the topics of [differentiation](#Part%202%20-%20Differentiation) and [integration](#Part%203%20-%20Integration) in multiple dimensions.
+Calculus II lays out the base mechanics for differentiation and integration in multiple dimensions. It is a continuation of [calculus I](!%20Calculus%20I%20Learning%20Overview). <br>The following list is in the order I would recommend reading these notes in to learn calculus II. The main goal of calculus II is to understand the topics of [differentiation](#Part%202%20-%20Differentiation) and [integration](#Part%203%20-%20Integration) in multiple dimensions.
 ### Background
-1. ___[Calculus I](!%20Calculus%20I%20Learning%20Overview.md):___ Calculus I provides the base concepts that are then generalized in calculus II. Understanding the concepts of calculus I is imperative before looking at calculus II. The main concepts from calculus I that are important here are [differentiation](Differentiation.md) and [integration](Integration.md).
-2. ___[[Summation - Background]]___: Summation is used in the first part of calculus II, so understanding the notation and what sums mean is important. Sums also provide a background on how [integration](Integration.md). and [differentiation](Differentiation.md) came to be, and are used when reading proofs or concepts regarding integration and differentitation.
+1. ___[Calculus I](!%20Calculus%20I%20Learning%20Overview):___ Calculus I provides the base concepts that are then generalized in calculus II. Understanding the concepts of calculus I is imperative before looking at calculus II. The main concepts from calculus I that are important here are [differentiation](Differentiation.md) and [integration](Integration.md).
+2. ___[[Summation - Background]]___: Summation is used in the first part of calculus II, so understanding the notation and what sums mean is important. Sums also provide a background on how [integration](Integration.md). and [differentiation](Differentiation.md) came to be, and are used when reading proofs or concepts regarding integration and differentiation.
 3. ___[[Differentiability]]:___ This note details when a function is differentiable at a point, which will be used later when taking partial derivatives and gradients of functions.
 
 
@@ -60,7 +60,7 @@ Status: #ripe
 
 ---
 # Based on:
-1. R. A. Adams, Christopher Essex, _Calculus A Complete Course_, 9th ed.
+1. R. A. Adams, C. Essex, _Calculus A Complete Course_, 9th ed, CA.
 2. Openstax, _Calculus Volume 1_, [link](https://openstax.org/details/books/calculus-volume-1).
 3. Openstax, _Calculus Volume 2_, [link](https://openstax.org/details/books/calculus-volume-2).
 4. Openstax, _Calculus Volume 3_, [link](https://openstax.org/details/books/calculus-volume-3).

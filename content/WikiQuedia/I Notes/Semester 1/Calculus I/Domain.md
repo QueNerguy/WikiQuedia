@@ -35,7 +35,7 @@ __[Home](!%20Calculus%20I%20Learning%20Overview.md)__
 _Status:_ #ripe
 
 ---
-# References:
+# Based On:
 
-1. R. A. Adams, Christopher Essex, _Calculus A Complete Course_, 9th ed.
+1. R. A. Adams, C. Essex, _Calculus A Complete Course_, 9th ed, CA.
 2. Wikipedia, _Domain (mathematical analysis)_, [link](https://en.wikipedia.org/wiki/Domain_(mathematical_analysis)).

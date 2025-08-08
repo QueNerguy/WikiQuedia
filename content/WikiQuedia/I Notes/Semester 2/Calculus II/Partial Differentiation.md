@@ -105,11 +105,11 @@ __[Home](!%20Calculus%20II%20Learning%20Overview)__
 _Status:_ #ripe
 
 ---
-# References:
-[^wattquote]: Paraphrasing quote from: G. Stoffels, _Mathematical Background Engineering Thermodynamics_, 2020,  [link](https://canvas.utwente.nl/courses/16111/files/4693672?module_item_id=546655) - page 7.
-1. R. A. Adams, Christopher Essex, _Calculus A Complete Course_, 9th ed.
+# Based On:
+[^wattquote]: Paraphrasing quote from: G. Stoffels, _Mathematical Background Engineering Thermodynamics_, p7, 2020, NL,  [link](https://canvas.utwente.nl/courses/16111/files/4693672?module_item_id=546655).
+1. R. A. Adams, C. Essex, _Calculus A Complete Course_, 9th ed, CA.
 2. Openstax, _Calculus Volume 1_, [link](https://openstax.org/details/books/calculus-volume-1).
 3. Openstax, _Calculus Volume 2_, [link](https://openstax.org/details/books/calculus-volume-2).
 4. Openstax, _Calculus Volume 3_, [link](https://openstax.org/details/books/calculus-volume-3).
-5. G. Stoffels, _Mathematical Background Engineering Thermodynamics_, 2020,  [link](https://canvas.utwente.nl/courses/16111/files/4693672?module_item_id=546655).
-6. 4. 3Blue1Brown, _Implicit differentiation, what's going on here? | Chapter 6, Essence of calculus_ [link](https://www.youtube.com/watch?v=qb40J4N1fa4).
+5. G. Stoffels, _Mathematical Background Engineering Thermodynamics_, 2020, NL,  [link](https://canvas.utwente.nl/courses/16111/files/4693672?module_item_id=546655).
+6. 4. 3Blue1Brown, _Implicit differentiation, what's going on here? | Chapter 6, Essence of calculus_, 5-2017, US, [link](https://www.youtube.com/watch?v=qb40J4N1fa4).

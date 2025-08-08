@@ -37,7 +37,8 @@ __[Home](!%20Manufacturing%20Technologies%20Overview.md)__
 _Status:_ #ripe
 
 ---
-# References:
-[^gas]: [Wikipedia - Oxy-fuel welding and cutting](https://en.wikipedia.org/wiki/Oxy-fuel_welding_and_cutting)
-1. H.J.J. Kals, _Industrial Production, The Manufacture of Mechanical Products_, 5th ed.
-2. Vrije Universiteit, M. Mehrpouya, [link to course](https://canvas.utwente.nl/courses/15351)
+# Based On:
+[^gas]: Wikipedia, _Oxy-fuel welding and cutting_, [link](https://en.wikipedia.org/wiki/Oxy-fuel_welding_and_cutting).
+1. H.J.J. Kals, _Industrial Production, The Manufacture of Mechanical Products_, 5th ed, NL.
+2. Vrije Universiteit, M. Mehrpouya, NL, [link to course](https://canvas.utwente.nl/courses/15351).
+3. Wikipedia, _Oxy-fuel welding and cutting_, [link](https://en.wikipedia.org/wiki/Oxy-fuel_welding_and_cutting).

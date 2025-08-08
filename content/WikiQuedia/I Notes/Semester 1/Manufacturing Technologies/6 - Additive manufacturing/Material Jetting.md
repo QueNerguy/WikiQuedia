@@ -40,7 +40,8 @@ __[Home](!%20Manufacturing%20Technologies%20Overview.md)__
 _Status:_ #ripe
 
 ---
-# References:
-[^jet1]: [Lboro - Material jetting](https://www.lboro.ac.uk/research/amrg/about/the7categoriesofadditivemanufacturing/materialjetting/)
-1. H.J.J. Kals, _Industrial Production, The Manufacture of Mechanical Products_, 5th ed.
-2. Vrije Universiteit, M. Mehrpouya, [link to course](https://canvas.utwente.nl/courses/15351)
+# Based On:
+[^jet1]: Lboro, _Material jetting_, GB, [link](https://www.lboro.ac.uk/research/amrg/about/the7categoriesofadditivemanufacturing/materialjetting/).
+1. H.J.J. Kals, _Industrial Production, The Manufacture of Mechanical Products_, 5th ed, NL.
+2. Vrije Universiteit, M. Mehrpouya, NL, [link to course](https://canvas.utwente.nl/courses/15351).
+3. Lboro, _Material jetting_, GB, [link](https://www.lboro.ac.uk/research/amrg/about/the7categoriesofadditivemanufacturing/materialjetting/).

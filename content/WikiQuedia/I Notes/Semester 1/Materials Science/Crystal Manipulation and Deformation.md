@@ -25,8 +25,11 @@ Becauses the material recrystallizes during hot processes stress flow[^flow] in 
 _Status:_ #bud #missingLink%%Linkje naar hoe temp changing material properties%%
 
 ---
-# References:
-[^brittle]: [Wikipedia - Brittleness](https://en.wikipedia.org/wiki/Brittleness)
-[^duck]: [Wikipedia - Ductility](https://en.wikipedia.org/wiki/Ductility)
-[^flow]: [Wikipedia - Stress concentration](https://en.wikipedia.org/wiki/Stress_concentration)
+# Based On:
+[^brittle]: Wikipedia, _Brittleness_, [link](https://en.wikipedia.org/wiki/Brittleness).
+[^duck]: Wikipedia, _Ductility_, [link](https://en.wikipedia.org/wiki/Ductility).
+[^flow]: Wikipedia, _Stress concentration_, [link](https://en.wikipedia.org/wiki/Stress_concentration).
 
+1. Wikipedia, _Stress concentration_, [link](https://en.wikipedia.org/wiki/Stress_concentration).
+2. Wikipedia, _Ductility_, [link](https://en.wikipedia.org/wiki/Ductility).
+3. Wikipedia, _Brittleness_, [link](https://en.wikipedia.org/wiki/Brittleness).

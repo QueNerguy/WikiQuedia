@@ -78,7 +78,7 @@ $$
 \textrm{z}=\frac{d_p}{m} 
 $$
 ###### Pressure angle
-- __$\alpha$__, or __$\phi$__: The pressure angle, most commonly 20$\degree$. <br>Two gears dont make tangential[^tan] contact at their surfaces. This is to let the teeth roll smoothly of one another. It does, however, cause the [force](Force) to not be transmitted tangentially, but at an angle, the _pressure angle_. This is an average angle, measured at the _pitch circle_. It changes as the contact of the gears rolls along the surface of the teeth. This force at an angle also induces a force in radial (towards the center of the gear) direction, which means the axles are loaded not only in torsion, but on bending too. %%==maybe change the location of the last part==%%
+- __$\alpha$__, or __$\phi$__: The pressure angle, most commonly 20$\degree$. <br>Two gears don't make tangential[^tan] contact at their surfaces. This is to let the teeth roll smoothly of one another. It does, however, cause the [force](Force) to not be transmitted tangentially, but at an angle, the _pressure angle_. This is an average angle, measured at the _pitch circle_. It changes as the contact of the gears rolls along the surface of the teeth. This force at an angle also induces a force in radial (towards the center of the gear) direction, which means the axles are loaded not only in torsion, but on bending too. %%==maybe change the location of the last part==%%
 #### Kinematics Illustration
 
 ![[GearCircles_80%.png|700x250]]<br> credit: _Nicolas Martin_.
@@ -114,21 +114,19 @@ If gears are not in an isolated enough environment, debris can get caught betwee
 
 
 
-
-
+---
+__[Home](!%20Machine%20Elements%20Overview.md)__
 
 ---
 Status: #sprout
 
 ---
-# References:
+# Based On:
 [^tan]: Tangential: Along the contact of the circles.
 [^proof]: Proof: $i=\frac{\omega_1}{\omega_2}=\frac{\frac{v_1}{r_1}}{\frac{v_2}{r_2}}=\frac{\frac{v_{t}}{r_1}}{\frac{v_{t}}{r_2}}=\frac{r_2}{r_1}=\frac{d_2}{d_1}=\frac{\textrm{z}_2}{\textrm{z}_1}$
-[^deform]: [Global physical asset management - Common Classes of Girth Gear Potential Failure Modes](https://global-pam.com/5-common-classes-of-girth-gear-potential-failure-modes/)
-1. Vrije Universiteit, N. Martin, [link to course](https://canvas.utwente.nl/courses/15351/modules/77332).
-2. W. Jiang, _Analysis and design of machine elements_, 2019, [link](https://ut.on.worldcat.org/oclc/1084505954).
-3. P. Peng, _Exploring the 12 Modes of Failure in Gear Transmission Components_, 29-05-2023, [link](https://bdgears.com/12-modes-failure-gear-transmission-components/).
-4. T. Shumka, _5 Common Classes of Girth Gear Potential Failure Modes_, 27-05-2020, [link](https://global-pam.com/5-common-classes-of-girth-gear-potential-failure-modes/).
-5. Dynamox, _Gearbox: main types and possible failures_, 26-03-2024, [link](https://dynamox.net/en/blog/gearbox-main-types-and-possible-faults).
----
-__[Home](!%20Machine%20Elements%20Overview.md)__
+[^deform]: T. Shumka, _5 Common Classes of Girth Gear Potential Failure Modes_, 05-2020, [link](https://global-pam.com/5-common-classes-of-girth-gear-potential-failure-modes/).
+1. Vrije Universiteit, N. Martin, NL, [link to course](https://canvas.utwente.nl/courses/15351/modules/77332).
+2. W. Jiang, _Analysis and design of machine elements_, 2019, SG, [link](https://ut.on.worldcat.org/oclc/1084505954).
+3. P. Peng, _Exploring the 12 Modes of Failure in Gear Transmission Components_, 05-2023, CN, [link](https://bdgears.com/12-modes-failure-gear-transmission-components/).
+4. T. Shumka, _5 Common Classes of Girth Gear Potential Failure Modes_, 05-2020, [link](https://global-pam.com/5-common-classes-of-girth-gear-potential-failure-modes/).
+5. Dynamox, _Gearbox: main types and possible failures_, 03-2024, BR, [link](https://dynamox.net/en/blog/gearbox-main-types-and-possible-faults).

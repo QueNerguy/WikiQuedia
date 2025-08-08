@@ -53,13 +53,13 @@ __[Home](!%20Calculus%20II%20Learning%20Overview)__
 _Status:_ #ripe
 
 ---
-# References:
-[^wIFT]: [Wikipedia - Implicit function](https://en.wikipedia.org/wiki/Implicit_function#General_formula_for_derivative_of_implicit_function)
+# Based On:
+[^wIFT]: Wikipedia, _Implicit function_, _General formula for derivative of implicit function_, [link](https://en.wikipedia.org/wiki/Implicit_function#General_formula_for_derivative_of_implicit_function).
 [^excred]: Example taken from [The Organic Chemistry Tutor - Implicit Differentiation With Partial Derivatives Using The Implicit Function Theorem | Calculus 3](https://www.youtube.com/watch?v=OBELQIPH5xY).
-1. R. A. Adams, Christopher Essex, _Calculus A Complete Course_, 9th ed.
+1. R. A. Adams, C. Essex, _Calculus A Complete Course_, 9th ed, CA.
 2. Openstax, _Calculus Volume 1_, [link](https://openstax.org/details/books/calculus-volume-1).
 3. Openstax, _Calculus Volume 2_, [link](https://openstax.org/details/books/calculus-volume-2).
 4. Openstax, _Calculus Volume 3_, [link](https://openstax.org/details/books/calculus-volume-3).
 5. Wikipedia, _Implicit function_, [link](https://en.wikipedia.org/wiki/Implicit_function).
-6. The Organic Chemistry Tutor, _Implicit Differentiation With Partial Derivatives Using The Implicit Function Theorem | Calculus 3_, [link](https://www.youtube.com/watch?v=OBELQIPH5xY).
-7. 3Blue1Brown, _Implicit differentiation, what's going on here? | Chapter 6, Essence of calculus_ [link](https://www.youtube.com/watch?v=qb40J4N1fa4).
+6. The Organic Chemistry Tutor, _Implicit Differentiation With Partial Derivatives Using The Implicit Function Theorem | Calculus 3_, 11-2019, US, [link](https://www.youtube.com/watch?v=OBELQIPH5xY).
+7. 3Blue1Brown, _Implicit differentiation, what's going on here? | Chapter 6, Essence of calculus_, 5-2017, US, [link](https://www.youtube.com/watch?v=qb40J4N1fa4).

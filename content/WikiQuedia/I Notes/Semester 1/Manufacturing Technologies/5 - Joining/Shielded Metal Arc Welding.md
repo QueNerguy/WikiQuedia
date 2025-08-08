@@ -11,7 +11,7 @@ Type: #welding, #arc_welding
 ### Process
 This process uses an electrode to create a plasma arc, this electrode is consumed in the process. A current flows directly from the electrode to the [workpiece](!%20Manufacturing%20Technologies%20Overview.md#Terms%20and%20Disambiguation) creating [plasma](Plasma%20Working.md) at the contacts. This plasma melts the metal locally, allowing for great precision. As the weld is created the coating of the electrode vaporizes and coats the metal to protect the weld from corrosive processes, which also creates an unwanted layer of slag[^arc].
 ##### Similar Processes
-This process is similar to [TIG welding](TIG%20Welding.md), but it consumes the electrode in the process, and no gasses are needed to shield the plasma flow, and it's a variation of [MAG welding](MAG%20and%20MIG%20Welding.md), where the corrosion protective coating is formed by a gas release instead.
+This process is similar to [TIG welding](TIG%20Welding.md), but it consumes the electrode in the process, and no gases are needed to shield the plasma flow, and it's a variation of [MAG welding](MAG%20and%20MIG%20Welding.md), where the corrosion protective coating is formed by a gas release instead.
 This is the most popular welding process worldwide.
 
 ### Characteristics
@@ -40,7 +40,8 @@ __[Home](!%20Manufacturing%20Technologies%20Overview.md)__
 _Status:_ #ripe
 
 ---
-# References:
-[^arc]: [Wikipedia - Shielded metal arc welding](https://en.wikipedia.org/wiki/Shielded_metal_arc_welding)
-1. H.J.J. Kals, _Industrial Production, The Manufacture of Mechanical Products_, 5th ed.
-2. Vrije Universiteit, M. Mehrpouya, [link to course](https://canvas.utwente.nl/courses/15351)
+# Based On:
+[^arc]: Wikipedia, _Shielded metal arc welding_, [link](https://en.wikipedia.org/wiki/Shielded_metal_arc_welding).
+1. H.J.J. Kals, _Industrial Production, The Manufacture of Mechanical Products_, 5th ed, NL.
+2. Vrije Universiteit, M. Mehrpouya, NL, [link to course](https://canvas.utwente.nl/courses/15351).
+3. Wikipedia, _Shielded metal arc welding_, [link](https://en.wikipedia.org/wiki/Shielded_metal_arc_welding).

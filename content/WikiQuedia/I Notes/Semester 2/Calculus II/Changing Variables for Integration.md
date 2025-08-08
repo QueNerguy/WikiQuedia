@@ -43,10 +43,10 @@ Thus an area in the new $(u, v)$ space becomes __6 times larger__ when going bac
 _Status:_ #bud #missingLink
 
 ---
-# References:
+# Based On:
 
-1. R. A. Adams, Christopher Essex, _Calculus A Complete Course_, 9th ed.
-2. Dr Trefor Bazett, _Change of Variables & The Jacobian | Multi-variable Integration_, [link](https://www.youtube.com/watch?v=wUF-lyyWpUc).
+1. R. A. Adams, C. Essex, _Calculus A Complete Course_, 9th ed, CA.
+2. Dr Trefor Bazett, _Change of Variables & The Jacobian | Multi-variable Integration_, 12-2019, US, [link](https://www.youtube.com/watch?v=wUF-lyyWpUc).
 3. Wikipedia, _Jacobian matrix and determinant_, [link](https://en.wikipedia.org/wiki/Jacobian_matrix_and_determinant).
-4. Khan Academy, _The Jacobian Determinant_, [link](https://www.youtube.com/watch?v=p46QWyHQE6M).
+4. Khan Academy, _The Jacobian Determinant_, 1-2017, US, [link](https://www.youtube.com/watch?v=p46QWyHQE6M).
 %%Trefor Bazett is so goated fr i would lay down my life for that man%%

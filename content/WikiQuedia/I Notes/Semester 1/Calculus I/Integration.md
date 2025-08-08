@@ -79,7 +79,7 @@ $$
 $$
 ##### Not Solving Immediately?
 - It might happen that the function doesn't solve immediately and that this operation has to be multiple times.
-- It also might happen that the solution has a repeating $\int_{}^{}v\mathrm{d}u$, this would happen with for things that have a $f\left(x\right)=e^{x}$ in them. In this case it is sometimes possible to solve by equalling the left and right hand side of the original as described in the following paragraph:
+- It also might happen that the solution has a repeating $\int_{}^{}v\mathrm{d}u$, this would happen with for things that have a $f\left(x\right)=e^{x}$ in them. In this case it is sometimes possible to solve by equating the left and right hand side of the original as described in the following paragraph:
 - ___Solving repeating integrals:___
 	1. Double substitution into the original formula gives the original term $\int_{}^{}u\mathrm{d}v$ back.
 		$$
@@ -122,7 +122,7 @@ __[Home](!%20Calculus%20I%20Learning%20Overview.md)__
 _Status:_ #ripe
 
 ---
-# References:
+# Based On:
 [^primitive]: The integrated function $F(x)$ of the original $f(x)$.
 1. Openstax, _Calculus Volume 1_, [link](https://openstax.org/details/books/calculus-volume-1).
 2. Openstax, _Calculus Volume 2_, [link](https://openstax.org/details/books/calculus-volume-2).

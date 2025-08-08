@@ -37,8 +37,8 @@ __[Home](!%20Calculus%20I%20Learning%20Overview.md)__
 _Status:_ #ripe
 
 ---
-# References:
+# Based On:
 
-1. R. A. Adams, Christopher Essex, _Calculus A Complete Course_, 9th ed.
+1. R. A. Adams, C. Essex, _Calculus A Complete Course_, 9th ed, CA.
 2. Wikipedia, _Range (mathematics)_, [link](https://simple.wikipedia.org/wiki/Range_(mathematics)).
 3. Wikipedia, _Interval (mathematics)_, [link](https://simple.wikipedia.org/wiki/Interval_(mathematics)).

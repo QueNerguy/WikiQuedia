@@ -46,8 +46,7 @@ Notice that, as the function is bound by the function $r = f(\theta)$ and the or
 $$
 A_R = \frac{1}{2}\int_{a}^{b} [f(\phi)]^2 d\phi
 $$
-Because single integrals are unintuitive like this, it is always preferred to use double integrals to obtain areas for polar coordinates.
-<br>![[Polar_coordinates_integration_region_80%.png|450]]<br>By Jitse Niesen - Own work, created using Inkscape, Public Domain, [link](https://commons.wikimedia.org/w/index.php?curid=1680425)<br><br>When a region that is most easily expressed in polar coordinates has a [domain](Domain) that has a bound of a function that is not circular-adjacent, $f(x) = x^3$ for example, it is usually still easiest to compute the area by using polar coordinates. To do this, it is necessary to convert this function $f(x)$ to polar coordinates first, however. In this case we would have a limit for the domain as follows
+Because single integrals are unintuitive like this, it is always preferred to use double integrals to obtain areas for polar coordinates. <br><br>![[Polar_coordinates_integration_region_80%.png|450]]<br>By Jitse Niesen - Own work, created using Inkscape, Public Domain, [link](https://commons.wikimedia.org/w/index.php?curid=1680425)<br><br>When a region that is most easily expressed in polar coordinates has a [domain](Domain) that has a bound of a function that is not circular-adjacent, $f(x) = x^3$ for example, it is usually still easiest to compute the area by using polar coordinates. To do this, it is necessary to convert this function $f(x)$ to polar coordinates first, however. In this case we would have a limit for the domain as follows
 $$
 f(x) = x^3 \rightarrow f(r, \theta) = \left( r\cos(\theta) \right) ^3 = r^3 \cos^3 (\theta)
 $$
@@ -99,7 +98,7 @@ _Spherical coordinates_ define a point in space as:
 1. A radial distance ($r$) from the origin (also known as the pole).
 2. An angle ($\theta$) with the _polar axis_, a line, typically drawn to point __upward__ from the pole.
 3. An angle ($\phi$) around the _polar axis_.
-![[Kugelkoord_funnsyphereSphericalCoordinatesSwitchedAngles_80%.png|450]]<br>By Ag2gaeh - Own work, CC BY-SA 4.0, [link](https://commons.wikimedia.org/w/index.php?curid=134565435)
+<br>![[Kugelkoord_funnsyphereSphericalCoordinatesSwitchedAngles_80%.png|450]]<br>By Ag2gaeh - Own work, CC BY-SA 4.0, [link](https://commons.wikimedia.org/w/index.php?curid=134565435)
 
 > [!note] $\theta$ and $\phi$ are switched with the [definition on Wikipedia](https://en.wikipedia.org/wiki/Spherical_coordinate_system).
 
@@ -141,7 +140,7 @@ __[Home](!%20Calculus%20II%20Learning%20Overview)__
 _Status:_ #ripe
 
 ---
-# References:
+# Based On:
 
-1. R. A. Adams, Christopher Essex, _Calculus A Complete Course_, 9th ed.
+1. R. A. Adams, C. Essex, _Calculus A Complete Course_, 9th ed, CA.
 2. Wikipedia, _Polar coordinates_, [link](https://en.wikipedia.org/wiki/Polar_coordinate_system).

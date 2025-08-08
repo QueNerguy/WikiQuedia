@@ -16,20 +16,20 @@ These are used to find the $y$-value of functions at places where there is a per
 
 ### Types
 Theres a few different results one can get when calculating a limit.
-1. __Coordinates:__ When the limit is calculated for a perforation just a $y$-value comes out of the limit, giving you the coordinates of the missing point in the function.
-2. __Asymptotes:__ When the limit is calculated for a line that is approached, but never reached, as $x$ goes to $\pm\infty$ then this line is called an asymptote and the result takes the form of $\lim_{x\to\pm\infty}f\left(x\right)=ax+b$ (which forms a straight line).
+1. ___Coordinates:____ When the limit is calculated for a perforation just a $y$-value comes out of the limit, giving you the coordinates of the missing point in the function.
+2. ___Asymptotes:___ When the limit is calculated for a line that is approached, but never reached, as $x$ goes to $\pm\infty$ then this line is called an asymptote and the result takes the form of $\lim_{x\to\pm\infty}f\left(x\right)=ax+b$ (which forms a straight line).
 > [!note] Keep in mind
 > ___a.___ When the limit at a point $\lim_{x\to a}$ is calculated the result is almost always either __1:__ coordinates to a perforation, or __2:__ the coordinates of a vertical asymptote (a line $x=a$)
 > ___b.___ When the limit $\lim_{x\to\pm\infty}$ is calculated the result is almost always either __1:__ the y value of a horizontal asymptote, or __2:__ the function of a line that is the asymptote.
 
 ### Calculating Techniques
 When calculating a limit there are a few tricks that are applied.
-1. __Dividing by $\infty$:__ Because dividing by a large number means the result goes to $0$, dividing any number by $\infty$ makes the original number $0$.
+1. ___Dividing by $\infty$:___ Because dividing by a large number means the result goes to $0$, dividing any number by $\infty$ makes the original number $0$.
 	- Therefore when calculating $\lim_{x\to\pm\infty}\frac{x}{x+1}$ we divide by the highest power in the denominator, in this case $x^1$, which yields: $\lim_{x\to\pm\infty}\frac{\frac{x}{x}}{\frac{x}{x}+\frac{1}{x}}=\frac{1}{1+0}=1$. This means that the result is a horizontal asymptote $y=1$.<br>
 > [!tip] Note
 > If the numerator had had a higher power, the result woud've been $x$ instead of $1$, meaning a non horizontal line as an asymptote.
 
-2. __Factoring:__ If dividing by $\infty$ is inappropriate or not possible it is best to try to factor the denominator and numerator. The goal is to simplify the expression so that the fraction disappears, or at least changing the location of the perforation, so that it is possible to plug in the limit value directly and get a result. [This](Factoring%20and%20Fraction%20Decomposition.md) note goes more in depth on Factoring.
+2. ___Factoring:___ If dividing by $\infty$ is inappropriate or not possible it is best to try to factor the denominator and numerator. The goal is to simplify the expression so that the fraction disappears, or at least changing the location of the perforation, so that it is possible to plug in the limit value directly and get a result. [This](Factoring%20and%20Fraction%20Decomposition.md) note goes more in depth on Factoring.
 	- This is used most often when $x$ doesn't go to $\infty$ but instead approaches a value $a$.
 
 ### Edge cases
@@ -57,5 +57,5 @@ __[Home](!%20Calculus%20I%20Learning%20Overview.md)__
 _Status:_ #ripe
 
 ---
-# References:
-1. R. A. Adams, Christopher Essex, _Calculus A Complete Course_, 9th ed.
+# Based On:
+1. R. A. Adams, C. Essex, _Calculus A Complete Course_, 9th ed, CA.
