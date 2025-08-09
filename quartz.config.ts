@@ -44,7 +44,7 @@ const config: QuartzConfig = {
           darkgray: "#475339", // 3e4733
           dark: "#292f22",
           secondary: "#3e4733", // 475339
-          tertiary: "#84a59d",
+          tertiary: "#853f44ff",
           highlight: "rgba(191, 201, 176, 0)", // was ooit 0.25 gamma
           textHighlight: "#fff23688",
         },
@@ -55,7 +55,7 @@ const config: QuartzConfig = {
           darkgray: "#d4d4d4",
           dark: "#ebebec",
           secondary: "#9bab85",
-          tertiary: "#84a59d",
+          tertiary: "#743c41ff",
           highlight: "rgba(143, 159, 169, 0)", // was ooit 0.15 gamma
           textHighlight: "#b3aa0288",
         },
