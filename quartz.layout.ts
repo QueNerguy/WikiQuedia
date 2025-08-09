@@ -1,5 +1,18 @@
 import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
+import { FileTrieNode } from './quartz/util/fileTrie';
+
+
+const explorerConfig = {
+  mapFn: (node: FileTrieNode) => {
+    // dont change name of root node
+    if (!node.isFolder) {
+      // set emoji for file/folder      
+        node.displayName = "§ " + node.displayName
+    }
+  },
+}
+
 
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
@@ -34,7 +47,7 @@ export const defaultContentPageLayout: PageLayout = {
         { Component: Component.Darkmode() },
       ],
     }),
-    Component.Explorer(),
+    Component.Explorer(explorerConfig),
   ],
   right: [
     Component.Graph(),
@@ -58,7 +71,7 @@ export const defaultListPageLayout: PageLayout = {
         { Component: Component.Darkmode() },
       ],
     }),
-    Component.Explorer(),
+    Component.Explorer(explorerConfig),
   ],
   right: [],
 }
