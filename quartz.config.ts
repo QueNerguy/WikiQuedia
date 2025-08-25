@@ -38,26 +38,26 @@ const config: QuartzConfig = {
       },
       colors: {
         lightMode: {
-          light: "#eeede5ff",
-          lightgray: "#c9cec1ff",
-          gray: "#9bab85",
-          darkgray: "#475339", // 3e4733
-          dark: "#292f22",
-          secondary: "#3e4733", // 475339
-          tertiary: "#853f44ff",
-          highlight: "rgba(191, 201, 176, 0)", // was ooit 0.25 gamma
-          textHighlight: "#fff23688",
+          light: "#eeede5ff",                                         // page background
+          lightgray: "#c9cec1ff",                                     // borders
+          gray: "#9bab85",                                            // graph links heavier borders
+          darkgray: "#475339", // 3e4733                              // body text
+          dark: "#292f22",                                            // header text and icons
+          secondary: "#81916e", // 3e4733// 475339                    // link coulour, current graph  node
+          tertiary: "#853f44ff",                                      // hover states and visited graph nodes
+          highlight: "rgba(191, 201, 176, 0)", // was ooit 0.25 gamma // internal link background, highlighted text, highlighted lines of code
+          textHighlight: "#fff23688",                                 // markdown highlighted text background
         },
         darkMode: {
-          light: "#161618",
-          lightgray: "#393639",
-          gray: "#646464",
-          darkgray: "#d4d4d4",
-          dark: "#ebebec",
-          secondary: "#9bab85",
-          tertiary: "#743c41ff",
-          highlight: "rgba(143, 159, 169, 0)", // was ooit 0.15 gamma
-          textHighlight: "#b3aa0288",
+          light: "#161618",                                           // page background
+          lightgray: "#393639",                                       // borders
+          gray: "#646464",                                            // graph links heavier borders
+          darkgray: "#d4d4d4",                                        // body text
+          dark: "#ebebec",                                            // header text and icons
+          secondary: "#9bab85",                                       // link coulour, current graph  node
+          tertiary: "#743c41ff",                                      // hover states and visited graph nodes
+          highlight: "rgba(143, 159, 169, 0)", // was ooit 0.15 gamma // internal link background, highlighted text, highlighted lines of code
+          textHighlight: "#b3aa0288",                                 // markdown highlighted text background
         },
       },
     },
