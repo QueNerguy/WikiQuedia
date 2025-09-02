@@ -14,11 +14,11 @@ $$
 $$
 ### Mathematical Formulation
 #### Real Gas
-Enthalpy is made up of the [internal energy](Internal%20Energy) and the [work](Work%20in%20Thermodynamics) of the system. Because enthalpy is always present, not just when comparing two states, both the internal energy and work compare from a [standard state](https://en.wikipedia.org/wiki/Standard_state), the zero state. The internal energy present in enthalpy is thus the change in internal energy from 0$K$ to the current state, and the work compares a 0 volume with the current volume. This is congruent with the definition of enthalpy as the amount of energy needed to reach it's current state[^mathfunny].
+Enthalpy is made up of the [internal energy](Internal%20Energy) and the [work](Work%20in%20Thermodynamics) of the system. Because enthalpy is always present, not just when comparing two states, both the internal energy and work compare from a [standard state](https://en.wikipedia.org/wiki/Standard_state), the zero state. The internal energy present in enthalpy is thus the change in internal energy from 0 $\text{K}$ to the current state, and the work compares a 0 volume with the current volume. This is congruent with the definition of enthalpy as the amount of energy needed to reach it's current state[^mathfunny].
 $$
 H = U + W
 $$
-It is important to understand that this $U$ is not the same as the general definition for internal energy, but the change in internal energy from 0$K$ to the current state, as mentioned before. The same goes for the work, $W$, above. <br>Therefore this formula is often instead rewritten[^mathfunny] as
+It is important to understand that this $U$ is not the same as the general definition for internal energy, but the change in internal energy from 0 $\text{K}$ to the current state, as mentioned before. The same goes for the work, $W$, above. <br>Therefore this formula is often instead rewritten[^mathfunny] as
 $$
 H = U + pV
 $$

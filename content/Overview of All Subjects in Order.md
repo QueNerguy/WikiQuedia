@@ -70,10 +70,12 @@ See below a list of every subject that has been or is being summarized, in order
 ---
 ### [Machine Elements](https://quenerguy.github.io/WikiQuedia/I-Notes/Machine-Elements/)
 - [Home Page](!%20Machine%20Elements%20Overview) <br>
+- [[Bolts and Screws - Strength]]
 - [[Gears]]
 - [[Motor and Drive Characteristics]]
 - [[Transmission Design]]
 - [[Spring Basics]]
+
 ---
 
 ### [Calculus II](https://quenerguy.github.io/WikiQuedia/I-Notes/Calculus-II/)

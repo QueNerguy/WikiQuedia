@@ -8,7 +8,7 @@ Tags: [[differentials]], [[calculus]], [[limits]] <br>25-01-2025
 # Differentiation
 Differentiating is the reciprocal of [integration](Integration.md), therefore a lot of  the same [quick rules](Rules%20of%20Thumb%20Integration) apply from integration, just in _reverse_. These rules I call _rules of thumb_.<br>Find the rules of thumb of differentiation [here](Rules%20of%20Thumb%20Differentiation).
 ### Geometrical Interpretation
-Differentiation is a form of taking a [limit](Calculating%20Limits.md). The interpretation of a derivative is the slope of a function at a certain point. <br>Computing the slope between two points is done by taking $\frac{\Delta y}{\Delta x}$, where we take the distance between two points in $y$ direction, and divide by the distance between those points in $x$ direction.<br><br>![[Wiki_slope_in_2d_80%.png|350]]<br>By Maschen - Own work, CC BY-SA 3.0, [link](https://commons.wikimedia.org/w/index.php?curid=27658172)<br><br>If we want to know the slope at a single point, however, we calculate the slope as the distance between two points ($\Delta y, \Delta x$) approaches 0, because if the distance between two points is 0, there is no second point and we have found the slope at single point. <br>To annotate the fact that the line segments of size $\Delta x$ now have a _0-length_, we denote these segments as $dx$ instead, making $\frac{\Delta y}{\Delta x}$ become $\frac{dy}{dx}$ in Leibniz notation. Think of $dx$ as an infinitesimally small (read: very very small) step in $x$ direction. A step $dx$ is called a [differential](https://en.wikipedia.org/wiki/Differential_(mathematics)). <br><br>Consider the following curve (black), where the slope is found at a certain point. Here, the line tangent to the curve is drawn, using the derivative to find the slope of the line. <br>You can think of the derivative as an expression, giving the direction of travel of the curve at every point. Fill in the coordinates of a point to find the slope at that point. <br><br>![[Tangent_to_a_curve_80%.png|300]]<br>By Jacj at English Wikipedia / Later versions were uploaded by Oleg Alexandrov at en.wikipedia. - Transferred from en.wikipedia to Commons., Public Domain, [link](https://commons.wikimedia.org/w/index.php?curid=2068616)<br>
+Differentiation is a form of taking a [limit](Calculating%20Limits.md). The interpretation of a derivative is the slope of a function at a certain point. <br>Computing the slope between two points is done by taking $\frac{\Delta y}{\Delta x}$, where we take the distance between two points in $y$ direction, and divide by the distance between those points in $x$ direction.<br><br>![[Wiki_slope_in_2d_80%.png|350]]<br>By Maschen - Own work, CC BY-SA 3.0, [link](https://commons.wikimedia.org/w/index.php?curid=27658172)<br><br>If we want to know the slope at a single point, however, we calculate the slope as the distance between two points ($\Delta y, \Delta x$) approaches 0, because if the distance between two points is 0 the second point is at the location of the first point, meaning we have found the slope at single point. To annotate the fact that the line segments of size $\Delta x$ now have a _0-length_, we denote these segments as $dx$ instead, making $\frac{\Delta y}{\Delta x}$ become $\frac{dy}{dx}$ in Leibniz notation. Think of $dx$ as an infinitesimally small (read: very very small) step in $x$ direction[^ermackchually]. The operator $dx$ is called a [differential](https://en.wikipedia.org/wiki/Differential_(mathematics)). <br><br>Consider the following curve (black), where the slope is found at a certain point. Here, the line tangent to the curve is drawn, using the derivative to find the slope of the line. You can think of the derivative as an expression, giving the direction of travel of the curve at every point. Fill in the coordinates of a point to find the slope at that point. <br><br>![[Tangent_to_a_curve_80%.png|300]]<br>By Jacj at English Wikipedia / Later versions were uploaded by Oleg Alexandrov at en.wikipedia. - Transferred from en.wikipedia to Commons., Public Domain, [link](https://commons.wikimedia.org/w/index.php?curid=2068616)<br>
 > [!note] Keep in Mind
 > In this wiki it is usually preferred to write the more common $\frac{d}{dx}$ operator as $D_x$ or simply $D$ instead. 
 > $D_x[f]$ means the derivative of $f$ with respect to $x$.
@@ -32,19 +32,19 @@ The derivative of a function $f$ gives the slope of the function at a point. Tak
 3. ___$D\left\lbrack f\left(x\right)\right\rbrack$___ or ___$D_{}^{1}\left\lbrack f\left(x\right)\right\rbrack$___ or in the case of multivariable calculus[^partdiff]: __$D_{x}^{1}\left\lbrack f\left(x\right)\right\rbrack$__. The last notation means differentiating with respect to $x$. To increase the amount of times differentiated, increase the power. It is best to always include the power $1$ in the term to avoid confusion with potential other $D$ terms.
 #### Computational Rules
 When computing derivatives, there's three rules that always apply. 
-##### Product rule
+##### Product Rule
 When two functions of $x$ in multiplication both need differentiating with respect to $x$, the product rule is applied[^differentiationproduct].
 $$
 D_{x}\left\lbrack f\left(x\right)\cdot g\left(x\right)\right\rbrack=f^{\prime}\left(x\right)\cdot g\left(x\right)+f\left(x\right)\cdot g^{\prime}\left(x\right)
 $$
 An example of such a case would be $D_{x}^{1} [x^{2} \cdot \sin(x)]$, which evaluates to $2x \sin(x) + x^2 \cos(x)$.
-##### Chain rule
+##### Chain Rule
 When a variable is enclosed in a different function which depends on that variable, for example $\sin\left(x\right)$ the differentiating process follows the _chain rule_[^differentiationchain].
 $$
 D_{x}\left\lbrack f\left(g\left(x\right)\right)\right\rbrack=f^{\prime}\left(g\left(x\right)\right)\cdot g^{\prime}\left(x\right)
 $$
 An example of such a case would be $D_x [\sin(x^2)]$, which evaluates to $\cos(x^2) \cdot 2x$.
-##### Inverse function rule
+##### Inverse Function Rule
 When a fraction is to be differentiated, the rule to differentiate is
 $$
 D_{x}\left\lbrack\frac{g\left(x\right)}{f\left(x\right)}\right\rbrack=\frac{nat-tan}{n^{2}}
@@ -99,6 +99,7 @@ _Status:_ #ripe
 [^extremum]: An extremum is the greatest value a graph reaches compared to the points to the left and right. This could be either __1:__ a local extreme, meaning that there might be other more extreme values on the graph, but this point is still higher than it's surrounding points. There can be infinite local extremes. Or __2:__ a global extreme. This is where the graph of the function reaches its absolute extreme. There can be only two global extremes, a minimum and a maximum value that no other point reaches. <br>See: [Wikipedia - Maximum and minimum](https://en.wikipedia.org/wiki/Maximum_and_minimum).
 [^differentiationchain]: Wikipedia, *Differentiation rules*, _Chain rule_, [link](https://en.wikipedia.org/wiki/Differentiation_rules#Chain_rule).
 [^differentiationproduct]: Wikipedia, *Differentiation rules*, _Product rule_, [link](https://en.wikipedia.org/wiki/Differentiation_rules#Product_rule).
+[^ermackchually]: *Technically speaking* this isn't the correct way to describe these derivatives. The $dy/dx$ is an operator onto itself and can't be broken up into pieces if we want to be completely rigorous. However, it is still possible to *act* as if it is a fraction. In essence the treatment of the $dy/dx$ operator as a fraction made up of differential $dy$ and $dx$ avoids using the [Jacobian matrix](Jacobian%20Matrix) to arrive at the same final form.
 1. R. A. Adams, C. Essex, _Calculus A Complete Course_, 9th ed, CA.
 2. Openstax, _Calculus Volume 1_, [link](https://openstax.org/details/books/calculus-volume-1).
 3. Openstax, _Calculus Volume 2_, [link](https://openstax.org/details/books/calculus-volume-2).

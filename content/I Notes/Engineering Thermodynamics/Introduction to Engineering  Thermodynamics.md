@@ -10,7 +10,7 @@ tags: [[thermodynamics]], [[energy balance]]     <br>14-07-2025
 _Thermodynamics_ is a branch of physics that studies the transfer of energies such as [heat](Heat) and [work](Work) in systems. <br>It builds our understanding of systems that exchange energy, systems that use heat and temperature to generate power, such as a combustion engine, and systems that regulate heat, like a refrigerator or AC. Engineering thermodynamics offers a more _macro view_ of these systems. It is used to calculate the energies at the equilibrium states, meaning it can be used to ascertain the state of a system at the beginning and end of every process.
 
 >[!warning]
->Always use SI units like $\text{[Pa]}$ instead of $\text{[bar]}$, and $\text{[K]}$ instead of $\text{[}\degree \text{C]}$ or $\text{[} \degree \text{F]}$
+>Always use SI units like $\text{Pa}$ instead of $\text{bar}$, and $\text{K}$ instead of $\degree \text{C}$ or $\degree \text{F}$
 
 
 ## Introduction
@@ -91,10 +91,49 @@ q = \frac{Q}{m}
 $$
 Here, we have $Q$, the [heat](Heat), $m$, the mass, and $q$, the **specific heat**. <br>Specific heat means the heat that is independent of system size. <br>The same can be done with any extensive property, volume $V$ becomes specific volume $\nu$[^whynu], heat capacity $C$ becomes specific heat capacity $c$, etc.
 ### Important Properties
-The most important part of understanding thermodynamics is understanding a few concepts and how they interact with each other. The formulas that relate them are only a fleshed out mathematical explanation of the physics. <br>Below is a list of properties that are instrumental in thermodynamics. Each of these properties has their own page with more information than is listed here.
+To be able to perform thermodynamic computations we need to understand the following properties, and how they interact. Understanding the way the energy flows in a system and how the properties interact is the most important part of thermodynamics. Being comfortable with this will make using the math that is associated with these flows much more intuitive.
+1. ___[[Heat]] ($Q$)___
+2. ___[Work](Work%20In%20Thermodynamics) ($W$)___
+3. ___[[Internal Energy]] ($U$)___
+4. ___[[Enthalpy]] ($H$)___
+5. ___[[Entropy]] ($S$)___
+6. Heat Capacity
+7. Quality
+#### Terminology
+No notes here
+1. adiabatic
+2. etc.
+### Relations or Something
+
+
+### Types of Systems
+1. Nozzle
+2. Turbine
+3. Pump / Compressor
+4. Heat Exchanger
+5. Throttler
+
+### Thermodynamic Cycles
+These are generally idealized and stuff
+1. Reversible /  Irreversible cycles
+2. Power cycles / carnot cycle
+3. refrigeration cycles / heat pump cycles
+4. 
+
+
+
+
+
+
+%%
+OLD TEXT, MAY BE REINSERTED, HAVENT DECIDED YET
+
+
+Below is a list of properties that are instrumental in thermodynamics. Each of these properties has their own page with more information than is listed here.
 1. ___[[Heat]] $[Q]$:___ In thermodynamics heat carries a slightly different meaning than it does in daily conversation. An extensive property, heat measures the difference in energy in a system. The energy in question is energy that transfers a certain way, through methods like conduction, radiation, friction[^wikiquote] etc. <br>As heat is a measure of __change__ in energy, it only emerges when comparing two system states. <br>Heat is a _path variable_, because it may not go to zero when the system returns to it's initial state. <br>Heat is **positive** when it is **added to** the system, as it flows **into** the system.
 2. ___[Work](Work%20In%20Thermodynamics) $[W]$:___ Work is an extensive property that measures a change in energy as the system moves[^extrawork]. Work is produced by changing the size of the system, thus work is only done when the volume of the system changes, like a piston in a combustion engine, or a component is set in motion, like in a compressor%%LINKJE%%. <br>As work is a measure of __change__ in energy, it only emerges when comparing two system states. <br>Work is a _path variable_, because it may not go to zero when the system returns to it's initial state. <br>Work is **positive** when it is **done by** the system, as it flows **out of** the system.
-3. ___[Internal energy](Internal%20Energy) $[U]$:___ Internal energy is an extensive property that measures a change in kinetic energy as the temperature of the system changes. It measures the kinetic energy necessary to bring the molecules in a fluid from rest to the current state. <br>As Internal energy is a measure of __change__ in kinetic energy, it only emerges when comparing two system states. <br>Internal energy is a _state variable_, because it will always go to zero when the system returns to it's initial state. <br>Internal energy is **always positive**.
+3. ___[Internal energy](Internal%20Energy) $[U]$:___ Internal energy is an extensive property that measures a change in kinetic energy as the temperature of the system changes. It measures the kinetic energy necessary to bring the molecules in a fluid from rest to the current state. As Internal energy is a measure of __<br>Internal energy is always positive.__
+%%
 
 
 
