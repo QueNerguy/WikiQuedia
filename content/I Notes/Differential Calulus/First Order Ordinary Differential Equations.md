@@ -110,7 +110,7 @@ y = e^{-\int a dx} \left[ \int \left( e^{\int adx} b \right) dx + C \right]
 $$
 %%
 #### Substitution Method
-Some equations don't conform themselves to either form discussed above. To solve these types of equations we can substitute parts of the equations for $u$ or $v$ etc. and see if we can rewrite into a form that resembles either a linear or a separable equation.<br><br>For example let us consider the equation[^sourcemath2]
+Some equations don't conform themselves to either form discussed above. To solve these types of equations we can substitute parts of the equations for $u$ or $v$ etc. and see if we can rewrite into a form that resembles either a *linear* or a *separable* equation.<br><br>For example let us consider the equation[^sourcemath2]
 $$
 \frac{dy}{dx} = (x + y + 3)^2
 $$
@@ -131,13 +131,13 @@ $$
 $$
 This equation can be solved as a [separable equation](#Separable%20Equations)[^solve].
 #### Boundary Value Problems
-The solutions to the equations obtained in the chapters above both contained a constant $C$ due to the use of an integral. These solutions are known as *general solutions*[^stack] They are true in all cases but are not specific yet. The intersection with the $y$-axis isn't defined yet so an equation like this can assume any value at any point. If we want to find a solution for a single line we need to define a point the line passes through.<br>For example our previous expression $y = Ce^{-3x^2}$ could have an initial value $y_0$ that is
+The solutions to the equations obtained in the chapters above both contained a constant $C$ due to the use of an integral. These solutions are known as *general solutions*[^stack] They are true in all cases but not specific yet. The intersection with the $y$-axis isn't defined yet so an equation like this can assume any value at any point. If we want to solve for a single line we need to define a point the line passes through.<br>For example our previous expression $y = Ce^{-3x^2}$ could have an initial value $y_0$ that is
 $$
-y\left( \frac{1}{2} \right) = 10
+y(0.5) = 10
 $$
-So at $x = 1/2$, $y = 10$. Substituting that into our formula we get
+So at $x = 0.5$, $y = 10$. Substituting that into our formula we get
 $$
-10 = Ce^{-3 \cdot \left(\frac{1}{2}\right)^2}
+10 = Ce^{-3 \cdot \left( 0.5 \right)^2}
 $$
 We can isolate $C$ to obtain
 $$
