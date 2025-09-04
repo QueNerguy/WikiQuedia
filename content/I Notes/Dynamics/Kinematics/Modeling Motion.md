@@ -9,26 +9,32 @@ tags: [[dynamics]], [[single particle]], [[kinematics]]     <br>03-09-2025
 Calculations following the equations outlined below, as well as their derivations rely heavily on [calculus I](!%20Calculus%20I%20Learning%20Overview) and make heavy use of [first order differential equations](First%20Order%20Ordinary%20Differential%20Equations).
 ## 1. Particle Motion
 We will try to understand particle motion through a 3D space. A particle that moves through a 3D space can move in any of the 3 directions in a linear motion. We understand particles as small points in space that are non-rotating. <br>Modeling particles is easier than modeling rigid bodies *because* we neglect the rotation. Thus, whenever possible, we will try to reduce any object that we wish to model to just a particle moving through space.
-### Basic Equations
-Any object in a 3D space has a position, a speed, which can be 0, and an acceleration, which can also be 0. These three quantities can  be related using differential calculus%%LINKJE DIFF CALC HOMEPAGE%%.
+### Velocity
+Any object in a 3D space has a position, a speed, which can be 0, and an [acceleration](#Acceleration), which can also be 0. These three quantities can  be related using differential calculus%%LINKJE DIFF CALC HOMEPAGE%%. <br>In the case of velocity we have
 $$
 v = \frac{ds}{dt} = \dot{s}
 $$
+Using [integration](Integration) we can go from knowing velocity or acceleration data to understanding the position of a particle, and the other way around. <br>Resulting from the above equation we can define the [directly integrable](First%20Order%20Ordinary%20Differential%20Equations#Separable%20Equations) form of the first relation as
+$$
+ds = vdt
+$$
+The equations above are always applicable, irrespective of the chosen [coordinate system](#Coordinate%20Systems), as a result of how velocity has been defined.
+### Acceleration
+Similar to [velocity](#Velocity), we define acceleration using [differential equations](First%20Order%20Ordinary%20Differential%20Equations).
 $$
 a = \frac{dv}{dt} = \dot{v} = \ddot{s}
 $$
-Using [integration](Integration) we can go from knowing acceleration data to understanding the position of a particle, and the other way around. <br>The equations above are true, irrespective of the chosen coordinate system, as a result of how velocity and acceleration have been defined. <br>Resulting from the above equations we can define one more relation, by [separating the differentials](First%20Order%20Ordinary%20Differential%20Equations#Separable%20Equations)[^explanmath], namely
+Using [integration](Integration) and the equation for [velocity](#Velocity) above we can go from knowing acceleration data to understanding the position of a particle, and the other way around. <br>Resulting from the above equations we can define one more relation, by [separating the differentials](First%20Order%20Ordinary%20Differential%20Equations#Separable%20Equations)[^explanmath], namely
 $$
 ads = vdv
 $$
 And the [directly integrable](First%20Order%20Ordinary%20Differential%20Equations#Separable%20Equations) form of the first relations
 $$
-ds = vdt
-$$
-$$
 dv = adt
 $$
-#### Vector Equations
+The equations above are always applicable, irrespective of the chosen [coordinate system](#Coordinate%20Systems), as a result of how acceleration has been defined. 
+
+### Computing With Vectors
 Taking the [derivative](Differentiation) of a vector is similar to taking the [derivative of a scalar](Differentiation#Definition). This is easy to see when we break a vector up into it's cardinal directions
 $$
 \vec{s} = s_x \hat{i} + s_y \hat{j} + s_z \hat{k}
@@ -54,11 +60,6 @@ d\vec{v} = \vec{a}dt
 $$
 %%
 
-### Coordinate Systems
-Depending on what kind of system we are trying to analyze our choice of coordinate system can greatly ease the load of calculations. Each of these coordinate systems will have their own system of equations to solve, all of which result from the [basic equations](#Basic%20Equations) listed above.
-1. ***[Cartesian Coordinates](Motion%20in%20Cartesian%20Coordinates.md):*** This coordinate system lends itself well to **rectilinear motion**. Any motion that follows a path that somewhat follows a straight line without deviating too much can be solved most easily using Cartesian coordinates.
-2. ***[Normal-Tangent Coordinates](Motion%20in%20Normal-Tangent%20Coordinates):*** This coordinate system lends itself well to **curvilinear motion**. Any motion that has strong bends, even circular paths, can be solved well with n-t coordinates.
-3. ***[Polar Coordinates](Motion%20in%20Polar%20Coordinates):*** This coordinate system lends itself well to **circular motion**. Any motion that resembles a circular path can be solved most easily using polar coordinates. 
 
 
 ### Relative Motion
@@ -77,6 +78,12 @@ $$
 $$
 \vec{a}_A = \vec{a}_B + \vec{a}_{A/B}
 $$
+
+### Coordinate Systems
+Depending on what kind of system we are trying to analyze our choice of coordinate system can greatly ease the load of calculations. Each of these coordinate systems will have their own system of equations to solve, all of which result from the [basic equations](#Basic%20Equations) listed above.
+1. ***[Cartesian Coordinates](Motion%20in%20Cartesian%20Coordinates.md):*** This coordinate system lends itself well to **rectilinear motion**. Any motion that follows a path that somewhat follows a straight line without deviating too much can be solved most easily using Cartesian coordinates.
+2. ***[Normal-Tangent Coordinates](Motion%20in%20Normal-Tangent%20Coordinates):*** This coordinate system lends itself well to **curvilinear motion**. Any motion that has strong bends, even circular paths, can be solved well with n-t coordinates.
+3. ***[Polar Coordinates](Motion%20in%20Polar%20Coordinates):*** This coordinate system lends itself well to **circular motion**. Any motion that resembles a circular path can be solved most easily using polar coordinates. 
 
 
 ### Inventory
@@ -108,29 +115,16 @@ $$
 
 ## 2. Rigid Body Motion
 Rigid body motion is a continuation of [particle motion](#Particle%20Motion). Because there are multiple particles in a body however, we may see parts of the body translate at a different rate. If the bottom of the body moves slower than the top, or even in the opposite direction we perceive the rigid body as rotating. We thus see an [angular velocity](Angular%20Velocity) and an [angular acceleration](Angular%20Acceleration).
-### Basic Equations
-For an object that is rotating at an angle $\theta$ we can construct our basic equations in the same way that we did for translation of particles. 
+### Angular Velocity
+For an object that is rotating at an angle $\theta$ we can construct the [angular velocity](Angular%20Velocity) much in the same way that we did for translation of *particles*. 
 $$
 \omega = \frac{d\theta}{dt} = \dot{\theta}
 $$
-$$
-\alpha = \frac{d\omega}{dt} = \dot{\omega} = \ddot{\theta}
-$$
-Solving for $dt$ and substituting yields
-$$
-\alpha d\theta = \omega d\omega
-$$
-Notice the similarities to $ads = vdv$. <br>We can furthermore reorder the first equations to obtain
+We can reorder the equation to obtain the [directly integrable](First%20Order%20Ordinary%20Differential%20Equations#Separable%20Equations) form
 $$
 d\theta = \omega dt
 $$
-$$
-d\omega = \alpha dt
-$$
-All [angular velocities](Angular%20Velocity) and an [angular accelerations](Angular%20Acceleration) are the **same for any point** on the body.<br><br>The angular velocity and angular acceleration vectors point perpendicular to the plane they affect, meaning that if they affect the $x, y$-plane (basis vectors $\hat{i}$ and $\hat{j}$), they point in the $z$ direction, with basis vector $\hat{k}$.<br>This can also be seen from the use of the cross-product below, $v$ and $r$ are in the same plane ($x, y$), but as a result of the cross-product $\omega$ will point along the $z$-axis.
-#### Translation to Rotation
-##### Velocity
-As stated above, a difference in speed of particles on the body causes a rotation of the whole body. To find the velocity $v$ from an [angular velocity](Angular%20Velocity) $\omega$ we find[^unit]
+All angular velocities, and subsequently [angular accelerations](Angular%20Acceleration), are the **same for any point** on the body.<br><br>The angular velocity vector points perpendicular to the plane motion happens in, meaning that if motion happens in the $x, y$-plane (basis vectors $\hat{i}$ and $\hat{j}$), $\vec{\omega}$ points in the $z$ direction, with basis vector $\hat{k}$.<br>As stated above, a difference in speed of particles on the body causes a rotation of the whole body. To find the velocity $v$ from an angular velocity $\omega$ we find[^unit]
 $$
 v = \omega \cdot r
 $$
@@ -139,34 +133,53 @@ $$
 $$
 Where $\vec{r}$ is the distance between our origin and the point whose velocity we solve for. 
 The order of the cross-product is important. If we swap $\vec{\omega}$ and $\vec{r}$ around we get $\vec{r} \times \vec{\omega} = -\vec{v}$.
-##### Acceleration
-To find the acceleration $a$ from an [angular acceleration](Angular%20Acceleration) $\alpha$ we take the [derivative](Differentiation) of the velocity, to find[^math2]
+
+
+##### Instant Center of Rotation
+Every rotating object has a single axis around which is the rotation takes place. This is the axis at which the angular velocity acts. This axis is named the [instant center of rotation](Instant%20Centre%20of%20Rotation) (ICR), or the *instant center of zero velocity*. <>As the name indicates, the ICR is the only point (not necessarily on the body) where the velocity is 0, the point only has an angular velocity. For non-slipping wheels, for example, the ICR would be at the contact point where no slip occurs, as no slip means no velocity.<br><br>Finding the ICR ($C$ in the figure below) is most easily done graphically first. Using geometry we can find the exact location afterward. To find it:
+1. Draw two lines through the origins of the velocity vectors, perpendicular to the direction of the vector.
+2. If necessary, draw a single line, connecting the tips of the velocity vectors.
+3. Find the **intersection** between the lines, this is the ICR.
+
+![[illustration_finding_ICR_80.png|650]]<br>source: *Engineering Mechanics Dynamics*, p352, 8th ed.<br><br>Finding the ICR requires solving for the velocity of **two** points on arbitrary locations on, or even off the body. The ICR might be obvious from the get go, like for non-slipping wheels as mentioned earlier.
+### Angular Acceleration
+For an object that is rotating at an angle $\theta$ we can construct the [angular acceleration](Angular%20Acceleration) much in the same way that we did for translation of *particles*. 
+$$
+\alpha = \frac{d\omega}{dt} = \dot{\omega} = \ddot{\theta}
+$$
+We can reorder the equation to obtain the [directly integrable](First%20Order%20Ordinary%20Differential%20Equations#Separable%20Equations) form
+$$
+d\omega = \alpha dt
+$$
+Using our equation for [angular velocity](Angular%20Velocity), $d\theta = \omega dt$, solving for $dt$ and substituting yields
+$$
+\alpha d\theta = \omega d\omega
+$$
+Notice the similarities to $ads = vdv$. <br>All angular velocities, and subsequently angular accelerations, are the **same for any point** on the body.<br><br>The angular acceleration vector points perpendicular to the plane motion happens in, meaning that if motion happens in the $x, y$-plane (basis vectors $\hat{i}$ and $\hat{j}$), $\vec{\alpha}$ points in the $z$ direction, with basis vector $\hat{k}$.<br>To find the acceleration $a$ from the angular acceleration $\alpha$ we take the [derivative](Differentiation) of the velocity, to find[^math2]
 $$
 \vec{a} = \vec{\omega} \times \vec{v} + \vec{\alpha} \times \vec{r}
 $$
 $$
 \vec{a} = \dot{\vec{\theta}} \times \vec{v} + \ddot{\vec{\theta}} \times \vec{r}
 $$
+##### Instant Center of Zero Acceleration
+[info paper](https://ccsenet.org/journal/index.php/mas/article/view/1278)%%NEEDS TEXT IF I WANT TO WRITE IT SOMEDAY%%
+<br>Instant center of zero acceleration does exist but is currently out of scope for this wiki/course/goober.
 
-
-### Coordinate Systems
-Throughout the calculations we may transition between coordinate systems, or use multiple at the same time. For example, the [normal-tangent](Motion%20in%20Normal-Tangent%20Coordinates) coordinate system is used often to look at relative motion of points on the body.
-1. ***[Cartesian Coordinates](Motion%20in%20Cartesian%20Coordinates.md):*** This coordinate system lends itself well to **rectilinear motion**. Any motion that follows a path that somewhat follows a straight line without deviating too much can be solved most easily using Cartesian coordinates.
-2. ***[Normal-Tangent Coordinates](Motion%20in%20Normal-Tangent%20Coordinates):*** This coordinate system lends itself well to **curvilinear motion**. Any motion that has strong bends, even circular paths, can be solved well with n-t coordinates.
-3. ***[Polar Coordinates](Motion%20in%20Polar%20Coordinates):*** This coordinate system lends itself well to **circular motion**. Any motion that resembles a circular path can be solved most easily using polar coordinates. 
-#### Relative Coordinate Systems
 
 
 ### Relative Motion 
 Continuing [relative motion](Relative%20Motion) for particles, we generalize the expressions to also include possible rotation. Because of a difference in velocity it is possible for a point $A$ to rotate relative to point $B$. In other words: when using $B$ as our reference frame and considering it locked in place, we perceive $A$ to be rotating. <br><br>![[dynamics_relative_rotation_AtoB_80.png|650]]<br>source: *Engineering Mechanics Dynamics*, p339, 8th ed.
 
-#### Velocity
+#### Relative Velocity
 Using our previous equation $\vec{v} = \vec{\omega} \times \vec{r}$ in place for the relative velocity equation $\vec{v}_A = \vec{v}_B + \vec{v}_{A/B}$, we get
 $$
 \vec{v}_A = \vec{v}_B + \vec{\omega} \times \vec{r}_{A/B}
 $$
 We can, if need be, substitute any velocity term in this equation for $\vec{\omega} \times \vec{r}$.
-#### Acceleration
+
+
+#### Relative Acceleration
 Because for rotations we are dealing with a *curvilinear* path, we will be highlighting the [normal-tangent](Motion%20in%20Normal-Tangent%20Coordinates) coordinate system. Because we are dealing with vector math as well, these equations generalize to every coordinate system. <br>We rewrite the equation  for relative acceleration acquired above to accommodate the $n$-$t$ coordinate system.
 $$
 \vec{a}_A = \vec{a}_B + \left( \vec{a}_{A/B} \right)_n + \left( \vec{a}_{A/B} \right)_t
@@ -190,6 +203,17 @@ $$
 $$
 \left( \vec{a}_{A/B} \right)_t = \vec{\alpha} \times \vec{r}_{A/B}
 $$
+#### Relative Coordinate Systems
+Some situations benefit from introducing a relative coordinate system. The way this takes place is
+
+%%
+### Coordinate Systems
+Throughout the calculations we may transition between coordinate systems, or use multiple at the same time. For example, the [normal-tangent](Motion%20in%20Normal-Tangent%20Coordinates) coordinate system is used often to look at relative motion of points on the body.
+1. ***[Cartesian Coordinates](Motion%20in%20Cartesian%20Coordinates.md):*** This coordinate system lends itself well to **rectilinear motion**. Any motion that follows a path that somewhat follows a straight line without deviating too much can be solved most easily using Cartesian coordinates.
+2. ***[Normal-Tangent Coordinates](Motion%20in%20Normal-Tangent%20Coordinates):*** This coordinate system lends itself well to **curvilinear motion**. Any motion that has strong bends, even circular paths, can be solved well with n-t coordinates.
+3. ***[Polar Coordinates](Motion%20in%20Polar%20Coordinates):*** This coordinate system lends itself well to **circular motion**. Any motion that resembles a circular path can be solved most easily using polar coordinates. 
+
+%%
 
 
 ### Inventory
@@ -221,10 +245,10 @@ $$
 > ($\vec{r}$ indicates the distance from $A$ to $B$. Read: $\vec{r}_{A/B}$)
 > - For **[Normal-Tangent coordinates](Motion%20in%20Normal-Tangent%20Coordinates)**
 > $$
-> \left( \vec{a}_{A/B} \right)_n = \vec{\omega} \times \left( \vec{\omega} \times \vec{r}_{A/B} \right)
+> \vec{a}_n = \vec{\omega} \times \left( \vec{\omega} \times \vec{r} \right)
 > $$
 > $$
-> \left( \vec{a}_{A/B} \right)_t = \vec{\alpha} \times \vec{r}_{A/B}
+> \vec{a}_t = \vec{\alpha} \times \vec{r}
 > $$
 
 
