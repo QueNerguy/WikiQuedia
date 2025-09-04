@@ -60,6 +60,49 @@ Depending on what kind of system we are trying to analyze our choice of coordina
 3. ***[Polar Coordinates](Motion%20in%20Polar%20Coordinates):*** This coordinate system lends itself well to **circular motion**. Any motion that resembles a circular path can be solved most easily using polar coordinates. 
 
 
+### Relative Motion
+When dealing with a moving reference frame, or comparing multiple objects from a single reference point we ascribe two motions to the object.
+1. ***Relative Motion:*** Perceived motion relative to the reference frame. For a car overtaking another on the highway the relative motion of the overtaking car as perceived from the other car could be 10 $\text{km/h}$, even though the overtaking car's speedometer may read 90 $\text{km/h}$. 
+2. ***Absolute Motion:*** The motion of the object compared to an absolute reference frame. In most cases this absolute reference frame would be the earth, but the computations work as long as every object uses the same *absolute* reference frame[^math1].
+
+To describe these motions we look at the position of our absolute reference frame, and make it our origin. The position vector then becomes
+$$
+\vec{s}_A = \vec{s}_B + \vec{s}_{A/B}
+$$
+The distance of $A$ from the origin is the distance of $B$ from the origin + the vector connecting $A$ to $B$, described as "*$A$ relative to $B$*". This is no more than connecting the vectors tip to tail. We arrive at $A$ by going to $B$ first. <br>We can [differentiate](Differentiation) this equation to obtain our equations for speed and acceleration.
+$$
+\vec{v}_A = \vec{v}_B + \vec{v}_{A/B}
+$$
+$$
+\vec{a}_A = \vec{a}_B + \vec{a}_{A/B}
+$$
+
+
+### Inventory
+> [!abstract] Inventory of the Formulas
+> - Basic equations
+> $$
+> ds = vdt
+> $$
+> $$
+> dv = adt
+> $$
+> $$
+> ads = vdv
+> $$
+> - Relative motion
+> $$
+> \vec{s}_A = \vec{s}_B + \vec{s}_{A/B}
+> $$
+> $$
+> \vec{v}_A = \vec{v}_B + \vec{v}_{A/B}
+> $$
+> $$
+> \vec{a}_A = \vec{a}_B + \vec{a}_{A/B}
+> $$
+
+
+
 
 %% TBCreated
 ## Rigid Body Motion
@@ -80,6 +123,7 @@ _Status:_ #sprout #missingLink
 ---
 # Based On:
 [^explanmath]: This is done by isolating $dt$ from the differential and substituting the result into the other equation. <br>$$v = \frac{ds}{dt}$$<br>$$dt = \frac{ds}{v}$$<br>$$a = \frac{dv}{dt} = \frac{dv}{\frac{ds}{v}} = \frac{dv}{ds} \cdot v$$<br>$$ads = vdv$$
+[^math1]: This can also be seen from the equations themselves. <br>If we take the *absolute* reference frame for the motion of object $A$ to be any object we would have <br>$$\vec{s}_A = \vec{s}_{\text{object}} + \vec{s}_{A/\text{object}}$$<br>If we choose our object to be the origin $\vec{s}_{\text{object}}$ becomes 0, and we have <br>$$\vec{s}_A = \vec{s}_{A/\text{object}}$$<br>We can do the same thing for the speed and acceleration, where we would have a 0-speed for our object, as that is the absolute reference frame. We can now compare any object $A$, or $B$, etc. to the reference frame and use the motion relative to the *absolute* reference frame as *absolute motion*.
 
 
 1. J. L. Meriam, L. G. Kraige, J. N. Bolton, *Engineering Mechanics Dynamics*, 8th ed, US.
