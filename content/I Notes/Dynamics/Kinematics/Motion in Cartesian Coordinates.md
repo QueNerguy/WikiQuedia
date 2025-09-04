@@ -51,7 +51,7 @@ $$
 
 ### Inventory
 > [!abstract] Inventory of the Formulas
-> - Coordinates
+> - **Coordinates**
 > $$
 > \vec{s}(s_x, s_y, s_z) = \begin{bmatrix} s_x \\ s_y \\ s_z \end{bmatrix} = s_x \hat{i} + s_y \hat{j} + s_z \hat{k}
 > $$

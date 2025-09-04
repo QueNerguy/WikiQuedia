@@ -64,14 +64,14 @@ Notice that when an object has a constant velocity, the tangential term disappea
 
 ### Inventory
 > [!abstract] Inventory of the Formulas
-> - Basic equations
+> - **Basic equations**
 > $$
 > ds = \rho d\beta
 > $$
 > $$
 > v = \rho \dot{\beta}
 > $$
-> - Coordinates
+> - **Coordinates**
 > $$
 > \vec{s}(s_n, s_t) = \begin{bmatrix} s_n \\ s_t \end{bmatrix} = s_n \hat{e}_n + s_t \hat{e}_t
 > $$

@@ -6,7 +6,7 @@ tags: [[dynamics]], [[single particle]], [[kinematics]]     <br>03-09-2025
 
 ---
 # Modeling Motion
-## Particle Motion
+## 1. Particle Motion
 We will try to understand particle motion through a 3D space. A particle that moves through a 3D space can move in any of the 3 directions in a linear motion. We understand particles as small points in space that are non-rotating. <br>Modeling particles is easier than modeling rigid bodies *because* we neglect the rotation. Thus, whenever possible, we will try to reduce any object that we wish to model to just a particle moving through space.
 ### Basic Equations
 Any object in a 3D space has a position, a speed, which can be 0, and an acceleration, which can also be 0. These three quantities can  be related using differential calculus%%LINKJE DIFF CALC HOMEPAGE%%.
@@ -14,7 +14,7 @@ $$
 v = \frac{ds}{dt} = \dot{s}
 $$
 $$
-a = \frac{dv}{dt} = \dot{v}
+a = \frac{dv}{dt} = \dot{v} = \ddot{s}
 $$
 Using [integration](Integration) we can go from knowing acceleration data to understanding the position of a particle, and the other way around. <br>The equations above are true, irrespective of the chosen coordinate system, as a result of how velocity and acceleration have been defined. <br>Resulting from the above equations we can define one more relation, by [separating the differentials](First%20Order%20Ordinary%20Differential%20Equations#Separable%20Equations)[^explanmath], namely
 $$
@@ -102,17 +102,130 @@ $$
 > $$
 
 
+---
 
 
-%% TBCreated
-## Rigid Body Motion
-
+## 2. Rigid Body Motion
+Rigid body motion is a continuation of [particle motion](#Particle%20Motion). Because there are multiple particles in a body however, we may see parts of the body translate at a different rate. If the bottom of the body moves slower than the top, or even in the opposite direction we perceive the rigid body as rotating. We thus see an [angular velocity](Angular%20Velocity) and an [angular acceleration](Angular%20Acceleration).
 ### Basic Equations
+For an object that is rotating at an angle $\theta$ we can construct our basic equations in the same way that we did for translation of particles. 
+$$
+\omega = \frac{d\theta}{dt} = \dot{\theta}
+$$
+$$
+\alpha = \frac{d\omega}{dt} = \dot{\omega} = \ddot{\theta}
+$$
+Solving for $dt$ and substituting yields
+$$
+\alpha d\theta = \omega d\omega
+$$
+Notice the similarities to $ads = vdv$. <br>We can furthermore reorder the first equations to obtain
+$$
+d\theta = \omega dt
+$$
+$$
+d\omega = \alpha dt
+$$
+All [angular velocities](Angular%20Velocity) and an [angular accelerations](Angular%20Acceleration) are the **same for any point** on the body.<br><br>The angular velocity and angular acceleration vectors point perpendicular to the plane they affect, meaning that if they affect the $x, y$-plane (basis vectors $\hat{i}$ and $\hat{j}$), they point in the $z$ direction, with basis vector $\hat{k}$.<br>This can also be seen from the use of the cross-product below, $v$ and $r$ are in the same plane ($x, y$), but as a result of the cross-product $\omega$ will point along the $z$-axis.
+#### Translation to Rotation
+##### Velocity
+As stated above, a difference in speed of particles on the body causes a rotation of the whole body. To find the velocity $v$ from an [angular velocity](Angular%20Velocity) $\omega$ we find[^unit]
+$$
+v = \omega \cdot r
+$$
+$$
+\vec{v} = \vec{\omega} \times \vec{r}
+$$
+Where $\vec{r}$ is the distance between our origin and the point whose velocity we solve for. 
+The order of the cross-product is important. If we swap $\vec{\omega}$ and $\vec{r}$ around we get $\vec{r} \times \vec{\omega} = -\vec{v}$.
+##### Acceleration
+To find the acceleration $a$ from an [angular acceleration](Angular%20Acceleration) $\alpha$ we take the [derivative](Differentiation) of the velocity, to find[^math2]
+$$
+\vec{a} = \vec{\omega} \times \vec{v} + \vec{\alpha} \times \vec{r}
+$$
+$$
+\vec{a} = \dot{\vec{\theta}} \times \vec{v} + \ddot{\vec{\theta}} \times \vec{r}
+$$
 
-#### Vector Equations
+
+### Coordinate Systems
+Throughout the calculations we may transition between coordinate systems, or use multiple at the same time. For example, the [normal-tangent](Motion%20in%20Normal-Tangent%20Coordinates) coordinate system is used often to look at relative motion of points on the body.
+1. ***[Cartesian Coordinates](Motion%20in%20Cartesian%20Coordinates.md):*** This coordinate system lends itself well to **rectilinear motion**. Any motion that follows a path that somewhat follows a straight line without deviating too much can be solved most easily using Cartesian coordinates.
+2. ***[Normal-Tangent Coordinates](Motion%20in%20Normal-Tangent%20Coordinates):*** This coordinate system lends itself well to **curvilinear motion**. Any motion that has strong bends, even circular paths, can be solved well with n-t coordinates.
+3. ***[Polar Coordinates](Motion%20in%20Polar%20Coordinates):*** This coordinate system lends itself well to **circular motion**. Any motion that resembles a circular path can be solved most easily using polar coordinates. 
+#### Relative Coordinate Systems
+
+
+### Relative Motion 
+Continuing [relative motion](Relative%20Motion) for particles, we generalize the expressions to also include possible rotation. Because of a difference in velocity it is possible for a point $A$ to rotate relative to point $B$. In other words: when using $B$ as our reference frame and considering it locked in place, we perceive $A$ to be rotating. <br><br>![[dynamics_relative_rotation_AtoB_80.png|650]]<br>source: *Engineering Mechanics Dynamics*, p339, 8th ed.
+
+#### Velocity
+Using our previous equation $\vec{v} = \vec{\omega} \times \vec{r}$ in place for the relative velocity equation $\vec{v}_A = \vec{v}_B + \vec{v}_{A/B}$, we get
+$$
+\vec{v}_A = \vec{v}_B + \vec{\omega} \times \vec{r}_{A/B}
+$$
+We can, if need be, substitute any velocity term in this equation for $\vec{\omega} \times \vec{r}$.
+#### Acceleration
+Because for rotations we are dealing with a *curvilinear* path, we will be highlighting the [normal-tangent](Motion%20in%20Normal-Tangent%20Coordinates) coordinate system. Because we are dealing with vector math as well, these equations generalize to every coordinate system. <br>We rewrite the equation  for relative acceleration acquired above to accommodate the $n$-$t$ coordinate system.
+$$
+\vec{a}_A = \vec{a}_B + \left( \vec{a}_{A/B} \right)_n + \left( \vec{a}_{A/B} \right)_t
+$$
+We can now substitute the equations for the acceleration in an $n$-$t$ coordinate system to obtain
+$$
+\vec{a}_A = \vec{a}_B + \omega ^2 r_{A/B} \hat{e}_n + \alpha r_{A/B} \hat{e}_t
+$$
+Alternatively, we could use our equation for acceleration, $\vec{a} = \vec{\omega} \times \vec{v} + \vec{\alpha} \times \vec{r}$, in place of $\vec{a}_{A/B}$. This would yield
+$$
+\vec{a}_A = \vec{a}_B + \vec{\omega} \times \vec{v}_{A/B} + \vec{\alpha} \times \vec{r}_{A/B}
+$$
+We can eliminate $\vec{v}$ from the equation by realizing $\vec{v} = \vec{\omega} \times \vec{r}$, and write the **eventual equation**
+$$
+\vec{a}_A = \vec{a}_B + \vec{\omega} \times \left( \vec{\omega} \times \vec{r}_{A/B} \right) + \vec{\alpha} \times \vec{r}_{A/B}
+$$
+We can conclude from this that **for an $n$-$t$ coordinate system** we have
+$$
+\left( \vec{a}_{A/B} \right)_n = \vec{\omega} \times \left( \vec{\omega} \times \vec{r}_{A/B} \right)
+$$
+$$
+\left( \vec{a}_{A/B} \right)_t = \vec{\alpha} \times \vec{r}_{A/B}
+$$
+
+
 ### Inventory
+> [!abstract] Inventory of the Formulas
+> - **Basic equations**
+> $$
+> d\theta = \omega dt
+> $$
+> $$
+> d\omega = \alpha dt
+> $$
+> $$
+> \alpha d\theta = \omega d\omega
+> $$
+> - **Translation to rotation**
+> $$
+> \vec{v} = \vec{\omega} \times \vec{r}
+> $$
+> $$
+> \vec{a} = \vec{\omega} \times \vec{v} + \vec{\alpha} \times \vec{r}
+> $$
+> - **Relative motion**
+> $$
+> \vec{v}_A = \vec{v}_B + \vec{\omega} \times \vec{r}
+> $$
+> $$
+> \vec{a}_A = \vec{a}_B + \vec{\omega} \times \left( \vec{\omega} \times \vec{r} \right) + \vec{\alpha} \times \vec{r}
+> $$
+> ($\vec{r}$ indicates the distance from $A$ to $B$. Read: $\vec{r}_{A/B}$)
+> - **[Normal-Tangent coordinates](Motion%20in%20Normal-Tangent%20Coordinates)**
+> $$
+> \left( \vec{a}_{A/B} \right)_n = \vec{\omega} \times \left( \vec{\omega} \times \vec{r}_{A/B} \right)
+> $$
+> $$
+> \left( \vec{a}_{A/B} \right)_t = \vec{\alpha} \times \vec{r}_{A/B}
+> $$
 
-%%
 
 ---
 __[Home](Example.md)__ %%NEEDS HOMEPAGE%%
@@ -124,6 +237,11 @@ _Status:_ #sprout #missingLink
 # Based On:
 [^explanmath]: This is done by isolating $dt$ from the differential and substituting the result into the other equation. <br>$$v = \frac{ds}{dt}$$<br>$$dt = \frac{ds}{v}$$<br>$$a = \frac{dv}{dt} = \frac{dv}{\frac{ds}{v}} = \frac{dv}{ds} \cdot v$$<br>$$ads = vdv$$
 [^math1]: This can also be seen from the equations themselves. <br>If we take the *absolute* reference frame for the motion of object $A$ to be any object we would have <br>$$\vec{s}_A = \vec{s}_{\text{object}} + \vec{s}_{A/\text{object}}$$<br>If we choose our object to be the origin $\vec{s}_{\text{object}}$ becomes 0, and we have <br>$$\vec{s}_A = \vec{s}_{A/\text{object}}$$<br>We can do the same thing for the speed and acceleration, where we would have a 0-speed for our object, as that is the absolute reference frame. We can now compare any object $A$, or $B$, etc. to the reference frame and use the motion relative to the *absolute* reference frame as *absolute motion*.
+[^math2]: The full computation is <br>$$\vec{a} = \frac{d}{dt} \left[ \vec{\omega} \times \vec{r} \right] = \dot{\vec{\omega}} \times \vec{r} + \vec{\omega} \times \dot{\vec{r}}$$<br>We can recognize $\dot{\vec{r}}$ as the definition of velocity $\vec{v}$, and write <br>$$\vec{a} = \dot{\vec{\omega}} \times \vec{r} + \vec{\omega} \times \vec{v}$$<br>$$\vec{a} = \vec{\omega} \times \vec{v} + \vec{\alpha} \times \vec{r}$$
+
+
+[^unit]: This can be inferred from comparing units: velocity has $\text{m/s}$, [angular velocity](Angular%20Velocity) has $\text{rad/s}$. Radians are an empty unit that's just a predefined amount, so we could just as well write $\text{3.2/s}$ or just $\text{s}^{-1}$. Thus to get $\text{m/s}$ we multiply with $\text{[m]}$, or distance $r$.
+
 
 
 1. J. L. Meriam, L. G. Kraige, J. N. Bolton, *Engineering Mechanics Dynamics*, 8th ed, US.

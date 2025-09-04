@@ -75,7 +75,7 @@ $$
 
 ### Inventory
 > [!abstract] Inventory of the Formulas
-> - Coordinates
+> - **Coordinates**
 > $$
 > \vec{s}(s_r, s_\theta) = \begin{bmatrix} s_r \\ 0 \end{bmatrix} = s_r \hat{e}_r = r\hat{e}_r
 > $$
