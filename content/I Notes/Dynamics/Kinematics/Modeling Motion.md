@@ -6,6 +6,7 @@ tags: [[dynamics]], [[single particle]], [[kinematics]]     <br>03-09-2025
 
 ---
 # Modeling Motion
+Calculations following the equations outlined below, as well as their derivations rely heavily on [calculus I](!%20Calculus%20I%20Learning%20Overview) and make heavy use of [first order differential equations](First%20Order%20Ordinary%20Differential%20Equations).
 ## 1. Particle Motion
 We will try to understand particle motion through a 3D space. A particle that moves through a 3D space can move in any of the 3 directions in a linear motion. We understand particles as small points in space that are non-rotating. <br>Modeling particles is easier than modeling rigid bodies *because* we neglect the rotation. Thus, whenever possible, we will try to reduce any object that we wish to model to just a particle moving through space.
 ### Basic Equations
@@ -80,7 +81,7 @@ $$
 
 ### Inventory
 > [!abstract] Inventory of the Formulas
-> - Basic equations
+> - **Basic equations**
 > $$
 > ds = vdt
 > $$
@@ -90,7 +91,7 @@ $$
 > $$
 > ads = vdv
 > $$
-> - Relative motion
+> - **Relative motion**
 > $$
 > \vec{s}_A = \vec{s}_B + \vec{s}_{A/B}
 > $$
@@ -218,7 +219,7 @@ $$
 > \vec{a}_A = \vec{a}_B + \vec{\omega} \times \left( \vec{\omega} \times \vec{r} \right) + \vec{\alpha} \times \vec{r}
 > $$
 > ($\vec{r}$ indicates the distance from $A$ to $B$. Read: $\vec{r}_{A/B}$)
-> - **[Normal-Tangent coordinates](Motion%20in%20Normal-Tangent%20Coordinates)**
+> - For **[Normal-Tangent coordinates](Motion%20in%20Normal-Tangent%20Coordinates)**
 > $$
 > \left( \vec{a}_{A/B} \right)_n = \vec{\omega} \times \left( \vec{\omega} \times \vec{r}_{A/B} \right)
 > $$
