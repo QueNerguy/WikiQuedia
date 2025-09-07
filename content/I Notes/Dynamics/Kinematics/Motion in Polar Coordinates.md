@@ -34,7 +34,7 @@ $$
 $$
 \vec{\textbf{v}}(v_r, v_\theta) = \dot{s}_r \hat{\textbf{e}}_r + s_r \dot{\hat{\textbf{e}}}_r
 $$
-To find $\dot{\hat{\textbf{e}}}_r$ we start by finding the infinitesimal changes in $\hat{\textbf{e}}_r$, so we can later divide by $dt$ and obtain our time derivative. <br><br>![[polar_coordinates_dynamics_differentiation1_80.png|450]]<br>source: *Engineering Mechanics Dynamics*, p69, 8th ed.<br><br>From the image above we can see that a step $d\hat{\textbf{e}}_r$ is in the positive $\theta$ direction, thus in the $\hat{\textbf{e}}_\theta$ direction. The length of a step $d\hat{\textbf{e}}_r$ is approximated by the arc-length, which is defined as the *radius*$\times$*the angle*. For the radius we use $\hat{\textbf{e}}_\theta$, because that is the direction $d\hat{\textbf{e}}_r$ points in, and for the small angle we use $d\theta$.
+To find $\dot{\hat{\textbf{e}}}_r$ we start by finding the infinitesimal changes in $\hat{\textbf{e}}_r$, so we can later divide by $dt$ and obtain our time derivative. <br><br>![[polar_coordinates_dynamics_differentiation1_80.png|450]]<br>source: *Engineering Mechanics Dynamics*, p69, 8th ed.<br><br>From the image above we can see that a step $d\hat{\textbf{e}}_r$ is in the positive $\theta$ direction, thus in the $\hat{\textbf{e}}_\theta$ direction. The length of a step $d\hat{\textbf{e}}_r$ is approximated by the arc-length, which is defined as the *radius*$\times$*angle*. For the radius we use $\hat{\textbf{e}}_\theta$, because that is the direction $d\hat{\textbf{e}}_r$ points in, and for the small angle we use $d\theta$.
 $$
 d\hat{\textbf{e}}_r = \hat{\textbf{e}}_\theta d\theta
 $$

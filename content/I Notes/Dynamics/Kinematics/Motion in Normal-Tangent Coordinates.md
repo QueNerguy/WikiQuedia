@@ -23,7 +23,7 @@ $$
 \vec{\textbf{s}}(s_n, s_t) = \begin{bmatrix} s_n \\ s_t \end{bmatrix} = s_n \hat{\textbf{e}}_n + s_t \hat{\textbf{e}}_t
 $$
 To define the changes in the path of the object we draw a circle tangent to the curve. 
-Any small change in position follows the arc of this circle. <br>As arc-length is defined as the *radius*$\times$*the angle*, for small changes in position, $ds$, we also see a small rotation $d \beta$.
+Any small change in position follows the arc of this circle. <br>As arc-length is defined as the *radius*$\times$*angle*, for small changes in position, $ds$, we also see a small rotation $d \beta$.
 $$
 ds = \rho d \beta
 $$
@@ -44,7 +44,7 @@ $$
 $$
 \vec{\textbf{a}}(a_n, a_t)  = \dot{v}\hat{\textbf{e}}_t + v \dot{\hat{\textbf{e}}}_t
 $$
-To find an expression for $\dot{\hat{\textbf{e}}}_t$ we once again use the circle tangent to the path. We want to find an expression for an infinitesimal step in $\hat{\textbf{e}}_t$ so we can divide this step by $dt$ to obtain our time derivative $\dot{\hat{\textbf{e}}}_t = \frac{d\hat{\textbf{e}}_t}{dt}$. As a step in the tangential direction ($d\hat{\textbf{e}}_t$) is defined as *radius*$\times$*the angle*, we now use $\hat{\textbf{e}}_n$ for the radial component and write
+To find an expression for $\dot{\hat{\textbf{e}}}_t$ we once again use the circle tangent to the path. We want to find an expression for an infinitesimal step in $\hat{\textbf{e}}_t$ so we can divide this step by $dt$ to obtain our time derivative $\dot{\hat{\textbf{e}}}_t = \frac{d\hat{\textbf{e}}_t}{dt}$. As a step in the tangential direction ($d\hat{\textbf{e}}_t$) is defined as *radius*$\times$*angle*, we now use $\hat{\textbf{e}}_n$ for the radial component and write
 $$
 d\hat{\textbf{e}}_t = \hat{\textbf{e}}_n d\beta
 $$
