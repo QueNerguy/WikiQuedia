@@ -1,5 +1,5 @@
 ---
-title: "Modeling Motion"
+title: Modeling Particle Motion
 draft: false
 ---
 tags: [[dynamics]], [[single particle]], [[kinematics]]     <br>03-09-2025
