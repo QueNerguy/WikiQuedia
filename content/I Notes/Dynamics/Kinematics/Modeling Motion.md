@@ -37,26 +37,26 @@ The equations above are always applicable, irrespective of the chosen [coordinat
 ### Computing With Vectors
 Taking the [derivative](Differentiation) of a vector is similar to taking the [derivative of a scalar](Differentiation#Definition). This is easy to see when we break a vector up into it's cardinal directions
 $$
-\vec{s} = s_x \hat{i} + s_y \hat{j} + s_z \hat{k}
+\vec{\textbf{s}} = s_x \hat{\textbf{i}} + s_y \hat{\textbf{j}} + s_z \hat{\textbf{k}}
 $$
 From here we can take the time derivative ($\vec{v}$) of $\vec{s}$ to get
 $$
-\vec{v} = \left( \dot{s}_x \hat{i} + s_x \dot{\hat{i}} \right) + \left( \dot{s}_y \hat{j} + s_y \dot{\hat{j}} \right) + \left( \dot{s}_z \hat{k} + s_z \dot{\hat{k}} \right)
+\textbf{v} = \left( \dot{s}_x \hat{\textbf{i}} + s_x \dot{\hat{\textbf{i}}} \right) + \left( \dot{s}_y \hat{\textbf{j}} + s_y \dot{\hat{\textbf{j}}} \right) + \left( \dot{s}_z \hat{\textbf{k}} + s_z \dot{\hat{\textbf{k}}} \right)
 $$
 $$
-\vec{v} = \dot{s}_x \hat{i} + \dot{s}_y \hat{j} + \dot{s}_z \hat{k} = \dot{\vec{s}}
+\vec{\textbf{v}} = \dot{s}_x \hat{\textbf{i}} + \dot{s}_y \hat{\textbf{j}} + \dot{s}_z \hat{\textbf{k}} = \dot{\vec{\textbf{s}}}
 $$
-The derivative of the unit vectors $\hat{i}$, $\hat{j}$, $\hat{k}$ is 0, because as unit vectors they always have a length of 1, independent of changes in time. They can thus be treated as a constant. <br>Resulting from the calculation we can see that $\vec{v} = \dot{\vec{s}}$, same as with scalars, where we know $v = \dot{s}$. Keep in mind that *time* is usually not treated as a vector, but instead as a scalar.
+The derivative of the unit vectors $\hat{\textbf{i}}$, $\hat{\textbf{j}}$, $\hat{\textbf{k}}$ is 0, because as unit vectors they always have a length of 1, independent of changes in time. They can thus be treated as a constant. <br>Resulting from the calculation we can see that $\vec{\textbf{v}} = \dot{\vec{\textbf{s}}}$, same as with scalars, where we know $v = \dot{s}$. Keep in mind that *time* is usually not treated as a vector, but instead as a scalar.
 
 %%<br><br>The basic equations in vector form are thus
 $$
-\vec{a}d\vec{s} = \vec{v}d\vec{v}
+\vec{\bf{a}}d\vec{\bf{s}} = \vec{\bf{v}}d\vec{\bf{v}}
 $$
 $$
-d\vec{s} = \vec{v}dt
+d\vec{\bf{s}} = \vec{\bf{v}}dt
 $$
 $$
-d\vec{v} = \vec{a}dt
+d\vec{\bf{v}} = \vec{\bf{a}}dt
 $$
 %%
 
@@ -69,14 +69,14 @@ When dealing with a moving reference frame, or comparing multiple objects from a
 
 To describe these motions we look at the position of our absolute reference frame, and make it our origin. The position vector then becomes
 $$
-\vec{s}_A = \vec{s}_B + \vec{s}_{A/B}
+\vec{\textbf{s}}_A = \vec{\textbf{s}}_B + \vec{\textbf{s}}_{A/B}
 $$
 The distance of $A$ from the origin is the distance of $B$ from the origin + the vector connecting $A$ to $B$, described as "*$A$ relative to $B$*". This is no more than connecting the vectors tip to tail. We arrive at $A$ by going to $B$ first. <br>We can [differentiate](Differentiation) this equation to obtain our equations for speed and acceleration.
 $$
-\vec{v}_A = \vec{v}_B + \vec{v}_{A/B}
+\vec{\textbf{v}}_A = \vec{\textbf{v}}_B + \vec{\textbf{v}}_{A/B}
 $$
 $$
-\vec{a}_A = \vec{a}_B + \vec{a}_{A/B}
+\vec{\textbf{a}}_A = \vec{\textbf{a}}_B + \vec{\textbf{a}}_{A/B}
 $$
 
 ### Coordinate Systems
@@ -100,13 +100,13 @@ Depending on what kind of system we are trying to analyze our choice of coordina
 > $$
 > - **Relative motion**
 > $$
-> \vec{s}_A = \vec{s}_B + \vec{s}_{A/B}
+> \vec{\textbf{s}}_A = \vec{\textbf{s}}_B + \vec{\textbf{s}}_{A/B}
 > $$
 > $$
-> \vec{v}_A = \vec{v}_B + \vec{v}_{A/B}
+> \vec{\textbf{v}}_A = \vec{\textbf{v}}_B + \vec{\textbf{v}}_{A/B}
 > $$
 > $$
-> \vec{a}_A = \vec{a}_B + \vec{a}_{A/B}
+> \vec{\textbf{a}}_A = \vec{\textbf{a}}_B + \vec{\textbf{a}}_{A/B}
 > $$
 
 
@@ -124,19 +124,19 @@ We can reorder the equation to obtain the [directly integrable](First%20Order%20
 $$
 d\theta = \omega dt
 $$
-All angular velocities, and subsequently [angular accelerations](Angular%20Acceleration), are the **same for any point** on the body.<br><br>The angular velocity vector points perpendicular to the plane motion happens in, meaning that if motion happens in the $x, y$-plane (basis vectors $\hat{i}$ and $\hat{j}$), $\vec{\omega}$ points in the $z$ direction, with basis vector $\hat{k}$.<br>As stated above, a difference in speed of particles on the body causes a rotation of the whole body. To find the velocity $v$ from an angular velocity $\omega$ we find[^unit]
+All angular velocities, and subsequently [angular accelerations](Angular%20Acceleration), are the **same for any point** on the body.<br><br>The angular velocity vector points perpendicular to the plane motion happens in, meaning that if motion happens in the $x, y$-plane (basis vectors $\hat{\textbf{i}}$ and $\hat{\textbf{j}}$), $\vec{\pmb{\omega}}$ points in the $z$ direction, with basis vector $\hat{\textbf{k}}$.<br>As stated above, a difference in speed of particles on the body causes a rotation of the whole body. To find the velocity $v$ from an angular velocity $\omega$ we find[^unit]
 $$
 v = \omega \cdot r
 $$
 $$
-\vec{v} = \vec{\omega} \times \vec{r}
+\vec{\textbf{v}} = \vec{\pmb{\omega}} \times \vec{\textbf{r}}
 $$
 Where $\vec{r}$ is the distance between our origin and the point whose velocity we solve for. 
-The order of the cross-product is important. If we swap $\vec{\omega}$ and $\vec{r}$ around we get $\vec{r} \times \vec{\omega} = -\vec{v}$.
+The order of the cross-product is important. If we swap $\vec{\pmb{\omega}}$ and $\vec{\textbf{r}}$ around we get $\bf \vec{r} \times \vec{\pmb{\omega}} = -\vec{v}$.
 
 
 ##### Instant Center of Rotation
-Every rotating object has a single axis around which is the rotation takes place. This is the axis at which the angular velocity acts. This axis is named the [instant center of rotation](Instant%20Centre%20of%20Rotation) (ICR), or the *instant center of zero velocity*. <>As the name indicates, the ICR is the only point (not necessarily on the body) where the velocity is 0, the point only has an angular velocity. For non-slipping wheels, for example, the ICR would be at the contact point where no slip occurs, as no slip means no velocity.<br><br>Finding the ICR ($C$ in the figure below) is most easily done graphically first. Using geometry we can find the exact location afterward. To find it:
+Every rotating object has a single axis around which is the rotation takes place. This is the axis at which the angular velocity acts. This axis is named the [instant center of rotation](Instant%20Centre%20of%20Rotation) (ICR), or the *instant center of zero velocity*. <br>As the name indicates, the ICR is the only point (not necessarily on the body) where the velocity is 0, the point only has an angular velocity. For non-slipping wheels, for example, the ICR would be at the contact point where no slip occurs, as no slip means no velocity.<br><br>Finding the ICR ($C$ in the figure below) is most easily done graphically first. Using geometry we can find the exact location afterward. To find it:
 1. Draw two lines through the origins of the velocity vectors, perpendicular to the direction of the vector.
 2. If necessary, draw a single line, connecting the tips of the velocity vectors.
 3. Find the **intersection** between the lines, this is the ICR.
@@ -155,12 +155,12 @@ Using our equation for [angular velocity](Angular%20Velocity), $d\theta = \omega
 $$
 \alpha d\theta = \omega d\omega
 $$
-Notice the similarities to $ads = vdv$. <br>All angular velocities, and subsequently angular accelerations, are the **same for any point** on the body.<br><br>The angular acceleration vector points perpendicular to the plane motion happens in, meaning that if motion happens in the $x, y$-plane (basis vectors $\hat{i}$ and $\hat{j}$), $\vec{\alpha}$ points in the $z$ direction, with basis vector $\hat{k}$.<br>To find the acceleration $a$ from the angular acceleration $\alpha$ we take the [derivative](Differentiation) of the velocity, to find[^math2]
+Notice the similarities to $ads = vdv$. <br>All angular velocities, and subsequently angular accelerations, are the **same for any point** on the body.<br><br>The angular acceleration vector points perpendicular to the plane motion happens in, meaning that if motion happens in the $x, y$-plane (basis vectors $\hat{\textbf{i}}$ and $\hat{\textbf{j}}$), $\vec{\pmb{\alpha}}$ points in the $z$ direction, with basis vector $\hat{\textbf{k}}$.<br>To find the acceleration $a$ from the angular acceleration $\alpha$ we take the [derivative](Differentiation) of the velocity, to find[^math2]
 $$
-\vec{a} = \vec{\omega} \times \vec{v} + \vec{\alpha} \times \vec{r}
+\vec{\textbf{a}} = \vec{\pmb{\omega}} \times \vec{\textbf{v}} + \vec{\pmb{\alpha}} \times \vec{\textbf{r}}
 $$
 $$
-\vec{a} = \dot{\vec{\theta}} \times \vec{v} + \ddot{\vec{\theta}} \times \vec{r}
+\vec{\textbf{a}} = \dot{\vec{\pmb{\theta}}} \times \vec{\textbf{v}} + \ddot{\vec{\pmb{\theta}}} \times \vec{\textbf{r}}
 $$
 ##### Instant Center of Zero Acceleration
 [info paper](https://ccsenet.org/journal/index.php/mas/article/view/1278)%%NEEDS TEXT IF I WANT TO WRITE IT SOMEDAY%%
@@ -172,39 +172,70 @@ $$
 Continuing [relative motion](Relative%20Motion) for particles, we generalize the expressions to also include possible rotation. Because of a difference in velocity it is possible for a point $A$ to rotate relative to point $B$. In other words: when using $B$ as our reference frame and considering it locked in place, we perceive $A$ to be rotating. <br><br>![[dynamics_relative_rotation_AtoB_80.png|650]]<br>source: *Engineering Mechanics Dynamics*, p339, 8th ed.
 
 #### Relative Velocity
-Using our previous equation $\vec{v} = \vec{\omega} \times \vec{r}$ in place for the relative velocity equation $\vec{v}_A = \vec{v}_B + \vec{v}_{A/B}$, we get
+For the *position vector* we can reuse the formulation we found for [relative motion for particles](#Relative%20Motion), namely $\vec{\textbf{s}}_A = \vec{\textbf{s}}_B + \vec{\textbf{s}}_{A/B}$. Using our [previous equation](#Relative%20Motion) $\vec{\textbf{v}} = \vec{\pmb{\omega}} \times \vec{\textbf{r}}$ in place for the relative velocity equation $\vec{\textbf{v}}_A = \vec{\textbf{v}}_B + \vec{\textbf{v}}_{A/B}$, we get
 $$
-\vec{v}_A = \vec{v}_B + \vec{\omega} \times \vec{r}_{A/B}
+\vec{\textbf{v}}_A = \vec{\textbf{v}}_B + \vec{\pmb{\omega}} \times \vec{\textbf{r}}_{A/B}
 $$
-We can, if need be, substitute any velocity term in this equation for $\vec{\omega} \times \vec{r}$.
+We can, if need be, substitute any velocity term in this equation for $\vec{\pmb{\omega}} \times \vec{\textbf{r}}$.
 
 
 #### Relative Acceleration
 Because for rotations we are dealing with a *curvilinear* path, we will be highlighting the [normal-tangent](Motion%20in%20Normal-Tangent%20Coordinates) coordinate system. Because we are dealing with vector math as well, these equations generalize to every coordinate system. <br>We rewrite the equation  for relative acceleration acquired above to accommodate the $n$-$t$ coordinate system.
 $$
-\vec{a}_A = \vec{a}_B + \left( \vec{a}_{A/B} \right)_n + \left( \vec{a}_{A/B} \right)_t
+\vec{\textbf{a}}_A = \vec{\textbf{a}}_B + \left( \vec{\textbf{a}}_{A/B} \right)_n + \left( \vec{\textbf{a}}_{A/B} \right)_t
 $$
 We can now substitute the equations for the acceleration in an $n$-$t$ coordinate system to obtain
 $$
-\vec{a}_A = \vec{a}_B + \omega ^2 r_{A/B} \hat{e}_n + \alpha r_{A/B} \hat{e}_t
+\vec{\textbf{a}}_A = \vec{\textbf{a}}_B + \omega ^2 r_{A/B\text{ }} \hat{\textbf{e}}_n + \alpha r_{A/B\text{ }} \hat{\textbf{e}}_t
 $$
-Alternatively, we could use our equation for acceleration, $\vec{a} = \vec{\omega} \times \vec{v} + \vec{\alpha} \times \vec{r}$, in place of $\vec{a}_{A/B}$. This would yield
+Alternatively, we could use our equation for acceleration, $\bf\vec{a} = \vec{\pmb{\omega}} \times \vec{v} + \vec{\pmb{\alpha}} \times \vec{r}$, in place of $\vec{\textbf{a}}_{A/B}$. This would yield
 $$
-\vec{a}_A = \vec{a}_B + \vec{\omega} \times \vec{v}_{A/B} + \vec{\alpha} \times \vec{r}_{A/B}
+\vec{\textbf{a}}_A = \vec{\textbf{a}}_B + \vec{\pmb{\omega}} \times \vec{\textbf{v}}_{A/B} + \vec{\pmb{\alpha}} \times \vec{\textbf{r}}_{A/B}
 $$
 We can eliminate $\vec{v}$ from the equation by realizing $\vec{v} = \vec{\omega} \times \vec{r}$, and write the **eventual equation**
 $$
-\vec{a}_A = \vec{a}_B + \vec{\omega} \times \left( \vec{\omega} \times \vec{r}_{A/B} \right) + \vec{\alpha} \times \vec{r}_{A/B}
+\vec{\textbf{a}}_A = \vec{\textbf{a}}_B + \vec{\pmb{\omega}} \times \left( \vec{\pmb{\omega}} \times \vec{\textbf{r}}_{A/B} \right) + \vec{\pmb{\alpha}} \times \vec{\textbf{r}}_{A/B}
 $$
 We can conclude from this that **for an $n$-$t$ coordinate system** we have
 $$
-\left( \vec{a}_{A/B} \right)_n = \vec{\omega} \times \left( \vec{\omega} \times \vec{r}_{A/B} \right)
+\left( \vec{\textbf{a}}_{A/B} \right)_n = \vec{\pmb{\omega}} \times \left( \vec{\pmb{\omega}} \times \vec{\textbf{r}}_{A/B} \right)
 $$
 $$
-\left( \vec{a}_{A/B} \right)_t = \vec{\alpha} \times \vec{r}_{A/B}
+\left( \vec{\textbf{a}}_{A/B} \right)_t = \vec{\pmb{\alpha}} \times \vec{\textbf{r}}_{A/B}
 $$
 #### Relative Coordinate Systems
-Some situations benefit from introducing a relative coordinate system. The way this takes place is
+Some situations benefit from introducing a relative coordinate system. We study three points:
+1. Origin of non-rotating coordinate system ($X, Y$).
+2. Point $B$, where the rotating coordinate system ($x, y$) attaches.
+3. Point $A$, the point we wish to understand.
+
+We know that translating reference frames don't complicate the calculations as long as we use a single reference frame to compare both points. In the case of a rotation we can reuse the same argument, but introduce terms caused by the rotation.
+
+##### Relative Coordinate Velocity
+Because our position vector isn't affected by a rotation at all, it stays the same as it was for [single particle relative motion](#Relative%20Motion), namely $\vec{\textbf{r}}_A = \vec{\textbf{r}}_B + \vec{\textbf{r}}_{A/B}$, or, using our coordinate attached to point $B$, we can rewrite to
+$$
+\vec{\textbf{s}}_A = \vec{\textbf{s}}_B + \left( x\hat{\textbf{i}} + y\hat{\textbf{j}} \right)
+$$
+Here $x$ and $y$ are the axes that attach at $B$. The $x$ and $y$ coordinates give the location of $A$ from the origin at $B$, making this term equivalent to $\vec{\textbf{r}}_{A/B}$. Differentiation of $\vec{\textbf{s}}_A$ gives
+$$
+\frac{d}{dt} \left[ \vec{\textbf{s}}_A \right] = \vec{\textbf{v}}_A = \vec{\textbf{v}}_B + \left( \dot{x} \hat{\textbf{i}} + \dot{y} \hat{\textbf{j}} \right) + \left( x \dot{\hat{\textbf{i}}} + y \dot{\hat{\textbf{j}}} \right)
+$$
+We can see that $\dot{x}$ and $\dot{y}$ give the velocity of $A$ as seen from $B$, or $\vec{\textbf{v}}_{A/B}$, like before. To obtain a working equation we just need to find an expression for $\dot{\hat{\textbf{i}}}$ and $\dot{\hat{\textbf{j}}}$.
+
+
+$$
+\vec{\textbf{v}}_A = \vec{\textbf{v}}_B + \vec{\pmb{\omega}} \times \vec{\textbf{r}}_{A/B} + \vec{\textbf{v}}_{\text{rel}}
+$$
+
+
+
+
+##### Relative Coordinate Acceleration
+
+
+
+
+
 
 %%
 ### Coordinate Systems
@@ -230,25 +261,25 @@ Throughout the calculations we may transition between coordinate systems, or use
 > $$
 > - **Translation to rotation**
 > $$
-> \vec{v} = \vec{\omega} \times \vec{r}
+> \vec{\textbf{v}} = \vec{\pmb{\omega}} \times \vec{\textbf{r}}
 > $$
 > $$
-> \vec{a} = \vec{\omega} \times \vec{v} + \vec{\alpha} \times \vec{r}
+> \vec{\textbf{a}} = \vec{\pmb{\omega}} \times \vec{\textbf{v}} + \vec{\pmb{\alpha}} \times \vec{\textbf{r}}
 > $$
 > - **Relative motion**
 > $$
-> \vec{v}_A = \vec{v}_B + \vec{\omega} \times \vec{r}
+> \vec{\textbf{v}}_A = \vec{\textbf{v}}_B + \vec{\pmb{\omega}} \times \vec{\textbf{r}}
 > $$
 > $$
-> \vec{a}_A = \vec{a}_B + \vec{\omega} \times \left( \vec{\omega} \times \vec{r} \right) + \vec{\alpha} \times \vec{r}
+> \vec{\textbf{a}}_A = \vec{\textbf{a}}_B + \vec{\pmb{\omega}} \times \left( \vec{\pmb{\omega}} \times \vec{\textbf{r}} \right) + \vec{\pmb{\alpha}} \times \vec{\textbf{r}}
 > $$
-> ($\vec{r}$ indicates the distance from $A$ to $B$. Read: $\vec{r}_{A/B}$)
+> ($\vec{\textbf{r}}$ indicates the distance from $A$ to $B$. Read: $\vec{\textbf{r}}_{A/B}$)
 > - For **[Normal-Tangent coordinates](Motion%20in%20Normal-Tangent%20Coordinates)**
 > $$
-> \vec{a}_n = \vec{\omega} \times \left( \vec{\omega} \times \vec{r} \right)
+> \vec{\textbf{a}}_n = \vec{\pmb{\omega}} \times \left( \vec{\pmb{\omega}} \times \vec{\textbf{r}} \right)
 > $$
 > $$
-> \vec{a}_t = \vec{\alpha} \times \vec{r}
+> \vec{\textbf{a}}_t = \vec{\pmb{\alpha}} \times \vec{\textbf{r}}
 > $$
 
 
@@ -261,8 +292,8 @@ _Status:_ #sprout #missingLink
 ---
 # Based On:
 [^explanmath]: This is done by isolating $dt$ from the differential and substituting the result into the other equation. <br>$$v = \frac{ds}{dt}$$<br>$$dt = \frac{ds}{v}$$<br>$$a = \frac{dv}{dt} = \frac{dv}{\frac{ds}{v}} = \frac{dv}{ds} \cdot v$$<br>$$ads = vdv$$
-[^math1]: This can also be seen from the equations themselves. <br>If we take the *absolute* reference frame for the motion of object $A$ to be any object we would have <br>$$\vec{s}_A = \vec{s}_{\text{object}} + \vec{s}_{A/\text{object}}$$<br>If we choose our object to be the origin $\vec{s}_{\text{object}}$ becomes 0, and we have <br>$$\vec{s}_A = \vec{s}_{A/\text{object}}$$<br>We can do the same thing for the speed and acceleration, where we would have a 0-speed for our object, as that is the absolute reference frame. We can now compare any object $A$, or $B$, etc. to the reference frame and use the motion relative to the *absolute* reference frame as *absolute motion*.
-[^math2]: The full computation is <br>$$\vec{a} = \frac{d}{dt} \left[ \vec{\omega} \times \vec{r} \right] = \dot{\vec{\omega}} \times \vec{r} + \vec{\omega} \times \dot{\vec{r}}$$<br>We can recognize $\dot{\vec{r}}$ as the definition of velocity $\vec{v}$, and write <br>$$\vec{a} = \dot{\vec{\omega}} \times \vec{r} + \vec{\omega} \times \vec{v}$$<br>$$\vec{a} = \vec{\omega} \times \vec{v} + \vec{\alpha} \times \vec{r}$$
+[^math1]: This can also be seen from the equations themselves. <br>If we take the *absolute* reference frame for the motion of object $A$ to be any object we would have <br>$$\vec{\textbf{s}}_A = \vec{\textbf{s}}_{\text{object}} + \vec{\textbf{s}}_{A/\text{object}}$$<br>If we choose our object to be the origin $\vec{\textbf{s}}_{\text{object}}$ becomes 0, and we have <br>$$\vec{\textbf{s}}_A = \vec{\textbf{s}}_{A/\text{object}}$$<br>We can do the same thing for the speed and acceleration, where we would have a 0-speed for our object, as that is the absolute reference frame. We can now compare any object $A$, or $B$, etc. to the reference frame and use the motion relative to the *absolute* reference frame as *absolute motion*.
+[^math2]: The full computation is <br>$$\vec{\textbf{a}} = \frac{d}{dt} \left[ \vec{\pmb{\omega}} \times \vec{\textbf{r}} \right] = \dot{\vec{\pmb{\omega}}} \times \vec{\textbf{r}} + \vec{\pmb{\omega}} \times \dot{\vec{\textbf{r}}}$$<br>We can recognize $\dot{\vec{\textbf{r}}}$ as the definition of velocity $\vec{\textbf{v}}$, and write <br>$$\vec{\textbf{a}} = \dot{\vec{\pmb{\omega}}} \times \vec{\textbf{r}} + \vec{\pmb{\omega}} \times \vec{\textbf{v}}$$<br>$$\vec{\textbf{a}} = \vec{\pmb{\omega}} \times \vec{\textbf{v}} + \vec{\pmb{\alpha}} \times \vec{\textbf{r}}$$
 
 
 [^unit]: This can be inferred from comparing units: velocity has $\text{m/s}$, [angular velocity](Angular%20Velocity) has $\text{rad/s}$. Radians are an empty unit that's just a predefined amount, so we could just as well write $\text{3.2/s}$ or just $\text{s}^{-1}$. Thus to get $\text{m/s}$ we multiply with $\text{[m]}$, or distance $r$.
