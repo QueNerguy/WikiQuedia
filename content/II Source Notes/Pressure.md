@@ -11,7 +11,7 @@ where $n$ is the degree of the polynomial.<br>The force constructed from a press
 $$
 p = F/A
 $$
-It is better to use a lowercase $p$ for pressure instead of the capital $P$ for two reasons.
+It is preferred to use a lowercase $p$ for pressure instead of the capital $P$ for two reasons.
 1. It avoids confusion with [power](Power)
 2. In [thermodynamics](!%20Engineering%20Thermodynamics%20Learning%20Overview) lowercase letters are used to denote intensive properties. Pressure is used everywhere and it is intensive. The lowercase variant avoids confusion here.
 
@@ -36,4 +36,4 @@ $$
 
 
 - __Unit:__ $\text{[Pa]}$ 
-- $1 \text{ bar} = 100 \text{ kPa} = 100 \times 10^3 \text{ Pa}$
+- $1 \text{ [bar]} = 100 \text{ [kPa]} = 100 \times 10^3 \text{ [Pa]}$
