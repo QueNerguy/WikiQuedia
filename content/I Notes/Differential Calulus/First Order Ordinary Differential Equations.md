@@ -62,9 +62,14 @@ $$
 $$
 From here there is no way to construct an integral that doesn't have both variables $x$ and $y$ in it somewhere. We can't integrate in two directions with a single integral, so computing this form with an integral is not possible[^explannote]. <br>To still be able to solve such an integral we need a way to find a primitive form, without integrating. The trick that's used to solve these problems uses the [product rule](Differentiation#Product%20Rule) and the quirks of [differentiating](Differentiation) $e$ with polynomial powers. The product rule is formulated as
 $$
-\frac{d}{dx}[f(x) \cdot g(x)] = f'(x) \cdot g(x) + f(x) \cdot g'(x)
+\frac{d}{dx}[f \cdot g] = f' \cdot g + f \cdot g'
 $$
-If we can rewrite the first equation in this chapter to look like the right hand of the product rule formula ($f'(x) \cdot g(x) + f(x) \cdot g'(x)$), we can replace it with the left hand of the product rule formula ($\frac{d}{dx}[f(x) \cdot g(x)]$). From that point on we would be able to integrate like we did with separable equations.To find a general solution for these problems, let us rewrite the first equation to
+If we can rewrite the first equation in this chapter to look like the right hand of the product rule formula ($f' \cdot g + f \cdot g'$), we can replace it with the left hand of the product rule formula ($\frac{d}{dx}[f \cdot g]$). From that point on we would be able to integrate directly, like we did with separable equations.<br>To find a general solution for these problems, let us rewrite the first equation to a more general form, in order to separate $y$ and $y'$ from the rest of the equation. Thus, we divide by $(x^2 + 1)$ to get
+$$
+\frac{dy}{dx} + \frac{3xy}{(x^2 + 1)} = \frac{6x}{(x^2 + 1)}
+$$
+We can substitute $\frac{3x}{(x^2 + 1)}$ with $a$, and $\frac{6x}{(x^2 + 1)}$ with $b$, to aid following steps. Thus, we get the general form
+
 $$
 y' + ay = b
 $$
@@ -77,26 +82,36 @@ We now multiply both sides of the equation by $\rho$ to get
 $$
 \rho y' + a \rho y = \rho b
 $$
-If we realize that the derivative of $\rho$ is $a\rho$, we see that the left hand of our equation is the same as that of the product rule.
+In order for $\rho y' + a \rho y$ to be the same as the formulation of the product rule, $f \cdot g' + f' \cdot g$, we see that $a\rho$ needs to be the same as $\rho '$, as this would yield $\rho y' + \rho'y$. To check we compute $\rho '$.
+$$
+\rho ' = \frac{d}{dx}\left[ \rho \right] = \frac{d}{dx}\left[ e^{\int a dx} \right] = a \cdot e^{\int a dx} = a \cdot \rho
+$$
+Thus we see that $\rho ' = a\rho$, and our equation becomes
 $$
 \rho y' + \rho'y = \rho b
 $$
-We can thus replace the left hand with the left hand of the product rule, yielding
+Because $\rho y' + \rho'y$ follows the formulation of the product rule, we can swap the right and left hand sides of the equation, so we replace $f' \cdot g + f \cdot g'$ with $\frac{d}{dx}[f \cdot g]$. In the case of our example we get
 $$
-\frac{d}{dx}[\rho \cdot y] = \rho b
+\rho y' + \rho'y = \frac{d}{dx}[\rho \cdot y] = \rho b
 $$
 From this point on we *are* able to multiply both sides with a differential, in this case $dx$, and integrate.
 $$
-\int D_x[\rho \cdot y] dx = \int \rho b \cdot dx
+\int \frac{d}{dx}[\rho \cdot y] dx = \int \rho b \cdot dx
 $$
 
 
 
-Realizing that $\int D_x [f] dx = f$, we can simplify to
+Realizing that $\int \frac{d}{dx} [f] dx = f$, we can simplify to
+$$
+\rho \cdot y = \int \rho b dx
+$$
 $$
 y = \frac{\int \rho b dx}{\rho}
 $$
-This resulting formula **shouldn't be memorized**, instead, memorize the expression for $\rho$ and the steps taken to arrive at the eventual solution. In most cases this makes the calculations simpler strangely enough.
+This resulting formula **shouldn't be memorized**, instead, memorize the expression for $\rho$ and the steps taken to arrive at the eventual solution. 
+
+- The remainder of the solution to this example is given [here](example%20first%20order%20ordinary%20differential%20equations%20linear%20equations). <br>The computations consist mainly of following integration steps to find an expression for $\rho$ and to solve the integral $\int \rho bdx$.
+
 ##### Step-by-Step Plan
 In the case of variables $x$ and $y$:
 1. Construct $\rho = e^{\int adx}$
@@ -152,7 +167,7 @@ $$
 
 
 ---
-__[Home](Example.md)__ %%NEEDS HOME%%
+__[Home](WikiQuedia/Mechanical%20Engineering/3%20-%20Tags/Example.md)__ %%NEEDS HOME%%
 
 ---
 _Status:_ #ripe #missingLink
