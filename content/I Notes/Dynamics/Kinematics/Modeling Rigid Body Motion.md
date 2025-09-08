@@ -8,7 +8,7 @@ tags:      <br>07-09-2025
 # Modeling Rigid Body Motion
 Calculations following the equations outlined below, as well as their derivations rely heavily on [calculus I](!%20Calculus%20I%20Learning%20Overview) and make heavy use of [first order differential equations](First%20Order%20Ordinary%20Differential%20Equations). This note can be seen as a continuation on the note _[[Modeling Particle Motion]]_.
 ## Rigid Body Motion
-Rigid body motion is an expansion on the fundamentals of [particle motion](Modeling%20Particle%20Motion). Because there are multiple particles in a body however, we may see parts of the body translate at a different rate. If the bottom of the body moves slower than the top, or even in the opposite direction we perceive the rigid body as rotating. We thus see an [angular velocity](Angular%20Velocity) and an [angular acceleration](Angular%20Acceleration). It is important to note that I will be using $\vec{\textbf{r}}$ instead of $\vec{\textbf{s}}$  to denote distances. This is because $\bf{\vec{s}}$ is supposed to denote a *displacement*, and is therefore suited well to particle motion, while $\bf\vec{r}$ denotes any *distance*, but in particular a radii, making it more intuitive for use with rotations, the differentiating factor between rigid bodies and particles.
+Rigid body motion is an expansion on the fundamentals of [particle motion](Modeling%20Particle%20Motion). Because there are multiple particles in a body however, we may see parts of the body translate at a different rate. If the bottom of the body moves slower than the top, or even in the opposite direction we perceive the rigid body as rotating. We thus see an [angular velocity](Angular%20Velocity) and an [angular acceleration](Angular%20Acceleration). It is important to note that I will be using $\vec{\textbf{r}}$ instead of $\vec{\textbf{s}}$  to denote distances. This is because $\bf{\vec{s}}$ is supposed to denote a *displacement*, and is therefore suited well to particle motion, while $\bf\vec{r}$ denotes any *distance*, but in particular a radii, making it more intuitive for use with rotations, the differentiating factor between rigid bodies and particles.<br>Rigid bodies are assumed to be **non-flexible**.
 ### Angular Velocity
 For an object that is rotating at an angle $\theta$ we can construct the [angular velocity](Angular%20Velocity) much in the same way that we did for translation of *particles*. 
 $$
@@ -220,7 +220,7 @@ Throughout the calculations we may transition between coordinate systems, or use
 
 
 ---
-__[Home](Example.md)__
+__[Home](WikiQuedia/Mechanical%20Engineering/3%20-%20Tags/Example.md)__
 
 ---
 _Status:_ #bud
