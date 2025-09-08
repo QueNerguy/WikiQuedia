@@ -94,7 +94,7 @@ Because $\rho y' + \rho'y$ follows the formulation of the product rule, we can s
 $$
 \rho y' + \rho'y = \frac{d}{dx}[\rho \cdot y] = \rho b
 $$
-From this point on we *are* able to multiply both sides with a differential, in this case $dx$, and integrate.
+From this point on we *are* able to multiply both sides with a differential, in this case $dx$, and can subsequently integrate the whole expression.
 $$
 \int \frac{d}{dx}[\rho \cdot y] dx = \int \rho b \cdot dx
 $$
