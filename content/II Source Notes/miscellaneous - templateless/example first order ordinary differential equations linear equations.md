@@ -17,11 +17,30 @@ In the enumerator of the whole product we can cancel out $(x^2 + 1)$.
 $$
 y = \frac{\int6x \cdot (x^2 + 1)^\frac{1}{2} dx}{(x^2 + 1)^\frac{3}{2}}
 $$
-Using the [substitution method](Integration#Substitution) for $x^2 + 1 = u$, we integrate $3\int u^{\frac{1}{2}} du$ instead of $\int6x \cdot (x^2 + 1)^\frac{1}{2} dx$. This yields
+Using the [substitution method](Integration#Substitution) for the integral $\int6x \cdot (x^2 + 1)^\frac{1}{2} dx$, we can replace $x^2 + 1$ with $u$. 
+We also need to substitute for $dx$. To find an expression for $dx$ from $u$ we take the derivative of $u$ with respect to $x$, thus $\frac{du}{dx}$, and multiply both sides with the [differential](Differentiation#Geometrical%20Interpretation) $dx$, this gives us
 $$
-\int6x \cdot (x^2 + 1)^\frac{1}{2} dx = 2(x^2 + 1)^{\frac{3}{2}} + C
+\frac{du}{dx} = \frac{d}{dx}[x^2 + 1] = 2x \qquad \rightarrow \qquad du = 2xdx 
 $$
-Thus for our equation for $y$ we can substitute to obtain
+We can now divide by $2x$ to isolate $dx$.
+$$
+dx = \frac{du}{2x}
+$$
+Substituting for $dx$ and $x^2 + 1$, we get
+$$
+\int 6x \cdot (x^2 + 1)^\frac{1}{2} dx = \int 6x (u)^\frac{1}{2} \frac{du}{2x} = \int 3 u^{\frac{1}{2}} du = 3 \int u^{\frac{1}{2}} du
+$$
+Our resulting equation is
+$$
+3 \cdot \left(\frac{2}{3} u^{\frac{3}{2}}  + C \right) = 2u^{\frac{3}{2}}  + C
+$$
+Re-substituting $x^2 + 1$ for $u$, we get 
+$$
+2u^{\frac{3}{2}}  + C = 2(x^2 + 1)^{\frac{3}{2}} + C
+$$
+
+
+Thus for our equation for $y$ we can substitute this in place of the integral, to obtain
 $$
 y = \frac{2(x^2 + 1)^{\frac{3}{2}} + C}{(x^2 + 1)^\frac{3}{2}} = 2\frac{(x^2 + 1)^{\frac{3}{2}}}{(x^2 + 1)^\frac{3}{2}} + \frac{C}{(x^2 + 1)^\frac{3}{2}}
 $$
