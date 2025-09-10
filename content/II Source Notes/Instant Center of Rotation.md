@@ -1,4 +1,4 @@
-### Instant Centre of Rotation
+### Instant Center of Rotation
 28-01-2025
 #### Referencing:
 [Wikipedia - Instant center of rotation](https://en.wikipedia.org/wiki/Instant_centre_of_rotation)

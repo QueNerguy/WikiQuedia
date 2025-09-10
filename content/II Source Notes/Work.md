@@ -10,14 +10,14 @@ W = F \cdot s
 $$
 or in the case of a generalized non-straight path, where $\textbf{F}$ may be a function of the path $s$, we have
 $$
-W=\int\vec{F}\cdot d \vec{s}
+W=\int\vec{\textbf{F}}\cdot d \vec{\textbf{s}}
 $$
 $$
-\delta W = \vec{F} d\vec{s}
+\delta W = \vec{\textbf{F}} d\vec{\textbf{s}}
 $$
 As work is a measure of __change__ in energy, it is a property that is not inherent to a certain state. Instead, it only plays a role when comparing two states, where work would be exchanged to get from state $a$ to state $b$. It is therefore not a _state variable_, but instead a _path variable_, a variable that is dependent on the _path the system took_ to change from state $a$ to state $b$. <br>The inexact differential $\delta$ denotes that work is _path variable_. <br>Pushing a cart in a circle would require work all the way, thus our exerted work would only increase and never go to 0. This is exactly how a path variable is defined. Thus, when integrating the work done by the system over a full cycle it's value does not return to 0 like what would be the case for state variables. 
 $$
-\oint \delta W = \oint \vec{F} d \vec{s} \ne 0
+\oint \delta W = \oint \vec{\textbf{F}} d \vec{\textbf{s}} \ne 0
 $$
 ##### Rate of Work
 Saying the rate of work is a different way of saying the amount of work done over a certain time period. This measure is also known as [power](Power) $P$. The unit is then also $[J/s]$ or $[W]$.

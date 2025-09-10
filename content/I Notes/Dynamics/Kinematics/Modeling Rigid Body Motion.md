@@ -2,7 +2,7 @@
 title: "Modeling Rigid Body Motion"
 draft: false
 ---
-tags:      <br>07-09-2025
+tags: [[dynamics]], [[rigid body]], [[kinematics]]     <br>07-09-2025
 
 ---
 # Modeling Rigid Body Motion
@@ -30,7 +30,7 @@ The order of the cross-product is important. If we swap $\vec{\pmb{\omega}}$ and
 
 
 ##### Instant Center of Rotation
-Every rotating object has a single axis around which is the rotation takes place. This is the axis at which the angular velocity acts. This axis is named the [instant center of rotation](Instant%20Centre%20of%20Rotation) (ICR), or the *instant center of zero velocity*. <br>As the name indicates, the ICR is the only point (not necessarily on the body) where the velocity is 0, the point only has an angular velocity. For non-slipping wheels, for example, the ICR would be at the contact point where no slip occurs, as no slip means no velocity.<br><br>Finding the ICR ($C$ in the figure below) is most easily done graphically first. Using geometry we can find the exact location afterward. To find it:
+Every rotating object has a single axis around which is the rotation takes place. This is the axis at which the angular velocity acts. This axis is named the [instant center of rotation](Instant%20Center%20of%20Rotation.md) (ICR), or the *instant center of zero velocity*. <br>As the name indicates, the ICR is the only point (not necessarily on the body) where the velocity is 0, the point only has an angular velocity. For non-slipping wheels, for example, the ICR would be at the contact point where no slip occurs, as no slip means no velocity.<br><br>Finding the ICR ($C$ in the figure below) is most easily done graphically first. Using geometry we can find the exact location afterward. To find it:
 1. Draw two lines through the origins of the velocity vectors, perpendicular to the direction of the vector.
 2. If necessary, draw a single line, connecting the tips of the velocity vectors.
 3. Find the **intersection** between the lines, this is the ICR.
@@ -94,9 +94,7 @@ We can conclude from this that **for an $n$-$t$ coordinate system** we have
 $$
 \left( \vec{\textbf{a}}_{A/B} \right)_n = \vec{\pmb{\omega}} \times \left( \vec{\pmb{\omega}} \times \vec{\textbf{r}}_{A/B} \right) \qquad \text{and} \qquad \left( \vec{\textbf{a}}_{A/B} \right)_t = \vec{\pmb{\alpha}} \times \vec{\textbf{r}}_{A/B}
 $$
-$$
 
-$$
 #### Relative Coordinate Systems
 Some situations benefit from introducing a relative coordinate system. In a relative coordinate system we study three points:
 1. Origin of non-rotating coordinate system ($X, Y$).
@@ -227,6 +225,9 @@ _Status:_ #bud
 
 ---
 # Based On:
+1. J. L. Meriam, L. G. Kraige, J. N. Bolton, *Engineering Mechanics Dynamics*, 8th ed, US.
+
+
 [^unit]: This can be inferred from comparing units: velocity has $\text{m/s}$, [angular velocity](Angular%20Velocity) has $\text{rad/s}$. Radians are an empty unit that's just a predefined amount, so we could just as well write $\text{3.2/s}$ or just $\text{s}^{-1}$. Thus to get $\text{m/s}$ we multiply with $\text{[m]}$, or distance $r$.
 
 [^math2]: The full computation is <br>$$\vec{\textbf{a}} = \frac{d}{dt} \left[ \vec{\pmb{\omega}} \times \vec{\textbf{r}} \right] = \dot{\vec{\pmb{\omega}}} \times \vec{\textbf{r}} + \vec{\pmb{\omega}} \times \dot{\vec{\textbf{r}}}$$<br>We can recognize $\dot{\vec{\textbf{r}}}$ as the definition of velocity $\vec{\textbf{v}}$, and write <br>$$\vec{\textbf{a}} = \dot{\vec{\pmb{\omega}}} \times \vec{\textbf{r}} + \vec{\pmb{\omega}} \times \vec{\textbf{v}}$$<br>$$\vec{\textbf{a}} = \vec{\pmb{\omega}} \times \vec{\textbf{v}} + \vec{\pmb{\alpha}} \times \vec{\textbf{r}}$$
@@ -235,4 +236,3 @@ _Status:_ #bud
 
 
 
-1. J. L. Meriam, L. G. Kraige, J. N. Bolton, *Engineering Mechanics Dynamics*, 8th ed, US.

@@ -12,7 +12,7 @@ Dynamics is a continuation of statics%%LINKJEEEEE STATICS%%. In contrast to stat
 
 
 ### Background
-1. ***[Calculus I](! Calculus I Learning Overview):*** Dynamics makes use of calculus to model motion. A good grasp of [differentiation](Differentiation) and [integration](Integration) is imperative to be able to make dynamics computations.
+1. ***[Calculus I](!%20Calculus%20I%20Learning%20Overview):*** Dynamics makes use of calculus to model motion. A good grasp of [differentiation](Differentiation) and [integration](Integration) is imperative to be able to make dynamics computations.
 2. ***Differential Calculus:***%%LINKJE%% Dynamics makes use of differential calculus to model motion. *Differential calculus* goes more in-depth on the (non-rigorous) use of differentials, which applies to almost every aspect of dynamics.
 3. ***Statics:***%%LINKJE%% The basic concepts of statics are reused in dynamics to also include moving and accelerating objects.
 4. ***Linear Algebra:***%%LINKJE%% Vectors and matrices and their operation are commonplace in dynamics computations. They allow us to understand complex systems with single or few equations.

@@ -12,13 +12,13 @@ $$
 P = F \cdot v
 $$
 $$
-P = \vec{F} \cdot \vec{v}
+P = \vec{\textbf{F}} \cdot \vec{\textbf{v}}
 $$
 where $F$ is the [force](Force.md) and $v$ is the velocity.
 
 In the case of a rotation, like in a motor we have
 $$
-P=\vec{T}\cdot \vec{\omega}
+P=\vec{\textbf{T}}\cdot \vec{\pmb{\omega}}
 $$
 where $T$ is the [torque](Torque.md) and $\omega$ is the [angular velocity](Angular%20Velocity.md).
 

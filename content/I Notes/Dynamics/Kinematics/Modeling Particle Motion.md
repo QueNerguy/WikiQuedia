@@ -41,7 +41,7 @@ $$
 $$
 From here we can take the time derivative ($\vec{v}$) of $\vec{s}$ to get
 $$
-\textbf{v} = \left( \dot{s}_x \hat{\textbf{i}} + s_x \dot{\hat{\textbf{i}}} \right) + \left( \dot{s}_y \hat{\textbf{j}} + s_y \dot{\hat{\textbf{j}}} \right) + \left( \dot{s}_z \hat{\textbf{k}} + s_z \dot{\hat{\textbf{k}}} \right)
+\vec{\textbf{v}} = \left( \dot{s}_x \hat{\textbf{i}} + s_x \dot{\hat{\textbf{i}}} \right) + \left( \dot{s}_y \hat{\textbf{j}} + s_y \dot{\hat{\textbf{j}}} \right) + \left( \dot{s}_z \hat{\textbf{k}} + s_z \dot{\hat{\textbf{k}}} \right)
 $$
 $$
 \vec{\textbf{v}} = \dot{s}_x \hat{\textbf{i}} + \dot{s}_y \hat{\textbf{j}} + \dot{s}_z \hat{\textbf{k}} = \dot{\vec{\textbf{s}}}

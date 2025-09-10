@@ -2,7 +2,7 @@
 title: "First Order Ordinary Differential Equations"
 draft: false
 ---
-tags: [[calculus]], [[differentials]], [[integrals]] [[ODE]]     <br>02-09-2025
+tags: [[calculus]], [[differentials]], [[integrals]], [[ODE]]     <br>02-09-2025
 
 ---
 # First Order Ordinary Differential Equations
