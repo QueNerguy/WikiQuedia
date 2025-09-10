@@ -41,13 +41,7 @@ $$
 I = \bar{I} + md^2
 $$
 Here, $d$ denotes the distance from our choice of axis for $\bar{I}$ to the [ICR](Modeling%20Rigid%20Body%20Motion#Instant%20Center%20of%20Rotation). This distance has to be perpendicular to the direction of our rotation vector. To illustrate, see the image below, where 
-the transfer is made from axis $C$ to $G$. It can be seen that point $O$ gives an equivalent inertial moment as it lies on the same axis. The distance $d$, then, is taken from point $C$ to point $O$, perpendicular to the axis of rotation.
-
-
-
-
-![[transferofaxesmomentofinertia_80.png|450]]<br>
-source: *Engineering Mechanics Dynamics*, p629, 8th ed.
+the transfer is made from axis $C$ to $G$. It can be seen that point $O$ gives an equivalent (inertial) moment as it lies on the same axis. The distance $d$, then, is taken from point $C$ to point $O$, perpendicular to the axis of rotation, but distance *parallel* to the axis of rotation is disregarded. This behavior results from the fact that the moment is defined as a cross product, any distance that isn't parallel to the moment axis doesn't contribute to the size of the vector.<br><br>![[transferofaxesmomentofinertia_80.png|450]]<br>source: *Engineering Mechanics Dynamics*, p629, 8th ed.
 
 ### Inventory
 > [!abstract] Inventory of the Formulas
