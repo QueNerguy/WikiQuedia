@@ -46,12 +46,64 @@ $$
 I = \bar{I} + md^2
 $$
 Here, $d$ denotes the distance from our choice of axis for $\bar{I}$ to the [actual axis of rotation](Modeling%20Rigid%20Body%20Motion#Instant%20Center%20of%20Rotation). Similar to finding $r$, demonstrated above, $d$ doesn't take distance along the axis of rotation into account. It just finds the shortest distance from axis $a$ to axis $b$.<> To illustrate, see the image below, where $\bar{I}$ was found around axis $C$, but the [ICR](Modeling%20Rigid%20Body%20Motion#Instant%20Center%20of%20Rotation) is at $G$. The point on the axis of $G$ that is closest to $C$, however, is $O$, and as such $d$ is found between $C$ and $O$, and not between $C$ and $G$. <br>This behavior is a result of the use of a cross-product for the definition of the moment.![[transferofaxesmomentofinertia_80.png|450]]<br>source: *Engineering Mechanics Dynamics*, p629, 8th ed.
+#### Composite Rotations
+When multiple rotations occur at the same time, the inertia for this simultaneous rotation has to be used, *instead of* the rotation for a single axis. To find this inertia, instead of adding the distances up (e.g. $r_z^2 = x^2 + y^2$), we multiply to take into account both axes of rotation at the same time. <br>For a rotation around both the $x$- and $y$-axes we have $r_{xy}^2 = x \cdot y$.
+$$
+I_{xy} = \int r_{xy}^2 dm = \int xy dm
+$$
+Similarly, for a transfer of axes, $d^2$ is replaced with $d_x \cdot d_y$.
+$$
+I_{xy} = \bar{I}_{xy} + md_x d_y
+$$
+
+%%
+also this is funny, source = page 647, 648
+$$
+\begin{bmatrix} I_{xx} & -I_{xy} & -I_{xz}\\ -I_{yx} & I_{yy} & -I_{yz}\\ -I_{zx} & -I_{zy} & I_{zz} \end{bmatrix}
+$$
+notice that every non-principle axis has a negative sign
+and for rotation only in principle axes we would have
+$$
+\begin{bmatrix} I_{xx} & 0 & 0\\ 0 & I_{yy} & 0 \\ 0 & 0 & I_{zz} \end{bmatrix}
+$$
+*It CaN be ShoWN thAT* for the determinant we have
+$$
+\begin{vmatrix} I_{xx} - I_A & -I_{xy} & -I_{xz}\\ -I_{yx} & I_{yy} - I_A & -I_{yz}\\ -I_{zx} & -I_{zy} & I_{zz} - I_A \end{vmatrix} = 0
+$$
+where $I_A$ is around any axis $A$ or something. This equation can be solved for using also
+$$
+l^2 + m^2 + n^2 = 1
+$$
+where $l$, $m$ and $n$ give the principle axes for our second coordinate system around our axis $A$.
+idk thought this was cool, not sure how to use it and what it exactly completely in its entirety etc means.
+%%
+
+>[!warning]
+> I'm not quite sure whether or not this part is included in the dynamics course. The implementation into the book is vague and this info is NOT included in the slides, so I'm *personally* assuming that this knowledge isn't required and for funsies only.
+
 
 ### Inventory
 > [!abstract] Inventory of the Formulas
+> - For **any inertia**
 > $$
 > I = \int r^2 dm = \int r^2 d(\rho V)
 > $$
+> - For **transfer of axes**
+> $$
+> I = \bar{I} + md^2
+> $$
+> - For **inertia around some $z$-axis**
+> $$
+> I_{zz} = \int r_z^2 dm = \int \left( x^2 + y^2 \right) dm
+> $$
+> - For **inertia around any $x$- and $y$-axes**
+> $$
+> I_{xy} = \int r_{xy}^2 dm = \int xy dm
+> $$
+> $$
+> I_{xy} = \bar{I}_{xy} + md_x d_y
+> $$
+
 
 ---
 __[Home](WikiQuedia/Mechanical%20Engineering/3%20-%20Tags/Example.md)__
