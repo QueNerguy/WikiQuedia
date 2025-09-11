@@ -93,7 +93,7 @@ $$
 > \vec{\textbf{v}} = \begin{bmatrix} 0 \\ v_t \end{bmatrix} = \rho \dot{\beta} \hat{\textbf{e}}_t = \dot{\vec{\pmb{\beta}}} \times \vec{\pmb{\rho}}
 > $$
 > $$
-> \vec{\textbf{a}}  = \begin{bmatrix} a_n \\ a_t \end{bmatrix} = \dot{v}\hat{\textbf{e}}_t + \frac{v^2}{\rho} \hat{\textbf{e}}_n = \dot{\vec{\pmb{\beta}}} \times \vec{\textbf{v}} + \ddot{\vec{\pmb{\beta}}} \times \vec{\pmb{\rho}}
+> \vec{\textbf{a}}  = \begin{bmatrix} a_n \\ a_t \end{bmatrix} = \frac{v^2}{\rho} \hat{\textbf{e}}_n + \dot{v}\hat{\textbf{e}}_t = \dot{\vec{\pmb{\beta}}} \times \vec{\textbf{v}} + \ddot{\vec{\pmb{\beta}}} \times \vec{\pmb{\rho}}
 > $$
 
 
