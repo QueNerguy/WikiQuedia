@@ -79,7 +79,7 @@ idk thought this was cool, not sure how to use it and what it exactly completely
 %%
 
 >[!warning]
-> I'm not quite sure whether or not this part is included in the dynamics course. The implementation into the book is vague and this info is NOT included in the slides, so I'm *personally* assuming that this knowledge isn't required and for funsies only.
+> I'm not quite sure whether or not this part is included in the dynamics course. The implementation into the book is vague and this info is NOT included in the slides, so I'm *personally* assuming that this knowledge is **not** required and for funsies only.
 
 
 ### Inventory
