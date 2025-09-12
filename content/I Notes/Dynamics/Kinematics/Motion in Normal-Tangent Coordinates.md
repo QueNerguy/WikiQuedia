@@ -45,7 +45,7 @@ $$
 #### Acceleration
 To find the acceleration we take the [derivative](Differentiation) of the velocity.
 $$
-\vec{\textbf{a}}(a_n, a_t) = \frac{d}{dt} \left[ \vec{\textbf{v}} \right] = \frac{d}{dt} \left[ v \hat{\textbf{e}}_t \right]
+\vec{\textbf{a}} = \begin{bmatrix} a_n \\ a_t \end{bmatrix} = \frac{d}{dt} \left[ \vec{\textbf{v}} \right] = \frac{d}{dt} \left[ v \hat{\textbf{e}}_t \right]
 $$
 $$
 \vec{\textbf{a}} = \begin{bmatrix} a_n \\ a_t \end{bmatrix}  = \dot{v}\hat{\textbf{e}}_t + v \dot{\hat{\textbf{e}}}_t

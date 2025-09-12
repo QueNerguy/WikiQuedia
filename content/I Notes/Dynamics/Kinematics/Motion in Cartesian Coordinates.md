@@ -15,30 +15,30 @@ $$
 $$
 Using the standard basis we can construct our position vectors, and subsequently the vectors for velocity and acceleration.
 $$
-\vec{\textbf{s}}(x, y, z) = \begin{bmatrix} x \\ y \\ z \end{bmatrix} = x \hat{\textbf{i}} + y \hat{\textbf{j}} + z \hat{\textbf{k}}
+\vec{\textbf{s}} = \begin{bmatrix} x \\ y \\ z \end{bmatrix} = x \hat{\textbf{i}} + y \hat{\textbf{j}} + z \hat{\textbf{k}}
 $$
 
 
 ### Mathematical Formulation
 Using the above way to deconstruct a vector into it's axial components we can create a formulation for our position vector, and [differentiate](Differentiation) from there to acquire the vector formulation for the velocity and acceleration.
 $$
-\vec{\textbf{s}}(s_x, s_y, s_z) = \begin{bmatrix} s_x \\ s_y \\ s_z \end{bmatrix} = s_x \hat{\textbf{i}} + s_y \hat{\textbf{j}} + s_z \hat{\textbf{k}}
+\vec{\textbf{s}} = \begin{bmatrix} s_x \\ s_y \\ s_z \end{bmatrix} = s_x \hat{\textbf{i}} + s_y \hat{\textbf{j}} + s_z \hat{\textbf{k}}
 $$
 $$
-\vec{\textbf{v}}(v_x, v_y, v_z) = \begin{bmatrix} v_x \\ v_y \\ v_z \end{bmatrix} = v_x \hat{\textbf{i}} + v_y \hat{\textbf{j}} + v_z \hat{\textbf{k}}
+\vec{\textbf{v}} = \begin{bmatrix} v_x \\ v_y \\ v_z \end{bmatrix} = v_x \hat{\textbf{i}} + v_y \hat{\textbf{j}} + v_z \hat{\textbf{k}}
 $$
 $$
-\vec{\textbf{a}}(a_x, a_y, a_z) = \begin{bmatrix} a_x \\ a_y \\ a_z \end{bmatrix} = a_x \hat{\textbf{i}} + a_y \hat{\textbf{j}} + a_z \hat{\textbf{k}}
+\vec{\textbf{a}} = \begin{bmatrix} a_x \\ a_y \\ a_z \end{bmatrix} = a_x \hat{\textbf{i}} + a_y \hat{\textbf{j}} + a_z \hat{\textbf{k}}
 $$
 Alternatively, we could use the *dot notation* to write these equations as
 $$
-\vec{\textbf{s}}(x, y, z) = \begin{bmatrix} x \\ y \\ z \end{bmatrix} = x \hat{\textbf{i}} + y \hat{\textbf{j}} + z \hat{\textbf{k}}
+\vec{\textbf{s}} = \begin{bmatrix} x \\ y \\ z \end{bmatrix} = x \hat{\textbf{i}} + y \hat{\textbf{j}} + z \hat{\textbf{k}}
 $$
 $$
-\vec{\textbf{v}}(\dot{x}, \dot{y}, \dot{z}) = \begin{bmatrix} \dot{x} \\ \dot{y} \\ \dot{z} \end{bmatrix} = \dot{x} \hat{\textbf{i}} + \dot{y} \hat{\textbf{j}} + \dot{z} \hat{\textbf{k}}
+\vec{\textbf{v}} = \begin{bmatrix} \dot{x} \\ \dot{y} \\ \dot{z} \end{bmatrix} = \dot{x} \hat{\textbf{i}} + \dot{y} \hat{\textbf{j}} + \dot{z} \hat{\textbf{k}}
 $$
 $$
-\vec{\textbf{a}}(\ddot{x}, \ddot{y}, \ddot{z}) = \begin{bmatrix} \ddot{x} \\ \ddot{y} \\ \ddot{z} \end{bmatrix} = \ddot{x} \hat{\textbf{i}} + \ddot{y} \hat{\textbf{j}} + \ddot{z} \hat{\textbf{k}}
+\vec{\textbf{a}} = \begin{bmatrix} \ddot{x} \\ \ddot{y} \\ \ddot{z} \end{bmatrix} = \ddot{x} \hat{\textbf{i}} + \ddot{y} \hat{\textbf{j}} + \ddot{z} \hat{\textbf{k}}
 $$
 
 >[!note]
@@ -53,13 +53,13 @@ $$
 > [!abstract] Inventory of the Formulas
 > - **Coordinates**
 > $$
-> \vec{\textbf{s}}(s_x, s_y, s_z) = \begin{bmatrix} s_x \\ s_y \\ s_z \end{bmatrix} = s_x \hat{\textbf{i}} + s_y \hat{\textbf{j}} + s_z \hat{\textbf{k}}
+> \vec{\textbf{s}} = \begin{bmatrix} s_x \\ s_y \\ s_z \end{bmatrix} = s_x \hat{\textbf{i}} + s_y \hat{\textbf{j}} + s_z \hat{\textbf{k}}
 > $$
 > $$
-> \vec{\textbf{v}}(v_x, v_y, v_z) = \begin{bmatrix} v_x \\ v_y \\ v_z \end{bmatrix} = v_x \hat{\textbf{i}} + v_y \hat{\textbf{j}} + v_z \hat{\textbf{k}}
+> \vec{\textbf{v}} = \begin{bmatrix} v_x \\ v_y \\ v_z \end{bmatrix} = v_x \hat{\textbf{i}} + v_y \hat{\textbf{j}} + v_z \hat{\textbf{k}}
 > $$
 > $$
-> \vec{\textbf{a}}(a_x, a_y, a_z) = \begin{bmatrix} a_x \\ a_y \\ a_z \end{bmatrix} = a_x \hat{\textbf{i}} + a_y \hat{\textbf{j}} + a_z \hat{\textbf{k}}
+> \vec{\textbf{a}} = \begin{bmatrix} a_x \\ a_y \\ a_z \end{bmatrix} = a_x \hat{\textbf{i}} + a_y \hat{\textbf{j}} + a_z \hat{\textbf{k}}
 > $$
 
 
