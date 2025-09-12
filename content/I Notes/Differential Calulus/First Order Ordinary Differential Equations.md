@@ -6,15 +6,34 @@ tags: [[calculus]], [[differentials]], [[integrals]], [[ODE]]     <br>02-09-2025
 
 ---
 # First Order Ordinary Differential Equations
+- ***First order***, because the derivatives are singular, not of a higher order. Equations with double derivatives ($f^"$) are called a [second order ordinary differential equation](Second%20Order%20Ordinary%20Differential%20Equations).
+- ***Ordinary*** because we can rewrite this equation to only depend on only a **single variable**. For example $s$ depends on $t$ by rewriting to
+$$
+ds = v(t)dt
+$$
+
 ### Geometrical Interpretation
 [Differential](Differentiation) equations appear often in physical models. They are equations where a differential form is part of the equation. Consider for example speed. the speed $v$ is defined as $s/t$. For the speed at an immediate moment we have[^defo] 
 $$
-v(t) = \frac{ds}{dt} = D_t [s] = \dot{s}
+v(t) = \frac{ds}{dt}
 $$
 The equation above is an example of a *differential equation*. <br>To be precise: the above equation is a **first order separable ordinary differential equation**. 
-- *First order*, because the derivative is singular, not of a higher order. A double derivative ($f''$) would see it called a second order differential equation%%LINKJE%%. 
-- *Separable*, because it is possible to bring the two variables ($s$ and $t$) to opposing sides of the equal sign by rewriting to $$ ds = v(t)dt $$
-- *Ordinary* because we can rewrite this equation to only depend on a single variable. For example $s$ depends on $t$ by rewriting to $$ ds = v(t)dt $$
+- ***First order***, because the derivative is singular, not of a higher order. A double derivative ($f''$) would see it called a [second order ordinary differential equation](Second%20Order%20Ordinary%20Differential%20Equations). 
+- ***Separable***, because it is possible to bring the two variables ($s$ and $t$) to opposing sides of the equal sign by rewriting to 
+$$
+ds = v(t)dt
+$$
+- ***Ordinary*** because we can rewrite this equation to only depend on only a **single variable**. For example $s$ depends on $t$ by rewriting to 
+$$
+ds = v(t)dt
+$$
+- ***Differential equation***, because this equation deals with [differentials](Differentiation#Geometrical%20Interpretation), in this case $ds$ and $dt$. We can even isolate the differentials from the fraction, writing
+$$
+ds = v(t) \cdot dt
+$$
+
+
+
 The *goal* of solving differential equations is to eliminate the differentials and solve for the differentiated variable. So if we encounter $dy$ in an equation, we would try to create an equation that has no differential $dy$, only $y$.<br>There are **two types** of *first order* ordinary differential equations.
 1. ***[Separable Ordinary Differential Equations](#Separable%20Equations)***
 2. ***[Linear Ordinary Differential Equations](#Linear%20Equations)***
