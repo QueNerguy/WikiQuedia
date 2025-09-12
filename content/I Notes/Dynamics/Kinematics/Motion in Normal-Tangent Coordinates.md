@@ -99,10 +99,10 @@ $$
 
 
 ---
-__[Home](WikiQuedia/Mechanical%20Engineering/3%20-%20Tags/Example.md)__ %%NEEDS HOMEPAGE%%
+__[Home](!%20Dynamics%20Learning%20Overview)__
 
 ---
-_Status:_ #bud
+_Status:_ #ripe
 
 ---
 # Based On:

@@ -115,10 +115,10 @@ Depending on what kind of system we are trying to analyze our choice of coordina
 
 
 ---
-__[Home](WikiQuedia/Mechanical%20Engineering/3%20-%20Tags/Example.md)__ %%NEEDS HOMEPAGE%%
+__[Home](!%20Dynamics%20Learning%20Overview)__
 
 ---
-_Status:_ #sprout #missingLink 
+_Status:_ #ripe
 
 ---
 # Based On:
