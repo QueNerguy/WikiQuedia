@@ -22,7 +22,7 @@ $$
 $$
 \left(\stackrel{+}\uparrow\right)\: \sum F_y = m \cdot a_y
 $$
-The [moment](Moment) is not considered for particles, as particles aren't subject to rotations. <br>The positive direction is the positive direction for both the left hand- and the right hand side of this equation. <br>To understand the exact motion of the particle, we would solve for the acceleration from these equations, and use [particle kinematics](Modeling%20Particle%20Motion) to find the position. Because of this process, the equations above are sometimes referred to as the **equations of motion**, or **EOM**s. <br>To find the total force acting on the body we find the length of the *resulting force*.
+The [moment](Moment) is not considered for particles, as particles aren't subject to rotations. <br>The positive direction is the positive direction for both the left hand- and the right hand side of this equation. <br>To understand the exact motion of the particle, we would solve for the acceleration from these equations, and use [particle kinematics](Modeling%20Particle%20Motion) to find the position. Because of this process, the equations above are sometimes referred to as the **equations of motion**, or **EOM**s. <br>To find the total force acting on the body we find the length of the *resulting force*. Finding the length is nothing more than adding the vectors tip to toe, and applying *Pythagoras' theorem*.
 $$
 \left |\sum \vec{\textbf{F}} \right| = \left| \sum F_x \: \hat{\textbf{i}} + \sum F_y \: \hat{\textbf{j}} + \sum F_z \: \hat{\textbf{k}} \right| =\sqrt{ \left(\sum F_x\right)^2 + \left(\sum F_y\right)^2 + \left(\sum F_z\right)^2}
 $$
