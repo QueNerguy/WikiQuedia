@@ -8,7 +8,7 @@ tags:      <br>12-09-2025
 # Modeling Particle Dynamics
 
 ### Interpretation
-When [forces](Force) act on a particle, this particle may start to move as long as the sum of the forces $\ne$ 0. To model particles we want to understand how the motion of a particle relates to the forces that act on it, and vice-versa. <br>It is important to note that particles aren't subject to rotations, and the [moment](Moment) is thus not considered in these models.
+When [forces](Force) act on a particle, this particle may start to move, as long as the sum of the forces $\ne$ 0. To model particles we want to understand how the motion of a particle relates to the forces that act on it, and vice-versa. <br>It is important to note that particles aren't subject to rotations, and the [moment](Moment) is thus not considered in these models.
 
 ### Mathematical Formulation
 To describe the way a particle behaves under external [forces](Force), we can sum all the forces together. Unlike in *statics*%%==LINKJE STATICA==%%, where no motion occurred and we could thus say $\sum \vec{\textbf{F}} = m \cdot \vec{\textbf{a}} = m \cdot 0 = 0$, in *dynamics* we do account for motion, and our equation becomes
@@ -81,9 +81,9 @@ $$
 __[Home](!%20Dynamics%20Learning%20Overview)__
 
 ---
-_Status:_ #bud #missingLink 
+_Status:_ #ripe #missingLink 
 
 ---
 # Based On:
-
+1. J. L. Meriam, L. G. Kraige, J. N. Bolton, *Engineering Mechanics Dynamics*, 8th ed, US.
 

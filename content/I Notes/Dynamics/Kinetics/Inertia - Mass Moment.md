@@ -9,7 +9,7 @@ tags: [[dynamics]], [[rigid body]], [[kinetics]]     <br>08-09-2025
 
 ### Interpretation
 
-The *inertia* of an object can be seen as that objects's resistance to changes in motion. Think of trying to make an object start to move, or trying to stop an objects movement. The bigger any object is, the bigger it's inertia will be. Marbles can be stopped almost immediately by anyone, but good luck trying to stop an oil tanker dead in it's tracks. It is important to realize that the inertia of an object is an *inherent* property of that object, and can thus only depend on properties such as the object's volume or mass.<br>The mass *[moment](Moment)* of inertia specifically concerns **rotational inertia**.
+The *inertia* of an object can be seen as that objects's resistance to changes in motion. Think of trying to make an object start to move, or trying to stop an objects movement. The bigger any object is, the bigger it's inertia will be. Marbles can be stopped almost immediately by anyone, but good luck trying to stop an oil tanker dead in it's tracks. It is important to realize that the inertia of an object is an *inherent* property of that object, and can thus only depend on properties such as the object's volume or mass. <br>Inertia as a property measures **the distribution of mass around the axis of rotation**. As mass moves further away from the axis of rotation it becomes harder to stop the rotation. This can also make sense if we realize that a mass that's further away from the center requires a bigger moment to stop[^khan].<br>The mass *[moment](Moment)* of inertia specifically concerns *rotational inertia*.
 
 
 ### Mathematical Formulation
@@ -27,7 +27,7 @@ As the inertia is an *inherent* property of an object, it can't depend on an ang
 $$
 I = \int r^2 dm
 $$
-Because of the way we derived the moment[^moment1], **this equation holds only for pure rotations** about the central axis, or the [ICR](Modeling%20Rigid%20Body%20Motion#Instant%20Center%20of%20Rotation). $r$ denotes the radius of rotation, or the distance from that axis. <>To compute the inertia for certain shapes we can rewrite this equation by using the fact that mass is a function of the density  and the volume $V$. Enclosed in $V$ is the shape of an object. The equation for the volume of a cone for example is $V = \frac{\pi r^2 h}{3}$.
+Because of the way we derived the moment[^moment1], **this equation holds only for pure rotations** about the central axis, or the [ICR](Modeling%20Rigid%20Body%20Motion#Instant%20Center%20of%20Rotation). $r$ denotes the radius of rotation, or the distance from that axis. <br>To compute the inertia for certain shapes we can rewrite this equation by using the fact that mass is a function of the density  and the volume $V$. Enclosed in $V$ is the shape of an object. The equation for the volume of a cone for example is $V = \frac{\pi r^2 h}{3}$.
 $$
 I = \int r^2 d(\rho V)
 $$
@@ -45,7 +45,7 @@ If the inertia is hard to find around the [ICR](Modeling%20Rigid%20Body%20Motion
 $$
 I = \bar{I} + md^2
 $$
-Here, $d$ denotes the distance from our choice of axis for $\bar{I}$ to the [actual axis of rotation](Modeling%20Rigid%20Body%20Motion#Instant%20Center%20of%20Rotation). Similar to finding $r$, demonstrated above, $d$ doesn't take distance along the axis of rotation into account. It just finds the shortest distance from axis $a$ to axis $b$.<> To illustrate, see the image below, where $\bar{I}$ was found around axis $C$, but the [ICR](Modeling%20Rigid%20Body%20Motion#Instant%20Center%20of%20Rotation) is at $G$. The point on the axis of $G$ that is closest to $C$, however, is $O$, and as such $d$ is found between $C$ and $O$, and not between $C$ and $G$. <br>This behavior is a result of the use of a cross-product for the definition of the moment.![[transferofaxesmomentofinertia_80.png|450]]<br>source: *Engineering Mechanics Dynamics*, p629, 8th ed.
+Here, $d$ denotes the distance from our choice of axis for $\bar{I}$ to the [actual axis of rotation](Modeling%20Rigid%20Body%20Motion#Instant%20Center%20of%20Rotation). Similar to finding $r$, demonstrated above, $d$ doesn't take distance along the axis of rotation into account. It just finds the shortest distance from axis $a$ to axis $b$.<> To illustrate, see the image below, where $\bar{I}$ was found around axis $C$, but the [ICR](Modeling%20Rigid%20Body%20Motion#Instant%20Center%20of%20Rotation) is at $G$. The point on the axis of $G$ that is closest to $C$, however, is $O$, and as such $d$ is found between $C$ and $O$, and not between $C$ and $G$. <br>This behavior is a result of the use of a cross-product for the definition of the moment.<br><br>![[transferofaxesmomentofinertia_80.png|450]]<br>source: *Engineering Mechanics Dynamics*, p629, 8th ed.
 #### Composite Rotations
 When multiple rotations occur at the same time, the inertia for this simultaneous rotation has to be used, *instead of* the rotation for a single axis. To find this inertia, instead of adding the distances up (e.g. $r_z^2 = x^2 + y^2$), we multiply to take into account both axes of rotation at the same time. <br>For a rotation around both the $x$- and $y$-axes we have $r_{xy}^2 = x \cdot y$.
 $$
@@ -114,10 +114,11 @@ _Status:_ #ripe
 ---
 # Based On:
 1. J. L. Meriam, L. G. Kraige, J. N. Bolton, *Engineering Mechanics Dynamics*, 8th ed, US.
+2. Khan Academy, *Rotational Inertia*, US, [link](https://www.khanacademy.org/science/in-in-class11th-physics/in-in-system-of-particles-and-rotational-motion/in-in-rotational-inertia-and-angular-second-law/a/rotational-inertia).
 
 
 [^moment1]: Remember that a [moment](Moment) is "_a [force](Force) over a distance_", thus $\vec{\textbf{M}} = \vec{\textbf{r}} \times \vec{\textbf{F}}$. As the inertia is a result of a *resulting force*, we can substitute $m \cdot \vec{\textbf{a}}$ for $\vec{\textbf{F}}$, yielding <br>$$\vec{\textbf{M}} = \vec{\textbf{r}} \times m \cdot \vec{\textbf{a}}$$<br>We can once again substitute for $\vec{\textbf{a}}$, because we want to have this equation in terms of a rotation, thus we use<br>$$\vec{\textbf{a}} = \vec{\pmb{\omega}} \times \vec{\textbf{v}} + \vec{\pmb{\alpha}} \times \vec{\textbf{r}}$$A force that causes a rotation moves an object along the arc of the rotation. As such the (component of the) force that causes this rotation points **tangent to the path** of the rotation. As a result only the [tangential term of the acceleration](Motion%20in%20Normal-Tangent%20Coordinates#Vector%20Form%20for%20Acceleration) ($\vec{\textbf{a}}_t$) is relevant, thus$$\vec{\textbf{a}} = \vec{\textbf{a}}_t = \vec{\pmb{\alpha}} \times \vec{\textbf{r}}$$<br>Substituting this into the equation for the moment $\vec{\textbf{M}}$, we get <br>$$\vec{\textbf{M}} = \vec{\textbf{r}} \times m \cdot \left( \vec{\pmb{\alpha}} \times \vec{\textbf{r}} \right)$$<br>In scalar form we get<br>$$M = \alpha \cdot r^2m$$<br>We can thus define a moment as $M = \alpha \cdot r^2m$.<br>For a single particle with a infinitesimal weight of $dm$, we get $M = \alpha \cdot r^2 dm$. 
-
+[^khan]: Khan Academy, *Rotational Inertia*, US, [link](https://www.khanacademy.org/science/in-in-class11th-physics/in-in-system-of-particles-and-rotational-motion/in-in-rotational-inertia-and-angular-second-law/a/rotational-inertia).
 
 
 
