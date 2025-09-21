@@ -8,21 +8,76 @@ tags: [[calculus]], [[differentials]], [[integrals]], [[ODE]], [[vector math]]  
 # Generalized Ordinary Differential Equations
 
 ### Geometrical Interpretation
-This note will discuss solutions to *generalized* differential equations. The most common (ordinary) differential equations are [first order](First%20Order%20Ordinary%20Differential%20Equations)- and [second order](Second%20Order%20Ordinary%20Differential%20Equations) ones. This note will discuss solutions to differential equations that are of the $n$th order, meaning anything ranging from $y'$, or $y^{(1)}$, to $y^{(n)}$.
+This note will discuss solutions to *generalized* differential equations. The most common (ordinary) differential equations are [first order](First%20Order%20Ordinary%20Differential%20Equations)- and [second order](Second%20Order%20Ordinary%20Differential%20Equations) ones. This note will discuss solutions to differential equations that are of the $n$th order, meaning anything ranging from $y'$, or $y^{(1)}$, to $y^{(n)}$. <br>The way the solution was found for [second order differential equations](Second%20Order%20Ordinary%20Differential%20Equations), assuming a solution of $y = e^{\lambda t}$, can be generalized to higher dimensions, as this quirk always persists.<br>There are **two types** of *second order* ordinary differential equations.
+1. ***[Homogeneous Ordinary Differential Equations](#Homogeneous%20Equations)***
+2. ***[Non-Homogeneous Ordinary Differential Equations](#Non-Homogeneous%20Equations)***
+
+These are further discussed in the chapters below.
+
 
 
 ### Definition
+#### Homogeneous Equations
+Homogeneous equations are equations where every term in the equation is multiplied by some variant of $y$. For example $2y''' + 3y^" + 6y' + 5 y = 0$. Adding terms without a $y$, like $6t^3$ etc. would make the equation a [non-homogeneous equation](#Non-Homogeneous%20Equations). <br>A general form for the 3rd order would look like
+$$
+ay''' + by'' + cy' + d = 0
+$$
+To solve equations with $n$ derivatives we make use of the same trick we used for [second order differential equations](Second%20Order%20Ordinary%20Differential%20Equations#Homogeneous%20Equations). We assume *a* solution for $y$ looks like $y = e^{\lambda t}$. If we substitute this solution for $y$ into the equation above we get
+$$
+ay''' + by'' + cy' + dy = a \lambda^3 e^{\lambda t} + b \lambda^2 e^{\lambda t} + c \lambda e^{\lambda t} + d e^{\lambda t} = 0
+$$
+We can reorder this to isolate $e^{\lambda t}$ from the equation.
+$$
+e^{\lambda t} (a\lambda^3 + b\lambda^2 + c \lambda + d) = 0
+$$
+$$
+a\lambda^3 + b\lambda^2 + c \lambda + d = 0
+$$
+The last equation is known as the **characteristic equation** of our 3rd order differential equation. The characteristic for an equation with $y^{(n)}$, an $n$th order differential equation, is[^erm]
+$$
+a \lambda^n + b \lambda^{(n-1)} + \dots + y \lambda^1 + z = 0
+$$
+This equation reduces solving differential equations to an algebraic problem. The solution to these generalized problems is assumed to be a linear combination of $y = ce^{\lambda t}$, with one solution for every $\lambda$.
+$$
+y = c_1 e^{\lambda_1 t} + c_ 2 e^{\lambda_2 t} + \dots + c_n e^{\lambda_n t}
+$$
+In the case that there are *repeated roots*, meaning multiple $\lambda$s that share the same value, we multiply with our independent variable - in this case $t$ - every time the repetition appears in order to keep our solution set linearly independent. <br>So say we have a 4th order differential equation, and a root has a multiplicity of 3[^meaning] ( this means $\lambda_2 = \lambda_3 = \lambda_4$), then our solution looks like
+$$
+y = c_1 e^{\lambda_1 t} + c_2 e^{\lambda_2 t} + c_3 t e^{\lambda_3 t} + c_4 t^2 e^{\lambda_4 t}
+$$
+Notice that when $\lambda_3$ appeared we multiplied with $t$. If we didn't then $e^{\lambda_2 t} = e^{\lambda_3 t}$, and we would have a repeating term, making our solution linearly dependent. <br>We could even shorten this to
+$$
+y = c_1 e^{\lambda_1 t} + (c_2 + c_3 t + c_4 t^2) e^{\lambda_2 t}
+$$
+#### Step-by-Step Plan
+Thus our steps for solving *general homogeneous differential equations* are
+1. Solving the characteristic equation to find $\lambda$.
+$$
+ay''' + by'' + cy' + dy \qquad \Rightarrow \qquad a\lambda^3 + b\lambda^2 + c \lambda + d = 0
+$$
+2. Substituting $\lambda$ into the general solution for $y$. 
+	- In the case of **unique roots**: $$y = c_1 e^{\lambda_1 t} + c_ 2 e^{\lambda_2 t} + c_3 e^{\lambda_3 t}$$
+	- In the case of **repeating roots** for $\lambda_1$ $\lambda_2$, but not for $\lambda_3$[^meaning2]: $$y = (c_1 + c_2 t) e^{\lambda_1 t} + c_3 e^{\lambda_3 t}$$
+3. Using *boundary equations* to solve for $c_1$, $c_2$ and $c_3$.
 
-#### Check for Solutions
+
+
+
+#### Non-Homogeneous Equations
+
+#### Step-by-Step Plan
+
+
+#### Checking Solutions for Linear Dependence
 Remember from [second order differential equations](Second%20Order%20Ordinary%20Differential%20Equations) that the solution for $y$ was a combination of two separate solutions $e^{\lambda t}$.
 $$
 y = c_1 e^{\lambda_1 t} + c_2 e^{\lambda_2 t}
 $$
-We can say that the general solution for $y$ is a *linear combination* of $e^{\lambda_1 t}$ and $e^{\lambda_2 t}$. <br>Given a set of solutions $y_1$, $y_2$, $y_3$ we can test whether these solutions are linearly dependent by constructing the **Wronskian**. If they are linearly dependent we can construct a solution like above. Such solutions look as follows:
+We can say that the general solution for $y$ is a *linear combination* of $e^{\lambda_1 t}$ and $e^{\lambda_2 t}$. <br>Given a set of solutions $y_1$, $y_2$, $y_3$ we can test whether these solutions are linearly dependent by constructing the **Wronskian**. If they are linearly dependent we can construct a solution like above. <br>Such solutions for the 3rd order look as follows:
 $$
 y = c_ 1 y_1 + c_2 y_2 + c_3 y_3
 $$
-To test linear dependence, remember from linear algebra%%==LINKJE LINALG==%% that for a linear independent system the *determinant*%%==LINKJE==%% of the system is **non-zero**. To make the above equation into a matrix system we separate the $c$'s and the $y$'s.
+If the solutions aren't linearly independent we have to use the formula for repeating roots.<br>To test linear dependence, remember from linear algebra%%==LINKJE LINALG==%% that for a linear independent system the *determinant*%%==LINKJE==%% of the system is **non-zero**. To make the above equation into a matrix system we separate the $c$'s and the $y$'s.
 $$
 y = \begin{bmatrix} y_1 & y_2 & y_3 \\ y_1' & y_2' & y_3' \\ y_1'' & y_2'' & y_3'' \end{bmatrix} \begin{bmatrix}c_1\\ c_2\\ c_3\end{bmatrix}
 $$
@@ -30,7 +85,25 @@ We use derivatives to fill up the rows so we can create a *square matrix* from t
 $$
 W = \begin{vmatrix} y_1 & y_2 & y_3 \\ y_1' & y_2' & y_3' \\ y_1'' & y_2'' & y_3'' \end{vmatrix} \qquad\qquad \begin{cases} W \ne 0 \rightarrow \text{linear independence} \\ W = 0 \rightarrow \text{linear dependence}\:\:\:\: \end{cases}
 $$
-In real cases we see solutions where we have $y = f(x)$, and as such the Wronskian won't usually solve without filling in a value for $x$. The way to tackle these problems is by trying to find some point where $W(x) = 0$. This means we try to find a solution for $x$ where the Wronskian is 0, to find if there's some value of $x$ where the solutions _are_ linearly dependent. If no $x$ can be found where this is the case, then $W$ must be linearly <u>in</u>dependent, and thus we can apply $y = c_ 1 y_1 + c_2 y_2 + c_3 y_3$.
+In real cases we see solutions where we have $y = f(x)$, and as such the Wronskian won't usually solve without filling in a value for $x$. The way to tackle these problems is by trying to find some point where $W(x) = 0$. This means we try to find a solution for $x$ where the Wronskian is 0, to find if there's some value of $x$ where the solutions _are_ linearly dependent. If no $x$ can be found where this is the case, then the system must be linearly <u>in</u>dependent, and thus we can apply $y = c_ 1 y_1 + c_2 y_2 + c_3 y_3$. <br>If the system *does* turn out to be linearly dependent we apply the formula for repeated roots, which looks like $y = (c_1 + c_2 t) e^{\lambda_1 t} + c_3 e^{\lambda_3 t}$ for a repeated root $\lambda_1 = \lambda_2$.
+
+### Inventory
+> [!abstract] Inventory of the Formulas
+> - **Characteristic equation**
+> $$
+> a \lambda^n + b \lambda^{(n-1)} + \dots + y \lambda^1 + z = 0
+> $$
+> - For **unique roots**
+> $$
+> y = c_1 e^{\lambda_1 t} + c_ 2 e^{\lambda_2 t} + \dots + c_n e^{\lambda_n t}
+> $$
+> - For **repeating roots**
+> $$
+> y = c_1 e^{\lambda_1 t} + (c_ 2 + c_3 t + c_4 t^2 + c_5 t^3)e^{\lambda_2 t} + \dots + c_n e^{\lambda_n t}
+> $$
+> In this equation the root $\lambda_2$ repeats 4 times.
+
+
 
 
 
@@ -47,3 +120,6 @@ _Status:_ #bud #missingLink
 3. Wikipedia, _Wronskian_, [link](https://en.wikipedia.org/wiki/Wronskian).
 
 [^gensol]: The general form for the $y$-matrix thus also looks like:<br>$$\begin{bmatrix}y_1 & y_2 & \ldots & y_{n}\\ y_1' & y_2' & \ldots & y_{n}^{\prime}\\ \vdots & \vdots & \ddots & \vdots\\ y_1^{(n-1)} & y_2^{(n-1)} & \ldots & y_{n}^{(n-1)} \end{bmatrix}$$
+[^meaning]: Multiplicity of 3 means that the root appears 3 times with the same value.
+[^meaning2]: In this case we have $\lambda_1 = \lambda_2 \ne \lambda_3$.
+[^erm]: The completely correct solution is <br>$$ a_n \lambda^n + a_{n-1} \lambda^{(n-1)} + \dots + a_1 \lambda^1 + a_0 = 0$$<br>I personally find this notation hard to read with the subscripts for $a$, so I prefer to just use letters instead, even though technically this way of writing is slightly less correct.
