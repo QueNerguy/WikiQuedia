@@ -100,6 +100,18 @@ Depending on what $f(t)$ looks like we assume different forms to be our solution
 | Polynomial, $n^{\text{th}}$ grade[^erm2] | $$At^n + Bt^{n-1} + \dots + Yt + Z$$ |
 
 In the case that $c$ is also a root for $y_c$, we use the same trick as before to make the solution unique, namely multiplying by our variable. If, for example, we have root $e^{2t}$, but also want to use $Ae^{2t}$ for our particular solution, we must instead choose $Ate^{2t}$.
+###### Solving by Variation of Parameters
+For some problems $f(t)$ may not follow one of the forms tabulated above. In such cases we can use *variation of parameters* instead. The derivation for this is quite lengthy, and I find that it offers little insight to the processes at play here. For those interested, Paul Dawkins wrote a good explanation [here](https://tutorial.math.lamar.edu/Classes/DE/HOVariationOfParam.aspx/VariationofParameters.aspx) that I would recommend.
+The expression for  of an equation $ay''' + by'' + cy' + dy = f(t)$, with complementary solution $y_c = y_1 + y_2 + y_3$, is
+$$
+y_p = y_1 \int \frac{f(t) W_1 (t)}{W(t)}dt + y_2 \int \frac{f(t) W_2 (t)}{W(t)}dt + y_3 \int \frac{f(t) W_3 (t)}{W(t)}dt
+$$
+The Wronskian with a subscript is created by replacing the column of that subscript with $(0, 0, 1)$. For a 3$^{\text{rd}}$ order differential equation $W_2$ would look like
+$$
+W_2 = \begin{bmatrix} e^{\lambda _1 t} & 0 & e^{\lambda _3 t} \\ \lambda _1 e^{\lambda _1 t} & 0 & \lambda_3 e^{\lambda _3 t} \\ \lambda_1^2 e^{\lambda _1 t}& 1 & \lambda_3 ^2 e^{\lambda _3 t}  \end{bmatrix}
+$$
+- For an example problem using this method, see *Example 1* at the bottom of [this page by Paul Dawkins](https://tutorial.math.lamar.edu/Classes/DE/HOVariationOfParam.aspx/VariationofParameters.aspx).
+
 
 ##### Step-by-Step Plan
 Our steps for solving *general nonhomogeneous differential equations* are
@@ -142,15 +154,19 @@ We can say that the general solution for $y$ is a *linear combination* of $e^{\l
 $$
 y = c_ 1 y_1 + c_2 y_2 + c_3 y_3
 $$
-If the solutions aren't linearly independent we have to use the formula for repeating roots.<br>To test linear dependence, remember from linear algebra%%==LINKJE LINALG==%% that for a linear independent system the *determinant*%%==LINKJE==%% of the system is **non-zero**. To make the above equation into a matrix system we separate the $c$'s and the $y$'s.
+If the solutions aren't linearly independent we have to use the formula for repeating roots.<br>To test linear dependence, remember from linear algebra%%==LINKJE LINALG==%% that for a linearly independent system the *determinant*%%==LINKJE==%% of the system is **non-zero**. To make the above equation into a matrix system we separate the $c$'s and the $y$'s. We use derivatives to fill up the rows so we can create a *square matrix* from the 3 -solutions. This doesn't change whether the determinant becomes 0 for linearly dependent system.
 $$
 y = \begin{bmatrix} y_1 & y_2 & y_3 \\ y_1' & y_2' & y_3' \\ y_1'' & y_2'' & y_3'' \end{bmatrix} \begin{bmatrix}c_1\\ c_2\\ c_3\end{bmatrix}
 $$
-We use derivatives to fill up the rows so we can create a *square matrix* from the 3 $y$-solutions. Because we're filling up rows there's one less derivative than there are solutions, or in other terms: the maximum derivative of $y$ for $n$ solutions is $y^{(n-1)}$[^gensol].<br>To check for linear independence we take the determinant of the $y$-matrix and call it $W$ for the Wronskian. If $W = 0$ then the system is *linearly dependent*, if $W \ne 0$ then the system is *linearly dependent*, and we can use the above solution for $y$. <br>The **Wronskian** is constructed as
+ Because we're filling up rows there's one less derivative than there are solutions, or in other terms: the maximum derivative of $y$ for $n$ solutions is $y^{(n-1)}$[^gensol].<br>To check for linear independence we take the determinant of the $y$-matrix, which is referred to as $W$ for the Wronskian. If $W = 0$ then the system is *linearly dependent*, if $W \ne 0$ then the system is *linearly dependent*, and we can use the above solution for $y$. <br>The **Wronskian** is constructed as
 $$
 W = \begin{vmatrix} y_1 & y_2 & y_3 \\ y_1' & y_2' & y_3' \\ y_1'' & y_2'' & y_3'' \end{vmatrix} \qquad\qquad \begin{cases} W \ne 0 \rightarrow \text{linear independence} \\ W = 0 \rightarrow \text{linear dependence}\:\:\:\: \end{cases}
 $$
-In real cases we see solutions where we have $y = f(x)$, and as such the Wronskian won't usually solve without filling in a value for $x$. The way to tackle these problems is by trying to find some point where $W(x) = 0$. This means we try to find a solution for $x$ where the Wronskian is 0, to find if there's some value of $x$ where the solutions _are_ linearly dependent. If no $x$ can be found where this is the case, then the system must be linearly <u>in</u>dependent, and thus we can apply $y = c_ 1 y_1 + c_2 y_2 + c_3 y_3$. <br>If the system *does* turn out to be linearly dependent we apply the formula for repeated roots, which looks like $y = (c_1 + c_2 t) e^{\lambda_1 t} + c_3 e^{\lambda_3 t}$ for a repeated root $\lambda_1 = \lambda_2$.
+The definition of the Wronskian is, for vector valued functions $f$ and $g$ :
+$$
+W(f, g) = fg' - f'g
+$$
+In real cases we see solutions where we have $y = f(t)$, and as such the Wronskian won't usually solve without filling in a value for $t$. The way to tackle these problems is by trying to find some point where $W(t) = 0$. This means we try to find a solution for $t$ where the Wronskian is 0, to find if there's some value of $t$ where the solutions _are_ linearly dependent. If no $t$ can be found where this is the case, then the system must be linearly <u>in</u>dependent, and thus we can apply $y = c_ 1 y_1 + c_2 y_2 + c_3 y_3$. <br>If the system *does* turn out to be linearly dependent we apply the formula for repeated roots, which looks like $y = (c_1 + c_2 t) e^{\lambda_1 t} + c_3 e^{\lambda_3 t}$ for a repeated root $\lambda_1 = \lambda_2$.
 
 ### Inventory
 > [!abstract] Inventory of the Formulas
