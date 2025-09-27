@@ -54,7 +54,7 @@ $$
 y = c_1 e^{\lambda_1 t} + c_2 t e^{\lambda_2 t}
 $$
 ##### Step-by-Step Plan
-Thus our steps for solving *homogeneous second order ordinary differential equations* are
+Our steps for solving *homogeneous second order ordinary differential equations* are
 1. Solving the characteristic equation to find $\lambda$.
 $$
 ay^" + y' + c y = 0 \qquad \Rightarrow \qquad a \lambda^2 + b\lambda + c = 0
@@ -73,14 +73,48 @@ $$
 
 
 #### Nonhomogeneous Equations
-Nonhomogeneous equations are different to homogeneous equations in that there is a term that isn't multiplied by $y$. A general form for the 3rd order would look like
+Nonhomogeneous equations are different to homogeneous equations in that there is a term that isn't multiplied by $y$. A general form for the 2$^{\text{nd}}$ order would look like
 $$
-ay' + by + cy = f(t)
+ay'' + by' + cy = f(t)
 $$
-The term $f(t)$ is what makes this equation nonhomogeneous.<br>These problems are solved by first treating the function like a homogeneous equation, neglecting $f(t)$, and then adding a term to correct for the omission of $f(t)$ in the solution. The solution to the associated homogeneous equation is referred to as the *complementary solution*, $y_c$, and the corrective term is called the *particular solution*, $y_p$.
+The term $f(t)$ is what makes this equation nonhomogeneous.<br>These problems are solved by first treating the function like a homogeneous equation, neglecting $f(t)$, and then adding a term to correct for the omission of $f(t)$ in the solution. The solution to the associated homogeneous equation is referred to as the *complementary solution*, $y_c$, and the corrective term is called the *particular solution*, $y_p$.<br><br>To find the particular solution to the problem we once again use an assumption to find an expression. We assume that the solution will look similar to the extra term $f(t)$. We will use a general form similar to $f(t)$, and differentiate that to fill into the equation for $y$. <br>For example, $f(t)$ might be $4\cos(t) + \sin(t)$. In this case we assume $y_p = A\cos(t) + B\sin(t)$. We now differentiate $y_p$ to become $y_p '$ and $y_p ''$ so we can substitute these into the equation above, $ay'' + by' + cy = f(t)$. From here we can find an expression for $A$ and $B$. In our example our solution would look something like
+$$
+\begin{matrix} y_p = A\cos(t) + B\sin(t) \\ y_p' = -A\sin(t) + B\cos(t) \\ y_p'' = -A\cos(t) - B\sin(t) \end{matrix}
+$$
+Substituting into $ay'' + by' + cy = 4\cos(t) + \sin(t)$ gives us
+$$
+a[-A\cos(t) - B\sin(t)] + b[-A\sin(t) + B\cos(t)] + c[A\cos(t) + B\sin(t)] = 4 \cos(t) + \sin(t)
+$$
+We can group terms together to get
+$$
+[-aA + bB +cA] \cos(t) + [-aB -bA + cB] \sin(t) = 4 \cos(t) + \sin(t)
+$$
+To find $A$ and $B$ we can thus solve the system of equations
+$$
+\begin{cases} -aA + bB +cA = 4 \\ -aB -bA + cB = 1 \end{cases}
+$$
+Depending on what $f(t)$ looks like we assume different forms to be our solution for $y_p$. If $f(t)$ is a polynomial, say $4x^2 + 3x + 6$, we would say $y_p = Ax^2 + Bx + C$. Note that when terms are missing, for example instead of $4x^2 + 3x + 6$ we would only have $4x^2 + 6$, we still use the full form. In this example don't remove $Bx$ from the expression. Treat and write this form as $4x^2 + 0x + 6$ to solve the eventual system of equations.<br>Below is a list of assumptions for our particular solution for different expression for $f(t)$.
 
+
+| Expression for $f(t)$                    | Assumed solution for $y_p$[^credit2] |
+| ---------------------------------------- | ------------------------------------ |
+| $$a\cos (c t)$$                          | $$A\cos(c t) + B\sin(c t)$$          |
+| $$a\sin (ct)$$                           | $$A\cos(c t) + B\sin(c t)$$          |
+| $$a\cos(c t) + b\sin(c t)$$              | $$A\cos(c t) + B\sin(c t)$$          |
+| $$ae^{ct}$$                              | $$Ae^{ct}$$                          |
+| Polynomial, $n^{\text{th}}$ grade[^erm2] | $$At^n + Bt^{n-1} + \dots + Yt + Z$$ |
+
+
+In the case that $c$ is also a root for $y_c$, we use the same trick as before to make the solution unique, namely multiplying by our variable. If, for example, we have root $e^{2t}$, but also want to use $Ae^{2t}$ for our particular solution, we must instead choose $Ate^{2t}$.
 
 ##### Step-by-Step Plan
+Our steps for solving *general nonhomogeneous differential equations* are
+1. Neglecting the nonhomogeneous term and treating our equation like a [homogeneous equation](#Homogeneous%20Equations) whose solution is $y_c$.
+2. Assuming an expression for $y_p$ and differentiating this expression. $$y_p = A\cos(c t) + B\sin(c t), \: y_p' = A\sin(t) + B\cos(t)$$
+3. Substituting the obtained values $y_p$, $y_p '$ etc. into the nonhomogeneous equation, and solving for $A$ and $B$. Plug the results in in our expression for $y_p$.
+4. Adding $y_c$ and $y_p$ together to find the general solution. $$y = y_c + y_p$$
+5. Using *boundary equations* to solve for $c_1$, $c_2$ and $c_3$.
+
 
 
 
@@ -139,7 +173,7 @@ _Status:_ #sprout #missingLink
 [^1]: This solution means that we use $y$ as a function of $t$. Useful in for example [dynamics](!%20Dynamics%20Learning%20Overview) problems. If we have a coordinate system $x$, $y$, and $y$ is a function of $x$, then our general solution would of course be $y = e^{\lambda x}$ instead of $y = e^{\lambda t}$.
 [^2]: The characteristic equation has two roots because it is a second order polynomial, which always have two roots. The solutions of second order polynomials may take the form of $(\lambda - 3)(\lambda - 6) = 0$, where we know the roots to be 3 and 6.
 [^credit1]: This whole chapter of the note is based in it's entirety on the simple explanation given by James Gill. You can watch his video [here](https://www.youtube.com/watch?v=r1v2P4hjNJ8).
-
+[^credit2]: P. Dawkins, _Section 3.9 : Undetermined Coefficients_, 11-2022, US, [link](https://tutorial.math.lamar.edu/classes/de/undeterminedcoefficients.aspx).
 
 
 

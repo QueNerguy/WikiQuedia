@@ -35,7 +35,7 @@ a\lambda^3 + b\lambda^2 + c \lambda + d = 0
 $$
 The last equation is known as the **characteristic equation** of our 3rd order differential equation. The characteristic for an equation with $y^{(n)}$, an $n$th order differential equation, is[^erm]
 $$
-a \lambda^n + b \lambda^{(n-1)} + \dots + y \lambda^1 + z = 0
+a \lambda^n + b \lambda^{n-1} + \dots + y \lambda^1 + z = 0
 $$
 This equation reduces solving differential equations to an algebraic problem. The solution to these generalized problems is assumed to be a linear combination of $y = ce^{\lambda t}$, with one solution for every $\lambda$.
 $$
@@ -50,7 +50,7 @@ $$
 y = c_1 e^{\lambda_1 t} + (c_2 + c_3 t + c_4 t^2) e^{\lambda_2 t}
 $$
 ##### Step-by-Step Plan
-Thus our steps for solving *general homogeneous differential equations* are
+Our steps for solving *general homogeneous differential equations* are
 1. Solving the characteristic equation to find $\lambda$.
 $$
 ay''' + by'' + cy' + dy \qquad \Rightarrow \qquad a\lambda^3 + b\lambda^2 + c \lambda + d = 0
@@ -68,11 +68,49 @@ Nonhomogeneous equations are different to homogeneous equations in that there is
 $$
 ay''' + by'' + cy' + dy = f(t)
 $$
-The term $f(t)$ is what makes this equation nonhomogeneous.<br>These problems are solved by first treating the function like a homogeneous equation, neglecting $f(t)$, and then adding a term to correct for the omission of $f(t)$ in the solution. The solution to the associated homogeneous equation is referred to as the *complementary solution*, $y_c$, and the corrective term is called the *particular solution*, $y_p$.
-<><>To find the particular solution to the problem we once again use an assumption to find an expression
+The term $f(t)$ is what makes this equation nonhomogeneous.<br>These problems are solved by first treating the function like a homogeneous equation, neglecting $f(t)$, and then adding a term to correct for the omission of $f(t)$ in the solution. The solution to the associated homogeneous equation is referred to as the *complementary solution*, $y_c$, and the corrective term is called the *particular solution*, $y_p$.<br><br>To find the particular solution to the problem we once again use an assumption to find an expression. We assume that the solution will look similar to the extra term $f(t)$. We will use a general form similar to $f(t)$, and differentiate that to fill into the equation for $y$. <br>For example, $f(t)$ might be $4\cos(t) + \sin(t)$. In this case we assume $y_p = A\cos(t) + B\sin(t)$. We now differentiate $y_p$ to become $y_p '$, $y_p ''$ and $y_p '''$ so we can substitute these into the equation above, $ay''' + by'' + cy' + dy = f(t)$. From here we can find an expression for $A$ and $B$. In our example our solution would look something like
+$$
+\begin{matrix} y_p = A\cos(t) + B\sin(t) \\ y_p' = -A\sin(t) + B\cos(t) \\ y_p'' = -A\cos(t) - B\sin(t) \\ y_p ''' = A\sin(t) - B\cos(t) \end{matrix}
+$$
+Substituting into $ay''' + by'' + cy' + dy = 4\cos(t) + \sin(t)$ gives us
+$$
+a[A\sin(t) - B\cos(t)] + b[-A\cos(t) - B\sin(t)] + c[-A\sin(t) + B\cos(t)] + d[A\cos(t) + B\sin(t)] = 4 \cos(t) + \sin(t)
+$$
+We can group terms together to get
+$$
+[-aB -bA + cB +dA] \cos(t) + [aA -bB -cA + dB] \sin(t) = 4 \cos(t) + \sin(t)
+$$
+To find $A$ and $B$ we can thus solve the system of equations
+$$
+\begin{cases} -aB -bA + cB +dA = 4 \\ aA -bB -cA + dB = 1 \end{cases}
+$$
+After we have found an expression for $A$ and $B$ we can substitute these back to get an expression for $y_p$. The eventual solution is a combination of $y_p$ and $y_c$.
+$$
+y = y_c + y_p
+$$
+Depending on what $f(t)$ looks like we assume different forms to be our solution for $y_p$. If $f(t)$ is a polynomial, say $4x^2 + 3x + 6$, we would say $y_p = Ax^2 + Bx + C$. Note that when terms are missing, for example instead of $4x^2 + 3x + 6$ we would only have $4x^2 + 6$, we still use the full form. In this example don't remove $Bx$ from the expression. Treat and write this form as $4x^2 + 0x + 6$ to solve the eventual system of equations.<br>Below is a list of assumptions for our particular solution for different expression for $f(t)$.
 
+
+| Expression for $f(t)$                    | Assumed solution for $y_p$[^credit]  |
+| ---------------------------------------- | ------------------------------------ |
+| $$a\cos (c t)$$                          | $$A\cos(c t) + B\sin(c t)$$          |
+| $$a\sin (ct)$$                           | $$A\cos(c t) + B\sin(c t)$$          |
+| $$a\cos(c t) + b\sin(c t)$$              | $$A\cos(c t) + B\sin(c t)$$          |
+| $$ae^{ct}$$                              | $$Ae^{ct}$$                          |
+| Polynomial, $n^{\text{th}}$ grade[^erm2] | $$At^n + Bt^{n-1} + \dots + Yt + Z$$ |
+
+In the case that $c$ is also a root for $y_c$, we use the same trick as before to make the solution unique, namely multiplying by our variable. If, for example, we have root $e^{2t}$, but also want to use $Ae^{2t}$ for our particular solution, we must instead choose $Ate^{2t}$.
 
 ##### Step-by-Step Plan
+Our steps for solving *general nonhomogeneous differential equations* are
+1. Neglecting the nonhomogeneous term and treating our equation like a [homogeneous equation](#Homogeneous%20Equations) whose solution is $y_c$.
+2. Assuming an expression for $y_p$ and differentiating this expression. $$y_p = A\cos(c t) + B\sin(c t), \: y_p' = A\sin(t) + B\cos(t)$$
+3. Substituting the obtained values $y_p$, $y_p '$ etc. into the nonhomogeneous equation, and solving for $A$ and $B$. Plug the results in in our expression for $y_p$.
+4. Adding $y_c$ and $y_p$ together to find the general solution. $$y = y_c + y_p$$
+5. Using *boundary equations* to solve for $c_1$, $c_2$ and $c_3$.
+
+
+
 
 
 
@@ -118,7 +156,7 @@ In real cases we see solutions where we have $y = f(x)$, and as such the Wronski
 > [!abstract] Inventory of the Formulas
 > - **Characteristic equation**
 > $$
-> a \lambda^n + b \lambda^{(n-1)} + \dots + y \lambda^1 + z = 0
+> a \lambda^n + b \lambda^{n-1} + \dots + y \lambda^1 + z = 0
 > $$
 > - For **unique roots**
 > $$
@@ -153,6 +191,8 @@ _Status:_ #bud #missingLink
 [^gensol]: The general form for the $y$-matrix thus also looks like:<br>$$\begin{bmatrix}y_1 & y_2 & \ldots & y_{n}\\ y_1' & y_2' & \ldots & y_{n}^{\prime}\\ \vdots & \vdots & \ddots & \vdots\\ y_1^{(n-1)} & y_2^{(n-1)} & \ldots & y_{n}^{(n-1)} \end{bmatrix}$$
 [^meaning]: Multiplicity of 3 means that the root appears 3 times with the same value.
 [^meaning2]: In this case we have $\lambda_1 = \lambda_2 \ne \lambda_3$.
-[^erm]: The completely correct solution is <br>$$ a_n \lambda^n + a_{n-1} \lambda^{(n-1)} + \dots + a_1 \lambda^1 + a_0 = 0$$<br>I personally find this notation hard to read with the subscripts for $a$, so I prefer to just use letters instead, even though technically this way of writing is slightly less correct.
+[^erm]: The completely correct way to write this is <br>$$ a_n \lambda^n + a_{n-1} \lambda^{n-1} + \dots + a_1 \lambda^1 + a_0 = 0$$<br>I personally find this notation hard to read with the subscripts for $a$, so I prefer to just use letters instead, even though technically this way of writing is slightly less correct.
 
 [^deriv]: The derivation for this formula isn't relevant to this note, but you can read more on [wikipedia](https://en.wikipedia.org/wiki/Euler's_formula), or see page 166-167 of _Differential Equations and Boundary Value Problems_, the beginning of the chapter *Complex-Valued Functions and Euler's Formula*.
+[^credit]: P. Dawkins, _Section 3.9 : Undetermined Coefficients_, 11-2022, US, [link](https://tutorial.math.lamar.edu/classes/de/undeterminedcoefficients.aspx).
+[^erm2]: The completely correct way to write this is <br>$$A_n t^n + A_{n-1}t^{n-1} + \dots + A_1t + A_0$$<br>I personally find this notation hard to read with the subscripts for $A$, so I prefer to just use letters instead, even though technically this way of writing is slightly less correct. %%(loser)%%
