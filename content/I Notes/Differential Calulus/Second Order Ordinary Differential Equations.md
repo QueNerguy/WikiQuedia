@@ -93,7 +93,7 @@ To find $A$ and $B$ we can thus solve the system of equations
 $$
 \begin{cases} -aA + bB +cA = 4 \\ -aB -bA + cB = 1 \end{cases}
 $$
-Depending on what $f(t)$ looks like we assume different forms to be our solution for $y_p$. If $f(t)$ is a polynomial, say $4x^2 + 3x + 6$, we would say $y_p = Ax^2 + Bx + C$. Note that when terms are missing, for example instead of $4x^2 + 3x + 6$ we would only have $4x^2 + 6$, we still use the full form. In this example don't remove $Bx$ from the expression. Treat and write this form as $4x^2 + 0x + 6$ to solve the eventual system of equations.<br>Below is a list of assumptions for our particular solution for different expression for $f(t)$.
+Depending on what $f(t)$ looks like we assume different forms to be our solution for $y_p$. If $f(t)$ is a polynomial, say $4x^2 + 3x + 6$, we would say $y_p = Ax^2 + Bx + C$. Note that when terms are missing, for example instead of $4x^2 + 3x + 6$ we would only have $4x^2 + 6$, we still use the full form. In this example don't remove $Bx$ from the expression. Treat and write this form as $4x^2 + 0x + 6$ to solve the eventual system of equations. <br>It is possible to have a form that is a *combination* of two forms, for example a polynomial and a sine function. In such cases we can use two assumptions at the same time. For an $f(t)$ like $4t^2 + \cos(8t)$ we would use $[At^2 + Bt + C] + [D\cos(8t) + E\sin(8t)]$. <br>Below is a list of assumptions for our particular solution for different expression for $f(t)$.
 
 
 | Expression for $f(t)$                    | Assumed solution for $y_p$[^credit2] |
@@ -106,16 +106,27 @@ Depending on what $f(t)$ looks like we assume different forms to be our solution
 
 
 In the case that $c$ is also a root for $y_c$, we use the same trick as before to make the solution unique, namely multiplying by our variable. If, for example, we have root $e^{2t}$, but also want to use $Ae^{2t}$ for our particular solution, we must instead choose $Ate^{2t}$.
+###### Solving by Variation of Parameters
+For some problems $f(t)$ may not follow one of the forms tabulated above. In such cases we can use *variation of parameters* instead. The derivation for this is quite lengthy, and I find that it offers little insight to the processes at play here. For those interested, Paul Dawkins wrote a good explanation [here](https://tutorial.math.lamar.edu/classes/de/VariationofParameters.aspx) that I would recommend.
+The expression for $y_p$ of an equation $ay'' + by' + cy = f(t)$, with complementary solution $y_c = y_1 + y_2$, is
+
+
+$$
+y_p = -y_1 \int \frac{y_2 f(t)}{W(t)}dt + y_2 \int\frac{y_1 f(t)}{W(t)}dt
+$$
+
+
+
 
 ##### Step-by-Step Plan
 Our steps for solving *general nonhomogeneous differential equations* are
-1. Neglecting the nonhomogeneous term and treating our equation like a [homogeneous equation](#Homogeneous%20Equations) whose solution is $y_c$.
-2. Assuming an expression for $y_p$ and differentiating this expression. $$y_p = A\cos(c t) + B\sin(c t), \: y_p' = A\sin(t) + B\cos(t)$$
-3. Substituting the obtained values $y_p$, $y_p '$ etc. into the nonhomogeneous equation, and solving for $A$ and $B$. Plug the results in in our expression for $y_p$.
-4. Adding $y_c$ and $y_p$ together to find the general solution. $$y = y_c + y_p$$
-5. Using *boundary equations* to solve for $c_1$, $c_2$ and $c_3$.
-
-
+1. Finding an expression for $y_c$ by neglecting $f(t)$ and solving the resulting [homogeneous equation](#Homogeneous%20Equations).
+2. Finding an expression for $y_p$ by either:
+	-  Assuming a general form for the solution and differentiating this expression, substituting into the equation to solve for $A$ and $B$. <br>$$y_p = A\cos(c t) + B\sin(c t)$$
+	-  Using the [Wronskian](Generalized%20Ordinary%20Differential%20Equations#Checking%20Solutions%20for%20Linear%20Dependence) and the obtained solution for $y_c$ to fill in the equation  below. $$y_p = -y_1 \int \frac{y_2 f(t)}{W(t)}dt + y_2 \int\frac{y_1 f(t)}{W(t)}dt$$
+	
+3. Adding $y_c$ and $y_p$ together to find the general solution. $$y = y_c + y_p$$
+4. Using *boundary equations* to solve for $c_1$, $c_2$ and $c_3$.
 
 
 #### Complex Solutions
@@ -169,6 +180,9 @@ _Status:_ #sprout #missingLink
 # Based On:
 1. C. H. Edwards, D. E. Penney, D. Calvis, _Differential Equations and Boundary Value Problems_, 5th ed, US.
 2. J. Gill, _Second Order Linear Equations Via Eigenvalues_, 3-2022, US, [link](https://www.youtube.com/watch?v=r1v2P4hjNJ8).
+3. P. Dawkins, _Section 3.9 : Undetermined Coefficients_, 11-2022, US, [link](https://tutorial.math.lamar.edu/classes/de/undeterminedcoefficients.aspx).
+4. P. Dawkins, *Section 7.4 : Variation of Parameters*, 11-2022, US, [link](https://tutorial.math.lamar.edu/Classes/DE/HOVariationOfParam.aspx/VariationofParameters.aspx).
+5. W. Trench, _9.4: Variation of Parameters for Higher Order Equations_, US, [link](https://math.libretexts.org/Courses/Community_College_of_Denver/MAT_2562_Differential_Equations_with_Linear_Algebra/09:_Linear_Higher_Order_Differential_Equations/9.04:_Variation_of_Parameters_for_Higher_Order_Equations).
 
 [^1]: This solution means that we use $y$ as a function of $t$. Useful in for example [dynamics](!%20Dynamics%20Learning%20Overview) problems. If we have a coordinate system $x$, $y$, and $y$ is a function of $x$, then our general solution would of course be $y = e^{\lambda x}$ instead of $y = e^{\lambda t}$.
 [^2]: The characteristic equation has two roots because it is a second order polynomial, which always have two roots. The solutions of second order polynomials may take the form of $(\lambda - 3)(\lambda - 6) = 0$, where we know the roots to be 3 and 6.
