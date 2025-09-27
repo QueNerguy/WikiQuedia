@@ -2,7 +2,7 @@
 title: "Inertia - Mass Moment"
 draft: false
 ---
-tags: [[dynamics]], [[rigid body]], [[kinetics]]     <br>08-09-2025
+tags: [[dynamics]], [[rigid body]], [[kinetics]], [[sums]]     <br>08-09-2025
 
 ---
 # Mass Moment of Inertia
@@ -105,6 +105,22 @@ idk thought this was cool, not sure how to use it and what it exactly completely
 > $$
 
 
+
+### Pre-computed Solutions
+
+| Visualization[^c]                            | Description                                                                                                                                                                                                                   | Expression                                                              |
+| -------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| ![[MassInertiaSolidCylinder_80.png]]         | Solid **cylinder** with a **rotation** around the center axis.                                                                                                                                                                | $$I = \frac{1}{2} mr^2$$                                                |
+| ![[MassInertiaHollowCylinder_80.png]]        | Hollow **cylinder** with a **rotation** around the center axis.<br>**Note** that the thickness of the shell is assumed to be insignificant.                                                                                   | $$I = mr^2$$                                                            |
+| ![[MassInertiaSolidSphere_80.png]]           | Solid sphere with a **rotation** around any arbitrary axis that passes through it's center.                                                                                                                                   | $$I = \frac{2}{5} mr^2$$                                                |
+| ![[MassInertiaSolidRing_80.png]]             | Solid **ring** with rounded edges and a **rotation** around the center axis.<br>**Note** that this view is cut halfway, the ring itself is a full circle.                                                                     | $$I = \frac{1}{4}m \left( D^2 + \frac{3}{4}d^2 \right)$$                |
+| ![[MassInertiaSolidCylinderSideways_80.png]] | Solid **cylinder** with a **rotation** around an axis, perpendicular to center axis and halfway along the cylinder's height.                                                                                                  | $$I = \frac{1}{4}mr^2 + \frac{1}{12}mL^2$$                              |
+| ![[MassInertiaRod_80.png]]                   | Long **rod** with a **rotation** around any axis.<br>**Note** that the thickness of the rod itself is assumed to be insignificant.<br>__Note__ that the $\sin(\alpha )$ term disappears for a rotation along the center axis. | $$I = \frac{1}{3}mL^2 \sin^2(\alpha)$$                                  |
+| ![[MassInertiaSolidCone_80.png]]             | Solid cone with a **rotation** around the center axis.                                                                                                                                                                        | $$I = \frac{3}{10} mr^2$$                                               |
+| ![[MassInertiaSolidBox_80.png]]              | Solid **box** with a **rotation** around axes perpendicular to one of it's faces                                                                                                                                              | $$I_z = \frac{1}{12}m(a^2 + b^2)$$<br>$$I_x = \frac{1}{3}m(a^2 + b^2)$$ |
+
+
+
 ---
 __[Home](!%20Dynamics%20Learning%20Overview)__
 
@@ -120,6 +136,7 @@ _Status:_ #ripe
 [^moment1]: Remember that a [moment](Moment) is "_a [force](Force) over a distance_", thus $\vec{\textbf{M}} = \vec{\textbf{r}} \times \vec{\textbf{F}}$. As the inertia is a result of a *resulting force*, we can substitute $m \cdot \vec{\textbf{a}}$ for $\vec{\textbf{F}}$, yielding <br>$$\vec{\textbf{M}} = \vec{\textbf{r}} \times m \cdot \vec{\textbf{a}}$$<br>We can once again substitute for $\vec{\textbf{a}}$, because we want to have this equation in terms of a rotation, thus we use<br>$$\vec{\textbf{a}} = \vec{\pmb{\omega}} \times \vec{\textbf{v}} + \vec{\pmb{\alpha}} \times \vec{\textbf{r}}$$A force that causes a rotation moves an object along the arc of the rotation. As such the (component of the) force that causes this rotation points **tangent to the path** of the rotation. As a result only the [tangential term of the acceleration](Motion%20in%20Normal-Tangent%20Coordinates#Vector%20Form%20for%20Acceleration) ($\vec{\textbf{a}}_t$) is relevant, thus$$\vec{\textbf{a}} = \vec{\textbf{a}}_t = \vec{\pmb{\alpha}} \times \vec{\textbf{r}}$$<br>Substituting this into the equation for the moment $\vec{\textbf{M}}$, we get <br>$$\vec{\textbf{M}} = \vec{\textbf{r}} \times m \cdot \left( \vec{\pmb{\alpha}} \times \vec{\textbf{r}} \right)$$<br>In scalar form we get<br>$$M = \alpha \cdot r^2m$$<br>We can thus define a moment as $M = \alpha \cdot r^2m$.<br>For a single particle with a infinitesimal weight of $dm$, we get $M = \alpha \cdot r^2 dm$. 
 [^khan]: Khan Academy, *Rotational Inertia*, US, [link](https://www.khanacademy.org/science/in-in-class11th-physics/in-in-system-of-particles-and-rotational-motion/in-in-rotational-inertia-and-angular-second-law/a/rotational-inertia).
 
+[^c]: A. van Beek, _Formuleboekje_, _Massatraagheid_, 2023, NL, [link](https://www.werktuigbouw.nl/book/default_wb.htm).
 
 
 

@@ -2,7 +2,7 @@
 title: Modeling Particle Motion
 draft: false
 ---
-tags: [[dynamics]], [[single particle]], [[kinematics]]     <br>03-09-2025
+tags: [[dynamics]], [[single particle]], [[kinematics]], [[vector math]]     <br>03-09-2025
 
 ---
 # Modeling Particle Motion

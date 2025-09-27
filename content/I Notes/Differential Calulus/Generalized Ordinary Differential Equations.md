@@ -10,7 +10,7 @@ tags: [[calculus]], [[differentials]], [[integrals]], [[ODE]], [[vector math]]  
 ### Geometrical Interpretation
 This note will discuss solutions to *generalized* differential equations. The most common (ordinary) differential equations are [first order](First%20Order%20Ordinary%20Differential%20Equations)- and [second order](Second%20Order%20Ordinary%20Differential%20Equations) ones. This note will discuss solutions to differential equations that are of the $n$th order, meaning anything ranging from $y'$, or $y^{(1)}$, to $y^{(n)}$. <br>The way the solution was found for [second order differential equations](Second%20Order%20Ordinary%20Differential%20Equations), assuming a solution of $y = e^{\lambda t}$, can be generalized to higher dimensions, as this quirk always persists.<br>There are **two types** of *second order* ordinary differential equations.
 1. ***[Homogeneous Ordinary Differential Equations](#Homogeneous%20Equations)***
-2. ***[Non-Homogeneous Ordinary Differential Equations](#Non-Homogeneous%20Equations)***
+2. ***[Nonhomogeneous Ordinary Differential Equations](#Nonhomogeneous%20Equations)***
 
 These are further discussed in the chapters below.
 
@@ -20,7 +20,7 @@ These are further discussed in the chapters below.
 #### Homogeneous Equations
 Homogeneous equations are equations where every term in the equation is multiplied by some variant of $y$. For example $2y''' + 3y^" + 6y' + 5 y = 0$. Adding terms without a $y$, like $6t^3$ etc. would make the equation a [non-homogeneous equation](#Non-Homogeneous%20Equations). <br>A general form for the 3rd order would look like
 $$
-ay''' + by'' + cy' + d = 0
+ay''' + by'' + cy' + dy = 0
 $$
 To solve equations with $n$ derivatives we make use of the same trick we used for [second order differential equations](Second%20Order%20Ordinary%20Differential%20Equations#Homogeneous%20Equations). We assume *a* solution for $y$ looks like $y = e^{\lambda t}$. If we substitute this solution for $y$ into the equation above we get
 $$
@@ -49,7 +49,7 @@ Notice that when $\lambda_3$ appeared we multiplied with $t$. If we didn't then 
 $$
 y = c_1 e^{\lambda_1 t} + (c_2 + c_3 t + c_4 t^2) e^{\lambda_2 t}
 $$
-#### Step-by-Step Plan
+##### Step-by-Step Plan
 Thus our steps for solving *general homogeneous differential equations* are
 1. Solving the characteristic equation to find $\lambda$.
 $$
@@ -63,9 +63,36 @@ $$
 
 
 
-#### Non-Homogeneous Equations
+#### Nonhomogeneous Equations
+Nonhomogeneous equations are different to homogeneous equations in that there is a term that isn't multiplied by $y$. A general form for the 3rd order would look like
+$$
+ay''' + by'' + cy' + dy = f(t)
+$$
+The term $f(t)$ is what makes this equation nonhomogeneous.<br>These problems are solved by first treating the function like a homogeneous equation, neglecting $f(t)$, and then adding a term to correct for the omission of $f(t)$ in the solution. The solution to the associated homogeneous equation is referred to as the *complementary solution*, $y_c$, and the corrective term is called the *particular solution*, $y_p$.
+<><>To find the particular solution to the problem we once again use an assumption to find an expression
 
-#### Step-by-Step Plan
+
+##### Step-by-Step Plan
+
+
+
+#### Complex Solutions
+Complex solutions for $y$ are solutions where one of the solutions looks like
+$$
+y_1 = c_1 e^{i\theta}
+$$
+For equations like these we can use *[Euler's formula](https://en.wikipedia.org/wiki/Euler's_formula)*[^deriv], which states
+$$
+e^{i \theta} = \cos({\theta}) + i\sin(\theta)
+$$
+Complex functions where $\lambda$ has a solution $a + bi$ can be deconstructed as follows:
+$$
+e^{(a+bi)t} = e^{at}e^{ibt} = e^{at}\left[ \cos({bt}) + i\sin(bt) \right]
+$$
+Solving complex-valued problems isn't too different from solving *normal* problems, the added complexity only comes from using Euler's formula. When we encounter complex roots *alongside* non-complex roots we first write our solution in terms of only $e^{\lambda t}$ (where $\lambda$ can thus be complex), and only afterwards apply Euler's formula.<br>Solving these forms can look like
+$$
+y = c_1 e^{\lambda_1 t} + c_2 e^{\lambda_2 t} + c_3 e^{(a + bi) t} = c_1 e^{\lambda_1 t} + c_2 e^{\lambda_2 t} + c_3e^{at}\left[ \cos({bt}) + i\sin(bt) \right]
+$$
 
 
 #### Checking Solutions for Linear Dependence
@@ -102,6 +129,10 @@ In real cases we see solutions where we have $y = f(x)$, and as such the Wronski
 > y = c_1 e^{\lambda_1 t} + (c_ 2 + c_3 t + c_4 t^2 + c_5 t^3)e^{\lambda_2 t} + \dots + c_n e^{\lambda_n t}
 > $$
 > In this equation the root $\lambda_2$ repeats 4 times.
+> - For **complex roots**
+> $$
+> e^{(a+bi)t} = e^{at}\left[ \cos({bt}) + i\sin(bt) \right]
+> $$
 
 
 
@@ -123,3 +154,5 @@ _Status:_ #bud #missingLink
 [^meaning]: Multiplicity of 3 means that the root appears 3 times with the same value.
 [^meaning2]: In this case we have $\lambda_1 = \lambda_2 \ne \lambda_3$.
 [^erm]: The completely correct solution is <br>$$ a_n \lambda^n + a_{n-1} \lambda^{(n-1)} + \dots + a_1 \lambda^1 + a_0 = 0$$<br>I personally find this notation hard to read with the subscripts for $a$, so I prefer to just use letters instead, even though technically this way of writing is slightly less correct.
+
+[^deriv]: The derivation for this formula isn't relevant to this note, but you can read more on [wikipedia](https://en.wikipedia.org/wiki/Euler's_formula), or see page 166-167 of _Differential Equations and Boundary Value Problems_, the beginning of the chapter *Complex-Valued Functions and Euler's Formula*.

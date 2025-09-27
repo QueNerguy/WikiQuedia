@@ -2,7 +2,7 @@
 title: "Motion in Cartesian Coordinates"
 draft: false
 ---
-tags: [[dynamics]], [[kinematics]]     <br>03-09-2025
+tags: [[dynamics]], [[kinematics]], [[vector math]]     <br>03-09-2025
 
 ---
 # Motion in Cartesian Coordinates

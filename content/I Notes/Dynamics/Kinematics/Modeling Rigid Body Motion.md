@@ -2,7 +2,7 @@
 title: "Modeling Rigid Body Motion"
 draft: false
 ---
-tags: [[dynamics]], [[rigid body]], [[kinematics]]     <br>07-09-2025
+tags: [[dynamics]], [[rigid body]], [[kinematics]], [[vector math]]     <br>07-09-2025
 
 ---
 # Modeling Rigid Body Motion

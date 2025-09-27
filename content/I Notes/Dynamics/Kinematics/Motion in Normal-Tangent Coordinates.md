@@ -2,7 +2,7 @@
 title: "Motion in Normal-Tangent Coordinates"
 draft: false
 ---
-tags: [[dynamics]], [[kinematics]]     <br>03-09-2025
+tags: [[dynamics]], [[kinematics]], [[vector math]]     <br>03-09-2025
 
 ---
 # Motion in Normal-Tangent Coordinates
@@ -48,7 +48,7 @@ $$
 \vec{\textbf{a}} = \begin{bmatrix} a_n \\ a_t \end{bmatrix} = \frac{d}{dt} \left[ \vec{\textbf{v}} \right] = \frac{d}{dt} \left[ v \hat{\textbf{e}}_t \right]
 $$
 $$
-\vec{\textbf{a}} = \begin{bmatrix} a_n \\ a_t \end{bmatrix}  = \dot{v}\hat{\textbf{e}}_t + v \dot{\hat{\textbf{e}}}_t
+\vec{\textbf{a}} = \begin{bmatrix} a_n \\ a_t \end{bmatrix}  = v \dot{\hat{\textbf{e}}}_t + \dot{v}\hat{\textbf{e}}_t
 $$
 To find an expression for $\dot{\hat{\textbf{e}}}_t$ we once again use the circle tangent to the path. We want to find an expression for an infinitesimal step in $\hat{\textbf{e}}_t$ so we can divide this step by $dt$ to obtain our time derivative $\dot{\hat{\textbf{e}}}_t = \frac{d\hat{\textbf{e}}_t}{dt}$. As a step in the tangential direction ($d\hat{\textbf{e}}_t$) is defined as *radius*$\times$*angle*, we now use $\hat{\textbf{e}}_n$ for the radial component and write
 $$

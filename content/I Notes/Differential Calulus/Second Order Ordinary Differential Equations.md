@@ -15,7 +15,7 @@ $$
 ### Geometrical Interpretation
 Second order ordinary differential equations build on the knowledge of [first order ordinary differential equations](First%20Order%20Ordinary%20Differential%20Equations). The solutions to these problems are found in a different way however. <br>The *goal* of solving differential equations is to eliminate the differentials and solve for the differentiated variable. So if we encounter $dy$ in an equation, we would try to create an equation that has no differential $dy$, only $y$.<br>There are **two types** of *second order* ordinary differential equations.
 1. ***[Homogeneous Ordinary Differential Equations](#Homogeneous%20Equations)***
-2. ***[Non-Homogeneous Ordinary Differential Equations](#Non-Homogeneous%20Equations)***
+2. ***[Nonhomogeneous Ordinary Differential Equations](#Nonhomogeneous%20Equations)***
 
 These are further discussed in the chapters below.
 
@@ -72,9 +72,37 @@ $$
 
 
 
-#### Non-Homogeneous Equations
+#### Nonhomogeneous Equations
+Nonhomogeneous equations are different to homogeneous equations in that there is a term that isn't multiplied by $y$. A general form for the 3rd order would look like
+$$
+ay' + by + cy = f(t)
+$$
+The term $f(t)$ is what makes this equation nonhomogeneous.<br>These problems are solved by first treating the function like a homogeneous equation, neglecting $f(t)$, and then adding a term to correct for the omission of $f(t)$ in the solution. The solution to the associated homogeneous equation is referred to as the *complementary solution*, $y_c$, and the corrective term is called the *particular solution*, $y_p$.
+
 
 ##### Step-by-Step Plan
+
+
+
+#### Complex Solutions
+Complex solutions for $y$ are solutions where one of the solutions looks like
+$$
+y_1 = c_1 e^{i\theta}
+$$
+For equations like these we can use *[Euler's formula](https://en.wikipedia.org/wiki/Euler's_formula)*[^deriv], which states
+$$
+e^{i \theta} = \cos({\theta}) + i\sin(\theta)
+$$
+Complex functions where $\lambda$ has a solution $a + bi$ can be deconstructed as follows:
+$$
+e^{(a+bi)t} = e^{at}e^{ibt} = e^{at}\left[ \cos({bt}) + i\sin(bt) \right]
+$$
+Solving complex-valued problems isn't too different from solving *normal* problems, the added complexity only comes from using Euler's formula. When we encounter complex roots *alongside* non-complex roots we first write our solution in terms of only $e^{\lambda t}$ (where $\lambda$ can thus be complex), and only afterwards apply Euler's formula.<br>Solving these forms can look like
+$$
+y = c_1 e^{\lambda_1 t} + c_2 e^{(a + bi) t} = c_1 e^{\lambda_1 t} + c_2 e^{at}\left[ \cos({bt}) + i\sin(bt) \right]
+$$
+
+
 
 
 ### Inventory
@@ -90,6 +118,10 @@ $$
 > - For **duplicate roots**
 > $$
 > y = c_1 e^{\lambda_1 t} + c_2 t e^{\lambda_2 t}
+> $$
+> - For **complex roots**
+> $$
+> e^{(a+bi)t} = e^{at}\left[ \cos({bt}) + i\sin(bt) \right]
 > $$
 
 
