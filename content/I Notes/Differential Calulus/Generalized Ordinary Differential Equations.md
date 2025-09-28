@@ -112,13 +112,23 @@ W_2 = \begin{bmatrix} e^{\lambda _1 t} & 0 & e^{\lambda _3 t} \\ \lambda _1 e^{\
 $$
 - For an example problem using this method, see *Example 1* at the bottom of [this page by Paul Dawkins](https://tutorial.math.lamar.edu/Classes/DE/HOVariationOfParam.aspx/VariationofParameters.aspx).
 
+The general expression for using variation of parameters to find $y_p$ is
+$$
+y_p = y_1 \int \frac{f(t) W_1 (t)}{W(t)}dt + y_2 \int \frac{f(t) W_2 (t)}{W(t)}dt + \dots + y_n \int \frac{f(t) W_n (t)}{W(t)}dt
+$$
 
 ##### Step-by-Step Plan
 Our steps for solving *general nonhomogeneous differential equations* are
 1. Neglecting the nonhomogeneous term and treating our equation like a [homogeneous equation](#Homogeneous%20Equations) whose solution is $y_c$.
-2. Assuming an expression for $y_p$ and differentiating this expression. $$y_p = A\cos(c t) + B\sin(c t), \: y_p' = A\sin(t) + B\cos(t)$$
+2. Assuming an expression for $y_p$ and differentiating this expression. 
+$$
+y_p = A\cos(c t) + B\sin(c t), \: y_p' = A\sin(t) + B\cos(t)
+$$
 3. Substituting the obtained values $y_p$, $y_p '$ etc. into the nonhomogeneous equation, and solving for $A$ and $B$. Plug the results in in our expression for $y_p$.
-4. Adding $y_c$ and $y_p$ together to find the general solution. $$y = y_c + y_p$$
+4. Adding $y_c$ and $y_p$ together to find the general solution. 
+$$
+y = y_c + y_p
+$$
 5. Using *boundary equations* to solve for $c_1$, $c_2$ and $c_3$.
 
 
@@ -183,10 +193,19 @@ In real cases we see solutions where we have $y = f(t)$, and as such the Wronski
 > y = c_1 e^{\lambda_1 t} + (c_ 2 + c_3 t + c_4 t^2 + c_5 t^3)e^{\lambda_2 t} + \dots + c_n e^{\lambda_n t}
 > $$
 > In this equation the root $\lambda_2$ repeats 4 times.
-> - For **complex roots**
+> - **Euler's Formula**
 > $$
 > e^{(a+bi)t} = e^{at}\left[ \cos({bt}) + i\sin(bt) \right]
 > $$
+> - **Finding $y_p$** using **variation of parameters**
+> $$
+> y_p = y_1 \int \frac{f(t) W_1 (t)}{W(t)}dt + y_2 \int \frac{f(t) W_2 (t)}{W(t)}dt + \dots + y_n \int \frac{f(t) W_n (t)}{W(t)}dt
+> $$
+> - The **Wronskian determinant**
+> $$
+> W(f, g) = fg' - f' g
+> $$
+> For vector valued functions $f = \vec{\textbf{f}}$ and $g = \vec{\textbf{g}}$. 
 
 
 

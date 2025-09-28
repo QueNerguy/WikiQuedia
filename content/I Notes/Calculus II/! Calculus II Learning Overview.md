@@ -54,6 +54,7 @@ For a list of common functions that already have their expressions calculated, s
 2. [Integral calculator](https://www.integral-calculator.com/)
 3. [Wolfree Alpha](https://archive.ph/gfhPu) (use tor-browser)
 4. [Desmos (for graphing)](https://www.desmos.com/calculator)
+5. [Mister Exam](https://calculator-online.org/) (replaces parts of wolfram alpha)
 
 ---
 Status: #ripe 

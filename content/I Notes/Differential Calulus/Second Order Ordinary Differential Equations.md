@@ -123,9 +123,12 @@ Our steps for solving *general nonhomogeneous differential equations* are
 1. Finding an expression for $y_c$ by neglecting $f(t)$ and solving the resulting [homogeneous equation](#Homogeneous%20Equations).
 2. Finding an expression for $y_p$ by either:
 	-  Assuming a general form for the solution and differentiating this expression, substituting into the equation to solve for $A$ and $B$. <br>$$y_p = A\cos(c t) + B\sin(c t)$$
-	-  Using the [Wronskian](Generalized%20Ordinary%20Differential%20Equations#Checking%20Solutions%20for%20Linear%20Dependence) and the obtained solution for $y_c$ to fill in the equation  below. $$y_p = -y_1 \int \frac{y_2 f(t)}{W(t)}dt + y_2 \int\frac{y_1 f(t)}{W(t)}dt$$
+	-  Using the [Wronskian](Generalized%20Ordinary%20Differential%20Equations#Checking%20Solutions%20for%20Linear%20Dependence) and the obtained solution for $y_c$ to fill in the equation  below. <br>$$y_p = -y_1 \int \frac{y_2 f(t)}{W(t)}dt + y_2 \int\frac{y_1 f(t)}{W(t)}dt$$
 	
-3. Adding $y_c$ and $y_p$ together to find the general solution. $$y = y_c + y_p$$
+3. Adding $y_c$ and $y_p$ together to find the general solution. 
+$$
+y = y_c + y_p
+$$
 4. Using *boundary equations* to solve for $c_1$, $c_2$ and $c_3$.
 
 
@@ -168,6 +171,10 @@ $$
 > $$
 > e^{(a+bi)t} = e^{at}\left[ \cos({bt}) + i\sin(bt) \right]
 > $$
+> - **Finding $y_p$** using **variation of parameters**
+> $$
+> y_p = -y_1 \int \frac{y_2 f(t)}{W(t)}dt + y_2 \int\frac{y_1 f(t)}{W(t)}dt
+> $$
 
 
 ---
@@ -188,6 +195,6 @@ _Status:_ #sprout #missingLink
 [^2]: The characteristic equation has two roots because it is a second order polynomial, which always have two roots. The solutions of second order polynomials may take the form of $(\lambda - 3)(\lambda - 6) = 0$, where we know the roots to be 3 and 6.
 [^credit1]: This whole chapter of the note is based in it's entirety on the simple explanation given by James Gill. You can watch his video [here](https://www.youtube.com/watch?v=r1v2P4hjNJ8).
 [^credit2]: P. Dawkins, _Section 3.9 : Undetermined Coefficients_, 11-2022, US, [link](https://tutorial.math.lamar.edu/classes/de/undeterminedcoefficients.aspx).
-
+[^erm2]: The completely correct way to write this is <br>$$A_n t^n + A_{n-1}t^{n-1} + \dots + A_1t + A_0$$<br>I personally find this notation hard to read with the subscripts for $A$, so I prefer to just use letters instead, even though technically this way of writing is slightly less correct. %%(loser)%%
 
 
