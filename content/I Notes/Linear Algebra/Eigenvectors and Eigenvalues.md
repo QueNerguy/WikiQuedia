@@ -7,40 +7,50 @@ Tags: [[linear algebra]], [[eigenvectors]], [[eigenvalues]], [[vector math]]   <
 ---
 # Eigenvectors and Eigenvalues
 ### Geometrical Interpretation
-When transforming a space by a _square_ matrix $A$, the newly transformed space contains axes that are not moved by the transformation, these vectors are only scaled. If you would multiply only a _scalar_ with these vectors they would return to the size and orientation they had in the original space. <br>These vectors that only get scaled by this transformation are called the __eigenvectors__ ($\textbf{v}$) of the transformation matrix, and the amount they get scaled are the __eigenvalues__ ($\lambda$) of the transformation matrix. 
+When transforming a space by a _square_ matrix $A$, there are axes that are not moved during this transformation but are only scaled. The vectors on these axes are called the __eigenvectors__ ($\vec{\textbf{v}}$), and the amount they get scaled are the __eigenvalues__ ($\lambda$) of the transformation matrix. <br>Because the eigenvalues give the amount of scaling, the length of the eigenvectors becomes arbitrary. The only use of this vector is to give the direction in which the axes point. The line following this direction is the __eigenspace__. Because this line points in the same direction as the eigenvectors, every vector on this line is an eigenvector of $A$ and we can say that the eigenspace is *spanned by the eigenvectors*[^setosa].
 #### Existence
 Every matrix has at least 1 eigenvalue and associated eigenvector, as long as it is a _square matrix_. Rotational matrices will have at least one complex eigenvalues, whose eigenvector will span the complex vector space. This vector represents the axis of rotation, imagine the space to rotate around this eigenvector, thus leaving it unchanged.
-#### Eigenspace
-The length of the eigenvector is not that relevant, because the only use of this vector is to give the direction in which the matrix _only_ scales vectors, the amount of scaling is already given by the eigenvalue. Because of this, it is useful to draw a line/axis in the direction of the eigenvector. This line is the __eigenspace__. Every vector on this line is also an eigenvector of the matrix. The eigenspace is then spanned by the eigenvectors[^setosa].
 
-### Calculations
-The order of the chapters here is the order in which you go to solve these problems. Unless given, you cannot (easily) calculate the eigenvector without an eigenvalue.
+
+### Definition
+The order of the chapters here is the order in which you solve these problems.
 #### Eigenvalues
-To find the eigenvalues we realize that transforming the eigenvector $\textbf{v}$ with matrix $A$ is the same as scaling this vector by the eigenvalue.
+Under some matrix $A$ we know that the *[eigenvectors](#Eigencvectors)* are vectors that only get scaled by $A$, not rotated in any way. The *eigenvalues* are the scalars that tell us by how much these eigenvectors get scaled. Every eigenvector has it's own unique eigenvalue. <br>To find the eigenvalues of a matrix, we realize that transforming the eigenvector $\textbf{v}$ with matrix $A$ is the same as scaling this vector by the eigenvalue, and we write
 $$
 A \textbf{v}= \lambda \textbf{v}
 $$
 To simplify following calculations, we rewrite to
 $$
-A \textbf{v} - \lambda \textbf{v} = \vec{0}
+A \textbf{v} - \lambda \textbf{v} = 0
 $$
 $$
-(A - \lambda I) \textbf{v} = \vec{0} 
+(A - \lambda I) \textbf{v} = 0
 $$
-To solve this equation, notice that there are two solutions, either $\textbf{v} = \vec{0}$, or $(A - \lambda I) = \vec{0}$. To solve for $\lambda$ we realize that the area under the zero vector is also 0, meaning we can use the determinant%%==linkje determinant pls==%% to compute this. We have
+For $\left( A - \lambda I \right)$ to become 0 under multiplication with $\vec{\textbf{v}}$ we have two solutions.
+1. $\vec{\textbf{v}}$ is 0.
+2. $\left( A - \lambda I \right)$ is the 0-matrix.
+
+The determinant%%==LINKJE DETERMINANT==%% is measure of the area under the matrix, and because the 0-matrix has no area, the determinant is 0. Subsequently the determinant of $\left( A - \lambda I \right)$ is 0 as well. <br>Assuming $\vec{\textbf{v}}$ isn't the 0-vector, we can thus find $\lambda$ by solving
 $$
-\det (A - \lambda I) = 0
+ \left| A - \lambda I \right| = 0
 $$
-To compute the eigenvalue $\lambda$ now, we calculate the determinant, and solve for $\lambda$ afterward. 
-Solving the determinant here produces the __characteristic equation__, a polynomial whose _roots_ are the eigenvalues.
-<br>Another geometric interpretation behind the equation $(A - \lambda I) \textbf{v} = \vec{0}$ is that $(A - \lambda I) \textbf{v}$ "Squishes the whole space into a lower dimension"[^3b1b1], namely, a line. The area under a line is 0, therefore the determinant is also 0, and we compute from here.
-###### Quick Method 2D Matrices
+To compute the eigenvalue $\lambda$ now, we compute the determinant, which produces what's known as the characteristic equation, seen below.
+$$
+a\lambda² + b\lambda + c = 0
+$$
+Another geometric interpretation behind $(A - \lambda I) \vec{\textbf{v}} = 0$ is that $(A - \lambda I) \vec{\textbf{v}}$ "Squishes the whole space into a lower dimension"[^3b1b1]. We know that finding the determinant is akin to finding the area for 2 x 2 spaces, finding the volume for 3 x 3 spaces and so on. A lower dimension version of a 2 x 2 space is a line, and a lower dimension version of a 3 x 3 space is an plane. Finding the area of a line gives us 0 and thus the determinant is also 0, and finding the volume of a plane also gives us 0. The determinant of the lower space is thus 0, and as $(A - \lambda I) \vec{\textbf{v}}$ squishes the space into a lower dimension the determinant of this system has to be 0. We can thus safely say that
+$$
+ \left| A - \lambda I \right| = 0
+$$
+
+
+##### Quick Method for 2D Matrices
 &nbsp&nbsp&nbsp&nbsp | Credit for this method goes to 3Blue1Brown, find his video [here](https://www.youtube.com/watch?v=e50Bj7jn9IQ). |
 In engineering and many other applications, eigenvalues are very common and useful, but computing them is inefficient. <br>In a __2 dimensional__ case there is a much easier way to calculate the eigenvalues, namely
 $$
 \lambda_1, \lambda_2 = \textrm{m} \pm \sqrt{\textrm{m}^2-D}
 $$
-The variables used in this formula are easy to read from the 2x2 matrix.
+The variables used in this formula are easy to read from the 2 x 2 matrix.
 - $\textrm{m}$, the _mean_ of the diagonal of the matrix. For $A=\begin{bmatrix}a & b\\ c & d\end{bmatrix}$ the mean $\textrm{m}$ is $\frac{a + d}{2}$. 
 - $D$, the _determinant_%%==linkje determinant==%% of the matrix. For $A=\begin{bmatrix}a & b\\ c & d\end{bmatrix}$ the determinant $D$ is $ad - bc$.
 

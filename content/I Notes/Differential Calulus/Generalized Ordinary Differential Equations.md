@@ -8,7 +8,7 @@ tags: [[calculus]], [[differentials]], [[integrals]], [[ODE]], [[vector math]]  
 # Generalized Ordinary Differential Equations
 
 ### Geometrical Interpretation
-This note will discuss solutions to *generalized* differential equations. The most common (ordinary) differential equations are [first order](First%20Order%20Ordinary%20Differential%20Equations)- and [second order](Second%20Order%20Ordinary%20Differential%20Equations) ones. This note will discuss solutions to differential equations that are of the $n$th order, meaning anything ranging from $y'$, or $y^{(1)}$, to $y^{(n)}$. <br>The way the solution was found for [second order differential equations](Second%20Order%20Ordinary%20Differential%20Equations), assuming a solution of $y = e^{\lambda t}$, can be generalized to higher dimensions, as this quirk always persists.<br>There are **two types** of *second order* ordinary differential equations.
+This note will discuss solutions to *generalized* differential equations. The most common (ordinary) differential equations are [first order](First%20Order%20Ordinary%20Differential%20Equations)- and [second order](Second%20Order%20Ordinary%20Differential%20Equations) ones. This note will discuss solutions to differential equations that are of the $n^{\text{th}}$ order, meaning anything ranging from $y'$, or $y^{(1)}$, to $y^{(n)}$. <br>The way the solution was found for [second order differential equations](Second%20Order%20Ordinary%20Differential%20Equations), assuming a solution of $y = e^{\lambda t}$, can be generalized to higher dimensions, as this quirk always persists.<br>There are **two types** of *second order* ordinary differential equations.
 1. ***[Homogeneous Ordinary Differential Equations](#Homogeneous%20Equations)***
 2. ***[Nonhomogeneous Ordinary Differential Equations](#Nonhomogeneous%20Equations)***
 
@@ -33,15 +33,15 @@ $$
 $$
 a\lambda^3 + b\lambda^2 + c \lambda + d = 0
 $$
-The last equation is known as the **characteristic equation** of our 3rd order differential equation. The characteristic for an equation with $y^{(n)}$, an $n$th order differential equation, is[^erm]
+The last equation is known as the **characteristic equation** of our 3rd order differential equation. The characteristic for an equation with $y^{(n)}$, an $n^{\text{th}}$ order differential equation, is[^erm]
 $$
 a \lambda^n + b \lambda^{n-1} + \dots + y \lambda^1 + z = 0
 $$
-This equation reduces solving differential equations to an algebraic problem. The solution to these generalized problems is assumed to be a linear combination of $y = ce^{\lambda t}$, with one solution for every $\lambda$.
+This equation reduces solving differential equations to an algebraic problem. The solution to these generalized problems is assumed to be a linear combination of every solution for $y$, with as many solutions as there are roots of the equation.
 $$
-y = c_1 e^{\lambda_1 t} + c_ 2 e^{\lambda_2 t} + \dots + c_n e^{\lambda_n t}
+y = c_1 y_1 + c_ 2 y_2 + \dots + c_n y_n \qquad \Rightarrow \qquad y = c_1 e^{\lambda_1 t} + c_ 2 e^{\lambda_2 t} + \dots + c_n e^{\lambda_n t}
 $$
-In the case that there are *repeated roots*, meaning multiple $\lambda$s that share the same value, we multiply with our independent variable - in this case $t$ - every time the repetition appears in order to keep our solution set linearly independent. <br>So say we have a 4th order differential equation, and a root has a multiplicity of 3[^meaning] ( this means $\lambda_2 = \lambda_3 = \lambda_4$), then our solution looks like
+In the case that there are *repeated roots*, meaning multiple $\lambda$s that share the same value, we multiply with our independent variable - in this case $t$ - every time the repetition appears in order to keep our solution set linearly independent. <br>So say we have a 4$^{\text{th}}$ order differential equation, and a root has a multiplicity of 3[^meaning] (this means $\lambda_2 = \lambda_3 = \lambda_4$), then our solution looks like
 $$
 y = c_1 e^{\lambda_1 t} + c_2 e^{\lambda_2 t} + c_3 t e^{\lambda_3 t} + c_4 t^2 e^{\lambda_4 t}
 $$
@@ -64,7 +64,7 @@ $$
 
 
 #### Nonhomogeneous Equations
-Nonhomogeneous equations are different to homogeneous equations in that there is a term that isn't multiplied by $y$. A general form for the 3rd order would look like
+Nonhomogeneous equations are different to homogeneous equations in that there is a term that isn't multiplied by $y$. A general form for the 3$^{\text{rd}}$ order would look like
 $$
 ay''' + by'' + cy' + dy = f(t)
 $$
@@ -160,11 +160,11 @@ Remember from [second order differential equations](Second%20Order%20Ordinary%20
 $$
 y = c_1 e^{\lambda_1 t} + c_2 e^{\lambda_2 t}
 $$
-We can say that the general solution for $y$ is a *linear combination* of $e^{\lambda_1 t}$ and $e^{\lambda_2 t}$. <br>Given a set of solutions $y_1$, $y_2$, $y_3$ we can test whether these solutions are linearly dependent by constructing the **Wronskian**. If they are linearly dependent we can construct a solution like above. <br>Such solutions for the 3rd order look as follows:
+We can say that the general solution for $y$ is a *linear combination* of $e^{\lambda_1 t}$ and $e^{\lambda_2 t}$. <br>Given a set of solutions $y_1$, $y_2$, $y_3$ we can test whether these solutions are linearly dependent by constructing the **Wronskian**. If they are linearly dependent we can construct a solution like above. <br>Such solutions for the 3$^{\text{rd}}$ order look as follows:
 $$
 y = c_ 1 y_1 + c_2 y_2 + c_3 y_3
 $$
-If the solutions aren't linearly independent we have to use the formula for repeating roots.<br>To test linear dependence, remember from linear algebra%%==LINKJE LINALG==%% that for a linearly independent system the *determinant*%%==LINKJE==%% of the system is **non-zero**. To make the above equation into a matrix system we separate the $c$'s and the $y$'s. We use derivatives to fill up the rows so we can create a *square matrix* from the 3 -solutions. This doesn't change whether the determinant becomes 0 for linearly dependent system.
+If the solutions aren't linearly independent we have to use the formula for repeating roots.<br>To test linear dependence, remember from linear algebra%%==LINKJE LINALG==%% that for a linearly independent system the *determinant*%%==LINKJE==%% of the system is **non-zero**. To make the above equation into a matrix system we separate the $c$'s and the $y$'s. We use derivatives to fill up the rows so we can create a *square matrix* from the 3 sets of equations. This doesn't change whether the determinant becomes 0 for linearly dependent system.
 $$
 y = \begin{bmatrix} y_1 & y_2 & y_3 \\ y_1' & y_2' & y_3' \\ y_1'' & y_2'' & y_3'' \end{bmatrix} \begin{bmatrix}c_1\\ c_2\\ c_3\end{bmatrix}
 $$

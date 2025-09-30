@@ -41,7 +41,7 @@ This equation is very useful, because for our solution we have that either $e^{\
 $$
 a\lambda^2 + b\lambda + c = 0
 $$
-This equation is known as **the characteristic equation**. <br><br>In the case of our equation $3y^" + 6y' + 5 y = 0$, we would solve the characteristic equation $3 \lambda^2 + 6\lambda + 5 = 0$.
+This equation is known as **the characteristic equation**[^ref]. <br><br>In the case of our equation $3y^" + 6y' + 5 y = 0$, we would solve the characteristic equation $3 \lambda^2 + 6\lambda + 5 = 0$.
 $$
 3y^" + 6y' + 5 y = 0 \qquad \Rightarrow \qquad 3 \lambda^2 + 6\lambda + 5 = 0
 $$
@@ -197,4 +197,4 @@ _Status:_ #sprout #missingLink
 [^credit2]: P. Dawkins, _Section 3.9 : Undetermined Coefficients_, 11-2022, US, [link](https://tutorial.math.lamar.edu/classes/de/undeterminedcoefficients.aspx).
 [^erm2]: The completely correct way to write this is <br>$$A_n t^n + A_{n-1}t^{n-1} + \dots + A_1t + A_0$$<br>I personally find this notation hard to read with the subscripts for $A$, so I prefer to just use letters instead, even though technically this way of writing is slightly less correct. %%(loser)%%
 
-
+[^ref]: You might recognize this term from linear algebra%%==LINKJE==%%. For more on the treatment of vector valued differential equations, see [here](Vector%20Valued%20Ordinary%20Differential%20Equations).

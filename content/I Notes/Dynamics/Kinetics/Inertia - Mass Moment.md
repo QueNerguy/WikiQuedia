@@ -9,7 +9,7 @@ tags: [[dynamics]], [[rigid body]], [[kinetics]], [[sums]]     <br>08-09-2025
 
 ### Interpretation
 
-The *inertia* of an object can be seen as that objects's resistance to changes in motion. Think of trying to make an object start to move, or trying to stop an objects movement. The bigger any object is, the bigger it's inertia will be. Marbles can be stopped almost immediately by anyone, but good luck trying to stop an oil tanker dead in it's tracks. It is important to realize that the inertia of an object is an *inherent* property of that object, and can thus only depend on properties such as the object's volume or mass. <br>Inertia as a property measures **the distribution of mass around the axis of rotation**. As mass moves further away from the axis of rotation it becomes harder to stop the rotation. This can also make sense if we realize that a mass that's further away from the center requires a bigger moment to stop[^khan].<br>The mass *[moment](Moment)* of inertia specifically concerns *rotational inertia*.
+The *inertia* of an object can be seen as that objects's resistance to changes in motion. Think of trying to make an object start to move, or trying to stop an objects movement. The bigger any object is, the bigger it's inertia will be. Marbles can be stopped almost immediately by anyone, but good luck trying to stop an oil tanker dead in it's tracks. It is important to realize that the inertia of an object is an *inherent* property of that object, and can thus only depend on properties such as the object's volume or mass. <br>Inertia as a property measures **the distribution of mass around the axis of rotation**. As mass moves further away from the axis of rotation it becomes harder to stop the rotation. This can also make sense if we realize that a mass that's further away from the center requires a bigger moment to stop[^1]. <br>The mass *[moment](Moment)* of inertia specifically concerns *rotational inertia*.
 
 
 ### Mathematical Formulation
@@ -55,6 +55,8 @@ Similarly, for a transfer of axes, $d^2$ is replaced with $d_x \cdot d_y$.
 $$
 I_{xy} = \bar{I}_{xy} + md_x d_y
 $$
+
+
 
 %%
 also this is funny, source = page 647, 648
@@ -134,7 +136,8 @@ _Status:_ #ripe
 
 
 [^moment1]: Remember that a [moment](Moment) is "_a [force](Force) over a distance_", thus $\vec{\textbf{M}} = \vec{\textbf{r}} \times \vec{\textbf{F}}$. As the inertia is a result of a *resulting force*, we can substitute $m \cdot \vec{\textbf{a}}$ for $\vec{\textbf{F}}$, yielding <br>$$\vec{\textbf{M}} = \vec{\textbf{r}} \times m \cdot \vec{\textbf{a}}$$<br>We can once again substitute for $\vec{\textbf{a}}$, because we want to have this equation in terms of a rotation, thus we use<br>$$\vec{\textbf{a}} = \vec{\pmb{\omega}} \times \vec{\textbf{v}} + \vec{\pmb{\alpha}} \times \vec{\textbf{r}}$$A force that causes a rotation moves an object along the arc of the rotation. As such the (component of the) force that causes this rotation points **tangent to the path** of the rotation. As a result only the [tangential term of the acceleration](Motion%20in%20Normal-Tangent%20Coordinates#Vector%20Form%20for%20Acceleration) ($\vec{\textbf{a}}_t$) is relevant, thus$$\vec{\textbf{a}} = \vec{\textbf{a}}_t = \vec{\pmb{\alpha}} \times \vec{\textbf{r}}$$<br>Substituting this into the equation for the moment $\vec{\textbf{M}}$, we get <br>$$\vec{\textbf{M}} = \vec{\textbf{r}} \times m \cdot \left( \vec{\pmb{\alpha}} \times \vec{\textbf{r}} \right)$$<br>In scalar form we get<br>$$M = \alpha \cdot r^2m$$<br>We can thus define a moment as $M = \alpha \cdot r^2m$.<br>For a single particle with a infinitesimal weight of $dm$, we get $M = \alpha \cdot r^2 dm$. 
-[^khan]: Khan Academy, *Rotational Inertia*, US, [link](https://www.khanacademy.org/science/in-in-class11th-physics/in-in-system-of-particles-and-rotational-motion/in-in-rotational-inertia-and-angular-second-law/a/rotational-inertia).
+
+[^1]: han Academy, *Rotational Inertia*, US, [link](https://www.khanacademy.org/science/in-in-class11th-physics/in-in-system-of-particles-and-rotational-motion/in-in-rotational-inertia-and-angular-second-law/a/rotational-inertia).
 
 [^c]: A. van Beek, _Formuleboekje_, _Massatraagheid_, 2023, NL, [link](https://www.werktuigbouw.nl/book/default_wb.htm).
 
