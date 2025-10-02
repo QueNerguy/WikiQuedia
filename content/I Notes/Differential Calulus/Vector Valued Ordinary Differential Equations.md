@@ -50,12 +50,16 @@ $$
 $$
 The solution for $\vec{\textbf{x}}$ can thus be found by finding the *eigenvalues*, $\lambda$, and the *[eigenvectors](Eigenvectors%20and%20Eigenvalues)*, $\vec{\textbf{v}}$, of matrix $A$. 
 ##### Nonhomogeneous First Order Differential Equations
-In [generalized differential equations](Generalized%20Ordinary%20Differential%20Equations) we saw that a solution for $y$ is made up of a *complementary solution* $y_c$, which is the solution to the homogeneous version of the desired equation, and a *particular solution* $y_p$. For matrices we would say
+Nonhomogeneous first order DEs are of the form
+$$
+\vec{\textbf{x}}' = A \vec{\textbf{x}} + \vec{\textbf{f}}(t)
+$$
+$\vec{\textbf{f}}(t)$ is the term that makes this equation nonhomogeneous, it isn't multiplied with $\vec{\textbf{x}}$.<br>In [generalized differential equations](Generalized%20Ordinary%20Differential%20Equations) we saw that a solution for $y$ is made up of a *complementary solution* $y_c$, which is the solution to the homogeneous version of the desired equation, and a *particular solution* $y_p$. For matrices we would say
 $$
 \vec{\textbf{x}} = \vec{\textbf{x}}_c + \vec{\textbf{x}}_p
 $$
 Like we saw for generalized differential equations there's 2 ways to find the particular solution. 
-1. ___Method of Undetermined Coefficients:___ The easiest way to find $\vec{\textbf{x}}_p$ is to assume a solution based on what the nonhomogeneous term, referred to as $f(t)$, looks like. For example if we had the equation[^creditbook]. 
+1. ___Method of Undetermined Coefficients:___ The easiest way to find $\vec{\textbf{x}}_p$ is to assume a solution based on what the nonhomogeneous term, referred to as $\vec{\textbf{f}}(t)$, looks like. For example if we had the equation[^creditbook]. 
 $$
 \vec{\textbf{x}}' = \begin{bmatrix} 3 & 2 \\ 7 & 5 \end{bmatrix} \vec{\textbf{x}} + \begin{bmatrix} 3 \\ 2t \end{bmatrix}
 $$
@@ -63,7 +67,7 @@ We can split up $\begin{bmatrix} 3 \\ 2t \end{bmatrix}$ into a normal vector and
 $$
 \vec{\textbf{x}}' = \begin{bmatrix} 3 & 2 \\ 7 & 5 \end{bmatrix} \vec{\textbf{x}} + \begin{bmatrix} 0 \\ 2 \end{bmatrix} t + \begin{bmatrix} 3 \\ 0 \end{bmatrix}
 $$
-Our nonhomogeneous part $f(t)$ is then $\begin{bmatrix} 0 \\ 2 \end{bmatrix} t + \begin{bmatrix} 3 \\ 0 \end{bmatrix}$. This looks like a first degree polynomial, $at + b$, so our assumption of what the particular solution will look like would be
+Our nonhomogeneous part $\vec{\textbf{f}}(t)$ is then $\begin{bmatrix} 0 \\ 2 \end{bmatrix} t + \begin{bmatrix} 3 \\ 0 \end{bmatrix}$. This looks like a first degree polynomial, $at + b$, so our assumption of what the particular solution will look like would be
 $$
 \vec{\textbf{x}}_p = \vec{\textbf{a}}t + \vec{\textbf{b}} \qquad \Rightarrow \qquad \vec{\textbf{x}}_p = \begin{bmatrix} a_1 \\ a_2 \end{bmatrix} t + \begin{bmatrix} b_1 \\ b_2 \end{bmatrix} = \begin{bmatrix} a_1 t + b_1 \\ a_2 t + b_2 \end{bmatrix}
 $$
@@ -83,7 +87,7 @@ Skipping some steps, we find that $a_1 = 4$, $a_2 = -6$, $b_1 = 17$ and $b_2 = -
 $$
 \vec{\textbf{x}}_p = \begin{bmatrix} 4 \\ -6 \end{bmatrix} t + \begin{bmatrix} 17 \\ -25 \end{bmatrix}
 $$
-Below is a list of assumptions for our particular solution for different expression for $f(t)$.
+Below is a list of assumptions for our particular solution for different expression for $\vec{\textbf{f}}(t)$.
 
 | Expression for $f(t)$                                                                   | Assumed solution for $y_p$[^credit]                                                              |
 | --------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
@@ -93,9 +97,22 @@ Below is a list of assumptions for our particular solution for different express
 | $$\vec{\textbf{a}}e^{\vec{\textbf{c}}t}$$                                               | $$\vec{\textbf{A}}e^{\vec{\textbf{c}}t}$$                                                        |
 | Polynomial, $n^{\text{th}}$ grade[^erm2]                                                | $$\vec{\textbf{A}}t^n + \vec{\textbf{B}}t^{n-1} + \dots + \vec{\textbf{Y}}t + \vec{\textbf{Z}}$$ |
 Do note that in this case the capital letters do **not** need to indicate matrices. <br>
-2. ___Method of Variation of Parameters:___ %%paragraaf 5.7%%
-
-
+2. ___Method of Variation of Parameters:___ The method of variation of parameters can be used for equations where $\vec{\textbf{f}}(t)$ isn't in the table above. To find $\vec{\textbf{x}}_p$ we make use of the complementary solution. We start with
+$$
+\vec{\textbf{x}}_c = X \vec{\textbf{c}}
+$$
+Like this we can eliminate the undetermined constants. Our goal is to find a solution
+$$
+\vec{\textbf{x}}_p = X \vec{\textbf{u}}
+$$
+And so the remaining step is to find an expression for $\vec{\textbf{u}}$. I don't think the derivation is particularly relevant here, if interested, a good derivation can be found on page 366 of _Differential Equations and Boundary Value Problems_.
+$$
+\vec{\textbf{u}} = \int X^{-1} \: \vec{\textbf{f}}(t) \: dt
+$$
+Thus our **final equation** to find $\vec{\textbf{x}}_p$ becomes
+$$
+\vec{\textbf{x}}_p = X \int X^{-1} \: \vec{\textbf{f}}(t) \: dt
+$$
 
 
 ##### Initial Value Problems
