@@ -100,7 +100,7 @@ Depending on what $f(t)$ looks like we assume different forms to be our solution
 | Polynomial, $n^{\text{th}}$ grade[^erm2] | $$At^n + Bt^{n-1} + \dots + Yt + Z$$ |
 
 In the case that $c$ is also a root for $y_c$, we use the same trick as before to make the solution unique, namely multiplying by our variable. If, for example, we have root $e^{2t}$, but also want to use $Ae^{2t}$ for our particular solution, we must instead choose $Ate^{2t}$.
-###### Solving by Variation of Parameters
+##### Solving by Variation of Parameters
 For some problems $f(t)$ may not follow one of the forms tabulated above. In such cases we can use *variation of parameters* instead. The derivation for this is quite lengthy, and I find that it offers little insight to the processes at play here. For those interested, Paul Dawkins wrote a good explanation [here](https://tutorial.math.lamar.edu/Classes/DE/HOVariationOfParam.aspx/VariationofParameters.aspx) that I would recommend.
 The expression for  of an equation $ay''' + by'' + cy' + dy = f(t)$, with complementary solution $y_c = y_1 + y_2 + y_3$, is
 $$
@@ -136,7 +136,7 @@ $$
 
 
 
-#### Complex Solutions
+#### Working With Complex Solutions
 Complex solutions for $y$ are solutions where one of the solutions looks like
 $$
 y_1 = c_1 e^{i\theta}
@@ -155,7 +155,7 @@ y = c_1 e^{\lambda_1 t} + c_2 e^{\lambda_2 t} + c_3 e^{(a + bi) t} = c_1 e^{\lam
 $$
 
 
-#### Checking Solutions for Linear Dependence
+### Checking Solutions for Linear Dependence
 Remember from [second order differential equations](Second%20Order%20Ordinary%20Differential%20Equations) that the solution for $y$ was a combination of two separate solutions $e^{\lambda t}$.
 $$
 y = c_1 e^{\lambda_1 t} + c_2 e^{\lambda_2 t}

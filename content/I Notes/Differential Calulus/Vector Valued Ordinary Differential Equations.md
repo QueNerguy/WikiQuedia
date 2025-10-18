@@ -14,9 +14,8 @@ A' = \left[ a_{ij}' \right]
 $$
 To differentiate vectors is the exact same. Remember, a matrix can be seen as a collection of vectors making up it's basis, and as such the same rules apply.
 
-### Definition
-#### First Order
-First order differential equations typically look like
+### Solving First Order Ordinary Differential Equations
+[First order differential equations](First%20Order%20Ordinary%20Differential%20Equations) typically look like
 $$
 \vec{\textbf{x}}' = A \vec{\textbf{x}}
 $$
@@ -44,12 +43,12 @@ The determinant%%==LINKJE DETERMINANT==%% is measure of the area under the matri
 $$
  \left| A - \lambda I \right| = 0
 $$
-We can then find $\vec{\textbf{v}}$ by using the earlier equation $(A - \lambda I) \vec{\textbf{v}} = 0$, and solving the augmented matrix $\left[ A - \lambda I \: | \: 0 \right]$. $\vec{\textbf{v}}$ is thus the *eigenvector* of matrix $A$. Recount from [generalized ODEs](Generalized%20Ordinary%20Differential%20Equations) that the solution to any differential equation can be written as a linear combination of every solution for $\vec{\textbf{x}}$, with as many solutions as there are roots of the *characteristic equation*. In the case of our $\vec{\textbf{x}}$ then, we can write for our **general solution** that
+We can then find $\vec{\textbf{v}}$ by using the earlier equation $(A - \lambda I) \vec{\textbf{v}} = 0$ and solving the augmented matrix $\left[ A - \lambda I \: | \: 0 \right]$. $\vec{\textbf{v}}$ is the *eigenvector* of matrix $A$. Recount from [generalized ODEs](Generalized%20Ordinary%20Differential%20Equations) that the solution to any differential equation can be written as a linear combination of every solution for $\vec{\textbf{x}}$, with as many solutions as there are roots of the *characteristic equation*. In the case of our $\vec{\textbf{x}}$ then, we can write for our **general solution** that
 $$
 \vec{\textbf{x}} = c_1 \vec{\textbf{x}}_1 + c_2 \vec{\textbf{x}}_ 2 + \dots + c_n \vec{\textbf{x}}_n \qquad \Rightarrow \qquad \vec{\textbf{x}} = c_1 \vec{\textbf{v}}_1 e^{\lambda _1 t} + c_2 \vec{\textbf{v}}_2 e^{\lambda _2 t} + \dots + c_n \vec{\textbf{v}}_n e^{\lambda _n t}
 $$
 The solution for $\vec{\textbf{x}}$ can thus be found by finding the *eigenvalues*, $\lambda$, and the *[eigenvectors](Eigenvectors%20and%20Eigenvalues)*, $\vec{\textbf{v}}$, of matrix $A$. 
-##### Nonhomogeneous First Order Differential Equations
+#### Nonhomogeneous First Order Differential Equations
 Nonhomogeneous first order DEs are of the form
 $$
 \vec{\textbf{x}}' = A \vec{\textbf{x}} + \vec{\textbf{f}}(t)
@@ -114,8 +113,14 @@ $$
 \vec{\textbf{x}}_p = X \int X^{-1} \: \vec{\textbf{f}}(t) \: dt
 $$
 
+#### Complex Solutions to First Order Differential Equations
 
-##### Initial Value Problems
+
+
+
+
+
+#### Initial Value Problems
 To find the complete solution for $\vec{\textbf{x}}$, eliminating the constants $c$, we need a constraint (initial value) for $\vec{\textbf{x}}$, for example we could have $\vec{\textbf{x}}(3) = \vec{\textbf{b}}$. To find a complete expression for $\vec{\textbf{x}}$, notice that we can rewrite the general solution for $\vec{\textbf{x}}$ to
 $$
 \vec{\textbf{x}} = X\vec{\textbf{c}}
@@ -128,7 +133,7 @@ To find $\vec{\textbf{c}}$ we can solve the *augmented matrix* $\left[ X(3) \: |
 
 
 
-#### Second Order
+### Solving Second Order Ordinary Differential Equations
 
 
 

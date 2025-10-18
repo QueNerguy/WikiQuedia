@@ -10,18 +10,23 @@ If it occurs that there is an issue with the styling where a page doesn't follow
 ### Formatting
 ##### Referencing and Backlinks
 Referencing is done with footnotes. <br>For not directly referenced sources, but for sources whose influence shimmer through the text, enter them in the '**Based On:**' section.
-- Reference general sources with:<br>Entry number. Name(s) author/Website/Company/Institute/Publication, _Name article following original formatting_, _chapter_/paragraph/page/timestamp, edition number/month-year of release, country ID[^countryID], [link](https://quenerguy.github.io/WikiQuedia/). <br>Fill in all possible fields, first option takes precedence. <br>End all references with a dot.
+- Reference **general sources** with:<br>Entry number. Name(s) author/Website/Company/Institute/Publication, _Name article following original formatting_, _chapter_/paragraph/page/timestamp, edition number/month-year of release, country ID[^countryID], [link](https://quenerguy.github.io/WikiQuedia/). <br>Fill in all possible fields, first option takes precedence. <br>End all references with a dot.
 	- ***Examples:***
 		1. N. Basson, _Engineering Thermodynamics I Course Reader_, [link](https://canvas.utwente.nl/courses/16111/files/4696974?wrap=1).
 		2. Wikipedia, _Enthalpy_, [link](https://en.wikipedia.org/wiki/Enthalpy).
 		3. R. A. Adams, C. Essex, _Calculus A Complete Course_, 9th ed, CA.
 		4. G. Stoffels, _Mathematical Background Engineering Thermodynamics_, p7, 2020, NL, [link](https://canvas.utwente.nl/courses/16111/files/4693672?module_item_id=546655).
-- Reference inline source articles (particularly in footnotes) with: <br>\[Website/Company/Institute/Publication - Name article following original formatting - chapter - page/paragraph/timestamp of video](URL of chapter/article/website)
+		5. C. H. Edwards, D. E. Penney, D. Calvis, _Differential Equations and Boundary Value Problems_, _1.4 Separable Equations and Applications_, 5th ed, US.
+		6. J. Gill, _Second Order Linear Equations Via Eigenvalues_, 3-2022, US, [link](https://www.youtube.com/watch?v=r1v2P4hjNJ8).
+- Reference **inline source articles** (particularly in footnotes) with: <br>\[Website/Company/Institute/Publication - Name article following original formatting - chapter - page/paragraph/timestamp of video](URL of chapter/article/website)
 	- ***Examples:*** <br>See: [Less Boring Lectures - REFERENCE ENTROPY and Specific Heats in 12 Minutes!](https://www.youtube.com/watch?v=kinE5eTVgQw&list=PLd-0K-8ZyM0WdLse-OASmbqzXdpJcCn3P&index=78) <br>[Wikipedia - Gradient - Cartesian coordinates](https://en.wikipedia.org/wiki/Gradient#Cartesian_coordinates) <br>[Wikipedia - Introduction to entropy - 3rd paragraph](https://en.wikipedia.org/wiki/Introduction_to_entropy#)
 
 - Backlinks can be made *once* per (sub)chapter, unless the wording in the reference changes, making it confusable with the first mention, but the source of the concept is the same.
 	- Backlinks need to be made **every time**, every time it is mentioned, as long as it hasn't been mentioned before in the same chapter[^reason]. <br>As a result every backlink should be made once for every chapter in an article, if need be.
 - Backlinks can not impede the flow of the text, they serve only as a highlight when a concept that has an explanation somewhere in this wiki is mentioned.
+- Credit sources for images as:
+	1. As prescribed by source of image.
+	2. As: <br>source: *name of article/book* / name of author, _chapter_/paragraph/page/timestamp, edition number/month-year of release.
 ##### Typography
 - Use *italics* to:
 	1. Signify a name or title.
@@ -52,11 +57,14 @@ Always capitalize the first letter of an entry in a list.
 	- Find titles that encompass the complete scope of their contents. 
 	- Optimize titles for researchability.
 ##### Units
-- Notate units as LaTeX text: ``` $\text{[unit]}$```
-	- ***Examples:*** <br>$\text{[Pa]}$, $\text{[N} \cdot \text{m]}$
-- Notate inline units as LaTeX text with spacing: ``` $\text{ [unit]}$ ```
+- Notate units in text as LaTeX text: ``` $\text{unit}$ ```
+	- ***Examples:*** <br>$\text{Pa}$, $\text{N} \cdot \text{m}$
+- Notate units in calculations or overviews as LaTeX text with brackets: ``` $\text{[unit]}$ ```
 	- ***Examples:***
 	- $100 \text{ [Pa]}$, $28 \text{ [N} \cdot \text{m]}$
+- Scientific notation as ``` $\times 10^3$ ```
+	-  ***Examples:***
+	- $100 \text{ [kPa]} = 100 \times 10^3 \text{ [Pa]}$
 ##### Tagging
 There are 4 grades of tags
 1. #bud <br>This indicates a blank or nearly blank note.
