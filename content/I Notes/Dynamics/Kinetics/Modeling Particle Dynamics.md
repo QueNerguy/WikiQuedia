@@ -6,6 +6,13 @@ tags: [[dynamics]], [[single particle]], [[kinetics]], [[vector math]], [[sums]]
 
 ---
 # Modeling Particle Dynamics
+To solve a system with the least amount of effort
+1. Try solving with **conservation of energy**%%LINKJE NAAR PAGE%%.
+2. If **1.** is not possible[^impos1], try solving with **[impulse and momentum](Impulse%20and%20Momentum%20for%20Particles)**.
+3. If **2.** is not possible[^impos2], try solving with **integrating the equations of motion**.
+
+Following this list ensures that you spend the least amount of time possible on solutions.
+
 
 ### Interpretation
 When [forces](Force) act on a particle, this particle may start to move, as long as the sum of the forces $\ne$ 0. To model particles we want to understand how the motion of a particle relates to the forces that act on it, and vice-versa. <br>It is important to note that particles aren't subject to rotations, and the [moment](Moment) is thus not considered in these models.
@@ -87,3 +94,6 @@ _Status:_ #ripe #missingLink
 # Based On:
 1. J. L. Meriam, L. G. Kraige, J. N. Bolton, *Engineering Mechanics Dynamics*, 8th ed, US.
 
+
+[^impos1]: Solving with conservation of energy may be impossible because there are too many unknown properties in the resulting equations, or because an impact is present that deforms the body in such a way that a non-negligible amount of chemical energy is lost in the material. We cannot easily compute the amount of chemical energy expended during an impact and for this reason we say that conservation of energy does not hold in these situations.
+[^impos2]: Solving with impulse and momentum may be impossible because there are too many unknown properties in the resulting equations.

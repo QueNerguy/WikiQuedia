@@ -6,6 +6,13 @@ tags: [[dynamics]], [[rigid body]], [[kinetics]], [[vector math]], [[sums]]     
 
 ---
 # Modeling Rigid Body Dynamics
+To solve a system with the least amount of effort
+1. Try solving with **conservation of energy**%%LINKJE NAAR PAGE%%.
+2. If **1.** is not possible[^impos1], try solving with **[impulse and momentum](Impulse%20and%20Momentum%20for%20(Rigid)%20Bodies)**.
+3. If **2.** is not possible[^impos2], try solving with **integrating the equations of motion**.
+
+Following this list ensures that you spend the least amount of time possible on solutions.
+
 
 ### Interpretation
 When [forces](Force) act on a body, this body may start to move, as long as the sum of the forces $\ne$ 0. To model rigid bodies we want to understand how the motion of a rigid body relates to the forces and [moments](Moment) that act on it, and vice-versa. <br>Modeling rigid bodies is a continuation of [modeling particles](Modeling%20Particle%20Dynamics), with the introduction of moments and rotations to the behaviors of a system. 
@@ -73,3 +80,6 @@ _Status:_ #sprout
 [^find]: The explanation for this is given in the note on [particle dynamics](Modeling%20Particle%20Dynamics), but the physics applies for rigid bodies in the same way.
 [^G]: $G$ is chosen because in the case of *unconstrained motion* the rotation takes place about the center of gravity, also usually referred to as $G$. This equation, however, also holds for *constrained motion*, where the [ICR](Modeling%20Rigid%20Body%20Motion#Instant%20Center%20of%20Rotation) is then denoted as $G$ as well for continuities' sake. 
 [^particle]: The origin and the specifics about translation can be read in the note on [particle dynamics](Modeling%20Particle%20Dynamics).
+
+[^impos1]: Solving with conservation of energy may be impossible because there are too many unknown properties in the resulting equations, or because an impact is present that deforms the body in such a way that a non-negligible amount of chemical energy is lost in the material. We cannot easily compute the amount of chemical energy expended during an impact and for this reason we say that conservation of energy does not hold in these situations.
+[^impos2]: Solving with impulse and momentum may be impossible because there are too many unknown properties in the resulting equations.

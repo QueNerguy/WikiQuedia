@@ -82,7 +82,7 @@ Where $\vec{\textbf{L}}_1$ is the momentum just before the impulse acts on the p
 __[Home](!%20Dynamics%20Learning%20Overview)__
 
 ---
-_Status:_ #bud
+_Status:_ #ripe #missingLink
 
 ---
 # Based On:
