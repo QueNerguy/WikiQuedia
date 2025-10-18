@@ -7,7 +7,7 @@ tags:      <br>18-10-2025
 ---
 # Impulse and Momentum for (Rigid) Bodies
 To solve a system with the least amount of effort
-1. Try solving with **conservation of energy**%%LINKJE NAAR PAGE%%.
+1. Try solving with **[conservation of energy](Conservation%20of%20Energy)**.
 2. If **1.** is not possible[^impos1], try solving with **impulse and momentum**.
 3. If **2.** is not possible[^impos2], try solving with **[integrating the equations of motion](Modeling%20Rigid%20Body%20Dynamics)**.
 
@@ -82,7 +82,7 @@ Where $\vec{\textbf{L}}_1$ is the momentum just before the impulse acts on the p
 __[Home](!%20Dynamics%20Learning%20Overview)__
 
 ---
-_Status:_ #ripe #missingLink
+_Status:_ #ripe 
 
 ---
 # Based On:

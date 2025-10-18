@@ -7,7 +7,7 @@ tags: [[dynamics]], [[single particle]], [[kinetics]], [[vector math]], [[sums]]
 ---
 # Modeling Particle Dynamics
 To solve a system with the least amount of effort
-1. Try solving with **conservation of energy**%%LINKJE NAAR PAGE%%.
+1. Try solving with **[conservation of energy](Conservation%20of%20Energy)**.
 2. If **1.** is not possible[^impos1], try solving with **[impulse and momentum](Impulse%20and%20Momentum%20for%20Particles)**.
 3. If **2.** is not possible[^impos2], try solving with **integrating the equations of motion**.
 
