@@ -110,7 +110,19 @@ Do note that in this case the capital letters do **not** need to indicate matric
 $$
 \vec{\textbf{x}}_c = X \vec{\textbf{c}}
 $$
-Like this we can eliminate the undetermined constants. Our goal is to find a solution
+Here, $\vec{\textbf{c}}$ is the vector that contains all constants $c_1$, $c_2$, etc. To illustrate the meaning of the fundamental matrix $X$ which contains the solution for $\vec{\textbf{x}}$ if it were a homogeneous system, take the following complementary solution:
+$$
+\vec{\textbf{x}}_c = c_1 e^{-2t} \begin{bmatrix} 1 \\ -3 \end{bmatrix} + c_2 e^{5t} \begin{bmatrix} 2 \\ 1 \end{bmatrix}
+$$
+To find $X$ we combine the two vectors, but isolate $c_1$ and $c_2$.
+$$
+\vec{\textbf{x}}_c = \begin{bmatrix} e^{-2t} + 2e^{5t} \\ -3e^{-2t} + e^{5t} \end{bmatrix} \begin{bmatrix} c_1 \\ c_2 \end{bmatrix} = X \vec{\textbf{c}}
+$$
+Thus we find that
+$$
+X = \begin{bmatrix} e^{-2t} + 2e^{5t} \\ -3e^{-2t} + e^{5t} \end{bmatrix}
+$$
+From the from $X \vec{\textbf{c}}$ we can eliminate the undetermined constants. Our goal is to find a solution
 $$
 \vec{\textbf{x}}_p = X \vec{\textbf{u}}
 $$
@@ -122,6 +134,14 @@ Thus our **final equation** to find $\vec{\textbf{x}}_p$ becomes
 $$
 \vec{\textbf{x}}_p = X \int X^{-1} \: \vec{\textbf{f}}(t) \: dt
 $$
+
+#### Repeating Eigenvalues
+When solving the characteristic equation it may happen that
+
+
+
+
+
 
 #### Complex Solutions
 Trying to find the [eigenvalues](Eigenvectors%20and%20Eigenvalues) for some real systems may yield imaginary eigenvalues as a result of the characteristic equation. For example see the characteristic equation
