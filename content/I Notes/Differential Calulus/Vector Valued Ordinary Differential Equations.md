@@ -110,7 +110,7 @@ Do note that in this case the capital letters do **not** need to indicate matric
 $$
 \vec{\textbf{x}}_c = X \vec{\textbf{c}}
 $$
-Here, $\vec{\textbf{c}}$ is the vector that contains all constants $c_1$, $c_2$, etc. To illustrate the meaning of the fundamental matrix $X$ which contains the solution for $\vec{\textbf{x}}$ if it were a homogeneous system, take the following complementary solution:
+Here, $\vec{\textbf{c}}$ is the vector that contains all constants $c_1$, $c_2$, etc. To illustrate the meaning of the fundamental matrix $X$ which contains the solution for $\vec{\textbf{x}}$ if it were a homogeneous system, take the following complementary solution[^source]:
 $$
 \vec{\textbf{x}}_c = c_1 e^{-2t} \begin{bmatrix} 1 \\ -3 \end{bmatrix} + c_2 e^{5t} \begin{bmatrix} 2 \\ 1 \end{bmatrix}
 $$
@@ -122,7 +122,7 @@ Thus we find that
 $$
 X = \begin{bmatrix} e^{-2t} + 2e^{5t} \\ -3e^{-2t} + e^{5t} \end{bmatrix}
 $$
-From the from $X \vec{\textbf{c}}$ we can eliminate the undetermined constants. Our goal is to find a solution
+From the form $X \vec{\textbf{c}}$ we can eliminate the undetermined constants. Our goal is to find a solution
 $$
 \vec{\textbf{x}}_p = X \vec{\textbf{u}}
 $$
@@ -136,15 +136,84 @@ $$
 $$
 
 #### Repeating Eigenvalues
-When solving the characteristic equation it may happen that
+When solving the characteristic equation it may happen that a solution for $\lambda$ appears more than once. In other words, $\lambda$ has a multiplicity of more than 1. If this happens there are 2 scenarios:
+1. ***We can use a single [eigenvalue](Eigenvectors%20and%20Eigenvalues) to find multiple [eigenvectors](Eigenvectors%20and%20Eigenvalues):*** When substituting the repeating root into $(A - \lambda I)\vec{\textbf{v}} = 0$ we may get a solution for $\vec{\textbf{v}}$ with a free variable. For example[^source] we may find a solution with a free variable $c$, and $b = - \frac{3}{2} a$. In that case our $\vec{\textbf{v}}$ becomes
+$$
+\vec{\textbf{v}} = c \begin{bmatrix} 0 \\ 0 \\ 1 \end{bmatrix} + \frac{1}{2}a \begin{bmatrix} 2 \\ -3 \\ 0 \end{bmatrix}
+$$
+To get two eigenvectors from this single eigenvector, realize that these solutions must per definition be linearly independent, and thus we could write
+$$
+\vec{\textbf{v}} = c \vec{\textbf{v}}_1 + \frac{1}{2}a \vec{\textbf{v}}_2
+$$
+$$
+\vec{\textbf{v}}_1 = \begin{bmatrix} 0 \\ 0 \\ 1 \end{bmatrix}, \quad \vec{\textbf{v}}_2 = \begin{bmatrix} 2 \\ -3 \\ 0 \end{bmatrix}
+$$
+We now have two linearly independent vectors that have the same properties as the eigenvector, and we can use them as such in our solutions to differential equations. <br>Because this is possible with this $\lambda$, we call this repeating root a complete eigenvalue.
+2. ***The multiplicative eigenvalue doesn't produce enough independent vectors:*** Consider the following system[^source] where we have the repeating eigenvalue $\lambda = 4$. 
+$$
+(A - 4I)\vec{\textbf{v}} = \begin{bmatrix} -3 & -3 \\ 3 & 3 \end{bmatrix} \begin{bmatrix} a \\ b \end{bmatrix} = 0
+$$
+Solving for $a$ and $b$ gives us $a = -b$, but no free variable that can create a second linearly independent vector. If we say $a = 1$ then the only solution for $\vec{\textbf{v}}$ is
+$$
+\vec{\textbf{v}}_1 = \begin{bmatrix} 1 \\ -1 \end{bmatrix}
+$$
+Therefore we can't use method **1.** and we call the eigenvalue $\lambda = 4$ *defective*. <>In this chapter a multiplicity of 2 for a single eigenvalue will be discussed, not the general case. <>We find a solution by trial. We start by using the same technique as used for repeated roots in scalar equations, where we multiply the repeating term with $t$. We choose a yet to be determined second eigenvector $\vec{\textbf{v}}_2$ and write
+$$
+\vec{\textbf{x}}_1 = \vec{\textbf{v}}_2 te^{\lambda t}
+$$
+We can substitute $\vec{\textbf{x}}_1$ into the original equation $\vec{\textbf{x}}' = A \vec{\textbf{x}}$, applying the chain rule for the derivative of $\vec{\textbf{x}}_1$.
+$$
+\vec{\textbf{x}}_1' = A \vec{\textbf{x}}' \qquad \Rightarrow \qquad \left( \vec{\textbf{v}}_2 \lambda t e^{\lambda t} + \vec{\textbf{v}}_2 e^{\lambda t} \right) = A \left( \vec{\textbf{v}}_2 te^{\lambda t} \right)
+$$
+We can see two equations emerge from this,
+$$
+\left( \vec{\textbf{v}}_2 \lambda \right) te^{\lambda t} = \left(A \vec{\textbf{v}}_2 \right) te^{\lambda t} \qquad \text{and} \qquad \vec{\textbf{v}}_2 e^{\lambda t} = 0 \cdot e^{\lambda t}
+$$
+Thus we have that $\vec{\textbf{v}}_2$ is 0. This means that multiplying by $t$ does not give a non-zero answer for the second eigenvector. Instead, we try a combination of both eigenvectors, the known eigenvector $\vec{\textbf{v}}_1$, and the to be determined second eigenvector $\vec{\textbf{v}}_2$. We try
+$$
+\vec{\textbf{x}}_1 = \left( \vec{\textbf{v}}_1 t + \vec{\textbf{v}}_2 \right) e^{\lambda t}
+$$
+Once again, we substitute $\vec{\textbf{x}}_1$ into the equation $\vec{\textbf{x}}' = A \vec{\textbf{x}}$, realizing that the derivative of $\vec{\textbf{x}}_1$ is $\vec{\textbf{v}}_1 e^{\lambda t} + \vec{\textbf{v}}_1 \lambda t e^{\lambda t} + \vec{\textbf{v}}_2 \lambda e^{\lambda t}$.
+$$
+\vec{\textbf{x}}' = A \vec{\textbf{x}} \quad \Rightarrow \quad \vec{\textbf{v}}_1 e^{\lambda t} + \vec{\textbf{v}}_1 \lambda t e^{\lambda t} + \vec{\textbf{v}}_2 \lambda e^{\lambda t} = A \left( \vec{\textbf{v}}_1 t + \vec{\textbf{v}}_2 \right) e^{\lambda t}
+$$
+Here too, we can see two equations emerge, namely the terms with $te^{\lambda t}$, and those with $e^{\lambda t}$.
+$$
+\left( \vec{\textbf{v}}_1 + \vec{\textbf{v}}_2 \lambda \right) e^{\lambda t} = A \vec{\textbf{v}}_2 e^{\lambda t} \quad \text{and} \quad \vec{\textbf{v}}_1 \lambda t e^{\lambda t} = A \vec{\textbf{v}}_1t e^{\lambda t}
+$$
+$$
+\vec{\textbf{v}}_1 + \vec{\textbf{v}}_2 \lambda = A \vec{\textbf{v}}_2 \quad \text{and} \quad \vec{\textbf{v}}_1 \lambda = A \vec{\textbf{v}}_1
+$$
+$$
+(A - \lambda I) \vec{\textbf{v}}_2 = \vec{\textbf{v}}_1 \quad \text{and} \quad (A - \lambda I) \vec{\textbf{v}}_1 = 0
+$$
+Recognize the second term as part of the steps taken to find $\vec{\textbf{v}}_1$ in the first place. The appearance of this term confirms that $\vec{\textbf{v}}_1$ is indeed an eigenvector, and by extension, so will $\vec{\textbf{v}}_2$ be. <>We can solve the augmented matrix $\left[A- \lambda I \: | \: \vec{\textbf{v}}_1 \right]$ to find $\vec{\textbf{v}}_2$. In the start of our example we already had used an expression for $(A- \lambda I) = (A - 4I)$.
+$$
+\vec{\textbf{v}}_2 = \left[A- \lambda I \: | \: \vec{\textbf{v}}_1 \right] = \left[ \begin{array}{cc|c} -3 & -3 & 1 \\ 3 & 3 & -1 \end{array} \right]
+$$
+We can now find $\vec{\textbf{v}}_2$ by row reducing this matrix. Alternatively, we can simplify the original equation $(A - \lambda I) \vec{\textbf{v}}_2 = \vec{\textbf{v}}_1$ by substituting into the second equation we obtained[^arithmetic]. This yields
+$$
+(A - \lambda I)^2 \vec{\textbf{v}}_2 = 0
+$$
+We can thus always find $\vec{\textbf{v}}_2$ by solving $\left[\begin{array}{c|c} (A-\lambda I)^2 & 0  \end{array}\right]$.
 
+>[!abstract] Inventory
+> When a system has repeating [eigenvalues](Eigenvectors%20and%20Eigenvalues) *with multiplicity 2* we start by finding the [eigenvector](Eigenvectors%20and%20Eigenvalues) associated with these eigenvalues. If that eigenvector is of the form
+> $$
+> \vec{\textbf{v}} = a \vec{\textbf{v}}_1 + b \vec{\textbf{v}}_2
+> $$
+> then we have found the two eigenvectors $\vec{\textbf{v}}_1$ and $\vec{\textbf{v}}_2$ we can use in it's place. If it doesn't, we solve the system
+> $$
+> (A - \lambda I)^2 \vec{\textbf{v}}_2 = 0
+> $$
+> to obtain a second eigenvector $\vec{\textbf{v}}_2$. We call the first found eigenvector $\vec{\textbf{v}}_1$. We were now still able to find both $\vec{\textbf{v}}_1$ and $\vec{\textbf{v}}_2$ from a single repeating eigenvalue.
 
 
 
 
 
 #### Complex Solutions
-Trying to find the [eigenvalues](Eigenvectors%20and%20Eigenvalues) for some real systems may yield imaginary eigenvalues as a result of the characteristic equation. For example see the characteristic equation
+Trying to find the [eigenvalues](Eigenvectors%20and%20Eigenvalues) for some real systems may yield imaginary eigenvalues as a result of the characteristic equation. For example[^source] see the characteristic equation
 $$
 (4 - \lambda) ^2 + 9 = 0 \qquad \Rightarrow \qquad \lambda = 4 \pm \sqrt{-9} = 4 \pm 3i
 $$
@@ -187,7 +256,7 @@ $$
 \vec{\textbf{x}}_\text{real} = \begin{cases} e^{4t} [c_1 \cos(-3t) + c_ 2\sin(-3t)] \\ e^{4t} [c_2 \cos(-3t) - c_1\sin(-3t)] \end{cases}
 $$
 
->[!abstract] Summary
+>[!abstract] Inventory
 > The long and short of complex solutions is that solving them is done using the same methods and steps as are necessary for non-complex solutions, with the difference being applying *Euler's formula* and not having to compute all eigenvectors to find a solution. 
 > Furthermore, depending on the use case it can be beneficial to find a real solution $\vec{\textbf{x}}_\text{real}$ instead of the original complex $\vec{\textbf{x}}$.
 
@@ -233,5 +302,6 @@ _Status:_ #bud #missingLink
 
 [^deriv]: The derivation for this formula isn't relevant to this note, but you can read more on [Wikipedia](https://en.wikipedia.org/wiki/Euler's_formula), or see page 166-167 of _Differential Equations and Boundary Value Problems_, the beginning of the chapter *Complex-Valued Functions and Euler's Formula*.
 [^genimag]: Remembering that $\vec{\textbf{x}}_2$ was the imaginary term, the general **complex** solution is then $$\vec{\textbf{x}}_{\text{complex}} = c_1 \vec{\textbf{x}}_1 + c_2 \vec{\textbf{x}}_2 = c_1 e^{4t} \begin{bmatrix} \cos(-3t) \\ - \sin(-3t)] \end{bmatrix} + c_2 i e^{4t} \begin{bmatrix} \sin(-3t) \\ \cos(-3t) \end{bmatrix}$$
+[^source]: Example from C. H. Edwards, D. E. Penney, D. Calvis, _Differential Equations and Boundary Value Problems_, 5th ed, US.
 
-
+[^arithmetic]: The validity of the conclusion may not be obvious immediately, so here are the intermediary steps: We substitute $\vec{\textbf{v}}_1$ from the equation $(A - \lambda I) \vec{\textbf{v}}_2 = \vec{\textbf{v}}_1$ into $(A - \lambda I) \vec{\textbf{v}}_1 = 0$.<br>$$(A - \lambda I) (A - \lambda I) \vec{\textbf{v}}_2 = 0$$<br>$$(A - \lambda I)^2 \vec{\textbf{v}}_2 = 0$$
