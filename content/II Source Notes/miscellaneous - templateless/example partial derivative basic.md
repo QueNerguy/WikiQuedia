@@ -21,7 +21,7 @@ We take the $x$ direction to be constant, thus $x = c_3$, and then $x^2 = c_4$.
 $$
 D_y [c_4 \cdot \sin (y)] = c_4 \cdot D_y [\sin (y)] = c_4 \cdot \cos(y)
 $$
-After resubstituting $x^2$ for $c_4$ the derivative with respect to $y$ becomes
+After re-substituting $x^2$ for $c_4$ the derivative with respect to $y$ becomes
 $$
 D_y [f(x, y)]= x^2 \cos (y)
 $$

@@ -272,11 +272,38 @@ To find the complete solution for $\vec{\textbf{x}}$, eliminating the constants 
 $$
 \vec{\textbf{x}} = X\vec{\textbf{c}}
 $$
-$X$ is a matrix containing every solution $\vec{\textbf{x}}_1$, $\vec{\textbf{x}}_2$ etc. <br>We know that $\vec{\textbf{x}}(3) = \vec{\textbf{b}}$, and we can thus rewrite this equation to
+$X$ is a matrix containing every solution $\vec{\textbf{x}}_1$, $\vec{\textbf{x}}_2$ etc, named the *fundamental matrix*, and $\vec{\textbf{c}}$ contains all constants $c_1$, $c_2$ etc. <br>We know that $\vec{\textbf{x}}(3) = \vec{\textbf{b}}$, and we can thus rewrite this equation to
 $$
 \vec{\textbf{x}}(3) = X(3) \vec{\textbf{c}} = \vec{\textbf{b}}
 $$
 To find $\vec{\textbf{c}}$ we can solve the *augmented matrix* $\left[ X(3) \: | \: \vec{\textbf{b}} \right]$.
+
+
+
+#### Solving Using Matrix Exponentials
+It is possible to construct a solution to the equation $\vec{\textbf{x}}' = A\vec{\textbf{x}}$ directly from the matrix $A$, using the same methodology as used to solve [scalar differential equations](Generalized%20Ordinary%20Differential%20Equations)[^seealso]. <br>To start it is important to know the computational rules of **exponential matrices**. Without proving this[^proof], for a matrix $A = \begin{bmatrix} a & b \\ c & d \end{bmatrix}$, we have
+$$
+e^A = \begin{bmatrix} e^a & e^b \\ e^c & e^d \end{bmatrix}, \quad e^\vec{\textbf{0}} = I
+$$
+To find an expression for $e^{At}$ we invoke the definition of $e^a$, which has
+$$
+e^a = \frac{a^0}{0!} + \frac{a^1}{1!} + \frac{a^2}{2!} + \dots + \frac{a^n}{n!}
+$$
+In the case of a matrix this looks like
+$$
+e^A = \frac{A^0}{0!} + \frac{A^1}{1!} + \frac{A^2}{2!} + \dots + \frac{A^n}{n!} = I + A + \frac{A^2}{2} + \frac{A^3}{6} + \dots \frac{A^n}{n!}
+$$
+We can thus see that for an exponential $At$ we get
+$$
+e^{At} = I + At + \frac{A^2t^2}{2} + \frac{A^3 t^3}{6} + \dots + \frac{A^n t^n}{n!}
+$$
+An example of how to compute matrices with this formulation is given [here](example%20computing%20a%20exponential%20with%20a%20matrix%20At.md).
+<br><br>**This chapter is currently unfinished**
+
+
+
+
+%%==UNFINISHED TEXT, NEEDS REST OF METHODOLOGY DESCRIBED YET. CURRENT INFO TAKEN FROM CHAPTER 5.6==%%
 
 
 
@@ -305,3 +332,5 @@ _Status:_ #bud #missingLink
 [^source]: Example from C. H. Edwards, D. E. Penney, D. Calvis, _Differential Equations and Boundary Value Problems_, 5th ed, US.
 
 [^arithmetic]: The validity of the conclusion may not be obvious immediately, so here are the intermediary steps: We substitute $\vec{\textbf{v}}_1$ from the equation $(A - \lambda I) \vec{\textbf{v}}_2 = \vec{\textbf{v}}_1$ into $(A - \lambda I) \vec{\textbf{v}}_1 = 0$.<br>$$(A - \lambda I) (A - \lambda I) \vec{\textbf{v}}_2 = 0$$<br>$$(A - \lambda I)^2 \vec{\textbf{v}}_2 = 0$$
+[^seealso]: For more info on specific orders of differential equations, check out the notes [[First Order Ordinary Differential Equations]], [[Second Order Ordinary Differential Equations]] and the already linked note [[Generalized Ordinary Differential Equations]].
+[^proof]: A proof can be found on page 352 of the source material for this note, _Differential Equations and Boundary Value Problems_, 5th ed.
