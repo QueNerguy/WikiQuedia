@@ -141,7 +141,7 @@ For equations like these we can use *[Euler's formula](https://en.wikipedia.org/
 $$
 e^{i \theta} = \cos({\theta}) + i\sin(\theta)
 $$
-Complex functions where $\lambda$ has a solution $a + bi$ can be deconstructed as follows:
+Complex functions where $\lambda$ has an imaginary solution $a + bi$ can be deconstructed as follows:
 $$
 e^{(a+bi)t} = e^{at}e^{ibt} = e^{at}\left[ \cos({bt}) + i\sin(bt) \right]
 $$
@@ -198,3 +198,4 @@ _Status:_ #sprout #missingLink
 [^erm2]: The completely correct way to write this is <br>$$A_n t^n + A_{n-1}t^{n-1} + \dots + A_1t + A_0$$<br>I personally find this notation hard to read with the subscripts for $A$, so I prefer to just use letters instead, even though technically this way of writing is slightly less correct. %%(loser)%%
 
 [^ref]: You might recognize this term from linear algebra%%==LINKJE==%%. For more on the treatment of vector valued differential equations, see [here](Vector%20Valued%20Ordinary%20Differential%20Equations).
+[^deriv]: The derivation for this formula isn't relevant to this note, but you can read more on [wikipedia](https://en.wikipedia.org/wiki/Euler's_formula), or see page 166-167 of _Differential Equations and Boundary Value Problems_, the beginning of the chapter *Complex-Valued Functions and Euler's Formula*.

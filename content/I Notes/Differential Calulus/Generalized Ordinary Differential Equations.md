@@ -136,7 +136,7 @@ $$
 
 
 
-#### Working With Complex Solutions
+#### Complex Solutions
 Complex solutions for $y$ are solutions where one of the solutions looks like
 $$
 y_1 = c_1 e^{i\theta}
