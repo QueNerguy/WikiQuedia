@@ -130,7 +130,7 @@ $$
 $$
 In the case of complex eigenvalues we always have a solution $\lambda$ and a solution $\bar{\lambda}$, in this case we have $\lambda_1 = \lambda = 4 + 3i$ and $\lambda_2 = \bar{\lambda} = 4 - 3i$. The appearance of a positive and a negative imaginary part is a result of the square root as part of the definition of $i$. A square root's solutions are always plus or minus the enclosed term, thus complex solutions will always have a positive and a negative imaginary term.  <br>Complex solutions are no less valid than real solutions, and the [eigenvectors](Eigenvectors%20and%20Eigenvalues) $\vec{\textbf{v}}$ can be found all the same by solving $\left[ A - \lambda I \right] \vec{\textbf{v}} = 0$. The resulting eigenvector can have a complex solution. Building on the first example we could have a solution for the eigenvector like $\vec{\textbf{v}}_1 = \begin{bmatrix} 1 \\ i \end{bmatrix}$. This eigenvector can be split into a real and an imaginary part, $\vec{\textbf{v}}_1 = \begin{bmatrix} 1 \\ 0 \end{bmatrix} + \begin{bmatrix} 0 \\ 1 \end{bmatrix} i$. The real part is sometimes denoted as $\text{Re} \left[ \vec{\textbf{v}}_1 \right]$, and the imaginary part as $\text{Im} \left[ \vec{\textbf{v}}_1 \right]$. <br>Even though we have **two** roots for $\lambda$, namely $\lambda_1 = \lambda$ and $\lambda_2 = \bar{\lambda}$, the solution for $\vec{\textbf{x}}$ of this homogeneous system *can* only use one of these values. The system requires two solutions because there are two roots, but because our solution is complex we can break the solution for a single root up into a real and an imaginary part, and thus yield two solutions from a single eigenvalue. We thus don't need to compute $\vec{\textbf{v}}_2$ and can choose the $\lambda$ that eases our computations as much as possible.
 $$
-\vec{\textbf{x}} = \vec{\textbf{v}}_1 e^{\lambda t} = \begin{bmatrix} 1 \\ i \end{bmatrix} e^{(4 - 3i) t}
+\vec{\textbf{x}}_p = \vec{\textbf{v}}_1 e^{\lambda t} = \begin{bmatrix} 1 \\ i \end{bmatrix} e^{(4 - 3i) t}
 $$
 We can break this solution up by using *[Euler's formula](https://en.wikipedia.org/wiki/Euler's_formula)*[^deriv], which states
 $$
@@ -142,25 +142,29 @@ e^{(a+bi)t} = e^{at}e^{ibt} = e^{at}\left[ \cos({bt}) + i\sin(bt) \right]
 $$
 Thus, in our case, we get
 $$
-\vec{\textbf{x}} = \begin{bmatrix} 1 \\ i \end{bmatrix} e^{(4 - 3i) t} = \begin{bmatrix} 1 \\ i \end{bmatrix} e^{4t} \left[ \cos(-3t) + i\sin(-3t) \right]
+\vec{\textbf{x}}_p = \begin{bmatrix} 1 \\ i \end{bmatrix} e^{(4 - 3i) t} = \begin{bmatrix} 1 \\ i \end{bmatrix} e^{4t} \left[ \cos(-3t) + i\sin(-3t) \right]
 $$
 $$
-\vec{\textbf{x}} = e^{4t} \begin{bmatrix} \cos(-3t) + i\sin(-3t) \\ i[\cos(-3t) + i\sin(-3t)] \end{bmatrix} = e^{4t} \begin{bmatrix} \cos(-3t) + i\sin(-3t) \\ i\cos(-3t) - \sin(-3t) \end{bmatrix}
+\vec{\textbf{x}}_p = e^{4t} \begin{bmatrix} \cos(-3t) + i\sin(-3t) \\ i[\cos(-3t) + i\sin(-3t)] \end{bmatrix} = e^{4t} \begin{bmatrix} \cos(-3t) + i\sin(-3t) \\ i\cos(-3t) - \sin(-3t) \end{bmatrix}
 $$
-To illustrate that the above equation for $\vec{\textbf{x}}$ is indeed a linear combination of $\vec{\textbf{x}}_1$ and $\vec{\textbf{x}}_2$, we can break it up into the real and imaginary parts, where $\vec{\textbf{x}}_1 = \text{Re}[\vec{\textbf{x}}]$ and $\vec{\textbf{x}}_2 = \text{Im}[\vec{\textbf{x}}]$.
+To illustrate that the above equation for $\vec{\textbf{x}}_p$ is indeed a linear combination of $\vec{\textbf{x}}_1$ and $\vec{\textbf{x}}_2$, we can break it up into the real and imaginary parts, where $\vec{\textbf{x}}_1 = \text{Re}[\vec{\textbf{x}}]$ and $\vec{\textbf{x}}_2 = \text{Im}[\vec{\textbf{x}}]$.
 $$
 \vec{\textbf{x}}_1 = \text{Re}[\vec{\textbf{x}}] = e^{4t} \begin{bmatrix} \cos(-3t) \\ - \sin(-3t)] \end{bmatrix}
 $$
 $$
 \vec{\textbf{x}}_2 = \text{Im}[\vec{\textbf{x}}] = \text{Im}\left[ e^{4t} \begin{bmatrix} i\sin(-3t) \\ i\cos(-3t) \end{bmatrix} \right] = e^{4t} \begin{bmatrix} \sin(-3t) \\ \cos(-3t) \end{bmatrix}
 $$
-If we don't want to find a complex solution for $\vec{\textbf{x}}$, we can combine $\vec{\textbf{x}}_1$ and $\vec{\textbf{x}}_2$ instead to get
+If we don't want to find a complex solution for $\vec{\textbf{x}}_p$, we can combine $\vec{\textbf{x}}_1$ and $\vec{\textbf{x}}_2$ instead to get a solution
 $$
-\vec{\textbf{x}}_\text{real} = \vec{\textbf{x}}_1 + \vec{\textbf{x}}_2 = e^{4t} \begin{bmatrix} \cos(-3t) \\ - \sin(-3t)] \end{bmatrix} + e^{4t} \begin{bmatrix} \sin(-3t) \\ \cos(-3t) \end{bmatrix}
+\vec{\textbf{x}}_{p\:\text{real}} = \vec{\textbf{x}}_1 + \vec{\textbf{x}}_2 = e^{4t} \begin{bmatrix} \cos(-3t) \\ - \sin(-3t)] \end{bmatrix} + e^{4t} \begin{bmatrix} \sin(-3t) \\ \cos(-3t) \end{bmatrix}
 $$
-Note that this solution is no more or less valid than the original solution for $\vec{\textbf{x}}$, it is just a different form of the same solution. <br>Lastly, the associated scalar solution looks like
+Note that this solution is no more or less valid than the original solution for $\vec{\textbf{x}}_p$, it is just a different form of the same solution. Be aware that this is still a particular solution, not the general solution.<br>The **general real**[^genimag] **solution** is
 $$
-\vec{\textbf{x}}_\text{real} = \begin{cases} \cos(-3t) + \sin(-3t) \\ \cos(-3t) - \sin(-3t) \end{cases}
+\vec{\textbf{x}}_{\text{real}} = c_1 \vec{\textbf{x}}_1 + c_2 \vec{\textbf{x}}_2 = c_1 e^{4t} \begin{bmatrix} \cos(-3t) \\ - \sin(-3t)] \end{bmatrix} + c_ 2e^{4t} \begin{bmatrix} \sin(-3t) \\ \cos(-3t) \end{bmatrix}
+$$
+Lastly, the associated scalar solution looks like
+$$
+\vec{\textbf{x}}_\text{real} = \begin{cases} e^{4t} [c_1 \cos(-3t) + c_ 2\sin(-3t)] \\ e^{4t} [c_2 \cos(-3t) - c_1\sin(-3t)] \end{cases}
 $$
 
 >[!abstract] Summary
@@ -207,6 +211,7 @@ _Status:_ #bud #missingLink
 [^creditbook]:  C. H. Edwards, D. E. Penney, D. Calvis, _Differential Equations and Boundary Value Problems_, p363, 5th ed, US.
 [^erm2]: The completely correct way to write this is <br>$$\vec{\textbf{A}}_n t^n + \vec{\textbf{A}}_{n-1}t^{n-1} + \dots + \vec{\textbf{A}}_1t + \vec{\textbf{A}}_0$$<br>I personally find this notation hard to read with the subscripts for $\vec{\textbf{A}}$, so I prefer to just use letters instead, even though technically this way of writing is slightly less correct.
 
-[^deriv]: The derivation for this formula isn't relevant to this note, but you can read more on [wikipedia](https://en.wikipedia.org/wiki/Euler's_formula), or see page 166-167 of _Differential Equations and Boundary Value Problems_, the beginning of the chapter *Complex-Valued Functions and Euler's Formula*.
+[^deriv]: The derivation for this formula isn't relevant to this note, but you can read more on [Wikipedia](https://en.wikipedia.org/wiki/Euler's_formula), or see page 166-167 of _Differential Equations and Boundary Value Problems_, the beginning of the chapter *Complex-Valued Functions and Euler's Formula*.
+[^genimag]: Remembering that $\vec{\textbf{x}}_2$ was the imaginary term, the general **complex** solution is then $$\vec{\textbf{x}}_{\text{complex}} = c_1 \vec{\textbf{x}}_1 + c_2 \vec{\textbf{x}}_2 = c_1 e^{4t} \begin{bmatrix} \cos(-3t) \\ - \sin(-3t)] \end{bmatrix} + c_2 i e^{4t} \begin{bmatrix} \sin(-3t) \\ \cos(-3t) \end{bmatrix}$$
 
 
