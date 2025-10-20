@@ -285,7 +285,7 @@ It is possible to construct a solution to the equation $\vec{\textbf{x}}' = A\ve
 $$
 e^D = \begin{bmatrix} e^a & 0 \\ 0 & e^b \end{bmatrix}, \quad e^{\vec{\textbf{0}}} = I
 $$
-To find an expression for a general matrix $A$, $e^{A}$, we invoke the definition of $e^a$, which has
+To find an expression for a general matrix $A$, we invoke the definition of a scalar exponent, $e^a$, which has
 $$
 e^a = \frac{a^0}{0!} + \frac{a^1}{1!} + \frac{a^2}{2!} + \dots + \frac{a^n}{n!}
 $$
