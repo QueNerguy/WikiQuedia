@@ -127,7 +127,7 @@ $$
 $$
 y = \frac{\int \rho b dx}{\rho}
 $$
-This resulting formula **shouldn't be memorized**, instead, memorize the expression for $\rho$ and the steps taken to arrive at the eventual solution. 
+%%This resulting formula **shouldn't be memorized**, instead, memorize the expression for $\rho$ and the steps taken to arrive at the eventual solution. %%%%==the preceding bit of text is probably a lie made up by big math to make you math more but im not falling for it anymore==%%
 
 - The remainder of the solution to this example is given [here](example%20first%20order%20ordinary%20differential%20equations%20linear%20equations). <br>The computations consist mainly of following integration steps to find an expression for $\rho$ and to solve the integral $\int \rho bdx$.
 

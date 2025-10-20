@@ -21,7 +21,7 @@ Thus an area in the new $(u, v)$ space becomes __6 times larger__ when going bac
 1. The variables in the __numerator__ are the old coordinates.
 2. The variables in the __denominator__ are the new coordinates.
 
-The reason this happens, is that when examining a very small area of the function, which is what a [derivative](Differentiation) does, a transformation of a square would create a parallellogram, whose area can be found using the determinant, thus creating the Jacobian determinant. <br><br>This property applies for __nonlinear__ equations as well, making the determinant useful in [multivariable calculus](!%20Calculus%20II%20Learning%20Overview), the _Jacobian determinant_ is used fundamentally for [changing variable](Changing%20Variables%20for%20Integration) in [multiple integrals](Multiple%20Integration)[^paraphrase], for example.
+The reason this happens, is that when examining a very small area of the function, which is what a [derivative](Differentiation) does, a transformation of a square would create a parallelogram, whose area can be found using the determinant, thus creating the Jacobian determinant. <br><br>This property applies for __nonlinear__ equations as well, making the determinant useful in [multivariable calculus](!%20Calculus%20II%20Learning%20Overview), the _Jacobian determinant_ is used fundamentally for [changing variable](Changing%20Variables%20for%20Integration) in [multiple integrals](Multiple%20Integration)[^paraphrase], for example.
 
 
 

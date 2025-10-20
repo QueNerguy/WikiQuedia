@@ -11,7 +11,7 @@ e^{At} = I + At + \frac{A^2t^2}{2} + 0
 $$
 Substituting the found solution for $A^2$ into this equation, we get
 $$
-e^{At} = \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix} + \begin{bmatrix} 0 & 3 & 4 \\ 0 & 0 & 6 \\ 0 & 0 & 0 \end{bmatrix} t + \frac{t^2}{2} \begin{bmatrix} 0 & 0 & 18 \\ 0 & 0 & 0 \\ 0 & 0 & 0 \end{bmatrix} = \begin{bmatrix} 1 & 3t & 4t + 9t^2 \\ 0 & 1 & 6t \\ 0 & 0 & 1 \end{bmatrix}
+e^{At} = \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix} + \begin{bmatrix} 0 & 3 & 4 \\ 0 & 0 & 6 \\ 0 & 0 & 0 \end{bmatrix} t + \begin{bmatrix} 0 & 0 & 18 \\ 0 & 0 & 0 \\ 0 & 0 & 0 \end{bmatrix} \frac{t^2}{2} = \begin{bmatrix} 1 & 3t & 4t + 9t^2 \\ 0 & 1 & 6t \\ 0 & 0 & 1 \end{bmatrix}
 $$
 $$
 e^{At} = \begin{bmatrix} 1 & 3t & 4t + 9t^2 \\ 0 & 1 & 6t \\ 0 & 0 & 1 \end{bmatrix}
