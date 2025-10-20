@@ -281,19 +281,19 @@ To find $\vec{\textbf{c}}$ we can solve the *augmented matrix* $\left[ X(3) \: |
 
 
 #### Solving Using Matrix Exponentials
-It is possible to construct a solution to the equation $\vec{\textbf{x}}' = A\vec{\textbf{x}}$ directly from the matrix $A$, using the same methodology as used to solve [scalar differential equations](Generalized%20Ordinary%20Differential%20Equations)[^seealso]. <br>To start it is important to know the computational rules of **exponential matrices**. Without proving this[^proof], for a matrix $A = \begin{bmatrix} a & b \\ c & d \end{bmatrix}$, we have
+It is possible to construct a solution to the equation $\vec{\textbf{x}}' = A\vec{\textbf{x}}$ directly from the matrix $A$, using the same methodology as used to solve [scalar differential equations](Generalized%20Ordinary%20Differential%20Equations)[^seealso]. <br>To start it is important to know the computational rules of **exponential matrices**. Without proving this[^proof], for a matrix with only entries along it's diagonal $D = \begin{bmatrix} a & 0 \\ 0 & b \end{bmatrix}$, we have
 $$
-e^A = \begin{bmatrix} e^a & e^b \\ e^c & e^d \end{bmatrix}, \quad e^{\vec{\textbf{0}}} = I
+e^D = \begin{bmatrix} e^a & 0 \\ 0 & e^b \end{bmatrix}, \quad e^{\vec{\textbf{0}}} = I
 $$
-To find an expression for $e^{At}$ we invoke the definition of $e^a$, which has
+To find an expression for a general matrix $A$, $e^{A}$, we invoke the definition of $e^a$, which has
 $$
 e^a = \frac{a^0}{0!} + \frac{a^1}{1!} + \frac{a^2}{2!} + \dots + \frac{a^n}{n!}
 $$
-In the case of a matrix this looks like
+In the case of this general matrix $A$ this looks like
 $$
 e^A = \frac{A^0}{0!} + \frac{A^1}{1!} + \frac{A^2}{2!} + \dots + \frac{A^n}{n!} = I + A + \frac{A^2}{2} + \frac{A^3}{6} + \dots \frac{A^n}{n!}
 $$
-We can thus see that for an exponential $At$ we get
+For exponentials with powers of a matrix and a scalar, such as the variable $t$, we get
 $$
 e^{At} = I + At + \frac{A^2t^2}{2} + \frac{A^3 t^3}{6} + \dots + \frac{A^n t^n}{n!}
 $$

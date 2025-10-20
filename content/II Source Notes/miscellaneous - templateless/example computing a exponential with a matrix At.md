@@ -1,9 +1,9 @@
 ___Task:___ Compute $e^{At}$ for a matrix $A = \begin{bmatrix} 0 & 3 & 4 \\ 0 & 0 & 6 \\ 0 & 0 & 0 \end{bmatrix}$. <br><br>___Solution:___ We know that $e^{At} = I + At + \frac{A^2t^2}{2} + \frac{A^3 t^3}{6} + \dots + \frac{A^n t^n}{n!}$, thus we start by computing some powers of matrix $A$.
 $$
-A^2 = A A = \begin{bmatrix} 0 & 9 & 16 \\ 0 & 0 & 6 \\ 0 & 0 & 0 \end{bmatrix} \begin{bmatrix} 0 & 9 & 16 \\ 0 & 0 & 6 \\ 0 & 0 & 0 \end{bmatrix} = \begin{bmatrix} 0 & 0 & 18 \\ 0 & 0 & 0 \\ 0 & 0 & 0 \end{bmatrix}
+A^2 = A A = \begin{bmatrix} 0 & 3 & 4 \\ 0 & 0 & 6 \\ 0 & 0 & 0 \end{bmatrix} \begin{bmatrix} 0 & 3 & 4 \\ 0 & 0 & 6 \\ 0 & 0 & 0 \end{bmatrix} = \begin{bmatrix} 0 & 0 & 18 \\ 0 & 0 & 0 \\ 0 & 0 & 0 \end{bmatrix}
 $$
 $$
-A^3 = A^2 A = \begin{bmatrix} 0 & 0 & 18 \\ 0 & 0 & 0 \\ 0 & 0 & 0 \end{bmatrix} \begin{bmatrix} 0 & 9 & 16 \\ 0 & 0 & 6 \\ 0 & 0 & 0 \end{bmatrix} = \begin{bmatrix} 0 & 0 & 0 \\ 0 & 0 & 0 \\ 0 & 0 & 0 \end{bmatrix}
+A^3 = A^2 A = \begin{bmatrix} 0 & 0 & 18 \\ 0 & 0 & 0 \\ 0 & 0 & 0 \end{bmatrix} \begin{bmatrix} 0 & 3 & 4 \\ 0 & 0 & 6 \\ 0 & 0 & 0 \end{bmatrix} = \begin{bmatrix} 0 & 0 & 0 \\ 0 & 0 & 0 \\ 0 & 0 & 0 \end{bmatrix}
 $$
 Any higher powers higher than 3 will also return a 0-matrix, and thus we can neglect any terms in the definition of $e$ with matrix $A$ to a higher power than 2, as those terms simply disappear. <br>As a result, we can say that
 $$
