@@ -283,7 +283,7 @@ To find $\vec{\textbf{c}}$ we can solve the *augmented matrix* $\left[ X(3) \: |
 #### Solving Using Matrix Exponentials
 It is possible to construct a solution to the equation $\vec{\textbf{x}}' = A\vec{\textbf{x}}$ directly from the matrix $A$, using the same methodology as used to solve [scalar differential equations](Generalized%20Ordinary%20Differential%20Equations)[^seealso]. <br>To start it is important to know the computational rules of **exponential matrices**. Without proving this[^proof], for a matrix $A = \begin{bmatrix} a & b \\ c & d \end{bmatrix}$, we have
 $$
-e^A = \begin{bmatrix} e^a & e^b \\ e^c & e^d \end{bmatrix}, \quad e^\vec{\textbf{0}} = I
+e^A = \begin{bmatrix} e^a & e^b \\ e^c & e^d \end{bmatrix}, \quad e^{\vec{\textbf{0}}} = I
 $$
 To find an expression for $e^{At}$ we invoke the definition of $e^a$, which has
 $$
