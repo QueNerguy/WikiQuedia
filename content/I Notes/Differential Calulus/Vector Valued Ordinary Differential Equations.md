@@ -148,7 +148,7 @@ $$
 $$
 \vec{\textbf{v}}_1 = \begin{bmatrix} 0 \\ 0 \\ 1 \end{bmatrix}, \quad \vec{\textbf{v}}_2 = \begin{bmatrix} 2 \\ -3 \\ 0 \end{bmatrix}
 $$
-We now have two linearly independent vectors that have the same properties as the eigenvector, and we can use them as such in our solutions to differential equations. <br>Because this is possible with this $\lambda$, we call this repeating root a complete eigenvalue.
+We now have two linearly independent vectors that have the same properties as the eigenvector, and we can use them as such in our solutions to differential equations. <br>Because this is possible with this $\lambda$, we call this repeating root a complete eigenvalue.<br>
 2. ***The multiplicative eigenvalue doesn't produce enough independent vectors:*** Consider the following system[^source] where we have the repeating eigenvalue $\lambda = 4$. 
 $$
 (A - 4I)\vec{\textbf{v}} = \begin{bmatrix} -3 & -3 \\ 3 & 3 \end{bmatrix} \begin{bmatrix} a \\ b \end{bmatrix} = 0
@@ -157,13 +157,13 @@ Solving for $a$ and $b$ gives us $a = -b$, but no free variable that can create 
 $$
 \vec{\textbf{v}}_1 = \begin{bmatrix} 1 \\ -1 \end{bmatrix}
 $$
-Therefore we can't use method **1.** and we call the eigenvalue $\lambda = 4$ *defective*. <>In this chapter a multiplicity of 2 for a single eigenvalue will be discussed, not the general case. <>We find a solution by trial. We start by using the same technique as used for repeated roots in scalar equations, where we multiply the repeating term with $t$. We choose a yet to be determined second eigenvector $\vec{\textbf{v}}_2$ and write
+Therefore we can't use method **1.** and we call the eigenvalue $\lambda = 4$ *defective*. <br>In this chapter a multiplicity of 2 for a single eigenvalue will be discussed, not the general case. <br>We find a solution by trial. We start by using the same technique as used for repeated roots in scalar equations, where we multiply the repeating term with $t$. We choose a yet to be determined second eigenvector $\vec{\textbf{v}}_2$ and write
 $$
-\vec{\textbf{x}}_1 = \vec{\textbf{v}}_2 te^{\lambda t}
+\vec{\textbf{x}}_2 = \vec{\textbf{v}}_2 te^{\lambda t}
 $$
-We can substitute $\vec{\textbf{x}}_1$ into the original equation $\vec{\textbf{x}}' = A \vec{\textbf{x}}$, applying the chain rule for the derivative of $\vec{\textbf{x}}_1$.
+The term $\vec{\textbf{x}}_2$ is used because we have already found an eigenvector so we can construct $\vec{\textbf{x}}_1$, we however can not construct $\vec{\textbf{x}}_2$ immediately because the second eigenvector is missing. <br>We can substitute $\vec{\textbf{x}}_2$ into the original equation $\vec{\textbf{x}}' = A \vec{\textbf{x}}$, applying the chain rule for the derivative of $\vec{\textbf{x}}_2$ yields $\vec{\textbf{x}}_2' = \vec{\textbf{v}}_2 \lambda t e^{\lambda t} + \vec{\textbf{v}}_2 e^{\lambda t}$.
 $$
-\vec{\textbf{x}}_1' = A \vec{\textbf{x}}' \qquad \Rightarrow \qquad \left( \vec{\textbf{v}}_2 \lambda t e^{\lambda t} + \vec{\textbf{v}}_2 e^{\lambda t} \right) = A \left( \vec{\textbf{v}}_2 te^{\lambda t} \right)
+\vec{\textbf{x}}_2' = A \vec{\textbf{x}}_2 \qquad \Rightarrow \qquad \left( \vec{\textbf{v}}_2 \lambda t e^{\lambda t} + \vec{\textbf{v}}_2 e^{\lambda t} \right) = A \left( \vec{\textbf{v}}_2 te^{\lambda t} \right)
 $$
 We can see two equations emerge from this,
 $$
@@ -171,9 +171,9 @@ $$
 $$
 Thus we have that $\vec{\textbf{v}}_2$ is 0. This means that multiplying by $t$ does not give a non-zero answer for the second eigenvector. Instead, we try a combination of both eigenvectors, the known eigenvector $\vec{\textbf{v}}_1$, and the to be determined second eigenvector $\vec{\textbf{v}}_2$. We try
 $$
-\vec{\textbf{x}}_1 = \left( \vec{\textbf{v}}_1 t + \vec{\textbf{v}}_2 \right) e^{\lambda t}
+\vec{\textbf{x}}_2 = \left( \vec{\textbf{v}}_1 t + \vec{\textbf{v}}_2 \right) e^{\lambda t}
 $$
-Once again, we substitute $\vec{\textbf{x}}_1$ into the equation $\vec{\textbf{x}}' = A \vec{\textbf{x}}$, realizing that the derivative of $\vec{\textbf{x}}_1$ is $\vec{\textbf{v}}_1 e^{\lambda t} + \vec{\textbf{v}}_1 \lambda t e^{\lambda t} + \vec{\textbf{v}}_2 \lambda e^{\lambda t}$.
+Once again, we substitute $\vec{\textbf{x}}_2$ into the equation $\vec{\textbf{x}}_2' = A \vec{\textbf{x}}_2$, realizing that the derivative of $\vec{\textbf{x}}_2$ is $\vec{\textbf{v}}_1 e^{\lambda t} + \vec{\textbf{v}}_1 \lambda t e^{\lambda t} + \vec{\textbf{v}}_2 \lambda e^{\lambda t}$.
 $$
 \vec{\textbf{x}}' = A \vec{\textbf{x}} \quad \Rightarrow \quad \vec{\textbf{v}}_1 e^{\lambda t} + \vec{\textbf{v}}_1 \lambda t e^{\lambda t} + \vec{\textbf{v}}_2 \lambda e^{\lambda t} = A \left( \vec{\textbf{v}}_1 t + \vec{\textbf{v}}_2 \right) e^{\lambda t}
 $$
@@ -187,7 +187,7 @@ $$
 $$
 (A - \lambda I) \vec{\textbf{v}}_2 = \vec{\textbf{v}}_1 \quad \text{and} \quad (A - \lambda I) \vec{\textbf{v}}_1 = 0
 $$
-Recognize the second term as part of the steps taken to find $\vec{\textbf{v}}_1$ in the first place. The appearance of this term confirms that $\vec{\textbf{v}}_1$ is indeed an eigenvector, and by extension, so will $\vec{\textbf{v}}_2$ be. <>We can solve the augmented matrix $\left[A- \lambda I \: | \: \vec{\textbf{v}}_1 \right]$ to find $\vec{\textbf{v}}_2$. In the start of our example we already had used an expression for $(A- \lambda I) = (A - 4I)$.
+Recognize the second term as part of the steps taken to find $\vec{\textbf{v}}_1$ in the first place. The appearance of this term confirms that $\vec{\textbf{v}}_1$ is indeed an eigenvector, and by extension, so will $\vec{\textbf{v}}_2$ be. <br>We can solve the augmented matrix $\left[A- \lambda I \: | \: \vec{\textbf{v}}_1 \right]$ to find $\vec{\textbf{v}}_2$. In the start of our example we already had used an expression for $(A- \lambda I) = (A - 4I)$.
 $$
 \vec{\textbf{v}}_2 = \left[A- \lambda I \: | \: \vec{\textbf{v}}_1 \right] = \left[ \begin{array}{cc|c} -3 & -3 & 1 \\ 3 & 3 & -1 \end{array} \right]
 $$
@@ -195,7 +195,8 @@ We can now find $\vec{\textbf{v}}_2$ by row reducing this matrix. Alternatively,
 $$
 (A - \lambda I)^2 \vec{\textbf{v}}_2 = 0
 $$
-We can thus always find $\vec{\textbf{v}}_2$ by solving $\left[\begin{array}{c|c} (A-\lambda I)^2 & 0  \end{array}\right]$.
+We can thus always find $\vec{\textbf{v}}_2$ by solving $\left[\begin{array}{c|c} (A-\lambda I)^2 & 0  \end{array}\right]$. <br>Because we guessed $\vec{\textbf{x}}_2 = \left( \vec{\textbf{v}}_1 t + \vec{\textbf{v}}_2 \right) e^{\lambda t}$, we have for our solutions $\vec{\textbf{x}}_1$ and $\vec{\textbf{x}}_2$
+
 
 >[!abstract] Inventory
 > When a system has repeating [eigenvalues](Eigenvectors%20and%20Eigenvalues) *with multiplicity 2* we start by finding the [eigenvector](Eigenvectors%20and%20Eigenvalues) associated with these eigenvalues. If that eigenvector is of the form
@@ -206,7 +207,14 @@ We can thus always find $\vec{\textbf{v}}_2$ by solving $\left[\begin{array}{c|c
 > $$
 > (A - \lambda I)^2 \vec{\textbf{v}}_2 = 0
 > $$
-> to obtain a second eigenvector $\vec{\textbf{v}}_2$. We call the first found eigenvector $\vec{\textbf{v}}_1$. We were now still able to find both $\vec{\textbf{v}}_1$ and $\vec{\textbf{v}}_2$ from a single repeating eigenvalue.
+> to obtain a second eigenvector $\vec{\textbf{v}}_2$. We call the first found eigenvector $\vec{\textbf{v}}_1$. If this method is used, the solutions for $\vec{\textbf{x}}_c$ are
+> $$
+> \vec{\textbf{x}}_1 = \vec{\textbf{v}}_1 e^{\lambda t}
+> $$
+> $$
+> \vec{\textbf{x}}_2 = \left( \vec{\textbf{v}}_1 t + \vec{\textbf{v}}_2 \right) e^{\lambda t}
+> $$
+
 
 
 
