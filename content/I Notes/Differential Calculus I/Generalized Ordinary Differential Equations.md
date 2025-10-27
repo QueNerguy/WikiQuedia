@@ -8,7 +8,7 @@ tags: [[calculus]], [[differentials]], [[integrals]], [[ODE]], [[vector math]]  
 # Generalized Ordinary Differential Equations
 
 ### Geometrical Interpretation
-This note will discuss solutions to *generalized* differential equations. The most common (ordinary) differential equations are [first order](First%20Order%20Ordinary%20Differential%20Equations)- and [second order](Second%20Order%20Ordinary%20Differential%20Equations) ones. This note will discuss solutions to differential equations that are of the $n^{\text{th}}$ order, meaning anything ranging from $y'$, or $y^{(1)}$, to $y^{(n)}$. <br>The way the solution was found for [second order differential equations](Second%20Order%20Ordinary%20Differential%20Equations), assuming a solution of $y = e^{\lambda t}$, can be generalized to higher dimensions, as this quirk always persists.<br>There are **two types** of *second order* ordinary differential equations.
+This note will discuss solutions to *generalized* differential equations. The most common (ordinary) differential equations are [first order](First%20Order%20Ordinary%20Differential%20Equations.md)- and [second order](Second%20Order%20Ordinary%20Differential%20Equations.md) ones. This note will discuss solutions to differential equations that are of the $n^{\text{th}}$ order, meaning anything ranging from $y'$, or $y^{(1)}$, to $y^{(n)}$. <br>The way the solution was found for [second order differential equations](Second%20Order%20Ordinary%20Differential%20Equations.md), assuming a solution of $y = e^{\lambda t}$, can be generalized to higher dimensions, as this quirk always persists.<br>There are **two types** of *second order* ordinary differential equations.
 1. ***[Homogeneous Ordinary Differential Equations](#Homogeneous%20Equations)***
 2. ***[Nonhomogeneous Ordinary Differential Equations](#Nonhomogeneous%20Equations)***
 
@@ -22,7 +22,7 @@ Homogeneous equations are equations where every term in the equation is multipli
 $$
 ay''' + by'' + cy' + dy = 0
 $$
-To solve equations with $n$ derivatives we make use of the same trick we used for [second order differential equations](Second%20Order%20Ordinary%20Differential%20Equations#Homogeneous%20Equations). We assume *a* solution for $y$ looks like $y = e^{\lambda t}$. If we substitute this solution for $y$ into the equation above we get
+To solve equations with $n$ derivatives we make use of the same trick we used for [second order differential equations](Second%20Order%20Ordinary%20Differential%20Equations.md#Homogeneous%20Equations). We assume *a* solution for $y$ looks like $y = e^{\lambda t}$. If we substitute this solution for $y$ into the equation above we get
 $$
 ay''' + by'' + cy' + dy = a \lambda^3 e^{\lambda t} + b \lambda^2 e^{\lambda t} + c \lambda e^{\lambda t} + d e^{\lambda t} = 0
 $$
@@ -156,7 +156,7 @@ $$
 
 
 ### Checking Solutions for Linear Dependence
-Remember from [second order differential equations](Second%20Order%20Ordinary%20Differential%20Equations) that the solution for $y$ was a combination of two separate solutions $e^{\lambda t}$.
+Remember from [second order differential equations](Second%20Order%20Ordinary%20Differential%20Equations.md) that the solution for $y$ was a combination of two separate solutions $e^{\lambda t}$.
 $$
 y = c_1 e^{\lambda_1 t} + c_2 e^{\lambda_2 t}
 $$
@@ -212,10 +212,10 @@ In real cases we see solutions where we have $y = f(t)$, and as such the Wronski
 
 
 ---
-__[Home](WikiQuedia/Mechanical%20Engineering/3%20-%20Tags/Example.md)__
+__[Home](!%20Differential%20Calculus%20I%20Learning%20Overview.md)__
 
 ---
-_Status:_ #bud #missingLink 
+_Status:_ #ripe #missingLink 
 
 ---
 # Based On:

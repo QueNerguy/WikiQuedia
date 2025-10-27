@@ -2,14 +2,14 @@
 title: Impulse and Momentum for Particles
 draft: false
 ---
-tags: [[dynamics]], [[single particle]], [[kinetics]], [[vector math]]      <br>18-10-2025
+tags: [[dynamics]], [[kinetics]], [[single particle]], [[vector math]]      <br>18-10-2025
 
 ---
 # Impulse and Momentum for Particles
 To solve a system with the least amount of effort
-1. Try solving with **[conservation of energy](Conservation%20of%20Energy)**.
+1. Try solving with **[conservation of energy](Conservation%20of%20Energy.md)**.
 2. If **1.** is not possible[^impos1], try solving with **impulse and momentum**.
-3. If **2.** is not possible[^impos2], try solving with **[integrating the equations of motion](Modeling%20Particle%20Dynamics)**.
+3. If **2.** is not possible[^impos2], try solving by **[integrating the equations of motion](Modeling%20Particle%20Dynamics.md)**.
 
 Following this list ensures that you spend the least amount of time possible on solutions.
 
@@ -31,7 +31,7 @@ $$
 $$
 This impulse is caused by an (average) [force](Force) that acts for a certain duration ($\Delta t$) on the particle. We can thus alternatively write[^integ]
 $$
-\vec{\textbf{J}} = \vec{\textbf{F}} \Delta t
+\vec{\textbf{J}} = \vec{\textbf{F}} \Delta t \qquad \qquad \vec{\textbf{J}} = \int_{t_1} ^{t_2} \vec{\textbf{F}}(t)dt
 $$
 To increase the impulse we can thus either increase the force, or we can make the force act on the particle for longer. 
 ##### Analyzing Systems
@@ -61,9 +61,12 @@ $$
 > \vec{\textbf{p}}_1 + \vec{\textbf{J}} = \vec{\textbf{p}}_2
 > $$
 
+---
+
+- ***[[Impulse and Momentum for (Rigid) Bodies]]***
 
 ---
-__[Home](!%20Dynamics%20Learning%20Overview)__
+__[Home](Introduction%20to%20Dynamics%20I.md)__
 
 ---
 _Status:_ #ripe 

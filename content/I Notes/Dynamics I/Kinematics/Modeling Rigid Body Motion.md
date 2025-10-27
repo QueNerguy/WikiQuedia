@@ -2,19 +2,21 @@
 title: "Modeling Rigid Body Motion"
 draft: false
 ---
-tags: [[dynamics]], [[rigid body]], [[kinematics]], [[vector math]]     <br>07-09-2025
+tags: [[dynamics]], [[kinematics]], [[rigid body]], [[vector math]]     <br>07-09-2025
 
 ---
 # Modeling Rigid Body Motion
-Calculations following the equations outlined below, as well as their derivations rely heavily on [calculus I](!%20Calculus%20I%20Learning%20Overview) and make heavy use of [first order differential equations](First%20Order%20Ordinary%20Differential%20Equations). This note can be seen as a continuation on the note _[[Modeling Particle Motion]]_.
+Calculations following the equations outlined below, as well as their derivations rely heavily on [calculus I](!%20Calculus%20I%20Learning%20Overview) and make heavy use of [first order differential equations](First%20Order%20Ordinary%20Differential%20Equations.md). This note can be seen as a continuation on the note _[[Modeling Particle Motion]]_.
 ## Rigid Body Motion
-Rigid body motion is an expansion on the fundamentals of [particle motion](Modeling%20Particle%20Motion). Because there are multiple particles in a body however, we may see parts of the body translate at a different rate. If the bottom of the body moves slower than the top, or even in the opposite direction we perceive the rigid body as rotating. We thus see an [angular velocity](Angular%20Velocity) and an [angular acceleration](Angular%20Acceleration). It is important to note that I will be using $\vec{\textbf{r}}$ instead of $\vec{\textbf{s}}$  to denote distances. This is because $\bf{\vec{s}}$ is supposed to denote a *displacement*, and is therefore suited well to particle motion, while $\bf\vec{r}$ denotes any *distance*, but in particular a radii, making it more intuitive for use with rotations, the differentiating factor between rigid bodies and particles.<br>Rigid bodies are assumed to be **non-flexible**.
+- **For <u>linear translations</u> see [[Modeling Particle Motion]]**
+
+Rigid body motion is an expansion on the fundamentals of [particle motion](Modeling%20Particle%20Motion.md). Because there are multiple particles in a body however, we may see parts of the body translate at a different rate. If the bottom of the body moves slower than the top, or even in the opposite direction we perceive the rigid body as rotating. We thus see an [angular velocity](Angular%20Velocity) and an [angular acceleration](Angular%20Acceleration). It is important to note that I will be using $\vec{\textbf{r}}$ instead of $\vec{\textbf{s}}$  to denote distances. This is because $\bf{\vec{s}}$ is supposed to denote a *displacement*, and is therefore suited well to particle motion, while $\bf\vec{r}$ denotes any *distance*, but in particular a radii, making it more intuitive for use with rotations, the differentiating factor between rigid bodies and particles.<br>Rigid bodies are assumed to be **non-flexible**.
 ### Angular Velocity
 For an object that is rotating at an angle $\theta$ we can construct the [angular velocity](Angular%20Velocity) much in the same way that we did for translation of *particles*. 
 $$
 \omega = \frac{d\theta}{dt} = \dot{\theta}
 $$
-We can reorder the equation to obtain the [directly integrable](First%20Order%20Ordinary%20Differential%20Equations#Separable%20Equations) form
+We can reorder the equation to obtain the [directly integrable](First%20Order%20Ordinary%20Differential%20Equations.md#Separable%20Equations) form
 $$
 d\theta = \omega dt
 $$
@@ -41,7 +43,7 @@ For an object that is rotating at an angle $\theta$ we can construct the [angula
 $$
 \alpha = \frac{d\omega}{dt} = \dot{\omega} = \ddot{\theta}
 $$
-We can reorder the equation to obtain the [directly integrable](First%20Order%20Ordinary%20Differential%20Equations#Separable%20Equations) form
+We can reorder the equation to obtain the [directly integrable](First%20Order%20Ordinary%20Differential%20Equations.md#Separable%20Equations) form
 $$
 d\omega = \alpha dt
 $$
@@ -63,10 +65,10 @@ $$
 
 
 ### Relative Motion 
-Continuing [relative motion for particles](Modeling%20Particle%20Motion#Relative%20Motion), we generalize the expressions to also include possible rotation. Because of a difference in velocity it is possible for a point $A$ to rotate relative to point $B$. In other words: when using $B$ as our reference frame and considering it locked in place, we perceive $A$ to be rotating. <br><br>![[dynamics_relative_rotation_AtoB_80.png|650]]<br>source: *Engineering Mechanics Dynamics*, p339, 8th ed.
+Continuing [relative motion for particles](Modeling%20Particle%20Motion.md#Relative%20Motion), we generalize the expressions to also include possible rotation. Because of a difference in velocity it is possible for a point $A$ to rotate relative to point $B$. In other words: when using $B$ as our reference frame and considering it locked in place, we perceive $A$ to be rotating. <br><br>![[dynamics_relative_rotation_AtoB_80.png|650]]<br>source: *Engineering Mechanics Dynamics*, p339, 8th ed.
 
 #### Relative Velocity
-For the *position vector* we can reuse the formulation we found for [relative motion for particles](Modeling%20Particle%20Motion#Relative%20Motion), namely $\vec{\textbf{r}}_A = \vec{\textbf{r}}_B + \vec{\textbf{r}}_{A/B}$. Using our [previous equation](Modeling%20Particle%20Motion#Relative%20Motion) $\vec{\textbf{v}} = \vec{\pmb{\omega}} \times \vec{\textbf{r}}$ in place for the relative velocity equation $\vec{\textbf{v}}_A = \vec{\textbf{v}}_B + \vec{\textbf{v}}_{A/B}$, we get
+For the *position vector* we can reuse the formulation we found for [relative motion for particles](Modeling%20Particle%20Motion.md#Relative%20Motion), namely $\vec{\textbf{r}}_A = \vec{\textbf{r}}_B + \vec{\textbf{r}}_{A/B}$. Using our [previous equation](Modeling%20Particle%20Motion.md#Relative%20Motion) $\vec{\textbf{v}} = \vec{\pmb{\omega}} \times \vec{\textbf{r}}$ in place for the relative velocity equation $\vec{\textbf{v}}_A = \vec{\textbf{v}}_B + \vec{\textbf{v}}_{A/B}$, we get
 $$
 \vec{\textbf{v}}_A = \vec{\textbf{v}}_B + \vec{\pmb{\omega}} \times \vec{\textbf{r}}_{A/B}
 $$
@@ -74,7 +76,7 @@ We can, if need be, substitute any velocity term in this equation for $\vec{\pmb
 
 
 #### Relative Acceleration
-Because for rotations we are dealing with a *curvilinear* path, we will be highlighting the [normal-tangent](Motion%20in%20Normal-Tangent%20Coordinates) coordinate system. Because we are dealing with vector math as well, these equations generalize to every coordinate system. <br>We rewrite the equation  for relative acceleration acquired above to accommodate the $n$-$t$ coordinate system.
+Because for rotations we are dealing with a *curvilinear* path, we will be highlighting the [normal-tangent](Motion%20in%20Normal-Tangent%20Coordinates.md) coordinate system. Because we are dealing with vector math as well, these equations generalize to every coordinate system. <br>We rewrite the equation  for relative acceleration acquired above to accommodate the $n$-$t$ coordinate system.
 $$
 \vec{\textbf{a}}_A = \vec{\textbf{a}}_B + \left( \vec{\textbf{a}}_{A/B} \right)_n + \left( \vec{\textbf{a}}_{A/B} \right)_t
 $$
@@ -103,7 +105,7 @@ Some situations benefit from introducing a relative coordinate system. In a rela
 
 We know that translating reference frames don't complicate the calculations as long as we use a single reference frame to compare both points. In the case of a rotation we can reuse the same argument, but introduce terms caused by the rotation.<br><br>![[position_relative_coordinate_system_dynamics_80.png|450]]<br>source: *Engineering Mechanics Dynamics*, p374, 8th ed.
 ##### Relative Coordinate Velocity
-Because our equation for the position vector isn't affected by a rotating reference frame at all, it stays the same as it was for [particle relative motion](Modeling%20Particle%20Motion#Relative%20Motion), namely $\vec{\textbf{r}}_A = \vec{\textbf{r}}_B + \vec{\textbf{r}}_{A/B}$, also seen above, or, using our coordinate system's origin attached to point $B$, we can rewrite to
+Because our equation for the position vector isn't affected by a rotating reference frame at all, it stays the same as it was for [particle relative motion](Modeling%20Particle%20Motion.md#Relative%20Motion), namely $\vec{\textbf{r}}_A = \vec{\textbf{r}}_B + \vec{\textbf{r}}_{A/B}$, also seen above, or, using our coordinate system's origin attached to point $B$, we can rewrite to
 $$
 \vec{\textbf{r}}_A = \vec{\textbf{r}}_B + \left( x\hat{\textbf{i}} + y\hat{\textbf{j}} \right)
 $$
@@ -164,10 +166,10 @@ It can be seen by substitution that this is the same equation as before, just br
 
 %%
 ### Coordinate Systems
-Throughout the calculations we may transition between coordinate systems, or use multiple at the same time. For example, the [normal-tangent](Motion%20in%20Normal-Tangent%20Coordinates) coordinate system is used often to look at relative motion of points on the body.
+Throughout the calculations we may transition between coordinate systems, or use multiple at the same time. For example, the [normal-tangent](Motion%20in%20Normal-Tangent%20Coordinates.md) coordinate system is used often to look at relative motion of points on the body.
 1. ***[Cartesian Coordinates](Motion%20in%20Cartesian%20Coordinates.md):*** This coordinate system lends itself well to **rectilinear motion**. Any motion that follows a path that somewhat follows a straight line without deviating too much can be solved most easily using Cartesian coordinates.
-2. ***[Normal-Tangent Coordinates](Motion%20in%20Normal-Tangent%20Coordinates):*** This coordinate system lends itself well to **curvilinear motion**. Any motion that has strong bends, even circular paths, can be solved well with n-t coordinates.
-3. ***[Polar Coordinates](Motion%20in%20Polar%20Coordinates):*** This coordinate system lends itself well to **circular motion**. Any motion that resembles a circular path can be solved most easily using polar coordinates. 
+2. ***[Normal-Tangent Coordinates](Motion%20in%20Normal-Tangent%20Coordinates.md):*** This coordinate system lends itself well to **curvilinear motion**. Any motion that has strong bends, even circular paths, can be solved well with n-t coordinates.
+3. ***[Polar Coordinates](Motion%20in%20Polar%20Coordinates.md):*** This coordinate system lends itself well to **circular motion**. Any motion that resembles a circular path can be solved most easily using polar coordinates. 
 
 %%
 
@@ -214,11 +216,12 @@ Throughout the calculations we may transition between coordinate systems, or use
 
 
 
+---
 
-
+- ***[[Modeling Particle Motion]]***
 
 ---
-__[Home](!%20Dynamics%20Learning%20Overview)__
+__[Home](Introduction%20to%20Dynamics%20I.md)__
 
 ---
 _Status:_ #ripe

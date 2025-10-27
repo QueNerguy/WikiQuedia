@@ -60,10 +60,10 @@ could be cool idk ill just put ts as a comment for now ^^
 
 
 ---
-__[Home](WikiQuedia/Mechanical%20Engineering/3%20-%20Tags/Example.md)__
+__[Home](!%20Differential%20Calculus%20I%20Learning%20Overview.md)__
 
 ---
-_Status:_ #bud
+_Status:_ #sprout
 
 ---
 # Based On:

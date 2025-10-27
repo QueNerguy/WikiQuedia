@@ -61,11 +61,25 @@ $$
 > $$
 > \vec{\textbf{a}} = \begin{bmatrix} a_x \\ a_y \\ a_z \end{bmatrix} = a_x \hat{\textbf{i}} + a_y \hat{\textbf{j}} + a_z \hat{\textbf{k}}
 > $$
+> - **Conversion to [Normal-Tangent coordinates](Motion%20in%20Normal-Tangent%20Coordinates)**[^altrouteNT]
+> $$
+> x = \rho \sin(\beta)
+> $$
+> $$
+> y = - \rho \cos(\beta)
+> $$
+> - **Conversion to [polar coordinates](Motion%20in%20Polar%20Coordinates)**[^altroutePC]
+> $$
+> x = r \cos(\theta)
+> $$
+> $$
+> y = r \sin(\theta)
+> $$
 
 
 
 ---
-__[Home](!%20Dynamics%20Learning%20Overview)__
+__[Home](Introduction%20to%20Dynamics%20I.md)__
 
 ---
 _Status:_ #ripe
@@ -76,4 +90,5 @@ _Status:_ #ripe
 1. J. L. Meriam, L. G. Kraige, J. N. Bolton, *Engineering Mechanics Dynamics*, 8th ed, US.
 2. Wikipedia, *Cartesian coordinate system*, [link](https://en.wikipedia.org/wiki/Cartesian_coordinate_system).
 
-
+[^altrouteNT]: If the signs and directions are confusing, these relations can also be found by making a triangle, with right sides $x$ and $y$ for the Cartesian coordinate system, diagonal side with length $\rho$, and the angle below the diagonal side $\beta$. The relation between coordinates can be found by solving the geometric relations of this triangle
+[^altroutePC]: If the signs and directions are confusing, these relations can also be found by making a triangle, with right sides $x$ and $y$ for the Cartesian coordinate system, diagonal side with length $r$, and the angle below the diagonal side $\theta$. The relation between coordinates can be found by solving the geometric relations of this triangle

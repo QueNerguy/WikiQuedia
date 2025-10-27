@@ -2,33 +2,35 @@
 title: Modeling Particle Motion
 draft: false
 ---
-tags: [[dynamics]], [[single particle]], [[kinematics]], [[vector math]]     <br>03-09-2025
+tags: [[dynamics]], [[kinematics]], [[single particle]], [[vector math]]     <br>03-09-2025
 
 ---
 # Modeling Particle Motion
-Calculations following the equations outlined below, as well as their derivations rely heavily on [calculus I](!%20Calculus%20I%20Learning%20Overview) and make heavy use of [first order differential equations](First%20Order%20Ordinary%20Differential%20Equations).
+Calculations following the equations outlined below, as well as their derivations rely heavily on [calculus I](!%20Calculus%20I%20Learning%20Overview) and make heavy use of [first order differential equations](First%20Order%20Ordinary%20Differential%20Equations.md).
 ## Particle Motion
-We will try to understand particle motion through a 3D space. A particle that moves through a 3D space can move in any of the 3 directions in a linear motion. We understand particles as small points in space that are non-rotating. <br>Modeling particles is easier than modeling rigid bodies *because* we neglect the rotation. Thus, whenever possible, we will try to reduce any object that we wish to model to just a particle moving through space. For bodies that can't be simplified to single particles we approximate the situation with [rigid bodies](Modeling%20Rigid%20Body%20Motion).
+- **For <u>rotations</u> see [[Modeling Rigid Body Motion]]**
+
+We will try to understand particle motion through a 3D space. A particle that moves through a 3D space can move in any of the 3 directions in a linear motion. We understand particles as small points in space that are non-rotating. <br>Modeling particles is easier than modeling rigid bodies *because* we neglect the rotation. Thus, whenever possible, we will try to reduce any object that we wish to model to just a particle moving through space. For bodies that can't be simplified to single particles we approximate the situation with [rigid bodies](Modeling%20Rigid%20Body%20Motion.md).
 ### Velocity
-Any object in a 3D space has a position, a speed, which can be 0, and an [acceleration](#Acceleration), which can also be 0. These three quantities can  be related using differential calculus%%LINKJE DIFF CALC HOMEPAGE%%. <br>In the case of velocity we have
+Any object in a 3D space has a position, a speed, which can be 0, and an [acceleration](#Acceleration), which can also be 0. These three quantities can  be related using [differential calculus](!%20Differential%20Calculus%20Learning%20Overview). <br>In the case of velocity we have
 $$
 v = \frac{ds}{dt} = \dot{s}
 $$
-Using [integration](Integration) we can go from knowing velocity or acceleration data to understanding the position of a particle, and the other way around. <br>Resulting from the above equation we can define the [directly integrable](First%20Order%20Ordinary%20Differential%20Equations#Separable%20Equations) form of the first relation as
+Using [integration](Integration) we can go from knowing velocity or acceleration data to understanding the position of a particle, and the other way around. <br>Resulting from the above equation we can define the [directly integrable](First%20Order%20Ordinary%20Differential%20Equations.md#Separable%20Equations) form of the first relation as
 $$
 ds = vdt
 $$
 The equations above are always applicable, irrespective of the chosen [coordinate system](#Coordinate%20Systems), as a result of how velocity has been defined.
 ### Acceleration
-Similar to [velocity](#Velocity), we define acceleration using [differential equations](First%20Order%20Ordinary%20Differential%20Equations).
+Similar to [velocity](#Velocity), we define acceleration using [differential equations](First%20Order%20Ordinary%20Differential%20Equations.md).
 $$
 a = \frac{dv}{dt} = \dot{v} = \ddot{s}
 $$
-Using [integration](Integration) and the equation for [velocity](#Velocity) above we can go from knowing acceleration data to understanding the position of a particle, and the other way around. <br>Resulting from the above equations we can define one more relation, by [separating the differentials](First%20Order%20Ordinary%20Differential%20Equations#Separable%20Equations)[^explanmath], namely
+Using [integration](Integration) and the equation for [velocity](#Velocity) above we can go from knowing acceleration data to understanding the position of a particle, and the other way around. <br>Resulting from the above equations we can define one more relation, by [separating the differentials](First%20Order%20Ordinary%20Differential%20Equations.md#Separable%20Equations)[^explanmath], namely
 $$
 ads = vdv
 $$
-And the [directly integrable](First%20Order%20Ordinary%20Differential%20Equations#Separable%20Equations) form of the first relations
+And the [directly integrable](First%20Order%20Ordinary%20Differential%20Equations.md#Separable%20Equations) form of the first relations
 $$
 dv = adt
 $$
@@ -82,8 +84,8 @@ $$
 ### Coordinate Systems
 Depending on what kind of system we are trying to analyze our choice of coordinate system can greatly ease the load of calculations. Each of these coordinate systems will have their own system of equations to solve, all of which result from the [basic equations](#Basic%20Equations) listed above.
 1. ***[Cartesian Coordinates](Motion%20in%20Cartesian%20Coordinates.md):*** This coordinate system lends itself well to **rectilinear motion**. Any motion that follows a path that somewhat follows a straight line without deviating too much can be solved most easily using Cartesian coordinates.
-2. ***[Normal-Tangent Coordinates](Motion%20in%20Normal-Tangent%20Coordinates):*** This coordinate system lends itself well to **curvilinear motion**. Any motion that has strong bends, even circular paths, can be solved well with n-t coordinates.
-3. ***[Polar Coordinates](Motion%20in%20Polar%20Coordinates):*** This coordinate system lends itself well to **circular motion**. Any motion that resembles a circular path can be solved most easily using polar coordinates. 
+2. ***[Normal-Tangent Coordinates](Motion%20in%20Normal-Tangent%20Coordinates.md):*** This coordinate system lends itself well to **curvilinear motion**. Any motion that has strong bends, even circular paths, can be solved well with n-t coordinates.
+3. ***[Polar Coordinates](Motion%20in%20Polar%20Coordinates.md):*** This coordinate system lends itself well to **circular motion**. Any motion that resembles a circular path can be solved most easily using polar coordinates. 
 
 
 ### Inventory
@@ -112,10 +114,10 @@ Depending on what kind of system we are trying to analyze our choice of coordina
 
 ---
 
-
+- ***[[Modeling Rigid Body Motion]]***
 
 ---
-__[Home](!%20Dynamics%20Learning%20Overview)__
+__[Home](Introduction%20to%20Dynamics%20I.md)__
 
 ---
 _Status:_ #ripe

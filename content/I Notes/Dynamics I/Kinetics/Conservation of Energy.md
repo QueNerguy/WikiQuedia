@@ -2,14 +2,14 @@
 title: "Conservation of Energy"
 draft: false
 ---
-tags:      <br>18-10-2025
+tags: [[dynamics]], [[energy balance]], [[kinetics]]     <br>18-10-2025
 
 ---
 # Conservation of Energy
 To solve a system with the least amount of effort
 1. Try solving with **conservation of energy**.
 2. If **1.** is not possible[^impos1], try solving with **[impulse and momentum](Impulse%20and%20Momentum%20for%20(Rigid)%20Bodies)**.
-3. If **2.** is not possible[^impos2], try solving with **[integrating the equations of motion](Modeling%20Rigid%20Body%20Dynamics)**.
+3. If **2.** is not possible[^impos2], try solving by **[integrating the equations of motion](Modeling%20Rigid%20Body%20Dynamics.md)**.
 
 Following this list ensures that you spend the least amount of time possible on solutions.
 
@@ -24,7 +24,7 @@ Because energy is conserved, the energy of state 1 has to be equal to that of st
 $$
 E_{k1} + U = E_{k2}
 $$
-Where $E_k$ is the kinetic energy and $U$ is a collection of energies that cause the kinetic energy to change. When we consider a car, driving away from it's parking spot the beginning kinetic energy is 0, and the kinetic energy of state 2 is entirely a result of the [work](Work) that the engine delivered. In that case the only term we substitute for $U$ would be $W$ for the sum of the work terms, but in general there may be more energies that can change the state, such as a release of chemical energy. <br>If an object is deformed significantly, during for example a short impact, then a release of **chemical energy** is not negligible, and the above **equation doesn't hold** for the treatment of dynamics, because computing this is out of scope for most applications. In these cases it is advised to use [impulse and momentum](Impulse%20and%20Momentum%20for%20Particles) instead, if possible. <br><br>In a general case we make an **energy balance**, where we have
+Where $E_k$ is the kinetic energy and $U$ is a collection of energies that cause the kinetic energy to change. When we consider a car, driving away from it's parking spot the beginning kinetic energy is 0, and the kinetic energy of state 2 is entirely a result of the [work](Work) that the engine delivered. In that case the only term we substitute for $U$ would be $W$ for the sum of the work terms, but in general there may be more energies that can change the state, such as a release of chemical energy. <br>If an object is deformed significantly, during for example a short impact, then a release of **chemical energy** is not negligible, and the above **equation doesn't hold** for the treatment of dynamics, because computing this is out of scope for most applications. In these cases it is advised to use [impulse and momentum](Impulse%20and%20Momentum%20for%20Particles.md) instead, if possible. <br><br>In a general case we make an **energy balance**, where we have
 $$
 \sum E_1 + U = \sum E_2
 $$
@@ -75,7 +75,7 @@ This process allowed us to solve for the air resistance without integrating from
 | -------------------------------------------------- | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
 | **Translational kinetic energy**                   | $$E_k = \frac{1}{2} mv^2$$    | $m$ is the mass<br>$v$ is the velocity                                                                                          |
 | **Potential energy**                               | $$E_p = mg\Delta h$$          | $m$ is the mass<br>$g$ is the gravitational acceleration<br>$h$ is the height difference compared to some reference point       |
-| **Rotational kinetic energy**                      | $$E_k = \frac{1}{2}I \omega$$ | $I$ is the [mas moment of inertia](Inertia%20-%20Mass%20Moment)<br>$\omega$ is the [angular velocity](Angular%20Velocity)       |
+| **Rotational kinetic energy**                      | $$E_k = \frac{1}{2}I \omega$$ | $I$ is the [mas moment of inertia](Inertia%20-%20Mass%20Moment.md)<br>$\omega$ is the [angular velocity](Angular%20Velocity)       |
 | **Spring energy**, or **potential elastic energy** | $$E_{el} = \frac{1}{2}Cu^2 $$ | $C$, or $k$ is the spring constant<br>$u$, or $x$ is the elongation of the spring, as compared to it's relaxed state[^example]. |
 | **Work**                                           | $$W = F\Delta s$$             | $F$ is the [work](Work)<br>$\Delta s$, or $s$ is the displacement when going from state 1 to 2.                                 |
 
@@ -83,7 +83,7 @@ This process allowed us to solve for the air resistance without integrating from
 
 
 ---
-__[Home](WikiQuedia/Mechanical%20Engineering/3%20-%20Tags/Example.md)__
+__[Home](Introduction%20to%20Dynamics%20I.md)__
 
 ---
 _Status:_ #ripe

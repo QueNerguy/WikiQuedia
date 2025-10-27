@@ -6,14 +6,14 @@ tags: [[calculus]], [[differentials]], [[integrals]], [[ODE]]     <br>08-09-2025
 
 ---
 # Second Order Ordinary Differential Equations
-- ***Second order***, because the derivatives are double (in combination with singular derivatives), not of a higher order. Equations with *only* a first derivative ($f'$) would see it called a [first order ordinary differential equation](First%20Order%20Ordinary%20Differential%20Equations).
+- ***Second order***, because the derivatives are double (in combination with singular derivatives), not of a higher order. Equations with *only* a first derivative ($f'$) would see it called a [first order ordinary differential equation](First%20Order%20Ordinary%20Differential%20Equations.md).
 - ***Ordinary*** because we can rewrite this equation to only depend on only **a single variable**. For example $s$ depends on $t$ by rewriting to
 $$
 ds = v(t)dt
 $$
 
 ### Geometrical Interpretation
-Second order ordinary differential equations build on the knowledge of [first order ordinary differential equations](First%20Order%20Ordinary%20Differential%20Equations). The solutions to these problems are found in a different way however. <br>The *goal* of solving differential equations is to eliminate the differentials and solve for the differentiated variable. So if we encounter $dy$ in an equation, we would try to create an equation that has no differential $dy$, only $y$.<br>There are **two types** of *second order* ordinary differential equations.
+Second order ordinary differential equations build on the knowledge of [first order ordinary differential equations](First%20Order%20Ordinary%20Differential%20Equations.md). The solutions to these problems are found in a different way however. <br>The *goal* of solving differential equations is to eliminate the differentials and solve for the differentiated variable. So if we encounter $dy$ in an equation, we would try to create an equation that has no differential $dy$, only $y$.<br>There are **two types** of *second order* ordinary differential equations.
 1. ***[Homogeneous Ordinary Differential Equations](#Homogeneous%20Equations)***
 2. ***[Nonhomogeneous Ordinary Differential Equations](#Nonhomogeneous%20Equations)***
 
@@ -26,7 +26,7 @@ Homogeneous equations are equations where every term in the equation is multipli
 $$
 ay^" + by' + cy = 0
 $$
-[Non-homogeneous equations](#Non-Homogeneous%20Equations) also use the solution outlined below, but it's not the only operation required to solve those equations. <br>We can't solve these problems by just [integrating](Integration) both sides. We had the same problem for [linear equations of first order DEs](First%20Order%20Ordinary%20Differential%20Equations#Linear%20Equations), so we once again want to use a trick to *still* be able to solve these problems. This time we also make use of the weird properties of powers of $e$, and we *assume* that *a* solution for $y$ will look like $y = e^{\lambda t}$[^1]. If we substitute this into our formula, we get
+[Non-homogeneous equations](#Non-Homogeneous%20Equations) also use the solution outlined below, but it's not the only operation required to solve those equations. <br>We can't solve these problems by just [integrating](Integration) both sides. We had the same problem for [linear equations of first order DEs](First%20Order%20Ordinary%20Differential%20Equations.md#Linear%20Equations), so we once again want to use a trick to *still* be able to solve these problems. This time we also make use of the weird properties of powers of $e$, and we *assume* that *a* solution for $y$ will look like $y = e^{\lambda t}$[^1]. If we substitute this into our formula, we get
 $$
 ay^" + by' + cy = a \lambda^2 e^{\lambda t} + b \lambda e^{\lambda t} + c e^{\lambda t} = 0
 $$
@@ -123,7 +123,7 @@ Our steps for solving *general nonhomogeneous differential equations* are
 1. Finding an expression for $y_c$ by neglecting $f(t)$ and solving the resulting [homogeneous equation](#Homogeneous%20Equations).
 2. Finding an expression for $y_p$ by either:
 	-  Assuming a general form for the solution and differentiating this expression, substituting into the equation to solve for $A$ and $B$. <br>$$y_p = A\cos(c t) + B\sin(c t)$$
-	-  Using the [Wronskian](Generalized%20Ordinary%20Differential%20Equations#Checking%20Solutions%20for%20Linear%20Dependence) and the obtained solution for $y_c$ to fill in the equation  below. <br>$$y_p = -y_1 \int \frac{y_2 f(t)}{W(t)}dt + y_2 \int\frac{y_1 f(t)}{W(t)}dt$$
+	-  Using the [Wronskian](Generalized%20Ordinary%20Differential%20Equations.md#Checking%20Solutions%20for%20Linear%20Dependence) and the obtained solution for $y_c$ to fill in the equation  below. <br>$$y_p = -y_1 \int \frac{y_2 f(t)}{W(t)}dt + y_2 \int\frac{y_1 f(t)}{W(t)}dt$$
 	
 3. Adding $y_c$ and $y_p$ together to find the general solution. 
 $$
@@ -178,10 +178,10 @@ $$
 
 
 ---
-__[Home](WikiQuedia/Mechanical%20Engineering/3%20-%20Tags/Example.md)__ %%NEEDS HOMEPAGE%%
+__[Home](!%20Differential%20Calculus%20I%20Learning%20Overview.md)__ 
 
 ---
-_Status:_ #sprout #missingLink
+_Status:_ #ripe #missingLink
 
 ---
 # Based On:
@@ -191,11 +191,11 @@ _Status:_ #sprout #missingLink
 4. P. Dawkins, *Section 7.4 : Variation of Parameters*, 11-2022, US, [link](https://tutorial.math.lamar.edu/Classes/DE/HOVariationOfParam.aspx/VariationofParameters.aspx).
 5. W. Trench, _9.4: Variation of Parameters for Higher Order Equations_, US, [link](https://math.libretexts.org/Courses/Community_College_of_Denver/MAT_2562_Differential_Equations_with_Linear_Algebra/09:_Linear_Higher_Order_Differential_Equations/9.04:_Variation_of_Parameters_for_Higher_Order_Equations).
 
-[^1]: This solution means that we use $y$ as a function of $t$. Useful in for example [dynamics](!%20Dynamics%20Learning%20Overview) problems. If we have a coordinate system $x$, $y$, and $y$ is a function of $x$, then our general solution would of course be $y = e^{\lambda x}$ instead of $y = e^{\lambda t}$.
+[^1]: This solution means that we use $y$ as a function of $t$. Useful in for example [dynamics](Introduction%20to%20Dynamics.md) problems. If we have a coordinate system $x$, $y$, and $y$ is a function of $x$, then our general solution would of course be $y = e^{\lambda x}$ instead of $y = e^{\lambda t}$.
 [^2]: The characteristic equation has two roots because it is a second order polynomial, which always have two roots. The solutions of second order polynomials may take the form of $(\lambda - 3)(\lambda - 6) = 0$, where we know the roots to be 3 and 6.
 [^credit1]: This whole chapter of the note is based in it's entirety on the simple explanation given by James Gill. You can watch his video [here](https://www.youtube.com/watch?v=r1v2P4hjNJ8).
 [^credit2]: P. Dawkins, _Section 3.9 : Undetermined Coefficients_, 11-2022, US, [link](https://tutorial.math.lamar.edu/classes/de/undeterminedcoefficients.aspx).
 [^erm2]: The completely correct way to write this is <br>$$A_n t^n + A_{n-1}t^{n-1} + \dots + A_1t + A_0$$<br>I personally find this notation hard to read with the subscripts for $A$, so I prefer to just use letters instead, even though technically this way of writing is slightly less correct. %%(loser)%%
 
-[^ref]: You might recognize this term from linear algebra%%==LINKJE==%%. For more on the treatment of vector valued differential equations, see [here](Vector%20Valued%20Ordinary%20Differential%20Equations).
+[^ref]: You might recognize this term from linear algebra%%==LINKJE==%%. For more on the treatment of vector valued differential equations, see [here](Vector%20Valued%20Ordinary%20Differential%20Equations.md).
 [^deriv]: The derivation for this formula isn't relevant to this note, but you can read more on [wikipedia](https://en.wikipedia.org/wiki/Euler's_formula), or see page 166-167 of _Differential Equations and Boundary Value Problems_, the beginning of the chapter *Complex-Valued Functions and Euler's Formula*.

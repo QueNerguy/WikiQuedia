@@ -19,11 +19,11 @@ This chapter will discuss solving any order differential equation of the form
 $$
 \vec{\textbf{x}}^{(n)} = A \vec{\textbf{x}}
 $$
-This is especially useful for [first order differential equations](First%20Order%20Ordinary%20Differential%20Equations) because they <u>only</u> have expression this as their *homogeneous* form. <br>The above equation can be any *homogeneous equation*. To make the explanation more concrete however, from now on we will treat the case of the first order $\vec{\textbf{x}}'$, but remember that the methods look and act the same regardless of the order. <br>$A$ is the transformation [matrix](Matrices) that changes the coordinate vector $\vec{\textbf{x}}$ to become the differentiated coordinate vector $\vec{\textbf{x}}'$. To make the vector form more similar to the notation we would use for scalar valued functions, we could rewrite the above equation to $\vec{\textbf{x}}' - A \vec{\textbf{x}} = 0$. <br>A matrix system can be seen as a collection of equations, like the one below for a 3 dimensional matrix $A$.
+This is especially useful for [first order differential equations](First%20Order%20Ordinary%20Differential%20Equations.md) because they <u>only</u> have expression this as their *homogeneous* form. <br>The above equation can be any *homogeneous equation*. To make the explanation more concrete however, from now on we will treat the case of the first order $\vec{\textbf{x}}'$, but remember that the methods look and act the same regardless of the order. <br>$A$ is the transformation [matrix](Matrices) that changes the coordinate vector $\vec{\textbf{x}}$ to become the differentiated coordinate vector $\vec{\textbf{x}}'$. To make the vector form more similar to the notation we would use for scalar valued functions, we could rewrite the above equation to $\vec{\textbf{x}}' - A \vec{\textbf{x}} = 0$. <br>A matrix system can be seen as a collection of equations, like the one below for a 3 dimensional matrix $A$.
 $$
 \begin{cases} x_1' = P_{1,1} x_1 + P_{1,2} x_2 + P_{1,3} x_3 \\ x_2' = P_{2,1} x_1 + P_{2,2} x_2 + P_{2,3} x_3 \\ x_3' = P_{3,1} x_1 + P_{3,2} x_2 + P_{3,3} x_3 \end{cases}
 $$
-We cannot integrate these equations directly [like we did before](First%20Order%20Ordinary%20Differential%20Equations#Separable%20Equations) for first order systems. Instead, we may use the same trick we used for [second order systems](Second%20Order%20Ordinary%20Differential%20Equations), where we take a trial solution of $\vec{\textbf{x}} = \vec{\textbf{v}}e^{\lambda t}$, with derivative $\vec{\textbf{x}}' = \lambda \vec{\textbf{v}} e^{\lambda t}$. If we substitute this into the equation $\vec{\textbf{x}}' = A \vec{\textbf{x}}$, we get
+We cannot integrate these equations directly [like we did before](First%20Order%20Ordinary%20Differential%20Equations.md#Separable%20Equations) for first order systems. Instead, we may use the same trick we used for [second order systems](Second%20Order%20Ordinary%20Differential%20Equations.md), where we take a trial solution of $\vec{\textbf{x}} = \vec{\textbf{v}}e^{\lambda t}$, with derivative $\vec{\textbf{x}}' = \lambda \vec{\textbf{v}} e^{\lambda t}$. If we substitute this into the equation $\vec{\textbf{x}}' = A \vec{\textbf{x}}$, we get
 $$
 \vec{\textbf{x}}' = A \vec{\textbf{x}} \qquad \Rightarrow \qquad \lambda \vec{\textbf{v}} e^{\lambda t} = A \vec{\textbf{v}} e^{\lambda t}
 $$
@@ -52,7 +52,7 @@ The determinant%%==LINKJE DETERMINANT==%% is measure of the area under the matri
 $$
  \left| A - \lambda I \right| = 0
 $$
-We can then find $\vec{\textbf{v}}$ by using the earlier equation $(A - \lambda I) \vec{\textbf{v}} = 0$ and solving the augmented matrix $\left[ A - \lambda I \: | \: 0 \right]$. $\vec{\textbf{v}}$ is the *eigenvector* of matrix $A$. Recount from [generalized ODEs](Generalized%20Ordinary%20Differential%20Equations) that the solution to any differential equation can be written as a linear combination of every solution for $\vec{\textbf{x}}$, with as many solutions as there are roots of the *characteristic equation*. In the case of our $\vec{\textbf{x}}$ then, we can write for our **general solution** that
+We can then find $\vec{\textbf{v}}$ by using the earlier equation $(A - \lambda I) \vec{\textbf{v}} = 0$ and solving the augmented matrix $\left[ A - \lambda I \: | \: 0 \right]$. $\vec{\textbf{v}}$ is the *eigenvector* of matrix $A$. Recount from [generalized ODEs](Generalized%20Ordinary%20Differential%20Equations.md) that the solution to any differential equation can be written as a linear combination of every solution for $\vec{\textbf{x}}$, with as many solutions as there are roots of the *characteristic equation*. In the case of our $\vec{\textbf{x}}$ then, we can write for our **general solution** that
 $$
 \vec{\textbf{x}} = c_1 \vec{\textbf{x}}_1 + c_2 \vec{\textbf{x}}_ 2 + \dots + c_n \vec{\textbf{x}}_n \qquad \Rightarrow \qquad \vec{\textbf{x}} = c_1 \vec{\textbf{v}}_1 e^{\lambda _1 t} + c_2 \vec{\textbf{v}}_2 e^{\lambda _2 t} + \dots + c_n \vec{\textbf{v}}_n e^{\lambda _n t}
 $$
@@ -62,7 +62,7 @@ Nonhomogeneous first order DEs are of the form
 $$
 \vec{\textbf{x}}' = A \vec{\textbf{x}} + \vec{\textbf{f}}(t)
 $$
-$\vec{\textbf{f}}(t)$ is the term that makes this equation nonhomogeneous, it isn't multiplied with $\vec{\textbf{x}}$.<br>In [generalized differential equations](Generalized%20Ordinary%20Differential%20Equations) we saw that a solution for $y$ is made up of a *complementary solution* $y_c$, which is the solution to the homogeneous version of the desired equation, and a *particular solution* $y_p$. For matrices we would say
+$\vec{\textbf{f}}(t)$ is the term that makes this equation nonhomogeneous, it isn't multiplied with $\vec{\textbf{x}}$.<br>In [generalized differential equations](Generalized%20Ordinary%20Differential%20Equations.md) we saw that a solution for $y$ is made up of a *complementary solution* $y_c$, which is the solution to the homogeneous version of the desired equation, and a *particular solution* $y_p$. For matrices we would say
 $$
 \vec{\textbf{x}} = \vec{\textbf{x}}_c + \vec{\textbf{x}}_p
 $$
@@ -289,7 +289,7 @@ To find $\vec{\textbf{c}}$ we can solve the *augmented matrix* $\left[ X(3) \: |
 
 
 #### Solving Using Matrix Exponentials
-It is possible to construct a solution to the equation $\vec{\textbf{x}}' = A\vec{\textbf{x}}$ directly from the matrix $A$, using the same methodology as used to solve [scalar differential equations](Generalized%20Ordinary%20Differential%20Equations)[^seealso]. <br>To start it is important to know the computational rules of **exponential matrices**. Without proving this[^proof], for a matrix with only entries along it's diagonal $D = \begin{bmatrix} a & 0 \\ 0 & b \end{bmatrix}$, we have
+It is possible to construct a solution to the equation $\vec{\textbf{x}}' = A\vec{\textbf{x}}$ directly from the matrix $A$, using the same methodology as used to solve [scalar differential equations](Generalized%20Ordinary%20Differential%20Equations.md)[^seealso]. <br>To start it is important to know the computational rules of **exponential matrices**. Without proving this[^proof], for a matrix with only entries along it's diagonal $D = \begin{bmatrix} a & 0 \\ 0 & b \end{bmatrix}$, we have
 $$
 e^D = \begin{bmatrix} e^a & 0 \\ 0 & e^b \end{bmatrix}, \quad e^{\vec{\textbf{0}}} = I
 $$
@@ -322,10 +322,10 @@ An example of how to compute matrices with this formulation is given [here](exam
 
 
 ---
-__[Home](WikiQuedia/Mechanical%20Engineering/3%20-%20Tags/Example.md)__ %%==NEEDS HOMEPAGE==%%
+__[Home](!%20Differential%20Calculus%20I%20Learning%20Overview.md)__ 
 
 ---
-_Status:_ #bud #missingLink 
+_Status:_ #sprout #missingLink 
 
 ---
 # Based On:

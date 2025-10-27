@@ -17,13 +17,32 @@ Any point in polar coordinates can be defined by the distance $r$ along the radi
 The *standard basis* for polar coordinates is made up of $\hat{\textbf{e}}_r$ and $\hat{\textbf{e}}_\theta$ for the $r$ and $\theta$ axes, respectively. <br><br>![[polar_coordinates_dynamics_basis_80.png|450]]<br>source: *Engineering Mechanics Dynamics*, p69, 8th ed. 
 
 ### Mathematical Formulation
+>[!warning]
+> During computations it is impractical to [integrate](Integration) or [differentiate](Differentiation) the motion in a certain direction as is done in [Cartesian coordinates](Motion%20in%20Cartesian%20Coordinates). The difference between Cartesian and other coordinate systems that makes this impractical is that the direction vectors $\hat{\textbf{e}}_r$ and $\hat{\textbf{e}}_{\theta}$ change with time, whereas $\hat{\textbf{i}}$, $\hat{\textbf{j}}$ and $\hat{\textbf{k}}$ remain constant.
+> In this note we will thus formulate equations that will allow us to transition from $\vec{\textbf{s}}$ to $\vec{\textbf{v}}$ to $\vec{\textbf{a}}$ and back via a combination of integration and algebra. 
+> These equations remain true irrespective of $t$.
+
+
+Polar coordinates can be found from [Cartesian coordinates](Motion%20in%20Cartesian%20Coordinates) by applying the following transformations
+$$
+x = r \cos(\theta)
+$$
+$$
+y = r \sin(\theta)
+$$
+Alternatively, the conversion can be found by making a triangle, with right sides $x$ and $y$ for the Cartesian coordinate system, diagonal side with length $r$, and the angle below the diagonal side $\theta$. The relation between coordinates can be found by solving the geometric relations of this triangle.<br>Converting between coordinate systems can significantly ease computations, especially when [differentiating](Differentiation) and [integrating](Integration). Furthermore, converting from coordinate system $a$ to coordinate system $b$ introduces a constraint to the system, which might help solve some problems.
+$$
+\begin{bmatrix} x \\ y\end{bmatrix} = \begin{bmatrix} r \cos(\theta) \\ r \sin(\theta) \end{bmatrix}
+$$
+
+
 #### Position
 The position of any object can be found by taking the distance $r$ in the direction of the radial unit vector $\hat{\textbf{e}}_r$.
 $$
 \vec{\textbf{s}} = \begin{bmatrix} s_r \\ 0 \end{bmatrix} = s_r \hat{\textbf{e}}_r = r\hat{\textbf{e}}_r
 $$
 #### Velocity
-There are two ways to derive the velocity. We can reinterpret the [normal-tangent coordinate system](Motion%20in%20Normal-Tangent%20Coordinates), by realizing that **for circular motion** where our origin is the center of rotation the polar and $n$-$t$ coordinate systems are equivalent. We just have to rename $\rho$ to $r$ and $\beta$ to $\theta$ and we have
+There are two ways to derive the velocity. We can reinterpret the [normal-tangent coordinate system](Motion%20in%20Normal-Tangent%20Coordinates.md), by realizing that **for circular motion** where our origin is the center of rotation the polar and $n$-$t$ coordinate systems are equivalent. We just have to rename $\rho$ to $r$ and $\beta$ to $\theta$ and we have
 $$
 \vec{\textbf{v}} = \begin{bmatrix} 0 \\ v_\theta \end{bmatrix} = r \dot{\theta} \hat{\textbf{e}}_\theta
 $$
@@ -85,6 +104,13 @@ $$
 > $$
 > \vec{\textbf{a}} = \begin{bmatrix} a_r \\ a_\theta \end{bmatrix} = \left( \ddot{r} - r \dot{\theta}^2 \right) \hat{\textbf{e}}_r + \left( r \ddot{\theta} + 2\dot{r} \dot{\theta} \right) \hat{\textbf{e}}_\theta
 > $$
+> - **Conversion to [Cartesian coordinates](Motion%20in%20Cartesian%20Coordinates)**[^altroutePC]
+> $$
+> x = r \cos(\theta)
+> $$
+> $$
+> y = r \sin(\theta)
+> $$
 
 
 
@@ -96,7 +122,7 @@ $$
 
 
 ---
-__[Home](!%20Dynamics%20Learning%20Overview)__
+__[Home](Introduction%20to%20Dynamics%20I.md)__
 
 ---
 _Status:_ #ripe
@@ -105,3 +131,5 @@ _Status:_ #ripe
 # Based On:
 
 1. J. L. Meriam, L. G. Kraige, J. N. Bolton, *Engineering Mechanics Dynamics*, 8th ed, US.
+
+[^altroutePC]: If the signs and directions are confusing, these relations can also be found by making a triangle, with right sides $x$ and $y$ for the Cartesian coordinate system, diagonal side with length $r$, and the angle below the diagonal side $\theta$. The relation between coordinates can be found by solving the geometric relations of this triangle.

@@ -6,7 +6,7 @@ tags: [[calculus]], [[differentials]], [[integrals]], [[ODE]]     <br>02-09-2025
 
 ---
 # First Order Ordinary Differential Equations
-- ***First order***, because the derivatives are singular, not of a higher order. Equations with double derivatives ($f^"$) are called a [second order ordinary differential equation](Second%20Order%20Ordinary%20Differential%20Equations).
+- ***First order***, because the derivatives are singular, not of a higher order. Equations with double derivatives ($f^"$) are called a [second order ordinary differential equation](Second%20Order%20Ordinary%20Differential%20Equations.md).
 - ***Ordinary*** because we can rewrite this equation to only depend on only a **single variable**. For example $s$ depends on $t$ by rewriting to
 $$
 ds = v(t)dt
@@ -18,7 +18,7 @@ $$
 v(t) = \frac{ds}{dt}
 $$
 The equation above is an example of a *differential equation*. <br>To be precise: the above equation is a **first order separable ordinary differential equation**. 
-- ***First order***, because the derivative is singular, not of a higher order. A double derivative ($f''$) would see it called a [second order ordinary differential equation](Second%20Order%20Ordinary%20Differential%20Equations). 
+- ***First order***, because the derivative is singular, not of a higher order. A double derivative ($f''$) would see it called a [second order ordinary differential equation](Second%20Order%20Ordinary%20Differential%20Equations.md). 
 - ***Separable***, because it is possible to bring the two variables ($s$ and $t$) to opposing sides of the equal sign by rewriting to 
 $$
 ds = v(t)dt
@@ -186,10 +186,10 @@ $$
 
 
 ---
-__[Home](WikiQuedia/Mechanical%20Engineering/3%20-%20Tags/Example.md)__ %%NEEDS HOME%%
+__[Home](!%20Differential%20Calculus%20I%20Learning%20Overview.md)__ 
 
 ---
-_Status:_ #ripe #missingLink
+_Status:_ #ripe
 
 ---
 # Based On:
