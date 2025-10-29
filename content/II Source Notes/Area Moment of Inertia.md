@@ -1,7 +1,7 @@
 ### Area Moment of Inertia
 21-03-2025
 #### Referencing:
-[Wikipedia - Second area moment of inertia](https://en.wikipedia.org/wiki/Second_moment_of_area)
+1. Wikipedia, *Second area moment of inertia*, [link](https://en.wikipedia.org/wiki/Second_moment_of_area).
 
 #### Synopsis:
 The area moment of inertia, or second moment of area, $I$, represents an object's resistance against bending/deformation, due to it's geometry, in the same way that mass inertia gives an object resistance against movement.<br>The further away the mass is from the axis of rotation, the harder the beam becomes to bend.

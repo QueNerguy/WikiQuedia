@@ -1,7 +1,7 @@
 ### Power
 16-03-2025
 #### Referencing:
-[Wikipedia - Power (physics)](https://en.wikipedia.org/wiki/Power_(physics))
+1. Wikipedia, *Power (physics)*, [link](https://en.wikipedia.org/wiki/Power_(physics)).
 
 #### Synopsis:
 Power, $P$ is a measure of how much [work energy](Work.md) is exerted per unit of time. <br>In the case of any path we have

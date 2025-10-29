@@ -29,7 +29,7 @@ When calculating a limit there are a few tricks that are applied.
 > [!tip] Note
 > If the numerator had had a higher power, the result woud've been $x$ instead of $1$, meaning a non horizontal line as an asymptote.
 
-2. ___Factoring:___ If dividing by $\infty$ is inappropriate or not possible it is best to try to factor the denominator and numerator. The goal is to simplify the expression so that the fraction disappears, or at least changing the location of the perforation, so that it is possible to plug in the limit value directly and get a result. [This](Factoring%20and%20Fraction%20Decomposition.md) note goes more in depth on Factoring.
+2. ___Factoring:___ If dividing by $\infty$ is inappropriate or not possible it is best to try to factor the denominator and numerator. The goal is to simplify the expression so that the fraction disappears, or at least changing the location of the perforation, so that it is possible to plug in the limit value directly and get a result. [This](Factorization.md) note goes more in depth on Factoring.
 	- This is used most often when $x$ doesn't go to $\infty$ but instead approaches a value $a$.
 
 ### Edge cases

@@ -1,7 +1,7 @@
 ### Torque
 28-01-2025
 #### Referencing:
-[Wikipedia - Torque](https://en.wikipedia.org/wiki/Torque)
+1. Wikipedia, *Torque*, [link](https://en.wikipedia.org/wiki/Torque).
 
 #### Synopsis:
 Torque, $T$, measures an object's tendency to rotate. 0 torque means there's no [Angular Acceleration](Angular%20Acceleration.md), so the object either doesn't rotate, or rotates at a constant  [speed](Angular%20Velocity.md). Statically these situations are equivalent.

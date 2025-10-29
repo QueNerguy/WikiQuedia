@@ -1,7 +1,7 @@
 ### Cylindrical Coordinates
 20-05-2025
 #### Referencing:
-[Wikipedia - Cylindrical coordinate system](https://en.wikipedia.org/wiki/Cylindrical_coordinate_system)
+1. Wikipedia, *Cylindrical coordinate system*, [link](https://en.wikipedia.org/wiki/Cylindrical_coordinate_system).
 
 #### Synopsis:
 Where cartesian coordinates define a point in space as a function of the distance in the direction of two or more axes, at a right angle of eachother, _cylindrical coordinates_ define a point in space as:

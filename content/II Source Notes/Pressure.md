@@ -1,7 +1,7 @@
 ### Pressure
 15-07-2025
 #### Referencing:
-[Wikipedia - Pressure](https://en.wikipedia.org/wiki/Pressure)
+1. Wikipedia, *Pressure*, [link](https://en.wikipedia.org/wiki/Pressure).
 #### Synopsis:
 Pressure, $p$ or $P$, is a measure of [force](force) per unit area. Similarly to a force it describes an object's tendency to move. <br>In the real forces are usually used as an approximation of the result of the pressure. Converting pressure to a force is done by multiplying by the area of the contact surface. The point of application of the force is the centroid of the pressure, for a constant pressure this would be in the middle, for a parabolic distribution of pressure it grips at 3/4ths of the length. A formula to find this fraction of the length of the centroid is
 $$

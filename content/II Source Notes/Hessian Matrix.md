@@ -1,7 +1,7 @@
 ### Hessian Matrix
 07-05-2025
 #### Referencing:
-[Wikipedia - Hessian matrix](https://en.wikipedia.org/wiki/Hessian_matrix)
+1. Wikipedia, *Hessian matrix*, [link](https://en.wikipedia.org/wiki/Hessian_matrix).
 
 #### Synopsis:
 A Hessian matrix is a matrix%%==linkje matrix perhaps?==%% that describes the curvature of a function. <br>To construct a Hessian matrix, calculate all possible [partial derivatives](Partial%20Differentiation) and arrange them in the matrix according to the following formula, consisting of partial derivatives.

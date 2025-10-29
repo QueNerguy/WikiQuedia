@@ -1,8 +1,8 @@
 ### Polar Coordinates
 20-05-2025
 #### Referencing:
-[Dr. Trefor Bazett - Double Integration in Polar Coordinates | Example & Derivation](https://www.youtube.com/watch?v=U-13q74uvTo)
-[Wikipedia - Polar coordinate system](https://en.wikipedia.org/wiki/Polar_coordinate_system)
+1. Dr. Trefor Bazett, *Double Integration in Polar Coordinates | Example & Derivation*, [link](https://www.youtube.com/watch?v=U-13q74uvTo).
+2. Wikipedia, *Polar coordinate system*, [link](https://en.wikipedia.org/wiki/Polar_coordinate_system).
 #### Synopsis:
 Where cartesian coordinates define a point in space as a function of the distance in the direction of two or more axes, at a right angle of eachother, _polar coordinates_ define a point in space as:
 1. A radial distance ($r$) from the origin (also known as the pole).

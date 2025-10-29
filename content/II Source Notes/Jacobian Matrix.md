@@ -1,8 +1,8 @@
 ### Jacobian Matrix
 22-05-2025
 #### Referencing:
-[Wikipedia - Jacobian matrix and determinant](https://en.wikipedia.org/wiki/Jacobian_matrix_and_determinant)
-[Khan Academy -  The Jacobian Determinant](https://www.youtube.com/watch?v=p46QWyHQE6M)
+1. Wikipedia, *Jacobian matrix and determinant*, [link](https://en.wikipedia.org/wiki/Jacobian_matrix_and_determinant).
+2. Khan Academy, *The Jacobian Determinant*, [link](https://www.youtube.com/watch?v=p46QWyHQE6M).
 
 #### Synopsis:
 The Jacobian matrix is a matrix that consists of partial derivatives of a (set of) function(s). <br>For functions $f_1, f_2, f_3$ that are all functions of $x_1, x_2, x_3$ the Jacobian matrix looks as follows.

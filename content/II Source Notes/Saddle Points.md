@@ -1,7 +1,7 @@
 ### Saddle Points
 07-05-2025
 #### Referencing:
-[Wikipedia - Saddle point](https://en.wikipedia.org/wiki/Saddle_point)
+1. Wikipedia, *Saddle point*, [link](https://en.wikipedia.org/wiki/Saddle_point).
 
 #### Synopsis:
 Saddle points are points on a graph where the function only changes direction, without reaching an extreme. This point does have a derivative of 0, meaning they can be found on accident when checking for extreme values.

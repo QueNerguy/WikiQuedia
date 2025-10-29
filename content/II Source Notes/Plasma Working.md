@@ -1,8 +1,8 @@
 ### Plasma Working
 29-01-2025
 #### Referencing:
-[Wikipedia - Plasma cutting](https://en.wikipedia.org/wiki/Plasma_cutting)
-[Wikipeida - Plasma (physics)](https://en.wikipedia.org/wiki/Plasma_(physics))
+1. Wikipedia, *Plasma cutting*, [link](https://en.wikipedia.org/wiki/Plasma_cutting).
+2. Wikipedia, *Plasma (physics)*, [link](https://en.wikipedia.org/wiki/Plasma_(physics)).
 
 #### Synopsis:
 Plasma is a state of matter that occurs under an intense heat and big electrical charge. This state is characterized mostly by a high level of ionization. The overall charge is mostly neutral, but within the material a lot of particles are charged. The exact boundaries are ill defined though.

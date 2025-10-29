@@ -1,7 +1,7 @@
 ### Yield Strength
 27-01-2025
 #### Referencing:
-[Wikipedia - Yield (engineering)](https://en.wikipedia.org/wiki/Yield_(engineering))
+1. Wikipedia, *Yield (engineering)*, [link](https://en.wikipedia.org/wiki/Yield_(engineering)).
 
 #### Synopsis:
 Yielding of a metal means the [metal crystal](crystals) is getting permanently deformed and stretched (plastic deformation). When the stress is removed the metal will spring back a bit, as far as it's elastic region goes, but the rest of the deformation is permanent.

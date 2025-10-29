@@ -12,11 +12,11 @@ Calculus I lays out the base mechanics of differentiation and integration. The f
 ### Background
 1. ___[Domain](Domain.md) and [[Range]]:___ These are the fundamentals to evaluating integrals, and terms that will be referred to in the text itself.
 2. ___[Calculating Limits](Calculating%20Limits.md):___ Limits are the origin of differentiating. Understanding them is not necessarily integral to understanding the concepts of calculus itself, but it is usually an important part of a calculus book.
-3. ___[[Factoring and Fraction Decomposition]]:___ Decomposition is used as a tool for both differentiation and integration to simplify the expression and allow us to work with more complicated functions.
+3. ___[[Partial Fraction Expansion]]:___ Decomposing complicated fractions can greatly ease the difficulty of [differentiating](Differentiation) and [integrating](Integration) these fractions.
 ### Part 1 - Differentiation and Integration
 3. ___[Differentiation](Differentiation.md):___ This note explains how differentiating works, what it means to differentiate, geometrically, and it gives some rules and formulas to use when applying it's material.
 4. ___[Integration](Integration.md):___ This note explains how integration works, what it means to integrate, geometrically, and it gives some rules and formulas to use when applying it's material.
-### Part 2 - Inverting
+### Part 2 - Inverting Functions
 5. ___[Inverting a Function](Inverting%20a%20Function.md):___ This topic uses differentiation, but is not directly related to understanding the core concepts of calculus. It is, however, usually part of a calculus book.
 
 

@@ -1,7 +1,7 @@
 ### Shear Modulus of Elasticity
 21-03-2025
 #### Referencing:
-[Wikipedia - Shear modulus](https://en.wikipedia.org/wiki/Shear_modulus)
+1. Wikipedia, *Shear modulus*, [link](https://en.wikipedia.org/wiki/Shear_modulus).
 
 #### Synopsis:
 The shear modulus, $G$, is an equivalent to the [elastic modulus](Modulus%20of%20Elasticity.md) meant for calculations using the [shear stress](stress).

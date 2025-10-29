@@ -1,7 +1,7 @@
 ### Spherical Coordinates
 20-05-2025
 #### Referencing:
-[Wikipedia - Spherical coordinate system](https://en.wikipedia.org/wiki/Spherical_coordinate_system)
+1. Wikipedia, *Spherical coordinate system*, [link](https://en.wikipedia.org/wiki/Spherical_coordinate_system).
 
 #### Synopsis:
 Where cartesian coordinates define a point in space as a function of the distance in the direction of two or more axes, at a right angle of eachother, _spherical coordinates_ define a point in space as:

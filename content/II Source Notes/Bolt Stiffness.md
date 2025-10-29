@@ -1,7 +1,7 @@
 ### Bolt Stiffness
 22-03-2025
 #### Referencing:
-[Mechanicalc - Bolted joint analysis](https://mechanicalc.com/reference/bolted-joint-analysis)
+1. Mechanicalc, *Bolted joint analysis*, [link](https://mechanicalc.com/reference/bolted-joint-analysis).
 
 #### Synopsis:
 The stiffness of a bolt can be deduced from the parallel connection of springs, and is as follows
