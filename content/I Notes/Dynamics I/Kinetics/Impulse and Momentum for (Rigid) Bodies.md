@@ -9,7 +9,7 @@ tags: [[dynamics]], [[kinetics]], [[rigid body]], [[vector math]]     <br>18-10-
 To solve a system with the least amount of effort
 1. Try solving with **[conservation of energy](Conservation%20of%20Energy.md)**.
 2. If **1.** is not possible[^impos1], try solving with **impulse and momentum**.
-3. If **2.** is not possible[^impos2], try solving by **[integrating the equations of motion](Modeling%20Rigid%20Body%20Dynamics.md)**.
+3. If **2.** is not possible[^impos2], try solving by **[integrating the equations of motion](Rigid%20Body%20Mechanics.md)**.
 
 Following this list ensures that you spend the least amount of time possible on solutions.
 
@@ -33,7 +33,7 @@ Or in scalar form we have
 $$
 L = I_O \omega + rp
 $$
-Where $p$ ($= mv$) denotes the linear momentum and $r$ denotes the distance between our point $O$ and the [ICR](Modeling%20Rigid%20Body%20Motion.md#Instant%20Center%20of%20Rotation), $G$. Keep in mind that $r$ needs to make a right angle with the direction of motion, the direction of $v$. Also note that for the [inertia](Inertia%20-%20Mass%20Moment.md) $I_O$ is used, not $I$. To find $I_O$ we compute the inertia of the body around it's center of rotation, and then transfer to our chosen point[^noteref]. To explain this formulation, notice that this equation is made up of two parts:
+Where $p$ ($= mv$) denotes the linear momentum and $r$ denotes the distance between our point $O$ and the [ICR](Rigid%20Body%20Motion.md#Instant%20Center%20of%20Rotation), $G$. Keep in mind that $r$ needs to make a right angle with the direction of motion, the direction of $v$. Also note that for the [inertia](Inertia%20-%20Mass%20Moment.md) $I_O$ is used, not $I$. To find $I_O$ we compute the inertia of the body around it's center of rotation, and then transfer to our chosen point[^noteref]. To explain this formulation, notice that this equation is made up of two parts:
 1. $I_O \vec{\pmb{\omega}}$
 2. $\vec{\textbf{r}}_{O/G} \times \vec{\textbf{p}}$, alternatively written as  $\vec{\textbf{r}}_{O/G} \times m \vec{\textbf{v}}$
 
@@ -64,7 +64,7 @@ Where $\vec{\textbf{L}}_1$ is the momentum just before the impulse acts on the p
 > $$
 > \vec{\textbf{L}}_O = I_O \vec{\pmb{\omega}} + \vec{\textbf{r}}_{O/G} \times \vec{\textbf{p}}
 > $$
-> - For the **angular momentum about the [ICR](Modeling%20Rigid%20Body%20Motion.md#Instant%20Center%20of%20Rotation)** $G$
+> - For the **angular momentum about the [ICR](Rigid%20Body%20Motion.md#Instant%20Center%20of%20Rotation)** $G$
 > $$
 > \vec{\textbf{L}}_G = I \vec{\pmb{\omega}}
 > $$

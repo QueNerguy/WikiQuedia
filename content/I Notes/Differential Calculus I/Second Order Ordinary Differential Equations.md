@@ -14,14 +14,18 @@ $$
 
 ### Geometrical Interpretation
 Second order ordinary differential equations build on the knowledge of [first order ordinary differential equations](First%20Order%20Ordinary%20Differential%20Equations.md). The solutions to these problems are found in a different way however. <br>The *goal* of solving differential equations is to eliminate the differentials and solve for the differentiated variable. So if we encounter $dy$ in an equation, we would try to create an equation that has no differential $dy$, only $y$.<br>There are **two types** of *second order* ordinary differential equations.
-1. ***[Homogeneous Ordinary Differential Equations](#Homogeneous%20Equations)***
-2. ***[Nonhomogeneous Ordinary Differential Equations](#Nonhomogeneous%20Equations)***
-
-These are further discussed in the chapters below.
+1. ***[Homogeneous Ordinary Differential Equations](#1.%20Homogeneous%20Equations)***
+2. ***[Nonhomogeneous Ordinary Differential Equations](#2.%20Nonhomogeneous%20Equations)***
 
 
-### Definition
-#### Homogeneous Equations
+
+### Finding Solutions
+There are two types of second order DEs.
+1. ***[Homogeneous equations](#1.%20Homogeneous%20Equations):*** These equations can be brought into a form that looks like $ay^" + by' + cy = 0$. There is no function of a second variable $x$ in the equation.
+2. ***[Nonhomogeneous equations](#2.%20Nonhomogeneous%20Equations):*** These equations are a more complicated version of homogeneous equations, where extra terms that can be a function of a second variable $x$ are present. These look like $ay^" + by' + cy = f(x)$.
+3. ***[Complex equations](#3.%20Complex%20Solutions):*** Some problems will have solutions with complex roots. 
+
+#### 1. Homogeneous Equations
 Homogeneous equations are equations where every term in the equation is multiplied by some variant of $y$. For example $3y^" + 6y' + 5 y = 0$. Adding terms without a , like $6x^3$ etc. would make the equation a [non-homogeneous equation](#Non-Homogeneous%20Equations).<br>In general these equations look like
 $$
 ay^" + by' + cy = 0
@@ -72,7 +76,7 @@ $$
 
 
 
-#### Nonhomogeneous Equations
+#### 2. Nonhomogeneous Equations
 Nonhomogeneous equations are different to homogeneous equations in that there is a term that isn't multiplied by $y$. A general form for the 2$^{\text{nd}}$ order would look like
 $$
 ay'' + by' + cy = f(t)
@@ -132,7 +136,7 @@ $$
 4. Using *boundary equations* to solve for $c_1$, $c_2$ and $c_3$.
 
 
-#### Complex Solutions
+#### 3. Complex Solutions
 Complex solutions for $y$ are solutions where one of the solutions looks like
 $$
 y_1 = c_1 e^{i\theta}
@@ -191,7 +195,7 @@ _Status:_ #ripe #missingLink
 4. P. Dawkins, *Section 7.4 : Variation of Parameters*, 11-2022, US, [link](https://tutorial.math.lamar.edu/Classes/DE/HOVariationOfParam.aspx/VariationofParameters.aspx).
 5. W. Trench, _9.4: Variation of Parameters for Higher Order Equations_, US, [link](https://math.libretexts.org/Courses/Community_College_of_Denver/MAT_2562_Differential_Equations_with_Linear_Algebra/09:_Linear_Higher_Order_Differential_Equations/9.04:_Variation_of_Parameters_for_Higher_Order_Equations).
 
-[^1]: This solution means that we use $y$ as a function of $t$. Useful in for example [dynamics](Introduction%20to%20Dynamics.md) problems. If we have a coordinate system $x$, $y$, and $y$ is a function of $x$, then our general solution would of course be $y = e^{\lambda x}$ instead of $y = e^{\lambda t}$.
+[^1]: This solution means that we use $y$ as a function of $t$. Useful in for example [dynamics](Introduction%20to%20Dynamics%20I.md) problems. If we have a coordinate system $x$, $y$, and $y$ is a function of $x$, then our general solution would of course be $y = e^{\lambda x}$ instead of $y = e^{\lambda t}$.
 [^2]: The characteristic equation has two roots because it is a second order polynomial, which always have two roots. The solutions of second order polynomials may take the form of $(\lambda - 3)(\lambda - 6) = 0$, where we know the roots to be 3 and 6.
 [^credit1]: This whole chapter of the note is based in it's entirety on the simple explanation given by James Gill. You can watch his video [here](https://www.youtube.com/watch?v=r1v2P4hjNJ8).
 [^credit2]: P. Dawkins, _Section 3.9 : Undetermined Coefficients_, 11-2022, US, [link](https://tutorial.math.lamar.edu/classes/de/undeterminedcoefficients.aspx).

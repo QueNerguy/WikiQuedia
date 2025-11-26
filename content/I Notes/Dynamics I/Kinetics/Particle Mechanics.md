@@ -1,11 +1,11 @@
 ---
-title: "Modeling Particle Dynamics"
+title: Particle Mechanics
 draft: false
 ---
 tags: [[dynamics]], [[kinetics]], [[single particle]], [[vector math]], [[sums]]     <br>12-09-2025
 
 ---
-# Modeling Particle Dynamics
+# Particle Mechanics
 To solve a system with the least amount of effort
 1. Try solving with **[conservation of energy](Conservation%20of%20Energy.md)**.
 2. If **1.** is not possible[^impos1], try solving with **[impulse and momentum](Impulse%20and%20Momentum%20for%20Particles.md)**.
@@ -31,7 +31,7 @@ $$
 $$
 - The accelerations are the accelerations at the **center of mass** of the body.
 
-The [moment](Moment) is not considered for particles, as particles aren't subject to rotations. <br>The positive direction is the positive direction for both the left hand- and the right hand side of this equation, thus a positive force points to the right, and a positive acceleration vector does too. <br>To understand the exact motion of the particle, we would solve for the acceleration from these equations, and use [particle kinematics](Modeling%20Particle%20Motion.md) to find the position. Because of this process, the equations above are sometimes referred to as the **equations of motion**, or **EOM**s. 
+The [moment](Moment) is not considered for particles, as particles aren't subject to rotations. <br>The positive direction is the positive direction for both the left hand- and the right hand side of this equation, thus a positive force points to the right, and a positive acceleration vector does too. <br>To understand the exact motion of the particle, we would solve for the acceleration from these equations, and use [particle kinematics](Particle%20Motion.md) to find the position. Because of this process, the equations above are sometimes referred to as the **equations of motion**, or **EOM**s. 
 %%
 To find the total force acting on the body we find the length of the *resulting force*. Finding the length is nothing more than adding the vectors tip to toe, and applying *Pythagoras' theorem*.
 $$
@@ -90,7 +90,7 @@ $$
 
 ---
 
-- ***[[Modeling Rigid Body Dynamics]]***
+- ***[[Rigid Body Mechanics]]***
 
 ---
 __[Home](Introduction%20to%20Dynamics%20I.md)__

@@ -9,7 +9,7 @@ tags: [[dynamics]], [[energy balance]], [[kinetics]]     <br>18-10-2025
 To solve a system with the least amount of effort
 1. Try solving with **conservation of energy**.
 2. If **1.** is not possible[^impos1], try solving with **[impulse and momentum](Impulse%20and%20Momentum%20for%20(Rigid)%20Bodies)**.
-3. If **2.** is not possible[^impos2], try solving by **[integrating the equations of motion](Modeling%20Rigid%20Body%20Dynamics.md)**.
+3. If **2.** is not possible[^impos2], try solving by **[integrating the equations of motion](Rigid%20Body%20Mechanics.md)**.
 
 Following this list ensures that you spend the least amount of time possible on solutions.
 

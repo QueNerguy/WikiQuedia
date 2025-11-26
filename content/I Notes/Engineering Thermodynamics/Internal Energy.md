@@ -23,6 +23,7 @@ $$
 \Delta U = m \int c_{\nu} dT
 $$
 Usually this simplifies to just $\Delta U = mc_{\nu} \Delta T$, because in most cases $c_{\nu}$ is assumed to be constant, allowing for immediate evaluation of the integral. This assumption, however, becomes inaccurate for larger temperature ranges. <br>The reason $c_{\nu}$, the specific heat capacity for constant volume%%LINKJE%%, is used, is because a system where all the heat is used for an increase in internal energy, and not expansion, sees a constant volume. This allows us to relate an increase in temperature directly to an increase in internal energy[^wikiquote2]. This doesn't mean that this formulation of the internal energy is only correct for constant pressure situations, this is only a consequence of the way the relation was found. <br>If we don't want to directly compare two immediate states of a system, we can have the internal energy measure the difference in energy from a [standard state](https://en.wikipedia.org/wiki/Standard_state) to the current state instead. When taking the standard state to be at 0 $\text{K}$, we have $(\Delta U_0, dU_0) = U$[^proof]. Doing this allows for easier comparison between systems, because we can find the $U$ value from tables and use it directly in the thermodynamic equations. This is how the *specific* internal energies are tabulated in the _[thermo tables](ThermoTables.pdf)_. Taking the internal energy from a standard state instead of directly comparing doesn't change anything about the mathematical formulas[^proofnomathchange].
+
 #### Real Gas
 For real gases the relationship above doesn't hold anymore, [pressure](Pressure) and density may also play a role and upset the above relation which only accounts for temperature changes[^wikiquote]. The complete formula for internal energy, which simplifies to the one above in the case of an ideal gas, is[^hardmath]
 $$
@@ -77,6 +78,7 @@ __[Home](!%20Engineering%20Thermodynamics%20Learning%20Overview)__
 _Status:_ #sprout #missingLink
 
 ---
+
 # Based On:
 [^proof]: $$ dU_0 = \int_{T_0}^{T_1} c_{\nu}dT = c_{\nu} \cdot T \bigg|_{T_0 = 0 [K]}^{T_1 = T} = c_{\nu} \cdot (T_1 - 0) = c_{\nu} T $$
 [^proofnomathchange]: Comparing any $U$ values from a standard state doesn't alter anything about the formulas, as long as the standard state is used consistently for all $U$ values that we substitute into the equations. <br>$$ \Delta U = m \int_{T_1}^{T_2} c_{\nu} dT = (m \cdot c_{\nu} \cdot T)_2 - (m \cdot c_{\nu} \cdot T)_1 = U_2 - U1 $$ <br> If we were to find the $U_1$ and $U_2$ values from the tables we would have <br>$$ U_1 = U_1 - U_0 $$<br> $$ U_2 =  U_2 - U_0 $$<br>Thus, when we combine these into the original $\Delta U$, we get <br> $$ \Delta U = (U_2 - U_0) - (U_1 - U_0) = U_2 - U_1 - U_0 + U_0 = U_2 - U_1 $$ <br>Comparing two $U$ values that use a standard state to find $\Delta U$ is thus the same as using the $m \int c_{\nu} dT$ formula to find $\Delta U$.

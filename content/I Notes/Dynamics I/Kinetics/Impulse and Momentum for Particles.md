@@ -9,7 +9,7 @@ tags: [[dynamics]], [[kinetics]], [[single particle]], [[vector math]]      <br>
 To solve a system with the least amount of effort
 1. Try solving with **[conservation of energy](Conservation%20of%20Energy.md)**.
 2. If **1.** is not possible[^impos1], try solving with **impulse and momentum**.
-3. If **2.** is not possible[^impos2], try solving by **[integrating the equations of motion](Modeling%20Particle%20Dynamics.md)**.
+3. If **2.** is not possible[^impos2], try solving by **[integrating the equations of motion](Particle%20Mechanics.md)**.
 
 Following this list ensures that you spend the least amount of time possible on solutions.
 

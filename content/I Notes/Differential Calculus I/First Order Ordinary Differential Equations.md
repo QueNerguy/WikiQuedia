@@ -35,12 +35,16 @@ $$
 
 
 The *goal* of solving differential equations is to eliminate the differentials and solve for the differentiated variable. So if we encounter $dy$ in an equation, we would try to create an equation that has no differential $dy$, only $y$.<br>There are **two types** of *first order* ordinary differential equations.
-1. ***[Separable Ordinary Differential Equations](#Separable%20Equations)***
-2. ***[Linear Ordinary Differential Equations](#Linear%20Equations)***
+1. ***[Separable Ordinary Differential Equations](#1.%20Separable%20Equations)***
+2. ***[Linear Ordinary Differential Equations](#2.%20Linear%20Equations)***
 
-These are further discussed in the chapters below.
-### Definition
-#### Separable Equations
+
+### Finding Solutions
+There are two types of first order DEs, these are
+1. ***[Separable equations](#1.%20Separable%20Equations):*** These are equations where the differential terms ($dx$ etc.) can be grouped together on either side of the equation. There will be no remaining terms that don't have a differential in them afterward.
+2. ***[Linear equations](#2.%20Linear%20Equations):*** These are equations where the terms are a linear combination of terms that have a differential (like $f(x)dx$) and terms that don't. These are more complicated to solve.
+3. ***[Substitution-based problems](#3.%20Substitution%20Method):*** Some equations don't look like either of the above 2 categories. These equations can be brought into a form that resembles either a separable equation, or a linear equation by substituting.
+#### 1. Separable Equations
 The easiest differential equations are *separable*. These equations feature a [differential](Differentiation) that is separable from the rest of the terms in the equation to one side of the equal sign. Separating like this allows us to [integrate](Integration) directly. <br>An example of a separable equation would be 
 $$
 \frac{dy}{dx} = -6xy
@@ -70,7 +74,7 @@ f(y)dy = g(x)dx
 $$
 
 
-#### Linear Equations
+#### 2. Linear Equations
 Linear equations are harder to solve than separable equations because we can't [integrate](Integration) both sides to obtain a solution. This is because the [derivative](Differentiation) and the non-differentiated form are both present in separate terms. <br>An example of such an equation is
 $$
 (x^2 + 1)\frac{dy}{dx} + 3xy = 6x
@@ -143,7 +147,7 @@ $$
 y = e^{-\int a dx} \left[ \int \left( e^{\int adx} b \right) dx + C \right]
 $$
 %%
-#### Substitution Method
+#### 3. Substitution Method
 Some equations don't conform themselves to either form discussed above. To solve these types of equations we can substitute parts of the equations for $u$ or $v$ etc. and see if we can rewrite into a form that resembles either a *linear* or a *separable* equation.<br><br>For example let us consider the equation[^sourcemath2]
 $$
 \frac{dy}{dx} = (x + y + 3)^2

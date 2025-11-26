@@ -1,5 +1,5 @@
 ---
-title: Modeling Particle Motion
+title: Particle Motion
 draft: false
 ---
 tags: [[dynamics]], [[kinematics]], [[single particle]], [[vector math]]     <br>03-09-2025
@@ -8,9 +8,9 @@ tags: [[dynamics]], [[kinematics]], [[single particle]], [[vector math]]     <br
 # Modeling Particle Motion
 Calculations following the equations outlined below, as well as their derivations rely heavily on [calculus I](!%20Calculus%20I%20Learning%20Overview) and make heavy use of [first order differential equations](First%20Order%20Ordinary%20Differential%20Equations.md).
 ## Particle Motion
-- **For <u>rotations</u> see [[Modeling Rigid Body Motion]]**
+- **For <u>rotations</u> see [[Rigid Body Motion]]**
 
-We will try to understand particle motion through a 3D space. A particle that moves through a 3D space can move in any of the 3 directions in a linear motion. We understand particles as small points in space that are non-rotating. <br>Modeling particles is easier than modeling rigid bodies *because* we neglect the rotation. Thus, whenever possible, we will try to reduce any object that we wish to model to just a particle moving through space. For bodies that can't be simplified to single particles we approximate the situation with [rigid bodies](Modeling%20Rigid%20Body%20Motion.md).
+We will try to understand particle motion through a 3D space. A particle that moves through a 3D space can move in any of the 3 directions in a linear motion. We understand particles as small points in space that are non-rotating. <br>Modeling particles is easier than modeling rigid bodies *because* we neglect the rotation. Thus, whenever possible, we will try to reduce any object that we wish to model to just a particle moving through space. For bodies that can't be simplified to single particles we approximate the situation with [rigid bodies](Rigid%20Body%20Motion.md).
 ### Velocity
 Any object in a 3D space has a position, a speed, which can be 0, and an [acceleration](#Acceleration), which can also be 0. These three quantities can  be related using [differential calculus](!%20Differential%20Calculus%20Learning%20Overview). <br>In the case of velocity we have
 $$
@@ -114,7 +114,7 @@ Depending on what kind of system we are trying to analyze our choice of coordina
 
 ---
 
-- ***[[Modeling Rigid Body Motion]]***
+- ***[[Rigid Body Motion]]***
 
 ---
 __[Home](Introduction%20to%20Dynamics%20I.md)__

@@ -132,7 +132,7 @@ See [here](crushing%20or%20bearing%20stress%20in%20bolts%20due%20to%20shearing.m
 
 
 > [!example] More Concretely
-> ![[Clevis_Pin:)_80%.png]] <br>In the above clevis-blade arrangement the flow of the force $P$ is shown in the parts. The pin is crushed at the whole area from $b$ to $c$. In this scenario $F_{\textrm{shear}}$ = $P$. <br>The length the shear force acts on has two values, either $b$ + $c$, for the force $P$ on the clevice, or the length between $b$ and $c$, let's call it $a$, for the force $P$ on the blade. Since the length of $a$ is smaller than that of $b$ and $c$, we choose length $a$ for $L_{\min}$.
+> ![[Clevis_Pin_)_80%.png]] <br>In the above clevis-blade arrangement the flow of the force $P$ is shown in the parts. The pin is crushed at the whole area from $b$ to $c$. In this scenario $F_{\textrm{shear}}$ = $P$. <br>The length the shear force acts on has two values, either $b$ + $c$, for the force $P$ on the clevice, or the length between $b$ and $c$, let's call it $a$, for the force $P$ on the blade. Since the length of $a$ is smaller than that of $b$ and $c$, we choose length $a$ for $L_{\min}$.
 
 ##### Crushing Stress due to an Overturning Moment
 Because an overturning moment can cause very big forces to act on the surface between the bolt head and the surface of the part, there is a risk of crushing. This stress is referred to as _crushing stress_ or _bearing stress_. This stress can not exceed the allowable stress of the bolt, nor that of the part.

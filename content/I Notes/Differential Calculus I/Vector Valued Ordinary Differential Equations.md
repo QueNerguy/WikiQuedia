@@ -17,13 +17,18 @@ To differentiate vectors is the exact same. Remember, a matrix can be seen as a 
 ### Solving Ordinary Differential Equations
 This chapter will discuss solving any order differential equation of the form
 $$
-\vec{\textbf{x}}^{(n)} = A \vec{\textbf{x}}
+\vec{\textbf{x}}^{(n)} = A \vec{\textbf{x}} \qquad \text{or} \qquad \vec{\textbf{x}}^{(n)} + A \vec{\textbf{x}} = 0
 $$
-This is especially useful for [first order differential equations](First%20Order%20Ordinary%20Differential%20Equations.md) because they <u>only</u> have expression this as their *homogeneous* form. <br>The above equation can be any *homogeneous equation*. To make the explanation more concrete however, from now on we will treat the case of the first order $\vec{\textbf{x}}'$, but remember that the methods look and act the same regardless of the order. <br>$A$ is the transformation [matrix](Matrices) that changes the coordinate vector $\vec{\textbf{x}}$ to become the differentiated coordinate vector $\vec{\textbf{x}}'$. To make the vector form more similar to the notation we would use for scalar valued functions, we could rewrite the above equation to $\vec{\textbf{x}}' - A \vec{\textbf{x}} = 0$. <br>A matrix system can be seen as a collection of equations, like the one below for a 3 dimensional matrix $A$.
+This is especially useful for [first order differential equations](First%20Order%20Ordinary%20Differential%20Equations.md) because they <u>only</u> have expression this as their *homogeneous* form. 
+> [!note]
+> The above equation can be any *homogeneous equation*. To make the explanation more concrete however, from now on we will treat the case of the first order $\vec{\textbf{x}}'$, but remember that the methods look and act the same regardless of the order. 
+
+
+$A$ is the transformation [matrix](Matrices) that changes the coordinate vector $\vec{\textbf{x}}$ to become the differentiated coordinate vector $\vec{\textbf{x}}'$. To make the vector form more similar to the notation we would use for scalar valued functions, we could rewrite the above equation to $\vec{\textbf{x}}' - A \vec{\textbf{x}} = 0$. <br>A matrix system can be seen as a collection of equations, like the one below for a 3 dimensional matrix $A$.
 $$
 \begin{cases} x_1' = P_{1,1} x_1 + P_{1,2} x_2 + P_{1,3} x_3 \\ x_2' = P_{2,1} x_1 + P_{2,2} x_2 + P_{2,3} x_3 \\ x_3' = P_{3,1} x_1 + P_{3,2} x_2 + P_{3,3} x_3 \end{cases}
 $$
-We cannot integrate these equations directly [like we did before](First%20Order%20Ordinary%20Differential%20Equations.md#Separable%20Equations) for first order systems. Instead, we may use the same trick we used for [second order systems](Second%20Order%20Ordinary%20Differential%20Equations.md), where we take a trial solution of $\vec{\textbf{x}} = \vec{\textbf{v}}e^{\lambda t}$, with derivative $\vec{\textbf{x}}' = \lambda \vec{\textbf{v}} e^{\lambda t}$. If we substitute this into the equation $\vec{\textbf{x}}' = A \vec{\textbf{x}}$, we get
+We cannot integrate these equations directly [like we did before](First%20Order%20Ordinary%20Differential%20Equations.md#Separable%20Equations) for first order systems. Instead, we may use the same trick we used for [second order systems](Second%20Order%20Ordinary%20Differential%20Equations.md), where we take a trial solution of $\vec{\textbf{x}} = \vec{\textbf{v}}e^{\lambda t}$, with derivative $\vec{\textbf{x}}' = \lambda \vec{\textbf{v}} e^{\lambda t}$. <br>If we substitute this into the equation $\vec{\textbf{x}}' = A \vec{\textbf{x}}$, we get
 $$
 \vec{\textbf{x}}' = A \vec{\textbf{x}} \qquad \Rightarrow \qquad \lambda \vec{\textbf{v}} e^{\lambda t} = A \vec{\textbf{v}} e^{\lambda t}
 $$
@@ -31,15 +36,16 @@ We can divide by $e^{\lambda t}$ as it appears on both sides and get
 $$
 \lambda \vec{\textbf{v}} = A \vec{\textbf{v}}
 $$
-For higher order differentials we would use $\vec{\textbf{x}} = \vec{\textbf{v}}e^{\alpha t}$. The reason will be apparent after we substitute this into the equation for the second order, $\vec{\textbf{x}}'' = A \vec{\textbf{x}}$.
-$$
-\vec{\textbf{x}}'' = A \vec{\textbf{x}} \qquad \Rightarrow \qquad \alpha ^2 \vec{\textbf{v}} e^{\alpha}t = A \vec{\textbf{v}} e^{\alpha t}
-$$
-We can substitute $\alpha ^2$ by $\lambda$ and divide out $e^{\alpha t}$ like we did above to get 
-$$
-\alpha ^2 \vec{\textbf{v}} e^{\alpha}t = A \vec{\textbf{v}} e^{\alpha t} \quad \Rightarrow \quad \lambda \vec{\textbf{v}} e^{\alpha}t = A \vec{\textbf{v}} e^{\alpha t} \quad \Rightarrow \quad \lambda \vec{\textbf{v}} = A \vec{\textbf{v}}
-$$
-From here we can continue the computation in exactly the same way as the first order.
+>[!abstract] Higher Order Differential Cases
+> For higher order differentials we would use $\vec{\textbf{x}} = \vec{\textbf{v}}e^{\alpha t}$. The reason for this slight change will be apparent after we substitute this into the equation for the second order:
+> $$
+> \vec{\textbf{x}}'' = A \vec{\textbf{x}} \qquad \Rightarrow \qquad \alpha ^2 \vec{\textbf{v}} e^{\alpha}t = A \vec{\textbf{v}} e^{\alpha t}
+> $$
+> $$
+> \alpha ^2 \vec{\textbf{v}} e^{\alpha}t = A \vec{\textbf{v}} e^{\alpha t} \quad \Rightarrow \quad \lambda \vec{\textbf{v}} e^{\alpha}t = A \vec{\textbf{v}} e^{\alpha t} \quad \Rightarrow \quad \lambda \vec{\textbf{v}} = A \vec{\textbf{v}}
+> $$
+> From here we can continue the computation in exactly the same way as the first order.
+
 You might recognize this form from the explanation of [eigenvalues](Eigenvectors%20and%20Eigenvalues). Here too our goal is to find $\vec{\textbf{v}}$, and thus we can use the same principles as used to find the eigenvalues of a matrix. <br>We rearrange the equation to get
 $$
 A\vec{\textbf{v}} - \lambda I\vec{\textbf{v}} = 0 \qquad \Rightarrow \qquad (A - \lambda I) \vec{\textbf{v}} = 0
@@ -57,7 +63,15 @@ $$
 \vec{\textbf{x}} = c_1 \vec{\textbf{x}}_1 + c_2 \vec{\textbf{x}}_ 2 + \dots + c_n \vec{\textbf{x}}_n \qquad \Rightarrow \qquad \vec{\textbf{x}} = c_1 \vec{\textbf{v}}_1 e^{\lambda _1 t} + c_2 \vec{\textbf{v}}_2 e^{\lambda _2 t} + \dots + c_n \vec{\textbf{v}}_n e^{\lambda _n t}
 $$
 The solution for $\vec{\textbf{x}}$ can thus be found by finding the *eigenvalues*, $\lambda$, and the *[eigenvectors](Eigenvectors%20and%20Eigenvalues)*, $\vec{\textbf{v}}$, of matrix $A$. <br>The amount of eigenvalues, and subsequently the amount of particular solutions, is determined by the dimension of matrix $A$. The amount of roots the characteristic equation will have is the same as the dimension of $A$.
-#### Nonhomogeneous Differential Equations
+
+---
+To generalize the use of this method further, the continuing chapters outline how to solve problems in the following situations.
+1. ***The equation is [nonhomogeneous](#1.%20Nonhomogeneous%20Differential%20Equations).***
+2. ***The equation has [repeating eigenvalues](#2.%20Repeating%20Eigenvalues).***
+3. ***The equation has [complex solutions](#3.%20Complex%20Solutions).***
+4. ***The equation has specified [initial values](#4.%20Initial%20Value%20Problems).***
+5. ***We wish to solve using [matrix exponentials](#5.%20Solving%20Using%20Matrix%20Exponentials).***
+#### 1. Nonhomogeneous Differential Equations
 Nonhomogeneous first order DEs are of the form
 $$
 \vec{\textbf{x}}' = A \vec{\textbf{x}} + \vec{\textbf{f}}(t)
@@ -104,7 +118,7 @@ Below is a list of assumptions for our particular solution for different express
 | $$\vec{\textbf{a}}\cos(\vec{\textbf{c}} t) + \vec{\textbf{a}}\sin(\vec{\textbf{c}} t)$$ | $$\vec{\textbf{A}}\cos(\vec{\textbf{c}} t) + \vec{\textbf{B}}\sin(\vec{\textbf{c}} t)$$          |
 | $$\vec{\textbf{a}}e^{\vec{\textbf{c}}t}$$                                               | $$\vec{\textbf{A}}e^{\vec{\textbf{c}}t}$$                                                        |
 | Polynomial, $n^{\text{th}}$ grade[^erm2]                                                | $$\vec{\textbf{A}}t^n + \vec{\textbf{B}}t^{n-1} + \dots + \vec{\textbf{Y}}t + \vec{\textbf{Z}}$$ |
-Do note that in this case the capital letters do **not** need to indicate matrices.
+Do note that in this case the capital letters do **not** indicate matrices, but represent vectors.
 
 2. ___Method of Variation of Parameters:___ The method of variation of parameters can be used for equations where $\vec{\textbf{f}}(t)$ isn't in the table above. To find $\vec{\textbf{x}}_p$ we make use of the complementary solution. We start with
 $$
@@ -135,7 +149,7 @@ $$
 \vec{\textbf{x}}_p = X \int X^{-1} \: \vec{\textbf{f}}(t) \: dt
 $$
 
-#### Repeating Eigenvalues
+#### 2. Repeating Eigenvalues
 When solving the characteristic equation it may happen that a solution for $\lambda$ appears more than once. In other words, $\lambda$ has a multiplicity of more than 1. If this happens there are 2 scenarios:
 1. ***We can use a single [eigenvalue](Eigenvectors%20and%20Eigenvalues) to find multiple [eigenvectors](Eigenvectors%20and%20Eigenvalues):*** When substituting the repeating root into $(A - \lambda I)\vec{\textbf{v}} = 0$ we may get a solution for $\vec{\textbf{v}}$ with a free variable. For example[^source] we may find a solution with a free variable $c$, and $b = - \frac{3}{2} a$. In that case our $\vec{\textbf{v}}$ becomes
 $$
@@ -220,7 +234,7 @@ We can thus always find $\vec{\textbf{v}}_2$ by solving $\left[\begin{array}{c|c
 
 
 
-#### Complex Solutions
+#### 3. Complex Solutions
 Trying to find the [eigenvalues](Eigenvectors%20and%20Eigenvalues) for some real systems may yield imaginary eigenvalues as a result of the characteristic equation. For example[^source] see the characteristic equation
 $$
 (4 - \lambda) ^2 + 9 = 0 \qquad \Rightarrow \qquad \lambda = 4 \pm \sqrt{-9} = 4 \pm 3i
@@ -275,7 +289,7 @@ $$
 
 
 
-#### Initial Value Problems
+#### 4. Initial Value Problems
 To find the complete solution for $\vec{\textbf{x}}$, eliminating the constants $c$, we need a constraint (initial value) for $\vec{\textbf{x}}$, for example we could have $\vec{\textbf{x}}(3) = \vec{\textbf{b}}$. To find a complete expression for $\vec{\textbf{x}}$, notice that we can rewrite the general solution for $\vec{\textbf{x}}$ to
 $$
 \vec{\textbf{x}} = X\vec{\textbf{c}}
@@ -288,7 +302,7 @@ To find $\vec{\textbf{c}}$ we can solve the *augmented matrix* $\left[ X(3) \: |
 
 
 
-#### Solving Using Matrix Exponentials
+#### 5. Solving Using Matrix Exponentials
 It is possible to construct a solution to the equation $\vec{\textbf{x}}' = A\vec{\textbf{x}}$ directly from the matrix $A$, using the same methodology as used to solve [scalar differential equations](Generalized%20Ordinary%20Differential%20Equations.md)[^seealso]. <br>To start it is important to know the computational rules of **exponential matrices**. Without proving this[^proof], for a matrix with only entries along it's diagonal $D = \begin{bmatrix} a & 0 \\ 0 & b \end{bmatrix}$, we have
 $$
 e^D = \begin{bmatrix} e^a & 0 \\ 0 & e^b \end{bmatrix}, \quad e^{\vec{\textbf{0}}} = I

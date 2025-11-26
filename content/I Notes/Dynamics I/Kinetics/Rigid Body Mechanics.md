@@ -1,11 +1,11 @@
 ---
-title: "Modeling Rigid Body Dynamics"
+title: Rigid Body Mechanics
 draft: false
 ---
 tags: [[dynamics]], [[kinetics]], [[rigid body]], [[vector math]], [[sums]]      <br>17-09-2025
 
 ---
-# Modeling Rigid Body Dynamics
+# Rigid Body Mechanics
 To solve a system with the least amount of effort
 1. Try solving with **[conservation of energy](Conservation%20of%20Energy.md)**.
 2. If **1.** is not possible[^impos1], try solving with **[impulse and momentum](Impulse%20and%20Momentum%20for%20(Rigid)%20Bodies.md)**.
@@ -15,7 +15,7 @@ Following this list ensures that you spend the least amount of time possible on 
 
 
 ### Interpretation
-When [forces](Force) act on a body, this body may start to move, as long as the sum of the forces $\ne$ 0. To model rigid bodies we want to understand how the motion of a rigid body relates to the forces and [moments](Moment) that act on it, and vice-versa. <br>Modeling rigid bodies is a continuation of [modeling particles](Modeling%20Particle%20Dynamics.md), with the introduction of moments and rotations to the behaviors of a system. 
+When [forces](Force) act on a body, this body may start to move, as long as the sum of the forces $\ne$ 0. To model rigid bodies we want to understand how the motion of a rigid body relates to the forces and [moments](Moment) that act on it, and vice-versa. <br>Modeling rigid bodies is a continuation of [modeling particles](Particle%20Mechanics.md), with the introduction of moments and rotations to the behaviors of a system. 
 ### Mathematical Formulation
 To describe the way a body moves when subjected to external [forces](Force), we use Newton's equations. Unlike in *Statics*%%==LINKJE STATICA==%%, where no motion occurred and we could thus say $\sum \vec{\textbf{F}} = 0$ and $\sum \vec{\textbf{M}} = 0$, in *dynamics* we do account for motion, and our equations thus become
 $$
@@ -34,9 +34,9 @@ $$
 $$
 \left(\stackrel{+}\circlearrowleft\right)\: \sum M_G = I_G \alpha
 $$
-- The accelerations are the accelerations at the **center of mass** *or* the **[center of rotation](Modeling%20Rigid%20Body%20Motion.md#Instant%20Center%20of%20Rotation)**[^com] of the body.
+- The accelerations are the accelerations at the **center of mass** *or* the **[center of rotation](Rigid%20Body%20Motion.md#Instant%20Center%20of%20Rotation)**[^com] of the body.
 
-The positive direction is the positive direction for both the left hand- and the right hand side of this equation, thus a positive force points to the right, and a positive acceleration vector does too. <br>To understand the exact motion of the particle, we would solve for the acceleration from these equations, and use [particle kinematics](Modeling%20Particle%20Motion.md) to find the position. Because of this process, the equations above are sometimes referred to as the **equations of motion**, or **EOM**s. <br><br>It is sometimes advantageous to sum the moments not about the center of mass or the center of rotation, but around some point $P$. In this case the moment equation is amended because we are deviating form the expression for the rotational inertia. The correcting term $\vec{\pmb{\rho}}_{P/G} \times m \vec{\textbf{a}}_P$ is added to the equation, where $\vec{\pmb{\rho}}_{P/G}$ denotes the distance from our random point $P$ to the center of mass $G$ (or the ICR $O$) and $\vec{\textbf{a}}_P$ gives the acceleration at our point $P$.<br>Thus, for the sum of the **moments about any point $P$**, we have
+The positive direction is the positive direction for both the left hand- and the right hand side of this equation, thus a positive force points to the right, and a positive acceleration vector does too. <br>To understand the exact motion of the particle, we would solve for the acceleration from these equations, and use [particle kinematics](Particle%20Motion.md) to find the position. Because of this process, the equations above are sometimes referred to as the **equations of motion**, or **EOM**s. <br><br>It is sometimes advantageous to sum the moments not about the center of mass or the center of rotation, but around some point $P$. In this case the moment equation is amended because we are deviating form the expression for the rotational inertia. The correcting term $\vec{\pmb{\rho}}_{P/G} \times m \vec{\textbf{a}}_P$ is added to the equation, where $\vec{\pmb{\rho}}_{P/G}$ denotes the distance from our random point $P$ to the center of mass $G$ (or the ICR $O$) and $\vec{\textbf{a}}_P$ gives the acceleration at our point $P$.<br>Thus, for the sum of the **moments about any point $P$**, we have
 $$
 \sum \vec{\textbf{M}}_P = \bar{I}_P \vec{\pmb{\alpha}} + \vec{\pmb{\rho}}_{P/G} \times m \vec{\textbf{a}}_P
 $$
@@ -53,7 +53,7 @@ $$
 
 ---
 
-In order for us to [model the dynamics of a rigid body](Modeling%20Rigid%20Body%20Motion.md), we need to understand the motion as a result of [forces](Force)[^find], and that as a result of [moments](Moment). To model the motion, coming from a set of moments and forces, we need to relate these forces and moments to the accelerations.<br>The way to relate the moment to the _[angular acceleration](Angular%20Acceleration)_ follows quickly from the way that the [rotational inertia](Inertia%20-%20Mass%20Moment.md) was defined, namely as the sum of the moments around the axis of rotation, excluding the term for angular acceleration. <br>For the sum of the **moments about our [ICR](Modeling%20Rigid%20Body%20Motion.md#Instant%20Center%20of%20Rotation)**, $G$[^G], we have
+In order for us to [model the dynamics of a rigid body](Rigid%20Body%20Motion.md), we need to understand the motion as a result of [forces](Force)[^find], and that as a result of [moments](Moment). To model the motion, coming from a set of moments and forces, we need to relate these forces and moments to the accelerations.<br>The way to relate the moment to the _[angular acceleration](Angular%20Acceleration)_ follows quickly from the way that the [rotational inertia](Inertia%20-%20Mass%20Moment.md) was defined, namely as the sum of the moments around the axis of rotation, excluding the term for angular acceleration. <br>For the sum of the **moments about our [ICR](Rigid%20Body%20Motion.md#Instant%20Center%20of%20Rotation)**, $G$[^G], we have
 $$
 \sum \vec{\textbf{M}}_G = \bar{I}_G \vec{\pmb{\alpha}}
 $$
@@ -114,7 +114,7 @@ Remember that, when using these alternative coordinate systems, the expressions 
 > $$
 > \left(\stackrel{+}\uparrow\right)\: \sum F_y = m a_y
 > $$
-> - For the **[moment](Moment) about the [ICR](Modeling%20Rigid%20Body%20Motion.md#Instant%20Center%20of%20Rotation)**
+> - For the **[moment](Moment) about the [ICR](Rigid%20Body%20Motion.md#Instant%20Center%20of%20Rotation)**
 > $$
 > \sum \vec{\textbf{M}}_G = \vec{\textbf{M}}_1 + \vec{\textbf{M}}_2 + \dots =\bar{I}_G \vec{\pmb{\alpha}}
 > $$
@@ -130,7 +130,7 @@ Remember that, when using these alternative coordinate systems, the expressions 
 
 ---
 
-- ***[[Modeling Particle Dynamics]]***
+- ***[[Particle Mechanics]]***
 
 ---
 __[Home](Introduction%20to%20Dynamics%20I.md)__
@@ -145,9 +145,9 @@ _Status:_ #ripe #missingLink
 
 
 %%
-[^find]: The explanation for this is given in the note on [particle dynamics](Modeling%20Particle%20Dynamics.md), but the physics applies for rigid bodies in the same way.
-[^G]: $G$ is chosen because in the case of *unconstrained motion* the rotation takes place about the center of gravity, also usually referred to as $G$. This equation, however, also holds for *constrained motion*, where the [ICR](Modeling%20Rigid%20Body%20Motion.md#Instant%20Center%20of%20Rotation) is then denoted as $G$ as well for continuities' sake. 
-[^particle]: The origin and the specifics about translation can be read in the note on [particle dynamics](Modeling%20Particle%20Dynamics.md).
+[^find]: The explanation for this is given in the note on [particle dynamics](Particle%20Mechanics.md), but the physics applies for rigid bodies in the same way.
+[^G]: $G$ is chosen because in the case of *unconstrained motion* the rotation takes place about the center of gravity, also usually referred to as $G$. This equation, however, also holds for *constrained motion*, where the [ICR](Rigid%20Body%20Motion.md#Instant%20Center%20of%20Rotation) is then denoted as $G$ as well for continuities' sake. 
+[^particle]: The origin and the specifics about translation can be read in the note on [particle dynamics](Particle%20Mechanics.md).
 %% 
 
 [^impos1]: Solving with conservation of energy may be impossible because there are too many unknown properties in the resulting equations, or because an impact is present that deforms the body in such a way that a non-negligible amount of chemical energy is lost in the material. We cannot easily compute the amount of chemical energy expended during an impact and for this reason we say that conservation of energy does not hold in these situations.

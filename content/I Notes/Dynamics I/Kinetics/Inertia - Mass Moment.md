@@ -1,5 +1,5 @@
 ---
-title: "Inertia - Mass Moment"
+title: Mass Moment of Inertia
 draft: false
 ---
 tags: [[dynamics]], [[rigid body]], [[kinetics]], [[sums]]     <br>08-09-2025
@@ -15,7 +15,7 @@ The *inertia* of an object can be seen as that objects's resistance to changes i
 ### Mathematical Formulation
 The bigger the rotational inertia of an object, the greater the [moment](Moment) required to stop it is. We can thus use the moment to define the property of inertia.
 
-A moment acting on a [rigid body](Modeling%20Rigid%20Body%20Motion.md) can be found by finding the moment acting on a single particle, with a tiny mass $dm$, on the body. If we add the moments on all the particles up we find the moment acting on the complete body made up of all those points.
+A moment acting on a [rigid body](Rigid%20Body%20Motion.md) can be found by finding the moment acting on a single particle, with a tiny mass $dm$, on the body. If we add the moments on all the particles up we find the moment acting on the complete body made up of all those points.
 $$
 M_{\text{Body}} =\sum M_{\text{Particle}}
 $$
@@ -27,7 +27,7 @@ As the inertia is an *inherent* property of an object, it can't depend on an ang
 $$
 I = \int r^2 dm
 $$
-Because of the way we derived the moment[^moment1], **this equation holds only for pure rotations** about the central axis, or the [ICR](Modeling%20Rigid%20Body%20Motion.md#Instant%20Center%20of%20Rotation). $r$ denotes the radius of rotation, or the distance from that axis. <br>To compute the inertia for certain shapes we can rewrite this equation by using the fact that mass is a function of the density  and the volume $V$. Enclosed in $V$ is the shape of an object. The equation for the volume of a cone for example is $V = \frac{\pi r^2 h}{3}$.
+Because of the way we derived the moment[^moment1], **this equation holds only for pure rotations** about the central axis, or the [ICR](Rigid%20Body%20Motion.md#Instant%20Center%20of%20Rotation). $r$ denotes the radius of rotation, or the distance from that axis. <br>To compute the inertia for certain shapes we can rewrite this equation by using the fact that mass is a function of the density  and the volume $V$. Enclosed in $V$ is the shape of an object. The equation for the volume of a cone for example is $V = \frac{\pi r^2 h}{3}$.
 $$
 I = \int r^2 d(\rho V)
 $$
@@ -41,11 +41,11 @@ I_{zz} = \int r_z^2 dm = \int \left( x^2 + y^2 \right) dm
 $$
 <br>![[momentofinertiafindingradius_80.png|450]]<br>source: *Engineering Mechanics Dynamics*, p630, 8th ed.
 #### Transfer of Axes
-If the inertia is hard to find around the [ICR](Modeling%20Rigid%20Body%20Motion.md#Instant%20Center%20of%20Rotation), we may find the inertia $\bar{I}$ around any other axis and compensate for this choice after, to find the real inertia $I$. This allows us to choose any axis that simplifies the calculations to compute $\bar{I}$.
+If the inertia is hard to find around the [ICR](Rigid%20Body%20Motion.md#Instant%20Center%20of%20Rotation), we may find the inertia $\bar{I}$ around any other axis and compensate for this choice after, to find the real inertia $I$. This allows us to choose any axis that simplifies the calculations to compute $\bar{I}$.
 $$
 I = \bar{I} + md^2
 $$
-Here, $d$ denotes the distance from our choice of axis for $\bar{I}$ to the [actual axis of rotation](Modeling%20Rigid%20Body%20Motion.md#Instant%20Center%20of%20Rotation). Similar to finding $r$, demonstrated above, $d$ doesn't take distance along the axis of rotation into account. It just finds the shortest distance from axis $a$ to axis $b$.<> To illustrate, see the image below, where $\bar{I}$ was found around axis $C$, but the [ICR](Modeling%20Rigid%20Body%20Motion.md#Instant%20Center%20of%20Rotation) is at $G$. The point on the axis of $G$ that is closest to $C$, however, is $O$, and as such $d$ is found between $C$ and $O$, and not between $C$ and $G$. <br>This behavior is a result of the use of a cross-product for the definition of the moment.<br><br>![[transferofaxesmomentofinertia_80.png|450]]<br>source: *Engineering Mechanics Dynamics*, p629, 8th ed.
+Here, $d$ denotes the distance from our choice of axis for $\bar{I}$ to the [actual axis of rotation](Rigid%20Body%20Motion.md#Instant%20Center%20of%20Rotation). Similar to finding $r$, demonstrated above, $d$ doesn't take distance along the axis of rotation into account. It just finds the shortest distance from axis $a$ to axis $b$.<> To illustrate, see the image below, where $\bar{I}$ was found around axis $C$, but the [ICR](Rigid%20Body%20Motion.md#Instant%20Center%20of%20Rotation) is at $G$. The point on the axis of $G$ that is closest to $C$, however, is $O$, and as such $d$ is found between $C$ and $O$, and not between $C$ and $G$. <br>This behavior is a result of the use of a cross-product for the definition of the moment.<br><br>![[transferofaxesmomentofinertia_80.png|450]]<br>source: *Engineering Mechanics Dynamics*, p629, 8th ed.
 #### Composite Rotations
 When multiple rotations occur at the same time, the inertia for this simultaneous rotation has to be used, *instead of* the rotation for a single axis. To find this inertia, instead of adding the distances up (e.g. $r_z^2 = x^2 + y^2$), we multiply to take into account both axes of rotation at the same time. <br>For a rotation around both the $x$- and $y$-axes we have $r_{xy}^2 = x \cdot y$.
 $$

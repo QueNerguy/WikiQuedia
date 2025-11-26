@@ -14,7 +14,7 @@ _Thermodynamics_ is a branch of physics that studies the transfer of energies su
 
 
 ## Introduction
-The following chapters introduce the framework from which we understand thermodynamics, a quick run through of important communicatory terms and properties that will be used extensively.
+The following chapters introduce the framework from which we understand thermodynamics, a quick run through of important terms and properties that will be used extensively.
 ### Math
 The physical relations in thermodynamics make heavy use of [calculus I](!%20Calculus%20I%20Learning%20Overview) & [II](!%20Calculus%20II%20Learning%20Overview). Writing formulas with integrals and/or [differentials](Partial%20Differentiation) in them is the safest way to insure correct use of the formulas. During [integration](Integration) of the equations, constant terms can be placed outside of the integral if the situation allows for it, but, as such simplifications aren't a guarantee for all situations, the only way to ensure correct math and avoid unnecessary caveats on the listed formulas is to give the unintegrated form here. <br>Integrating physics formulas requires realizing which physical quantities are variable, and which are constants. After this distinction has been made the regular calculus rules can be applied. <br>The way to *think* about [partial differentiation](Partial%20Differentiation) and integration for physics formulas is to realize that certain quantities depend on others for their value. As such, these quantities are functions and can be integrated or differentiated as one. An equation like
 $$
@@ -31,7 +31,7 @@ $$
 $$
 dU = a\cdot f(x)dx + \left[ x \cdot  D_x \left[g(x) \right]_y - g(x) \right] dy
 $$
-Now, this may still be an unpleasantly complicated to compute equation, but it resembles the notation often seen in calculus courses much more, and with it the math becomes more clear.
+Now, this may still be an unpleasantly complicated equation to compute with, but it resembles the notation often seen in calculus courses much more, and with it the math becomes more clear.
 - ***[Example Integration of Physical Equations](example%20integration%20of%20physical%20equations)***
 ### Systems
 The term system is used to mean just "that which we are studying", this means that when looking at a system we are drawing a boundary between the subject of study, and that which is external and not included in our calculations. This boundary has great influence on how we approach the system, and there are a few different ways to draw this boundary. Think of a vat of water, you could draw the boundary at the vat itself to study it's dynamics, somewhere inside to study the [pressure](Pressure), or at the feet at the vat to study if it will break the floor. The choice of boundary can greatly help with and ease our calculations, because it may reduce the amount of variables we have to account for when solving equations. <br>We define three types of systems:
@@ -61,7 +61,7 @@ There are a few variables that determine what state a substance is in, namely th
 
 ### Types of Gas
 There are two main types of gas that we consider. The reason a distinction is made is to simplify certain relations. The ideal and perfect gases come with easier math, because molecular volume and intermolecular attraction have barely any influence on the calculations, which simplifies the mathematical relationships significantly. The distinction between these types of gas is more a distinction between do I get easy math or do I get harder math.
-1. ___Ideal & Perfect gases:___ These are gases that obey the ideal gas law%%LINKJE%%. Their math is greatly simplified compared to *real gases*. Below are some attributes, as well as some common examples.
+1. ___Ideal & Perfect gases:___ These are gases that obey the ideal gas law%%==LINKJE==%%. Their math is greatly simplified compared to *real gases*. Below are some attributes, as well as some common examples.
 	- Intermolecular attraction $\approx$ 0
 	- Molecular volume $\approx$ 0
 	- Compressible $\Rightarrow c_{\nu} \ne c_{p}$ <br> <br>*Examples are:*

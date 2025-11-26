@@ -9,15 +9,19 @@ tags: [[calculus]], [[differentials]], [[integrals]], [[ODE]], [[vector math]]  
 
 ### Geometrical Interpretation
 This note will discuss solutions to *generalized* differential equations. The most common (ordinary) differential equations are [first order](First%20Order%20Ordinary%20Differential%20Equations.md)- and [second order](Second%20Order%20Ordinary%20Differential%20Equations.md) ones. This note will discuss solutions to differential equations that are of the $n^{\text{th}}$ order, meaning anything ranging from $y'$, or $y^{(1)}$, to $y^{(n)}$. <br>The way the solution was found for [second order differential equations](Second%20Order%20Ordinary%20Differential%20Equations.md), assuming a solution of $y = e^{\lambda t}$, can be generalized to higher dimensions, as this quirk always persists.<br>There are **two types** of *second order* ordinary differential equations.
-1. ***[Homogeneous Ordinary Differential Equations](#Homogeneous%20Equations)***
-2. ***[Nonhomogeneous Ordinary Differential Equations](#Nonhomogeneous%20Equations)***
-
-These are further discussed in the chapters below.
+1. ***[Homogeneous Ordinary Differential Equations](#1.%20Homogeneous%20Equations)***
+2. ***[Nonhomogeneous Ordinary Differential Equations](#2.%20Nonhomogeneous%20Equations)***
 
 
 
-### Definition
-#### Homogeneous Equations
+
+
+### Finding Solutions
+There are two types of general DEs.
+1. ***[Homogeneous equations](#1.%20Homogeneous%20Equations):*** These equations can be brought into a form that looks like $ay''' + by'' + cy' + dy = 0$. There is no function of a second variable $x$ in the equation.
+2. ***[Nonhomogeneous equations](#2.%20Nonhomogeneous%20Equations):*** These equations are a more complicated version of homogeneous equations, where extra terms that can be a function of a second variable $x$ are present. These look like $ay''' + by'' + cy' + dy = f(x)$.
+3. ***[Complex equations](#3.%20Complex%20Solutions):*** Some problems will have solutions with complex roots. 
+#### 1. Homogeneous Equations
 Homogeneous equations are equations where every term in the equation is multiplied by some variant of $y$. For example $2y''' + 3y^" + 6y' + 5 y = 0$. Adding terms without a $y$, like $6t^3$ etc. would make the equation a [non-homogeneous equation](#Non-Homogeneous%20Equations). <br>A general form for the 3rd order would look like
 $$
 ay''' + by'' + cy' + dy = 0
@@ -63,7 +67,7 @@ $$
 
 
 
-#### Nonhomogeneous Equations
+#### 2. Nonhomogeneous Equations
 Nonhomogeneous equations are different to homogeneous equations in that there is a term that isn't multiplied by $y$. A general form for the 3$^{\text{rd}}$ order would look like
 $$
 ay''' + by'' + cy' + dy = f(t)
@@ -100,7 +104,7 @@ Depending on what $f(t)$ looks like we assume different forms to be our solution
 | Polynomial, $n^{\text{th}}$ grade[^erm2] | $$At^n + Bt^{n-1} + \dots + Yt + Z$$ |
 
 In the case that $c$ is also a root for $y_c$, we use the same trick as before to make the solution unique, namely multiplying by our variable. If, for example, we have root $e^{2t}$, but also want to use $Ae^{2t}$ for our particular solution, we must instead choose $Ate^{2t}$.
-##### Solving by Variation of Parameters
+##### Solving by *Variation of Parameters*
 For some problems $f(t)$ may not follow one of the forms tabulated above. In such cases we can use *variation of parameters* instead. The derivation for this is quite lengthy, and I find that it offers little insight to the processes at play here. For those interested, Paul Dawkins wrote a good explanation [here](https://tutorial.math.lamar.edu/Classes/DE/HOVariationOfParam.aspx/VariationofParameters.aspx) that I would recommend.
 The expression for  of an equation $ay''' + by'' + cy' + dy = f(t)$, with complementary solution $y_c = y_1 + y_2 + y_3$, is
 $$
@@ -136,7 +140,7 @@ $$
 
 
 
-#### Complex Solutions
+#### 3. Complex Solutions
 Complex solutions for $y$ are solutions where one of the solutions looks like
 $$
 y_1 = c_1 e^{i\theta}
@@ -156,7 +160,7 @@ $$
 
 
 ### Checking Solutions for Linear Dependence
-Remember from [second order differential equations](Second%20Order%20Ordinary%20Differential%20Equations.md) that the solution for $y$ was a combination of two separate solutions $e^{\lambda t}$.
+To know if our way of guessing the solution is **applicable** to the problem at hand and with it if our found solution is **valid**, we can check this solution for linear dependence. If we find **linear independence** then that means that our solution is valid. <br><br>Remember from [second order differential equations](Second%20Order%20Ordinary%20Differential%20Equations.md) that the solution for $y$ was a combination of two separate solutions $e^{\lambda t}$.
 $$
 y = c_1 e^{\lambda_1 t} + c_2 e^{\lambda_2 t}
 $$
