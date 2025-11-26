@@ -15,7 +15,7 @@ tags: [[dynamics]], [[integrals]], [[differentials]]     <br>18-11-2025
  In a general case[^2] it is true that energy is conserved, but it is important to realize that for the scope of dynamics problems not all energy flows can reasonably be accounted for. For example the conversion of energy into heat due to friction. This is why Lagrangian mechanics is *mostly* used to model **conservative systems**, systems where purely mechanical energies - such as kinetic and potential energy - are conserved.
  
  > [!warning] Note
- > Lagrangian mechanics is mostly used to model __conservative systems__, systems where purely mechanical energies - such as kinetic and potential energy - are conserved.
+ > Lagrangian mechanics is mostly used to model conservative systems, systems where purely mechanical energies - such as kinetic and potential energy - are conserved.
 
 ### Mathematical Formulation
 Lagrangian mechanics offer a way of finding the [equations of motion](Rigid%20Body%20Motion) without using [force](Force) vectors. This formulation relies on two equations:
