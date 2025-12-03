@@ -6,6 +6,9 @@ tags: [[calculus]], [[differentials]], [[integrals]], [[ODE]], [[vector math]]  
 
 ---
 # Generalized Ordinary Differential Equations
+The term *ordinary* is used to differentiate from [partial differential](Partial%20Differentiation) equations[^whyorddiffeq]. Ordinary differential equations will have a functions of a single variable only.
+
+[^whyorddiffeq]: Wikipedia, *Differential equation*, [link](https://en.wikipedia.org/wiki/Differential_equation#Ordinary_differential_equations).
 
 ### Geometrical Interpretation
 This note will discuss solutions to *generalized* differential equations. The most common (ordinary) differential equations are [first order](First%20Order%20Ordinary%20Differential%20Equations.md)- and [second order](Second%20Order%20Ordinary%20Differential%20Equations.md) ones. This note will discuss solutions to differential equations that are of the $n^{\text{th}}$ order, meaning anything ranging from $y'$, or $y^{(1)}$, to $y^{(n)}$. <br>The way the solution was found for [second order differential equations](Second%20Order%20Ordinary%20Differential%20Equations.md), assuming a solution of $y = e^{\lambda t}$, can be generalized to higher dimensions, as this quirk always persists.<br>There are **two types** of *second order* ordinary differential equations.
@@ -157,6 +160,13 @@ Solving complex-valued problems isn't too different from solving *normal* proble
 $$
 y = c_1 e^{\lambda_1 t} + c_2 e^{\lambda_2 t} + c_3 e^{(a + bi) t} = c_1 e^{\lambda_1 t} + c_2 e^{\lambda_2 t} + c_3e^{at}\left[ \cos({bt}) + i\sin(bt) \right]
 $$
+
+---
+
+
+For physical systems, say we have a mass on a spring that oscillates back and forth, the motion of the mass is described only by the real axis of the solution above. Thus, the solution for $\vec{\textbf{x}}_p$ is only $\vec{\textbf{x}}_1$. The real part of the solution tells us how much the function decays, and the imaginary part tells us how the solution oscillates[^q3b1b]. For a more complete intuitive understanding of imaginary solutions to differential equations I recommend [this video by 3Blue1Brown](https://youtu.be/-j8PzkZ70Lg?si=DyUTLJWS5O1XEbRf).
+
+[^q3b1b]: 3Blue1Brown, *The Physics of Euler's Formula | Laplace Transform Prelude*, 10-2025, US, [link](https://youtu.be/-j8PzkZ70Lg?si=LLhxjRJosSpOCZIJ).
 
 
 ### Checking Solutions for Linear Dependence

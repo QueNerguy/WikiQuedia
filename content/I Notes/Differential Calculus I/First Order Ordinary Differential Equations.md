@@ -6,18 +6,23 @@ tags: [[calculus]], [[differentials]], [[integrals]], [[ODE]]     <br>02-09-2025
 
 ---
 # First Order Ordinary Differential Equations
+%%
 - ***First order***, because the derivatives are singular, not of a higher order. Equations with double derivatives ($f^"$) are called a [second order ordinary differential equation](Second%20Order%20Ordinary%20Differential%20Equations.md).
 - ***Ordinary*** because we can rewrite this equation to only depend on only a **single variable**. For example $s$ depends on $t$ by rewriting to
 $$
 ds = v(t)dt
 $$
+%%
+The term *ordinary* is used to differentiate from [partial differential](Partial%20Differentiation) equations[^whyorddiffeq]. Ordinary differential equations will have a functions of a single variable only.
+
+[^whyorddiffeq]: Wikipedia, *Differential equation*, [link](https://en.wikipedia.org/wiki/Differential_equation#Ordinary_differential_equations).
 
 ### Geometrical Interpretation
 [Differential](Differentiation) equations appear often in physical models. They are equations where a differential form is part of the equation. Consider for example speed. the speed $v$ is defined as $s/t$. For the speed at an immediate moment we have[^defo] 
 $$
 v(t) = \frac{ds}{dt}
 $$
-The equation above is an example of a *differential equation*. <br>To be precise: the above equation is a **first order separable ordinary differential equation**. 
+The equation above is an example of a *differential equation*. <br>To be precise: the above equation is referred to as a **first order separable ordinary differential equation**. 
 - ***First order***, because the derivative is singular, not of a higher order. A double derivative ($f''$) would see it called a [second order ordinary differential equation](Second%20Order%20Ordinary%20Differential%20Equations.md). 
 - ***Separable***, because it is possible to bring the two variables ($s$ and $t$) to opposing sides of the equal sign by rewriting to 
 $$
@@ -34,7 +39,11 @@ $$
 
 
 
-The *goal* of solving differential equations is to eliminate the differentials and solve for the differentiated variable. So if we encounter $dy$ in an equation, we would try to create an equation that has no differential $dy$, only $y$.<br>There are **two types** of *first order* ordinary differential equations.
+The *goal* of solving differential equations is to eliminate the differentials and solve for the differentiated variable. So if we encounter $dy$ in an equation, we wish to find the expression of just $y$, so we can write the equations like we are used to, as some form
+$$
+y = f(x)
+$$
+There are **two types** of *first order* ordinary differential equations.
 1. ***[Separable Ordinary Differential Equations](#1.%20Separable%20Equations)***
 2. ***[Linear Ordinary Differential Equations](#2.%20Linear%20Equations)***
 

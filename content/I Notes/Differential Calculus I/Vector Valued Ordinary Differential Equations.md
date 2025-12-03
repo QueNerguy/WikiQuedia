@@ -6,15 +6,113 @@ tags: [[calculus]], [[differentials]], [[integrals]], [[ODE]], [[linear algebra]
 
 ---
 # Vector Valued Ordinary Differential Equations
+The term *ordinary* is used to differentiate from [partial differential](Partial%20Differentiation) equations[^whyorddiffeq]. Ordinary differential equations will have a functions of a single variable only.
+
+[^whyorddiffeq]: Wikipedia, *Differential equation*, [link](https://en.wikipedia.org/wiki/Differential_equation#Ordinary_differential_equations).
 
 ### Geometrical Interpretation
-Differentiation is not so different for vector valued functions, as opposed to scalar ones. Differentiating [matrix](Matrices) $A$ means *differentiating the elements* in $A$. <br>In math speak:
+[Differentiation](Differentiation) is not so different for vector valued functions compared to scalar ones. 
+Differentiating a vector $\vec{\textbf{a}}$ means  *differentiating the elements* in $\vec{\textbf{a}}$.<br>Thus, in math speak we have
+$$
+\vec{\textbf{a}} = \begin{bmatrix} a_1 \\ a_2 \\ a_3 \end{bmatrix} \qquad \Rightarrow \qquad \vec{\textbf{a}}' = \begin{bmatrix} a_1' \\ a_2' \\ a_3' \end{bmatrix}
+$$
+
+
+To differentiate [matrices](Matrices) is the exact same: Differentiating [matrix](Matrices) $A$ means *differentiating the elements* in $A$. Remember, a matrix can be seen as a collection of vectors making up it's basis, and as such the same rules apply.<br>In math speak: 
 $$
 A' = \left[ a_{ij}' \right]
 $$
-To differentiate vectors is the exact same. Remember, a matrix can be seen as a collection of vectors making up it's basis, and as such the same rules apply.
 
-### Solving Ordinary Differential Equations
+### Solving General Ordinary Differential Equations
+Because [differentiation](Differentiation) of vectors is so closely related to differentiation of scalars, we can apply much the same methods for solving *any* vector valued differential equation as we did for solving [generalized differential equations](Generalized%20Ordinary%20Differential%20Equations) to solve most differential equations you'll come across.
+
+#### Example of Solving Process
+**To illustrate** the above statement, we will solve the following system, which is a *second order ordinary differential equation*, differentiated with respect to time.
+$$
+\begin{cases} 4 \ddot{x} \:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\: + \:\:\: \dot{y} + 2x + y = 0 \\ \:\:\ddot{x} + 2\ddot{y} +  2\dot{x} + 2\dot{y} \:\:\:\:\:\:\:\:\:\:\: + y = 0\end{cases}
+$$
+We can rewrite this into a vector form as follows:
+$$
+\begin{bmatrix} 4 & 0 \\ 1 & 2 \end{bmatrix} \begin{bmatrix} \ddot{x} \\ \ddot{y} \end{bmatrix} + \begin{bmatrix} 0 & 1 \\ 2 & 2 \end{bmatrix} \begin{bmatrix} \dot{x} \\ \dot{y} \end{bmatrix} + \begin{bmatrix} 2 & 1 \\ 0 & 1 \end{bmatrix} \begin{bmatrix} x \\ y \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \end{bmatrix}
+$$
+We can rewrite this slightly by using the inverse of the fact that differentiating a vector means *differentiating the elements* of that vector. 
+$$
+\begin{bmatrix} 4 & 0 \\ 1 & 2 \end{bmatrix} \ddot{\begin{bmatrix} x \\ y \end{bmatrix}} + \begin{bmatrix} 0 & 1 \\ 2 & 2 \end{bmatrix} \dot{\begin{bmatrix} x \\ y \end{bmatrix}} + \begin{bmatrix} 2 & 1 \\ 0 & 1 \end{bmatrix} \begin{bmatrix} x \\ y \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \end{bmatrix}
+$$
+This is a useful formulation, because if we give these matrices some arbitrary names, and also give a variable to our coordinate system of $x$ and $y$ we are very close to the formulation of a [second order differential equation](Second%20Order%20Ordinary%20Differential%20Equations).<br>For example, lets call our coordinate vector $\vec{\textbf{q}}$ and choose $A$, $B$ and $C$ as the names for our matrices.
+$$
+A \ddot{\vec{\textbf{q}}} + B \dot{\vec{\textbf{q}}} + C \vec{\textbf{q}} = 0
+$$
+Now, this resembles a *homogeneous* second order differential equation to a t!<br>The exact same process can be done for any order of differential equation with vectors, as long as the expression is linear. That means that when we see $\cos(x)$ appear we have to jump through a couple of hoops to solve%%==LINKJE SOLVING NON LINEAR ORDINARY DIFFERENTIAL EQUATIONS==%%.<br>Continuing the example: To solve the scalar counterpart of these differential equations we start with some trial solution $y = e^{\lambda t}$. Now, because we want a solution for a *vector*, $\vec{\textbf{q}}$, we also guess a trial solution with a vector. Our trial solution is
+$$
+\vec{\textbf{q}} = \begin{bmatrix} v_1 \\ v_2 \end{bmatrix} e^{\lambda t} = \vec{\textbf{v}} e^{\lambda t}
+$$
+From here we use the familiar process:
+1. Differentiating $\vec{\textbf{q}}$ to $\dot{\vec{\textbf{q}}}$ and $\dot{\vec{\textbf{q}}}$ and substituting into the original equation to find the *characteristic equation*.
+2. Solving the characteristic equation to find $\lambda$.
+3. Substituting $\lambda$ into the general solution for $y$ to get the *general solution*. 
+4. Using *boundary equations* to solve for $c_1$ and $c_2$ to get the *complete solution*.
+
+So, let's do that. 
+$$
+\vec{\textbf{q}} = \vec{\textbf{v}} e^{\lambda t}
+$$
+$$
+\dot{\vec{\textbf{q}}} = \lambda \vec{\textbf{v}} e^{\lambda t}
+$$
+$$
+\ddot{\vec{\textbf{q}}} = \lambda^2 \vec{\textbf{v}} e^{\lambda t}
+$$
+When we substitute the new expressions for $\vec{\textbf{q}}$, $\dot{\vec{\textbf{q}}}$ and $\ddot{\vec{\textbf{q}}}$ into the original equation, we get
+$$
+A \ddot{\vec{\textbf{q}}} + B \dot{\vec{\textbf{q}}} + C \vec{\textbf{q}} \quad = \quad \lambda^2 A \vec{\textbf{v}} e^{\lambda t} + \lambda B \vec{\textbf{v}} e^{\lambda t} + C \vec{\textbf{v}} e^{\lambda t} = 0
+$$
+To solve the equation $\lambda^2 A \vec{\textbf{v}} e^{\lambda t} + \lambda B \vec{\textbf{v}} e^{\lambda t} + C \vec{\textbf{v}} e^{\lambda t} = 0$ we can divide everything by $e^{\lambda t}$ to just get
+$$
+(\lambda^2 A + \lambda B + C) \vec{\textbf{v}} = 0
+$$
+Do keep in mind that this division introduces the possibility of $e^{\lambda t}$ being 0, but, for a *finite* time $t$, $e^{\lambda t}$ can never become 0. <br>From the above expression we can find $\lambda$ by quickly putting back the original expressions for $A$, $B$ and $C$.
+$$
+\left( \lambda^2 \begin{bmatrix} 4 & 0 \\ 1 & 2 \end{bmatrix} + \lambda \begin{bmatrix} 0 & 1 \\ 2 & 2 \end{bmatrix} + \begin{bmatrix} 2 & 1 \\ 0 & 1 \end{bmatrix} \right) \vec{\textbf{v}} = 0
+$$
+$$
+\left( \begin{bmatrix} 4 \lambda^2 & 0 \\ \lambda^2 & 2\lambda^2 \end{bmatrix} + \begin{bmatrix} 0 & \lambda \\ 2 \lambda & 2 \lambda \end{bmatrix} + \begin{bmatrix} 2 & 1 \\ 0 & 1 \end{bmatrix} \right) \vec{\textbf{v}}= 0
+$$
+$$
+\begin{bmatrix} 4 \lambda^2 + 2 & \lambda + 1 \\ \lambda^2 + 2\lambda & 2\lambda^2 + 2\lambda + 1 \end{bmatrix} \vec{\textbf{v}} = 0
+$$
+For this system to become 0 we have **two** possibilities: either $\vec{\textbf{v}}$ is the 0-vector, which solution isn't of interest to us, as for physical systems this just means that there is no motion, or the matrix is linearly dependent%%==linkje basisregel van linalg of iets dergelijks==%%. In the last case that means that the determinant%%==linkje DETERMINANT==%% must be 0. As such we compute 
+$$
+\begin{vmatrix} 4 \lambda^2 + 2 & \lambda + 1 \\ \lambda^2 + 2\lambda & 2\lambda^2 + 2\lambda + 1 \end{vmatrix} = 8\lambda^4 + 7\lambda^3 + 5\lambda^2 + 2\lambda + 2 = 0
+$$
+The [exact solutions](https://www.wolframalpha.com/input?i2d=true&i=%5C(40)Power%5Bx%2C2%5D%20%2B%202%5C(41)%5C(40)2Power%5Bx%2C%202%5D%2B%202x%20%2B%201%5C(41)%20-%20%5C(40)x%20%2B%201%5C(41)%5C(40)Power%5Bx%2C%202%5D%2B%202x%5C(41)%20%3D%200) for $\lambda$ are too long to mention here, but the approximate solutions are
+$$
+\begin{matrix} \lambda_1 = -0.7 - 0.6i \\ \lambda_2 = -0.7 + 0.6i \\ \lambda_3 = 0.4 - i \\ \lambda_4 = 0.4 + i  \end{matrix}
+$$
+Now that we have found solutions for $\lambda$, let's look at the guessed solution. $\vec{\textbf{q}} = \vec{\textbf{v}} e^{\lambda t}$, we still need to find $\vec{\textbf{v}}$. We can do this by filling in the result of $\lambda$ into the matrix above and row reducing%%==LINKJE ROW REDUCTION OR WHATEVER==%% to find the associated vector.
+$$
+\vec{\textbf{v}}_1 \rightarrow
+\left[\begin{array}{rr|r}
+4 \lambda_1^2 + 2 & \lambda_1 + 1 & 0 \\
+\lambda_1^2 + 2\lambda_1 & 2\lambda_1^2 + 2\lambda_1 + 1  & 0
+\end{array}\right]
+$$
+In this case the **4** solutions for $\vec{\textbf{v}}$ will be [complex](#3.%20Complex%20Solutions). <br>We will find $\vec{\textbf{q}}$ to be a linear combination of the 4 roots:
+$$
+\vec{\textbf{q}} = c_1 \vec{\textbf{v}}_1 e^{\lambda_1 t} + c_2 \vec{\textbf{v}}_2 e^{\lambda_2 t} + c_3 \vec{\textbf{v}}_3 e^{\lambda_3 t} + c_4 \vec{\textbf{v}}_4 e^{\lambda_4 t}
+$$
+
+>[!error]
+> These have to be linearly dependent in some way, $\vec{\textbf{q}}$ only has two dimensions.
+
+
+%%
+>[!warning]
+> In the example above the quadratic formula was used to obtain a solution for $\lambda$. For polynomials of 5$^{\text{th}}$ degree or higher a method like this doesn't exist. This means that this method is not viable for solving *any* order differential equation, only differential equations up to and including 4$^{\text{th}}$ order, unless you get lucky with the matrices somehow.
+
+%%
+
+### Solving First Order Differential Equations
 This chapter will discuss solving any order differential equation of the form
 $$
 \vec{\textbf{x}}^{(n)} = A \vec{\textbf{x}} \qquad \text{or} \qquad \vec{\textbf{x}}^{(n)} + A \vec{\textbf{x}} = 0
@@ -265,10 +363,12 @@ $$
 $$
 \vec{\textbf{x}}_2 = \text{Im}[\vec{\textbf{x}}] = \text{Im}\left[ e^{4t} \begin{bmatrix} i\sin(-3t) \\ i\cos(-3t) \end{bmatrix} \right] = e^{4t} \begin{bmatrix} \sin(-3t) \\ \cos(-3t) \end{bmatrix}
 $$
-If we don't want to find a complex solution for $\vec{\textbf{x}}_p$, we can combine $\vec{\textbf{x}}_1$ and $\vec{\textbf{x}}_2$ instead to get a solution
+Finally, to show that $\vec{\textbf{x}}_p$ is indeed a linear combination we can combine the terms again. While combining, keep in mind that $\vec{\textbf{x}}_2$ is the imaginary part, and must thus be multiplied with $i$ again to give back the original equation, thus $\vec{\textbf{x}}_p= \text{Re}[\vec{\textbf{x}}_p] + i \cdot \text{Im} [\vec{\textbf{x}}_p]$. Back substituting $\vec{\textbf{x}}_1 = \text{Re}[\vec{\textbf{x}}_p]$ and $\vec{\textbf{x}}_2 = \text{Im}[\vec{\textbf{x}}_p]$ from before, we get
 $$
-\vec{\textbf{x}}_{p\:\text{real}} = \vec{\textbf{x}}_1 + \vec{\textbf{x}}_2 = e^{4t} \begin{bmatrix} \cos(-3t) \\ - \sin(-3t)] \end{bmatrix} + e^{4t} \begin{bmatrix} \sin(-3t) \\ \cos(-3t) \end{bmatrix}
+\vec{\textbf{x}}_p = \vec{\textbf{x}}_1 + i \vec{\textbf{x}}_2 = e^{4t} \begin{bmatrix} \cos(-3t) \\ - \sin(-3t)] \end{bmatrix} + e^{4t} \begin{bmatrix} \sin(-3t) \\ \cos(-3t) \end{bmatrix}
 $$
+
+%%Make real by wegpoetsing van $i$???
 Note that this solution is no more or less valid than the original solution for $\vec{\textbf{x}}_p$, it is just a different form of the same solution. Be aware that this is still a particular solution, not the general solution.<br>The **general real**[^genimag] **solution** is
 $$
 \vec{\textbf{x}}_{\text{real}} = c_1 \vec{\textbf{x}}_1 + c_2 \vec{\textbf{x}}_2 = c_1 e^{4t} \begin{bmatrix} \cos(-3t) \\ - \sin(-3t)] \end{bmatrix} + c_ 2e^{4t} \begin{bmatrix} \sin(-3t) \\ \cos(-3t) \end{bmatrix}
@@ -277,13 +377,19 @@ Lastly, the associated scalar solution looks like
 $$
 \vec{\textbf{x}}_\text{real} = \begin{cases} e^{4t} [c_1 \cos(-3t) + c_ 2\sin(-3t)] \\ e^{4t} [c_2 \cos(-3t) - c_1\sin(-3t)] \end{cases}
 $$
+%%
 
 >[!abstract] Inventory
-> The long and short of complex solutions is that solving them is done using the same methods and steps as are necessary for non-complex solutions, with the difference being applying *Euler's formula* and not having to compute all eigenvectors to find a solution. 
-> Furthermore, depending on the use case it can be beneficial to find a real solution $\vec{\textbf{x}}_\text{real}$ instead of the original complex $\vec{\textbf{x}}$.
+> The long and short of complex solutions is that solving them is done using the same methods and steps as are necessary for non-complex solutions, with the difference being applying *Euler's formula* and not necessarily having to compute all eigenvectors to find a solution. 
 
 
+%%> Furthermore, depending on the use case it can be beneficial to find a real solution $\vec{\textbf{x}}_\text{real}$ instead of the original complex $\vec{\textbf{x}}$.%%
 
+---
+
+For physical systems, say we have a mass on a spring that oscillates back and forth, the motion of the mass is described only by the real axis of the solution above. Thus, the solution for $\vec{\textbf{x}}_p$ is only $\vec{\textbf{x}}_1$. The real part of the solution tells us how much the function decays, and the imaginary part tells us how the solution oscillates[^q3b1b]. For a more complete intuitive understanding of imaginary solutions to differential equations I recommend [this video by 3Blue1Brown](https://youtu.be/-j8PzkZ70Lg?si=DyUTLJWS5O1XEbRf).
+
+[^q3b1b]: 3Blue1Brown, *The Physics of Euler's Formula | Laplace Transform Prelude*, 10-2025, US, [link](https://youtu.be/-j8PzkZ70Lg?si=LLhxjRJosSpOCZIJ).
 
 
 

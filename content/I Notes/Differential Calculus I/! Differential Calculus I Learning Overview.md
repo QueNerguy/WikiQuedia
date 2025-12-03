@@ -10,7 +10,9 @@ Type: #hub
 # ! Differential Calculus Learning Overview
 
 
-The term *ordinary* is used to differentiate from [partial differential](Partial%20Differentiation) equations[^1]. Ordinary differential equations will have a functions of a single variable only.
+The term *ordinary* is used to differentiate from [partial differential](Partial%20Differentiation) equations[^whyorddiffeq]. Ordinary differential equations will have a functions of a single variable only.
+
+[^whyorddiffeq]: Wikipedia, *Differential equation*, [link](https://en.wikipedia.org/wiki/Differential_equation#Ordinary_differential_equations).
 
 %%
 !%20Differential%20Calculus%20Learning%20Overview

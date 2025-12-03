@@ -6,11 +6,17 @@ tags: [[calculus]], [[differentials]], [[integrals]], [[ODE]]     <br>08-09-2025
 
 ---
 # Second Order Ordinary Differential Equations
+%%
 - ***Second order***, because the derivatives are double (in combination with singular derivatives), not of a higher order. Equations with *only* a first derivative ($f'$) would see it called a [first order ordinary differential equation](First%20Order%20Ordinary%20Differential%20Equations.md).
 - ***Ordinary*** because we can rewrite this equation to only depend on only **a single variable**. For example $s$ depends on $t$ by rewriting to
 $$
 ds = v(t)dt
 $$
+%%
+
+The term *ordinary* is used to differentiate from [partial differential](Partial%20Differentiation) equations[^whyorddiffeq]. Ordinary differential equations will have a functions of a single variable only.
+
+[^whyorddiffeq]: Wikipedia, *Differential equation*, [link](https://en.wikipedia.org/wiki/Differential_equation#Ordinary_differential_equations).
 
 ### Geometrical Interpretation
 Second order ordinary differential equations build on the knowledge of [first order ordinary differential equations](First%20Order%20Ordinary%20Differential%20Equations.md). The solutions to these problems are found in a different way however. <br>The *goal* of solving differential equations is to eliminate the differentials and solve for the differentiated variable. So if we encounter $dy$ in an equation, we would try to create an equation that has no differential $dy$, only $y$.<br>There are **two types** of *second order* ordinary differential equations.
@@ -154,7 +160,11 @@ $$
 y = c_1 e^{\lambda_1 t} + c_2 e^{(a + bi) t} = c_1 e^{\lambda_1 t} + c_2 e^{at}\left[ \cos({bt}) + i\sin(bt) \right]
 $$
 
+---
 
+For physical systems, say we have a mass on a spring that oscillates back and forth, the motion of the mass is described only by the real axis of the solution above. Thus, the solution for $\vec{\textbf{x}}_p$ is only $\vec{\textbf{x}}_1$. The real part of the solution tells us how much the function decays, and the imaginary part tells us how the solution oscillates[^q3b1b]. For a more complete intuitive understanding of imaginary solutions to differential equations I recommend [this video by 3Blue1Brown](https://youtu.be/-j8PzkZ70Lg?si=DyUTLJWS5O1XEbRf).
+
+[^q3b1b]: 3Blue1Brown, *The Physics of Euler's Formula | Laplace Transform Prelude*, 10-2025, US, [link](https://youtu.be/-j8PzkZ70Lg?si=LLhxjRJosSpOCZIJ).
 
 
 ### Inventory
