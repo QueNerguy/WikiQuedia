@@ -112,7 +112,7 @@ $$
 
 %%
 
-### Solving First Order Differential Equations
+### Solving Two Term Differential Equations
 This chapter will discuss solving any order differential equation of the form
 $$
 \vec{\textbf{x}}^{(n)} = A \vec{\textbf{x}} \qquad \text{or} \qquad \vec{\textbf{x}}^{(n)} + A \vec{\textbf{x}} = 0
@@ -122,11 +122,7 @@ This is especially useful for [first order differential equations](First%20Order
 > The above equation can be any *homogeneous equation*. To make the explanation more concrete however, from now on we will treat the case of the first order $\vec{\textbf{x}}'$, but remember that the methods look and act the same regardless of the order. 
 
 
-$A$ is the transformation [matrix](Matrices) that changes the coordinate vector $\vec{\textbf{x}}$ to become the differentiated coordinate vector $\vec{\textbf{x}}'$. To make the vector form more similar to the notation we would use for scalar valued functions, we could rewrite the above equation to $\vec{\textbf{x}}' - A \vec{\textbf{x}} = 0$. <br>A matrix system can be seen as a collection of equations, like the one below for a 3 dimensional matrix $A$.
-$$
-\begin{cases} x_1' = P_{1,1} x_1 + P_{1,2} x_2 + P_{1,3} x_3 \\ x_2' = P_{2,1} x_1 + P_{2,2} x_2 + P_{2,3} x_3 \\ x_3' = P_{3,1} x_1 + P_{3,2} x_2 + P_{3,3} x_3 \end{cases}
-$$
-We cannot integrate these equations directly [like we did before](First%20Order%20Ordinary%20Differential%20Equations.md#Separable%20Equations) for first order systems. Instead, we may use the same trick we used for [second order systems](Second%20Order%20Ordinary%20Differential%20Equations.md), where we take a trial solution of $\vec{\textbf{x}} = \vec{\textbf{v}}e^{\lambda t}$, with derivative $\vec{\textbf{x}}' = \lambda \vec{\textbf{v}} e^{\lambda t}$. <br>If we substitute this into the equation $\vec{\textbf{x}}' = A \vec{\textbf{x}}$, we get
+$A$ is the transformation [matrix](Matrices) that changes the coordinate vector $\vec{\textbf{x}}$ to become the differentiated coordinate vector $\vec{\textbf{x}}'$. To make the vector form more similar to the notation we would use for scalar valued functions, we could rewrite the above equation to $\vec{\textbf{x}}' - A \vec{\textbf{x}} = 0$. <br>We cannot integrate these equations directly [like we did before](First%20Order%20Ordinary%20Differential%20Equations.md#Separable%20Equations) for first order systems. Instead, we may use the same trick we used for [second order systems](Second%20Order%20Ordinary%20Differential%20Equations.md), where we take a **trial solution** of $\vec{\textbf{x}} = \vec{\textbf{v}}e^{\lambda t}$, with derivative $\vec{\textbf{x}}' = \lambda \vec{\textbf{v}} e^{\lambda t}$. <br>If we substitute this into the equation $\vec{\textbf{x}}' = A \vec{\textbf{x}}$, we get
 $$
 \vec{\textbf{x}}' = A \vec{\textbf{x}} \qquad \Rightarrow \qquad \lambda \vec{\textbf{v}} e^{\lambda t} = A \vec{\textbf{v}} e^{\lambda t}
 $$
@@ -150,13 +146,13 @@ A\vec{\textbf{v}} - \lambda I\vec{\textbf{v}} = 0 \qquad \Rightarrow \qquad (A -
 $$
 For $\left( A - \lambda I \right)$ to become 0 under multiplication with $\vec{\textbf{v}}$ we have two solutions.
 1. $\vec{\textbf{v}}$ is 0.
-2. $\left( A - \lambda I \right)$ is the 0-matrix.
+2. $\left( A - \lambda I \right)$ is linearly dependent.
 
-The determinant%%==LINKJE DETERMINANT==%% is measure of the area under the matrix, and because the 0-matrix has no area, the determinant is 0. Subsequently the determinant of $\left( A - \lambda I \right)$ is 0 as well. <br>Assuming $\vec{\textbf{v}}$ isn't the 0-vector, we can thus find $\lambda$ by solving
+Linearly dependent matrices essentially have one dimension less than they are big. In a 2D space you can imagine this as the matrix creating a line instead of a plane. To find out whether the matrix makes this plane or a line we may use the determinant%%==LINKJE DETERMINANT==%%, because it is similar to a measure of the area under the matrix. Because lines have no area, the determinant is 0. <br>Thus, assuming $\vec{\textbf{v}}$ isn't the 0-vector, we can thus find $\lambda$ by solving
 $$
  \left| A - \lambda I \right| = 0
 $$
-We can then find $\vec{\textbf{v}}$ by using the earlier equation $(A - \lambda I) \vec{\textbf{v}} = 0$ and solving the augmented matrix $\left[ A - \lambda I \: | \: 0 \right]$. $\vec{\textbf{v}}$ is the *eigenvector* of matrix $A$. Recount from [generalized ODEs](Generalized%20Ordinary%20Differential%20Equations.md) that the solution to any differential equation can be written as a linear combination of every solution for $\vec{\textbf{x}}$, with as many solutions as there are roots of the *characteristic equation*. In the case of our $\vec{\textbf{x}}$ then, we can write for our **general solution** that
+We can then find $\vec{\textbf{v}}$ by using the earlier equation $(A - \lambda I) \vec{\textbf{v}} = 0$ and solving the augmented matrix $\left[ A - \lambda I \: | \: 0 \right]$. Notice that $\vec{\textbf{v}}$ is the *eigenvector* of matrix $A$. <br>Recount from [generalized ODEs](Generalized%20Ordinary%20Differential%20Equations.md) that the solution to any differential equation can be written as a linear combination of every solution for $\vec{\textbf{x}}$, with as many solutions as there are roots of the *characteristic equation*. In the case of our $\vec{\textbf{x}}$ then, we can write for our **general solution** that
 $$
 \vec{\textbf{x}} = c_1 \vec{\textbf{x}}_1 + c_2 \vec{\textbf{x}}_ 2 + \dots + c_n \vec{\textbf{x}}_n \qquad \Rightarrow \qquad \vec{\textbf{x}} = c_1 \vec{\textbf{v}}_1 e^{\lambda _1 t} + c_2 \vec{\textbf{v}}_2 e^{\lambda _2 t} + \dots + c_n \vec{\textbf{v}}_n e^{\lambda _n t}
 $$
@@ -269,11 +265,11 @@ Solving for $a$ and $b$ gives us $a = -b$, but no free variable that can create 
 $$
 \vec{\textbf{v}}_1 = \begin{bmatrix} 1 \\ -1 \end{bmatrix}
 $$
-Therefore we can't use method **1.** and we call the eigenvalue $\lambda = 4$ *defective*. <br>In this chapter a multiplicity of 2 for a single eigenvalue will be discussed, not the general case. <br>We find a solution by trial. We start by using the same technique as used for repeated roots in scalar equations, where we multiply the repeating term with $t$. We choose a yet to be determined second eigenvector $\vec{\textbf{v}}_2$ and write
+Therefore we can't use method **1.** and we call the eigenvalue $\lambda = 4$ *defective*. <br>In this chapter a multiplicity of 2 for a single eigenvalue will be discussed, not the general case. <br>We find a solution by trial. To show the whole thought process that leads to the final expression, we must first show why the previous methods used for multiplicities don't work here. <br>We thus start by using the same technique as used for repeated roots in scalar equations, where we multiply the repeating term with $t$. We choose a yet to be determined second eigenvector $\vec{\textbf{v}}_2$ and write
 $$
 \vec{\textbf{x}}_2 = \vec{\textbf{v}}_2 te^{\lambda t}
 $$
-The term $\vec{\textbf{x}}_2$ is used because we have already found an eigenvector so we can construct $\vec{\textbf{x}}_1$, we however can not construct $\vec{\textbf{x}}_2$ immediately because the second eigenvector is missing. <br>We can substitute $\vec{\textbf{x}}_2$ into the original equation $\vec{\textbf{x}}' = A \vec{\textbf{x}}$, applying the chain rule for the derivative of $\vec{\textbf{x}}_2$ yields $\vec{\textbf{x}}_2' = \vec{\textbf{v}}_2 \lambda t e^{\lambda t} + \vec{\textbf{v}}_2 e^{\lambda t}$.
+The term $\vec{\textbf{x}}_2$ is used because we have already found an eigenvector, meaning that the expression for $\vec{\textbf{x}}_1$ already exists. <br>We can substitute $\vec{\textbf{x}}_2$ into the original equation $\vec{\textbf{x}}' = A \vec{\textbf{x}}$. While substituting, keep in mind that applying the chain rule for the derivative of $\vec{\textbf{x}}_2$ yields $\vec{\textbf{x}}_2' = \vec{\textbf{v}}_2 \lambda t e^{\lambda t} + \vec{\textbf{v}}_2 e^{\lambda t}$.
 $$
 \vec{\textbf{x}}_2' = A \vec{\textbf{x}}_2 \qquad \Rightarrow \qquad \left( \vec{\textbf{v}}_2 \lambda t e^{\lambda t} + \vec{\textbf{v}}_2 e^{\lambda t} \right) = A \left( \vec{\textbf{v}}_2 te^{\lambda t} \right)
 $$
@@ -281,11 +277,11 @@ We can see two equations emerge from this,
 $$
 \left( \vec{\textbf{v}}_2 \lambda \right) te^{\lambda t} = \left(A \vec{\textbf{v}}_2 \right) te^{\lambda t} \qquad \text{and} \qquad \vec{\textbf{v}}_2 e^{\lambda t} = 0 \cdot e^{\lambda t}
 $$
-Thus we have that $\vec{\textbf{v}}_2$ is 0. This means that multiplying by $t$ does not give a non-zero answer for the second eigenvector. Instead, we try a combination of both eigenvectors, the known eigenvector $\vec{\textbf{v}}_1$, and the to be determined second eigenvector $\vec{\textbf{v}}_2$. We try
+Thus we have that $\vec{\textbf{v}}_2$ is 0. This means that multiplying by $t$ does not give a non-zero answer for the second eigenvector, **and this method doesn't work**.<br>Next, we try a combination of *both eigenvectors*, the known eigenvector $\vec{\textbf{v}}_1$, and the to-be-determined second eigenvector, $\vec{\textbf{v}}_2$. <br>We try
 $$
 \vec{\textbf{x}}_2 = \left( \vec{\textbf{v}}_1 t + \vec{\textbf{v}}_2 \right) e^{\lambda t}
 $$
-Once again, we substitute $\vec{\textbf{x}}_2$ into the equation $\vec{\textbf{x}}_2' = A \vec{\textbf{x}}_2$, realizing that the derivative of $\vec{\textbf{x}}_2$ is $\vec{\textbf{v}}_1 e^{\lambda t} + \vec{\textbf{v}}_1 \lambda t e^{\lambda t} + \vec{\textbf{v}}_2 \lambda e^{\lambda t}$.
+Once again, we substitute $\vec{\textbf{x}}_2$ into the equation $\vec{\textbf{x}}_2' = A \vec{\textbf{x}}_2$, whilst keeping in mind that the derivative of $\vec{\textbf{x}}_2$ is $\vec{\textbf{v}}_1 e^{\lambda t} + \vec{\textbf{v}}_1 \lambda t e^{\lambda t} + \vec{\textbf{v}}_2 \lambda e^{\lambda t}$.
 $$
 \vec{\textbf{x}}' = A \vec{\textbf{x}} \quad \Rightarrow \quad \vec{\textbf{v}}_1 e^{\lambda t} + \vec{\textbf{v}}_1 \lambda t e^{\lambda t} + \vec{\textbf{v}}_2 \lambda e^{\lambda t} = A \left( \vec{\textbf{v}}_1 t + \vec{\textbf{v}}_2 \right) e^{\lambda t}
 $$
@@ -299,15 +295,15 @@ $$
 $$
 (A - \lambda I) \vec{\textbf{v}}_2 = \vec{\textbf{v}}_1 \quad \text{and} \quad (A - \lambda I) \vec{\textbf{v}}_1 = 0
 $$
-Recognize the second term as part of the steps taken to find $\vec{\textbf{v}}_1$ in the first place. The appearance of this term confirms that $\vec{\textbf{v}}_1$ is indeed an eigenvector, and by extension, so will $\vec{\textbf{v}}_2$ be. <br>We can solve the augmented matrix $\left[A- \lambda I \: | \: \vec{\textbf{v}}_1 \right]$ to find $\vec{\textbf{v}}_2$. In the start of our example we already had used an expression for $(A- \lambda I) = (A - 4I)$.
+Recognize the second term of the last equation as part of the steps taken to find $\vec{\textbf{v}}_1$ in the first place. The appearance of this term *confirms* that $\vec{\textbf{v}}_1$ is indeed an eigenvector, and by extension, so will be $\vec{\textbf{v}}_2$. <br>To find $\vec{\textbf{v}}_2$, we can solve the augmented matrix $\left[A- \lambda I \: | \: \vec{\textbf{v}}_1 \right]$. <br>Continuing the numerical example, where, as shown at the start, we have $\lambda = 4$ and the augmented matrix was
 $$
-\vec{\textbf{v}}_2 = \left[A- \lambda I \: | \: \vec{\textbf{v}}_1 \right] = \left[ \begin{array}{cc|c} -3 & -3 & 1 \\ 3 & 3 & -1 \end{array} \right]
+\left[A- \lambda I \: | \: \vec{\textbf{v}}_1 \right] = \left[ \begin{array}{cc|c} -3 & -3 & 1 \\ 3 & 3 & -1 \end{array} \right]
 $$
-We can now find $\vec{\textbf{v}}_2$ by row reducing this matrix. Alternatively, we can simplify the original equation $(A - \lambda I) \vec{\textbf{v}}_2 = \vec{\textbf{v}}_1$ by substituting into the second equation we obtained[^arithmetic]. This yields
+We can now find $\vec{\textbf{v}}_2$ by row reducing this matrix. <br>Another - more direct - way to find $\vec{\textbf{v}}_2$ can be found by rewriting some of the previous formulas. Namely, we can simplify the original equation $(A - \lambda I) \vec{\textbf{v}}_2 = \vec{\textbf{v}}_1$ by substituting into the second equation we obtained[^arithmetic]. <br>This yields
 $$
 (A - \lambda I)^2 \vec{\textbf{v}}_2 = 0
 $$
-We can thus always find $\vec{\textbf{v}}_2$ by solving $\left[\begin{array}{c|c} (A-\lambda I)^2 & 0  \end{array}\right]$. <br>Because we guessed $\vec{\textbf{x}}_2 = \left( \vec{\textbf{v}}_1 t + \vec{\textbf{v}}_2 \right) e^{\lambda t}$, we have for our solutions $\vec{\textbf{x}}_1$ and $\vec{\textbf{x}}_2$
+We can thus always find $\vec{\textbf{v}}_2$ by solving the augmented matrix $\left[\begin{array}{c|c} (A-\lambda I)^2 & 0  \end{array}\right]$. %%<br>Because we guessed $\vec{\textbf{x}}_2 = \left( \vec{\textbf{v}}_1 t + \vec{\textbf{v}}_2 \right) e^{\lambda t}$, we have for our solutions $\vec{\textbf{x}}_1$ and $\vec{\textbf{x}}_2$ ==end of this example went missing and im too lazy to find it in that shit book agane==%%
 
 
 >[!abstract] Inventory
@@ -337,36 +333,37 @@ Trying to find the [eigenvalues](Eigenvectors%20and%20Eigenvalues) for some real
 $$
 (4 - \lambda) ^2 + 9 = 0 \qquad \Rightarrow \qquad \lambda = 4 \pm \sqrt{-9} = 4 \pm 3i
 $$
-In the case of complex eigenvalues we always have a solution $\lambda$ and a solution $\bar{\lambda}$, in this case we have $\lambda_1 = \lambda = 4 + 3i$ and $\lambda_2 = \bar{\lambda} = 4 - 3i$. The appearance of a positive and a negative imaginary part is a result of the square root as part of the definition of $i$. A square root's solutions are always plus or minus the enclosed term, thus complex solutions will always have a positive and a negative imaginary term.  <br>Complex solutions are no less valid than real solutions, and the [eigenvectors](Eigenvectors%20and%20Eigenvalues) $\vec{\textbf{v}}$ can be found all the same by solving $\left[ A - \lambda I \right] \vec{\textbf{v}} = 0$. The resulting eigenvector can have a complex solution. Building on the first example we could have a solution for the eigenvector like $\vec{\textbf{v}}_1 = \begin{bmatrix} 1 \\ i \end{bmatrix}$. This eigenvector can be split into a real and an imaginary part, $\vec{\textbf{v}}_1 = \begin{bmatrix} 1 \\ 0 \end{bmatrix} + \begin{bmatrix} 0 \\ 1 \end{bmatrix} i$. The real part is sometimes denoted as $\text{Re} \left[ \vec{\textbf{v}}_1 \right]$, and the imaginary part as $\text{Im} \left[ \vec{\textbf{v}}_1 \right]$. <br>Even though we have **two** roots for $\lambda$, namely $\lambda_1 = \lambda$ and $\lambda_2 = \bar{\lambda}$, the solution for $\vec{\textbf{x}}$ of this homogeneous system *can* only use one of these values. The system requires two solutions because there are two roots, but because our solution is complex we can break the solution for a single root up into a real and an imaginary part, and thus yield two solutions from a single eigenvalue. We thus don't need to compute $\vec{\textbf{v}}_2$ and can choose the $\lambda$ that eases our computations as much as possible.
+In the case of complex eigenvalues we always have a solution $\lambda$ and a solution $\bar{\lambda}$, in this case we have $\lambda_1 = \lambda = 4 + 3i$ and $\lambda_2 = \bar{\lambda} = 4 - 3i$. The appearance of a positive and a negative imaginary part is a result of the square root as part of the definition of $i$. A square root's solutions are always plus or minus the *enclosed term* and as a result complex solutions will always have a positive and a negative <u>imaginary</u> term.  <br>Complex solutions are no less valid than real solutions, and the [eigenvectors](Eigenvectors%20and%20Eigenvalues) $\vec{\textbf{v}}$ can be found all the same by solving $\left[ A - \lambda I \right] \vec{\textbf{v}} = 0$. The resulting eigenvector can also be complex. To show how these are treated: In the case of the first example we could have a solution for the eigenvector like $\vec{\textbf{v}}_1 = \begin{bmatrix} 1 \\ i \end{bmatrix}$. This eigenvector can be split into a real and an imaginary part, $\vec{\textbf{v}}_1 = \begin{bmatrix} 1 \\ 0 \end{bmatrix} + \begin{bmatrix} 0 \\ 1 \end{bmatrix} i$. Calling only the real part is done by writing $\text{Re} \left[ \vec{\textbf{v}}_1 \right]$, and the imaginary part by writing $\text{Im} \left[ \vec{\textbf{v}}_1 \right]$. The result from calling $\text{Im} \left[ \vec{\textbf{v}}_1 \right]$ does not include $i$ itself! <br>For complex solutions we can save some time on finding the eigenvectors, because even though we will have **two** roots for $\lambda$ (namely $\lambda_1 = \lambda$ and $\lambda_2 = \bar{\lambda}$) the solution for $\vec{\textbf{x}}$ of this homogeneous system *can* use only **one** of these values to find **both** eigenvectors if we wish to. The system requires two solutions - because there are two roots to the characteristic equation - but because our solution is complex we can break the solution for one of them up into a *real* and an *imaginary* part, and thus get two solutions from a single eigenvalue and eigenvector combination. We thus don't need to compute a $\vec{\textbf{v}}_2$ and can choose the $\lambda$ that eases our computations as much as possible.<br>To illustrate see the following problem. We have found the first solution for $\vec{\textbf{x}}$, call it $\vec{\textbf{x}}_a$, and we want to use this expression alone to get a complete formulation for $\vec{\textbf{x}}$. We have
 $$
-\vec{\textbf{x}}_p = \vec{\textbf{v}}_1 e^{\lambda t} = \begin{bmatrix} 1 \\ i \end{bmatrix} e^{(4 - 3i) t}
+\vec{\textbf{x}}_a = \vec{\textbf{v}}_1 e^{\lambda t} = \begin{bmatrix} 1 \\ i \end{bmatrix} e^{(4 - 3i) t}
 $$
-We can break this solution up by using *[Euler's formula](https://en.wikipedia.org/wiki/Euler's_formula)*[^deriv], which states
+We can break this solution up by using *[Euler's formula](https://en.wikipedia.org/wiki/Euler's_formula)*[^deriv], which has
 $$
 e^{i \theta} = \cos({\theta}) + i\sin(\theta)
 $$
-Complex functions where $\lambda$ has a solution $a + bi$ can be deconstructed as follows:
+To apply this to our case, know that complex functions where $\lambda$ has a solution $a + bi$ can be deconstructed as follows:
 $$
 e^{(a+bi)t} = e^{at}e^{ibt} = e^{at}\left[ \cos({bt}) + i\sin(bt) \right]
 $$
 Thus, in our case, we get
 $$
-\vec{\textbf{x}}_p = \begin{bmatrix} 1 \\ i \end{bmatrix} e^{(4 - 3i) t} = \begin{bmatrix} 1 \\ i \end{bmatrix} e^{4t} \left[ \cos(-3t) + i\sin(-3t) \right]
+\vec{\textbf{x}}_a = \begin{bmatrix} 1 \\ i \end{bmatrix} e^{(4 - 3i) t} = \begin{bmatrix} 1 \\ i \end{bmatrix} e^{4t} \left[ \cos(-3t) + i\sin(-3t) \right]
 $$
 $$
-\vec{\textbf{x}}_p = e^{4t} \begin{bmatrix} \cos(-3t) + i\sin(-3t) \\ i[\cos(-3t) + i\sin(-3t)] \end{bmatrix} = e^{4t} \begin{bmatrix} \cos(-3t) + i\sin(-3t) \\ i\cos(-3t) - \sin(-3t) \end{bmatrix}
+\vec{\textbf{x}}_a = e^{4t} \begin{bmatrix} \cos(-3t) + i\sin(-3t) \\ i[\cos(-3t) + i\sin(-3t)] \end{bmatrix} = e^{4t} \begin{bmatrix} \cos(-3t) + i\sin(-3t) \\ i\cos(-3t) - \sin(-3t) \end{bmatrix}
 $$
-To illustrate that the above equation for $\vec{\textbf{x}}_p$ is indeed a linear combination of $\vec{\textbf{x}}_1$ and $\vec{\textbf{x}}_2$, we can break it up into the real and imaginary parts, where $\vec{\textbf{x}}_1 = \text{Re}[\vec{\textbf{x}}]$ and $\vec{\textbf{x}}_2 = \text{Im}[\vec{\textbf{x}}]$.
+To illustrate that the above equation for $\vec{\textbf{x}}_a$ is indeed a linear combination of $\vec{\textbf{x}}_1$ and $\vec{\textbf{x}}_2$ and thus a complete and valid solution for $\vec{\textbf{x}}$, we can break it up into the real and imaginary parts, where $\vec{\textbf{x}}_1 = \text{Re}[\vec{\textbf{x}}]$ and $\vec{\textbf{x}}_2 = \text{Im}[\vec{\textbf{x}}]$.
 $$
-\vec{\textbf{x}}_1 = \text{Re}[\vec{\textbf{x}}] = e^{4t} \begin{bmatrix} \cos(-3t) \\ - \sin(-3t)] \end{bmatrix}
+\vec{\textbf{x}}_1 = \text{Re}[\vec{\textbf{x}}] = e^{4t} \begin{bmatrix} \cos(-3t) \\ - \sin(-3t) \end{bmatrix}
 $$
 $$
 \vec{\textbf{x}}_2 = \text{Im}[\vec{\textbf{x}}] = \text{Im}\left[ e^{4t} \begin{bmatrix} i\sin(-3t) \\ i\cos(-3t) \end{bmatrix} \right] = e^{4t} \begin{bmatrix} \sin(-3t) \\ \cos(-3t) \end{bmatrix}
 $$
-Finally, to show that $\vec{\textbf{x}}_p$ is indeed a linear combination we can combine the terms again. While combining, keep in mind that $\vec{\textbf{x}}_2$ is the imaginary part, and must thus be multiplied with $i$ again to give back the original equation, thus $\vec{\textbf{x}}_p= \text{Re}[\vec{\textbf{x}}_p] + i \cdot \text{Im} [\vec{\textbf{x}}_p]$. Back substituting $\vec{\textbf{x}}_1 = \text{Re}[\vec{\textbf{x}}_p]$ and $\vec{\textbf{x}}_2 = \text{Im}[\vec{\textbf{x}}_p]$ from before, we get
+Finally, to show that $\vec{\textbf{x}}_a$ is indeed a linear combination we can combine the terms again. While combining, keep in mind that $\vec{\textbf{x}}_2$ is the imaginary part, and must thus be multiplied with $i$ again to give back the original equation, thus $\vec{\textbf{x}}_a = \text{Re}[\vec{\textbf{x}}_a] + i \cdot \text{Im} [\vec{\textbf{x}}_a]$. Back substituting $\vec{\textbf{x}}_1 = \text{Re}[\vec{\textbf{x}}_a]$ and $\vec{\textbf{x}}_2 = \text{Im}[\vec{\textbf{x}}_a]$ from before, we get
 $$
-\vec{\textbf{x}}_p = \vec{\textbf{x}}_1 + i \vec{\textbf{x}}_2 = e^{4t} \begin{bmatrix} \cos(-3t) \\ - \sin(-3t)] \end{bmatrix} + e^{4t} \begin{bmatrix} \sin(-3t) \\ \cos(-3t) \end{bmatrix}
+\vec{\textbf{x}}_a = \vec{\textbf{x}}_1 + i \vec{\textbf{x}}_2 = e^{4t} \begin{bmatrix} \cos(-3t) \\ - \sin(-3t)] \end{bmatrix} + ie^{4t} \begin{bmatrix} \sin(-3t) \\ \cos(-3t) \end{bmatrix}
 $$
+Thus we have found a complete expression for $\vec{\textbf{x}}$ without ever having to compute the second eigenvector.
 
 %%Make real by wegpoetsing van $i$???
 Note that this solution is no more or less valid than the original solution for $\vec{\textbf{x}}_p$, it is just a different form of the same solution. Be aware that this is still a particular solution, not the general solution.<br>The **general real**[^genimag] **solution** is
