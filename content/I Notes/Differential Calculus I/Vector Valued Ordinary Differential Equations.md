@@ -152,11 +152,23 @@ Linearly dependent matrices essentially have one dimension less than they are bi
 $$
  \left| A - \lambda I \right| = 0
 $$
-We can then find $\vec{\textbf{v}}$ by using the earlier equation $(A - \lambda I) \vec{\textbf{v}} = 0$ and solving the augmented matrix $\left[ A - \lambda I \: | \: 0 \right]$. Notice that $\vec{\textbf{v}}$ is the *eigenvector* of matrix $A$. <br>Recount from [generalized ODEs](Generalized%20Ordinary%20Differential%20Equations.md) that the solution to any differential equation can be written as a linear combination of every solution for $\vec{\textbf{x}}$, with as many solutions as there are roots of the *characteristic equation*. In the case of our $\vec{\textbf{x}}$ then, we can write for our **general solution** that
+We can then find $\vec{\textbf{v}}$ by using the earlier equation $(A - \lambda I) \vec{\textbf{v}} = 0$ and solving the augmented matrix $\left[ A - \lambda I \: | \: 0 \right]$. Notice that **$\vec{\textbf{v}}$ is the eigenvector of matrix $A$**. <br>Recount from [generalized ODEs](Generalized%20Ordinary%20Differential%20Equations.md) that the solution to any differential equation can be written as a linear combination of every solution for $\vec{\textbf{x}}$, with as many solutions as there are roots of the *characteristic equation*. In the case of our $\vec{\textbf{x}}$ then, we can write for our **general solution** that
 $$
 \vec{\textbf{x}} = c_1 \vec{\textbf{x}}_1 + c_2 \vec{\textbf{x}}_ 2 + \dots + c_n \vec{\textbf{x}}_n \qquad \Rightarrow \qquad \vec{\textbf{x}} = c_1 \vec{\textbf{v}}_1 e^{\lambda _1 t} + c_2 \vec{\textbf{v}}_2 e^{\lambda _2 t} + \dots + c_n \vec{\textbf{v}}_n e^{\lambda _n t}
 $$
 The solution for $\vec{\textbf{x}}$ can thus be found by finding the *eigenvalues*, $\lambda$, and the *[eigenvectors](Eigenvectors%20and%20Eigenvalues)*, $\vec{\textbf{v}}$, of matrix $A$. <br>The amount of eigenvalues, and subsequently the amount of particular solutions, is determined by the dimension of matrix $A$. The amount of roots the characteristic equation will have is the same as the dimension of $A$.
+
+>[!abstract] Conclusion
+> In short, to find the solutions of $\vec{\textbf{x}}$ from some problem
+> $$
+> \vec{\textbf{x}}' - A \vec{\textbf{x}} = 0
+> $$
+> We find the eigenvalues $\lambda$, and the eigenvectors $\vec{\textbf{x}}$, and construct
+> $$
+> c_1 \vec{\textbf{v}}_1 e^{\lambda _1 t} + c_2 \vec{\textbf{v}}_2 e^{\lambda _2 t} + \dots + c_n \vec{\textbf{v}}_n e^{\lambda _n t}
+> $$
+
+
 
 ---
 To generalize the use of this method further, the continuing chapters outline how to solve problems in the following situations.
@@ -175,7 +187,8 @@ $$
 \vec{\textbf{x}} = \vec{\textbf{x}}_c + \vec{\textbf{x}}_p
 $$
 Like we saw for generalized differential equations there's 2 ways to find the particular solution. 
-1. ___Method of Undetermined Coefficients:___ The easiest way to find $\vec{\textbf{x}}_p$ is to assume a solution based on what the nonhomogeneous term, referred to as $\vec{\textbf{f}}(t)$, looks like. For example if we had the equation[^creditbook]. 
+##### a. Method of Undetermined Coefficients
+The easiest way to find $\vec{\textbf{x}}_p$ is to assume a solution based on what the nonhomogeneous term, referred to as $\vec{\textbf{f}}(t)$, looks like. For example if we had the equation[^creditbook]. 
 $$
 \vec{\textbf{x}}' = \begin{bmatrix} 3 & 2 \\ 7 & 5 \end{bmatrix} \vec{\textbf{x}} + \begin{bmatrix} 3 \\ 2t \end{bmatrix}
 $$
@@ -214,11 +227,12 @@ Below is a list of assumptions for our particular solution for different express
 | Polynomial, $n^{\text{th}}$ grade[^erm2]                                                | $$\vec{\textbf{A}}t^n + \vec{\textbf{B}}t^{n-1} + \dots + \vec{\textbf{Y}}t + \vec{\textbf{Z}}$$ |
 Do note that in this case the capital letters do **not** indicate matrices, but represent vectors.
 
-2. ___Method of Variation of Parameters:___ The method of variation of parameters can be used for equations where $\vec{\textbf{f}}(t)$ isn't in the table above. To find $\vec{\textbf{x}}_p$ we make use of the complementary solution. We start with
+##### b. Method of Variation of Parameters
+The method of variation of parameters can be used for equations where $\vec{\textbf{f}}(t)$ isn't in the table above. To find $\vec{\textbf{x}}_p$ we make use of the complementary solution, $\vec{\textbf{x}}_c$. We start with
 $$
 \vec{\textbf{x}}_c = X \vec{\textbf{c}}
 $$
-Here, $\vec{\textbf{c}}$ is the vector that contains all constants $c_1$, $c_2$, etc. To illustrate the meaning of the fundamental matrix $X$ which contains the solution for $\vec{\textbf{x}}$ if it were a homogeneous system, take the following complementary solution[^source]:
+Here, $\vec{\textbf{c}}$ is the vector that contains all constants $c_1$, $c_2$, etc. To illustrate the meaning of the fundamental matrix $X$, which contains the solution for $\vec{\textbf{x}}$ if it were a homogeneous system, take the following complementary solution[^source]:
 $$
 \vec{\textbf{x}}_c = c_1 e^{-2t} \begin{bmatrix} 1 \\ -3 \end{bmatrix} + c_2 e^{5t} \begin{bmatrix} 2 \\ 1 \end{bmatrix}
 $$
@@ -230,22 +244,22 @@ Thus we find that
 $$
 X = \begin{bmatrix} e^{-2t} + 2e^{5t} \\ -3e^{-2t} + e^{5t} \end{bmatrix}
 $$
-From the form $X \vec{\textbf{c}}$ we can eliminate the undetermined constants. Our goal is to find a solution
+From the form $X \vec{\textbf{c}}$ we can eliminate the undetermined constants. Our goal is to find a solution which we can construct based off the fundamental matrix $X$. To transform this matrix into our solution vector we must multiply by some undetermined vector.
 $$
-\vec{\textbf{x}}_p = X \vec{\textbf{u}}
+\boxed{\vec{\textbf{x}}_p = X \vec{\textbf{u}}}
 $$
-And so the remaining step is to find an expression for $\vec{\textbf{u}}$. I don't think the derivation is particularly relevant here, if interested, a good derivation can be found on page 366 of _Differential Equations and Boundary Value Problems_.
+And so the remaining step is to find an expression for $\vec{\textbf{u}}$. I don't think the derivation is particularly relevant here, but, if you are interested, a derivation can be found on page 366 of _Differential Equations and Boundary Value Problems_.
 $$
 \vec{\textbf{u}} = \int X^{-1} \: \vec{\textbf{f}}(t) \: dt
 $$
 Thus our **final equation** to find $\vec{\textbf{x}}_p$ becomes
 $$
-\vec{\textbf{x}}_p = X \int X^{-1} \: \vec{\textbf{f}}(t) \: dt
+\boxed{\vec{\textbf{x}}_p = X \int X^{-1} \: \vec{\textbf{f}}(t) \: dt}
 $$
 
 #### 2. Repeating Eigenvalues
 When solving the characteristic equation it may happen that a solution for $\lambda$ appears more than once. In other words, $\lambda$ has a multiplicity of more than 1. If this happens there are 2 scenarios:
-1. ***We can use a single [eigenvalue](Eigenvectors%20and%20Eigenvalues) to find multiple [eigenvectors](Eigenvectors%20and%20Eigenvalues):*** When substituting the repeating root into $(A - \lambda I)\vec{\textbf{v}} = 0$ we may get a solution for $\vec{\textbf{v}}$ with a free variable. For example[^source] we may find a solution with a free variable $c$, and $b = - \frac{3}{2} a$. In that case our $\vec{\textbf{v}}$ becomes
+1. ***We can use a single [eigenvalue](Eigenvectors%20and%20Eigenvalues) to find multiple [eigenvectors](Eigenvectors%20and%20Eigenvalues):*** <br>When substituting the repeating root into $(A - \lambda I)\vec{\textbf{v}} = 0$ we may get a solution for $\vec{\textbf{v}}$ with a free variable. For example[^source] we may find a solution with a free variable $c$, and $b = - \frac{3}{2} a$. In that case our $\vec{\textbf{v}}$ becomes
 $$
 \vec{\textbf{v}} = c \begin{bmatrix} 0 \\ 0 \\ 1 \end{bmatrix} + \frac{1}{2}a \begin{bmatrix} 2 \\ -3 \\ 0 \end{bmatrix}
 $$
@@ -257,7 +271,7 @@ $$
 \vec{\textbf{v}}_1 = \begin{bmatrix} 0 \\ 0 \\ 1 \end{bmatrix}, \quad \vec{\textbf{v}}_2 = \begin{bmatrix} 2 \\ -3 \\ 0 \end{bmatrix}
 $$
 We now have two linearly independent vectors that have the same properties as the eigenvector, and we can use them as such in our solutions to differential equations. <br>Because this is possible with this $\lambda$, we call this repeating root a complete eigenvalue.<br>
-2. ***The multiplicative eigenvalue doesn't produce enough independent vectors:*** Consider the following system[^source] where we have the repeating eigenvalue $\lambda = 4$. 
+2. ***The multiplicative eigenvalue doesn't produce enough independent vectors:*** <br>Consider the following system[^source] where we have the repeating eigenvalue $\lambda = 4$. 
 $$
 (A - 4I)\vec{\textbf{v}} = \begin{bmatrix} -3 & -3 \\ 3 & 3 \end{bmatrix} \begin{bmatrix} a \\ b \end{bmatrix} = 0
 $$

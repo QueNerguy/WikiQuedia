@@ -29,7 +29,11 @@ Homogeneous equations are equations where every term in the equation is multipli
 $$
 ay''' + by'' + cy' + dy = 0
 $$
-To solve equations with $n$ derivatives we make use of the same trick we used for [second order differential equations](Second%20Order%20Ordinary%20Differential%20Equations.md#Homogeneous%20Equations). We assume *a* solution for $y$ looks like $y = e^{\lambda t}$. If we substitute this solution for $y$ into the equation above we get
+To solve equations with $n$ derivatives we make use of the same trick we used for [second order differential equations](Second%20Order%20Ordinary%20Differential%20Equations.md#Homogeneous%20Equations). We assume *a* solution for $y$ looks like 
+$$
+\boxed{y = e^{\lambda t}}
+$$
+If we substitute this solution for $y$ into the equation above we get
 $$
 ay''' + by'' + cy' + dy = a \lambda^3 e^{\lambda t} + b \lambda^2 e^{\lambda t} + c \lambda e^{\lambda t} + d e^{\lambda t} = 0
 $$
@@ -46,7 +50,7 @@ a \lambda^n + b \lambda^{n-1} + \dots + y \lambda^1 + z = 0
 $$
 This equation reduces solving differential equations to an algebraic problem. The solution to these generalized problems is assumed to be a linear combination of every solution for $y$, with as many solutions as there are roots of the equation.
 $$
-y = c_1 y_1 + c_ 2 y_2 + \dots + c_n y_n \qquad \Rightarrow \qquad y = c_1 e^{\lambda_1 t} + c_ 2 e^{\lambda_2 t} + \dots + c_n e^{\lambda_n t}
+\boxed{ y = c_1 y_1 + c_ 2 y_2 + \dots + c_n y_n \qquad \Rightarrow \qquad y = c_1 e^{\lambda_1 t} + c_ 2 e^{\lambda_2 t} + \dots + c_n e^{\lambda_n t}}
 $$
 In the case that there are *repeated roots*, meaning multiple $\lambda$s that share the same value, we multiply with our independent variable - in this case $t$ - every time the repetition appears in order to keep our solution set linearly independent. <br>So say we have a 4$^{\text{th}}$ order differential equation, and a root has a multiplicity of 3[^meaning] (this means $\lambda_2 = \lambda_3 = \lambda_4$), then our solution looks like
 $$
@@ -113,15 +117,16 @@ The expression for  of an equation $ay''' + by'' + cy' + dy = f(t)$, with comple
 $$
 y_p = y_1 \int \frac{f(t) W_1 (t)}{W(t)}dt + y_2 \int \frac{f(t) W_2 (t)}{W(t)}dt + y_3 \int \frac{f(t) W_3 (t)}{W(t)}dt
 $$
-The Wronskian with a subscript is created by replacing the column of that subscript with $(0, 0, 1)$. For a 3$^{\text{rd}}$ order differential equation $W_2$ would look like
+$W$ is the *[Wronskian](https://en.wikipedia.org/wiki/Wronskian)*. The *Wronskian* with a subscript is created by replacing the column for that subscript with the column $[0, 0, \dots , 1]^T$. For a 3$^{\text{rd}}$ order differential equation $W_2$ would look like
 $$
-W_2 = \begin{bmatrix} e^{\lambda _1 t} & 0 & e^{\lambda _3 t} \\ \lambda _1 e^{\lambda _1 t} & 0 & \lambda_3 e^{\lambda _3 t} \\ \lambda_1^2 e^{\lambda _1 t}& 1 & \lambda_3 ^2 e^{\lambda _3 t}  \end{bmatrix}
+W_2 = \begin{vmatrix} y_1 & 0 & y_3 \\ \dot{y}_1 & 0 & \dot{y}_3 \\ \ddot{y}_1 & 1 & \ddot{y}_3  \end{vmatrix} = \begin{vmatrix} e^{\lambda _1 t} & 0 & e^{\lambda _3 t} \\ \lambda _1 e^{\lambda _1 t} & 0 & \lambda_3 e^{\lambda _3 t} \\ \lambda_1^2 e^{\lambda _1 t}& 1 & \lambda_3 ^2 e^{\lambda _3 t}  \end{vmatrix}
 $$
+Notice that the Wronskian takes a determinant, and thus the result is some scalar. Our solutions for $y_p$ will then also be/remain scalars, as wanted. Also notice that the highest order of the derivatives in the Wronskian is 1 order lower than the order of our differential equation.
 - For an example problem using this method, see *Example 1* at the bottom of [this page by Paul Dawkins](https://tutorial.math.lamar.edu/Classes/DE/HOVariationOfParam.aspx/VariationofParameters.aspx).
 
 The general expression for using variation of parameters to find $y_p$ is
 $$
-y_p = y_1 \int \frac{f(t) W_1 (t)}{W(t)}dt + y_2 \int \frac{f(t) W_2 (t)}{W(t)}dt + \dots + y_n \int \frac{f(t) W_n (t)}{W(t)}dt
+\boxed{ y_p = y_1 \int \frac{f(t) W_1 (t)}{W(t)}dt + y_2 \int \frac{f(t) W_2 (t)}{W(t)}dt + \dots + y_n \int \frac{f(t) W_n (t)}{W(t)}dt }
 $$
 
 ##### Step-by-Step Plan

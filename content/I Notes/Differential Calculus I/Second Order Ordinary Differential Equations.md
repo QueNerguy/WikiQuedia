@@ -36,7 +36,11 @@ Homogeneous equations are equations where every term in the equation is multipli
 $$
 ay^" + by' + cy = 0
 $$
-[Non-homogeneous equations](#Non-Homogeneous%20Equations) also use the solution outlined below, but it's not the only operation required to solve those equations. <br>We can't solve these problems by just [integrating](Integration) both sides. We had the same problem for [linear equations of first order DEs](First%20Order%20Ordinary%20Differential%20Equations.md#Linear%20Equations), so we once again want to use a trick to *still* be able to solve these problems. This time we also make use of the weird properties of powers of $e$, and we *assume* that *a* solution for $y$ will look like $y = e^{\lambda t}$[^1]. If we substitute this into our formula, we get
+[Non-homogeneous equations](#Non-Homogeneous%20Equations) also use the solution outlined below, but it's not the only operation required to solve those equations. <br>We can't solve these problems by just [integrating](Integration) both sides. We had the same problem for [linear equations of first order DEs](First%20Order%20Ordinary%20Differential%20Equations.md#Linear%20Equations), so we once again want to use a trick to *still* be able to solve these problems. This time we also make use of the weird properties of powers of $e$, and we *assume* that *a* solution for $y$ will look like[^1] 
+$$
+\boxed{y = e^{\lambda t}}
+$$
+If we substitute this into our formula, we get
 $$
 ay^" + by' + cy = a \lambda^2 e^{\lambda t} + b \lambda e^{\lambda t} + c e^{\lambda t} = 0
 $$
@@ -57,7 +61,7 @@ $$
 $$
 Because the characteristic equation always has two roots[^2], the final **general solution** for $y$ is a linear combination of those two roots.
 $$
-y = c_1 e^{\lambda_1 t} + c_2 e^{\lambda_2 t}
+\boxed{y = c_1 e^{\lambda_1 t} + c_2 e^{\lambda_2 t}}
 $$
 In the case of duplicate roots, which can happen for characteristic equations that split like $(\lambda - 2)(\lambda - 2) = 0$ where we have $\lambda_1 = 2$ and $\lambda_2 = 2$, our solution equation doesn't hold and we have to amend it so our solution is *still* a linear combination of both roots. Our **general solution for duplicate roots** is[^credit1]
 $$
@@ -124,8 +128,12 @@ The expression for $y_p$ of an equation $ay'' + by' + cy = f(t)$, with complemen
 $$
 y_p = -y_1 \int \frac{y_2 f(t)}{W(t)}dt + y_2 \int\frac{y_1 f(t)}{W(t)}dt
 $$
-
-
+$W$ is the *[Wronskian](https://en.wikipedia.org/wiki/Wronskian)*. For a 2$^{\text{rd}}$ order differential equation the *Wronskian* looks like
+$$
+W_2 = \begin{vmatrix} y_1 & y_2 \\ \dot{y}_1 & \dot{y}_2   \end{vmatrix} = \begin{vmatrix} e^{\lambda _1 t} & e^{\lambda _2 t} \\ \lambda _1 e^{\lambda _1 t} & \lambda_2 e^{\lambda _2 t}   \end{vmatrix}
+$$
+Notice that the Wronskian takes a determinant, and thus the result is some scalar. Our solutions for $y_p$ will then also be/remain scalars, as wanted. Also notice that the highest order of the derivatives in the Wronskian is 1 order lower than the order of our differential equation.
+- For an example problem using this method, see *Example 1* at the bottom of [this page by Paul Dawkins](https://tutorial.math.lamar.edu/Classes/DE/HOVariationOfParam.aspx/VariationofParameters.aspx).
 
 
 ##### Step-by-Step Plan

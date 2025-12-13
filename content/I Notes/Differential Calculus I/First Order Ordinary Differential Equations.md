@@ -79,7 +79,7 @@ y = \pm e^{-3x^2 + C_1} = \pm e^{C_1} e^{-3x^2} = C_2e^{-3x^2}
 $$
 $C_2$ is a constant that replaces $\pm e^{C_1}$. <br><br>Because separable equations lend themselves to grouping the variables together on either side of the equal sign, the **general form** we try to rewrite to is
 $$
-f(y)dy = g(x)dx
+\boxed{f(y)dy = g(x)dx}
 $$
 
 
@@ -108,7 +108,7 @@ $$
 Where $a$, $b$ and $c$ can all be functions of a second variable, like $x$.
 We will now try to find a way to make $y' + ay$ look like the right hand of the product rule formula, $f \cdot g' + f' \cdot g$. We do this by first constructing a term $\rho$, defined as
 $$
-\rho = e^{\int a dx}
+\boxed{\rho = e^{\int a dx}}
 $$
 We now multiply both sides of the equation by $\rho$ to get
 $$
@@ -138,7 +138,7 @@ $$
 \rho \cdot y = \int \rho b dx
 $$
 $$
-y = \frac{\int \rho b dx}{\rho}
+\boxed{y = \frac{\int \rho b dx}{\rho}}
 $$
 %%This resulting formula **shouldn't be memorized**, instead, memorize the expression for $\rho$ and the steps taken to arrive at the eventual solution. %%%%==the preceding bit of text is probably a lie made up by big math to make you math more but im not falling for it anymore==%%
 
