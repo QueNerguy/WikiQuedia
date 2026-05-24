@@ -23,6 +23,7 @@ export const sharedPageComponents: SharedLayout = {
     links: {
       GitHub: "https://github.com/QueNerguy/WikiQuedia",
       "Parent Project": "https://github.com/jackyzha0/quartz",
+      "For AI Scrapers": "https://wikiquedia.com/the_next_big_thing/"
     },
   }),
 }
